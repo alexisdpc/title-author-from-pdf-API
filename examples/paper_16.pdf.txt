@@ -1,0 +1,1134 @@
+Energy 269 (2023) 126775
+Available online 20 January 2023
+0360-5442/© 2023 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+The rise and stall of world electricity efficiency:1900–2017, results and 
+insights for the renewables transition 
+Ricardo Pinto a,*, Sofia T. Henriques b,c, Paul E. Brockway d, Matthew Kuperus Heun e, 
+Tˆania Sousa a 
+a MARETEC—Marine, Environment and Technology Center, LARSyS, Instituto Superior T´ecnico, Universidade de Lisboa, Avenida Rovisco Pais, 1, Lisboa, 1049-001, 
+Portugal 
+b CEFUP, Faculdade de Economia da Universidade Do Porto, Rua Dr. Roberto Frias, 4200-464, Porto, Portugal 
+c Department of Economic History, Lund University, Box 7080, S-220 07, LUND, Sweden 
+d Sustainability Research Institute, School of Earth and Environment, University of Leeds, Leeds, LS2 9JT, United Kingdom 
+e Engineering Department, Calvin University, 3201 Burton St. SE, Grand Rapids, MI 49546, USA   
+A R T I C L E  I N F O   
+Keywords: 
+Energy efficiency 
+Electricity 
+Carbon intensity 
+Decarbonization 
+Energy history 
+Energy end-uses 
+A B S T R A C T   
+In the coming renewables-based energy transition, global electricity consumption is expected to double by 2050, 
+entailing widespread end-use electrification, with significant impacts on energy efficiency. We develop a long- 
+run, worldwide societal exergy analysis focused on electricity. Our 1900–2017 electricity world database con-
+tains the energy carriers used in electricity production, final end-uses, and efficiencies. We find world primary-to- 
+final exergy (i.e. conversion) efficiency increased rapidly from 1900 (6%) to 1980 (39%), slowing to 43% in 2017 
+as power station generation technology matured. Next, despite technological evolution, final-to-useful end-use 
+efficiency was surprisingly constant (~48%), due to “efficiency dilution”, wherein individual end-use efficiency 
+gains are offset by increasing uptake of less efficient end uses. Future electricity efficiency therefore depends on 
+the shares of high efficiency (e.g. electrified transport) and low efficiency (e.g. cooling and low temperature 
+heating) end uses. Our results reveal past conversion efficiency increases (carbon intensity of electricity pro-
+duction reduced from 5.23 kgCO2/kWh in 1900 to 0.49 kgCO2/kWh in 2017) did little to decrease global 
+electricity-based CO2 emissions, which rose 380-fold. The historical slow-pace of transition in generation mix and 
+the need to electrify end-uses suggest that strong incentives are needed to meet climate goals.   
+1. Introduction 
+1.1. Global electricity demand is projected to have rapid growth 
+The share of electricity in world total final consumption (TFC) has 
+increased significantly, from 0.1% (1900) to 4% by mid-century (1950), 
+and 19% in 2022 [1,2]. Importantly, global electricity demand keeps 
+rising, and is projected by the International Renewable Energy Agency 
+(IRENA) to double between 2015 and 2050 [3]. While electricity gen-
+eration doubled between 1990 and 2014 [4], carbon dioxide (CO2) 
+emissions associated with electricity increased only slightly less, 87%, 
+from 6.28 GtCO2 to 11.76 GtCO2 [5]. To limit end-of-century warming 
+to 1.5 ◦C [6] whilst meeting UN Sustainable Development Goal #7 
+(affordable and clean energy) [7], electrification, renewables, and en-
+ergy efficiency are thought to be essential [3]. Electrification and 
+renewables will mean rapid growth in electricity generation and con-
+sumption into the future, but energy efficiency is a complex and nuanced 
+issue, with impacts on economic growth, energy rebound, and aggregate 
+efficiency [8–10]. 
+Electrification of end uses will enable widespread deployment of 
+low-carbon, electricity-producing sources of energy, especially wind and 
+solar. IRENA forecasts that, by 2050, 33% of final energy for transport 
+will be provided by electricity, up from 1% in 2015 [3]. Buildings are 
+also expected to increase their electricity demand by 70% until 2050, 
+from their 2015 value, due to increased cooling demand, electrification 
+of heating, and growing electricity consumption in developing countries 
+[3,11]. Other forecasts propose scenarios which rely on near 100% 
+electrification with renewables to reach climate targets, where demand 
+for electricity is expected to more than double [12–14]. 
+Beyond electrification, emerging end uses will add to future 
+* Corresponding author. 
+E-mail address: ricardo.c.pinto@tecnico.ulisboa.pt (R. Pinto).  
+Contents lists available at ScienceDirect 
+Energy 
+journal homepage: www.elsevier.com/locate/energy 
+https://doi.org/10.1016/j.energy.2023.126775 
+Received 23 May 2022; Received in revised form 5 December 2022; Accepted 18 January 2023   
+Energy 269 (2023) 126775
+2
+electricity demand, especially information and communication tech-
+nology (ICT). For three specific categories of ICT (communication net-
+works, personal computers, and data centres), Heddeghem et al. [15] 
+found that between 2007 and 2012 electricity consumption from ICT 
+uses grew at 7% per year, while overall electricity use increased only 3% 
+per year, thereby raising the share of total worldwide electricity con-
+sumption for ICT to 4.6%. The increase in electricity demand due to 
+electrification and emerging energy uses will be partially controlled by 
+energy efficiency. 
+1.2. The uncertainty of the impact of energy efficiency on electricity 
+demand 
+Energy efficiency can be calculated between different stages of the 
+energy conversion chain. Societies use primary energy such as coal in a 
+thermoelectric power plant or wind energy in a wind farm to produce 
+final energy in the form of electricity. Afterwards, electricity is trans-
+formed to useful energy such as light in lamps or heat in electric heaters 
+or heat pumps. 
+The estimation of useful energy is crucial because it is closer to the 
+energy services that people and firms want and therefore more closely 
+tied to economic activity than final energy. As such, it is the appropriate 
+stage at which to measure energy when the goal is understanding trends 
+in the relationship between energy and economic activity, which is an 
+essential step to make scenarios of the future energy transition. One can 
+estimate the energy efficiency of each conversion, that is the ratio of 
+“useful” energy output to “final” energy input. The higher the energy 
+efficiency, the better. However, energy efficiency gives us incomplete 
+information about potential energy savings. For example, the energy 
+efficiency of an electric heater is 100% which suggests that there are no 
+potential energy savings. However, this is not the case because a heat 
+pump can provide the same output using ¼ of the electricity. Here, we 
+address this issue using exergy efficiency which is also the ratio of useful 
+output to input but using exergy to quantify energy. Exergy is a mea-
+surement of energy that quantifies the potential of an energy flow to do 
+physical work [16]. For electricity and mechanical work, exergy is equal 
+to the energy content because these types of energy can be completely 
+converted into work. For heat, exergy content is lower than its energy 
+because even an ideal Carnot machine cannot completely convert heat at 
+a temperature TH into work: it needs to reject some heat at a lower 
+temperature TC. The fundamental constraint in the conversion of heat 
+into work is associated with the fact that heat carries both energy and 
+entropy. Since entropy cannot be destroyed, the Carnot machine needs 
+to reject heat to get rid of the entropy. 
+The use of exergy is important not only to estimate an efficiency that 
+provides a meaningful measure of the potential energy savings because 
+the maximum exergy efficiency is 100% but also because exergy effi-
+ciency and useful exergy have been empirically linked to economic 
+growth [8]. Economies run on work that (as opposed to heat) shapes 
+materials, assembles machines and products, and transports people, 
+goods, and services throughout the economy. To a lesser extent, econ-
+omies also consume heat. But heat can (and probably should) be sup-
+plied via a heat pump, which consumes work (usually in the form of 
+electricity). Useful exergy is the amount of work (or electricity) needed 
+as input to the economy when all potential energy savings have been 
+accomplished. 
+Three recent studies illustrate the complexities of energy efficiency. 
+First, Serrenho et al. [17,18] showed that the ratio of useful exergy to 
+GDP for Portugal is approximately constant, a finding that holds for the 
+other EU-15 countries if the relative size of heavy industry end uses 
+(High temperature heat (HTH)) and domestic end uses (Low Tempera-
+ture Heat (LTH)) remain constant. Second, Santos et al. [9] show that an 
+increase in final-to-useful exergy efficiency makes a key contribution to 
+higher GDP for Portugal. Third, Ferguson et al. [19] shows electricity 
+consumption and economic development are strongly correlated for 
+more than 100 countries between 1971 and 1995. Taken together, these 
+three relationships imply increases in final-to-useful efficiency 
+contribute to economic growth and, paradoxically, an increase in the 
+demand of energy, a phenomenon known as energy rebound. Indeed, 
+Ayres et al. [20] state efficiency gains at the final-to-useful stage lead to 
+higher final energy consumption. However, overall effects of 
+final-to-useful efficiency increases on the demand for final energy can be 
+positive or negative, depending on the presence of rebound effects [21]. 
+Furthermore, the relationship between electricity efficiency and 
+aggregate final-to-useful efficiency is complex [22]. In Portugal between 
+1900 and 2009, the aggregated final-to-useful efficiency was always 
+lower than 25% [17], while final-to-useful efficiency for electricity was 
+always above 30% [23]. Also, in Mexico between 1971 and 2009, 
+electricity is the energy carrier with the highest final-to-useful efficiency 
+[24]. The same occurred in the US where Ayres et al. [22] estimated a 
+high stable, average value of 55%, for the final-to-useful US electricity 
+efficiency between 1900 and 2000. Thus, the growing use of electricity 
+increases aggregate final-to-useful exergy efficiency [25]. 
+Regarding, primary-to-useful efficiency, Brockway et al. [26] anal-
+yse the UK and USA, for the period 1960–2010. While rising UK elec-
+tricity exergy efficiency drove increases to UK aggregate exergy 
+efficiency, USA aggregate exergy efficiency remained very stable due to 
+efficiency dilution caused by increasing consumption of low-efficiency 
+air conditioning [26]. In Portugal, the primary-to-useful efficiency of 
+electricity increased between 1900 and 1990 but stagnated afterwards 
+[23] due to increasing share of electricity consumed in less-efficient 
+sectors, mainly residential and commercial. 
+This emerging picture of the role of useful exergy and efficiency on 
+economic growth and energy consumption (and CO2 emissions) is illu-
+minating. However, current understanding is based on analyses of single 
+countries [17,22–25,27,28] or a small number of countries (between 2 
+and 15 countries) [18,26] over short timescales (40–50 years) [18,24, 
+26,28] with little-to-no electricity end-use detail [25,27]. A few studies 
+[17,22,23] have longer timescales with more detail on electricity con-
+sumption but focus on single countries (Portugal and US). Additionally, 
+these studies use varying methodologies to estimate efficiencies, leading 
+to results inhibiting comparison [29]. At the world level, there are two 
+studies for a single year [30,31] and only one long-run (1900–2010) 
+study [1], which calculated final-to-useful efficiencies using GDP as 
+proxy, thereby linking energy and economic growth. Additionally, the 
+long-run study [1] lacks detail in allocations of electricity to end-uses, 
+assuming constant end-use shares within each sector throughout the 
+period 1900–2010. These assumptions are problematic, because the 
+estimation of overall electricity efficiency is highly dependent on both 
+(a) the detail in allocating electricity to end uses (see Refs. [23,32]) and 
+(b) the methods used to estimate efficiencies [29]. 
+1.3. Motivation, aim, contribution, and structure 
+The motivation for this paper is based on the increasing importance of 
+electricity in the future, due to both (a) the need to decarbonise energy 
+systems and (b) increasing share of end-uses such as ICT. Individual 
+country studies have shown that the efficiency of electricity production 
+and consumption has significant impacts on final-to-useful and primary- 
+to-final efficiencies, economic growth, and greenhouse gas (GHG) 
+emissions. However, our historical knowledge is incomplete, because 
+there is no detailed, world-level exergy-based study covering a long time 
+span that focuses on electricity end-uses. A long-run analysis of past 
+electricity production, efficiency trends, and carbon emissions will 
+provide insights to guide scenarios and policies for electrification, re-
+newables, and energy efficiency. 
+The aim of this article is to evaluate world long-term trends of past 
+electricity consumption and production, end-uses, efficiency, and car-
+bon intensity. The key contributions of this paper are the development of 
+(a) a detailed world long-run database for electricity production and 
+consumption and (b) historical time series datasets for the evolution of 
+primary-to-final, 
+final-to-useful, 
+and 
+primary-to-useful 
+exergy 
+R. Pinto et al.                                                                                                                                                                                                                                    
+Energy 269 (2023) 126775
+3
+efficiencies. 
+The structure of this paper is as follows: In section 2, we explain the 
+method for constructing a world database for electricity consumption 
+and production. In section 3, we show results for world electricity pro-
+duction and consumption, efficiencies, and carbon emissions. In section 
+4, we discuss the results in historical perspective and in the context of 
+the ongoing decarbonization transition. Section 5 summarizes. 
+2. Data and methods 
+Electricity production data provides the starting point, because it is 
+the energy stage available in yearbooks and books, for construction of 
+the long run database of primary, final, and useful electricity. Electricity 
+production is the electricity that leaves the alternator in a power plant, 
+so it is considered final energy. Fig. 1 and table A9 of the supplementary 
+information A summarize the steps used to calculate primary and useful 
+exergy as well the main sources used to obtain the data necessary to 
+these calculations. The following subsections will go into further details 
+about each stage of the energy conversion chain: primary, final, and 
+useful. 
+2.1. Final energy stage: electricity production and sources 
+Our starting point was Etemad et al. “World Energy Production” 
+[33]. Two years were assessed first: 1920 and 1970 Fig. 2. The year 1920 
+is the first year for which most countries have data available on elec-
+tricity production in Etemad et al. [33]. The year 1970 is the year before 
+world data are available from the International Energy Agency (IEA). 
+Countries were divided in three groups: large, medium, and small pro-
+ducers, as shown in Fig. 3. Large producers (Canada, Germany, Japan, 
+UK, USA, and USSR) supplied more than 5% of the world electricity in 
+1920 or 1970. Fig. 4 shows the share of the world total electricity of 
+these countries for the period 1900–1970 (Canada [36], Germany 
+[37–39], Japan [40], UK [41,42], USA [43] and USSR [44–46]).1 When 
+no other source of data was available, Etemad et al. [33] was used. For 
+years in which no data were available, we interpolated linearly. 
+Medium producers are all countries that produced more than 1% of 
+the world electricity in 1920 or 1970: Australia, Austria, China, Cze-
+choslovakia, France, India, Italy, Norway, Poland, South Africa, Spain, 
+Sweden, and Switzerland. Fig. 4 shows the share of world electricity 
+production by these countries for the period 1900–1970. The classifi-
+cation of a country as a big, medium or small producer controlled the 
+amount of effort in gathering data for that country between 1900 and 
+1970. More data were collected for large and medium countries. Fig. 4 
+shows that the maximum amount of electricity produced by all small 
+producers between 1900 and 1970 is 10%. 
+Data for thermal and hydroelectricity production for France, Italy, 
+and Spain were found in the statistical yearbooks of each country and for 
+Italy also in Malanima [47–50]. The primary reference for Spain, the 
+statistical yearbook [48] includes only total production values, so hy-
+droelectricity production until 1928 was estimated based on Rodríguez 
+[51]. Missing values for hydroelectricity production in France prior to 
+1925 [47] were estimated based on Bordes [52]. For France, we deter-
+mined the share of oil in thermal electricity for 1952 [53] and natural 
+gas share for 1957 and 1958 [47]. Together with data for 1960 from the 
+IEA [34], we interpolated other years. In the case of Italy, for 
+1925–1960, we identified the share of each fuel in thermal electricity 
+generation based on Castelli [54]. 
+Norway and Sweden data series started with high values of 
+hydroelectricity, indicating that production started before Etemad et al. 
+series [33], so we looked for other data to complete the series until 1900. 
+For Norway 1900–1936, we estimated hydroelectricity production using 
+a report for all hydropower plants in use in 1943 [55]. (See supple-
+mentary information (SI) A.) For Norway 1930–1960, we estimated 
+thermal electricity sources using statistical yearbooks [56]. For Sweden 
+1900–1928, we estimated hydroelectricity production using shares of 
+hydro generation available in Kander et al. [57]. South Africa electricity 
+production data was taken from the Bureau of census and statistics [58] 
+between 1917 and 1959 afterwards data was taken from Etemad et al. 
+[33]. 
+Data for total, hydro, geothermal, and nuclear electricity production 
+for other countries was obtained from Etemad et al. [33]. Switzerland 
+started with a high value of hydroelectricity, so we assumed that the 
+share of hydroelectricity for the early years was equal to the average 
+share of hydroelectricity for the first five years of available data. For 
+medium producer countries for 1900–1960, we assumed electricity not 
+generated from hydropower, nuclear or geothermal sources was pro-
+duced from coal (except France, Italy, and Norway), as oil was the only 
+other credible source, and no large oil producers are classified as me-
+dium producers. IEA data from 1960 onwards for OECD countries pro-
+vides carrier-level electricity production data for almost all the medium 
+producers, the non-OECD exceptions being China, Czechoslovakia, 
+India, and South Africa (their IEA data starts in 1971). 
+Small producers comprise all remaining countries that, individually, 
+each produced less than 1% of world electricity in 1920 and 1970. For 
+small producers, total electricity and hydroelectricity values were taken 
+from Etemad et al. [33], with the exception of hydroelectricity values for 
+Latin America which were obtained from Rubio and Tafunell [59]. The 
+share of thermoelectricity produced by each energy carrier was assumed 
+equal to the weighted average of medium and large producers, including 
+only non-hydro energy carriers. 
+2.2. Primary energy stage: From final-to-primary exergy 
+Primary energy gives information about the resources necessary to 
+produce the energy we purchase (final energy, such as electricity). 
+Moving from final-to-primary energy requires electricity generation ef-
+ficiencies for fossil fuels (coal, oil, natural gas) and renewables (e.g., 
+hydro). 
+For Japan, UK, USA, and USSR (the largest producers) for 
+1900–1970, fossil fuel electricity generation efficiencies were calculated 
+directly from available primary energy consumption and electricity 
+production data. For these countries, we had both primary and final 
+energy so there was no need to use efficiencies to estimate primary 
+energy. However, for Canada, Germany, and all medium producers, 
+primary-to-final efficiencies were obtained from Etemad et al. [33] as 
+primary energy data were not available. The same method was used for 
+small producers for 1900–1970, with electricity generation efficiencies 
+for each energy source taken from Etemad et al. [33] assuming that 
+these countries had the lowest efficiency recorded for each year. From 
+1971 onwards, the IEA [34] has data on primary energy for electricity 
+production for all countries. 
+For renewables, three options exist for estimating the equivalent 
+primary energy source value: resource content method (RCM), physical 
+content method (PCM) and partial substitution method (PSM) [29]. We 
+choose the most commonly used option: PCM, the method used by the 
+IEA. In the PCM definition, primary energy is the first form of energy 
+that is commercially available, meaning wind and solar gross electricity 
+produced is considered primary energy [29], with no losses from 
+primary-to-final energy stage. 
+Last, we convert from primary energy to primary exergy, via multi-
+plication of exergy coefficients, shown in Table 1 [23,60]. 
+1 Germany data started with a high value of hydroelectricity production, 
+suggesting hydroelectricity production began before 1920, but as no sources 
+were found for the period prior to 1920 we assume the share of Germany’s 
+hydroelectricity prior to 1920 was equal to the average of the period 
+1920–1925. 
+R. Pinto et al.                                                                                                                                                                                                                                    
+Energy 269 (2023) 126775
+4
+Fig. 1. Flow chart summarizing how primary, final and useful exergy were calculated. Red arrows: used only for pre-1971 calculations. Blue arrows: used for both 
+pre- and post-1971 calculations. 
+Fig. 2. Large and medium producers share of the world electricity production in 1920 and 1970, large producers’ countries that generate more than 5% of world 
+electricity production, in 1920 or 1970, while medium producers are the countries that generate more than 1%. 
+Fig. 3. Flow chart summarizing the countries which were allocated to three different groups, based on size of production share.  
+R. Pinto et al.                                                                                                                                                                                                                                    
+Energy 269 (2023) 126775
+5
+2.3. Useful energy stage: Final-to-useful exergy 
+To move from final exergy to useful exergy, we multiply by end-use 
+efficiencies. Useful exergy (also called useful work) is defined as “the 
+minimum amount of work (or exergy) required to produce a given en-
+ergy transfer” [17, p.2]. Unfortunately, data in yearbooks and other 
+statistical sources rarely allocates final energy to end-use tasks. Avail-
+able references sometimes allocate electricity to the sector or subsector 
+in which it is consumed. Thus, the first step was collecting data for the 
+consumption of electricity in sectors and subsectors from multiple 
+sources for 1900–1971 [22,23,37–40,42,44,47,48,50,56,58,61–65]. 
+Detailed descriptions of country-level references are given in Table A1 of 
+SI A. After 1971, sectoral electricity consumption is available from the 
+IEA [34]. Refer to Sections A2.1 and A2.2 of SI A for a more detailed 
+description of the methodology used for allocating electricity con-
+sumption to sectors and subsectors. 
+The second step was the allocation to end-uses within each sector 
+and subsector. We considered the following 10 end-uses: lighting, 
+communication and electronics, electrochemical, high temperature heat 
+(HTH), low temperature heat (LTH), cooling, transport, residential ap-
+pliances, commercial appliances, and machine tools and pumps. Allo-
+cation to end-uses was previously completed for Portugal and the USA 
+[22,23]. Electricity consumption in residential and commercial sectors 
+for the remaining countries was allocated to end-uses using Ayres et al. 
+[22] without modification. Electricity consumption in industrial sub-
+sectors was allocated to end-uses assuming one main end-use for each 
+subsector: HTH for iron and steel, electrochemical for the electro-
+chemistry and electrometallurgy industries, and machine tools and 
+pumps for other industries. All industrial subsectors have end-uses of 
+varying proportion among lighting, communication/electronics, and 
+cooling, with shares taken from the industrial sector of Ayres et al. [22]. 
+A more detailed description is available in section A2.3 of the SI A. 
+The last step was the calculation of useful exergy via multiplying 
+end-use electricity consumption by associated final-to-useful exergy ef-
+ficiencies. Final-to-useful exergy efficiencies were calculated with the 
+equations in Table 2 or obtained from the literature [22,35]. Exergy 
+efficiencies for heating/cooling end-uses depend on the temperature of 
+the surrounding environment and that required for the task. Different 
+end-use temperatures were used depending on the end-use application. 
+Refrigeration and space cooling efficiencies were calculated by dividing 
+an average real Coefficient of Performance (COP) for machines in each 
+year by the ideal COP shown in Table 2. For refrigerators, the ideal COP 
+was calculated assuming that a third of the electricity was consumed by 
+the freezer, at −18 ◦C, while the remaining two thirds were consumed by 
+the cooler at 5 ◦C, following Palma [32]. The environmental tempera-
+ture was assumed to be 20 ◦C. For space cooling, the ideal COP was 
+calculated assuming a 25 ◦C environmental temperature and 20 ◦C 
+end-use temperature. End-use temperatures for heating were taken as 
+100 ◦C for cooking, 60 ◦C for water heating and 20 ◦C for space heating. 
+LTH exergy efficiencies were calculated assuming an energy efficiency, 
+ƞ, of 100% and a Carnot efficiency based on the end-use temperature 
+(T1) and environment temperature (T0). For cooking and water heating, 
+T0 was taken as the average annual world temperature. For space 
+heating, T0 was taken as the average world temperature for the coldest 
+month of each year. HTH exergy efficiencies were calculated by multi-
+plying the energy efficiency from Ayres et al. [22] by the Carnot effi-
+ciency from Table 2. T1 was assumed to be 500 ◦C and T0 the average 
+world annual temperature. A table with the references for exergy effi-
+ciency per end-use is available in section A2.4 of the SI A as well as more 
+details about real COP values [73]. 
+2.4. Carbon intensity 
+To estimate CO2 emissions, we used Intergovernmental Panel on 
+Climate Change (IPCC) emission factors [66], which do not include the 
+life cycle emissions for each electricity production technology. Thus, 
+renewable technologies have emission factors equal to zero. Due to lack 
+Fig. 4. Share of world electricity production for 1900–1970 for large, medium, and small producers.  
+Table 1 
+Exergy conversion factors per energy carrier.  
+Energy carrier 
+Exergy coefficient 
+Coal and Coal products 
+1.06 
+Oil and Oil products 
+1.06 
+Natural gas 
+1.04 
+Combustible Renewables 
+1.11 
+Electricity 
+1.00  
+Table 2 
+Cooling and heating exergy efficiencies (all formulas use temperature in 
+Kelvin (K)). T0 - environment temperature; T1 - end-use temperature; Tc – 
+Desired temperature of the freezer/cooler; ƞ - energy efficiency. Ideal 
+COPs for the freezer, cooler and their combined average are 6.7, 18.5 and 
+14.6, respectively.  
+Ideal COP Cooling 
+TC
+T0 − TC 
+Cooling exergy efficiency 
+Ɛ = COPcooling, real
+COPcooling, ideal 
+Heat exergy efficiency 
+Ɛ = ƞ
+(
+1 − T0
+T1
+)
+R. Pinto et al.                                                                                                                                                                                                                                    
+Energy 269 (2023) 126775
+6
+of data, we do not take into account upstream emissions from fossil fuels. 
+In 2000, these emissions represented between 10% and 25% of the direct 
+emissions of a power plant, depending on the fuel and country consid-
+ered [67,68]. Thus, carbon intensity is the ratio of direct emission-
+s/exergy, calculated at both the final stage (CIF) and the useful stage 
+(CIU) [23]. 
+3. Results 
+This section contains results obtained for electricity production and 
+consumption as well as efficiencies and carbon intensities associated 
+with electricity use. The data used to create each graph is available in SI 
+B. This section is focused on overall trends while a detailed discussion of 
+shorter-term trends is left to section 4. 
+3.1. World electricity production 
+Fig. 5 shows world shares of electricity production by energy source 
+(left axis) and total electricity production (right axis). Fossil fuels (in 
+grey scale colours) are responsible for a relatively stable fraction of 
+electricity production (about 60%) from 1900 to 2017. Renewables, 
+especially wind, have increased their share in the last decade. The fuel 
+sources for electricity production have become more varied through 
+time. 
+3.2. World electricity consumption 
+3.2.1. Allocation to sector and subsector 
+Fig. 6 shows the allocation of electricity consumption by subsector. 
+The share of electricity consumption in the transport sector decreased 
+significantly from 1900 (27.7%) to 2017 (1.7%). In contrast, con-
+sumption by residential and commercial sectors increased from a com-
+bined share of 23.5% in 1900 to 48.4% in 2017. The sum of industry 
+subsectors (iron and steel, electrochemistry and electrometallurgy, and 
+other industries) decreased little from 1900 (47.3%) to 2017 (41.9%). 
+Total electricity consumption in Fig. 6 (green line, right axis) shows a 
+similar trend compared to Fig. 5, where total electricity production is 
+shown - the differences are Fig. 6 excludes transmission losses and 
+electricity self-consumed by the energy industry. The average value of 
+transmission losses was 9.1% of electricity produced, while electricity 
+used in the energy industry was on average 8.6% of electricity produc-
+tion, see section A1.2 of the SI A. Both electricity production and con-
+sumption are part of the final energy stage of the energy conversion 
+chain. 
+The sharp rise in the electrochemistry and electrometallurgy and 
+iron and steel industries at the expense of other industries after 1971 is 
+due to classifications of the IEA data. The IEA data contain a level of 
+detail that enables allocation of a larger share of other industries to the 
+two subsectors, especially for the USSR. 
+3.2.2. Allocation to end-uses 
+Fig. 7 shows electricity consumption shares by individual end-uses. 
+The share of lighting end-uses decreased throughout the period by 
+more than half. Transport has decreased markedly (1/20th of the 1900 
+share), because electric trams were replaced by automobiles. By 2017, 
+HTH end-uses were less than one third of their share in 1900. On the 
+other hand, LTH and cooling end-uses have increased significantly, 
+representing over 10% and 15% of total consumption, respectively, in 
+2017. By comparison in 1900, LTH had no share of electricity con-
+sumption and cooling had less than 3% share. Communication and 
+electronics and residential appliances end-uses shares experienced a 
+similar increase from less than 1% to close to 10%. Commercial appli-
+ances end-use share almost doubled to 5% in 2017. The share for ma-
+chine tools and pumps has varied considerably. Looking only at 1900 
+and 2017, it increased from 23% to 29%. Electrochemical end-uses have 
+remained largely stable over the period (average ~4%). 
+3.3. Electricity efficiencies 
+3.3.1. World primary-to-final exergy efficiencies for fossil fuels 
+Fig. 8 shows the evolution of primary-to-final exergy efficiency for 
+fossil electricity generation. Average efficiency has grown over the last 
+117 years, mainly due to improvements in electricity generating tech-
+nology and with a smaller importance the increasing share of higher- 
+efficiency generation. The sudden increase in oil efficiency in 1913 is 
+related to a change in source for Russia while the decrease in 1997 is due 
+to IEA data classifications. The jump in efficiency in 1971 is due to the 
+switch in pre/post IEA datasets. 
+3.3.2. World primary-to-final, final-to-useful and primary-to-useful exergy 
+efficiencies 
+Fig. 9 shows primary-to-final, final-to-useful, and overall exergy ef-
+ficiencies. As electricity production has been dominated by fossil fuel 
+sources since 1900, primary-to-final exergy efficiency follows a similar 
+pattern to average fossil fuel exergy efficiency, Fig. 8. 
+Final-to-useful exergy efficiency remains surprisingly stable, within 
+Fig. 5. World shares of electricity production per energy source (left axis) and total electricity production (right axis) (1 PWh = 1012 kWh = 3.6 EJ).  
+R. Pinto et al.                                                                                                                                                                                                                                    
+Energy 269 (2023) 126775
+7
+the range 40–50% over the whole period. In 1900, efficiency was 44% 
+and in 2017 it was approximately 47%. 
+In the period 1900–2017, primary-to-useful exergy efficiency grew 
+significantly reaching 17% in 2017. 
+3.3.3. Final-to-useful exergy efficiencies per end-use 
+Fig. 10 shows final-to-useful exergy efficiencies for each end-use. The 
+LTH line shows a decreasing efficiency trend, until the 1980’s, followed 
+by a period of constant efficiency and more recently, after the early 
+2000’s, a slow increasing trend is observed. This pattern is a result of the 
+variable shares of the different LTH uses. LTH is composed of three 
+different uses: cooking, water heating, and space heating. A decrease in 
+cooking use translated to diminishing share of LTH, whilst space heating 
+and water heating weights increased. Water heating and (especially) 
+space heating are less efficient than cooking, because of the lower 
+temperature of use, causing the decrease in overall LTH exergy effi-
+ciency seen until the 1980s. The small increase in efficiency observed 
+after the early 2000’s is again a result of a change in weights of LTH end- 
+uses, as space heating reduced its importance while water heating 
+increased. The efficiency of cooling end-uses decreased between the 
+mid-1950s and 1970 due to decreases in refrigeration efficiency because 
+of increasing refrigerator and freezer size and new additional features 
+[69]. 
+3.3.4. Final-to-useful exergy efficiencies for each sector 
+Fig. 11 shows the electricity efficiency for the different sectors and 
+the aggregated final-to-useful efficiency. The industrial and transport 
+sectors have higher efficiencies than the global average. The transport 
+sector has mainly one end-use, transport end-use, which is a highly 
+efficient end-use. Industry is mainly composed of HTH use, electro-
+chemical and machine tools and pumps end-uses. High efficiency ma-
+chine tools and pumps have the largest share, leading to high efficiency 
+for the industrial sector. The residential and commercial sectors had 
+distinct historical differences in terms of efficiency but have since 
+evolved into a similar sectoral final-to-useful efficiency. These two 
+sectors have low efficiencies because of the significant share of low 
+Fig. 6. World shares of electricity consumption by sector and subsector (left axis) and total electricity consumption (right axis) (1 PWh = 1012 kWh = 3.6 EJ).  
+Fig. 7. World shares of electricity consumption allocated per end-use.  
+R. Pinto et al.                                                                                                                                                                                                                                    
+Energy 269 (2023) 126775
+8
+Fig. 8. Primary-to-final exergy efficiency for fossil fuel electricity production, between 1900 and 2017.  
+Fig. 9. World electricity primary-to-useful, primary-to-final and final-to-useful exergy efficiencies, using the PCM method.  
+Fig. 10. Final-to-useful exergy efficiencies for each electricity end-use, during 1900–2017.  
+R. Pinto et al.                                                                                                                                                                                                                                    
+Energy 269 (2023) 126775
+9
+efficiency end-uses: lighting, LTH, cooling and communication and 
+electronics. 
+Figures with allocation per end-use for each sector/subsector are 
+available at section A4.1 of the SI A. The variability in efficiencies of the 
+residential and commercial sectors are associated with fluctuations of 
+individual end-use shares, which are retrieved directly from Ayres et al. 
+[22]. 
+3.4. Carbon intensity and carbon dioxide emissions 
+Fig. 12 (right axis) shows the exponential growth of world CO2 
+emissions associated with electricity production for 1900–2017. Fig. 12 
+(left axis) also illustrates how carbon intensity has decreased during this 
+period. Two different metrics are shown: one considers carbon intensity 
+at the final stage of the energy conversion chain (CIF) while the other 
+takes one step forward and calculates carbon intensity at the useful level 
+(CIU). Carbon intensity, both at the useful stage and final stage, has a 
+descending trend for 1900–2017 but both also exhibit stabilization since 
+the 1980s, with slight decrease of carbon intensity in the last 5 years. 
+Looking at the whole period 1900–2017, CIF dropped from 5.23 to 0.49 
+kg CO2/kWh while the CIU decreased from 13.18 to 1.24 kg CO2/kWh. 
+3.5. Annual growth rates 
+Fig. 13 shows that there has never been a period when primary-to- 
+useful exergy efficiency growth has led to CO2 emissions decline, since 
+the CO2 growth rate has never been negative. Fig. 13 also shows the lack 
+of correlation between primary-to-useful exergy efficiency and CO2 
+emissions, especially after 1940. Primary-to-useful exergy efficiency 
+growth rate was close to zero, less than 0.5%/year, in the 1940s and 
+between 1970 and 2010. The result holds for primary-to-final and final- 
+to-useful exergy efficiencies, as shown in Figures A7 and A8 of SI A. 
+4. Discussion 
+In this section we will look in detail at the results shown above and 
+will go through them using a historical perspective first and then 
+zooming in to electricity efficiency and transitions. We will also discuss 
+some limitations associated with this work. 
+Fig. 11. Final-to-useful exergy efficiency of electricity use for different sectors.  
+Fig. 12. CO2 emissions from electricity generation in grey (right axis), carbon intensity of final exergy in blue and useful exergy in orange (left axis), during the 
+period 1900 to 2017. 
+R. Pinto et al.                                                                                                                                                                                                                                    
+Energy 269 (2023) 126775
+10
+4.1. Historical perspective 
+The construction of the world long-run electricity production and 
+consumption database enables consideration of the evolution of elec-
+tricity production, consumption, and efficiency since the beginning of 
+the 20th century. We see two distinct periods: 1900–1950 and 
+1950–2017. 
+Between 1900 and 1950, on average, over 95% of the world elec-
+tricity was produced from coal and hydro sources, with approximately 
+constant shares (coal representing 55% and hydro 40%) (Fig. 5). From 
+1900 to 1950 primary-to-final exergy efficiency increased significantly, 
+from 6% to 31%, caused by efficiency improvements in thermal power 
+plants (blue line Fig. 9). During this period, the industrial sector 
+increased its share of electricity consumption at the expense of the 
+transport sector (Fig. 6). Within the industrial sector, iron and steel 
+decreased its share more than 10% (Fig. 6). These sectoral changes in-
+fluence end-uses, with significant increases in the share of machine tools 
+and pumps and cooling end-uses, while end-uses for transport and HTH 
+decreased their share significantly (Fig. 7). Final-to-useful exergy effi-
+ciency increased only slightly from 1900 (44%) to 1950 (47%) (orange 
+line Fig. 9), due to efficiency dilution effects. Final-to-useful exergy ef-
+ficiency reached a peak in 1940 and declined thereafter (orange line 
+Fig. 9), this peak is associated with a peak in the share of the end-use 
+machine tools and pumps. Primary-to-useful exergy efficiency, the 
+product of both efficiencies, increased sharply (grey line Fig. 9), mostly 
+due to the increase of primary-to-final exergy efficiency. Carbon in-
+tensity decreased to 0.85 kgCO2/kWh (CIF) and 2.13 kgCO2/kWh (CIU) 
+respectively by 1950, less than 1/5th of their 1900 values (orange and 
+blue lines Fig. 12), mainly because of primary-to-final efficiency im-
+provements. Nonetheless, CO2 emissions increased 24-fold during this 
+period due to the near 150-fold increase in electricity production (grey 
+line Fig. 12 and green line Fig. 5). 
+In the second period (1950–2017), electricity production from nu-
+clear, oil, and (more recently) natural gas sources rose in prominence 
+(Fig. 5). Whilst in the last decade (2007–2017) solar and wind have 
+become more important, their combined share remains less than 10% 
+(Fig. 5). Primary-to-final exergy efficiency increased significantly in the 
+1950–1960 decade, due to efficiency improvements in thermal power 
+plants, and stabilized until 1970 (blue line Fig. 9). After an increase in 
+the early 1970s, primary-to-final exergy efficiency stalled during the 
+following 40 years, rising slightly after 2005 (blue line Fig. 9) because of 
+increasing (a) fossil fuel thermal powerplant efficiency and (b) share of 
+solar/wind based electricity – which via the PCM method assumes 100% 
+primary-to-final efficiency. Comparative results using PSM and RCM 
+methods show similar results and can be seen in section A4.2 of the SI A. 
+Throughout 1950–2017, residential and commercial sectors 
+increased their shares of electricity consumption, at the expense of the 
+industrial sector (Fig. 6). These sectoral changes have impacted end-uses 
+as seen in the significant increase of the LTH end-use associated with the 
+increase of the residential and commercial sectors (Fig. 7). On the other 
+hand, the share of the machine tools and pumps end-uses decreased 
+sharply due to the decrease in share of the industrial sector (Fig. 7). 
+Between 1950 and 2017, cooling end-use share grew only 3% but 
+experienced a change in relative importance of its two constituents: the 
+relative weight of refrigeration reduced, while space cooling grew. 
+Final-to-useful exergy efficiency varied between 46% and 50% during 
+this period but remained overall stable (orange line Fig. 9), due to ef-
+ficiency dilution effects. Primary-to-useful exergy efficiency increased 
+until 1960, caused by the increase in primary-to-final exergy efficiency 
+and stabilized afterwards (grey line Fig. 9). In 2017, carbon intensity 
+was almost half the 1950 value (orange and blue lines Fig. 12). CIF 
+declined continuously until 1985. From 1950 to 1970, the decline in CIF 
+is caused by growing primary-to-final efficiency while from 1971 to 
+1985, carbon intensity improvements are explained by an increase in the 
+share of electricity production with no CO2 emissions, mostly nuclear 
+power. Although carbon intensity, CIF and CIU, stabilized between 1985 
+and 2014 (orange and blue lines Fig. 12), electricity production was not 
+flat (green line in Fig. 5). In fact, electricity production more than 
+doubled and therefore total electricity-based CO2 emissions also more 
+than doubled, between 1985 and 2014. The most recent decline in 
+carbon intensity (2014–2017) is caused by growth in wind and solar 
+electricity. 
+4.2. Electricity efficiency 
+End-use efficiency (i.e. more energy efficient cars, lights, heating 
+etc.) is commonly assumed to be a key driver of (primary and final) 
+energy reductions (and associated carbon emissions) in future scenarios 
+[2,3,13]. In contrast, our results show that: (1) individual exergy effi-
+ciencies grew throughout 1900–2017 (with the exception of LTH and 
+cooling) due to technological evolution, but aggregate primary-to-useful 
+exergy efficiency gains were significant only until mid 1930s (pri-
+mary-to-useful exergy efficiency grew 10% from 1900 until 1935 and 
+only 4% in the period 1935–2017) and (2) there is no obvious correla-
+tion between aggregate primary-to-useful exergy efficiency, electricity 
+consumption and CO2 emissions (Fig. 13). 
+Fig. 13. Annual electricity production based growth rates of CO2 emissions and primary-to-useful exergy efficiency of electricity shown as 10-year moving averages 
+(1910 represents the average annual growth rate between 1901 and 1910). 
+R. Pinto et al.                                                                                                                                                                                                                                    
+Energy 269 (2023) 126775
+11
+Two different stories have unfolded: primary-to-final exergy effi-
+ciency increased by a factor of 7, mainly in the period 1900–1960, and 
+stayed quite stable thereafter. Final-to-useful exergy efficiency increased 
+only slightly during the whole period from 44% (1900) to 47% (2017). 
+This near stagnation was due to efficiency dilution, where growing de-
+mand for less efficient end-uses (LTH and cooling) in residential and 
+commercial sectors offset efficiency gains of end-use devices. 
+To our knowledge, this study is the first to estimate world electricity 
+production and consumption efficiency over a long period. Other studies 
+have looked to specific countries for shorter time periods. The results 
+obtained for final-to-useful exergy efficiency for the USA in Ayres et al. 
+[22] also show that final-to-useful exergy efficiency remained approxi-
+mately constant during 1900–2000, due to the increase in LTH end-uses. 
+Felício et al. [23] show Portugal’s final-to-useful efficiencies are similar 
+in 1900 and 2014. Between those two years there is variation but, in the 
+beginning, (1900), and in the end (2014) of the period final-to-useful 
+efficiencies are both close to 30%. However, while world 
+final-to-useful exergy efficiency has remained constant since 2000, 
+Portugal’s show a continuous decrease, due to the growth of the resi-
+dential sector share. Our world results do not show a decrease in 
+primary-to-final exergy efficiency as found in the the long-term study for 
+Japan [25], because hydro was not as significant at the world level as in 
+Japan. Regarding primary-to-useful exergy efficiency, we estimate an 
+increase of 1% for 1960–2010, in line with the result for China [28], 
+USA, and UK [26]. 
+Global electricity consumption is expected to rise from 19% in 2022 
+to more than 40% of total final energy consumption by 2050 [2,3]. The 
+increase of electrification may contribute to an increase in the aggregate 
+final-to-useful exergy efficiency, because electricity end-uses typically 
+have higher final-to-useful exergy efficiencies compared to other 
+end-uses. Additionally, the mix of end-uses provided by electricity will 
+change significantly which might push the electricity final-to-useful ef-
+ficiency upwards if the increase in the electrification of transport dom-
+inates the transition. 
+4.3. Transitions 
+The time series of world electricity production and consumption 
+provides insight into future energy transitions, in particular electrifica-
+tion, renewables, and efficiency as potential drivers of decarbonization. 
+In the future, electrification of end-uses will create structural changes to 
+electricity consumption, with an increase in the share of electricity 
+consumption for the transport sector. Indeed, the transport sector share 
+is expected to reach over 20% of total electricity consumption by 2050, 
+while commercial and residential sectors are expected to decrease their 
+share [2]. Under those assumptions, aggregate world final-to-useful 
+exergy efficiency would increase because the transport sector is ex-
+pected to remain more efficient than the commercial and residential 
+sectors (Fig. 11). 
+The IEA forecasts predict that electricity production will double 
+between 2020 and 2050 [2]. The past increase in electricity production, 
+which doubled between 1990 and 2017 suggests that the IEA scenario is 
+feasible. In contrast, Jacobson et al. [13] states that if we transition 
+totally to electricity by 2050, electrify all end-uses currently using fossil 
+fuels, we will reduce final energy demand by more than 50%, compared 
+to a business-as-usual scenario but tripling electricity consumption be-
+tween 2020 and 2050 would require an increase in electricity produc-
+tion higher than observed in the past. 
+But will electrification and efficiency be enough to meet decarbonization 
+needed? Fig. 13 shows efficiency alone has never been sufficient to 
+decrease CO2 emissions, with no observed historical correlation between 
+rising primary-to-useful exergy efficiency and CO2 emissions decline 
+(Fig. 13). Our results suggest electrification and efficiency must be 
+linked with a deep renewables transition if decarbonization is to occur. 
+We know that a large-scale transition to renewables must happen 
+quickly (10–20 years) to meet Paris climate objectives. However, Fig. 5 
+shows that transition has been slow and too small to reduce electricity- 
+related CO2 emissions, which have increased almost every year. On 
+average across 1900–2017, 60% of electricity was produced using fossil 
+fuels (Fig. 5). There has been slowly increasing share of oil-based elec-
+tricity in the 1960s and early 1970s, nuclear electricity in the 1970s and 
+1980s, and natural gas based electricity in the 1990s until 2010. 
+Recently, there is a small increase in the share of renewables. Whilst 
+moving through decreasing carbon intensities of fuels (coal-oil-nuclear- 
+gas and now to renewables) are positive steps, past transitions have not 
+been sufficiently large to reduce electricity-related CO2 emissions, 
+which have increased almost every year (grey line Fig. 12). 
+Carbon intensity of electricity is an insufficient metric to assess 
+transitions if the goal is reducing CO2 emissions. During 1900–2017, 
+world carbon intensity dropped by around 90% (orange and blue lines 
+Fig. 12), a result similar to Felício et al. [23] results for Portugal. Ang 
+and Su [70] found similar results at the world level 1990–2013 for 
+carbon intensity at the final stage. However, carbon emissions increased 
+380-fold since 1900, as electricity production had a much larger 
+(4000-fold) increase since 1900. Historically, rising demand for elec-
+tricity (driven by economic growth and electrification of end-uses) has 
+always outstripped the capability of efficiency to reduce CO2 emissions. 
+In 2017, carbon intensity of electricity production was 0.49 kgCO2/ 
+kWh. Using the IRENA scenario for 2050 [3] a carbon intensity of 0.10 
+kgCO2/kWh is required, implying a further reduction of 0.39 
+kgCO2/kWh - a fifth of its current value, in less than 40 years. When we 
+compare to the decrease of 0.12 kgCO2/kWh between 1977 and 2017, 
+the tremendous challenge ahead is obvious. The necessary speed of 
+decrease of carbon intensity to meet Paris objectives is unprecedented. 
+4.4. Limitations 
+Final-to-useful exergy efficiency depends on the allocation to sectors, 
+and it also depends on the allocation to end-uses within the sectors. 
+Regarding allocation to sectors, IEA data were available after 1971 [34], 
+while before 1971 information for various countries was collected as 
+described in sections 2.3 of this paper and A2.1 of SI A. Considering 
+allocation to end-uses within each sector and subsector, we assumed the 
+USA as a proxy, except for the industrial sector where we used the 
+allocation to subsectors that were country-specific. For the residential 
+and commercial sectors, we used USA data to allocate sectoral con-
+sumption to end-uses. Although the USA is unlikely to be representative 
+of the sectoral electricity consumption patterns in every country, errors 
+associated with this assumption are minimized at the world level, 
+because the USA consumes a large share (36%) of world electricity 
+production on average over the time period of this study. 
+One way to estimate the uncertainty of our results is to undertake a 
+full sensitivity analysis, as for example done by Paoli et al. [71] but the 
+necessary data are not available, as in the past the uncertainty estimates 
+were not provided with statistics. Paoli et al. [71] state that “the main 
+source of uncertainty is found in the allocation to end-use applications”. 
+Therefore, to provide a check on the sensitivity of our results regarding 
+the allocation to end-uses within the residential sector, we replaced al-
+locations for every country except the US with allocations for Portugal 
+[23]. The results obtained were not significantly different: an average 
+final-to-useful exergy efficiency of 47.1% compared to 48.4% and a 
+similar trend. The differences between the two final-to-useful exergy 
+efficiency curves can be seen in section A4.4 of the SI A. 
+Other possible sources of uncertainty are the final-to-useful indi-
+vidual exergy efficiencies. To evaluate the sensitivity of our study, we 
+changed the efficiency of the end-use with the largest share (see Fig. 7), 
+machine tools and pumps. We changed the efficiency of machine tool 
+and pumps by 10% (for example in 1900 the efficiency went from 75% 
+to 82.5%) and obtained an average aggregate final-to-useful exergy ef-
+ficiency of 48.4% ± 2.8%. Additionally, this change did not affect the 
+overall trend of stagnation, see section A4.5 of the SI A for the 
+comparison. 
+R. Pinto et al.                                                                                                                                                                                                                                    
+Energy 269 (2023) 126775
+12
+This paper is only focused on electricity which means that our results 
+do not quantify the evolution of overall efficiency (efficiency consid-
+ering all final energy sources including oil, coal, etc.) and are insufficient 
+to evaluate the impact of switching from other fuels to electricity. 
+5. Conclusions 
+This work produced a novel long-run 1900–2017 global electricity 
+dataset that relates primary energy sources to final and useful energy 
+flows. We presented new figures for electricity production and con-
+sumption at a sectoral level, primary to final and final to useful exergy 
+efficiencies and final and useful carbon intensities of electricity. The 
+most striking finding is that world electricity energy efficiency 
+(measured as overall primary-to-useful exergy efficiency) has stalled, 
+rising dramatically from 2% in 1900 to 15% in 1960, and remaining 
+nearly stable for the last 50 years, only reaching 17% by 2017. The rapid 
+efficiency gain in the 1900–1960 period was due to the 6-fold rise (from 
+6% to 36%) in primary-to-final electricity efficiency (mainly due to 
+improvements in power station efficiency), as final-to-useful exergy ef-
+ficiency was stable, with an average of 48%, over 1900–2017. In the last 
+50 years, the stagnation of both electricity generation (primary-to-final) 
+exergy efficiency and end use (final-to-useful) exergy efficiency means 
+that the overall (primary-to-useful) electricity efficiency has remained 
+stable (15–17%) since 1960. Carbon intensities decreased significantly 
+until 1960, mainly due to increases in power station (primary-to-final) 
+energy conversion efficiency. In 2017, carbon intensities at the final and 
+useful energy stages were less than 10% their 1900 values. However, to 
+reach climate goals, a further decrease in carbon intensity to 20% of 
+current values (2% of 1900 values) is necessary before 2050. 
+The cause of the final-to-useful exergy efficiency stagnation in the 
+past is efficiency dilution caused by structural transitions and end-use 
+changes, such as the increasing share of low-temperature heating 
+caused by the increasing share of overall electricity consumption in the 
+residential and commercial sectors and the decreasing importance of 
+static mechanical work associated with the decrease in the share of the 
+industrial sector. The empirical result shows that final-to-useful effi-
+ciency has stalled because it has been significantly dependent on the 
+type of end-uses that were electrified, suggesting that future energy ef-
+ficiency may be mostly dictated by the mix of end-uses. The result em-
+phasizes that technological developments alone will not be the only 
+factor in changing aggregated electricity efficiency. Instead, shares of 
+key electrified technologies (transport, low-temperature heat and ICT) 
+in electricity consumption will have significant impacts on changing 
+aggregate electricity efficiencies upwards or downwards. Whether 
+overall efficiency increases or decreases will depend on technological 
+and policy choices and development patterns. For example, a crucial 
+question is whether developing and emerging economies will follow the 
+path of their forerunners. If developing economies become more service 
+based and expansion of household low-temperature heat and cooling 
+applications continue, we may expect end-use efficiencies to drop. On 
+the other hand, if developing economies leapfrog to electric cars and 
+avoid pollution intensive modes of transportation, end-use efficiencies 
+may increase and a brighter future might emerge. Our results show that 
+there is a need for a deeper investigation of the full impact of electrifi-
+cation on world energy efficiency. A follow-on study that includes the 
+remaining energy carriers (coal, oil, natural gas and biomass) will 
+enable comparisons among electricity and other energy carriers’ effi-
+ciencies by end-uses and forecasts of the full impact of electrification on 
+overall efficiency due to the forthcoming energy transition. 
+Overall, our study raises crucial questions for future renewable 
+electricity transitions. It is known that the key drivers of previous 
+transitions have been cheaper and/or better energy services [72]. (E.g., 
+electricity-altered production processes allowed radical reconfigura-
+tions of the factory floor [72].) It seems fair to ask whether electrifica-
+tion of transport and heating end uses could be driven similarly at 
+sufficient speed by a demand-side clamour for improved transportation 
+and heating services. If so, will climate policies be sufficient to drive a 
+supply-side transition to renewable sources for electricity generation at 
+sufficient speed to keep pace with demand-side electrification? Our re-
+sults show that the rate of increase in electricity production between 
+1900 and 2017 was 7.4%/year. However, between 1990 and 2017 the 
+rate of increase in electricity production was 2.9%/year which is higher 
+than the rate needed for the electrification of the world energy system 
+under IEA net zero emission scenario [2], 1.8%/year, but lower than the 
+rate of increase of electricity production necessary to reach nearly total 
+electrification as described in Jacobson et al. [13], which is 3.4%/year, 
+and much lower than the rate of increase outlined in Ram et al. [12], 
+5.2%/year. Additionally, the fastest transitions in the electricity gener-
+ation mix were the increase in fossil fuel share in the 1950s and 1960s 
+and the increase in nuclear share in the 1960s and the 1970s, none of 
+which exceeded 1%/year. The transition to non-hydro renewables has 
+been significant after the mid-2000s, rising from 0.6% to more than 6% 
+of total electricity production, however the increases in share have not 
+exceeded 1%/year, highlighting the need for a massive investment in 
+renewables and a significant decrease in new fossil fuel generation. Both 
+the electrification of end-uses and the transition to renewables are 
+required to meet Paris targets. The results presented above show that 
+doing both at sufficient speed will be unprecedented. 
+Credit author statement 
+Ricardo Pinto: Conceptualization, Methodology, Formal analysis, 
+Investigation, Data curation, Writing – original draft, Visualization. 
+Sofia T. Henriques: Conceptualization, Methodology, Investigation, 
+Writing – review & editing. Paul E. Brockway: Conceptualization, 
+Methodology, Writing – review & editing, Supervision. Matthew Kupe-
+rus Heun: Conceptualization, Methodology, Writing – review & editing. 
+Tˆania Sousa: Conceptualization, Methodology, Writing – review & 
+editing, Supervision, Project administration. 
+Declaration of competing interest 
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper. 
+Data availability 
+SI B contains the data used to build the graphs displayed in this 
+paper. Any need for more detailed data will be made available on 
+request. 
+Acknowledgments 
+The authors are grateful to Zeke Marshall for the help with cooling 
+data and efficiency; to Roger Fouquet for the help with UK data; and to 
+Laura Felício and Tiago Domingos for their insightful suggestions. 
+Ricardo Pinto’s work was supported by Fundaç˜ao para a Ciˆencia e 
+Tecnologia through the individual research grant SFRH/BD/146923/ 
+2019. Paul Brockway’s time was funded by the UK Research and Inno-
+vation (UKRI) Council, supported under EPSRC Fellowship award EP/ 
+R024254/1. Sofia Henriques acknowledges the generous support of 
+Handelsbanken and Crafoord foundation for the projects “Energy use 
+and economic growth: a long-run European study 1870–2013”. 
+Appendix A. Supplementary data 
+The supplementary information is divided in two documents. The 
+first is a word document entitled “SI A Methodology and supplementary 
+results” where details about the methodology and some additional re-
+sults are presented. The second is an excel document entitled “SI B data” 
+and contains the data used to build the graphs displayed in this paper. 
+R. Pinto et al.                                                                                                                                                                                                                                    
+Energy 269 (2023) 126775
+13
+Supplementary data to this article can be found online at https://doi.org 
+/10.1016/j.energy.2023.126775. 
+References 
+[1] De Stercke S. Dynamics of energy systems: a useful perspective. IIASA Interim 
+Report,IIASA; 2014. 
+[2] IEA (International Energy Agency). Net zero by 2050. 2021. Paris. 
+[3] International Renewable Energy Agency (IRENA). Global energy transformation: a 
+roadmap to 2050. 2018. 
+[4] IEA (International Energy Agency). World energy outlook 2018. 2018. 
+[5] Goh T, Ang BW, Su B, Wang H. Drivers of stagnating global carbon intensity of 
+electricity and the way forward. Energy Pol 2018;113:149–56. https://doi.org/ 
+10.1016/j.enpol.2017.10.058. 
+[6] Rogelj J, Luderer G, Pietzcker RC, Kriegler E, Schaeffer M, Krey V, et al. Energy 
+system transformations for limiting end-of-century warming to below 1.5 ◦C. Nat 
+Clim Change 2015;5:519–27. https://doi.org/10.1038/nclimate2572. 
+[7] IEA, International Renewable Energy Agency (IRENA), UNSD, World Bank. WHO. 
+Tracking SDG 7: the energy progress report 2020. 2020. Washington DC. 
+[8] Brockway PE, Sorrell S, Semieniuk G, Heun MK, Court V. Energy efficiency and 
+economy-wide rebound effects: a review of the evidence and its implications. 
+Renew Sustain Energy Rev 2021;141:110781. https://doi.org/10.1016/j. 
+rser.2021.110781. 
+[9] Santos J, Domingos T, Sousa T, st Aubyn M. Useful exergy is key in obtaining 
+plausible aggregate production functions and recognizing the role of energy in 
+economic growth: Portugal 1960–2009. Ecol Econ 2018;148:103–20. https://doi. 
+org/10.1016/j.ecolecon.2018.01.008. 
+[10] Herring H. Energy efficiency - a critical view. Energy 2006;31:10–20. https://doi. 
+org/10.1016/j.energy.2004.04.055. 
+[11] Waite M, Cohen E, Torbey H, Piccirilli M, Tian Y, Modi V. Global trends in urban 
+electricity demands for cooling and heating. Energy 2017;127:786–802. https:// 
+doi.org/10.1016/j.energy.2017.03.095. 
+[12] Ram MA, Bogdanov D, Aghahosseini A, Gulagi A, Oyewo SA, Child M, et al. Global 
+energy system based on 100% renewable energy - power, heat, transport and 
+desalination. Berlin: Lappeenranta; 2019. 
+[13] Jacobson MZ, Delucchi MA, Cameron MA, Coughlin SJ, Hay CA, Manogaran IP, 
+et al. Impacts of green new deal energy plans on grid stability, costs, jobs, health, 
+and climate in 143 countries. One Earth 2019;1:449–63. https://doi.org/10.1016/ 
+j.oneear.2019.12.003. 
+[14] Teske S. Achieving the paris climate agreement goals: global and regional 100% 
+renewable energy scenarios with non-energy GHG pathways for +1.5◦C and +2◦C. 
+Springer International Publishing; 2019. https://doi.org/10.1007/978-3-030- 
+05843-2. 
+[15] Van Heddeghem W, Lambert S, Lannoo B, Colle D, Pickavet M, Demeester P. 
+Trends in worldwide ICT electricity consumption from 2007 to 2012. Comput 
+Commun 2014;50:64–76. https://doi.org/10.1016/j.comcom.2014.02.008. 
+[16] Reistad GM. Available energy conversion and utilization in the United States. 
+Journal of Engineering for Power 1975;97:429–34. https://doi.org/10.1115/ 
+1.3446026. 
+[17] Serrenho AC, Warr B, Sousa T, Ayres RU, Domingos T. Structure and dynamics of 
+useful work along the agriculture-industry-services transition: Portugal from 1856 
+to 2009. Struct Change Econ Dynam 2016;36:1–21. https://doi.org/10.1016/j. 
+strueco.2015.10.004. 
+[18] Serrenho AC, Sousa T, Warr B, Ayres RU, Domingos T. Decomposition of useful 
+work intensity: the EU (European Union)-15 countries from 1960 to 2009. Energy 
+2014;76:704–15. https://doi.org/10.1016/j.energy.2014.08.068. 
+[19] Ferguson R, Wilkinson W, Hill R. Electricity use and economic development. 
+Energy Pol 2000;28:923–34. https://doi.org/10.1016/S0301-4215(00)00081-1. 
+[20] Ayres RU, Ayres LW, Warr B. Exergy, power and work in the US economy, 1900 – 
+1998. Energy 2003;28:219–73. https://doi.org/10.1016/S0360-5442(02)00089-0. 
+[21] Heun MK, Brockway PE. Meeting 2030 primary energy and economic growth 
+goals: mission impossible? Appl Energy 2019;251:112697. https://doi.org/ 
+10.1016/j.apenergy.2019.01.255. 
+[22] Ayres RU, Ayres LW, Pokrovsky V. On the efficiency of US electricity usage since 
+1900. Energy 2005;30:1092–145. https://doi.org/10.1016/j.energy.2004.07.012. 
+[23] Felício L, Henriques ST, Domingos T, Serrenho AC, Sousa T. Insights from past 
+trends in exergy efficiency and carbon intensity of electricity: Portugal, 
+1900–2014. Energies (Basel); 2019. https://doi.org/10.3390/en12030534. 
+[24] Guevara Z, Sousa T, Domingos T. Insights on energy transitions in Mexico from the 
+analysis of useful exergy 1971–2009, vol. 9. Energies (Basel); 2016. https://doi. 
+org/10.3390/en9070488. 
+[25] Williams E, Warr B, Ayres RU. Efficiency dilution: long-term exergy conversion 
+trends in Japan. Environ Sci Technol 2008;42:4964–70. https://doi.org/10.1021/ 
+es0716756. 
+[26] Brockway PE, Barrett JR, Foxon TJ, Steinberger JK. Divergence of trends in US and 
+UK aggregate exergy efficiencies 1960-2010. Environ Sci Technol 2014;48: 
+9874–81. https://doi.org/10.1021/es501217t. 
+[27] Eisenmenger N, Warr B, Magerl A. Trends in Austrian resource efficiency: an 
+exergy and useful work analysis in comparison to material use, CO 2 emissions, and 
+land use. J Ind Ecol 2017;21:1250–61. https://doi.org/10.1111/jiec.12474. 
+[28] Brockway PE, Steinberger JK, Barrett JR, Foxon TJ. Understanding China’s past 
+and future energy demand: an exergy efficiency and decomposition analysis. Appl 
+Energy 2015;155:892–903. https://doi.org/10.1016/j.apenergy.2015.05.082. 
+[29] Sousa T, Brockway PE, Cullen JM, Miller J, Cabrera A, Domingos T. The need for 
+robust, consistent methods in societal exergy accounting. Ecol Econ 2017;141: 
+11–21. https://doi.org/10.1016/j.ecolecon.2017.05.020. 
+[30] Cullen JM, Allwood JM. The efficient use of energy: tracing the global flow of 
+energy from fuel to service. Energy Pol 2010;38:75–81. https://doi.org/10.1016/j. 
+enpol.2009.08.054. 
+[31] Naki´cenovi´c N, Gilli PV, Kurz R. Regional and global exergy and energy 
+efficiencies. Energy 1996;21:223–37. https://doi.org/10.1016/0360-5442(96) 
+00001-1. 
+[32] Palma M, Sousa T, Guevara Z. How much detail should we use to compute societal 
+aggregated exergy efficiencies? Energies 2016;9. https://doi.org/10.3390/ 
+en9050364. 
+[33] Etemad B, Luciani J, Bairoch P, Toutain J-C. World energy production. 
+Switzerland: DROZ; 1991. 
+[34] International Energy Agency (IEA). Extended world energy balances. IEA World 
+Energy Statistics and Balances (Database); 2018. https://doi.org/10.1787/data- 
+00513-en. 
+[35] Heun MK, Marshall Z, Aramendia E, Brockway PE. The energy and exergy of light 
+with application to societal exergy analysis. Energies 2020;13:1–24. https://doi. 
+org/10.3390/en13205489. 
+[36] Dominion Bureau of Statistics. The Canada year book. 1925-1977. 1925. 
+[37] Statistischen reichsamt. Statistisches Jahrbuch für das Deutsche Reich. 1928-1941. 
+1928. 
+[38] Staatlichen zentralverwaltung für statistik. Statistisches jahrbuch der Deutschen 
+demokratischen republik. 1955-1971. 1955. 
+[39] Statistisches bundesamt. Statistisches Jahrbuch für die Bundesrepublik 
+Deutschland. 1953-1972. 1953. 
+[40] Japan Statistics Association Historical statistics of Japan, 1868-1984. https://warp. 
+da.ndl.go.jp/info:ndljp/pid/11423429/www.stat.go.jp/english/data/chouki/10. 
+html. [Accessed 17 February 2020]. 
+[41] Mitchell BR. European historical statistics 1750–2010. London: MacMillan; 2013. 
+[42] Department of Energy & Climate Change (DECC). Historical electricity data: 1920 
+to 2019. https://www.gov.uk/government/statistical-data-sets/historical-electricit 
+y-data. [Accessed 22 January 2020]. 
+[43] United States Bureau of the Census. Historical statistics of the United States, 
+colonial times to 1970. Bicentennial Ed. Washington, DC: United States 
+Government Printing Office; 1975. 
+[44] U.S.S.R Commitee for International Scientific and Technical Conferences. Electrical 
+power development in the USSR. INBA publishing society; 1936. 
+[45] National Foreign Assessment Center. USSR: development of the gas industry. A 
+research paper. The center; 1978. 
+[46] Wilson D. The demand for energy in soviet union. Rowman & Allanheld; 1983. 
+[47] Institut national de la statistique et des ´Etudes ´Economiques. Annuaire statistique 
+de la France; 1966. 
+[48] Instituto Nacional Estadistica. Anuario estadistico de Espa˜na. 1930-1961. 1930. 
+[49] Malanima P. Energy consumption in Italy in the 19th and 20th centuries: a 
+statistical outline. 2006. 
+[50] Italian National Institute of Statistics. Gross electricity production and final 
+electricity consumption in Italy - years 1883-2014. http://seriestoriche.istat.it/ 
+index.php?id=1&no_cache=1&L=1&no_cache=1&tx_usercento_centofe%5Bcate 
+goria%5D=31&tx_usercento_centofe%5Baction%5D=show&tx_usercento_centofe 
+%5Bcontroller%5D=Categoria&cHash=579686ba1e4b0850cf494bfb15f55d77. 
+[Accessed 14 March 2020]. 
+[51] Isabel Bartolom´e Rodríguez. La Industria El´ectrica en Espa˜na (1890- 1936). 
+Estudios de Historia Econ´omica - Banco de Espa˜na 2007;50:165. 
+[52] Bordes J. Les barrages en France du XVIII `e `a la fin du XX `e si`ecle Histoire , 
+´evolution technique et transmission du savoir. 1994. p. 70–120. 
+[53] Organisation for European Economic Co-operation (OEEC). The electricity supply 
+industry in europe. 1955. 
+[54] Castelli F. Developments in the use of fuels for thermal power generation in Italy. 
+Sixth world Power Conference; 1962. 
+[55] Norwegian Water Resources and Energy Directorate. Utbygd vannkraft i Norge. 
+Oslo: Norges Vassdrags- Og Elektrisitetsforening; 1946. 
+[56] Statistisk Sentralbyra. Statistisk årbok for norge. 1940-1970. 1940. 
+[57] Kander A, Malanima P, Warde P. Power to the people: energy in europe over the 
+last five centuries. 2013. https://doi.org/10.1017/S0022050715001011. 
+[58] Bureau of census and statistics. Union Statistics for fifty years. Pretoria; 1960. 
+[59] Rubio MDM, Tafunell X. Latin American hydropower: a century of uneven 
+evolution. Renew Sustain Energy Rev 2014;38:323–34. https://doi.org/10.1016/j. 
+rser.2014.05.068. 
+[60] Ertesvåg IS, Mielnik M. Exergy analysis of the Norwegian society. Energy 2000;25: 
+957–73. https://doi.org/10.1016/S0360-5442(00)00025-6. 
+[61] World Power Conference. Statistical year book of the world power conference 
+No.8. 1956. 
+[62] World Power Conference. Statistical year book of the world power conference No. 
+9. 1960. 
+[63] Urquhart MC, Buckley KAH. Historical statistics Canada.pdf. 1965. 
+[64] Statistiska centralbyrån. Stockholm: Statistisk årsbok f¨or Sverige; 1925. 
+[65] Union Internationale des Producteurs et Distributeurs D’´Energie ´Electrique 
+(UNIPEDE). Statistiques. (Several issues) years between 1937 and 1952. 1937. 
+[66] Eggleston HS, Buendia L, Miwa K, Ngara T, Tanabe K. IPCC guidelines for national 
+greenhouse gas inventories, ume 2. Energy. Japan: Institute for Global 
+Environmental Strategies; 2006. 
+[67] Dones R, Heck T, Hirschberg S. Greenhouse gas emissions from energy systems, 
+comparison and overview. Encyclopedia of Energy 2004;77–95. https://doi.org/ 
+10.1016/B0-12-176480-X/00397-1. 
+R. Pinto et al.                                                                                                                                                                                                                                    
+Energy 269 (2023) 126775
+14
+[68] Weisser D. A guide to life-cycle greenhouse gas (GHG) emissions from electric 
+supply technologies. Energy 2007;32:1543–59. https://doi.org/10.1016/j. 
+energy.2007.01.008. 
+[69] Dahmus JB. Can efficiency improvements reduce resource consumption? A 
+historical analysis of ten activities. J Ind Ecol 2014;18:883–97. https://doi.org/ 
+10.1111/jiec.12110. 
+[70] Ang BW, Su B. Carbon emission intensity in electricity production: a global 
+analysis. Energy Pol 2016;94:56–63. https://doi.org/10.1016/j. 
+enpol.2016.03.038. 
+[71] Paoli L, Lupton RC, Cullen JM. Probabilistic model allocating primary energy to 
+end-use devices. Energy Proc 2017;142. https://doi.org/10.1016/j. 
+egypro.2017.12.180. 
+[72] Fouquet R. The slow search for solutions: lessons from historical energy transitions 
+by sector and service. Energy Pol 2010;38:6586–96. https://doi.org/10.1016/j. 
+enpol.2010.06.029. 
+[73] Marshall ZHM, Brockway PE, Aramendia E, Steenwyk P, Relph T, Widjanarko M, 
+et al. A Multi-Regional Primary-Final-Useful (MR-PFU) energy and exergy database 
+v1.0, 1960-2020. 2023. https://doi.org/10.5518/1199 [Dataset]. 
+R. Pinto et al.                                                                                                                                                                                                                                    

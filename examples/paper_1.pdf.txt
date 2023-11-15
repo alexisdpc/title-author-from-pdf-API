@@ -1,0 +1,1373 @@
+Pharmaceuticals 2013, 6, 1543-1575; doi:10.3390/ph6121543 
+ 
+pharmaceuticals 
+ISSN 1424-8247 
+www.mdpi.com/journal/pharmaceuticals 
+Review 
+Antimicrobial Peptides 
+Ali Adem Bahar 1,2 and Dacheng Ren 1,2,3,4,* 
+1 Department of Biomedical and Chemical Engineering, Syracuse University, Syracuse, NY 13244, USA; 
+E-Mail: abahar@syr.edu 
+2 Syracuse Biomaterials Institute, Syracuse University, Syracuse, NY 13244, USA 
+3 Department of Civil and Environmental Engineering, Syracuse University, Syracuse, NY 13244, USA 
+4 Department of Biology, Syracuse University, Syracuse, NY 13244, USA 
+* Author to whom correspondence should be addressed; E-Mail: dren@syr.edu;  
+Tel.: +1-315-443-4409; Fax: +1-315-443-9175. 
+Received: 22 October 2013; in revised form: 21 November 2013 / Accepted: 25 November 2013 /  
+Published: 28 November 2013  
+ 
+Abstract: The rapid increase in drug-resistant infections has presented a serious challenge 
+to antimicrobial therapies. The failure of the most potent antibiotics to kill “superbugs” 
+emphasizes the urgent need to develop other control agents. Here we review the history 
+and new development of antimicrobial peptides (AMPs), a growing class of natural and 
+synthetic peptides with a wide spectrum of targets including viruses, bacteria, fungi, and 
+parasites. We summarize the major types of AMPs, their modes of action, and the common 
+mechanisms of AMP resistance. In addition, we discuss the principles for designing 
+effective AMPs and the potential of using AMPs to control biofilms (multicellular 
+structures of bacteria embedded in extracellular matrixes) and persister cells (dormant 
+phenotypic variants of bacterial cells that are highly tolerant to antibiotics). 
+Keywords: antimicrobial peptide; biofilm; persister 
+ 
+1. Sources and History of Antimicrobial Peptides 
+Antimicrobial peptides (AMPs) are oligopeptides with a varying number (from five to over a 
+hundred) of amino acids. AMPs have a broad spectrum of targeted organisms ranging from viruses to 
+parasites. Historically AMPs have also been referred to as cationic host defense peptides [1], anionic 
+antimicrobial peptides/proteins [2], cationic amphipathic peptides [3], cationic AMPs [4], host defense 
+peptides [5], and α-helical antimicrobial peptides [6]. 
+OPEN ACCESS
+Pharmaceuticals 2013, 6 
+1544 
+ 
+ 
+The discovery of AMPs dates back to 1939, when Dubos [7,8] extracted an antimicrobial agent 
+from a soil Bacillus strain. This extract was demonstrated to protect mice from pneumococci infection. 
+In the following year, Hotchkiss and Dubos [9] fractionated this extract and identified an AMP which 
+was named gramicidin. Despite some reported toxicity associated with intraperitoneal application [9], 
+gramicidin was found effective for topical treatment of wounds and ulcers [10]. In 1941, another AMP, 
+tyrocidine, was discovered and found to be effective against both Gram-negative and Gram-positive 
+bacteria [11]. However, tyrocidine exhibited toxicity to human blood cells [12]. In the same year, 
+another AMP was isolated from a plant Triticumaestivum [13], which was later named purothionin and 
+found effective against fungi and some pathogenic bacteria [14]. 
+The first reported animal-originated AMP is defensin, which was isolated from rabbit leukocytes in 
+1956 [15]. In the following years, bombinin from epithelia [16] and lactoferrin from cow milk [17] 
+were both described. During the same time, it was also proven that human leukocytes contain AMPs in 
+their lysosomes [18]. 
+In total, more than 5,000 AMPs have been discovered or synthesized up to date [19]. Natural AMPs 
+can be found in both prokaryotes (e.g., bacteria) and eukaryotes (e.g., protozoan, fungi, plants, insects, 
+and animals) [20–23]. In animals, AMPs are mostly found in the tissues and organs that are exposed to 
+airborne pathogens; and are believed to be the first line of the innate immune defense [24,25] against 
+viruses, bacteria, and fungi [21]. Thus, AMPs play an important role in stopping most infections before 
+they cause any symptoms. For example, frog skin is the source of more than 300 different AMPs [20,26]. 
+Most AMPs are produced by specific cells at all times, while the production of some AMPs is 
+inducible. For example, using silk moth as a model system, Hultmark and colleagues [27] demonstrated 
+that P9A and P9B can be induced in hemolymph by vaccination with Enterobacter cloacae. In another 
+study [28], epithelial cells from different tissues of mice showed increased rate of mRNA transcription 
+for defensin production after infection with Pseudomonas aeruginosa PAO1. 
+Several types of eukaryotic cells are involved in AMP production such as lymphs, epithelial cells in 
+gastrointestinal and genitourinary systems [29,30], phagocytes [31], and lymphocytes of the immune 
+system [21,32]. In addition to direct involvement in innate immunity, AMPs have also been found  
+to influence host’s inflammatory responses during an infection [33–35]. It is known that 
+lipopolysaccharide (LPS) molecules, released from bacteria as a result of antibiotic treatment or host 
+immunity, can induce AMP production in mammals [31]. For example, HEK293 cells produce 
+defensin in response to LPS stimulation [36]. Some AMPs (e.g., CAP18 [37], CAP35 [38], and a 
+lactoferrin-derivative [39]) can also block LPS-induced cytokine release by macrophages. Thus, these 
+AMPs can reduce inflammatory response. In comparison, antibiotics do not have this type of 
+regulation on inflammatory response of the host immune system; and LPS secretion following 
+antibiotic treatment might cause over-reaction of the host immune system. In some extreme cases, this 
+can even lead to sepsis [31,40]. 
+2. Structure and Major Activities of AMPs 
+Most AMPs reported to date can be characterized as one of the following four types based on their 
+secondary structures: β-sheet, α-helix, extended, and loop. Among these structural groups, α-helix and 
+β-sheet structures are more common [41]; and α-helical peptides are the most studied AMPs to date.  
+Pharmaceuticals 2013, 6 
+1545 
+ 
+ 
+In α-helix structures the distance between two adjacent amino acids is around 0.15 nm and the angle 
+between them with regard to the center is around 100 degree from the top view (Figure 1A). The best 
+known examples of such AMPs are protegrin, magainin, cyclic indolicin, and coiled indolicin [6].  
+β-sheet peptides are composed of at least two β-strands with disulfide bonds between these strands [42]. 
+Figure 1. Schematic representation of an α-helical AMP. This figure assumes the same  
+α-helix propensity for all amino acids in the peptide structure. (A) Helical wheel projection 
+of the AMP (top view). The angle between two consecutive amino acids in the sequence is 
+100 degree. Dotted lines show two adjacent amino acids in the primary structure. (B) Side 
+view of the peptide. The distance between two adjacent amino acids, “n”, is 0.15 nm. 
+ 
+While most AMPs belong to one of the above four classes, some AMPs do not belong to any of 
+these groups [43]. Some AMPs contain two different structural components [44]. Also, many peptides 
+form their active structure only when they interact with the membranes of target cells. For example, 
+indolicin shows globular and amphipathic conformation in aqueous solutions while it is wedge-shaped 
+in lipid bilayer mimicking environments [45]. This AMP also changes its conformation during 
+interaction with DNA evidenced with decreased fluorescence intensity and a slight shift in the 
+wavelength of maximum emission [46]. 
+Unlikely antibiotics, which target specific cellular activities (e.g., synthesis of DNA, protein, or  
+cell wall), AMPs target the lipopolysaccharide layer of cell membrane, which is ubiquitous in 
+microorganisms. Having a high level of cholesterol and low anionic charge puts eukaryotic cells out of 
+the target range of many AMPs [47]. 
+Another important feature of AMPs is their rapid killing effect. Some AMPs can kill in seconds 
+after the initial contact with cell membrane [48]. AMPs are also known to enhance the activities of 
+antibiotics through synergistic effects. For example, the combination of penicillin with pediocin and 
+ampicillin with nisin Z exhibited killing of Pseudomonas fluorescens with 13- and 155-fold lower 
+minimum inhibitory concentration (MIC), respectively, compared to using antibiotics alone [49]. 
+Because AMPs are made with amino acids, it is relatively easy to modify the structure (including 
+library construction and screening) and immobilize AMPs on surfaces [50]. It is possible to make fully 
+synthetic peptides by chemical synthesis [51] or by using recombinant expression systems [52,53]. 
+These artificial sources of AMPs are useful for modification of existing AMPs and for designing new 
+synthetic AMPs. Such modifications have potential to change the targets of AMPs and improve the 
+stability of AMPs against proteases [54]. 
+Pharmaceuticals 2013, 6 
+1546 
+ 
+ 
+Despite these advantageous features of AMPs, there are still some challenges to their applications, 
+such as potential toxicity to humans [12,55,56], sensitivity to harsh environmental conditions 
+(susceptibility to proteases and extreme pH [57,58]), lack of selectivity against specific strains [59], 
+high production costs [60], folding issues of some large AMPs [61], reduced activity when used for 
+surface coating [62], and bacterial resistance to some AMPs [63,64]. In the following section we will 
+discuss the modes of actions of AMPs and the current efforts to address the above challenges. 
+3. Major Categories of AMPs and Mechanisms of Action 
+3.1. Classification 
+In general, enzymatic mechanisms are not involved in the antimicrobial activities of AMPs [65]. 
+For example, even though lysozyme is a monomeric peptide, it is not classified as an AMP because it 
+is relatively large (148 aa) and kills bacteria through enzymatic activities by breaking 1,4--linkages in 
+peptidoglycan chains [66]. In this review, we categorize AMPs based on their target, and mode of 
+action. For natural AMPs, we will focus on those from eukaryotes, especially mammals. 
+3.1.1. Antiviral Peptides 
+Antiviral AMPs neutralize viruses by integrating in either the viral envelope or the host cell 
+membrane. Previous studies have shown that both enveloped RNA and DNA viruses can be targeted 
+by antiviral AMPs [67,68]. AMPs can integrate into viral envelopes and cause membrane instability, 
+rendering the viruses unable to infect host cells [69,70]. AMPs can also reduce the binding of viruses 
+to host cells [71]. For example, defensins bind to the viral glycoproteins making herpes simplex 
+viruses (HSV) unable to bind to the surface of host cells [72]. 
+Besides disruption of viral envelopes and blocking viral receptors, some antiviral AMPs can prevent 
+viral particles from entering host cells by occupying specific receptors on mammalian cells [73,74]. 
+For example, heparan sulfate is important for the attachment of HSV viral particles to the host cell 
+surface [75]. The heparan sulfate molecules are negatively charged glycosaminoglycan molecules [76]. 
+Thus, some α-helical cationic peptides, e.g., lactoferrin [77], can prevent HSV infections by binding to 
+heparan molecules and blocking virus-receptor interactions [78]. 
+Compared to the above AMPs that target viral receptors on cell surface, some AMPs do not 
+compete with viral glycoproteins for binding to the heparansulphate receptors on cell surface. Instead, 
+these antiviral AMPs can cross the cell membrane and localize in the cytoplasm and organelles, 
+causing changes in the gene expression profile of the host cells, which can help the host defense 
+system fight against viruses or block viral gene expression. For example, NP-1, an AMP from rabbit 
+neutrophils, prevents Vero and CaSki cell lines from infection by herpes simplex viruses type 2  
+(HSV-2). This AMP stops the viruses by preventing the migration of a major viral protein, VP16, into 
+the nucleus. This viral protein is required to form complexes with the host transcriptional factors to 
+induce the expression of immediate early viral genes, which are required for the virus to defeat the first 
+stage cellular response [79]. Thus, this AMP does not compete with viral particles to bind to the 
+receptor on cell surface but it prevents cell-to-cell spread of viral particles [80]. 
+Pharmaceuticals 2013, 6 
+1547 
+ 
+ 
+3.1.2. Antibacterial Peptides 
+Antibacterial AMPs are the most studied AMPs to date and most of them are cationic AMPs, which 
+target bacterial cell membranes and cause disintegration of the lipid bilayer structure [81,82].  
+The majority of these AMPs are also amphipathic with both hydrophilic and hydrophobic domains. 
+Such structures provide AMPs the capability to bind to lipid components (hydrophobic region) and 
+phospholipid groups (hydrophilic region) [47]. 
+Interestingly, researchers have demonstrated that some AMPs at low concentrations can kill 
+bacteria without changing the membrane integrity. Instead of directly interacting with the membrane, 
+these AMPs kill bacteria by inhibiting some important pathways inside the cell such as DNA 
+replication and protein synthesis [83]. For example, buforin II can diffuse into cells and bind to DNA 
+and RNA without damaging the cell membrane [84]. Drosocin, pyrrhocoricin, and apidaecin are other 
+examples of such AMPs. These AMPs have 18–20 amino acid residues with an active site for their 
+intracellular target [85,86]. 
+In some cases, certain AMPs have been shown to kill antibiotic resistant bacteria. For example, 
+both nisin (an AMP) and vancomycin (an antibiotic), can block cell wall synthesis. However,  
+a methicillin resistant Staphylococcus aureus (MRSA) strain was reported to be resistant to vancomycin, 
+while it is still sensitive to nisin [87]. 
+3.1.3. Antifungal Peptides 
+Like antibacterial AMPs, antifungal peptides can kill fungi by targeting either the cell wall [88,89] 
+or intracellular components [90]. However, bacterial membrane and fungi cell wall have different 
+contents. For example, chitin is one of the major components of fungal cell walls and some of 
+antifungal peptides are capable of binding to chitin [91–93]. Such binding ability helps AMPs to target 
+fungal cells efficiently. Cell wall targeting-antifungal AMPs kill the target cells by disrupting the 
+integrity of fungal membranes [94,95], by increasing permeabilization of the plasma membrane [96], 
+or by forming pores directly [97]. 
+Although the majority of antifungal AMPs have polar and neutral amino acids in their structures, [47] 
+there does not appear to be a clear correlation between the structure of an AMP and the type of cells 
+that it targets. For example, antifungal peptides have members from different structure classes such as 
+α-helical (D-V13K [98] and P18 [99]), extended (indolicin [100]), and β-sheet (defensins [101]). 
+3.1.4. Antiparasitic Peptides 
+Antiparasitic peptides are a smaller group compared to other three AMP classes. The first antiparasitic 
+peptide reported is magainin, which is able to kill Paramecium caudatum [102]. Later, a synthetic 
+peptide was developed against Leishmania parasite [103]. Another example of antiparasitic peptide is 
+cathelicidin, which is able to kill Caernohabditis elegans by forming pores in the cell membrane [104]. 
+Even though some parasitic microorganisms are multicellular, the mode of action of antiparasitic 
+peptides is the same as other AMPs. They kill cells by directly interacting with cell membrane [104]. 
+Pharmaceuticals 2013, 6 
+1548 
+ 
+ 
+3.2. Mechanism of Action 
+As described above, AMPs kill cells by disrupting membrane integrity (via interaction with 
+negatively charged cell membrane), by inhibiting proteins, DNA and RNA synthesis, or by interacting 
+with certain intracellular targets. All AMPs known by the late-90s are cationic. However, the concept 
+that AMPs need to be cationic was changed later with the discovery of negatively charged AMPs in 
+1997 [105]. For example maximin-H5 [106] from frog skin and dermicidin [107] secreted from sweat 
+gland tissues of human are both anionic peptides. 
+Generally an AMP is only effective against one class of microorganisms (e.g., bacteria or fungi) [31]. 
+However, there are exceptions and some AMPs are known to have different modes of action against 
+different types of microorganisms. For example, indolicidin can kill bacteria, fungi, and HIV [69,108]. 
+It exhibits antifungal activities by causing damages to cell membrane [100]. However, it kills E. coli 
+by penetrating into the cells and inhibiting DNA synthesis [109]; and it shows anti-HIV activities by 
+inhibiting HIV-integrase [110]. In comparison; some AMPs have the same mode of killing of different 
+cell types. For example, PMAP-23 can kill both fungi and parasites by forming pores in their cell 
+membranes [104,111]. 
+One third of the total proteins of a bacterial cell are associated with the membrane and these 
+proteins have many functions that are critical to the cell including active transport of nutrients, 
+respiration, proton motive force, ATP generation, and intercellular communication [112]. The function 
+of these proteins can be altered with AMP treatment even if complete cell lysis does not occur. 
+Therefore, AMPs’ rapid killing effect does not only come from membrane disruption but can also 
+come from inhibition of these functional proteins. 
+3.2.1. Membrane-Active AMPs 
+Even if intracellular targets are involved, an initial cell membrane interaction with peptides is 
+required for the antimicrobial activities of AMPs [113]; and this interaction determines the spectrum of 
+target cells. Most membrane-active AMPs are amphipathic, which means that they have both cationic 
+and hydrophobic faces. This feature ensures the initial electrostatic interaction with the negatively 
+charged cell membrane and the insertion into membrane interior. The actions of AMPs do not stop 
+after this initial interaction. The hydrophobic part of an AMP helps insert the AMP molecule into the 
+cell membrane [114]. So the interaction mainly includes ionic and hydrophobic interactions. These 
+interactions mostly depend on two properties, e.g., cationic state and hydrophobicity of the peptide. 
+The major types of membrane-active AMPs and the mechanisms of their actions are summarized in 
+Table 1 and Figure 2. 
+Pharmaceuticals 2013, 6 
+1549 
+ 
+ 
+Table 1. The action mechanisms of membrane-active AMPs. 
+Interaction model 
+Mechanism 
+References 
+Carpet like 
+(Detergent-like) 
+The peptide micelle touches the membrane first and coats a small 
+area of the membrane. Then AMP molecules penetrate the lipid 
+bilayer to let pore formation occur leaving holes behind. 
+[115–117] 
+Membrane thinning 
+AMPs insert themselves into only one side of the lipid bilayer. It can 
+form a gap between lipid molecules at the chain region. This gap 
+creates a force and pulls the neighboring lipid molecules to fill it. 
+[118–120] 
+Aggregate 
+AMPs stick to the membrane parallel to the surface. Then 
+reorientation of AMPs occurs and they insert themselves into the 
+membrane vertically to form sphere-like structures. 
+[115,121–123] 
+Toroidal pore 
+AMPs align perpendicularly into the bilayer structure with their 
+hydrophobic regions associated with the center part of the lipid 
+bilayer and their hydrophilic regions facing the pore. 
+[83,123] 
+Barrel-stave 
+Staves are formed first parallel to the cell membrane. Then barrels 
+are formed and AMPs are inserted perpendicularly to the plane of 
+the membrane bilayer. 
+[82,124,125] 
+Figure 2. Schematic representation of some action mechanisms of membrane-active AMPs. 
+(A) Barrel-Stave model. AMP molecules insert themselves into the membrane perpendicularly. 
+(B) Carpet model. Small areas of the membrane are coated with AMP molecules with 
+hydrophobic sides facing inward leaving pores behind in the membrane. (C) Toroidal pore 
+model. This model resembles the Barrel-stave model, but AMPs are always in contact with 
+phospholipid head groups of the membrane. The blue color represents the hydrophobic 
+portions of AMPs, while the red color represents the hydrophilic parts of the AMPs. 
+ 
+Pharmaceuticals 2013, 6 
+1550 
+ 
+ 
+3.2.2. Intracellularly Active AMPs 
+In early AMP studies, permeabilization of bacterial cell membrane by AMP was thought as the 
+primary mechanism of killing. It was suggested that AMPs should be used at concentrations high 
+enough so that they can kill microorganisms by disrupting the membrane with sufficient channels and 
+pores [126]. However, some AMPs were found to start membrane permeabilization at concentrations 
+lower than their MICs, while others could only do so at concentrations higher than their MICs.  
+The finding that some AMPs can kill their target cells without causing membrane permeabilization 
+suggests that there may be other mechanisms of killing. Recently, intracellularly active AMPs have 
+been shown to interact with targets inside the cells [127–129]. For example indolicin was shown to 
+bind to DNA with a preferred sequence [46,130]. 
+Some AMPs can inhibit DNA and protein synthesis [131,132]. One example of this is PR-39, an 
+AMP from pig intestines, which kills bacteria in a non-lytic process by acting like a proteolytic agent 
+and stopping protein and DNA synthesis [133]. Similar to PR-39, indolicin does not lyse cells directly. 
+It enters the cytoplasm and kills bacterial cells by targeting DNA synthesis [109,131]. Also, some 
+human immune system derived AMPs such as tPMP-1 and aHNP-1 inhibit DNA and protein synthesis 
+within an hour after they enter the cells [134]. Apidaecin is another protein synthesis blocking AMP 
+which lacks pore forming ability. This AMP is only effective against Gram-negative bacteria. It is 
+suggested that this AMP is actively transported with a transporter protein and then it blocks protein 
+synthesis with a series of molecular interactions with different targets [135]. 
+Some AMPs can also inhibit proteases of microbes. For example, histatin 5 stops the periodontal 
+tissue destruction by inhibiting a protease from Bacteriocides gingivalis [136]; and eNAP-2 has  
+anti-protease activities against microbial serin proteases [137]. Interestingly, there are some 
+intracellular AMPs which can only kill cells at certain growth stages. For example, diptericin is only 
+effective against actively growing bacterial cells, suggesting it may interact with certain specific 
+metabolic pathways during bacterial growth [138,139]. 
+Among these intracellularly active AMPs, some of them have multiple targets. For example 
+seminalplasmin inhibits RNA polymerase and can stop RNA synthesis completely at concentrations 
+lower than many other antibacterial agents [140]. On the other hand, the same AMP can activate an 
+autolysin protein inside the target cells leading to autolysis [141,142]. 
+The finding that AMPs can inhibit intracellular pathways [126,131] suggest that there might be 
+mechanisms of cellular uptake of AMPs. Two such mechanisms have been reported: direct penetration 
+and endocystosis [114]. According to Jones [143], cellular uptake of AMPs can take place through 
+endocytosis, which includes macropinocytosis and receptor mediated endocytosis. In macropinocytosis, 
+the cell membrane folds inward and forms vesicles with the help of dynamin proteins. These vesicles 
+are called macropinosomes and they are like small cells with only a membrane around them [114].  
+In receptor mediated endocytosis, a part of the membrane is coated with clathrin or caveolin proteins 
+followed by pit formation. Later, these pits bud from the membrane to inner side of the cell and form 
+vesicles [143,144]. 
+Pharmaceuticals 2013, 6 
+1551 
+ 
+ 
+4. Designing New Synthetic AMPs: Major Factors to Consider 
+To date, no data have been reported to demonstrate a clear relationship between the structural 
+groups of an AMP and its mode of action, the degree of activity, or the host range. Even the AMPs 
+with very similar structures can have drastically different mechanisms of action and the range of 
+targeted cells [47]. For example, buforin targets DNA and RNA; while magainin 2, an AMP with 
+similar structure, targets the cell membrane causing cell lysis [145,146]. Although a structure-based 
+precise prediction of activity, mode of action, and host range may not be possible, certain general 
+design principles have been proposed by previous studies. The AMP structure is certainly important, 
+while the size, charge, hydrophobicity, amphipathicity, and solubility are all crucial physiochemical 
+properties for their antimicrobial activities and target specificity of AMPs [147]. Changing these 
+features will help to modify the activity and target spectrum of AMPs. 
+4.1. Important Physiochemical Properties of AMPs 
+4.1.1. Length 
+The length of an AMP is important to its activity because at least 7–8 amino acids are needed to 
+form amphipathic structures with hydrophobic and hydrophilic faces on opposite sides of a peptide 
+molecule. The size for an AMP to transverse the lipid bilayer of bacteria in the barrel-stave model 
+should be at least 22 amino acids for α-helical AMPs, while eight amino acids are needed for β-sheet 
+AMPs [148]. Besides the effects of length on its 3D structure and mode of action, the length of an 
+AMP may also affect its cytotoxicity. For example, a shortened melittin with 15 residues at its  
+C-terminal [149] and a shorter derivative of HP(2-20) [150] exhibited at least 300 times less toxicity to rat 
+erythrocytes and human erythrocytes, respectively, compared to their original forms. Therefore the length 
+of AMP should be taken into consideration when designing new synthetic peptides with low toxicity. 
+4.1.2. Net Charge 
+The net charge of known AMPs, which is the sum of all charges of ionizable groups of the peptide, 
+varies from negative to positive and it is the main factor for the initial interaction with negatively 
+charged cell membranes. By changing the net charge of an AMP, its antimicrobial and hemolytic 
+activities can be altered to achieve selective killing of microbes with no or minimized effects on host 
+cells. For example, increasing positive net charge of V13K from +8 to +9 resulted in higher hemolytic 
+activity, while decreasing the net charge to lower than +4 abolished its activity against P. aeruginosa [98]. 
+4.1.3. Helicity 
+Helicity represents the ability of an AMP to form spin structure. It is less important for the activity 
+of an AMP compared to other factors discussed above. However, it is important for determining the 
+toxicity on eukaryotic cells [6]. Reducing helicity by incorporating D-amino acids into the primary 
+sequence has been shown to lower the hemolytic effect, while the antimicrobial effect was retained [151]. 
+For example, Papo et al. [54] modified some α-helical peptides by replacing 35% of the L-amino acids 
+with D-amino acids and found that this modification eliminated the hemolytic activity. Besides, these 
+Pharmaceuticals 2013, 6 
+1552 
+ 
+ 
+new synthetic AMPs are not sensitive to proteases. Therefore, incorporating D-amino acids to change 
+helicity is a useful strategy for designing new synthetic peptides with less hemolytic activity and 
+enhanced stability against proteolytic cleavage. Another important factor associated with the helicity of 
+AMP is the helix propensity of each amino acid in the primary sequence. For example, proline and 
+glycine have lower helix-forming propensities compared to other amino acids [152]. Thus, these 
+residues are not preferred when designing α-helical AMPs. In addition, peptides should be flexible 
+enough to change their conformation during the membrane insertion process [47]. 
+4.1.4. Hydrophobicity 
+Hydrophobicity has also been shown to influence the activity and selectivity of AMP molecules. 
+Almost 50% of amino acids in the primary sequence of natural AMPs are hydrophobic residues [147]. 
+In most cases, increase in hydrophobicity on the positively charged side of an AMP below a threshold 
+can increase its antimicrobial activity [6], while decreasing hydrophobicity can reduce antimicrobial 
+activity [153]. There appears to be an optimal hydrophobicity for each AMP, beyond which its activity 
+decreases rapidly [129]. Therefore, when designing new synthetic peptides, the hydrophobicity should 
+be selected within an optimal window. Some previous studies have shown that hydrophobicity is also 
+critical for determining the range of target cells of an AMP. Increasing the hydrophobicity of an AMP 
+can change the range of targets [154,155]. For example, magainin is an AMP that is only effective 
+against Gram-negative bacteria. However, some synthetic analogs with higher hydrophobicity can also 
+kill some Gram-positive bacteria and eukaryotic cells [156]. 
+4.1.5. Amphipathicity 
+Amphipathicity is another important property of AMPs to ensure their activity and interaction with 
+microbial membranes. Fernandes-Vidal et al. [157] showed that amphipathicity is more important than 
+hydrophobicity for binding to microbial membranes. Because amphipathicity of AMPs is required for 
+a strong partition into the membrane interface, priority should be given to the amphipathic structure 
+when designing synthetic AMPs for specific target cells. 
+4.1.6. Solubility 
+Since AMPs should act on or enter through lipid membranes, they need to be soluble in aqueous 
+environments. If AMP molecules aggregate, it will lose its ability to interact with the cell membrane. 
+For example, a hybrid synthetic AMP composed of cecropin and melittin has a tendency to form 
+dimers. Substituting a Lys residue on the non-polar face of this hybrid AMP prevents dimerization and 
+leads to reduced hemolytic activity. Losing dimerization ability makes this AMP more effective for its 
+incorporation into microbial membranes [158]. This example demonstrates the importance of solubility 
+and the value of structural optimization. 
+Pharmaceuticals 2013, 6 
+1553 
+ 
+ 
+4.2. The Relationship between Physiochemical Properties of AMPs 
+As discussed above, many factors affect the activities of AMPs and some interactions exist between 
+these factors. In AMP design, these properties need to be considered together since changing one of 
+these parameters to get a desired modification of an AMP may alter other parameters. Even a simple 
+change in primary sequence can affect many other physicochemical parameters which are often vital 
+for the activity of an AMP and the range of target cells [159]. Predicting the results of an AMP 
+modification or the function of a synthetic peptide beforehand is still an unmet challenge. Application 
+of molecular simulation to analyze the details of the folding of AMP molecules and interaction with 
+target cells [160,161] may be a promising approach to improve current trial and error methods. 
+4.3. AMP Modifications 
+While most of AMPs are directly synthesized in their active forms, post-translational modification 
+of certain AMPs is necessary for their functions. Naturally forming AMPs are processed with different 
+post-translational modifications such as phosphorylation [162], addition of D-amino acids [163,164], 
+methylation [165], amidation [166], glycosylation [167], formation of disulphide linkage [168], and 
+proteolytic cleavage [24,169]. In some cases, these posttranslational modifications might be important 
+for designing new synthetic AMPs. Even though recombinant cell systems can be used to produce 
+these synthetic peptides with post-translational modifications, incorporation of unnatural amino acids 
+may require chemical synthesis [60]. 
+4.3.1. Modification of AMPs with Covalent Bonds 
+Covalent modification can have profound effects on the structure and function of an AMP. Even a 
+single disulfide bond can change the antimicrobial effect of an AMP. For example, protegrin missing a 
+disulphide bond becomes inactive against HSV [170]; while adding disulphide bond in sakacin P 
+resulted in higher antimicrobial activities [44]. In another study, a disulfide bond was added in CP-11, 
+a derivative of indolicidin [171], and a trp-trp cross-link was added in indolicin [172]. These modified 
+structures of indolicidins showed higher protease stability with no change in antimicrobial activity. 
+However increase in stability does not always lead to better AMPs. For example, Houston et al. [173] 
+introduced a covalent bond to form a lactam bridge between Gln and Lys residues in two α-helical 
+AMPs, e.g., cecropin and mellitin. This modification helped AMPs to form more stable α-helix 
+structures but decreased the antimicrobial activity of both. 
+4.3.2. Modification of AMPs by Changing Amino Acid Content 
+Alteration of amino acid content is one of the most studied strategies of AMP modification. Most of 
+these studies focus on certain amino acids since their physiological characteristics play important roles 
+in the activity and target spectrum of AMPs. For example proline content in the primary sequence of 
+an AMP has been found to affect its ability to penetrate cell membranes. Higher proline content 
+reduces the capability of CP26 to permeablize E. coli cell membrane [174]. This effect might be 
+because of proline’s low propensity to form α-helical structures. Thus changes in the proline content 
+may lead to alterations of α-helical posture of an AMP. 
+Pharmaceuticals 2013, 6 
+1554 
+ 
+ 
+Changing amino acid content can also affect cytotoxicity. In a study by Nell et al. [175], LL37, a 
+human AMP, was modified by removing neutral amino acids Asn and Gln, and adding more positively 
+charged residues (two Arg units) into the primary sequence. The new synthetic peptide showed less 
+cytotoxic effects on eukaryotic cells. This peptide was named P60.4 and has been successfully used in 
+nasal applications against MRSA [176]. Another strategy to improve AMP stability is to include  
+D-amino acids in the sequence because they are more tolerant to proteases [177,178]. 
+4.3.3. Modification of AMPs by Amidation 
+With new developments in peptide synthesis, it is possible to incorporate special chemical groups or 
+unnatural molecules into AMPs. One of these modifications is the addition of amide groups at the end 
+of the peptides. In 2011, Kim et al. [179] modified PMAP-23 with amidation at the carboxyl end and 
+found that this derivative of PMAP-23 orients perpendicularly inside the bacterial membrane while 
+original PMAP-23 orients parallel to the membrane. This modification resulted in almost 10 fold 
+higher cellular uptake, faster interaction with Gram-negative bacteria cell membrane, and deeper 
+insertion into the inner membrane than the original PMAP-23. This carboxyl-end amidated synthetic 
+peptide also showed better membrane-permeabilization in liposome release tests [179]. Therefore 
+amidation of carboxyl end has good potential to improve the function of synthetic AMPs. 
+C-terminal modifications can also affect the stability of AMPs. In a previous study by Berthold  
+et al. [180], the C-terminal amide group of Api88 was replaced by a free acid. This modification did 
+not change its antimicrobial activity, but resulted in a 15 times more stable Api88 derivative against 
+proteases in blood serum. Replacing Arg-17 of this AMP with L-ornithine or L-homoarginine gave 35 
+times higher proteolytic stability than the original Api88. However, the latter modification decreased 
+the antimicrobial activity by eight fold [180]. 
+4.3.4. Modification of AMPs with Unnatural Amino Acids 
+A number of studies on synthetic peptides have attempted to incorporate unnatural amino acids into 
+the primary sequence [99,181,182]. β-didehydrophenylalanine is an unnatural amino acids and is used 
+to provide better folding properties for AMPs [181]. It is widely used in medicinal chemistry to alter 
+the native bioactive AMPs [183]. Incorporation of β-didehydrophenylalanine in the primary sequence 
+of VS1 resulted in higher stability against proteases. Researchers have also been able to introduce 
+antifungal activities to some AMPs by incorporating undecanoic acid and palmitic acid into their 
+primary sequence [99,184]. 
+4.3.5. Modification of AMPs with Computer-Assisted Methods 
+The use of computer-assisted methods in AMP research has been increasing significantly [185–190]. 
+Estimating the structure of an AMP based on its primary sequence [191], then predicting potential 
+mechanism of action and activity is becoming easier with the help of computational approaches [192]. 
+These types of artificial AMP design strategies hold potential for developing new synthetic peptides 
+against antibiotic-resistant superbugs [190]. Several databases about AMPs have been created and can 
+Pharmaceuticals 2013, 6 
+1555 
+ 
+ 
+be accessed to compare currently available AMPs. One of the latest AMP databases, LAMP (linking 
+antimicrobial peptides), currently has 3904 natural and 1643 synthetic peptides [19]. 
+4.4. New AMP Design by Homology Modeling 
+Most studies about AMPs to date are inspired by natural AMPs. For example, Tossi et al. [193] 
+designed some synthetic peptides by identifying the common amphipathic structure of 87 different 
+natural α-helical AMPs. These natural AMPs are composed mainly of cecropins, magainins, brevinins, 
+and cathelicidin peptides sourced from insects, amphibian, and mammals. This synthetic peptide study 
+focused on the first 20 amino acids in each sequence because the N-terminal region was shown to be 
+necessary for antimicrobial activities [194,195]. The synthetic peptides designed based on this strategy 
+are able to transform into α-helical structures from random structures with the addition of 
+trifluoroethanol in aqueous environments. These synthetic AMPs exhibited antimicrobial activities 
+against Gram-positive and Gram-negative bacteria, including some drug resistant strains. In addition, 
+these synthetic AMPs showed low toxicity to some eukaryotic cell lines [193]. 
+Designing synthetic AMPs by homology modeling within the same class might also provide a better 
+understanding of activity-structure relationship. Important elements from the same AMP class may be 
+identified using this approach to help design better molecules. Storici et al. [195] showed that  
+20 residues (named PMAP-36) of an antibacterial peptide from pig bone marrow cells are sufficient for 
+related antibacterial activity. The AMP with these 20 residues was chemically synthesized and showed 
+the capability to form α-helix in the presence of trifluoroethanol. This short synthetic peptide was 
+found to induce permeabilization of the inner membrane of E. coli ML35 at concentrations lower than 
+50 µM; while even at 100 µM it did not cause any permeabilization to human erythrocytes [195].  
+In another study of homology modeling, arenicin, protegrin, and thanatin were used as templates to 
+generate three synthetic peptides: AMP72, AMP126 and AMP2041. These new synthetic AMPs 
+showed lower cytotoxicity compared to the original AMPs and exhibited dose dependent antimicrobial 
+activities (0.17 to 10.12 μM) against Gram-negative bacteria [196]. 
+It is also possible to broaden the target spectrum of an AMP by homology modeling. For example, 
+normally lactoferrampins are not effective against E. coli O157. A conserved sequence, which 
+corresponds to an α-helical region, among these AMPs was found, by aligning multiple sequences with 
+ClustalW analysis. This common region was modified by inserting GKLI sequence into its primary 
+sequence, and the new synthetic peptide showed activities against E. coli O157 with a more stable 
+structure compared to other lactoferrampins [197]. 
+5. New Targets of AMPs: Biofilms, Persister Cells, and Drug Resistance Bacteria 
+Because AMPs can directly target bacterial cells, they have potential to control antibiotic tolerant 
+cells. Here we review some recent work on biofilms and persister cells. Biofilms are immobile 
+bacterial populations attached to surfaces such as human tissues and medical implants. Biofilm 
+formation on implant surfaces is a serious problem since every year more than $3 billion is spent to 
+treat implant-associated biofilm infections in the U.S. alone [198]. With cells protected by an 
+extracellular matrix, biofilms are highly tolerant to antimicrobials [199] and are a major cause of 
+chronic infections; e.g., approximately 80% of human bacterial infections are associated with  
+Pharmaceuticals 2013, 6 
+1556 
+ 
+ 
+biofilms [200]. In addition to the protection by the extracellular matrix [201], biofilm associated 
+antibiotic resistance is also attributed to the slow growth of biofilm cells [202]. Even though some 
+antibiotics have been shown to effectively penetrate biofilm matrix [203], they are not effective against 
+these slowly growing cells, especially the dormant subpopulation known as persister cells [204–206]. 
+Since most AMPs target cell membrane, they may be more effective against these dormant cells 
+compared to antibiotics. 
+5.1. Biofilm Control 
+The first obstacle of using AMPs against biofilms is the possible electrostatic interaction between 
+cationic peptides and negatively charged biofilm matrix [207]. Such interactions may retard or prevent 
+AMPs from reaching biofilm cells. Previous studies have investigated the effects of some AMPs on 
+biofilm inhibition and killing of bacterial cells in established biofilms. The second type of study is 
+especially important since treatment of mature biofilms is highly challenging [205]. In a study by 
+Singh et al. [208], lactoferrin was found to block biofilm formation of P. aeroginosa at concentrations 
+lower than those required to kill the planktonic cells. Also, LL-37, a human cathelicidin AMP, was 
+shown to prevent P. aeruginosa biofilm formation at the concentration of 0.5 µg/mL, which is below 
+its MIC (64 µg/mL). This AMP also showed activity against preformed (2-days old) P. aeruginosa 
+biofilms; e.g., it reduced the biofilm thickness by 60% and destroyed microcolony structures of the 
+treated biofilms [209]. In another study, a derivative of LL-37 was found effective against both  
+Gram-positive and Gram-negative bacteria. Despite its weak antimicrobial activity against planktonic 
+cells, this AMP inhibited biofilm formation of P. aeruginosa, Burkholderia cenocepacia, and Listeria 
+monocytogenes with more than 50% reduction in biofilm mass compared to untreated controls [210]. 
+The same study showed that this inhibition is due to decrease in swarming and swimming motilities, 
+increase in twitching motility, and repression of some biofilm genes. 
+In addition to free AMPs, surface coating with AMPs has also been pursued since surface 
+modifications with AMPs might help reduce device associated infections [211–214]. Many AMPs 
+have been tested for their inhibitory effects on biofilm formation on implant surfaces. For example, 
+Tet-20, a synthetic peptide (KRWRIRVRVIRKC), tethered on an implant surface exhibited broad 
+antimicrobial activities both in vivo (rats) and in vitro. It is able to stop biofilm formation and appears 
+to be non-toxic to eukaryotic cells [211]. In another study, histatin 5 and lactoferrin were used to coat 
+Ti surfaces covered with an anchor peptide minTBP (RKLPDAP), which helps binding of AMP to Ti 
+surfaces. The conjugates of both AMPs resulted in higher binding efficiency to Ti surfaces than AMPs 
+alone and Porphyromonas gingivalis showed less ATP activity and reduced biofilm formation on 
+coated surfaces [215]. 
+In addition to naturally existing AMPs, some synthetic AMPs were also used to treat biofilms. A 
+synthetic histatin analogue dhvar4 was tested against oral flora on hydroxyapatite disks and this AMP 
+reduced the number of viable biofilm cells by 1.5 log compared to the control [216]. MUC7, a native 
+saliva AMP from humans, and its modified forms, MUC17 12-mer-L and 20-mer, showed inhibitory 
+effects on S. mutans biofilm formation [217]. In another study, a derivative of LL-37 which is an AMP 
+from human innate immune system, cleared P. sinusitis biofilms in vivo (New Zealand rabbits). 
+However, it also led to some toxicity and proinflammation in the sinuses [218]. 
+Pharmaceuticals 2013, 6 
+1557 
+ 
+ 
+As discussed above, the extracellular matrix of a biofilm is thought to form a diffusion barrier 
+against certain AMPs [199]. It is known that this negatively charged barrier protects the cells inside 
+from positively charged antimicrobial agents and the alginate in biofilm matrix can reduce the 
+diffusion of antimicrobial agents [219]. Thus, it is important to obtain AMPs that can diffuse into 
+biofilms and kill biofilm cells. Recently a synthetic peptide, (RW)4D dendrimer [220] was 
+demonstrated to inhibit planktonic growth and biofilm formation of E. coli dose dependently. This 
+AMP inhibited biofilm formation by 93.5% at 40 µM. This dendrimer did not detach preformed 
+biofilms, but was able to kill most of the cells residing in mature biofilms dose dependently [221]. 
+Later, (RW)n-NH2 based AMPs with different chain length (where n = 2, 3, and 4) were compared for 
+their effects on E. coli RP437 biofilms. The chain length was found to be important to the activity of 
+these peptides. Longer peptides, (RW)3-NH2 and (RW)4-NH2, showed significant inhibition of 
+planktonic growth (36% reduction in growth rate) while a shorter peptides (RW)2-NH2 did not cause a 
+clear inhibition at concentrations up to 200 µM. This length-activity relation was also found for 
+biofilm inhibition. E. coli biofilm surface coverage and the viability of biofilm cells were reduced 
+significantly by the longer peptides (95% inhibition of biofilm growth by 200 µM (RW)3-NH2 and 
+84.4% inhibition of biofilm growth by 200 µM (RW)4-NH2). Preformed biofilms were also tested with 
+these peptides. However, the treatment of preformed biofilms with these peptides did not show the 
+same length-activity relationship. Interestingly, 200 µM (RW)3-NH2 showed significant killing of 
+biofilm cells while 200 µM (RW)4-NH2 showed strong biofilm dispersion (91.5% reduction in biofilm 
+surface coverage at 200 µM) with no apparent killing effect on biofilm cells. Although 200 µM  
+(RW)4-NH2 did not kill biofilm cells directly, the detached biofilm cells were killed by this  
+peptide effectively [222]. 
+AMPs have also been tested against the biofilms of drug resistant bacteria. In a study by  
+Okuda et al. [223], nisin A and lacticin Q were tested against mature biofilms of a MRSA strain,  
+S. aureus MR23. Nisin A at 40 µM was found to kill more than 95% biofilm cells while lacticin Q at 
+80 µM killed around 90% of the biofilm cells. In another study, GL13K derived from human parotid 
+secretory protein (PSP) killed 99.9% of 24 hour biofilm cells of P. aeruginosa when it was added at  
+100 µg/mL for a two hour treatment [224]. 
+NRC-16, a synthetic peptide, was tested against biofilm formation of three P. aeruginosa strains 
+and compared with antibiotics such as ampicillin, chloramphenicol, and ciprofloxacin. NRC-16 
+showed biofilm inhibition at 8 µg/mL, which is 64 fold less than the antibiotic concentrations required 
+to kill these P. aeruginosa strains [225]. 
+There are also some AMPs that can sensitize biofilm cells to other antimicrobial agents.  
+For example, lactoferrin does not kill S. epidermidis or affect its growth. However treatment of  
+S. epidermidis biofilms on contact lenses with lactoferrin and vancomycin together showed a 2 fold 
+decrease in both MBC (minimal bactericidal concentration) and MIC of biofilm cells compared to the 
+treatment with vancomycin alone [226]. 
+Pharmaceuticals 2013, 6 
+1558 
+ 
+ 
+5.2. Persister Control 
+Persisters cells can be found in almost any microbial populations. These cells are dormant 
+phenotypic variants and are highly tolerant to antibiotics [227]. However, membrane integrity is 
+essential for the survival of bacteria irrespective of the metabolic stage of the cell and cell membrane is 
+a major target of AMPs. Thus, AMPs may have good potential to kill persister cells. In a recent study, 
+a synthetic cationic peptide, (RW)4-NH2, was found to kill more than 99% of E. coli HM22 persister 
+cells in planktonic culture. Besides, this synthetic peptide reduced the number of persister cells in 
+mature biofilms by up to 98% at 40 µM. More interestingly, the combination of this peptide with 
+oflaxacin (5 µg/mL) resulted in complete eradication of viable cells in E. coli HM22 biofilms 
+including persister cells [228]. Thus, the combination of conventional antibiotics with AMPs may offer 
+a synergy to control drug tolerant infections. 
+6. Resistance to Antimicrobial Peptides 
+There are mainly two different types of resistance mechanisms against AMPs: constitutive 
+resistance and inducible resistance [229]. The inducible resistance mechanisms include substitution [230], 
+modification [231], and acylation [232] of the membrane molecules, activation of some proteolytic 
+enzymes [233] and efflux pumps [234], and modifications of intracellular targets [235]. The constitutive 
+resistance mechanisms include electrostatic shielding [236], changes in membrane potential during 
+different stages of cell growth [237], and biofilm formation [229]. These resistance mechanisms are 
+illustrated in Figure 3. 
+For example the activity of some AMPs against S. aureus can be inhibited by adhesin molecules on 
+the cell surface of this bacterium. These adhesin molecules are polymeric substances and stay on the 
+cell surface after secretion [238]. Since adhesin is a positively charged polymer, it can form a repulsive 
+barrier against positively charged AMPs. Salmonella typhimurium also has a membrane bound lipid A 
+modification system, which defends themselves against AMPs from the host [239]. In this system, 
+PhoQ is a membrane bound sensor kinase and PhoP is intracellular response regulator. PhoQ is 
+activated in the presence of high level positive charges outside the cells. It then phosphorylates the 
+PhoP causing up-regulation of some genes including those related to AMP resistance. This system is 
+not active when the extracellular level of Ca2+, Mg2+, or Mn2+ ions is low since divalent cations 
+interact with PhoQ and change its conformation [63]. 
+Although bacteria have diverse mechanisms for resistance to AMPs, it is encouraging to notice that 
+the general lipid bilayer structure of bacterial membranes makes it hard to develop a complete 
+resistance against AMPs. Also, the resistance against AMPs reported to date is not as strong as those 
+against antibiotics and it only covers a limited number of AMPs. 
+Pharmaceuticals 2013, 6 
+1559 
+ 
+ 
+Figure 3. Schematic representation of AMP resistance mechanisms. (A) Gram-positive 
+bacteria resist AMPs via teichoic acid modification of LPS molecules and L-lysine 
+modification of phospholipids. (B) Gram-negative bacteria resist AMPs by modifying LPS 
+molecules with aminoarabinose or acylation of Lipid A unit of LPS molecules.  
+(C) Bacteria express some positively charged proteins and integrate them in the membrane 
+so positive charges repulse each other and bacteria can resist such AMPs. (D) Bacteria 
+produce negatively charged proteins and secrete them into extracellular environment to 
+bind and block AMPs. (E) The intracellular AMPs are extruded by efflux pumps. (F) The 
+AMPs inside the cell are degraded by proteases. 
+ 
+7. Conclusions 
+The urgent need to obtain new antimicrobials has been driving AMP research. With rapid growth in 
+related knowledge and lead compounds, more AMPs may enter clinical tests and treatment in the near 
+feature. However, infection control by AMP is still hindered by several challenges including low 
+specificity, high manufacturer cost, potential toxicity to animal cells, and lack of a robust guideline for 
+rational design. 
+Pharmaceuticals 2013, 6 
+1560 
+ 
+ 
+As we have seen from synthetic and modified AMP studies, it is easy to change characteristics of an 
+AMP with even small modifications. However, predicting the results of these changes is still challenging. 
+Thus, there is a need to understand the effects of structural modifications on the physiochemical 
+characteristics of AMPs as well as their target spectrum and activity. Recently, these types of studies 
+have been increasing and computational approaches have been involved in AMP research. These 
+efforts will help to better understand the mode of action of AMPs and predict their activities. 
+Another understudied area is using AMPs to control antibiotic resistant bacteria, biofilms, and 
+persisters. These targets are highly resistant to traditional antibiotics and play important roles in 
+infections. Since AMPs target cell membrane, they have good potential in such applications. On the 
+other hand, because AMPs have not been well studied for biofilm and persister control, there might be 
+some existing natural AMPs that are effective against these targets with potential synergy with 
+antibiotics. Applying AMPs with biofilm matrix degrading enzymes might also be a good strategy to 
+eliminate biofilms. Further development in this area and AMP research in general will benefit from 
+close collaboration of different disciplines and new tools that can decipher the structure-function 
+relationship and more efficiently synthesize and modify AMP molecules. 
+Acknowledgments 
+Part of the ongoing research on biofilms and persister cells in the authors’ laboratory is supported 
+by the U.S. National Science Foundation (CAREER-1055644 and EFRI-1137186). 
+Conflicts of Interest 
+The authors declare no conflict of interest. 
+References 
+1. 
+Brown, K.L.; Hancock, R.E. Cationic host defense (antimicrobial) peptides. Curr. Opin. Immunol. 
+2006, 18, 24–30. 
+2. 
+Harris, F.; Dennison, S.R.; Phoenix, D.A. Anionic antimicrobial peptides from eukaryotic 
+organisms. Curr. Protein Pept. Sci. 2009, 10, 585–606. 
+3. 
+Groenink, J.; Walgreen-Weterings, E.; van’t Hof, W.; Veerman, E.C.; Nieuw Amerongen, A.V. 
+Cationic amphipathic peptides, derived from bovine and human lactoferrins, with antimicrobial 
+activity against oral pathogens. FEMS Microbiol. Lett. 1999, 179, 217–222. 
+4. 
+Bradshaw, J. Cationic antimicrobial peptides: Issues for potential clinical use. BioDrugs 2003, 
+17, 233–240. 
+5. 
+Riedl, S.; Zweytick, D.; Lohner, K. Membrane-active host defense peptides—challenges and 
+perspectives for the development of novel anticancer drugs. Chem. Phys. Lipids 2011, 164, 766–781. 
+6. 
+Huang, Y.B.; Huang, J.F.; Chen, Y.X. Alpha-helical cationic antimicrobial peptides: Relationships 
+of structure and function. Protein Cell 2010, 1, 143–152. 
+7. 
+Dubos, R.J. Studies on a bactericidal agent extracted from a soil bacillus: I. Preparation of the 
+agent. Its activity in vitro. J. Exp. Med. 1939, 70, 1–10. 
+Pharmaceuticals 2013, 6 
+1561 
+ 
+ 
+8. 
+Dubos, R.J. Studies on a bactericidal agent extracted from a soil bacillus: II. Protective effect of 
+the bactericidal agent against experimental Pneumococcus infections in mice. J. Exp. Med. 1939, 
+70, 11–17. 
+9. 
+Hotchkiss, R.D.; Dubos, R.J. Fractionation of the bactericidal agent from cultures of a soil 
+Bacillus. J. Biol. Chem. 1940, 132, 791–792. 
+10. Van Epps, H.L. Rene dubos: Unearthing antibiotics. J. Exp. Med. 2006, 203, 259. 
+11. Dubos, R.J.; Hotchkiss, R.D. The production of bactericidal substances by aerobic sporulating 
+bacilli. J. Exp. Med. 1941, 73, 629–640. 
+12. Rammelkamp, C.H.; Weinstein, L. Toxic effects of tyrothricin, gramicidin and tyrocidine.  
+J. Infect. Dis. 1942, 71, 166–173. 
+13. Balls, A.K. A crystalline protein obtained from a lipoprotein of wheat flour. Cereal Chem. 1942, 
+19, 279–288. 
+14. Ohtani, S.; Okada, T.; Yoshizumi, H.; Kagamiyama, H. Complete primary structures of two 
+subunits of purothionin a, a lethal protein for brewer’s yeast from wheat flour. J. Biochem. 1977, 
+82, 753–767. 
+15. Hirsch, J.G. Phagocytin: A bactericidal substance from polymorphonuclear leucocytes. J. Exp. Med. 
+1956, 103, 589–611. 
+16. Kiss, G.; Michl, H. Uber das giftsekret der gelbbauchunke, Bombina variegata L. Toxicon 1962, 
+1, 33–34. 
+17. Groves, M.L.; Peterson, R.F.; Kiddy, C.A. Poliomorphism in the red protein isolated from milk 
+of individual cows. Nature 1965, 207, 1007–1008. 
+18. Zeya, H.I.; Spitznagel, J.K. Antibacterial and enzymic basic proteins from leukocyte lysosomes: 
+Separation and identification. Science 1963, 142, 1085–1087. 
+19. Zhao, X.; Wu, H.; Lu, H.; Li, G.; Huang, Q. Lamp: A database linking antimicrobial peptides. 
+PLoS One 2013, 8, e66557. 
+20. Conlon, J.M.; Sonnevend, A. Antimicrobial peptides in frog skin secretions. Methods Mol. Biol. 
+2010, 618, 3–14. 
+21. Radek, K.; Gallo, R. Antimicrobial peptides: Natural effectors of the innate immune system. 
+Semin. Immunopathol. 2007, 29, 27–43. 
+22. Peters, B.M.; Shirtliff, M.E.; Jabra-Rizk, M.A. Antimicrobial peptides: Primeval molecules or 
+future drugs? PLoS Pathog. 2010, 6, e1001067. 
+23. Leippe, M. Antimicrobial and cytolytic polypeptides of amoeboid protozoa—Effector molecules 
+of primitive phagocytes. Dev. Comp. Immunol. 1999, 23, 267–279. 
+24. Zasloff, M. Antimicrobial peptides of multicellular organisms. Nature 2002, 415, 389–395. 
+25. Schauber, J.; Gallo, R.L. Antimicrobial peptides and the skin immune defense system. J. Allergy 
+Clin. Immunol. 2008, 122, 261–266. 
+26. Ma, Y.F.; Liu, C.B.; Liu, X.H.; Wu, J.; Yang, H.L.; Wang, Y.P.; Li, J.X.; Yu, H.N.; Lai, R. 
+Peptidomics and genomics analysis of novel antimicrobial peptides from the frog, Rana nigrovittata. 
+Genomics 2010, 95, 66–71. 
+27. Hultmark, D.; Steiner, H.; Rasmuson, T.; Boman, H.G. Insect immunity. Purification and 
+properties of three inducible bactericidal proteins from hemolymph of immunized pupae of 
+Hyalophora cecropia. Eur. J. Biochem. 1980, 106, 7–16. 
+Pharmaceuticals 2013, 6 
+1562 
+ 
+ 
+28. Bals, R.; Wang, X.; Meegalla, R.L.; Wattler, S.; Weiner, D.J.; Nehls, M.C.; Wilson, J.M.  
+Mouse beta-defensin 3 is an inducible antimicrobial peptide expressed in the epithelia of multiple 
+organs. Infect. Immun. 1999, 67, 3542–3547. 
+29. Ganz, T. The role of antimicrobial peptides in innate immunity. Integr. Comp. Biol. 2003, 43, 
+300–304. 
+30. Niyonsaba, F.; Iwabuchi, K.; Matsuda, H.; Ogawa, H.; Nagaoka, I. Epithelial cell-derived human 
+beta-defensin-2 acts as a chemotaxin for mast cells through a pertussis toxin-sensitive and 
+phospholipase c-dependent pathway. Int. Immunol. 2002, 14, 421–426. 
+31. Hancock, R.E.; Scott, M.G. The role of antimicrobial peptides in animal defenses. Proc. Natl. 
+Acad. Sci. USA 2000, 97, 8856–8861. 
+32. Oppenheim, J.J.; Biragyn, A.; Kwak, L.W.; Yang, D. Roles of antimicrobial peptides such as 
+defensins in innate and adaptive immunity. Ann. Rheum. Dis. 2003, 62, ii17–ii21. 
+33. Scott, M.G.; Rosenberger, C.M.; Gold, M.R.; Finlay, B.B.; Hancock, R.E. An alpha-helical 
+cationic antimicrobial peptide selectively modulates macrophage responses to lipopolysaccharide 
+and directly alters macrophage gene expression. J. Immunol. 2000, 165, 3358–3365. 
+34. Nijnik, A.; Pistolic, J.; Filewod, N.C.; Hancock, R.E. Signaling pathways mediating chemokine 
+induction in keratinocytes by cathelicidin ll-37 and flagellin. J. Innate Immun. 2012, 4, 377–386. 
+35. Kindrachuk, J.; Jenssen, H.; Elliott, M.; Nijnik, A.; Magrangeas-Janot, L.; Pasupuleti, M.; 
+Thorson, L.; Ma, S.; Easton, D.M.; Bains, M.; et al. Manipulation of innate immunity by a 
+bacterial secreted peptide: Lantibiotic nisin z is selectively immunomodulatory. Innate Immun. 
+2013, 19, 315–327. 
+36. Birchler, T.; Seibl, R.; Buchner, K.; Loeliger, S.; Seger, R.; Hossle, J.P.; Aguzzi, A.; Lauener, R.P. 
+Human toll-like receptor 2 mediates induction of the antimicrobial peptide human beta-defensin 
+2 in response to bacterial lipoprotein. Eur. J. Immunol. 2001, 31, 3131–3137. 
+37. Larrick, J.W.; Hirata, M.; Balint, R.F.; Lee, J.; Zhong, J.; Wright, S.C. Human cap18: A novel 
+antimicrobial lipopolysaccharide-binding protein. Infect. Immun. 1995, 63, 1291–1297. 
+38. Brackett, D.J.; Lerner, M.R.; Lacquement, M.A.; He, R.; Pereira, H.A. A synthetic 
+lipopolysaccharide-binding peptide based on the neutrophil-derived protein cap37 prevents 
+endotoxin-induced responses in conscious rats. Infect. Immun. 1997, 65, 2803–2811. 
+39. Zhang, G.H.; Mann, D.M.; Tsai, C.M. Neutralization of endotoxin in vitro and in vivo by a 
+human lactoferrin-derived peptide. Infect. Immun. 1999, 67, 1353–1358. 
+40. Loppnow, H.; Libby, P.; Freudenberg, M.; Krauss, J.H.; Weckesser, J.; Mayer, H. Cytokine 
+induction by lipopolysaccharide (LPS) corresponds to lethal toxicity and is inhibited by nontoxic 
+Rhodobacter capsulatus LPS. Infect. Immun. 1990, 58, 3743–3750. 
+41. Powers, J.P.; Hancock, R.E. The relationship between peptide structure and antibacterial activity. 
+Peptides 2003, 24, 1681–1691. 
+42. Bulet, P.; Stocklin, R.; Menin, L. Anti-microbial peptides: From invertebrates to vertebrates. 
+Immunol. Rev. 2004, 198, 169–184. 
+43. McManus, A.M.; Dawson, N.F.; Wade, J.D.; Carrington, L.E.; Winzor, D.J.; Craik, D.J.  
+Three-dimensional structure of rk-1: A novel alpha-defensin peptide. Biochemistry 2000, 39, 
+15757–15764. 
+Pharmaceuticals 2013, 6 
+1563 
+ 
+ 
+44. Uteng, M.; Hauge, H.H.; Markwick, P.R.; Fimland, G.; Mantzilas, D.; Nissen-Meyer, J.;  
+Muhle-Goll, C. Three-dimensional structure in lipid micelles of the pediocin-like antimicrobial 
+peptide sakacin p and a sakacin p variant that is structurally stabilized by an inserted c-terminal 
+disulfide bridge. Biochemistry 2003, 42, 11417–11426. 
+45. Rozek, A.; Friedrich, C.L.; Hancock, R.E. Structure of the bovine antimicrobial peptide 
+indolicidin bound to dodecylphosphocholine and sodium dodecyl sulfate micelles. Biochemistry 
+2000, 39, 15765–15774. 
+46. Hsu, C.H.; Chen, C.; Jou, M.L.; Lee, A.Y.; Lin, Y.C.; Yu, Y.P.; Huang, W.T.; Wu, S.H. 
+Structural and DNA-binding studies on the bovine antimicrobial peptide, indolicidin: Evidence 
+for multiple conformations involved in binding to membranes and DNA. Nucleic Acids Res. 
+2005, 33, 4053–4064. 
+47. Jenssen, H.; Hamill, P.; Hancock, R.E.W. Peptide antimicrobial agents. Clin. Microbiol. Rev. 
+2006, 19, 491–511. 
+48. Loeffler, J.M.; Nelson, D.; Fischetti, V.A. Rapid killing of Streptococcus pneumoniae with a 
+bacteriophage cell wall hydrolase. Science 2001, 294, 2170–2172. 
+49. Naghmouchi, K.; le Lay, C.; Baah, J.; Drider, D. Antibiotic and antimicrobial peptide 
+combinations: Synergistic inhibition of Pseudomonas fluorescens and antibiotic-resistant variants. 
+Res. Microbiol. 2012, 163, 101–108. 
+50. Costa, F.; Carvalho, I.F.; Montelaro, R.C.; Gomes, P.; Martins, M.C. Covalent immobilization of 
+antimicrobial peptides (AMPs) onto biomaterial surfaces. Acta Biomater. 2011, 7, 1431–1440. 
+51. Wade, J.D.; Lin, F.; Hossain, M.A.; Dawson, R.M. Chemical synthesis and biological evaluation 
+of an antimicrobial peptide gonococcal growth inhibitor. Amino Acids 2012, 43, 2279–2283. 
+52. Piers, K.L.; Brown, M.H.; Hancock, R.E. Recombinant DNA procedures for producing small 
+antimicrobial cationic peptides in bacteria. Gene 1993, 134, 7–13. 
+53. Ramos, R.; Moreira, S.; Rodrigues, A.; Gama, M.; Domingues, L. Recombinant expression and 
+purification of the antimicrobial peptide magainin-2. Biotechnol. Prog. 2013, 29, 17–22. 
+54. Papo, N.; Oren, Z.; Pag, U.; Sahl, H.G.; Shai, Y. The consequence of sequence alteration of an 
+amphipathic alpha-helical antimicrobial peptide and its diastereomers. J. Biol. Chem. 2002, 277, 
+33913–33921. 
+55. Pacor, S.; Giangaspero, A.; Bacac, M.; Sava, G.; Tossi, A. Analysis of the cytotoxicity of synthetic 
+antimicrobial peptides on mouse leucocytes: Implications for systemic use. J. Antimicrob. 
+Chemother. 2002, 50, 339–348. 
+56. Matsuzaki, K. Control of cell selectivity of antimicrobial peptides. Biochim. Biophys. Acta 2009, 
+1788, 1687–1692. 
+57. Sieprawska-Lupa, M.; Mydel, P.; Krawczyk, K.; Wojcik, K.; Puklo, M.; Lupa, B.; Suder, P.; 
+Silberring, J.; Reed, M.; Pohl, J.; et al. Degradation of human antimicrobial peptide ll-37 by 
+Staphylococcus aureus-derived proteinases. Antimicrob. Agents Chemother. 2004, 48, 4673–4679. 
+58. Svenson, J.; Stensen, W.; Brandsdal, B.O.; Haug, B.E.; Monrad, J.; Svendsen, J.S. Antimicrobial 
+peptides with stability toward tryptic degradation. Biochemistry 2008, 47, 3777–3788. 
+59. Eckert, R.; Qi, F.; Yarbrough, D.K.; He, J.; Anderson, M.H.; Shi, W. Adding selectivity to 
+antimicrobial peptides: Rational design of a multidomain peptide against Pseudomonas spp. 
+Antimicrob. Agents Chemother. 2006, 50, 1480–1488. 
+Pharmaceuticals 2013, 6 
+1564 
+ 
+ 
+60. Bommarius, B.; Jenssen, H.; Elliott, M.; Kindrachuk, J.; Pasupuleti, M.; Gieren, H.; Jaeger, K.E.; 
+Hancock, R.E.; Kalman, D. Cost-effective expression and purification of antimicrobial and host 
+defense peptides in Escherichia coli. Peptides 2010, 31, 1957–1965. 
+61. Duquesne, S.; Destoumieux-Garzon, D.; Zirah, S.; Knappe, T.A.; Goulard, C.; Peduzzi, J.; 
+Marahiel, M.A.; Rebuffat, S. Post-translational modification and folding of a lasso-type  
+gene-encoded antimicrobial peptide require two enzymes only in Escherichia coli. Adv. Exp. 
+Med. Biol. 2009, 611, 35–36. 
+62. Bagheri, M.; Beyermann, M.; Dathe, M. Immobilization reduces the activity of surface-bound 
+cationic antimicrobial peptides with no influence upon the activity spectrum. Antimicrob. Agents 
+Chemother. 2009, 53, 1132–1141. 
+63. Bader, M.W.; Sanowar, S.; Daley, M.E.; Schneider, A.R.; Cho, U.; Xu, W.; Klevit, R.E.; Le 
+Moual, H.; Miller, S.I. Recognition of antimicrobial peptides by a bacterial sensor kinase. Cell 
+2005, 122, 461–472. 
+64. Marr, A.K.; Gooderham, W.J.; Hancock, R.E. Antibacterial peptides for therapeutic use: 
+Obstacles and realistic outlook. Curr. Opin. Pharmacol. 2006, 6, 468–472. 
+65. Phoenix, D.; Dennison, S.R.; Harris, F. Antimicrobial Peptides; Wiley-VCH: Weinheim, 
+Germany, 2013; p. 231. 
+66. Kirby, A.J. The lysozyme mechanism sorted—After 50 years. Nat. Struct. Biol. 2001, 8, 737–739. 
+67. Bastian, A.; Schafer, H. Human alpha-defensin 1 (hnp-1) inhibits adenoviral infection in vitro. 
+Regul. Pept. 2001, 101, 157–161. 
+68. Horne, W.S.; Wiethoff, C.M.; Cui, C.; Wilcoxen, K.M.; Amorin, M.; Ghadiri, M.R.; Nemerow, G.R. 
+Antiviral cyclic D,L-α-peptides: Targeting a general biochemical pathway in virus infections. 
+Bioorg. Med. Chem. 2005, 13, 5145–5153. 
+69. Robinson, W.E., Jr.; McDougall, B.; Tran, D.; Selsted, M.E. Anti-hiv-1 activity of indolicidin,  
+an antimicrobial peptide from neutrophils. J. Leukoc. Biol. 1998, 63, 94–100. 
+70. Sitaram, N.; Nagaraj, R. Interaction of antimicrobial peptides with biological and model 
+membranes: Structural and charge requirements for activity. Biochim. Biophys. Acta 1999, 1462, 
+29–54. 
+71. Belaid, A.; Aouni, M.; Khelifa, R.; Trabelsi, A.; Jemmali, M.; Hani, K. In vitro antiviral activity 
+of dermaseptins against herpes simplex virus type 1. J. Med. Virol. 2002, 66, 229–234. 
+72. Yasin, B.; Wang, W.; Pang, M.; Cheshenko, N.; Hong, T.; Waring, A.J.; Herold, B.C.; Wagar, E.A.; 
+Lehrer, R.I. Theta defensins protect cells from infection by herpes simplex virus by inhibiting 
+viral adhesion and entry. J. Virol. 2004, 78, 5147–5156. 
+73. Tamamura, H.; Ishihara, T.; Otaka, A.; Murakami, T.; Ibuka, T.; Waki, M.; Matsumoto, A.; 
+Yamamoto, N.; Fujii, N. Analysis of the interaction of an anti-hiv peptide, t22 ([tyr5, 12, lys7]-
+polyphemusin ii), with gp120 and cd4 by surface plasmon resonance. Biochim. Biophys. Acta 
+1996, 1298, 37–44. 
+74. Song, B.H.; Lee, G.C.; Moon, M.S.; Cho, Y.H.; Lee, C.H. Human cytomegalovirus binding to 
+heparan sulfate proteoglycans on the cell surface and/or entry stimulates the expression of human 
+leukocyte antigen class I. J. Gen. Virol. 2001, 82, 2405–2413. 
+75. WuDunn, D.; Spear, P.G. Initial interaction of herpes simplex virus with cells is binding to 
+heparan sulfate. J. Virol. 1989, 63, 52–58. 
+Pharmaceuticals 2013, 6 
+1565 
+ 
+ 
+76. Laquerre, S.; Argnani, R.; Anderson, D.B.; Zucchini, S.; Manservigi, R.; Glorioso, J.C. Heparan 
+sulfate proteoglycan binding by herpes simplex virus type 1 glycoproteins b and c, which differ 
+in their contributions to virus attachment, penetration, and cell-to-cell spread. J. Virol. 1998, 72, 
+6119–6130. 
+77. Andersen, J.H.; Jenssen, H.; Sandvik, K.; Gutteberg, T.J. Anti-hsv activity of lactoferrin and 
+lactoferricin is dependent on the presence of heparan sulphate at the cell surface. J. Med. Virol. 
+2004, 74, 262–271. 
+78. Jenssen, H.; Andersen, J.H.; Uhlin-Hansen, L.; Gutteberg, T.J.; Rekdal, O. Anti-hsv activity of 
+lactoferricin analogues is only partly related to their affinity for heparan sulfate. Antiviral Res. 
+2004, 61, 101–109. 
+79. Liu, Y.; Gong, W.; Huang, C.C.; Herr, W.; Cheng, X. Crystal structure of the conserved core of 
+the herpes simplex virus transcriptional regulatory protein vp16. Genes Dev. 1999, 13, 1692–1703. 
+80. Sinha, S.; Cheshenko, N.; Lehrer, R.I.; Herold, B.C. Np-1, a rabbit alpha-defensin, prevents the 
+entry and intercellular spread of herpes simplex virus type 2. Antimicrob. Agents Chemother. 
+2003, 47, 494–500. 
+81. 
+Shai, Y. Mode of action of membrane active antimicrobial peptides. Biopolymers 2002, 66, 236–248. 
+82. Zhang, L.; Rozek, A.; Hancock, R.E. Interaction of cationic antimicrobial peptides with model 
+membranes. J. Biol. Chem. 2001, 276, 35714–35722. 
+83. Brogden, K.A. Antimicrobial peptides: Pore formers or metabolic inhibitors in bacteria?  
+Nat. Rev. Microbiol. 2005, 3, 238–250. 
+84. Park, C.B.; Kim, H.S.; Kim, S.C. Mechanism of action of the antimicrobial peptide buforin ii: 
+Buforin ii kills microorganisms by penetrating the cell membrane and inhibiting cellular 
+functions. Biochem. Biophys. Res. Commun. 1998, 244, 253–257. 
+85. Otvos, L.; O, I.; Rogers, M.E.; Consolvo, P.J.; Condie, B.A.; Lovas, S.; Bulet, P.;  
+Blaszczyk-Thurin, M. Interaction between heat shock proteins and antimicrobial peptides. 
+Biochemistry 2000, 39, 14150–14159. 
+86. Kragol, G.; Lovas, S.; Varadi, G.; Condie, B.A.; Hoffmann, R.; Otvos, L. The antibacterial 
+peptide pyrrhocoricin inhibits the ATPase actions of DnaK and prevents chaperone-assisted 
+protein folding. Biochemistry 2001, 40, 3016–3026. 
+87. Brumfitt, W.; Salton, M.R.; Hamilton-Miller, J.M. Nisin, alone and combined with 
+peptidoglycan-modulating antibiotics: Activity against methicillin-resistant Staphylococcus 
+aureus and vancomycin-resistant enterococci. J. Antimicrob. Chemother. 2002, 50, 731–734. 
+88. De Lucca, A.J.; Bland, J.M.; Jacks, T.J.; Grimm, C.; Walsh, T.J. Fungicidal and binding 
+properties of the natural peptides cecropin b and dermaseptin. Med. Mycol. 1998, 36, 291–298. 
+89. De Lucca, A.J.; Walsh, T.J. Antifungal peptides: Novel therapeutic compounds against emerging 
+pathogens. Antimicrob. Agents Chemother. 1999, 43, 1–11. 
+90. Lee, Y.T.; Kim, D.H.; Suh, J.Y.; Chung, J.H.; Lee, B.L.; Lee, Y.; Choi, S. Structural 
+characteristics of tenecin 3, an insect antifungal protein. Biochem. Mol. Biol. Int. 1999, 47, 369–376. 
+91. Yokoyama, S.; Iida, Y.; Kawasaki, Y.; Minami, Y.; Watanabe, K.; Yagi, F. The chitin-binding 
+capability of cy-amp1 from cycad is essential to antifungal activity. J. Pept. Sci. 2009, 15, 492–497. 
+Pharmaceuticals 2013, 6 
+1566 
+ 
+ 
+92. Pushpanathan, M.; Rajendhran, J.; Jayashree, S.; Sundarakrishnan, B.; Jayachandran, S.; 
+Gunasekaran, P. Identification of a novel antifungal peptide with chitin-binding property from 
+marine metagenome. Protein Pept. Lett. 2012, 19, 1289–1296. 
+93. Fujimura, M.; Ideguchi, M.; Minami, Y.; Watanabe, K.; Tadera, K. Purification, characterization, 
+and sequencing of novel antimicrobial peptides, Tu-AMP 1 and Tu-AMP 2, from bulbs of tulip 
+(Tulipa gesneriana L.). Biosci. Biotechnol. Biochem. 2004, 68, 571–577. 
+94. Lehrer, R.I.; Szklarek, D.; Ganz, T.; Selsted, M.E. Correlation of binding of rabbit granulocyte 
+peptides to Candida albicans with candidacidal activity. Infect. Immun. 1985, 49, 207–211. 
+95. Terras, F.R.; Schoofs, H.M.; De Bolle, M.F.; Van Leuven, F.; Rees, S.B.; Vanderleyden, J.; 
+Cammue, B.P.; Broekaert, W.F. Analysis of two novel classes of plant antifungal proteins from 
+radish (Raphanus sativus L.) seeds. J. Biol. Chem. 1992, 267, 15301–15309. 
+96. Van der Weerden, N.L.; Hancock, R.E.; Anderson, M.A. Permeabilization of fungal hyphae by 
+the plant defensin nad1 occurs through a cell wall-dependent process. J. Biol. Chem. 2010, 285, 
+37513–37520. 
+97. Moerman, L.; Bosteels, S.; Noppe, W.; Willems, J.; Clynen, E.; Schoofs, L.; Thevissen, K.; 
+Tytgat, J.; Van Eldere, J.; van der Walt, J.; et al. Antibacterial and antifungal properties of α-helical, 
+cationic peptides in the venom of scorpions from southern Africa. Eur. J. Biochem. 2002, 269, 
+4799–4810. 
+98. Jiang, Z.; Vasil, A.I.; Hale, J.D.; Hancock, R.E.; Vasil, M.L.; Hodges, R.S. Effects of net charge 
+and the number of positively charged residues on the biological activity of amphipathic  
+alpha-helical cationic antimicrobial peptides. Biopolymers 2008, 90, 369–383. 
+99. Lee, D.G.; Hahm, K.S.; Shin, S.Y. Structure and fungicidal activity of a synthetic antimicrobial 
+peptide, p18, and its truncated peptides. Biotechnol. Lett. 2004, 26, 337–341. 
+100. Lee, D.G.; Kim, H.K.; Kim, S.A.; Park, Y.; Park, S.C.; Jang, S.H.; Hahm, K.S. Fungicidal effect 
+of indolicidin and its interaction with phospholipid membranes. Biochem. Bioph. Res. Co. 2003, 
+305, 305–310. 
+101. Barbault, F.; Landon, C.; Guenneugues, M.; Meyer, J.P.; Schott, V.; Dimarcq, J.L.; Vovelle, F. 
+Solution structure of alo-3: A new knottin-type antifungal peptide from the insect Acrocinus 
+longimanus. Biochemistry 2003, 42, 14434–14442. 
+102. Zasloff, M. Magainins, a class of antimicrobial peptides from Xenopus skin: Isolation, 
+characterization of two active forms, and partial cDNA sequence of a precursor. Proc. Natl. 
+Acad. Sci. USA 1987, 84, 5449–5453. 
+103. Alberola, J.; Rodriguez, A.; Francino, O.; Roura, X.; Rivas, L.; Andreu, D. Safety and efficacy of 
+antimicrobial peptides against naturally acquired leishmaniasis. Antimicrob. Agents Chemother. 
+2004, 48, 641–643. 
+104. Park, Y.; Jang, S.H.; Lee, D.G.; Hahm, K.S. Antinematodal effect of antimicrobial peptide, 
+pmap-23, isolated from porcine myeloid against Caenorhabditis elegans. J. Pept. Sci. 2004, 10, 
+304–311. 
+105. Brogden, K.A.; Ackermann, M.; Huttner, K.M. Small, anionic, and charge-neutralizing 
+propeptide fragments of zymogens are antimicrobial. Antimicrob. Agents Chemother. 1997, 41, 
+1615–1617. 
+Pharmaceuticals 2013, 6 
+1567 
+ 
+ 
+106. Lai, R.; Liu, H.; Lee, W.H.; Zhang, Y. An anionic antimicrobial peptide from toad Bombina 
+maxima. Biochem. Bioph. Res. Co. 2002, 295, 796–799. 
+107. Steffen, H.; Rieg, S.; Wiedemann, I.; Kalbacher, H.; Deeg, M.; Sahl, H.G.; Peschel, A.; Gotz, F.; 
+Garbe, C.; Schittek, B. Naturally processed dermcidin-derived peptides do not permeabilize 
+bacterial membranes and kill microorganisms irrespective of their charge. Antimicrob. Agents 
+Chemother. 2006, 50, 2608–2620. 
+108. Selsted, M.E.; Novotny, M.J.; Morris, W.L.; Tang, Y.Q.; Smith, W.; Cullor, J.S. Indolicidin, a 
+novel bactericidal tridecapeptide amide from neutrophils. J. Biol. Chem. 1992, 267, 4292–4295. 
+109. Subbalakshmi, C.; Sitaram, N. Mechanism of antimicrobial action of indolicidin. FEMS 
+Microbiol. Lett. 1998, 160, 91–96. 
+110. Krajewski, K.; Marchand, C.; Long, Y.Q.; Pommier, Y.; Roller, P.P. Synthesis and hiv-1 integrase 
+inhibitory activity of dimeric and tetrameric analogs of indolicidin. Bioorg. Med. Chem. Lett. 
+2004, 14, 5595–5598. 
+111. Lee, D.G.; Kim, P.I.; Park, Y.K.; Woo, E.R.; Choi, J.S.; Choi, C.H.; Hahm, K.S. Design of novel 
+peptide analogs with potent fungicidal activity, based on pmap-23 antimicrobial peptide isolated 
+from porcine myeloid. Biochem. Bioph. Res. Co. 2002, 293, 231–238. 
+112. Zhang, Y.M.; Rock, C.O. Transcriptional regulation in bacterial membrane lipid synthesis.  
+J. Lipid Res. 2009, 50, S115–S119. 
+113. He, K.; Ludtke, S.J.; Worcester, D.L.; Huang, H.W. Neutron scattering in the plane of 
+membranes: Structure of alamethicin pores. Biophys. J. 1996, 70, 2659–2666. 
+114. Madani, F.; Lindberg, S.; Langel, U.; Futaki, S.; Graslund, A. Mechanisms of cellular uptake of 
+cell-penetrating peptides. J. Biophys. 2011, 2011, 414729. 
+115. Pouny, Y.; Rapaport, D.; Mor, A.; Nicolas, P.; Shai, Y. Interaction of antimicrobial dermaseptin 
+and its fluorescently labeled analogues with phospholipid membranes. Biochemistry 1992, 31, 
+12416–12423. 
+116. Bechinger, B. Detergent-like properties of magainin antibiotic peptides: A 31p solid-state nmr 
+spectroscopy study. Biochim. Biophys. Acta 2005, 1712, 101–108. 
+117. Bolintineanu, D.S.; Kaznessis, Y.N. Computational studies of protegrin antimicrobial peptides: A 
+review. Peptides 2011, 32, 188–201. 
+118. Mecke, A.; Lee, D.K.; Ramamoorthy, A.; Orr, B.G.; Holl, M.M.B. Membrane thinning due to 
+antimicrobial peptide binding: An atomic force microscopy study of msi-78 in lipid bilayers. 
+Biophys. J. 2005, 89, 4043–4050. 
+119. Ludtke, S.; He, K.; Huang, H. Membrane thinning caused by magainin 2. Biochemistry 1995, 34, 
+16764–16769. 
+120. Chen, F.Y.; Lee, M.T.; Huang, H.W. Evidence for membrane thinning effect as the mechanism 
+for peptide-induced pore formation. Biophys. J. 2003, 84, 3751–3758. 
+121. Matsuzaki, K.; Murase, O.; Fujii, N.; Miyajima, K. An antimicrobial peptide, magainin 2, 
+induced rapid flip-flop of phospholipids coupled with pore formation and peptide translocation. 
+Biochemistry 1996, 35, 11361–11368. 
+122. Matsuzaki, K. Magainins as paradigm for the mode of action of pore forming polypeptides. 
+Biochim. Biophys. Acta Biomembr. 1998, 1376, 391–400. 
+Pharmaceuticals 2013, 6 
+1568 
+ 
+ 
+123. Wu, M.; Maier, E.; Benz, R.; Hancock, R.E. Mechanism of interaction of different classes of 
+cationic antimicrobial peptides with planar bilayers and with the cytoplasmic membrane of 
+Escherichia coli. Biochemistry 1999, 38, 7235–7242. 
+124. Ehrenstein, G.; Lecar, H. Electrically gated ionic channels in lipid bilayers. Q. Rev. Biophys. 
+1977, 10, 1–34. 
+125. Shimazaki, K.; Tazume, T.; Uji, K.; Tanaka, M.; Kumura, H.; Mikawa, K.; Shimo-Oka, T. 
+Properties of a heparin-binding peptide derived from bovine lactoferrin. J. Dairy. Sci. 1998, 81, 
+2841–2849. 
+126. Cudic, M.; Otvos, L. Intracellular targets of antibacterial peptides. Curr. Drug Targets 2002, 3, 
+101–106. 
+127. Otvos, L. Antibacterial peptides and proteins with multiple cellular targets. J. Pept. Sci. 2005, 11, 
+697–706. 
+128. Mookherjee, N.; Lippert, D.N.; Hamill, P.; Falsafi, R.; Nijnik, A.; Kindrachuk, J.; Pistolic, J.; 
+Gardy, J.; Miri, P.; Naseer, M.; et al. Intracellular receptor for human host defense peptide ll-37 
+in monocytes. J. Immunol. 2009, 183, 2688–2696. 
+129. Chen, L.; Harrison, S.D. Cell-penetrating peptides in drug development: Enabling intracellular 
+targets. Biochem. Soc. Trans. 2007, 35, 821–825. 
+130. Marchand, C.; Krajewski, K.; Lee, H.F.; Antony, S.; Johnson, A.A.; Amin, R.; Roller, P.; 
+Kvaratskhelia, M.; Pommier, Y. Covalent binding of the natural antimicrobial peptide indolicidin 
+to DNA abasic sites. Nucleic Acids Res. 2006, 34, 5157–5165. 
+131. Nicolas, P. Multifunctional host defense peptides: Intracellular-targeting antimicrobial peptides. 
+FEBS J. 2009, 276, 6483–6496. 
+132. Hilpert, K.; McLeod, B.; Yu, J.; Elliott, M.R.; Rautenbach, M.; Ruden, S.; Burck, J.; Muhle-Goll, C.; 
+Ulrich, A.S.; Keller, S. et al. Short cationic antimicrobial peptides interact with ATP. 
+Antimicrob. Agents Chemother. 2010, 54, 4480–4483. 
+133. Boman, H.G.; Agerberth, B.; Boman, A. Mechanisms of action on Escherichia coli of cecropin 
+p1 and pr-39, two antibacterial peptides from pig intestine. Infect. Immun. 1993, 61, 2978–2984. 
+134. Xiong, Y.Q.; Yeaman, M.R.; Bayer, A.S. In vitro antibacterial activities of platelet microbicidal 
+protein and neutrophil defensin against Staphylococcus aureus are influenced by antibiotics 
+differing in mechanism of action. Antimicrob. Agents Chemother. 1999, 43, 1111–1117. 
+135. Castle, M.; Nazarian, A.; Yi, S.S.; Tempst, P. Lethal effects of apidaecin on Escherichia coli 
+involve sequential molecular interactions with diverse targets. J. Biol. Chem. 1999, 274,  
+32555–32564. 
+136. Nishikata, M.; Kanehira, T.; Oh, H.; Tani, H.; Tazaki, M.; Kuboki, Y. Salivary histatin as an 
+inhibitor of a protease produced by the oral bacterium Bacteroides gingivalis. Biochem. Bioph. 
+Res. Co. 1991, 174, 625–630. 
+137. Couto, M.A.; Harwig, S.S.; Lehrer, R.I. Selective inhibition of microbial serine proteases by 
+enap-2, an antimicrobial peptide from equine neutrophils. Infect. Immun. 1993, 61, 2991–2994. 
+138. Keppi, E.; Pugsley, A.P.; Lambert, J.; Wicker, C.; Dimarcq, J.L.; Hoffmann, J.A.; Hoffmann, D. 
+Mode of action of diptericin-a, a bactericidal peptide induced in the hemolymph of Phormia 
+terranovae larvae. Arch. Insect Biochem. 1989, 10, 229–239. 
+Pharmaceuticals 2013, 6 
+1569 
+ 
+ 
+139. Ishikawa, M.; Kubo, T.; Natori, S. Purification and characterization of a diptericin homologue 
+from Sarcophaga peregrina (flesh fly). Biochem. J. 1992, 287, 573–578. 
+140. Scheit, K.H.; Reddy, E.S.; Bhargava, P.M. Seminaplasmin is a potent inhibitor of E. coli RNA 
+polymerase in vivo. Nature 1979, 279, 728–731. 
+141. Chitnis, S.N.; Prasad, K.S.; Bhargava, P.M. Isolation and characterization of autolysis-defective 
+mutants of Escherichia coli that are resistant to the lytic activity of seminalplasmin. J. Gen. 
+Microbiol. 1990, 136, 463–469. 
+142. Chitnis, S.N.; Prasad, K.S.; Bhargava, P.M. Bacteriolytic activity of seminalplasmin. J. Gen. 
+Microbiol. 1987, 133, 1265–1271. 
+143. Jones, A.T. Macropinocytosis: Searching for an endocytic identity and role in the uptake of cell 
+penetrating peptides. J. Cell Mol. Med. 2007, 11, 670–684. 
+144. Mayor, S.; Pagano, R.E. Pathways of clathrin-independent endocytosis. Nat. Rev. Mol. Cell Biol. 
+2007, 8, 603–612. 
+145. Kobayashi, S.; Takeshima, K.; Park, C.B.; Kim, S.C.; Matsuzaki, K. Interactions of the novel 
+antimicrobial peptide buforin 2 with lipid bilayers: Proline as a translocation promoting factor. 
+Biochemistry 2000, 39, 8648–8654. 
+146. Park, C.B.; Yi, K.S.; Matsuzaki, K.; Kim, M.S.; Kim, S.C. Structure-activity analysis of  
+buforin ii, a histone h2a-derived antimicrobial peptide: The proline hinge is responsible for the  
+cell-penetrating ability of buforin ii. Proc. Natl. Acad. Sci. USA 2000, 97, 8245–8250. 
+147. Tossi, A.; Sandri, L.; Giangaspero, A. Amphipathic, alpha-helical antimicrobial peptides. 
+Biopolymers 2000, 55, 4–30. 
+148. Westerhoff, H.V.; Juretic, D.; Hendler, R.W.; Zasloff, M. Magainins and the disruption of 
+membrane-linked free-energy transduction. Proc. Natl. Acad. Sci. USA 1989, 86, 6597–6601. 
+149. Subbalakshmi, C.; Nagaraj, R.; Sitaram, N. Biological activities of c-terminal 15-residue 
+synthetic fragment of melittin: Design of an analog with improved antibacterial activity. FEBS Lett. 
+1999, 448, 62–66. 
+150. Park, Y.; Park, S.C.; Park, H.K.; Shin, S.Y.; Kim, Y.; Hahm, K.S. Structure-activity relationship 
+of hp (2–20) analog peptide: Enhanced antimicrobial activity by n-terminal random coil region 
+deletion. Biopolymers 2007, 88, 199–207. 
+151. Oren, Z.; Shai, Y. A class of highly potent antibacterial peptides derived from pardaxin, a  
+pore-forming peptide isolated from moses sole fish Pardachirus marmoratus. Eur. J. Biochem. 
+1996, 237, 303–310. 
+152. Pace, C.N.; Scholtz, J.M. A helix propensity scale based on experimental studies of peptides and 
+proteins. Biophys. J. 1998, 75, 422–427. 
+153. Lee, D.G.; Kim, H.N.; Park, Y.K.; Kim, H.K.; Choi, B.H.; Choi, C.H.; Hahm, K.S. Design of 
+novel analogue peptides with potent antibiotic activity based on the antimicrobial peptide,  
+hp (2–20), derived from n-terminus of Helicobacter pylori ribosomal protein L1. Biochim. 
+Biophys. Acta 2002, 1598, 185–194. 
+154. Kustanovich, I.; Shalev, D.E.; Mikhlin, M.; Gaidukov, L.; Mor, A. Structural requirements for 
+potent versus selective cytotoxicity for antimicrobial dermaseptin s4 derivatives. J. Biol. Chem. 
+2002, 277, 16941–16951. 
+Pharmaceuticals 2013, 6 
+1570 
+ 
+ 
+155. Zelezetsky, I.; Pacor, S.; Pag, U.; Papo, N.; Shai, Y.; Sahl, H.G.; Tossi, A. Controlled alteration 
+of the shape and conformational stability of alpha-helical cell-lytic peptides: Effect on mode of 
+action and cell specificity. Biochem. J. 2005, 390, 177–188. 
+156. Dathe, M.; Wieprecht, T.; Nikolenko, H.; Handel, L.; Maloy, W.L.; MacDonald, D.L.; 
+Beyermann, M.; Bienert, M. Hydrophobicity, hydrophobic moment and angle subtended by 
+charged residues modulate antibacterial and haemolytic activity of amphipathic helical peptides. 
+FEBS Lett. 1997, 403, 208–212. 
+157. Fernandez-Vidal, M.; Jayasinghe, S.; Ladokhin, A.S.; White, S.H. Folding amphipathic helices 
+into membranes: Amphiphilicity trumps hydrophobicity. J. Mol. Biol. 2007, 370, 459–470. 
+158. Chen, Y.; Mant, C.T.; Farmer, S.W.; Hancock, R.E.; Vasil, M.L.; Hodges, R.S. Rational design 
+of alpha-helical antimicrobial peptides with enhanced activities and specificity/therapeutic index. 
+J. Biol. Chem. 2005, 280, 12316–12329. 
+159. Giangaspero, A.; Sandri, L.; Tossi, A. Amphipathic alpha helical antimicrobial peptides. Eur. J. 
+Biochem. 2001, 268, 5589–5600. 
+160. Ryan, L.; Lamarre, B.; Diu, T.; Ravi, J.; Judge, P.J.; Temple, A.; Carr, M.; Cerasoli, E.; Su, B.; 
+Jenkinson, H.F. et al. Anti-antimicrobial peptides: Folding-mediated host defense antagonists.  
+J. Biol. Chem. 2013, 288, 20162–20172. 
+161. Tew, G.N.; Liu, D.; Chen, B.; Doerksen, R.J.; Kaplan, J.; Carroll, P.J.; Klein, M.L.; de Grado, W.F. 
+De novo design of biomimetic antimicrobial polymers. Proc. Natl. Acad. Sci. USA 2002, 99, 
+5110–5114. 
+162. Goumon, Y.; Strub, J.M.; Moniatte, M.; Nullans, G.; Poteur, L.; Hubert, P.; van Dorsselaer, A.; 
+Aunis, D.; Metz-Boutigue, M.H. The c-terminal bisphosphorylated proenkephalin-a-(209–237)-
+peptide from adrenal medullary chromaffin granules possesses antibacterial activity. Eur. J. 
+Biochem. 1996, 235, 516–525. 
+163. Kreil, G. D-amino acids in animal peptides. Annu. Rev. Biochem. 1997, 66, 337–345. 
+164. Kamatani, Y.; Minakata, H.; Nomoto, K.; Kim, K.H.; Yongsiri, A.; Takeuchi, H. Isolation of 
+achatin-I, a neuroactive tetrapeptide having a D-phenylalanine residue, from Achatina ganglia, 
+and its effects on Achatina giant neurones. Comp. Biochem. Physiol. C 1991, 98, 97–103. 
+165. Hancock, R.E.; Chapple, D.S. Peptide antibiotics. Antimicrob. Agents Chemother. 1999, 43, 
+1317–1323. 
+166. Rifflet, A.; Gavalda, S.; Tene, N.; Orivel, J.; Leprince, J.; Guilhaudis, L.; Genin, E.; Vetillard, A.; 
+Treilhou, M. Identification and characterization of a novel antimicrobial peptide from the venom 
+of the ant Tetramorium bicarinatum. Peptides 2012, 38, 363–370. 
+167. Oman, T.J.; Boettcher, J.M.; Wang, H.; Okalibe, X.N.; van der Donk, W.A. Sublancin is not a 
+lantibiotic but an s-linked glycopeptide. Nat. Chem. Biol. 2011, 7, 78–80. 
+168. Mangoni, M.E.; Aumelas, A.; Charnet, P.; Roumestand, C.; Chiche, L.; Despaux, E.; Grassy, G.; 
+Calas, B.; Chavanieu, A. Change in membrane permeability induced by protegrin 1: Implication 
+of disulphide bridges for pore formation. FEBS Lett. 1996, 383, 93–98. 
+169. Shinnar, A.E.; Butler, K.L.; Park, H.J. Cathelicidin family of antimicrobial peptides: Proteolytic 
+processing and protease resistance. Bioorg. Chem. 2003, 31, 425–436. 
+Pharmaceuticals 2013, 6 
+1571 
+ 
+ 
+170. Yasin, B.; Pang, M.; Turner, J.S.; Cho, Y.; Dinh, N.N.; Waring, A.J.; Lehrer, R.I.; Wagar, E.A. 
+Evaluation of the inactivation of infectious herpes simplex virus by host-defense peptides. Eur. J. 
+Clin. Microbiol. Infect. Dis. 2000, 19, 187–194. 
+171. Rozek, A.; Powers, J.P.; Friedrich, C.L.; Hancock, R.E. Structure-based design of an indolicidin 
+peptide analogue with increased protease stability. Biochemistry 2003, 42, 14130–14138. 
+172. Osapay, K.; Tran, D.; Ladokhin, A.S.; White, S.H.; Henschen, A.H.; Selsted, M.E. Formation 
+and characterization of a single trp-trp cross-link in indolicidin that confers protease stability 
+without altering antimicrobial activity. J. Biol. Chem. 2000, 275, 12017–12022. 
+173. Houston, M.E., Jr.; Kondejewski, L.H.; Karunaratne, D.N.; Gough, M.; Fidai, S.; Hodges, R.S.; 
+Hancock, R.E. Influence of preformed alpha-helix and alpha-helix induction on the activity of 
+cationic antimicrobial peptides. J. Pept. Res. 1998, 52, 81–88. 
+174. Zhang, L.; Benz, R.; Hancock, R.E. Influence of proline residues on the antibacterial and 
+synergistic activities of alpha-helical peptides. Biochemistry 1999, 38, 8102–8111. 
+175. Nell, M.J.; Tjabringa, G.S.; Wafelman, A.R.; Verrijk, R.; Hiemstra, P.S.; Drijfhout, J.W.; Grote, J.J. 
+Development of novel ll-37 derived antimicrobial peptides with LPS and LTA neutralizing and 
+antimicrobial activities for therapeutic application. Peptides 2006, 27, 649–660. 
+176. Goblyos, A.; Schimmel, K.J.; Valentijn, A.R.; Fathers, L.M.; Cordfunke, R.A.; Chan, H.L.; 
+Oostendorp, J.; Nibbering, P.H.; Drijfhout, J.W.; Hiemstra, P.S.; et al. Development of a nose cream 
+containing the synthetic antimicrobial peptide p60.4ac for eradication of methicillin-resistant 
+Staphylococcus aureus carriage. J. Pharm. Sci. 2013, 102, 3539–3544. 
+177. Bessalle, R.; Kapitkovsky, A.; Gorea, A.; Shalit, I.; Fridkin, M. All-D-magainin: Chirality, 
+antimicrobial activity and proteolytic resistance. FEBS Lett. 1990, 274, 151–155. 
+178. Giuliani, A.; Rinaldi, A.C. Beyond natural antimicrobial peptides: Multimeric peptides and other 
+peptidomimetic approaches. Cell Mol. Life Sci. 2011, 68, 2255–2266. 
+179. Kim, J.Y.; Park, S.C.; Yoon, M.Y.; Hahm, K.S.; Park, Y. C-terminal amidation of pmap-23: 
+Translocation to the inner membrane of gram-negative bacteria. Amino Acids 2011, 40, 183–195. 
+180. Berthold, N.; Czihal, P.; Fritsche, S.; Sauer, U.; Schiffer, G.; Knappe, D.; Alber, G.; Hoffmann, R. 
+Novel apidaecin 1b analogs with superior serum stabilities for treatment of infections by  
+gram-negative pathogens. Antimicrob. Agents Chemother. 2013, 57, 402–409. 
+181. Gupta, M.; Chauhan, V.S. De novo design of ,β-didehydrophenylalanine containing peptides: 
+From models to applications. Biopolymers 2011, 95, 161–173. 
+182. Mathur, P.; Jagannathan, N.R.; Chauhan, V.S. Alpha, beta-dehydrophenylalanine containing 
+cecropin-melittin hybrid peptides: Conformation and activity. J. Pept. Sci. 2007, 13, 253–262. 
+183. Torino, D.; Mollica, A.; Pinnen, F.; Feliciani, F.; Lucente, G.; Fabrizi, G.; Portalone, G.; Davis, P.; 
+Lai, J.; Ma, S.W.; et al. Synthesis and evaluation of new endomorphin-2 analogues containing 
+(z)-alpha,beta-didehydrophenylalanine (delta(z)phe) residues. J. Med. Chem. 2010, 53, 4550–4554. 
+184. Avrahami, D.; Shai, Y. Bestowing antifungal and antibacterial activities by lipophilic acid 
+conjugation to D,L-amino acid-containing antimicrobial peptides: A plausible mode of action. 
+Biochemistry 2003, 42, 14946–14956. 
+185. Schneider, G.; Schrodl, W.; Wallukat, G.; Muller, J.; Nissen, E.; Ronspeck, W.; Wrede, P.; 
+Kunze, R. Peptide design by artificial neural networks and computer-based evolutionary search. 
+Proc. Natl. Acad. Sci. USA 1998, 95, 12179–12184. 
+Pharmaceuticals 2013, 6 
+1572 
+ 
+ 
+186. Fjell, C.D.; Jenssen, H.; Hilpert, K.; Cheung, W.A.; Pante, N.; Hancock, R.E.; Cherkasov, A. 
+Identification of novel antibacterial peptides by chemoinformatics and machine learning. J. Med. 
+Chem. 2009, 52, 2006–2015. 
+187. Belda, I.; Llora, X.; Giralt, E. Evolutionary algorithms and de novo peptide design. Soft. Comput. 
+2006, 10, 295–304. 
+188. Loose, C.; Jensen, K.; Rigoutsos, I.; Stephanopoulos, G. A linguistic model for the rational 
+design of antimicrobial peptides. Nature 2006, 443, 867–869. 
+189. Jenssen, H.; Fjell, C.D.; Cherkasov, A.; Hancock, R.E. QSAR modeling and computer-aided 
+design of antimicrobial peptides. J. Pept. Sci. 2008, 14, 110–114. 
+190. Cherkasov, A.; Hilpert, K.; Jenssen, H.; Fjell, C.D.; Waldbrook, M.; Mullaly, S.C.; Volkmer, R.; 
+Hancock, R.E. Use of artificial intelligence in the design of small peptide antibiotics effective 
+against a broad spectrum of highly antibiotic-resistant superbugs. ACS Chem. Biol. 2009, 4, 65–74. 
+191. Fjell, C.D.; Jenssen, H.; Cheung, W.A.; Hancock, R.E.; Cherkasov, A. Optimization of 
+antibacterial peptides by genetic algorithms and cheminformatics. Chem. Biol. Drug Des. 2011, 
+77, 48–56. 
+192. Fjell, C.D.; Hiss, J.A.; Hancock, R.E.W.; Schneider, G. Designing antimicrobial peptides: Form 
+follows function. Nat. Rev. Drug Discov. 2012, 11, 124–124. 
+193. Tossi, A.; Tarantino, C.; Romeo, D. Design of synthetic antimicrobial peptides based on 
+sequence analogy and amphipathicity. Eur. J. Biochem. 1997, 250, 549–558. 
+194. Mor, A.; Nicolas, P. The nh2-terminal alpha-helical domain 1–18 of dermaseptin is responsible 
+for antimicrobial activity. J. Biol. Chem. 1994, 269, 1934–1939. 
+195. Storici, P.; Scocchi, M.; Tossi, A.; Gennaro, R.; Zanetti, M. Chemical synthesis and biological 
+activity of a novel antibacterial peptide deduced from a pig myeloid cDNA. FEBS Lett. 1994, 
+337, 303–307. 
+196. Romani, A.A.; Baroni, M.C.; Taddei, S.; Ghidini, F.; Sansoni, P.; Cavirani, S.; Cabassi, C.S.  
+In vitro activity of novel in silico-developed antimicrobial peptides against a panel of bacterial 
+pathogens. J. Pept. Sci. 2013, 19, 554–565. 
+197. Cruz, J.; Ortiz, C.C.; Guzman, F.; Cardenas, C.; Fernandez-Lafuente, R.; Torres, R.G. Design and 
+activity of novel lactoferrampin analogues against O157:H7 enterohemorrhagic Escherichia coli. 
+Biopolymers 2013, doi:10.1002/bip.22360. 
+198. Darouiche, R.O. Treatment of infections associated with surgical implants. N. Engl. J. Med. 
+2004, 350, 1422–1429. 
+199. Lewis, K. Riddle of biofilm resistance. Antimicrob. Agents Chemother. 2001, 45, 999–1007. 
+200. Harro, J.M.; Peters, B.M.; O’May, G.A.; Archer, N.; Kerns, P.; Prabhakara, R.; Shirtliff, M.E. 
+Vaccine development in Staphylococcus aureus: Taking the biofilm phenotype into consideration. 
+FEMS Immunol. Med. Microbiol. 2010, 59, 306–323. 
+201. Sutherland, I. Biofilm exopolysaccharides: A strong and sticky framework. Microbiology 2001, 
+147, 3–9. 
+202. Mah, T.F.; O’Toole, G.A. Mechanisms of biofilm resistance to antimicrobial agents. Trends 
+Microbiol. 2001, 9, 34–39. 
+203. Dunne, W.M.; Mason, E.O.; Kaplan, S.L. Diffusion of rifampin and vancomycin through a 
+Staphylococcus epidermidis biofilm. Antimicrob. Agents Chemother. 1993, 37, 2522–2526. 
+Pharmaceuticals 2013, 6 
+1573 
+ 
+ 
+204. Keren, I.; Kaldalu, N.; Spoering, A.; Wang, Y.P.; Lewis, K. Persister cells and tolerance to 
+antimicrobials. FEMS Microbiol. Lett. 2004, 234, 187–187. 
+205. Stewart, P.S.; Costerton, J.W. Antibiotic resistance of bacteria in biofilms. Lancet 2001, 358, 
+135–138. 
+206. Yao, Y.; Sturdevant, D.E.; Otto, M. Genomewide analysis of gene expression in  
+Staphylococcus epidermidis biofilms: Insights into the pathophysiology of S. epidermidis 
+biofilms and the role of phenol-soluble modulins in formation of biofilms. J. Infect. Dis. 2005, 
+191, 289–298. 
+207. Otto, M. Bacterial evasion of antimicrobial peptides by biofilm formation. Curr. Top. Microbiol. 
+Immunol. 2006, 306, 251–258. 
+208. Singh, P.K.; Parsek, M.R.; Greenberg, E.P.; Welsh, M.J. A component of innate immunity 
+prevents bacterial biofilm development. Nature 2002, 417, 552–555. 
+209. Overhage, J.; Campisano, A.; Bains, M.; Torfs, E.C.; Rehm, B.H.; Hancock, R.E. Human host 
+defense peptide ll-37 prevents bacterial biofilm formation. Infect. Immun. 2008, 76, 4176–4182. 
+210. De la Fuente-Nunez, C.; Korolik, V.; Bains, M.; Nguyen, U.; Breidenstein, E.B.; Horsman, S.; 
+Lewenza, S.; Burrows, L.; Hancock, R.E. Inhibition of bacterial biofilm formation and swarming 
+motility by a small synthetic cationic peptide. Antimicrob. Agents Chemother. 2012, 56, 2696–2704. 
+211. Gao, G.; Lange, D.; Hilpert, K.; Kindrachuk, J.; Zou, Y.; Cheng, J.T.; Kazemzadeh-Narbat, M.; 
+Yu, K.; Wang, R.; Straus, S.K.; et al. The biocompatibility and biofilm resistance of implant 
+coatings based on hydrophilic polymer brushes conjugated with antimicrobial peptides. 
+Biomaterials 2011, 32, 3899–3909. 
+212. Lucke, M.; Schmidmaier, G.; Sadoni, S.; Wildemann, B.; Schiller, R.; Haas, N.P.; Raschke, M. 
+Gentamicin coating of metallic implants reduces implant-related osteomyelitis in rats. Bone 
+2003, 32, 521–531. 
+213. Price, J.S.; Tencer, A.F.; Arm, D.M.; Bohach, G.A. Controlled release of antibiotics from coated 
+orthopedic implants. J. Biomed. Mater. Res. 1996, 30, 281–286. 
+214. Gollwitzer, H.; Ibrahim, K.; Meyer, H.; Mittelmeier, W.; Busch, R.; Stemberger, A. Antibacterial 
+poly(D,L-lactic acid) coating of medical implants using a biodegradable drug delivery technology. 
+J. Antimicrob. Chemoth. 2003, 51, 585–591. 
+215. Yoshinari, M.; Kato, T.; Matsuzaka, K.; Hayakawa, T.; Shiba, K. Prevention of biofilm 
+formation on titanium surfaces modified with conjugated molecules comprised of antimicrobial 
+and titanium-binding peptides. Biofouling 2010, 26, 103–110. 
+216. Helmerhorst, E.J.; Hodgson, R.; van’t Hof, W.; Veerman, E.C.; Allison, C.; Nieuw Amerongen, A.V. 
+The effects of histatin-derived basic antimicrobial peptides on oral biofilms. J. Dent. Res. 1999, 
+78, 1245–1250. 
+217. Wei, G.X.; Campagna, A.N.; Bobek, L.A. Effect of muc7 peptides on the growth of bacteria and 
+on Streptococcus mutans biofilm. J. Antimicrob. Chemother. 2006, 57, 1100–1109. 
+218. Chennupati, S.K.; Chiu, A.G.; Tamashiro, E.; Banks, C.A.; Cohen, M.B.; Bleier, B.S.;  
+Kofonow, J.M.; Tam, E.; Cohen, N.A. Effects of an ll-37-derived antimicrobial peptide in an 
+animal model of biofilm Pseudomonas sinusitis. Am. J. Rhinol. Allergy 2009, 23, 46–51. 
+Pharmaceuticals 2013, 6 
+1574 
+ 
+ 
+219. Shigeta, M.; Tanaka, G.; Komatsuzawa, H.; Sugai, M.; Suginaka, H.; Usui, T. Permeation of 
+antimicrobial agents through Pseudomonas aeruginosa biofilms: A simple method. Chemotherapy 
+1997, 43, 340–345. 
+220. Liu, Z.G.; Young, A.W.; Hu, P.; Rice, A.J.; Zhou, C.H.; Zhan, Y.K.; Kallenbach, N.R. Tuning 
+the membrane selectivity of antimicrobial peptides by using multivalent design. ChemBioChem 
+2007, 8, 2063–2065. 
+221. Hou, S.Y.; Zhou, C.H.; Liu, Z.G.; Young, A.W.; Shi, Z.H.; Ren, D.C.; Kallenbach, N.R. 
+Antimicrobial dendrimer active against Escherichia coli biofilms. Bioorg. Med. Chem. Lett. 
+2009, 19, 5478–5481. 
+222. Hou, S.; Liu, Z.; Young, A.W.; Mark, S.L.; Kallenbach, N.R.; Ren, D. Effects of trp- and  
+arg-containing antimicrobial-peptide structure on inhibition of Escherichia coli planktonic 
+growth and biofilm formation. Appl. Environ. Microbiol. 2010, 76, 1967–1974. 
+223. Okuda, K.I.; Zendo, T.; Sugimoto, S.; Iwase, T.; Tajima, A.; Yamada, S.; Sonomoto, K.; 
+Mizunoe, Y. Effects of bacteriocins on methicillin-resistant Staphylococcus aureus biofilm. 
+Antimicrob. Agents Chemother. 2013, 57, 5572–5579. 
+224. Hirt, H.; Gorr, S.U. Antimicrobial peptide gl13k is effective in reducing biofilms of 
+Pseudomonas aeruginosa. Antimicrob. Agents Chemother. 2013, 57, 4903–4910. 
+225. Gopal, R.; Lee, J.H.; Kim, Y.G.; Kim, M.S.; Seo, C.H.; Park, Y. Anti-microbial, anti-biofilm 
+activities and cell selectivity of the nrc-16 peptide derived from witch flounder, Glyptocephalus 
+cynoglossus. Mar. Drugs 2013, 11, 1836–1852. 
+226. Leitch, E.C.; Willcox, M.D. Lactoferrin increases the susceptibility of S. epidermidis biofilms to 
+lysozyme and vancomycin. Curr. Eye Res. 1999, 19, 12–19. 
+227. Lewis, K. Persister cells. Annu. Rev. Microbiol. 2010, 64, 357–372. 
+228. Chen, X.; Zhang, M.; Zhou, C.; Kallenbach, N.R.; Ren, D. Control of bacterial persister cells by 
+trp/arg-containing antimicrobial peptides. Appl. Environ. Microbiol. 2011, 77, 4878–4885. 
+229. Yeaman, M.R.; Yount, N.Y. Mechanisms of antimicrobial peptide action and resistance. 
+Pharmacol. Rev. 2003, 55, 27–55. 
+230. Lewis, L.A.; Choudhury, B.; Balthazar, J.T.; Martin, L.E.; Ram, S.; Rice, P.A.; Stephens, D.S.; 
+Carlson, R.; Shafer, W.M. Phosphoethanolamine substitution of lipid a and resistance of 
+Neisseria gonorrhoeae to cationic antimicrobial peptides and complement-mediated killing by 
+normal human serum. Infect. Immun. 2009, 77, 1112–1120. 
+231. Gunn, J.S. Bacterial modification of LPS and resistance to antimicrobial peptides. J. Endotoxin Res. 
+2001, 7, 57–62. 
+232. Guo, L.; Lim, K.B.; Poduje, C.M.; Daniel, M.; Gunn, J.S.; Hackett, M.; Miller, S.I. Lipid a 
+acylation and bacterial resistance against vertebrate antimicrobial peptides. Cell 1998, 95, 189–198. 
+233. Guina, T.; Yi, E.C.; Wang, H.; Hackett, M.; Miller, S.I. A phop-regulated outer membrane 
+protease of Salmonella enterica serovar typhimurium promotes resistance to alpha-helical 
+antimicrobial peptides. J. Bacteriol. 2000, 182, 4077–4086. 
+234. Shafer, W.M.; Qu, X.; Waring, A.J.; Lehrer, R.I. Modulation of Neisseria gonorrhoeae 
+susceptibility 
+to 
+vertebrate 
+antibacterial 
+peptides 
+due 
+to 
+a 
+member 
+of 
+the 
+resistance/nodulation/division efflux pump family. Proc. Natl. Acad. Sci. USA 1998, 95, 1829–1833. 
+Pharmaceuticals 2013, 6 
+1575 
+ 
+ 
+235. Del Castillo, F.J.; del Castillo, I.; Moreno, F. Construction and characterization of mutations at 
+codon 751 of the Escherichia coli gyrB gene that confer resistance to the antimicrobial peptide 
+microcin b17 and alter the activity of DNA gyrase. J. Bacteriol. 2001, 183, 2137–2140. 
+236. Friedrich, C.; Scott, M.G.; Karunaratne, N.; Yan, H.; Hancock, R.E. Salt-resistant alpha-helical 
+cationic antimicrobial peptides. Antimicrob. Agents Chemother. 1999, 43, 1542–1548. 
+237. Yeaman, M.R.; Bayer, A.S.; Koo, S.P.; Foss, W.; Sullam, P.M. Platelet microbicidal proteins and 
+neutrophil defensin disrupt the Staphylococcus aureus cytoplasmic membrane by distinct 
+mechanisms of action. J. Clin. Invest. 1998, 101, 178–187. 
+238. Vuong, C.; Voyich, J.M.; Fischer, E.R.; Braughton, K.R.; Whitney, A.R.; DeLeo, F.R.; Otto, M. 
+Polysaccharide intercellular adhesin (pia) protects Staphylococcus epidermidis against major 
+components of the human innate immune system. Cell Microbiol. 2004, 6, 269–275. 
+239. Miller, S.I.; Kukral, A.M.; Mekalanos, J.J. A two-component regulatory system (phop phoq) 
+controls Salmonella typhimurium virulence. Proc. Natl. Acad. Sci. USA 1989, 86, 5054–5058. 
+© 2013 by the authors; licensee MDPI, Basel, Switzerland. This article is an open access article 
+distributed under the terms and conditions of the Creative Commons Attribution license 
+(http://creativecommons.org/licenses/by/3.0/). 

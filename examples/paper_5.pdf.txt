@@ -1,0 +1,1943 @@
+JHEP09(2013)106
+Published for SISSA by
+Springer
+Received: March 19, 2013
+Revised: August 14, 2013
+Accepted: August 21, 2013
+Published: September 20, 2013
+Dark matter in the inert doublet model after the
+discovery of a Higgs-like boson at the LHC
+A. Goudelis,a B. Herrmanna and O. St˚alb
+aLAPTh, Universit´e de Savoie, CNRS, 9 Chemin de Bellevue,
+B.P. 110, F-74941 Annecy-le-Vieux, France
+bThe Oskar Klein Centre, Department of Physics,
+Stockholm University, AlbaNova, SE-106 91 Stockholm, Sweden
+E-mail: andreas.goudelis@lapth.cnrs.fr, herrmann@lapth.cnrs.fr,
+oscar.stal@fysik.su.se
+Abstract: We examine the Inert Doublet Model in light of the discovery of a Higgs-like
+boson with a mass of roughly 126 GeV at the LHC. We evaluate one-loop corrections to the
+scalar masses and perform a numerical solution of the one-loop renormalization group equa-
+tions. Demanding vacuum stability, perturbativity, and S-matrix unitarity, we compute
+the scale up to which the model can be extrapolated. From this we derive constraints on
+the model parameters in the presence of a 126 GeV Higgs boson. We perform an improved
+calculation of the dark matter relic density with the Higgs mass ﬁxed to the measured
+value, taking into account the eﬀects of three- and four-body ﬁnal states resulting from
+oﬀ-shell production of gauge bosons in dark matter annihilation. Issues related to direct
+detection of dark matter are discussed, in particular the role of hadronic uncertainties.
+The predictions for the interesting decay mode h0 → γγ are presented for scenarios which
+fulﬁll all model constraints, and we discuss how a potential enhancement of this rate from
+the charged inert scalar is related to the properties of dark matter in this model. We also
+apply LHC limits on Higgs boson decays to invisible ﬁnal states, which provide additional
+constraints on the mass of the dark matter candidate. Finally, we propose three benchmark
+points that capture diﬀerent aspects of the relevant phenomenology.
+Keywords: Higgs Physics, Beyond Standard Model, Cosmology of Theories beyond the
+SM, GUT
+ArXiv ePrint: 1303.3010
+Open Access
+doi:10.1007/JHEP09(2013)106
+JHEP09(2013)106
+Contents
+1
+Introduction
+1
+2
+The inert doublet model at tree level
+3
+3
+The inert doublet model beyond the tree level
+4
+3.1
+One-loop corrections to the scalar masses
+5
+3.2
+Renormalization group equations for the quartic couplings
+7
+4
+Constraints
+8
+4.1
+Theoretical constraints
+8
+4.2
+Oblique parameters
+9
+4.3
+Collider searches
+9
+4.4
+Dark matter relic density
+10
+4.5
+Dark matter direct detection
+11
+5
+Numerical analysis
+11
+5.1
+Setup and strategy
+11
+5.2
+Extrapolation scale
+13
+5.3
+Dark matter
+17
+5.4
+LHC Higgs phenomenology
+21
+5.5
+Benchmark scenarios
+23
+6
+Summary
+24
+A One-loop scalar masses
+26
+B One-loop beta functions
+28
+1
+Introduction
+The Inert Doublet Model (IDM) is the simplest among the models with two Higgs doublets.
+In addition to the Standard Model (SM) particle content, it contains an extra doublet of
+complex scalar ﬁelds which couples to the SM scalar and gauge boson sector but not to
+the fermions. Moreover, it involves a discrete Z2 symmetry under which the new scalar
+doublet is odd and all the other particles are even, which makes that the new “inert”
+doublet particles can only appear in even number in interaction vertices.
+The IDM was ﬁrst introduced more than three decades ago in studies of electroweak
+symmetry breaking (EWSB) [1]. Long after, it was proposed as a model that can pro-
+vide a viable dark matter candidate according to the thermal relic picture [2, 3], since the
+– 1 –
+JHEP09(2013)106
+neutral scalars contained in the new doublet can be seen as weakly interacting massive
+particles (WIMPs) and play the role of the dark matter (DM) in our universe. Due to its
+rich phenomenology for cosmology and particle physics, the IDM has received considerable
+attention [4–9]. Its DM candidate captures all the basic mechanisms through which the
+observed relic density can be generated in WIMP models [10]: The “correct” relic abun-
+dance [11] can be achieved by adjusting couplings, by approaching or taking distance from
+resonances, or by co-annihilating with another particle.1
+Additionally, the IDM was advocated to allow for a heavier SM-like Higgs boson com-
+patible with electroweak precision tests, mh0 ≳ 200 GeV, without resorting to unnatural
+ﬁne-tuning [3] (for recent work also considering this possibility, see, e.g., ref. [12]). The new
+states predicted by the IDM have been subjected to collider bounds [13], and they provide
+an interesting phenomenology for the Large Hadron Collider (LHC) [3, 14–18]. While by
+now a heavy Higgs boson with SM couplings is experimentally ruled out [19, 20], the model
+still remains attractive due to its dark matter features. Furthermore, the IDM provides an
+interesting example of interplay between DM and Higgs physics, since the SM-like Higgs
+boson is one of the basic means of communication between the “dark”2 and “visible” sec-
+tors of the model. Hence, both the mass and the couplings of the SM-like Higgs boson are
+of crucial importance to assess whether the IDM can indeed explain the dark matter in
+the universe.
+With the recent announcement of the observation of a Higgs-like resonance with a
+mass of around 125–126 GeV by the ATLAS and CMS collaborations [19, 20], as well as
+the supporting hints from the DØ and CDF experiments [21], it appears likely that the
+particle responsible for EWSB (or at least one of them) has been discovered.
+In this
+spirit, we ﬁnd it timely and interesting to examine implications of this observation for
+the IDM. Apart from the obvious consequence that the number of free model parameters
+is reduced by one, other interesting features appear, as we shall describe in the present
+paper. Moreover, despite the attention that the IDM has received in the community, most
+studies rely on lowest order predictions only. An exception is the study beyond leading
+order that was performed in ref. [22]. This work is, however, limited to the interesting case
+of radiative electroweak symmetry breaking `a la Coleman-Weinberg, a scenario leading to
+rather extreme parameter values. Another exception is the very recent paper [23], where
+higher-order corrections to DM direct detection in the IDM are calculated.
+In the present work, we perform an analysis of the IDM parameter space assuming
+that the LHC is indeed observing a (SM-like) Higgs boson with a mass Mh0 ≈ 126 GeV.
+In section 2, we introduce the model and the relevant notation. In section 3 we present
+one-loop corrections to the scalar masses in the IDM, and expressions for the one-loop
+renormalization group equations (RGEs) for the model’s quartic couplings, which are used
+to study vacuum stability, perturbativity, and unitarity constraints. Experimental con-
+straints from collider, low-energy, and cosmological data are presented in section 4. The
+corresponding numerical analysis, which contains the main results of this work, is presented
+1Coannihilation is absent, e.g., in the simpler singlet scalar model.
+2This term is used in a slightly abusive way here, since the model does not contain what is usually
+dubbed a “dark sector” in the litterature.
+– 2 –
+JHEP09(2013)106
+in section 5, where we perform extensive scans over the model parameter space. The im-
+plications for dark matter and the interesting Higgs decay into two photons are discussed
+in detail. Based on our analysis, we identify benchmark scenarios capturing general fea-
+tures of the parameter space. Finally, section 6 contains a summary of our results and the
+main conclusions.
+2
+The inert doublet model at tree level
+The inert doublet model (IDM) contains, in addition to the Standard Model (SM) particle
+content, a second complex scalar doublet.
+The model Lagrangian is constructed so as
+to satisfy an exact Z2 symmetry (parity) under which all SM particles, including one of
+the scalar doublets, are even and the second scalar doublet is odd. Since this discrete
+symmetry prevents mixing between the scalars, one of the doublets, denoted by H, is
+similar to the SM Higgs doublet. Given that the second doublet, which we denote by Φ,
+has odd Z2 parity it is inert in the sense that its component ﬁelds do not couple singly to
+SM particles. The requirement of renormalizability then also forbids all tree-level couplings
+to the fermion sector.
+Imposing the Z2 symmetry has two further important consequences. First, the inert
+doublet Φ does not acquire a vacuum expectation value.
+Second, it forbids several of
+the terms appearing in the general two-Higgs-doublet model scalar potential [24]. More
+precisely, the tree-level scalar potential of the IDM takes the form
+V0 = µ2
+1|H|2+µ2
+2|Φ|2+λ1|H|4+λ2|Φ|4+λ3|H|2|Φ|2+λ4|H†Φ|2+ λ5
+2
+�
+(H†Φ)2+h.c.
+�
+. (2.1)
+In the general case, the λi are complex parameters. Although considering this possibility
+can have interesting consequences for CP-violation and electroweak baryogenesis [25–27],
+in this work we limit ourselves to the case of real values. Upon electroweak symmetry
+breaking, the two doublets can be expanded in components as
+H =
+�
+G+
+1
+√
+2
+�
+v + h0 + iG0�
+�
+,
+Φ =
+�
+H+
+1
+√
+2
+�
+H0 + iA0�
+�
+,
+(2.2)
+where v =
+√
+2 ⟨0|H|0⟩ ≈ 246 GeV denotes the vacuum expectation value of the neutral
+component of the doublet H. The h0 state corresponds to the physical SM-like Higgs-
+boson, whereas G0 and G± are the Goldstone bosons. The inert sector consists of a neutral
+CP-even scalar H0, a pseudo-scalar A0, and a pair of charged scalars H±.
+A phenomenologically important consequence of the Z2 symmetry is that the lightest
+Z2-odd particle (LOP) is stable. If further the LOP is either H0 or A0, this (neutral)
+state can play the role of the DM candidate, analogously to the Lightest Supersymmetric
+Particle (LSP) in supersymmetric models with R-parity conservation.
+At the tree level, the scalar masses are obtained from the potential in eq. (2.1). When
+the potential is expanded in the component ﬁelds, the masses of the physical states are
+– 3 –
+JHEP09(2013)106
+given by
+m2
+h0 = µ2
+1 + 3λ1v2,
+(2.3)
+m2
+H0 = µ2
+2 + λLv2,
+(2.4)
+m2
+A0 = µ2
+2 + λSv2,
+(2.5)
+m2
+H± = µ2
+2 + 1
+2λ3v2.
+(2.6)
+Here we have introduced the useful abbreviations
+λL = 1
+2 (λ3 + λ4 + λ5) ,
+(2.7)
+λS = 1
+2 (λ3 + λ4 − λ5) .
+(2.8)
+As in the Standard Model, we have the scalar potential minimization relation m2
+h0 =
+−2µ2
+1 = 2λ1v2 that can be used to eliminate the parameter µ2
+1 after electroweak symme-
+try breaking.
+The IDM scalar sector can hence be speciﬁed by a total of six parameters
+{λ1,
+λ2,
+λ3,
+λ4,
+λ5,
+µ2} ,
+(2.9)
+which can be exchanged through the above equations in favour of the physically more
+meaningful set
+{mh0,
+mH0,
+mA0,
+mH±,
+λL,
+λ2} ,
+(2.10)
+that is often used in phenomenological applications. It is worth noting that the parameter
+λL has a simple physical interpretation as the h0 − H0 − H0 coupling at the tree level
+(similarly, λS is the h0−A0−A0 coupling). In contrast, the parameter λ2, which is common
+to both parameter sets, appears only in quartic self couplings among inert particles and
+does therefore not enter any physically observable process at the tree level. However, it
+plays a role once the theory is considered beyond leading order. In the following, we shall
+make use of both sets of parameters given here.
+3
+The inert doublet model beyond the tree level
+Most of the work that has been performed within the IDM so far, such as collider sig-
+nals, vacuum stability considerations or relic abundance constraints, has been based on
+pure leading-order calculations. Generally speaking, it is meaningful to go beyond tree
+level when theoretical uncertainties of some calculation start to become comparable to the
+corresponding experimental uncertainties. In many models this is the case, for example,
+for the well-measured relic abundance of dark matter in our universe. Another reason can
+be to investigate eﬀects which are absent at tree level but arise in leading order at the
+one-loop level as it is the case, e.g., for the decay h0 → γγ.
+In the IDM, radiative corrections to inert scalar annihilations, which are relevant for
+DM phenomenology, are expected to be rather small [28]. Here, strong couplings do not
+– 4 –
+JHEP09(2013)106
+intervene in the relevant Feynman diagrams (with the exception of a ﬁnal state vertex cor-
+rection involving gluon exchange among ﬁnal state quarks), contrary to the Minimal Su-
+persymmetric Standard Model, where O(αs) corrections can have a sizeable impact in this
+context [29–33]. Moreover, the number of diagrams with electroweak couplings at one-loop
+order is rather limited, again unlike the case of the MSSM, where electroweak corrections
+can become signiﬁcant due to the very large number of contributing diagrams [34–36].
+With the electroweak scale being probed by both colliders and dark matter detection
+experiments, the diﬀerent new physics models are constrained and the allowed magnitude
+of their couplings becomes limited. In particular, the IDM parameter space is known to
+present three mass regimes for the lightest odd particle (LOP), where the observed relic
+density can be obtained [3, 10, 37–39]: the so-called low- (1 GeV ≲ MLOP ≲ 10 GeV),
+intermediate- (10 GeV ≲ MLOP ≲ 150 GeV), and high-mass (MLOP ≳ 500 GeV) regimes
+(the distinction being somewhat arbitrary). As we shall see in the following, the low- and
+intermediate-mass regimes are already quasi-excluded from the XENON100 experiment
+results [40]. As a consequence, in order for the IDM to still provide DM-compliant scenarios
+in this mass range, one has to rely on resonances and thresholds to achieve the correct relic
+density without violating the null XENON results, which would happen for suﬃciently
+large coupling values. In particular, we will see that the only points of the interesting
+intermediate mass regime that survive the constraint are lying close to the Higgs “funnel”
+region and the WW ∗ production threshold (see also [12, 23] for recent works on the subject),
+i.e. the region where LOP annihilation is dominated by nearly on-shell h0 exchange or gauge
+boson pair-production.
+In this regime, given the accuracy in the experimental determination of the relic density,
+a mass shift of the order of 2 GeV is suﬃcient to render a particular point in parameter
+space excluded or not.3
+If radiative corrections are suﬃciently large to shift the LOP
+mass for which the correct relic density is observed in or out of the viable region, then
+the computation of higher-order corrections can become important. This is well-known in
+the case of supersymmetric models such as the MSSM or the NMSSM, see, e.g., ref. [41].
+The exact values of the involved masses are also known to be essential in the case of co-
+annihilation of the LOP with the next-to-lightest Z2-odd particle (NLOP). In this case, a
+shift in one or both masses can change the importance of this particular channel and thus
+the prediction of the relic abundance.
+In order to perform arbitrary calculations at the one-loop level within the IDM, we have
+implemented the particle content and the interactions (in ’t Hooft-Feynman gauge) in model
+ﬁles for the Mathematica package FeynArts/FormCalc [42]. The implementation has been
+performed in parallel and cross-checked with the help of the two packages FeynRules [43]
+and SARAH [44–46].
+3.1
+One-loop corrections to the scalar masses
+In the Feynman-diagrammatic approach, the one-loop corrected scalar masses are obtained
+by evaluating the corrections to the two-point functions. Denoting the mass for a generic
+3Note that this mass diﬀerence is also similar to the current diﬀerence between the values for the Higgs
+mass extracted by ATLAS and CMS in diﬀerent channels.
+– 5 –
+JHEP09(2013)106
+H,φ
+H,φ
+H,φ
+H,φ
+H,φ
+H,φ
+H,φ
+H,φ
+H,φ
+V
+H
+H
+V
+V
+H
+H
+f
+f
+Figure 1. Generic classes of Feynman diagrams contributing to the one-loop self-energy of scalars
+in the Inert Doublet Model. The upper diagrams involving scalars and vector bosons (V ) contribute
+to the masses of both the SM-like (H) and the inert scalar doublet (Φ), while the lower diagrams
+involving a vector boson (V ) or a fermion (f) are only present for the SM-like Higgs doublet.
+scalar ﬁeld φ appearing in the renormalized Lagrangian by mφ, the corresponding (renor-
+malized) inverse propagator, Γφ, can be written as
+Γφ(p2) = i
+�
+p2 −
+�
+m2
+φ − Re Σφ(p2)
+��
+,
+(3.1)
+where Σφ(p2) is the (again, renormalized) self-energy of the ﬁeld φ. From this equation,
+two further concepts can be deﬁned. The ﬁrst is that of the running mass, which we denote
+by mφ(Q). As indicated by the argument, this mass carries an explicit dependence on the
+renormalization scale Q. The running mass is obtained from the inverse two-point function
+evaluated at zero external momentum4
+m2
+φ(Q) = iΓφ(p2 = 0) = m2
+φ − Re Σφ(p2 = 0).
+(3.2)
+The second type of one-loop mass is obtained by solving eq. (3.1) for the value of p2 = M2
+φ
+that gives Γ(M2
+φ) = 0. In practice, this equation is solved iteratively with usually very fast
+convergence. Since it corresponds to a pole of the propagator, Mφ is refered to as the pole
+mass. Which one-loop mass deﬁnition should be used depends on what is most convenient
+in a given situation. Working in ﬁxed order of the perturbative expansion, the impact of
+this choice on physical observables is a higher-order eﬀect. Below we shall make use of
+both the running mass and the pole mass when studying diﬀerent aspects of the IDM.
+The one-loop self-energies appearing in eq. (3.1) generally receive contributions from
+scalars, gauge bosons, and fermions.
+In the IDM, the diagrams involving fermions are
+restricted to the SM-like Higgs boson, which is also the only state that couples singly to
+the vector bosons. Generic classes of diagrams contributing to the scalar self-energies are
+shown in ﬁgure 1. Working in the MS renormalization scheme, we evaluate these in the
+’t Hooft-Feynman gauge, which leads to the expressions for the running masses given in
+appendix A. Before showing numerical results, we should also mention that these results
+4An alternative method which yields the same expression for the running masses is through the (one-
+loop) eﬀective potential, see [22] for the case of the IDM.
+– 6 –
+JHEP09(2013)106
+Figure 2. Running one-loop masses in the MS scheme of the SM Higgs boson (h0) and the lightest
+inert scalar (LOP) as a function of the renormalization scale Q (blue, solid lines). This example
+corresponds to the input parameters mh0 = 125.3 GeV, mH0 = 66.0 GeV, mA0 = 131.0 GeV,
+mH± = 137.0 GeV, λL = 0.12, and λ2 = 8.6 · 10−4. In the upper panels, the running mass is
+obtained by interpreting the input mass as the tree-level mass (green, dash-dotted), while in the
+lower panel the input value is interpreted as the pole mass (red, dashed). In this example, the LOP
+is the CP-even scalar H0.
+have been checked against those presented in ref. [22], and overall agreement was found
+(modulo the fact that ref. [22] does not include the O(α) corrections coming from vector
+boson loops). Moreover, the SM-type contributions for mh0 have been checked against [47].
+We ﬁnd that the relative diﬀerence between the MS and the tree-level masses can,
+depending on the exact parameter values and the chosen renormalization scale, reach up
+to 30% for the SM-like Higgs boson h0, and up to around 10% for the inert scalars. In
+ﬁgure 2, this is illustrated for an example scenario.5 As expected, the diﬀerence between
+the pole and the running MS masses is smaller. For the example in ﬁgure 2, it amounts
+to up to 2 GeV (about 1.5%) for h0 and up to almost 1 GeV (about 1.5%) for H0, which
+is representative for typical parameter points in the IDM. The situation is similar for the
+masses of the other inert scalars, A0 and H±, which are not shown here.
+3.2
+Renormalization group equations for the quartic couplings
+Renormalization group equations (RGEs), when evaluated at one-loop accuracy, resum
+leading scale logarithms to all orders. They are therefore useful for studying the evolution
+5This scenario corresponds to the benchmark point I deﬁned in table 2 below.
+– 7 –
+JHEP09(2013)106
+of parameters under renormalization over a large energy range. To treat all parameters at
+a similar footing, we ﬁnd it more convenient here to work in the basis of quartic couplings,
+eq. (2.9), rather than the mass basis. The renormalization group equations for the quartic
+couplings λi (i = 1 . . . 5) are driven by the corresponding beta functions, βλi, according to
+16π2
+∂λi
+∂ log Q = βλi = β(s)
+λi + β(g)
+λi + β(y)
+λi .
+(3.3)
+The latter receive contributions from scalars (s), gauge bosons (g), and fermions (y). The
+diﬀerent pieces of βλi are obtained by diagrammatic calculation.6
+The results for the
+diﬀerent contributions are given in appendix B. Our expressions are in agreement with
+earlier results for the general 2HDM [49, 50] (recalling that in the IDM λ6 = λ7 = 0).
+4
+Constraints
+The various constraints which can be imposed on the (tree-level) parameters of the inert
+doublet model (IDM) have been extensively discussed in the literature. A summary is, e.g.,
+given in [51, 52]. For completeness, we dedicate this section to discuss which constraints
+are relevant here and how they are treated in our analysis.
+4.1
+Theoretical constraints
+A ﬁrst class of constraints on the inert doublet model (IDM) comes from the minimal
+requirement for a physically sensible and (perturbatively) calculable theory. First, it is re-
+quired that the couplings should not be larger than some value which makes a perturbative
+treatment meaningless. We thus demand all quartic scalar, gauge, and Yukawa couplings
+to fulﬁll a common constraint
+|λi|, |gi|, |yi| ≤ K.
+(4.1)
+A minimal condition is that this inequality be respected at the input scale where the
+parameters on the left-hand side are speciﬁed. The value of K which should be imposed for
+a valid perturbative expansion is then somewhat process-dependent. Considering the more
+stringent requirement that eq. (4.1) remains valid under renormalization group evolution,
+we can use eq. (3.3) for guidance. Since the coeﬃcients appearing in the beta functions
+for the scalar quartic couplings are all O(1), it is clear that an instability (Landau pole)
+will appear for |λi(Q)| > 4π in the absence of accidental cancellations. In practice, smaller
+values of |λi| can also lead to instabilities, but we choose to be conservative and impose
+eq. (3.3) with K = 4π as the perturbativity limit at all scales.
+A second requirement is that the scalar potential, eq. (2.1), should be bounded from be-
+low and that upon electroweak symmetry breaking (EWSB) it develops a minimum which
+renders the electroweak vacuum stable, or metastable with a suﬃcient long lifetime. The
+criterion we shall discuss here implies absolute stability of the symmetry-breaking vacuum,
+6The renormalization group equations can also be computed by demanding scale invariance of the one-
+loop eﬀective potential. For an example of this approach for the singlet scalar model, see ref. [48].
+– 8 –
+JHEP09(2013)106
+which leads to conservative limits on the IDM parameters. Allowing also metastable con-
+ﬁgurations would result in relaxed constraints; we leave a detailed analysis of this question
+for future work.7 For absolute vacuum stability to hold we demand [24, 54]
+λ1(Q), λ2(Q) > 0,
+λ3(Q) > −2
+�
+λ1(Q)λ2(Q),
+λ3(Q) + λ4(Q) − |λ5(Q)| > −2
+�
+λ1(Q)λ2(Q)
+(4.2)
+at the scale Q.
+A ﬁnal constraint comes from the requirement that the scattering matrix (S-matrix)
+of every quantum ﬁeld theory must be unitary. In the case of weakly coupled theories, it
+is sensible to require that the tree-level scattering matrix elements satisfy unitarity limits,
+which corresponds to imposing upper bounds on them. For the general 2HDM, the bounds
+were ﬁrst derived in [55, 56].
+Here, we use the form for the eigenvalues of the scalar
+and vector scattering matrices of [57], and we require them to be smaller than 16π. This
+corresponds to saturation of the unitarity limit with the tree-level contribution.
+4.2
+Oblique parameters
+In models where the dominant eﬀects of new physics appear as corrections to self energies
+of the (SM) gauge bosons, the eﬀects can be parametrized in terms of the three “oblique”
+(Peskin-Takeuchi) parameters S, T, and U [58, 59], which vanish in a pure SM calculation.
+In the 2HDM, the contributions to the U parameter are negligible, which makes it conve-
+nient to work in the approximation U = 0. This assumption has been veriﬁed explicitly in
+our numerical analysis. For the case of U = 0, recent experimental limits on the remaining
+two parameters are [60]
+S = 0.06 ± 0.09,
+T = 0.10 ± 0.08.
+(4.3)
+These values are based on a reference (SM) Higgs mass of mref
+h
+= 120 GeV and a reference
+top mass of mref
+t
+= 173 GeV. We impose the limits resulting from eq. (4.3) at the 2 σ
+conﬁdence level as constraints on the IDM contribution.
+4.3
+Collider searches
+The ﬁrst constraint from direct searches at colliders comes from the invisible decay width
+of the Z boson. If the decay mode Z → H0A0 is open, the subsequent decay A0 → H0f ¯f
+(or H0 → A0f ¯f for the inverse mass hierarchy) would lead to Z decay events with fermion-
+antifermion pairs (f ¯f) and missing energy in the ﬁnal state. A detailed analysis has shown
+that this decay is incompatible with LEP data, which implies that the decay width of
+Z → H0A0 must be small. It is convenient to implement this constraint as [4, 14]
+MH0 + MA0 ≳ MZ.
+(4.4)
+7See ref. [53] for a recent discussion of stability/metastability in the SM.
+– 9 –
+JHEP09(2013)106
+Assuming a ﬁxed mass hierarchy MH0 < MA0, a more detailed analysis of the IDM param-
+eter space with respect to LEP data leads to the limit MA0 ≳ 100 GeV [13]. Considering
+both possible mass hierarchies between H0 and A0, we require
+max {MH0, MA0} ≳ 100 GeV.
+(4.5)
+Finally, limits on the mass of the charged scalar can be obtained by considering their po-
+tential pair production and subsequent decay into neutral Higgs bosons at LEP. Converting
+existing limits on the search for charginos and neutralinos, which present the same ﬁnal
+state topology at colliders, leads to the bound MH± ≳ 70 − 90 GeV [61]. For practical
+reasons, we adopt the intermediate limit
+MH± ≳ MW .
+(4.6)
+In order to have a neutral DM candidate, we include as a ﬁnal requirement
+MH± > MLOP = min{MH0, MA0}
+(4.7)
+for deﬁning viable points in parameter space throughout our analysis.
+4.4
+Dark matter relic density
+The recent results from the WMAP satellite, combined with other cosmological measure-
+ments, constrain the dark matter relic density to ΩCDMh2
+=
+0.1126 ± 0.0036 [11]. In
+most of the numerical analysis below, we require the IDM relic density (considering either
+H0 and A0 as the dark matter candidate) to respect this limit within 3 σ, i.e. we demand
+ΩLOPh2 to lie within the interval
+0.1018 ≤ ΩLOPh2 ≤ 0.1234.
+(4.8)
+In some cases we shall however relax this requirement and only impose the upper bound,
+ΩLOPh2 ≤ 0.1234,
+(4.9)
+which corresponds to the situation where the IDM contribution is only partly responsible
+for the observed DM density.
+A subtle point in the calculation of the relic density concerns the intermediate mass
+regime, and in particular the mass interval 50–80 GeV, where the IDM is known to produce
+values for ΩLOPh2 in the correct range. It has been pointed out [38, 39] that in this mass
+regime, which lies close to the WW ﬁnal state threshold, contributions to the total self-/co-
+annihilation cross section coming from three-body ﬁnal states can be substantial or even
+dominant. In particular the WW ∗ contribution (and to a lesser extent also ZZ∗) should
+be taken into account to obtain reliable predictions. For this purpose we use a modiﬁed
+version of micrOMEGAs [62, 63] which includes three-body ﬁnal states’ contributions. This
+micrOMEGAs version also accounts for four-body ﬁnal states with two virtual gauge bosons.
+We include these contributions in our analysis, and we ﬁnd that they are not always
+– 10 –
+JHEP09(2013)106
+negligible; the eﬀect on the computed relic density can be up to a few percent.8 For more
+details on the implementation of the relic density calculation we refer to the corresponding
+manual [64].
+4.5
+Dark matter direct detection
+Further constraints stem from (null) direct searches for dark matter.
+Until recently,
+the most stringent bounds on the spin-independent WIMP-nucleon scattering cross-
+section came from the XENON10 [65] and XENON100 [66] experiments for the low- and
+intermediate-mass regimes respectively. Recently, the XENON100 experiment presented
+updated constraints on the spin-independent cross-section, which strengthen the previous
+bounds by a factor of roughly 2–6 [40]. We impose these more stringent bounds in the
+numerical analysis that follows.
+Our calculation of the relevant spin-independent WIMP-nucleon cross sections is again
+performed using the micrOMEGAs package. It is well-known that predictions of direct de-
+tection rates are not without uncertainties. One among the most important sources of
+uncertainty (at least from the particle physics side) is related to the strange quark form
+factor of the nucleon, fTs, which loosely speaking describes the “strange quark content” of
+the nucleon. This quantity is usually parametrized in terms of the so-called pion-nucleon
+sigma term σπN [67].
+The value of σπN relies on experimental data that is at present
+poorly known. The values which are widely used come mostly from lattice QCD and chiral
+perturbation theory calculations [67–70].
+Hadronic form factors, and notably fTs, are of particular importance when the dom-
+inant mechanism for WIMP-nucleon scattering is Higgs exchange (as is the case in the
+IDM), since the Higgs boson couples preferentially to heavy quarks and the strange-quark
+density is suﬃciently large to provide a non-negligible contribution to the scattering cross
+section. Since the results of varying fTs can be quite dramatic [67, 71], we perform our
+calculations adopting two distinct values for this parameter: fTs = 0.2594, corresponding
+to the commonly used value σπN = 55 MeV, and fTs = 0.014, a value obtained recently
+from ﬁrst principles through lattice QCD methods [72]. It should be noted that, as clearly
+stated in ref. [72], this study does not treat systematic uncertainties. It nonetheless pro-
+vides us with an indicative value for fTs, englobing numerous recent results that point to
+much lower values than previously estimated.
+5
+Numerical analysis
+5.1
+Setup and strategy
+To analyze which regions of the IDM parameter space are compatible with theoretical and
+experimental constraints, we perform a numerical analysis scanning randomly over the
+model parameters. Since the ﬁrst step of our analysis will involve RGE running of the
+parameters starting from the input scale (which we take to be the pole mass MZ of the
+8We have noted small diﬀerences with respect to the results presented in ref. [38], which we attribute to
+the inclusion of the doubly virtual ﬁnal states.
+– 11 –
+JHEP09(2013)106
+Z-boson), we deﬁne the input in the MS scheme in the basis of the Lagrangian parameters
+�
+λ2, λ3, λ4, λ5, µ2
+2
+�
+, with the exception of the Higgs boson pole mass Mh0. For the IDM-
+speciﬁc parameters, we consider the following input ranges:
+0 < λ2(MZ) < 4π,
+−4π < λ3,4,5(MZ) < 4π,
+(5.1)
+−v2 < µ2
+2(MZ) < (1 TeV)2 .
+We select the distribution of µ2
+2 in order to obtain a uniform distribution of the CP-even
+scalar mass mH0. Moreover, in order to improve the sampling eﬃciency, we generate more
+points in the regions of parameter space where points are expected to remain valid up to
+high scales. The chosen ranges of eq. (5.1) are found to yield both a good parameter space
+coverage and a suﬃciently eﬃcient scan with an acceptable number of viable points, both
+from the point of view of theoretical constraints at the input scale and with respect to the
+experimental constraints that we shall impose in the following. The reader should note
+that the resulting density of points does not have a statistical signiﬁcance. The existence
+of a given point is rather to be understood as a parameter set fulﬁlling certain criteria.
+For the ﬁrst part of the analysis (for which the results are shown in ﬁgure 3), we do not
+make any assumption on the value of the Higgs boson mass and let it vary freely within the
+bounds 0 < Mh0 < 500 GeV. We remind the reader that here, and in the following, capital
+letters always refer to one-loop pole masses. A sample of 106 parameter space points is
+generated within the aforementioned ranges, with the only requirement that they fulﬁll
+vacuum stability, perturbativity, and unitarity at the input scale MZ.
+For the second scan, which is used throughout most of the following analysis, we make
+the assumption that the LHC experiments have indeed observed a (SM-like) Higgs boson
+with a mass around Mh0 ≃ 126 GeV. We therefore ﬁx the mass of the SM-like Higgs boson
+in the IDM to lie in the range
+Mh0 = 125.7 ± 0.6 GeV,
+(5.2)
+which is obtained by a Gaussian combination of the two experimental measurements [19,
+20]. This also ﬁxes the value of λ1 at the input scale. We then sample 107 points in the IDM
+parameter space,
+�
+λ2, λ3, λ4, λ5, µ2
+2
+�
+, again demanding that the stability, perturbativity,
+and unitarity constraints are satisﬁed at the scale MZ.
+A further important SM input is the top-quark mass, which in both scans is sampled
+from the range [73]
+Mt = 173.2 ± 0.9 GeV.
+(5.3)
+This mass is also interpreted as the pole mass, related to the running mass at one loop by
+mt(mt) = Mt
+�
+1 − 8
+3παs(Mt)
+�
+(5.4)
+To solve the renormalization group equations numerically, we use a modiﬁed version
+of the 2HDMC code (version 1.2) [74, 75]. At each scale, the conditions for perturbativity,
+– 12 –
+JHEP09(2013)106
+Figure 3. Left: results from a one-loop RGE analysis of the maximum extrapolation scale Λ which
+satisﬁes perturbativity (red), stability (black), and unitarity (not relevant) as a function of the
+Higgs mass Mh0 in the Standard Model. The value corresponding to the LHC signal is indicated
+by a dashed line. Right: the corresponding results in the Inert Doublet Model for the parameter
+variations according to eq. (5.1).
+vacuum stability, and unitarity are evaluated. As soon as one of the three conditions fails,
+we record the corresponding scale, as well as the failing condition. The maximal scale we
+consider is Q = 1016 GeV (the “GUT” scale), at which the evolution is terminated and
+surviving points are also recorded. 2HDMC is also used to evaluate the oblique parameters
+(at the input scale), and we apply the bounds from direct searches at colliders as described
+in section 4.3. For each parameter space point, we evaluate the scalar pole masses from
+the running parameters as described in section 3.1. This set of parameters is passed to
+micrOMEGAs, which is used to compute the relic density and the WIMP-nucleon spin-
+independent scattering cross section. As a ﬁnal step, we compute the Higgs decay rates
+(again using 2HDMC) to check whether a modiﬁcation of the important h0 → γγ decay mode
+could be reproduced in any of the viable parameter points, and to apply constraints from
+invisible Higgs decays into LOP pairs.
+5.2
+Extrapolation scale
+Our ﬁrst goal is to examine the maximal scale Λ up to which the IDM can be extrapolated
+while remaining a consistent and calculable quantum ﬁeld theory, in the sense of preserving
+perturbativity of all couplings, unitarity of the scattering matrix, and (absolute) stability
+of the electroweak vacuum as discussed above.
+We ﬁrst employ the scan with variable Higgs mass. For comparison, we also perform
+the same excercise for the SM, where the only free parameter is taken to be the mass
+of the Higgs boson h0.
+Both analyses are performed on the same footing, using one-
+loop renormalization group equations and varying the top quark mass within the limits of
+eq. (5.3).9 The results are presented in ﬁgure 3, where we show the maximal extrapolation
+9Far more sophisticated analyses exist for the SM, where state-of-the-art calculations rely on three-loop
+RGEs for the couplings [53]. This analysis shows that the SM Higgs mass range yielding an absolutely
+stable vacuum is enlarged by a few GeV compared to the lowest order prediction.
+– 13 –
+JHEP09(2013)106
+scale of the SM (left) and the IDM (right) as a function of Mh0. The value corresponding
+to the LHC observation, as given by eq. (5.2), is indicated by the dashed line.
+In the left-hand side plot of ﬁgure 3, we can see the two well-known SM bounds coming
+from perturbativity (red), and vacuum stability (black), constraining the Higgs mass from
+above and below, respectively. The width of these two lines corresponds to the uncertainty
+from variation of the top quark mass. It should be noted that the Higgs mass favored by the
+LHC discovery does not satisfy absolute stability in our simple one-loop analysis. A more
+sophisticated analysis points towards a (long-lived) metastable vacuum for the SM [53].
+The introduction of the additional inert doublet signiﬁcantly modiﬁes the extrapolation
+constraints as a function of the Higgs mass, as can be seen on the right-hand side of ﬁgure 3.
+While the modiﬁcation of the upper bound from perturbativity is less pronounced, the
+lower one from stability is greatly relaxed, with the electroweak vacuum being able to
+satisfy absolute stability up to high scales for a larger choice of the higgs mass than in
+the SM case. This eﬀect is due to the contributions of the inert scalars to the potential,
+that can counteract the tendency of the top quark Yukawa coupling to destabilize the
+vacuum by driving λ1 negative, see refs. [76, 77]. Interestingly, this leads to a vacuum
+stability constraint that only manifests itself fairly early in the RGE evolution. In other
+words, parameter space points which have a stable vacuum at the input scale are likely to
+remain stable up to high scales. It is therefore generally the case that one of the other two
+requirements (perturbativity or unitarity) is the more constraining for Mh0 (as can be seen
+From ﬁgure 3). We ﬁnd that the range for which the IDM Higgs mass can be extrapolated
+up to the GUT scale is larger than that in the SM, and in particular that lower values for
+Mh0 are allowed. The measured value Mh0 ∼ 126 GeV, which at our level of approximation
+does not allow for the SM to be valid up to the GUT scale, see ﬁgure 3 (left), is therefore
+allowed in the IDM. We expect this conclusion to hold also in a more sophisticated analysis
+since, as already mentioned, the SM bound on Mh0 from stability is relaxed by the inclusion
+of higher-order corrections [53]. Futhermore, allowing for metastability would render an
+even larger IDM parameter space allowed, as is known to occur for the SM. A more detailed
+analysis of this constraint is beyond the scope of the present work.
+In the following we constrain the Higgs boson mass to the range of eq. (5.2) suggested
+by the LHC discovery.
+We also impose the oblique parameter and collider constraints
+presented in sections 4.2 and 4.3. As before, we evolve the RGEs until one of the three
+theoretical requirements fails and record the corresponding scale. The results are presented
+in ﬁgure 4, where the scale Λ, at which the ﬁrst of the constraints fails, is presented against
+four diﬀerent parameters/predictions of the model, namely MLOP, |MH0 − MA0|, λL, and
+λ2. The colour coding is the same as in ﬁgure 3: red points fail due to the perturbativity
+constraint, black points fail due to vacuum stability, and the green points are those for
+which unitarity is violated at the scale Λ. We observe that, as also noted previously, the
+vacuum stability constraint is relevant mostly at rather low scales Λ ≲ 107 GeV. Unitarity
+violation can occur as late as the GUT scale.
+From ﬁgure 4 we also learn that extrapolating the model towards the GUT scale does
+not favour a particular range for the mass of the dark matter candidate (the LOP). However,
+the coupling parameters are strongly constrained when reaching scales close to the GUT
+– 14 –
+JHEP09(2013)106
+Figure 4. Maximum scale Λ up to which the IDM satisﬁes perturbativity, vacuum stability, and
+unitarity as a function of diﬀerent model parameters/predictions: the LOP mass (top left), the
+mass diﬀerence |MH0 − MA0| (top right), the H0 − H0 − h0 coupling λL (bottom left) and the λ2
+parameter (bottom right). The criterion which failed at the lowest scale is indicated by the colour
+code: perturbativity (red points), vacuum stability (black), and unitarity (green).
+scale. This is due to the requirement of perturbativity, which is much easier to fulﬁll if the
+numerical values of the couplings are small. As a further consequence, the H0 − H0 − h0
+coupling λL and the four-scalar coupling λ2 have to be chosen in a rather narrow interval
+for the model to be valid up to the GUT scale. The mass diﬀerence between H0 and A0 is
+also limited if the GUT scale validity requirement is applied. This is due to the fact that
+mH0 and mA0 stem from a common mass scale, µ2, and their diﬀerence is proportional
+to λ5v2 (see eqs. (2.4)). Since the quartic couplings are bound due to the perturbativity
+requirement, the mass diﬀerence for valid points naturally decreases when approaching the
+GUT scale.
+The same behaviour is observed for the remaining coupling parameters, as shown in
+ﬁgure 5 where the IDM parameter space is projected on the planes (λ3, λL), (λ4, λL),
+(λ5, λL), and (λS, λL). The (light) green regions in this ﬁgure correspond to parameter
+space points that pass the aforementioned constraints at the input scale MZ (constraints
+from DM observables are not imposed here; they will be discussed in the next section).
+Thus, they constitute the maximal phenomenologically viable regions of the IDM within
+the framework of our one-loop analysis.
+At the same time, we highlight in diﬀerent colours the points corresponding to param-
+eter values for which the IDM can be extrapolated up to Λ = 104 GeV (red), Λ = 1010 GeV
+– 15 –
+JHEP09(2013)106
+Figure 5. Projections of the parameter space of the Inert Doublet Model on the planes of λL
+against λ3, λ4, λ5, and λS. The green regions correspond to all valid points in the scan at the input
+scale Λ = MZ, while the red, yellow, and black regions show the points which remain valid up to
+Λ = 104 GeV, Λ = 1010 GeV, and the GUT scale Λ = 1016 GeV, respectively.
+Parameter
+Scan range
+Valid range
+Λ = MZ
+Λ = MZ
+Λ = 104 GeV
+Λ = 1010 GeV
+Λ = 1016 GeV
+λ2
+(0, 4π)
+(0, 8.4)
+(0, 1.30)
+(0, 0.40)
+(0, 0.15)
+λ3
+(−4π, 4π)
+(−2.2, 4π)
+(−0.80, 3.60)
+(−0.40, 1.15)
+(−0.25, 0.75)
+λ4
+(−4π, 4π)
+(−4π, 4π)
+(−3.35, 3.70)
+(−1.20, 1.25)
+(−0.80, 0.90)
+λ5
+(−4π, 4π)
+(−4π, 4π)
+(−1.95, 1.95)
+(−0.55, 0.55)
+(−0.30, 0.30)
+λL
+—
+(−1.2, 14.6)
+(−0.40, 2.20)
+(−0.20, 0.60)
+(−0.15, 0.40)
+λS
+—
+(−1.2, 14.6)
+(−0.40, 2.20)
+(−0.20, 0.60)
+(−0.15, 0.40)
+Table 1. Input ranges for the IDM quartic couplings, allowed ranges when imposing constraints
+at the input scale, and after extrapolation to the scales of 104 GeV, 1010 GeV, and the GUT scale
+1016 GeV.
+(yellow), and the GUT scale Λ = 1016 GeV (black) (assuming that there is no new physics
+between the input and the extrapolation scale).
+As can be seen from this ﬁgure, the
+constraints imposed at the input scale are not too prohibitive, and they are satisﬁed for
+essentially the full parameter ranges considered in our scan. It can also be seen that the
+IDM can be extrapolated up to the GUT scale (Λ = 1016 GeV) in sizeable regions of the
+– 16 –
+JHEP09(2013)106
+Figure 6. The dark matter relic density versus the LOP mass MLOP (left) and the coupling of a
+LOP pair to the Higgs boson λL,S (right). The green points correspond to all valid points in the
+scan at the input scale Λ = MZ, while the red and black region show the points which remain valid
+up to the scale Λ = 104 GeV and the GUT scale Λ = 1016 GeV, respectively. The black dashed line
+indicates the WMAP central value of eq. (4.8).
+parameter space, with the ranges of λL, λS, and λ5 for which this can happen being some-
+what more limited, whereas λ3 and λ4 can reach higher absolute values. Considering new
+physics entering at a lower scale, e.g., at Λ = 104 GeV or Λ = 1010 GeV, the allowed pa-
+rameter ranges increase, cf. ﬁgure 4. Note, however, that the valid ranges for the coupling
+parameters at the phenomenologically relevant scale Λ = 104 GeV = 10 TeV is already
+rather reduced with respect to the input scale Λ = MZ. In table 1 we summarize the
+allowed ranges for the quartic couplings, both at the input scale and after the evolution to
+the mentioned scales.
+5.3
+Dark matter
+With the previous results at hand, we now turn to the IDM dark matter phenomenology,
+assuming as previously that the Higgs and top quark mass are ﬁxed within the ranges given
+by eqs. (5.2) and (5.3), respectively. In ﬁgure 6 we show the predicted relic density as a
+function of the DM candidate mass, MLOP (left), and the triple coupling of a DM pair to
+the (SM-like) Higgs boson (λL when the LOP is H0, λS when it is A0) (right). The 3 σ
+limit from the 7-year WMAP data is represented by the red-dashed region.10
+From the left-hand side plot in ﬁgure 6, we can see that the correct relic density can
+be achieved in the mass regimes that we described in section 3. The viable parts of the
+low- and intermediate- mass regimes extend from 3 GeV up to roughly 120 GeV. From this
+value and up to approximately 500 GeV, the predicted relic density is too low and it can
+reach the WMAP levels again above 500 GeV. In the right-hand side plot, we see that
+the values that λL (λS) can take while yielding the correct relic density lie in the range
+−0.4 ≲ λL,S ≲ 0.4, with positive values preferred by the points viable up to the GUT scale.
+10An updated result ΩCDMh2
+= 0.1196 ± 0.0031 has recently been obtained by the Planck collabora-
+tion [78]. As is clear from ﬁgure 6, using this value would not lead to a qualitative diﬀerence in our results.
+In particular the resulting upper limit on the DM density remains numerically very similar, see eq. (4.9).
+– 17 –
+JHEP09(2013)106
+Figure 7. The viable IDM parameter space projected on the (MLOP, λL,S) plane imposing only
+the upper limit (left) and the upper and lower limits (right) of the WMAP range of eq. (4.8). The
+colour coding is the same as in ﬁgure 6.
+In order to better illustrate the impact of the WMAP results, in ﬁgure 7 we project
+the IDM parameter space onto the (MLOP, λL) plane, demanding that the relic density
+satisﬁes only the upper 7-year WMAP limit (left), or both the upper and the lower bound
+(right). In particular the right plot shows how restrictive the full DM constraint is, and
+it allows to discuss in more detail the various mechanisms responsible for producing the
+correct values for ΩLOPh2 in the diﬀerent mass regimes.
+At very low masses, below 4 GeV, LOPs annihilate dominantly into τ pairs through
+s-channel Higgs exchange.
+The most energetic part of the LOP’s Boltzmann velocity
+distribution can also give some annihilation into bottom quarks. The correct relic density is
+achieved by adjusting λL,S which, given the relative smallness of the τ Yukawa coupling, has
+to be ﬁxed at rather large values. These values decrease as phase space opens up, but also
+as a larger part of the WIMP Boltzmann distribution passes the b¯b production threshold.
+Above MLOP ∼ 4 GeV, the required λL,S values drop by a factor 3–4, compensating for the
+larger bottom Yukawa coupling. Continuing up to roughly 50 GeV, the bulk of the points
+lie on a thin strip where λL,S decreases mildly, corresponding to dominant DM annihilation
+into b¯b pairs through Higgs boson exchange. We remind the reader that due to the LEP
+direct search constraints, coannihilation is absent in this mass range. For MLOP ∼ 50 GeV,
+we observe that the WMAP-allowed values for λL,S decrease further, approaching λL,S = 0
+at precisely MLOP = Mh0/2. Two eﬀects are at play in this mass region. First, the LOP
+mass approaches the point where the Higgs propagator becomes resonant. For a constant
+λL value, the LOP self-annihilation cross section then increases dramatically. As a result, in
+order to get the correct relic density, λL,S must attain small values. The second important
+eﬀect in this mass region comes from the contributions of virtual gauge boson ﬁnal states,
+and especially from W (∗)W ∗. Even for vanishing triple coupling of a DM pair to h0, there
+is an additional four-vertex involving two DM particles and two W bosons. This results
+from the covariant derivative terms in the Lagrangian, acting on the Φ doublet (minimal
+coupling).
+The strength of this vertex is thus characterized by a gauge coupling, and
+does not depend on any free parameter of the model (see also ref. [38]). This constitutes a
+– 18 –
+JHEP09(2013)106
+distinct positive contribution to the DM annihilation cross section that pushes the required
+value for |λL,S| further down.
+For the IDM high-mass regime, a detailed explanation for the behaviour of the the
+relic density constraint has been presented in ref. [37]. Above roughly 120 GeV (the precise
+value depends on Mh0 [39]), the cross section for self-annihilation, in particular into gauge
+boson ﬁnal states, becomes prohibitively large for the lower WMAP bound to be satisﬁed.
+We therefore see that, whereas this region is allowed in the sense of not overshooting the
+WMAP limit, ﬁgures 6, 7 (left), it fails once we demand the IDM to fully account for the
+measured DM density of the universe, ﬁgure 7 (right). However, for MLOP > 500 GeV, an
+interesting eﬀect comes at play. The dominant contribution to the cross section of the type
+H0H0 → V V (A0A0 → V V ) here comes from the longitudinal gauge boson components.
+This cross section is mediated either by a direct quartic coupling, or by a t/u-channel
+exchange of H0, A0, or H±, which scales as M2
+H0/M2
+Z (in the case of the Z ﬁnal state, and
+similarly for the W). The annihilation cross section therefore becomes very large as MLOP
+increases (with a similar dependence also on the NLOP mass). However, when the H0 and
+A0/H± are nearly mass-degenerate, there is a cancellation taking place between the t/u
+channel contributions and the four-vertex diagram. This cancellation is exact for an exact
+degeneracy. For example, with λL = 0, MH0 = 700 GeV, and MA0 = 701, the relic density
+would be too high, and to satisfy the WMAP bound a non-zero value for λL is required. In
+this manner, the WIMP depletion rate can be balanced by varying the LOP-NLOP mass
+splitting and the λL parameter to obtain the correct mixture of transverse and longitudinal
+gauge bosons in the ﬁnal state. These solutions are always found for small LOP-NLOP
+mass splittings, and require some tuning of the value of λL,S. In practice we ﬁnd that the
+maximal allowed mass splitting for the points in our scan is of the order 10 GeV.
+Further constraints from dark matter come, as we have already mentioned, from direct
+detection experiments, and most notably the latest XENON100 limits on the WIMP-
+nucleon spin-independent scattering cross section, σSI.
+In ﬁgure 8 we show the viable
+IDM parameter space in the usual (MLOP, σSI) space and confront the model to the latest
+exclusion bounds from XENON100 [40] (dashed line) and XENON10 [65] (dash-dotted).
+As discussed in section 4.5, we adopt two distinct values for the strange quark nucleon form
+factor, and the results are shown in the left- and right panels of ﬁgure 8, respectively. In this
+ﬁgure all points respect both the upper and the lower WMAP bounds. The behaviour of
+the LOP-nucleon scattering cross section follows quite closely the corresponding behaviour
+of the coupling λL,S in ﬁgure 7, since the only way of coupling the LOP to quarks at tree
+level is through t-channel Higgs exchange (the relevant coupling being simply λL,S). It can
+be seen clearly that the low- and intermediate- mass regimes are almost fully excluded.
+The only surviving points are those for which the correct relic density is achieved through
+a combination of small values for the λL,S coupling and quasi-resonant annihilation to
+an s-channel Higgs boson and virtual gauge boson ﬁnal states. The very low mass regime
+(MLOP < 10 GeV) is also excluded by the XENON10 bounds on low-mass WIMPs [65]. The
+high mass regime, on the other hand, remains unaﬀected by current direct detection bounds.
+In ﬁgure 8 we can also clearly observe a consequence of ﬁxing the Higgs mass to a
+constant value. The resonance regime, which for a variable Higgs mass consists of an entire
+region, acquires now the well-known two-branch “funnel” structure that is present, e.g.,
+– 19 –
+JHEP09(2013)106
+Figure 8. Projection of the viable IDM parameter space on the (MLOP, σSI) plane against the
+latest limits from XENON10 (dash-dotted line) and XENON100 (dashed line) for fT s = 0.2594
+(left) and fT s = 0.014 (right). The colour coding for the shown points is the same as in ﬁgure 6.
+in models such as the MSSM, where the Higgs mass is ﬁxed to a very limited range. The
+funnel extends quasi-symmetrically in two narrow regions around Mh0/2. The LOP cannot
+approach too close to the resonance since the relic density would then be too low. With the
+Higgs mass ﬁxed, the freedom of moving within the funnel region essentially disappears,
+which demonstrates that a greater accuracy is demanded in order to assess whether a
+parameter space point is excluded or not. A similar comment applies to the high mass
+regime and the precise tuning of the LOP-NLOP mass splitting that we discussed above.
+Moreover, we observe the anticipated, numerically signiﬁcant, impact of fTs on the
+LOP-nucleus scattering cross section. As we pointed out, the driving mechanism for WIMP-
+nucleon scattering in the IDM is t-channel Higgs exchange. The Higgs couples preferentially
+to strange quarks, hence varying the strange quark form factor can have an impact of up
+to a factor 7 in the scattering cross section. While in this particular case most of the
+parameter space remains excluded, this is a transparent illustration of the importance of
+knowing fTs with better accuracy to make precise statements. Using the more conservative
+value, we ﬁnd that the mass ranges allowed by WMAP and direct exclusion bounds are
+50 GeV < MLOP < 80 GeV and MLOP > 500 GeV.
+As a ﬁnal remark on direct detection, we should mention that in a recent paper the
+one-loop electroweak corrections to the LOP-nucleon scattering cross section were com-
+puted [23]. According to the ﬁndings, these corrections give positive contributions to the
+scattering cross section of the order of 10−11–10−10 pb, that can actually superseed the
+tree-level contributions in non-negligible regions of the parameter space (in particular for
+small λL values). These contributions do not depend on the IDM couplings, since the
+relevant vertices involve gauge couplings, and for the most should be quite insensitive to
+variations of fTs. The most striking impact is that these corrections basically set a lower
+value for the scattering cross section over the full range of LOP masses, which turns out
+to be within the reach of the upcoming XENON-1T experiment. This is a nice example of
+the complementarity among direct dark matter and collider searches, since the high mass
+regime, most probably out of the LHC reach, will be probed by the next generation of
+direct detection experiments.
+– 20 –
+JHEP09(2013)106
+Figure 9. Relative branching ratio Rγγ = BR(h0 → γγ)IDM/BR(h0 → γγ)SM as a function of the
+charged scalar mass MH± (top) and the coupling λ3 (bottom), applying only the upper WMAP
+limit on the relic density (left), and both the upper and lower limits (right). The colour coding is
+the same as in ﬁgure 6.
+5.4
+LHC Higgs phenomenology
+The phenomenology of the Higgs-like state observed at Mh0 ∼ 126 GeV remains mostly
+unchanged in the IDM compared to the SM. Since the inert scalars do not have tree-level
+couplings to fermions, the SM production modes and dominant decay channels are unaf-
+fected, which leaves the rates compatible with the data from diﬀerent channels measured
+by ATLAS [19] and CMS [20]. On the other hand, the prediction for one of the experi-
+mentally most important decay modes, h0 → γγ, can be aﬀected at leading order. In the
+SM, the h0 → γγ decay is mediated by loop diagrams, where the most important contri-
+butions come from W bosons and top quarks, while in the IDM it receives an additional
+contribution from the charged scalars.11 Following the LHC discovery, this has also been
+discussed in the context of the 2HDM [79–83].
+We calculate the partial width Γ(h0 → γγ) and the corresponding branching ratio
+for the points in the parameter space that satisfy the constraints, including the WMAP
+bounds on the relic density. In ﬁgure 9, we show the ratio
+Rγγ = BR(h0 → γγ)IDM
+BR(h0 → γγ)SM
+,
+(5.5)
+11The leading-order prediction for the decay h0 → Zγ could be similarly modiﬁed, but this mode has not
+yet been observed experimentally.
+– 21 –
+JHEP09(2013)106
+Figure 10. Projection of the viable IDM parameter space for MLOP versus λL,S (left) and σSI
+(right), with the limits from XENON10 (dash-dotted line) and XENON100 (dashed line). The
+colour coding is the same as in ﬁgure 6. The full DM constraint from WMAP is applied, as well as
+the upper bound BR(h0 → invisible) < 0.65.
+which in the IDM corresponds to the modiﬁcation of the inclusive h0 → γγ rate (recall
+that the h0 production in, e.g., gluon fusion, remains unchanged).
+The colour coding
+used in ﬁgure 9 is the same as above, where green indicates all viable points in the scan
+at the input scale Λ = MZ, red corresponds to the points which can be extrapolated to
+at least Λ = 104 GeV, and the black points in addition remain stable and perturbative
+up to the GUT scale Λ = 1016 GeV. Considering ﬁrst the upper left plot, we show Rγγ
+as a function of MH± with only the upper WMAP limit on the relic density applied.
+For large values of MH± the rate decouples to the SM value (Rγγ → 1), whereas for
+MH± ≲ 300 GeV, we see that the two photon rate can be modiﬁed substantially. Here
+we observe scenarios with an enhancement in Rγγ above the SM, or with a suppression to
+lower values. The eﬀect is most pronounced for low MH± ≲ 100 GeV, where the possible
+modiﬁcation due to scalar contributions exceeds 30%. It should be pointed out that these
+low values for the charged scalar mass are allowed in the IDM without contradicting either
+indirect constraints from ﬂavour physics [84], or the direct LHC searches for charged Higgs
+bosons [85, 86]; again, since the charged scalar does not couple to fermions. On the other
+hand, values for MH± ∼ 100 GeV would limit the mass for the IDM dark matter candidate,
+MLOP, to the low mass regime.
+As can be seen from ﬁgure 9, an Rγγ enhancement is not compatible with requiring
+a scenario valid up to the GUT scale, since these scenarios (black points) always lead to
+a suppressed value, Rγγ ≤ 1. The explanation behind this is given in the lower left plot,
+which shows Rγγ versus λ3. Here it can be seen that, once the WMAP constraints are
+applied, the sign of λ3 must be positive for scenarios to be viable up to the GUT scale.
+At the same time, the sign of this parameter governs the interference between the charged
+scalar contribution and the (SM) WW contribution, and a suppression (enhancement) is
+obtained for positive (negative) values of λ3.
+The second set of plots in ﬁgure 9 (right) are the same as those to the left, except
+that both the upper and the lower WMAP limits on the relic density have now been
+– 22 –
+JHEP09(2013)106
+applied. These plots show important diﬀerence compared to the results where only the
+upper WMAP limit is applied.
+First of all, the number of allowed points is naturally
+much reduced. A second, very important, diﬀerence is the complete absence of points with
+Rγγ > 1 in this case. Once the (full) relic density constraint is imposed, the IDM rate for
+h0 → γγ should therefore be expected to come out similar to (or below) that in the SM.
+Another possibility, which is visible in ﬁgure 9, is to have more than an order of
+magnitude suppression of Rγγ. This large suppression can be caused by “invisible” Higgs
+decays to the LOP, h0 → H0H0 (h0 → A0A0) for MLOP < Mh0/2. The resulting low
+values of Rγγ are not compatible with the observation of a SM-like Higgs boson at the
+LHC, which can serve as a further constraint on these scenarios. In addition, the ATLAS
+Collaboration has recently published upper limits [87] on the possible size of an invisible
+branching ratio for a SM-like Higgs boson. At the observed value for the Higgs mass, this
+corresponds to the constraint
+BR(h0 → invisible) < 0.65
+(5.6)
+at 95% CL. In the IDM, when h0 decays to LOP pairs is open, the invisible branching ratio
+tends to become very large. The eﬀect of applying eq. (5.6) as a constraint can be seen in
+ﬁgure 10, which shows the valid points in the (MLOP, λL,S) and (MLOP, σSI) planes after
+applying this bound. As illustrated by this ﬁgure, this constraint from the LHC provides
+a complementary limit to that from direct detection, in ruling out IDM dark matter in the
+low- and intermediate mass regimes.
+5.5
+Benchmark scenarios
+As a ﬁnal result of our analysis, we extract three benchmark points which capture diﬀerent
+aspects of the IDM phenomenology.
+The scalar masses and quartic coupling for these
+points are summarized in table 2.
+The ﬁrst benchmark point has MLOP = 66 GeV ∼ Mh0/2.
+It lies at the border
+between the Higgs-funnel and WW ∗ threshold regions, where the annihilation proceeds
+partly through a h0 resonance and partly into (virtual) gauge bosons. For the given point,
+the combination of the two mecanisms leads to the value of ΩLOPh2 = 0.1113, which is in
+agreement with the WMAP interval of eq. (4.8). The second benchmark scenario, point
+II, lies in the high-mass regime, the LOP being the pseudoscalar A0. Its mass is almost
+degenerate with the other inert scalars, so that the relic density of ΩLOPh2 = 0.1224 is
+achieved through the interplay of pair-annihilation and co-annihilation between A0, H0,
+and H±. Both scenarios I and II can be extrapolated to the GUT scale, but neither of
+them present an enhanced h0 → γγ decay rate as compared to the Standard Model. Point
+II is out of the reach of LHC, but might be probed by the XENON1T experiment.
+Finally, point III is inspired by recent LHC observations rather than by its dark matter
+phenomenology. It presents an enhanced h0 → γγ decay rate (Rγγ = 1.25) as currently
+favoured by ATLAS [88], but not by CMS [89]. This scenario has a rather low relic density
+(ΩLOPh2 ∼ 7·10−4). Extrapolation of this scenario is only possible up to a maximum scale
+of about 10 TeV, where the requirement of perturbativity fails. Let us note that in principle
+– 23 –
+JHEP09(2013)106
+Mh0
+MH0
+MA0
+MH±
+λL
+λ2
+ΩLOPh2
+σSI (pb)
+Rγγ
+Λ (GeV)
+I
+125.3
+66
+131
+137
+0.012
+9 · 10−4
+0.1113
+7.1 · 10−10
+0.91
+> 1016
+II
+125.8
+973
+972
+976
+0.170
+0.022
+0.1224
+4.4 · 10−10
+1.00
+> 1016
+III
+125.9
+91
+262
+102
+-0.359
+1.182
+7 · 10−4
+3 · 10−7
+1.25
+1.2 · 104
+Table 2. Scalar masses (in GeV) and quartic couplings at the input scale, MZ, for three benchmark
+scenarios, with the corresponding values for the relic density, ΩLOPh2, direct detection cross section,
+σSI, the h0 → γγ rate relative to the SM, Rγγ, and the maximum extrapolation scale, Λ.
+it would have been possible to ﬁnd a scenario with Rγγ ∼ 1.25 and a higher extrapolation
+scale (see e.g. ﬁgure 11), but the corresponding charged scalar masses are found to be very
+close to the limit MH± > MW . We have therefore chosen a more conservative point where
+MH± > 100 GeV.
+The fact that it is not possible to satisfy all the constraints which have been discussed in
+our detailed analysis while obtaining an enhanced Rγγ within the IDM is again illustrated
+in ﬁgure 11. This ﬁgure shows the correlation of Rγγ to the relic density ΩLOPh2 (left) and
+the maximum extrapolation scale Λ (right) obtained from our parameter space scan. We
+clearly see that points with Rγγ > 1 are only found for ΩLOPh2 < 0.1. In the high-mass
+regime, due to the requirement MH± > MLOP, the charged scalar is also rather heavy, and
+the branching ratio of the decay h0 → γγ is equal to the SM value. In the low-mass regime,
+the LOP is light enough to allow for invisible decay of the SM-like Higgs, so that its decay
+rate into photons is suppressed. In the intermediate mass region, as mentioned before,
+λ3 is restricted to positive values in order to satisfy the upper and lower WMAP limits.
+At the same time, a negative value of λ3 is necessary to achieve Rγγ > 1 (see ﬁgure 9).
+Consequently, both conditions cannot be satisﬁed at the same time. Relaxing the lower
+WMAP bound allows for points similar to our benchmark scenario II, i.e. presenting an
+enhanced value of Rγγ > 1, but with a lower dark matter relic density ΩLOPh2 ≲ 0.1.
+Similarly, the situation of Rγγ > 1 occurs only for extrapolation scales lower than
+Λ ≲ 107 GeV, as can be seen from ﬁgure 11 (right). As discussed before, the extrapolating
+to high scales puts an upper limit on the absolute value of the coupling parameters. In
+consequence, the decay rate of h0 → γγ is smaller because of the limited quartic coupling λ3.
+6
+Summary
+We have presented an extensive study of the Inert Doublet Model in the light of the recent
+potential discovery of a Higgs-like boson with a mass around 126 GeV at the Large Hadron
+Collider (LHC). To this end, we have computed the one-loop corrections to the scalar
+masses of the model and evaluated their numerical eﬀect. In particular, we have shown the
+diﬀerence between the pole mass and the running MS masses to be of the order of a few
+percent. This is sizeable in the context of dark matter annihilation, which often relies on
+precise mass diﬀerences with respect to a resonance, or on the presence of co-annihilation
+which is equally sensitive to the precise relations among the masses of the involved particles.
+– 24 –
+JHEP09(2013)106
+Figure 11. Correlation of the relative branching ratio Rγγ = BR(h0 → γγ)IDM/BR(h0 → γγ)SM
+and the dark matter relic density ΩLOPh2 (left) and the maximum extrapolation scale Λ (right).
+The colour coding on the left-hand side is the same as in ﬁgure 6.
+Moreover, we examined the high-energy behaviour of the IDM when treating the Higgs
+boson mass either as a free parameter, or under the assumption that the particle observed
+at the LHC corresponds to the IDM Higgs boson. In particular, we require the perturba-
+tivity of all couplings, stability of the electroweak vacuum, and unitarity of the S-matrix.
+By employing the one-loop renormalization group equations, we have shown that these
+constraints become less prohibitive than in the case of the Standard Model. More pre-
+cisely, the IDM can be extrapolated up to high scales, including up to the GUT scale, for
+a non-negligible range of parameter choices and for larger ranges of the Higgs boson mass,
+with the experimentally observed value lying ﬁrmly within the region where the IDM can
+remain valid up to very high energy scales.
+We have then imposed a series of constraints coming from collider (LEP, oblique pa-
+rameters) and dark matter (WMAP, direct detection) experiments, combining them with
+the aforementioned theoretical requirements.
+We ﬁnd that the oblique parameter con-
+straints has only mild eﬀects upon the IDM parameter space, and the main result of the
+LEP bounds is to push the NLOP mass above 100 GeV, which in turn results in the absence
+of neutal co-annihilation in the lower LOP mass regime (roughly below 80 GeV).
+As a further consequence, the relic density in this mass region is driven by the self-
+annihilation cross section, which can be modiﬁed by tuning the couplings of the LOP (λL
+or λS for H0 or A0, respectively) to the Higgs boson, or by approaching the Higgs reso-
+nance and WW production threshold. Far from the resonance/threshold, relatively large
+λL (or λS) values are required for the WMAP bounds to be satisﬁed. This also implies a
+large WIMP-nucleon scattering cross section, which brings the model in tension with the
+current XENON bounds. The only surviving region lies close to the Higgs resonance/WW
+production threshold, where λL,S, and consequently the coupling to quarks via Higgs ex-
+change, has to be small in order for the depletion rate of DM not to be too high. The
+signiﬁcant reduction of the available parameter space demonstrates the crucial character
+Higgs measurements can have for a number of dark matter models. Another measurement
+which we have used to constrain the mass region MLOP < Mh0/2 is the upper limit on an
+invisible branching ratio for the SM-like Higgs boson observed at the LHC. Here we ﬁnd
+– 25 –
+JHEP09(2013)106
+that the current limits are complementary, and give results that are very similar in reach,
+to those from direct detection experiments.
+The high mass regime, on the other hand, remains relatively unaﬀected by all the
+current bounds, and we ﬁnd a viable region of parameter space for DM masses above
+500 GeV. This provides an interesting scenario for direct detections experiments, since it
+was recently pointed out [23] that the future XENON-1T experiment should be able to
+probe essentially the entire viable IDM parameter space, including the high-mass regions
+that are likely to remain inaccessible to the LHC.
+Finally, we have studied the interplay between the dark matter phenomenology and
+the LHC Higgs phenomenology, in particular the possibility to have a modiﬁed h0 → γγ
+decay rate, as still allowed by the present data. Here, the most important result of our
+analysis is that enhanced h0 → γγ rate can only be achieved for a dark matter relic density
+which is below the WMAP limit. Moreover, we ﬁnd that the corresponding parameter
+points cannot be extrapolated to scales higher than 107 GeV with the requirement of per-
+turbativity satisﬁed. Based on our ﬁndings, we have presented three benchmark scenarios
+that capture the essential features discussed throughout our analysis, i.e. dark matter relic
+density and detection, possibility to extrapolate the model to high scales, and an enhanced
+h0 → γγ decay rate inspired by the LHC discovery and the current excess observed in this
+channel by ATLAS.
+Acknowledgments
+The authors would like to thank S. Rydbeck for valuable discussions. We are grateful to
+F. Staub and B. Fuks for their help concerning the use of SARAH and FeynRules. Finally, we
+would like to thank G. B´elanger and A. Pukhov for substantial help with the micrOMEGAs
+code and especially for providing us with a version computing three-body ﬁnal state con-
+tributions. The work of A.G. and B.H. was in part supported by the Landesexzellenz-
+Initiative Hamburg. During part of this work O.S. was supported by the Collaborative
+Research Center SFB 676 of the DFG, “Particles, Strings, and the Early Universe”. O.S.
+is now supported by the Swedish Research Council (VR) through the Oskar Klein Centre.
+At LAPTh, this activity was developed coherently with the research axes supported by the
+LABEX grant ENIGMASS. The authors would like to thank the DESY Theory Group,
+where part of this work was performed, for warm hospitality.
+A
+One-loop scalar masses
+In this appendix, we give the expressions for the (one-loop) running scalar masses in the
+Inert Doublet Model, which have been obtained as discussed in section 3.
+In the MS
+scheme, the masses for the SM-like Higgs boson (h0) and inert scalars (H0, A0, H±) are
+given by
+m2
+h0 = m2
+h0 −
+α
+16πc2
+W s2
+W
+�
+c2
+W
+�
+6 + m2
+h0
+M2
+W
+�
+A0(M2
+W ) +
+�
+3 + m2
+h0
+2M2
+Z
+�
+A0(M2
+Z)
++ c2
+W M2
+W
+�
+12 + m4
+h0
+M4
+W
+�
+B0(M2
+W , M2
+W ) + M2
+Z
+�
+6 + m4
+h0
+2M4
+Z
+�
+B0(M2
+Z, M2
+Z)
+– 26 –
+JHEP09(2013)106
++ 3m2
+h0
+2M2
+Z
+�
+A0(m2
+h0) + 3m2
+h0B0(m2
+h0, m2
+h0)
+�
+− 6M2
+Z − 12c2
+W M2
+W
+�
+(A.1)
++
+1
+8π2
+�
+f
+Nf
+Cy2
+f
+�
+A0(m2
+f) + y2
+fv2B0(m2
+f, m2
+f)
+�
+−
+1
+16π2
+�
+λLA0(m2
+H0) + λSA0(m2
+A0) + λ3A0(m2
+H±)
++ 2λ2
+Lv2B0(m2
+H0, m2
+H0) + 2λ2
+Sv2B0(m2
+A0, m2
+A0) + λ2
+3v2B0(m2
+H±, m2
+H±)
+�
+,
+m2
+H0 =m2
+H0 −
+α
+16πc2
+W s2
+W
+�
+3
+�
+A0(M2
+Z) + 2c2
+W A0(M2
+W )
+�
++ 2c2
+W m2
+H±B0(m2
+H±, M2
+W )
++ m2
+A0B0(m2
+A0, M2
+Z) − 2M2
+Z − 4c2
+W M2
+W
+�
+−
+1
+16π2
+�
+λ3A0(M2
+W ) + λSA0(M2
+Z) + λLA0(m2
+h0) + 3λ2A0(m2
+H0)
+(A.2)
++ λ2A0(m2
+A0) + 2λ2A0(m2
+H±) + 1
+2(λ4 + λ5)2v2B0(m2
+H±, M2
+W )
++ λ2
+5v2B0(m2
+A0, M2
+Z) + 4λ2
+Lv2B0(m2
+H0, m2
+h0)
+�
+,
+m2
+A0 = m2
+A0 −
+α
+16πc2
+W s2
+W
+�
+3
+�
+A0(M2
+Z) + 2c2
+W A0(M2
+W )
+�
++ 2c2
+W m2
+H±B0(m2
+H±, M2
+W )
++ m2
+H0B0(m2
+H0, M2
+Z) − 2M2
+Z − 4c2
+W M2
+W
+�
+−
+1
+16π2
+�
+λ3A0(M2
+W ) + λLA0(M2
+Z) + λSA0(m2
+h0) + λ2A0(m2
+H0)
+(A.3)
++ 3λ2A0(m2
+A0) + 2λ2A0(m2
+H±) + 1
+2(λ4 − λ5)2v2B0(m2
+H±, M2
+W )
++ λ2
+5v2B0(m2
+H0, M2
+Z) + 4λ2
+Sv2B0(m2
+A0, m2
+h0)
+�
+,
+m2
+H± = m2
+H± −
+α
+16πc2
+W s2
+W
+�
+6c2
+W A0(M2
+W ) + 3(c2
+W − s2
+W )2A0(M2
+Z)
++ (c2
+W − s2
+W )2m2
+H±B0(m2
+H±, M2
+Z) + c2
+W m2
+H0B0(m2
+H0, M2
+W )
++ c2
+W m2
+A0B0(m2
+A0, M2
+W ) − 2M2
+Z(c2
+W − s2
+W )2 − 4c2
+W M2
+W
+�
+(A.4)
+−
+1
+16π2
+�
+(λ3 + λ4) A0(M2
+W ) + λ3
+2 A0(M2
+Z) + λ3
+2 A0(m2
+h0) + λ2A0(m2
+H0)
++ λ2A0(m2
+A0) + 4λ2A0(m2
+H±) + λ2
+3v2B0(m2
+h0, m2
+H±)
++ 1
+4
+�
+(λ4 + λ5)2v2B0(m2
+H0, M2
+W ) + (λ4 − λ5)2v2B0(m2
+A0, M2
+W )
+��
+.
+In these expressions MZ is the Z boson mass, MW the W mass, and yf (mf) the Yukawa
+coupling (mass) of a generic fermion f that comes in Nf
+C number of colours (3 for quarks
+and 1 for leptons). We further denote the electromagnetic ﬁne-structure constant as α,
+– 27 –
+JHEP09(2013)106
+and we use the shorthand notation c2
+W = 1 − s2
+W = M2
+W /M2
+Z for the weak mixing angle.
+The functions A0 and B0 are the regularized (ﬁnite) parts of the one- and two-point scalar
+integrals, respectively. The ﬁrst argument p2 = 0 of the function B0 has been suppressed.
+For details on these integrals, as well as their expressions in terms of elementary functions,
+the reader is referred to ref. [47].
+B
+One-loop beta functions
+The one-loop beta functions for the running of the parameters appearing in the general
+2HDM potential are known in the literature, see for example [50]. To collect everything
+using a consistent notation for the IDM, we give the results of our calculation here. The
+beta function for a running parameter λi(Q) is deﬁned through
+16π2
+∂λi
+∂ log Q = βλi = β(s)
+λi + β(g)
+λi + β(y)
+λi ,
+(B.1)
+where we choose to separate the contributions from scalars (s), gauge interactions (g)
+and Yukawa couplings (y). The contributions to the IDM beta functions from the scalar
+interactions are given by
+β(s)
+λ1 = 24λ2
+1 + 2λ2
+3 + 2λ3λ4 + λ2
+4 + λ2
+5,
+(B.2)
+β(s)
+λ2 = 24λ2
+2 + 2λ2
+3 + 2λ3λ4 + λ2
+4 + λ2
+5,
+(B.3)
+β(s)
+λ3 = 4 (λ1 + λ2) (3λ3 + λ4) + 4λ2
+3 + 2λ2
+4 + 2λ2
+5,
+(B.4)
+β(s)
+λ4 = 4λ4 (λ1 + λ2 + 2λ3 + λ4) + 8λ2
+5,
+(B.5)
+β(s)
+λ5 = 4λ5 (λ1 + λ2 + 2λ3 + 3λ4) .
+(B.6)
+The contributions from gauge interactions read
+β(g)
+λ1 = 3
+8
+�
+3g4 + g′4 + 2g2g′2�
+− 3λ1
+�
+3g2 + g′2�
+,
+(B.7)
+β(g)
+λ2 = 3
+8
+�
+3g4 + g′4 + 2g2g′2�
+− 3λ2
+�
+3g2 + g′2�
+,
+(B.8)
+β(g)
+λ3 = 3
+4
+�
+3g4 + g′4 − 2g2g′2�
+− 3λ3
+�
+3g2 + g′2�
+,
+(B.9)
+β(g)
+λ4 = 3g2g′2 − 3λ4
+�
+3g2 + g′2�
+,
+(B.10)
+β(g)
+λ5 = −3λ5
+�
+3g2 + g′2�
+.
+(B.11)
+Finally, including only the third generation fermions, we get from the Yukawa interactions
+β(y)
+λ1 = 4λ1
+�
+y2
+τ + 3y2
+b + 3y2
+t
+�
+− 2
+�
+y4
+τ + 3y4
+b + 3y4
+t
+�
+,
+(B.12)
+β(y)
+λ2 = 0,
+(B.13)
+β(y)
+λ3 = 2λ3
+�
+y2
+τ + 3y2
+t + 3y2
+b
+�
+,
+(B.14)
+β(y)
+λ4 = 2λ4
+�
+y2
+τ + 3y2
+t + 3y2
+b
+�
+,
+(B.15)
+β(y)
+λ5 = 2λ5
+�
+y2
+τ + 3y2
+t + 3y2
+b
+�
+.
+(B.16)
+– 28 –
+JHEP09(2013)106
+We also need the running of the gauge couplings, which is given by
+βgi = big3
+i
+(gi = g, g′, gs),
+(B.17)
+where, for the case of two Higgs doublets, b1 = −3, b2 = 7, and b3 = −7. The corresponding
+expressions for the Yukawa couplings are
+β(y)
+yt
+= yt
+�
+−17
+12g′2 − 9
+4g2 − 8g2
+s + y2
+τ + 9
+2y2
+t + 3
+2y2
+b
+�
+,
+(B.18)
+β(y)
+yb = yb
+�
+− 5
+12g′2 − 9
+4g2 − 8g2
+s + y2
+τ + 3
+2y2
+t + 9
+2y2
+b
+�
+,
+(B.19)
+β(y)
+yτ = yτ
+�
+−15
+4 g′2 − 9
+4g2 + 5
+2y2
+τ + 3y2
+t + 3y2
+b
+�
+.
+(B.20)
+Open Access.
+This article is distributed under the terms of the Creative Commons
+Attribution License which permits any use, distribution and reproduction in any medium,
+provided the original author(s) and source are credited.
+References
+[1] N.G. Deshpande and E. Ma, Pattern of symmetry breaking with two Higgs doublets,
+Phys. Rev. D 18 (1978) 2574 [INSPIRE].
+[2] E. Ma, Veriﬁable radiative seesaw mechanism of neutrino mass and dark matter,
+Phys. Rev. D 73 (2006) 077301 [hep-ph/0601225] [INSPIRE].
+[3] R. Barbieri, L.J. Hall and V.S. Rychkov, Improved naturalness with a heavy Higgs: an
+alternative road to LHC physics, Phys. Rev. D 74 (2006) 015007 [hep-ph/0603188]
+[INSPIRE].
+[4] M. Gustafsson, E. Lundstr¨om, L. Bergstr¨om and J. Edsj¨o, Signiﬁcant Γ lines from inert
+Higgs dark matter, Phys. Rev. Lett. 99 (2007) 041301 [astro-ph/0703512] [INSPIRE].
+[5] P. Agrawal, E.M. Dolle and C.A. Krenke, Signals of inert doublet dark matter in neutrino
+telescopes, Phys. Rev. D 79 (2009) 015015 [arXiv:0811.1798] [INSPIRE].
+[6] S. Andreas, M.H. Tytgat and Q. Swillens, Neutrinos from inert doublet dark matter,
+JCAP 04 (2009) 004 [arXiv:0901.1750] [INSPIRE].
+[7] E. Nezri, M.H. Tytgat and G. Vertongen, e+ and ¯p from inert doublet model dark matter,
+JCAP 04 (2009) 014 [arXiv:0901.2556] [INSPIRE].
+[8] C. Arina, F.-S. Ling and M.H. Tytgat, IDM and iDM or the inert doublet model and
+inelastic dark matter, JCAP 10 (2009) 018 [arXiv:0907.0430] [INSPIRE].
+[9] J.-O. Gong, H.M. Lee and S.K. Kang, Inﬂation and dark matter in two Higgs doublet models,
+JHEP 04 (2012) 128 [arXiv:1202.0288] [INSPIRE].
+[10] L. Lopez Honorez, E. Nezri, J.F. Oliver and M.H. Tytgat, The inert doublet model: an
+archetype for dark matter, JCAP 02 (2007) 028 [hep-ph/0612275] [INSPIRE].
+[11] WMAP collaboration, E. Komatsu et al., Seven-year Wilkinson Microwave Anisotropy
+Probe (WMAP) observations: cosmological interpretation,
+Astrophys. J. Suppl. 192 (2011) 18 [arXiv:1001.4538] [INSPIRE].
+– 29 –
+JHEP09(2013)106
+[12] M. Gustafsson, S. Rydbeck, L. Lopez-Honorez and E. Lundstrom, Status of the inert doublet
+model and the role of multileptons at the LHC, Phys. Rev. D 86 (2012) 075019
+[arXiv:1206.6316] [INSPIRE].
+[13] E. Lundstr¨om, M. Gustafsson and J. Edsj¨o, The inert doublet model and LEP II limits,
+Phys. Rev. D 79 (2009) 035013 [arXiv:0810.3924] [INSPIRE].
+[14] Q.-H. Cao, E. Ma and G. Rajasekaran, Observing the dark scalar doublet and its impact on
+the standard-model Higgs boson at colliders, Phys. Rev. D 76 (2007) 095011
+[arXiv:0708.2939] [INSPIRE].
+[15] E. Dolle, X. Miao, S. Su and B. Thomas, Dilepton signals in the inert doublet model,
+Phys. Rev. D 81 (2010) 035003 [arXiv:0909.3094] [INSPIRE].
+[16] X. Miao, S. Su and B. Thomas, Trilepton signals in the inert doublet model,
+Phys. Rev. D 82 (2010) 035009 [arXiv:1005.0090] [INSPIRE].
+[17] L. Wang and X.-F. Han, LHC diphoton Higgs signal and top quark forward-backward
+asymmetry in quasi-inert Higgs doublet model, JHEP 05 (2012) 088 [arXiv:1203.4477]
+[INSPIRE].
+[18] P. Osland, A. Pukhov, G. Pruna and M. Purmohammadi, Phenomenology of charged scalars
+in the CP-violating inert-doublet model, JHEP 04 (2013) 040 [arXiv:1302.3713] [INSPIRE].
+[19] ATLAS collaboration, Observation of a new particle in the search for the standard model
+Higgs boson with the ATLAS detector at the LHC, Phys. Lett. B 716 (2012) 1
+[arXiv:1207.7214] [INSPIRE].
+[20] CMS collaboration, Observation of a new boson at a mass of 125 GeV with the CMS
+experiment at the LHC, Phys. Lett. B 716 (2012) 30 [arXiv:1207.7235] [INSPIRE].
+[21] Tevatron New Physics Higgs Working Group, CDF, D0 collaboration, Updated
+combination of CDF and D0 searches for standard model Higgs boson production with up to
+10.0 fb−1 of data, arXiv:1207.0449 [INSPIRE].
+[22] T. Hambye and M.H. Tytgat, Electroweak symmetry breaking induced by dark matter,
+Phys. Lett. B 659 (2008) 651 [arXiv:0707.0633] [INSPIRE].
+[23] M. Klasen, C.E. Yaguna and J.D. Ruiz-Alvarez, Electroweak corrections to the direct
+detection cross section of inert Higgs dark matter, Phys. Rev. D 87 (2013) 075025
+[arXiv:1302.1657] [INSPIRE].
+[24] G. Branco et al., Theory and phenomenology of two-Higgs-doublet models,
+Phys. Rept. 516 (2012) 1 [arXiv:1106.0034] [INSPIRE].
+[25] T.A. Chowdhury, M. Nemevˇsek, G. Senjanovi´c and Y. Zhang, Dark matter as the trigger of
+strong electroweak phase transition, JCAP 02 (2012) 029 [arXiv:1110.5334] [INSPIRE].
+[26] D. Borah and J.M. Cline, Inert doublet dark matter with strong electroweak phase transition,
+Phys. Rev. D 86 (2012) 055001 [arXiv:1204.4722] [INSPIRE].
+[27] J.M. Cline and K. Kainulainen, Improved electroweak phase transition with subdominant
+inert doublet dark matter, Phys. Rev. D 87 (2013) 071701 [arXiv:1302.2614] [INSPIRE].
+[28] M. Drees, J. Kim and K. Nagao, Potentially large one-loop corrections to WIMP
+annihilation, Phys. Rev. D 81 (2010) 105004 [arXiv:0911.3795] [INSPIRE].
+[29] A. Freitas, Radiative corrections to co-annihilation processes, Phys. Lett. B 652 (2007) 280
+[arXiv:0705.4027] [INSPIRE].
+– 30 –
+JHEP09(2013)106
+[30] B. Herrmann and M. Klasen, SUSY-QCD corrections to dark matter annihilation in the
+Higgs funnel, Phys. Rev. D 76 (2007) 117704 [arXiv:0709.0043] [INSPIRE].
+[31] B. Herrmann, M. Klasen and K. Kovarik, Neutralino annihilation into massive quarks with
+SUSY-QCD corrections, Phys. Rev. D 79 (2009) 061701 [arXiv:0901.0481] [INSPIRE].
+[32] B. Herrmann, M. Klasen and K. Kovarik, SUSY-QCD eﬀects on neutralino dark matter
+annihilation beyond scalar or gaugino mass uniﬁcation, Phys. Rev. D 80 (2009) 085025
+[arXiv:0907.0030] [INSPIRE].
+[33] J. Harz, B. Herrmann, M. Klasen, K. Kovarik and Q.L. Boulc’h, Neutralino-stop
+co-annihilation into electroweak gauge and Higgs bosons at one loop,
+Phys. Rev. D 87 (2013) 054031 [arXiv:1212.5241] [INSPIRE].
+[34] N. Baro, F. Boudjema and A. Semenov, Full one-loop corrections to the relic density in the
+MSSM: a few examples, Phys. Lett. B 660 (2008) 550 [arXiv:0710.1821] [INSPIRE].
+[35] N. Baro, F. Boudjema, G. Chalons and S. Hao, Relic density at one-loop with gauge boson
+pair production, Phys. Rev. D 81 (2010) 015005 [arXiv:0910.3293] [INSPIRE].
+[36] F. Boudjema, G. Drieu La Rochelle and S. Kulkarni, One-loop corrections, uncertainties and
+approximations in neutralino annihilations: examples, Phys. Rev. D 84 (2011) 116001
+[arXiv:1108.4291] [INSPIRE].
+[37] T. Hambye, F.-S. Ling, L. Lopez Honorez and J. Rocher, Scalar multiplet dark matter,
+JHEP 07 (2009) 090 [Erratum ibid. 1005 (2010) 066] [arXiv:0903.4010] [INSPIRE].
+[38] L. Lopez Honorez and C.E. Yaguna, The inert doublet model of dark matter revisited,
+JHEP 09 (2010) 046 [arXiv:1003.3125] [INSPIRE].
+[39] L. Lopez Honorez and C.E. Yaguna, A new viable region of the inert doublet model,
+JCAP 01 (2011) 002 [arXiv:1011.1411] [INSPIRE].
+[40] XENON100 collaboration, E. Aprile et al., Dark matter results from 225 live days of
+XENON100 data, Phys. Rev. Lett. 109 (2012) 181301 [arXiv:1207.5988] [INSPIRE].
+[41] F. Staub, W. Porod and B. Herrmann, The electroweak sector of the NMSSM at the one-loop
+level, JHEP 10 (2010) 040 [arXiv:1007.4049] [INSPIRE].
+[42] T. Hahn, Generating Feynman diagrams and amplitudes with FeynArts 3,
+Comput. Phys. Commun. 140 (2001) 418 [hep-ph/0012260] [INSPIRE].
+[43] N.D. Christensen and C. Duhr, FeynRules — Feynman rules made easy,
+Comput. Phys. Commun. 180 (2009) 1614 [arXiv:0806.4194] [INSPIRE].
+[44] F. Staub, SARAH, arXiv:0806.0538 [INSPIRE].
+[45] F. Staub, From superpotential to model ﬁles for FeynArts and CalcHep/CompHEP,
+Comput. Phys. Commun. 181 (2010) 1077 [arXiv:0909.2863] [INSPIRE].
+[46] F. Staub, Automatic calculation of supersymmetric renormalization group equations and self
+energies, Comput. Phys. Commun. 182 (2011) 808 [arXiv:1002.0840] [INSPIRE].
+[47] A. Denner, Techniques for calculation of electroweak radiative corrections at the one loop
+level and results for W physics at LEP-200, Fortsch. Phys. 41 (1993) 307 [arXiv:0709.1075]
+[INSPIRE].
+[48] M. Gonderinger, Y. Li, H. Patel and M.J. Ramsey-Musolf, Vacuum stability, perturbativity
+and scalar singlet dark matter, JHEP 01 (2010) 053 [arXiv:0910.3167] [INSPIRE].
+– 31 –
+JHEP09(2013)106
+[49] K. Inoue, A. Kakuto and Y. Nakano, Perturbation constraint on particle masses in the
+Weinberg-Salam model with two massless Higgs doublets, Prog. Theor. Phys. 63 (1980) 234
+[INSPIRE].
+[50] P. Ferreira and D. Jones, Bounds on scalar masses in two Higgs doublet models,
+JHEP 08 (2009) 069 [arXiv:0903.2856] [INSPIRE].
+[51] M. Gustafsson, The inert doublet model and its phenomenology, PoS(CHARGED 2010)030
+[arXiv:1106.1719] [INSPIRE].
+[52] B. Swiezewska, Yukawa independent constraints for 2HDMs with a 125 GeV Higgs boson,
+arXiv:1209.5725 [INSPIRE].
+[53] J. Elias-Miro et al., Higgs mass implications on the stability of the electroweak vacuum,
+Phys. Lett. B 709 (2012) 222 [arXiv:1112.3022] [INSPIRE].
+[54] M. Sher, Electroweak Higgs potentials and vacuum stability, Phys. Rept. 179 (1989) 273
+[INSPIRE].
+[55] H. Huﬀel and G. Pocsik, Unitarity bounds on Higgs boson masses in the Weinberg-Salam
+model with two Higgs doublets, Z. Phys. C 8 (1981) 13 [INSPIRE].
+[56] J. Maalampi, J. Sirkka and I. Vilja, Tree level unitarity and triviality bounds for two Higgs
+models, Phys. Lett. B 265 (1991) 371 [INSPIRE].
+[57] I. Ginzburg and I. Ivanov, Tree-level unitarity constraints in the most general 2HDM,
+Phys. Rev. D 72 (2005) 115010 [hep-ph/0508020] [INSPIRE].
+[58] G. Altarelli and R. Barbieri, Vacuum polarization eﬀects of new physics on electroweak
+processes, Phys. Lett. B 253 (1991) 161 [INSPIRE].
+[59] M.E. Peskin and T. Takeuchi, Estimation of oblique electroweak corrections,
+Phys. Rev. D 46 (1992) 381 [INSPIRE].
+[60] M. Baak et al., Updated status of the global electroweak ﬁt and constraints on new physics,
+Eur. Phys. J. C 72 (2012) 2003 [arXiv:1107.0975] [INSPIRE].
+[61] A. Pierce and J. Thaler, Natural dark matter from an unnatural Higgs boson and new colored
+particles at the TeV scale, JHEP 08 (2007) 026 [hep-ph/0703056] [INSPIRE].
+[62] G. B´elanger, F. Boudjema, A. Pukhov and A. Semenov, MicrOMEGAs 2.0: a program to
+calculate the relic density of dark matter in a generic model,
+Comput. Phys. Commun. 176 (2007) 367 [hep-ph/0607059] [INSPIRE].
+[63] G. B´elanger, F. Boudjema, A. Pukhov and A. Semenov, Dark matter direct detection rate in
+a generic model with MicrOMEGAs 2.2, Comput. Phys. Commun. 180 (2009) 747
+[arXiv:0803.2360] [INSPIRE].
+[64] G. Belanger, F. Boudjema, A. Pukhov and A. Semenov, micrOMEGAs3.1 : a program for
+calculating dark matter observables, arXiv:1305.0237 [INSPIRE].
+[65] XENON10 collaboration, J. Angle et al., A search for light dark matter in XENON10 data,
+Phys. Rev. Lett. 107 (2011) 051301 [arXiv:1104.3088] [INSPIRE].
+[66] XENON100 collaboration, E. Aprile et al., Dark matter results from 100 live days of
+XENON100 data, Phys. Rev. Lett. 107 (2011) 131302 [arXiv:1104.2549] [INSPIRE].
+[67] J.R. Ellis, K.A. Olive and C. Savage, Hadronic uncertainties in the elastic scattering of
+supersymmetric dark matter, Phys. Rev. D 77 (2008) 065026 [arXiv:0801.3656] [INSPIRE].
+– 32 –
+JHEP09(2013)106
+[68] H. Ohki et al., Nucleon sigma term and strange quark content from lattice QCD with exact
+chiral symmetry, Phys. Rev. D 78 (2008) 054502 [arXiv:0806.4744] [INSPIRE].
+[69] J. Cao, K.-i. Hikasa, W. Wang, J.M. Yang and L.-X. Yu, Constraints of dark matter direct
+detection experiments on the MSSM and implications on LHC Higgs search,
+Phys. Rev. D 82 (2010) 051701 [arXiv:1006.4811] [INSPIRE].
+[70] J. Alarcon, J. Martin Camalich and J. Oller, The chiral representation of the πN scattering
+amplitude and the pion-nucleon sigma term, Phys. Rev. D 85 (2012) 051503
+[arXiv:1110.3797] [INSPIRE].
+[71] D. Das, A. Goudelis and Y. Mambrini, Exploring SUSY light Higgs boson scenarios via dark
+matter experiments, JCAP 12 (2010) 018 [arXiv:1007.4812] [INSPIRE].
+[72] ETM collaboration, S. Dinter et al., Sigma terms and strangeness content of the nucleon with
+Nf = 2 + 1 + 1 twisted mass fermions, JHEP 08 (2012) 037 [arXiv:1202.1480] [INSPIRE].
+[73] Tevatron Electroweak Working Group, CDF, D0 collaboration, Combination of
+CDF and D0 results on the mass of the top quark using up to 5.8 fb−1 of data,
+arXiv:1107.5255 [INSPIRE].
+[74] D. Eriksson, J. Rathsman and O. Stal, 2HDMC: two-Higgs-doublet model calculator physics
+and manual, Comput. Phys. Commun. 181 (2010) 189 [arXiv:0902.0851] [INSPIRE].
+[75] D. Eriksson, J. Rathsman and O. Stal, 2HDMC: two-Higgs-doublet model calculator,
+Comput. Phys. Commun. 181 (2010) 833 [INSPIRE].
+[76] S. Nie and M. Sher, Vacuum stability bounds in the two Higgs doublet model,
+Phys. Lett. B 449 (1999) 89 [hep-ph/9811234] [INSPIRE].
+[77] S. Kanemura, T. Kasai and Y. Okada, Mass bounds of the lightest CP even Higgs boson in
+the two Higgs doublet model, Phys. Lett. B 471 (1999) 182 [hep-ph/9903289] [INSPIRE].
+[78] Planck collaboration, P. Ade et al., Planck 2013 results. XVI. Cosmological parameters,
+arXiv:1303.5076 [INSPIRE].
+[79] P. Ferreira, R. Santos, M. Sher and J.P. Silva, Implications of the LHC two-photon signal for
+two-Higgs-doublet models, Phys. Rev. D 85 (2012) 077703 [arXiv:1112.3277] [INSPIRE].
+[80] P. Ferreira, R. Santos, M. Sher and J.P. Silva, Could the LHC two-photon signal correspond
+to the heavier scalar in two-Higgs-doublet models?, Phys. Rev. D 85 (2012) 035020
+[arXiv:1201.0019] [INSPIRE].
+[81] A. Arhrib, R. Benbrik and N. Gaur, H → γγ in inert Higgs doublet model,
+Phys. Rev. D 85 (2012) 095021 [arXiv:1201.2644] [INSPIRE].
+[82] W. Altmannshofer, S. Gori and G.D. Kribs, A minimal ﬂavor violating 2HDM at the LHC,
+Phys. Rev. D 86 (2012) 115009 [arXiv:1210.2465] [INSPIRE].
+[83] B. Swiezewska and M. Krawczyk, Diphoton rate in the inert doublet model with a 125 GeV
+Higgs boson, arXiv:1212.4100 [INSPIRE].
+[84] F. Mahmoudi and O. Stal, Flavor constraints on the two-Higgs-doublet model with general
+Yukawa couplings, Phys. Rev. D 81 (2010) 035016 [arXiv:0907.1791] [INSPIRE].
+[85] ATLAS collaboration, Search for charged Higgs bosons decaying via H+ → τν in top quark
+pair events using pp collision data at √s = 7 TeV with the ATLAS detector,
+JHEP 06 (2012) 039 [arXiv:1204.2760] [INSPIRE].
+– 33 –
+JHEP09(2013)106
+[86] CMS collaboration, Search for a light charged Higgs boson in top quark decays in pp
+collisions at √s = 7 TeV, JHEP 07 (2012) 143 [arXiv:1205.5736] [INSPIRE].
+[87] ATLAS collaboration, Search for invisible decays of a Higgs boson produced in association
+with a Z boson in ATLAS, ATLAS-CONF-2013-011 (2013).
+[88] ATLAS collaboration, Measurements of the properties of the Higgs-like boson in the two
+photon decay channel with the ATLAS detector using 25 fb−1 of proton-proton collision data,
+ATLAS-CONF-2013-012 (2013).
+[89] CMS collaboration, Updated measurements of the Higgs boson at 125 GeV in the two photon
+decay channel, CMS-PAS-HIG-13-001 (2013).
+– 34 –

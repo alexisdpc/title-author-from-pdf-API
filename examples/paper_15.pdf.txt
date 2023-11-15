@@ -1,0 +1,1180 @@
+Energy 265 (2023) 126178
+Available online 28 November 2022
+0360-5442/© 2022 The Author(s). Published by Elsevier Ltd. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+Contents lists available at ScienceDirect
+Energy
+journal homepage: www.elsevier.com/locate/energy
+Predicting structural changes of the energy sector in an input–output
+framework
+Lorenz Wimmer a,d,∗, Jan Kluge c,a, Hannes Zenz a, Christian Kimmich a,b
+a Regional Science and Environmental Research, Institute for Advanced Studies (IHS), Josefstaedter Str. 39, 1080 Vienna, Austria
+b Department of Environmental Studies, Masaryk University, Joštova 10, 60200 Brno, Czechia
+c Agenda Austria, Türkenstraße 25/9-10, 1090 Vienna, Austria
+d EIVEE ApS, Masnedøgade 22-26, 2100 Copenhagen Ø, Denmark
+A R T I C L E
+I N F O
+Dataset link: https://github.com/lorenz221092
+/Predicting_Input_Coefficients
+Keywords:
+Input coefficients
+Fractional multinomial logit
+Renewable energy
+Structural change
+National accounts
+A B S T R A C T
+The share of renewable energies has to increase significantly in the ongoing energy transition. Such a shift
+in production technology is expected to have noticeable effects on the energy sector’s input structure that is
+required for its output. This study examines how changes in a country’s energy mix affect its energy sector’s
+input coefficients within an input–output framework, using Austria’s renewable expansion act as a case study.
+Predicting input coefficients can be time-consuming and often relies on trends in past data. Our empirical
+approach is based on a fractional econometric model using panel data on the energy mix and input structures
+of energy sectors for 26 European countries, and can be efficiently and readily applied to the 26 countries
+covered in the model. We illustrate the prediction of input coefficients for Austria’s energy sector in 2030. We
+find that input shares from the energy sector to itself would remain high, while mining inputs would decrease.
+Our model also predicts that increasing the share of renewable energy sources comes with a significant decrease
+in the share of labor inputs, mainly because operating renewable energy technologies requires less labor
+than operating non-renewable ones. The presented method allows to assess renewable energy policy plans
+to anticipate the effects of structural changes in national energy sectors.
+1. Introduction
+In 2021, Austrian policy makers passed the so-called renewable
+expansion act, which aims at increasing national energy production
+from renewable sources by 27 terawatt-hours (TWh) [1]. By invest-
+ing approximately one billion euros per year until 2030 via market
+bonuses and investment subsidies, the bill targets solar (+11 TWh),
+wind (+10 TWh), hydro power (+5 TWh) and biomass (+1 TWh) as
+part of the package.
+Research suggests that subsidies can leverage substantial investment
+in renewable energy sources [2–4]. But it remains unknown how the in-
+put structure of the Austrian energy sector1 would look like in the case
+that the bill fulfills its purpose. Predictions of future input coefficients
+can be helpful in a number of applications, as input–output structures
+are employed in many economic models and are also frequently used
+to assess economic, social, and environmental effects of policies. In our
+case, the predicted structural change can be used to assess the effects
+of alternative policies before a renewable expansion law is passed.
+∗ Corresponding author.
+E-mail address: wimmer@ihs.ac.at (L. Wimmer).
+1 For better readability, we use the term energy sector for NACE Rev. 2 sector D35 (see Section 3.1.1).
+2 In this study, the term energy mix refers to the shares of energy products used for the production of electricity and steam (heat) in NACE Rev. 2 sector D35.
+To answer this question and to address this research gap, we present
+a novel approach for modeling the input structure of the energy sector,
+assuming that the targeted energy mix2 is reached by 2030. Using the
+Fractional Multinomial Logit (FMNL) model and panel data on input
+coefficients and energy mixes of 26 European countries and comparing
+the predictions to the related literature, we show that our method is a
+reliable and efficient approach in predicting future input coefficients,
+which can also complement existing methods and can be used to
+disaggregate sectors. We find that the Austrian energy sector would
+undergo major changes: While demand for inputs from the energy
+sector itself would remain high, our results suggest that labor and
+mining inputs would decrease significantly. The marginal effects of
+our model indicate that changes in the input structure are driven by
+a combination of increasing the share of renewable energy sources that
+require less labor and, conversely, reducing the share of labor-intensive
+non-renewable energy sources in the energy mix.
+As all member states of the European Union have agreed to cut
+greenhouse gas (GHG) emissions by 55% until 2030 [5], other EU
+https://doi.org/10.1016/j.energy.2022.126178
+Received 1 March 2022; Received in revised form 1 November 2022; Accepted 22 November 2022
+Energy 265 (2023) 126178
+2
+L. Wimmer et al.
+countries will very likely also implement policies that target major
+transitions in national energy sectors. With our novel and time-efficient
+approach being readily replicable and applicable to 26 European coun-
+tries, we provide policy makers and scholars with a tool that allows to
+anticipate and adapt to possible future developments in national energy
+sectors before implementing major policy interventions.
+2. State of research
+In input–output statistics, the current production technology is rep-
+resented by technical and primary input coefficients [6]. While the
+first describe the inputs per unit received from other sectors, the latter
+represent value added per unit, i. e., the costs per unit for wages,
+production taxes less subsidies, depreciation and profits.
+In the short term, it is assumed that these coefficients are quite
+stable. In the long run, this is usually not the case. Using energetic
+building retrofits as an example, Hartwig and Kockat [7] show that the
+technology and thus the input–output tables used can have considerable
+effects on the estimation of economic impacts.
+There are multiple options to project technological change in an
+input–output framework. One option is to use trend analysis to extrap-
+olate coefficient changes from historic data into the future, e. g., by
+describing technology penetration by logistic growth curves. While this
+approach is rather simple from a methodological point of view and the
+required data are usually readily available, it suffers from the major
+disadvantage that it is conceptually impossible to predict fundamental
+technological changes from past trends. The second option, according
+to Faber et al. [8], is to predict future coefficients based on expert
+judgement. This can be done by relying on engineering data or experts’
+assessments of the change of technical coefficients relative to a base
+year. This method yields more realistic results, especially in the case of
+fundamentally different technologies, but is rather labor intensive and
+data might not be available or reliable.
+Pan [9] proposed a dynamic input–output model, which includes
+endogenous technical progress and deployment. Coefficients in this
+model change from an old to a new set of technologies over time,
+depending on investment in research and development and in the
+capital stock. In another study, Pan and Koehler [10] apply this ap-
+proach to wind power in the UK. Gurgul and Lach [11] develop a
+similar model to forecast the inter-industry linkages of sectors in the
+Polish economy. Hartwig et al. [12] combine bottom-up energy demand
+models with an input–output based macroeconomic model and apply
+it to energy efficiency policy options in Germany. In the scenario
+approach applied by Wiebe et al. [13] specific elements of the input–
+output system are manually adjusted according to exogenously given
+scenario specifications. Among others, these include adaptations of
+final demand for renewable energies and corresponding investments
+as well as technical and primary input coefficients of the relevant
+sectors. Faber et al. [8] and Wilting et al. [14] combine trend analysis
+and detailed information on specific technologies to adjust coefficients
+and evaluate the effects of technological change on Dutch production
+and air emissions.
+In the national accounts and in input–output statistics (such as the
+FIGARO tables used in this study) sectors are usually represented as
+aggregates and may include heterogeneous activities, which can lead
+to a considerable aggregation bias. As Lenzen [15] points out, using
+disaggregated data is usually superior, even if based on few real data
+points. As technical change in the electricity sector currently mostly
+resembles shifts between production technologies from fossil electricity
+generation towards renewables, disaggregated generation technologies
+can also help to account for technological change within the energy
+sector. This disaggregation can be done by determining the input
+coefficients for the relevant technologies based on expert judgement
+and engineering data [16]. Examples include Vendries Algarin et al.
+[17] for the U.S., Duarte et al. [18] for Spain, Allan et al. [19] for
+Scotland, Wolfram et al. [20] for Australia and Wiedmann et al. [21]
+for wind power in the UK. The latter two studies combine input–
+output data with process data from life cycle databases in hybrid Life
+Cycle Assessment methods to estimate carbon footprints for individual
+electricity generation technologies. These approaches, however, re-
+quire extensive research on the most relevant production technologies
+involved.
+A model specifically designed to allow for different technologies
+within an industry is the rectangular choice-of-technology (RCOT)
+model [22–24], which uses rectangular tables with potentially multiple
+columns, i. e., production technologies, per industry, and enables con-
+straints regarding the availability of primary inputs. A linear program-
+ming technique is used to find the optimal mix of production. Kätelhön
+et al. [25] combine the RCOT model with consequential life cycle
+assessment and stochastic elements.
+Some input–output databases like EXIOBASE [26] or the GTAP-
+Power Data Base [27,28] already provide specific coefficients for var-
+ious electricity generation technologies, but not all sectors and coeffi-
+cients are empirically validated.
+As a complementary and time-efficient approach, we propose to
+predict future input coefficients of the energy sector using econometric
+methods and panel data, as described in the following sections. We
+argue that our approach comes with several advantages compared to
+the other methods presented in this section, as it can be readily applied
+to a large set of countries and does not rely on expert judgements.
+Moreover, our method is more flexible than a trend analysis based on a
+single country, as our econometric model also captures the information
+about technological changes that already occurred in other countries.
+The method can also be used to disaggregate the energy sector and
+help to cross-validate, triangulate, and thereby corroborate predictions
+resulting from the other methods.
+3. Data and methodology
+3.1. Description of variables
+We use Eurostat [29,30] data to derive the input coefficients (de-
+pendent variables) and the energy mix (independent variables) for our
+econometric model. Our final data set consists of 285 observations.
+For every year3 from 2010 to 2020 it contains observations for all EU-
+28 countries except Malta and Cyprus, which we exclude due to data
+issues.
+3.1.1. Input coefficients
+The variables of interest in this study are input coefficients de-
+rived from the Full International and Global Accounts for Research in
+Input–Output analysis (FIGARO) provided by Eurostat [30]. These tables
+connect all EU-27 countries, 18 main trading partners, and the rest
+of the world as an aggregate unit at a detailed level of 64 industries.
+Industries, also often referred to as sectors, are structured according to
+NACE Rev. 2 [31].
+In our analysis, we focus on the relative monetary shares of the
+inputs and value added of sector D35, officially designated as ’electricity,
+gas, steam and air conditioning supply’, which is, for better readability,
+referred to as the energy sector, sector D35 or sector D in this study.
+As the number of predictable input sectors is constrained by the
+number of observations in our data set, we aggregate the 64 available
+input sectors to a total of 32 input sectors plus two separate value added
+components4 (see first column in Table 1 for the aggregate sectors).
+Labor value added (VA-L) contains labor inputs; Rest value added (VA-
+R) contains all other value added components, such as depreciation and
+3 Except for the UK in 2020, for which no energy mix data was available
+yet.
+4 Input coefficients do not include inputs required for investments, which
+are considered as final demand. Depreciation for investments is taken into
+account as a part of value added.
+Energy 265 (2023) 126178
+3
+L. Wimmer et al.
+Table 1
+Input coefficients of the Austrian energy sector in percent.
+Source: [30].
+Sector(s)
+Name
+2010
+2020
+Difference
+A
+Agriculture
+0.22
+0.23
+0.01
+B
+Mining
+3.85
+3.39
+−0.46
+C10–12
+Food, beverages and tobacco
+0.08
+0.05
+−0.03
+C13–15
+Textiles, apparel and leather
+0.02
+0.01
+−0.01
+C16–18
+Wood, paper and printing
+0.43
+0.25
+−0.18
+C19
+Coke and refined petroleum
+0.79
+0.30
+−0.49
+C20–21
+Chemicals and pharmaceuticals
+0.15
+0.13
+−0.02
+C22–23
+Rubber, plastic, non-metallic minerals
+0.31
+0.20
+−0.11
+C24–25
+Basic and fabricated metals
+0.56
+0.33
+−0.23
+C26
+Computers, electronics and opticals
+0.16
+0.07
+−0.09
+C27
+Electrical equipment
+1.64
+0.35
+−1.29
+C28
+Machinery and equipment
+0.39
+0.27
+−0.12
+C29–30
+Motor vehicles and other transport equipment
+0.06
+0.05
+−0.01
+C31–33
+Furniture, other manuf., repair and installation
+1.17
+0.88
+−0.29
+D
+Energy
+53.82
+62.97
+9.15
+E
+Water supply, waste and sewerage
+1.55
+1.39
+−0.16
+F
+Construction
+1.12
+1.00
+−0.12
+G
+Wholesale and retail trade
+1.75
+1.85
+0.10
+H
+Transport and storage
+2.80
+1.97
+−0.83
+I
+Accommodation and food service
+0.62
+0.39
+−0.23
+J58–60
+Publishing, motion picture, music and broadc.
+0.09
+0.07
+−0.02
+J61
+Telecommunications
+0.19
+0.12
+−0.07
+J62–63
+Information technology
+0.50
+0.43
+−0.07
+K
+Finance and insurance
+2.13
+2.39
+0.26
+L68
+Real estate
+0.37
+0.36
+−0.01
+M
+Professional, scientific and technical activities
+1.49
+1.06
+−0.43
+N
+Administrative and support service activities
+0.81
+1.39
+0.58
+O84
+Public administration, defense and social security
+0.14
+0.21
+0.07
+P85
+Education
+0.29
+0.13
+−0.16
+Q
+Human health and social work
+0.02
+0.02
+0.00
+R-S
+Arts, entertainment, recreation and other services
+0.05
+0.04
+−0.01
+T-U
+Households and extraterritorial organizations
+0.00
+0.00
+0.00
+VA-L
+Labor value added
+8.03
+7.75
+−0.28
+VA-R
+Rest value added
+14.42
+9.95
+−4.47
+Total
+Sum of all sectoral and value added components
+100.00
+100.00
+0.00
+operating surplus. VA-L and VA-R together form the residual between
+total input and intermediate input from other sectors.
+In addition, the aggregation of import and domestic input sectors is
+necessary for computing technical input coefficients. This aggregation
+step comes with the disadvantage that our model cannot take trade into
+account separately and treats all inputs (whether domestic or imported)
+as the same (see, e. g. Wiebe et al. [13],Wolfram et al. [20],Wiedmann
+et al. [21], who face similar restrictions). As a last step, we convert the
+values to shares, which add up to 1. Table 1 shows the input coefficients
+of the Austrian energy sector in the first (2010) and in the last year
+(2020)5 of the panel. Moreover, the change between the years is shown
+in the 5th column. For better readability, the coefficients are multiplied
+by 100. As can be seen in the table, most inputs came from the energy
+sector (D) itself; this input also showed the highest increase between
+2010 and 2020. Gross value added, especially the non-labor residual
+VA-R, decreased substantially. The mining (B) and manufacturing (C)
+sectors all showed a decrease as input providers between 2010 and
+2020.
+3.1.2. Energy mix
+As our analysis targets sector D35 as a whole, the energy mix
+captured by our independent variables has to cover energy used for the
+production of both electricity and steam (heat). Data for the energy
+mix comes from the Eurostat [29] Energy Statistics Database. We use
+information from the variables nrg_ind_peh and nrg_ind_pehcf on gross
+5 We did not find any noticeable differences in the input coefficients
+between the years 2019 and 2020 (outbreak of the SARS-Cov-2 virus and
+following supply chain disruptions in many sectors).
+production of electricity and heat by main producers for each energy
+product.6
+We aggregate the data, which has been published in Standard In-
+ternational Energy Product Classification [32], to the ten most important
+energy products in our data set. The rest contains energy from geother-
+mal sources, tide, wave, ocean, ambient heat (heat pumps) and heat
+from chemical sources.
+The 2nd and 3rd column of Table 2 show the energy mix for Austria
+for 2010 and 2020. The most important energy product for Austria
+is (pumped) hydro power, which approximately made up half of the
+energy mix in both years, followed by natural gas and liquid and solid
+biofuels, whereas the other seven energy products only make up small
+fractions of the mix. As can be seen in the 4th column, a decrease in the
+share of non-renewable combustible energy products can be observed,
+which was offset by an increase in renewable energy production.
+For predicting the Austrian input coefficients in 2030, we calculate
+an energy mix target for 2030, which is shown in the 6th column of
+Table 2. We derive this target by adding the planned 27 TWh increase
+(5th column) to the energy mix of 2020, which was the most recent
+data available.
+3.1.3. Control variables
+We introduce three additional control variables in our model.
+We use terajoules of final consumption of natural gas7 [29,33, vari-
+ablesnrg_cb _gas, demo_pjan] for energy use to account for the gas sector
+6 In this study, we use the terms energy product, energy source and energy
+(production) technology interchangeably, as they all can be connected to our
+explanatory variables.
+7 In our prediction we assume consumption in Austria to remain unchanged
+between 2020 and 2030, as it remained nearly constant between 2010 and
+2020.
+Energy 265 (2023) 126178
+4
+L. Wimmer et al.
+Table 2
+Energy mix of the Austrian energy sector for selected years.
+Source: [29].
+Energy product
+2010
+2020
+𝛤��� ‘10-’20
+Increase
+Target 2030
+Unit
+%
+%
+%-points
+TWh
+%
+(Pumped) hydro
+49.92
+52.65
+2.73
+5
+44.44
+Wind
+2.54
+7.96
+5.42
+10
+14.95
+Solar
+0.13
+2.43
+2.30
+11
+11.64
+Coal and peat
+6.71
+0.97
+−5.74
+0
+0.74
+Natural gas
+23.80
+18.75
+−5.05
+0
+14.24
+Oil and shale
+2.46
+0.21
+−2.25
+0
+0.16
+Biogas
+0.82
+0.69
+−0.13
+0
+1.41
+Liquid and solid biofuel
+11.71
+13.51
+1.80
+1
+10.26
+Nuclear
+0.00
+0.00
+0.00
+0
+0.00
+Other
+1.91
+2.84
+0.93
+0
+2.16
+Total (TWh)
+81.13
+85.28
+4.15
+27
+112.28
+within NACE sector D35. GDP per capita [34, variable nama_10_pc]
+expressed in purchasing power standards8 controls for general differ-
+ences in productivity between countries and years. Absolute size of the
+energy sector expressed as TWh of production of heat and electricity by
+main producers [29] allows us to make assumptions about the future
+size of the energy sector. With this variable, the (non-linear) relations
+between sector size and input fractions can be predicted.9 Once sector
+size is converted into total output, the fractions can also be transformed
+into absolute values of the sector within the input–output tables of an
+economy, and the accounts can be balanced [37].
+Additionally, we introduce dummy variables for years and coun-
+tries to control for any unobserved country- and year-specific charac-
+teristics. These other characteristics capture differences and changes
+(between countries and/or years) in input prices, geographical and
+annual climate conditions, country-specific productivity, and economic
+development, among others.
+In our model, we use Austria and the year 2020 as the baseline
+categories. By doing so, we essentially assume that unobserved char-
+acteristics in 2030 were the same as in 2020. We argue that the year
+2020, which was our most recent year in the data set, is our best
+predictor for unknown year-specific characteristics in 2030. Please note
+the limitation that some of these unobserved characteristics, such as
+climate conditions, are highly likely to change between 2020 and 2030,
+whereas our model assumes year-specific characteristics of 2020 to be
+persisting also in the future.
+3.2. Fractional multinomial logit model
+We want to model the 𝑖���th input coefficient of the energy sector in
+a specific country and a specific year 𝐀���𝑖 as a function of the energy
+mix and other characteristics 𝐀���𝑖 of the same year and country. We also
+have to consider all input coefficients 𝐚���𝑖,−𝑖���, excluding the coefficient of
+interest itself. This can be formally written as
+𝑖���𝑖𝑖��� = 𝑎���(𝐀���𝑖, 𝐚���𝑖,−𝑖���)
+(1)
+, where 𝑎���(⋅) is some function of yet unknown form. Because of the
+nature of our problem we need some model that both ensures that
+0 ≤ 𝑖���𝑖𝑖��� ≤ 1 and ∑𝐴���
+𝑖���=1 𝑖���𝑖𝑖��� = 1, where 𝐴��� is the number of input
+coefficients.
+We estimate the relationship in (1) using the Fractional Multinomial
+Likelihood (FMNL) method. It is the multinomial generalization of
+research by Papke and Wooldridge [38], who proposed an econometric
+method for binary fractional response variables via Quasi-Maximum-
+Likelihood estimation; for an excellent comprehensive overview of frac-
+tional regression models, see Ramalho et al. [39]. These models have
+8 We assume a growth in GDP per capita of 15% between 2020 and 2030
+in Austria for our prediction, as projected by the OECD [35,36].
+9 We assume a sector size of 112.28 TWh of production in Austria, see
+Table 2.
+been applied in a variety of studies, including the analysis of enterprise
+financing in transition economies [40], industrial organization [41], or
+the estimation of national energy ladders [42] and Engel Curves [43],
+and have also been proposed in relative efficiency evaluation [44],
+among others.
+The essential feature of the FMNL method is that it allows to
+estimate not only one but 𝐴��� dependent variables, which are estimated
+simultaneously. Another feature is that for each observation 𝑖 the 𝑖���s are
+bound between 0 and 1 and sum up to 1. The 𝑖���s of an observation can
+also be interpreted as fractions. As this is also true for input coefficients,
+FMNL is an ideal method for the purpose of our study. Note that Eqs. (2)
+to (5) below are obtained from literature by Papke and Wooldridge
+[38], Ramalho et al. [39] and Wulff [45].
+Assume we have 𝐴��� observations and
+𝐴���(𝑖���𝑖𝑖���|𝐀���𝑖) = 𝐴���(𝐀���𝑖𝛼���𝑖���)
+(2)
+where 𝑖���𝑖𝑖��� is the 𝑖���th fraction of the 𝑖th observation. 𝐀���𝑖 is the vector
+of 𝐴��� independent variables and 𝛼���𝑖��� the vector containing 𝐴��� regression
+coefficients. Note that for every fraction 𝑖��� = 0, … , 𝐴���, there is one set
+of 𝐴��� coefficients.
+𝐴���(⋅) is some function satisfying 1 < 𝐴���(𝑖���) < 0 for all 𝑖��� ∈ R. For
+binary response variables, the logistic function is an obvious choice
+for 𝐴���(⋅) [39]; for multinomial applications, the equivalent is the multi-
+nomial logit function. Usually, one fraction is treated as the baseline.
+Assume we select the first fraction as the baseline,10 which implies
+𝛼���⊤
+1 = (0, 0, 0, … , 0) and
+𝐴���(𝐀���𝑖𝛼���𝑖���) =
+𝑎���𝑖���𝑖���(𝐀���𝑖𝛼���𝑖���)
+∑𝐴���
+𝑖���=1 𝑎���𝑖���𝑖���(𝐀���𝑖𝛼���𝑖���)
+=
+𝑎���𝑖���𝑖���(𝐀���𝑖𝛼���𝑖���)
+1 + ∑𝐴���
+𝑖���=2 𝑎���𝑖���𝑖���(𝐀���𝑖𝛼���𝑖���)
+.
+(3)
+The corresponding multinomial likelihood function is
+𝑖���𝑖���(𝐴���𝑖) =
+𝐴���
+∑
+𝑖���=1
+𝑖���𝑖𝑖���𝑖���𝑖���(𝐴���(𝐀���𝑖𝛼���𝑖���)).
+(4)
+We use the quasi-maximum-likelihood estimator from
+̂𝛼���𝑖��� = arg max
+𝛼���𝑖���
+𝐴���∑
+𝑖=1
+𝑖���𝑖���(𝐴���𝑖)
+(5)
+as it is a consistent estimator for 𝛼���𝑖��� if our choice for 𝐴���(⋅) is indeed the
+true functional form, as shown by Papke and Wooldridge [38].
+Interpretation of coefficient estimates of FMNL models is not straig-
+htforward, as for every independent variable 𝐀���𝑖��� there are 𝐴��� marginal
+effects (ME). ME statistics that have a similar interpretation as the
+coefficients of continuous variables in a classical linear model (ME =
+𝛼���𝐚���∕𝛼���𝐀���) can be derived from the estimates. For a summary of the most
+important ME statistics and their interpretation, see Wulff [45].
+Estimations were performed in Stata [46], using the fmlogit-module
+by Buis [47]. Standard errors were clustered by countries.
+3.3. Workflow summary
+Fig. 1 gives an overview of the steps described in Section 3. First, (1)
+data is obtained from Eurostat databases, then (2) subsetted, filtered,
+and transformed for (3) being used as the dependent, independent,
+control- and dummy-variables. Data is then (4) merged by country and
+year and observations with bad data quality are removed manually. The
+resulting (5) data set, consisting of 285 observations, is then passed
+to the (6) FMNL model, which yields the (7) coefficient estimates.
+These can be used to (8, 9) derive marginal effects or, when (10)
+making certain assumptions, to (11) forecast (12) input coefficients of
+the Austrian energy sector, (13) perform sectoral disaggregations and
+(14) in-sample predictions.
+10 For our application, this is sector D.
+Energy 265 (2023) 126178
+5
+L. Wimmer et al.
+Fig. 1. Workflow summary.
+4. Results and discussion
+4.1. Predictive power of the model
+Before we discuss the actual FMNL estimation results, we take a look
+at how well the model fits our data and how the targeted energy mix
+affects the predicted input coefficients of the Austrian energy sector
+in 2030. Fig. 2 shows these input coefficients. White columns are the
+historical values as of 2010, while light gray columns depict current
+values in 2020, and the black columns represent the fitted values
+for 2020 using our FMNL model and the energy mix of 2020. We
+do not observe sizable differences between the actual and estimated
+coefficients for any of the sectors, which indicates that our model
+provides a reasonable fit for the response variables at hand. Fig. A.1
+in the Appendix provides additional metrics on prediction quality for
+selected sectors.
+By using the target energy mix for 2030, we are now able to predict
+the future input coefficients of the Austrian energy sector. These are
+represented by the blue columns in Fig. 2. We observe notable differ-
+ences compared to 2020 only for a few sectors. We will in the following
+focus on sectors whose predicted input shares in 2030 turn out to be
+significantly different from their 2020 shares (at the 90% level) and
+are at the same time among the ten sectors with predicted input shares
+of at least 1% and can therefore be considered economically relevant
+for the energy sector. This would leave us only with the mining sector
+(B) and labor (VA-L). In addition, we will show and discuss the energy
+sector itself (D) as it continues to provide about two thirds of its inputs.
+We see a continuing decrease for the mining sector (B). Its input
+coefficient decreases as energy production shifts from carbon-based to
+renewable sources. Inputs from the energy sector itself (D) continue to
+make up the highest share of all inputs. The slight increase of input
+coefficients from D is in line with the pattern for Austria over the
+last years, but statistically insignificant (as indicated by the error bars
+in Fig. 2). The labor share (VA-L), on the other hand, is expected to
+decrease substantially, as electricity generation from renewable energy
+sources such as wind or solar power generally comes with lower or
+almost zero marginal costs (see, e. g. Blazquez et al. [48]).
+4.2. Austria’s renewable expansion act
+In the following, we present FMNL estimation results for the three
+selected sectors to allow for a detailed analysis of the predictions
+Table 3
+Marginal effects.
+Labor (VA-L)
+dydx
+std. err.
+p-value
+Hydro
+−0.3719
+0.2493
+0.136
+Wind
+−0.5453**
+0.2759
+0.048
+Solar
+−0.6545***
+0.2531
+0.010
+Coal
+−0.4526*
+0.2517
+0.072
+Gas
+−0.4173*
+0.2360
+0.077
+Oil
+−0.4189*
+0.2382
+0.079
+Liquid and solid biofuel
+−0.3039
+0.2365
+0.199
+Biogas
+0.1606
+0.3561
+0.652
+Nuclear
+−0.4081
+0.2482
+0.100
+Energy (D)
+dydx
+std. err.
+p-value
+Hydro
+2.3229**
+1.1371
+0.041
+Wind
+2.7090**
+1.2369
+0.029
+Solar
+2.7931***
+1.0676
+0.009
+Coal
+2.4582**
+1.1481
+0.032
+Gas
+2.4521**
+1.0909
+0.025
+Oil
+2.3449**
+1.0836
+0.030
+Liquid and solid biofuel
+2.0020**
+1.0186
+0.049
+Biogas
+1.7240
+1.8041
+0.339
+Nuclear
+2.1323*
+1.1524
+0.064
+Mining (B)
+dydx
+std. err.
+p-value
+Hydro
+−0.0821
+0.1622
+0.613
+Wind
+−0.2174
+0.1651
+0.188
+Solar
+−0.0377
+0.1618
+0.816
+Coal
+−0.0836
+0.1578
+0.596
+Gas
+−0.1097
+0.1614
+0.497
+Oil
+−0.0633
+0.1476
+0.668
+Liquid and solid biofuel
+−0.0390
+0.1524
+0.798
+Biogas
+−0.1917
+0.2607
+0.462
+Nuclear
+−0.0461
+0.1584
+0.771
+*𝑖��� < 0.1.
+**𝑖��� < 0.05.
+***𝑖��� < 0.01.
+presented above. Coefficients of FMNL models11 are hard to interpret.
+As we have presented predictions for Austria before, we focus now on
+marginal effects at the Austrian energy mix in 2020. We will first show
+marginal effects and then explain what they mean in the context of the
+Austrian renewable expansion act and the changing energy mix until
+2030. Table 3 presents the results for the three selected sectors.
+11 Tables of raw FMNL coefficients are available from the authors upon
+request.
+Energy 265 (2023) 126178
+6
+L. Wimmer et al.
+Fig. 2. Input coefficients (historic 2010 vs. actual 2020 vs. fitted 2020 vs. predicted 2030) of Austria’s energy sector. Error bars indicate confidence intervals at the 90% threshold
+for the three selected sectors’ 2030 predictions. B and VA-L are significantly different from 2020 values; D is not. All other sectors are either insignificant and/or predicted to be
+below 1%.
+Most of the marginal effects for the labor share (VA-L) are nega-
+tive and statistically significant. This finding might at first not seem
+particularly intuitive as any kind of energy production should require
+some amount of labor and thus produce value added. What is more
+important, however, is the net effect: An increase in the contribution
+of one energy source to the energy mix must come with a decrease in
+another. The interesting feature here is that solar power stands out, as
+it shows the largest marginal effect (in absolute terms). If the share of
+solar power in the energy mix is increased by 1 percentage point (pp),
+this would come with a decrease of the labor share of 0.65 pp. As this
+must be offset by a reduction in the share of at least one other energy
+source by 1 pp, the net effect must be negative as all other coefficients
+are greater than −0.65. If, for example, solar replaces coal, the net
+effect is −0.20. Would it replace oil or gas, the net effect would be
+−0.24. This explains the decline of our predicted labor share for 2030
+in Fig. 2. As Austria is going to massively increase its solar share and
+therefore reduces the relative share of many other energy sources in its
+energy mix, its labor share is predicted to drop by more than 3 pp until
+2030. Similar but smaller effects apply for wind power.
+All marginal effects for the energy sector’s (D) input shares show
+positive values and most of them are statistically significant. This
+implies that most changes in the energy mix will have some impact on
+the share of inputs provided by the energy sector. Again, solar and wind
+power show the largest marginal effects. If solar power gains weight in
+the energy mix, this would come with an increase of the input share
+of sector D. As any other energy source has to be reduced accordingly
+in the energy mix, the net effect must be slightly positive, as all other
+coefficients are smaller than 2.8. This phenomenon explains the small
+increase in the Austrian energy sector’s input share for 2030 in Fig. 2
+(compared to the actual value of 2020). Behind this result is the fact
+that companies of the same sector now interact with one another where
+companies from different sectors have interacted before. For example:
+A coal-fired power plant needs inputs from mining, manufacturing, etc.,
+and will also have to pay, e. g., transmission fees to other companies
+of its own sector (D). An existing wind park of the same capacity, on
+the other hand, does not require large amounts of inputs from other
+sectors for its operation. Hence, transmission fees now make up for a
+larger share of inputs.
+The marginal effects for the mining sector’s (B) inputs to the energy
+sector are negative. It must be noted, though, that all of them are very
+small and statistically insignificant. Still, the interpretation logic would
+be the same as above. An increase in the share of one energy source
+would come with a decrease of the share of another energy source.
+The largest marginal effect (in absolute terms) is for wind energy: If
+the share of wind in the energy mix increases by 1 pp, the input share
+from the mining sector would decrease by 0.22 pp. If the fraction of
+electric energy currently provided by wind was before generated using
+coal, the net effect would be −0.13. The mining share would always
+decrease through an increase in wind energy, no matter what it were
+to replace.
+How can these results be interpreted in the context of Austria’s
+renewable expansion act and the planned change in the energy mix
+until 2030? The main feature of the change in the energy mix is the
+increase of the shares of renewable energy sources (especially solar
+Energy 265 (2023) 126178
+7
+L. Wimmer et al.
+and wind energy by about 16 pp in total12) and the decrease of the
+relative contribution of non-renewable energy production (in particular
+hydro power and natural gas by about 13 pp in total). We find that the
+increased production from renewable energy sources (especially wind
+and solar power) and the replacement of fossil-based energy sources
+comes with smaller input shares from the mining sector and from labor,
+while slightly increasing the input share from the energy sector itself.
+To further consolidate the empirical results of this study, we have
+added multiple robustness tests. Fig. A.2 in the Appendix compares
+actual and fitted input shares for the years 2010, 2015 and 2020. We
+see clearly that our predicted input shares for 2030 follow time trends
+that have already been observed during the last decade. Figs. A.3 to A.5
+in the Appendix provide hypothetical predictions if the aspired shares
+of hydro, wind or solar power would be 100%, respectively (for 2030,
+keeping everything else constant). While our results for hydro and wind
+power seem perfectly plausible, we find rather unlikely input shares for
+100% solar power. Hence, this analysis shows the possibility of using
+our approach to decompose the energy sector according to different
+energy production technologies, but also its limitations. If the aspired
+energy is too far out of support of the data, the findings of the 100%
+predictions cannot be trusted.
+5. Conclusion and policy implications
+This study proposes a novel approach that allows to predict struc-
+tural changes in national energy sectors. Input coefficients are ex-
+plained by the energy mix in a fractional multinomial logit (FMNL)
+model. We illustrate the model application to evaluate the effects of
+Austria’s renewable energy expansion act and predict the future input
+coefficients resulting from the policy. An in-sample prediction of input
+coefficients shows that the model delivers a reasonable fit for the
+response variables, i. e., the input coefficients of the energy sector.
+The approach presented in this study allows to use information about
+fundamental technological changes that already occurred in countries
+with high renewable energy shares to predict structural changes in
+other countries. The method is time-efficient and can also complement
+other methods to predict input coefficients. Moreover, it can be used
+to disaggregate the energy sector under the condition that this dis-
+aggregation is supported by the underlying data on which the model
+builds.
+Prediction results show that Austria’s energy sector would obtain
+slightly more inputs from the energy sector itself if the targeted energy
+mix was reached in 2030, while inputs from the mining sector and
+the labor share are expected to decrease significantly. Marginal effects
+of the model show that the changes in the input structure are mainly
+driven by the increase in the share of renewable energy sources, which
+are less labor intensive than non-renewable energy sources.
+Our approach is readily applicable to the 26 European countries
+covered by the model and enables policy makers and scholars to
+analyze country-specific (renewable) expansion plans. This helps to
+assess the potential economic, social, and environmental consequences
+of plans before corresponding acts are passed, for example with the
+help of input–output models and corresponding impact analyses. The
+method can also be employed for predicting changes in other sectors,
+building on sector-specific explanatory variables that are adequate to
+model and predict their input structures, which could be at the focus
+of future research.
+Funding source
+Funding by the Austrian Federal Ministry for Climate Action is
+gratefully acknowledged.
+12 Compared to 2020, see Table 2.
+Fig. A.1. Prediction quality (actual vs. fitted input shares).
+Declaration of competing interest
+The authors declare the following financial interests/personal rela-
+tionships which may be considered as potential competing interests: All
+authors via the research group report financial support was provided by
+the Austrian Federal Ministry for Climate Action.
+Data availability
+A data set related to this article and the corresponding R-code
+to reproduce it can be found at https://github.com/lorenz221092/
+Predicting_Input_Coefficients. Downloading and transforming the data
+was performed in R [49] using the eurostat [50] and the tidy-
+verse [51] packages.
+Appendix
+See Figs. A.1–A.5.
+Energy 265 (2023) 126178
+8
+L. Wimmer et al.
+Fig. A.2. Input coefficients (actual 2010, 2015, 2020 vs. fitted 2010, 2015, 2020 vs. predicted 2030) of Austria’s energy sector.
+Fig. A.3. Input coefficients of Austria’s energy sector (assumption: hydro = 100).
+Fig. A.4. Input coefficients of Austria’s energy sector (assumption: wind = 100).
+Fig. A.5. Input coefficients of Austria’s energy sector (assumption: solar = 100).
+Energy 265 (2023) 126178
+9
+L. Wimmer et al.
+References
+[1] System LI. Bundesrecht konsolidiert: Gesamte rechtsvorschrift für erneuerbaren-
+ausbau-gesetz, fassung vom 27.10.2021. 2021, URL: https://www.ris.bka.gv.
+at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20011619,
+[last accessed on 2021/10/27].
+[2] Nicolini M, Tavoni M. Are renewable energy subsidies effective? Evidence from
+Europe. Renew Sustain Energy Rev 2017;74:412–23. http://dx.doi.org/10.1016/
+j.rser.2016.12.032.
+[3] Yang X, He L, Xia Y, Chen Y. Effect of government subsidies on renewable
+energy investments: The threshold effect. Energy Policy 2019;132:156–66. http:
+//dx.doi.org/10.1016/j.enpol.2019.05.039.
+[4] Liu W, Zhang X, Feng S. Does renewable energy policy work? Evidence from a
+panel data analysis. Renew Energy 2019;135:635–42. http://dx.doi.org/10.1016/
+j.renene.2018.12.037.
+[5] European Commission. 2030 Climate target plan. 2021, URL: https://ec.europa.
+eu/clima/eu-action/european-green-deal/2030-climate-target-plan_en, [last ac-
+cessed on 2021/10/27].
+[6] Miller
+RE,
+Blair
+PD.
+Input-output
+analysis:
+Foundations
+and
+extensions.
+Cambridge University Press; 2009.
+[7] Hartwig J, Kockat J. Macroeconomic effects of energetic building retrofit: input-
+output sensitivity analyses. Constr Manag Econ 2016;34(2):79–97. http://dx.doi.
+org/10.1080/01446193.2016.1144928.
+[8] Faber A, Idenburg A, Wilting H. Exploring techno-economic scenarios in
+an input–output model. Futures 2007;39(1):16–37. http://dx.doi.org/10.1016/
+j.futures.2006.03.011.
+[9] Pan H. Dynamic and endogenous change of input–output structure with specific
+layers of technology. Struct Change Econ Dyn 2006;17(2):200–23. http://dx.doi.
+org/10.1016/j.strueco.2005.05.003.
+[10] Pan H, Koehler J. Technological change in energy systems: Learning curves,
+logistic curves and input–output coefficients. Ecol Econom 2007;63(4):749–58.
+http://dx.doi.org/10.1016/j.ecolecon.2007.01.013.
+[11] Gurgul H, Lach Ł. Simulating evolution of interindustry linkages in en-
+dogenous
+dynamic
+IO
+model
+with
+layers
+of
+techniques.
+Metroeconomica
+2016;67(4):632–66. http://dx.doi.org/10.1111/meca.12112.
+[12] Hartwig J, Kockat J, Schade W, Braungardt S. The macroeconomic effects of am-
+bitious energy efficiency policy in Germany–combining bottom-up energy mod-
+elling with a non-equilibrium macroeconomic model. Energy 2017;124:510–20.
+http://dx.doi.org/10.1016/j.energy.2017.02.077.
+[13] Wiebe KS, Bjelle EL, Többen J, Wood R. Implementing exogenous scenarios in
+a global MRIO model for the estimation of future environmental footprints. J
+Econ Struct 2018;7(1):1–18. http://dx.doi.org/10.1186/s40008-018-0118-y.
+[14] Wilting HC, Faber A, Idenburg AM. Investigating new technologies in a scenario
+context: description and application of an input–output method. J Clean Prod
+2008;16(1):S102–12. http://dx.doi.org/10.1016/j.jclepro.2007.10.017.
+[15] Lenzen
+M.
+Aggregation
+versus
+disaggregation
+in
+input–output
+analysis
+of
+the environment. Econ Syst Res 2011;23(1):73–89. http://dx.doi.org/10.1080/
+09535314.2010.548793.
+[16] Duchin F. Structural economics: Measuring change in technology, lifestyles, and
+the environment. Island Press; 1998.
+[17] Vendries Algarin J, Hawkins TR, Marriott J, Scott Matthews H, Khanna V.
+Disaggregating the power generation sector for input-output life cycle assessment.
+J Ind Ecol 2015;19(4):666–75. http://dx.doi.org/10.1111/jiec.12207.
+[18] Duarte R, Langarita R, Sánchez-Chóliz J. The electricity industry in Spain:
+A
+structural
+analysis
+using
+a
+disaggregated
+input-output
+model.
+Energy
+2017;141:2640–51. http://dx.doi.org/10.1016/j.energy.2017.08.088.
+[19] Allan G, McGregor P, Swales J, Turner K. Impact of alternative electricity
+generation technologies on the scottish economy: an illustrative input—output
+analysis. Proc Inst Mech Eng 2007;221(2):243–54. http://dx.doi.org/10.1243/
+09576509JPE301.
+[20] Wolfram P, Wiedmann T, Diesendorf M. Carbon footprint scenarios for renewable
+electricity in Australia. J Clean Prod 2016;124:236–45. http://dx.doi.org/10.
+1016/j.jclepro.2016.02.080.
+[21] Wiedmann TO, Suh S, Feng K, Lenzen M, Acquaye A, Scott K, et al. Application
+of hybrid life cycle approaches to emerging energy technologies–the case of wind
+power in the UK. Environ Sci Technol 2011;45(13):5900–7. http://dx.doi.org/
+10.1021/es2007287.
+[22] Duchin F, Levine SH. Sectors may use multiple technologies simultaneously: The
+rectangular choice-of-technology model with binding factor constraints. Econ Syst
+Res 2011;23(3):281–302. http://dx.doi.org/10.1080/09535314.2011.571238.
+[23] Duchin F, Levine SH. The rectangular sector-by-technology model: not every
+economy produces every product and some products may rely on several
+technologies simultaneously. J Econ Struct 2012;1(1):1–11. http://dx.doi.org/10.
+1186/2193-2409-1-3.
+[24] Duchin F, Levine SH. Choosing among alternative technologies: conditions for
+assuring the feasibility of an input–output database or scenario. Econ Syst Res
+2017;29(4):541–56. http://dx.doi.org/10.1080/09535314.2017.1301396.
+[25] Kätelhön A, Bardow A, Suh S. Stochastic technology choice model for con-
+sequential life cycle assessment. Environ Sci Technol 2016;50(23):12575–83.
+http://dx.doi.org/10.1021/acs.est.6b04270.
+[26] Stadler K, Wood R, Bulavskaya T, Södersten C-J, Simas M, Schmidt S, et al.
+EXIOBASE 3: Developing a time series of detailed environmentally extended
+multi-regional input-output tables. J Ind Ecol 2018;22(3):502–15. http://dx.doi.
+org/10.1111/jiec.12715.
+[27] Peters JC. The GTAP-power data base: Disaggregating the electricity sector in
+the GTAP data base. J Glob Econ Anal 2016;1(1):209–50. http://dx.doi.org/10.
+21642/JGEA.010104AF.
+[28] Chepeliev
+M.
+GTAP-power
+data
+base:
+Version
+10.
+J
+Glob
+Econ
+Anal
+2020;5(2):110–37. http://dx.doi.org/10.21642/JGEA.050203AF.
+[29] Eurostat. Energy statistics database. 2022, URL: https://ec.europa.eu/eurostat/
+web/energy/data/database, [last accessed on 2022/07/20].
+[30] Eurostat. ESA supply, use and input-output tables database. 2022, URL: https://
+ec.europa.eu/eurostat/web/esa-supply-use-input-tables/data/database, [last ac-
+cessed on 2022/07/20].
+[31] Eurostat. NACE Rev. 2 - Statistical classification of economic activities. 2008,
+URL: https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-
+ra-07-015, [last accessed on 2022/02/02].
+[32] UNSD.
+International
+recommendations
+for
+energy
+statistics.
+2011,
+URL:
+https://unstats.un.org/unsd/energystats/methodology/ires/,
+[last
+accessed
+on
+2022/02/09].
+[33] Eurostat. Demography, population stock and balance database. 2022, URL:
+https://ec.europa.eu/eurostat/web/population-demography/demography-
+population-stock-balance/database, [last accessed on 2022/10/01].
+[34] Eurostat. National accounts database. 2022, URL: https://ec.europa.eu/eurostat/
+web/national-accounts/data/database, [last accessed on 2022/07/20].
+[35] OECD. Population projections. 2022, URL: https://stats.oecd.org/Index.aspx?
+DataSetCode=POPPROJ, [last accessed on 2022/10/01].
+[36] OECD. Real GDP long-term forecast (indicator). 2022, http://dx.doi.org/10.
+1787/d927bc18-en, [last accessed on 2022/10/01].
+[37] Wood R. Construction, stability and predictability of an input–output time-series
+for Australia. Econ Syst Res 2011;23(2):175–211. http://dx.doi.org/10.1080/
+09535314.2011.564156.
+[38] Papke LE, Wooldridge JM. Econometric methods for fractional response variables
+with an application to 401 (k) plan participation rates. J Appl Economet-
+rics 1996;11(6):619–32. http://dx.doi.org/10.1002/(SICI)1099-1255(199611)11:
+6<619::AID-JAE418>3.0.CO;2-1.
+[39] Ramalho EA, Ramalho JJ, Murteira JM. Alternative estimating and testing em-
+pirical strategies for fractional regression models. J Econ Surv 2011;25(1):19–68.
+http://dx.doi.org/10.1111/j.1467-6419.2009.00602.x.
+[40] Barth JR, Lin D, Yost K. Small and medium enterprise financing in transition
+economies. Atl Econ J 2011;39(1):19–38. http://dx.doi.org/10.1007/s11293-
+010-9260-0.
+[41] Kimmich C, Fischbacher U. Behavioral determinants of supply chain integration
+and coexistence. J Forest Econ 2016;25:55–77. http://dx.doi.org/10.1016/j.jfe.
+2016.08.001.
+[42] Burke PJ. The national-level energy ladder and its carbon implications. Environ
+Dev Econ 2013;18(4):484–503. http://dx.doi.org/10.1017/S1355770X13000090.
+[43] Koch SF. On the performance of fractional multinomial response models for
+estimating Engel Curves. Agrekon 2015;54(1):28–52. http://dx.doi.org/10.1080/
+03031853.2014.974628.
+[44] Ramalho EA, Ramalho JJ, Henriques PD. Fractional regression models for second
+stage DEA efficiency analyses. J Produ Anal 2010;34(3):239–55. http://dx.doi.
+org/10.1007/s11123-010-0184-0.
+[45] Wulff JN. Interpreting results from the multinomial logit model: Demonstrated
+by foreign market entry. Organizational Res Methods 2015;18(2):300–25. http:
+//dx.doi.org/10.1177/1094428114560024.
+[46] StataCorp. Stata statistical software: Release 17. College Station, TX: StataCorp
+llc.. 2021, URL: https://www.stata.com/.
+[47] Buis ML. FMLOGIT: Stata module fitting a fractional multinomial logit model
+by quasi maximum likelihood. 2008, URL: https://ideas.repec.org/c/boc/bocode/
+s456976.html, [last accessed on 2021/10/06].
+[48] Blazquez J, Fuentes-Bracamontes R, Bollino CA, Nezamuddin N. The renewable
+energy policy Paradox. Renew Sustain Energy Rev 2018;82:1–5. http://dx.doi.
+org/10.1016/j.rser.2017.09.002.
+[49] R Core Team, R Core Team. R: A language and environment for statistical
+computing. Vienna, Austria: R Foundation for Statistical Computing; 2021, URL
+https://www.R-project.org/.
+[50] Lahti L, Huovari J, Kainu M, Biecek P. Eurostat R package. 9, (1):2017,
+p. 385–92, URL https://journal.r-project.org/archive/2017/RJ-2017-019/index.
+html Version 3.7.5,
+[51] Wickham H, Averick M, Bryan J, Chang W, McGowan LD, François R, et al.
+Welcome to the tidyverse. J Open Source Softw 2019;4(43):1686. http://dx.doi.
+org/10.21105/joss.01686.

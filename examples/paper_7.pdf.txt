@@ -1,0 +1,1555 @@
+ 
+1857
+ 
+Russian Physics Journal, Vol. 59, No. 11, March, 2017 (Russian Original No. 11, November, 2016) 
+CONSTRAINT ON SEESAW MODEL PARAMETERS WITH 
+ELECTROWEAK VACUUM STABILITY 
+H. Okane and T. Morozumi 
+ UDC 530.22, 530.225 
+Within the standard model, the electroweak vacuum is metastable. We study how heavy right-handed neutrinos 
+in seesaw model have impact on the stability through their loop effect for the Higgs potential. Requiring the 
+lifetime of the electroweak vacuum is longer than the age of the Universe, the constraint on parameters such as 
+their masses and the strength of the Yukawa couplings is obtained.  
+Keywords: vacuum stability, lifetime of vacuum, neutrino physics. 
+INTRODUCTION 
+So far, there have been many studies on whether an electroweak (EW) vacuum is stable or not. Due to precise 
+measurements of the Higgs and top masses, within the Standard Model (SM), the EW vacuum is shown to be 
+metastable [1, 2]. This means that although the EW vacuum is unstable and may decay to the true vacuum, the lifetime 
+of the EW vacuum is longer than the age of the Universe. If the EW vacuum in the model is unstable, such as in the 
+SM, the calculation of the lifetime is important to analyze whether the model can guarantee the stability of the EW 
+vacuum or not. 
+Coleman and Callan [3, 4] first derived the decay rate for unstable vacuum in quantum theory. Isidori et al. [5] 
+estimated the lifetime of the EW vacuum up to the one-loop level within the SM, and they constrained on the Higgs 
+mass by requiring that the lifetime be longer than the age of the Universe. Actually, the Higgs mass discovered in 2012 
+indicates that the EW vacuum is metastable rather than absolutely stable [1, 2]. The ultimate goal of our study is to 
+estimate the lifetime of the EW vacuum for a new model beyond the SM and constrain on the new parameters by the 
+requirement for the EW vacuum to be stable. 
+To discuss the lifetime of the EW vacuum, following [5, 6], we write the lifetime   as  
+ 
+4
+0
+4
+=
+exp(
+[
+]
+)
+M
+b
+U
+U
+R
+S
+S
+T
+T
+
+
+ 
+, 
+(1) 
+where 
+U
+T  is the age of the Universe (13.8 billion years), 
+0[
+S b ]
+ is the tree level action with bounce solution 
+b
+ , 
+which is the solution to the Euclidean equation of motion for action 
+0[
+S b ]
+, 
+RM
+ is the bounce size maximizing the 
+decay rate of unstable vacuum, and S
+
+ is the loop correction from SM particles and new particles beyond the SM. The 
+Euclidean equation of motion for the action 
+0[
+S b ]
+ can be solved analytically with boundary conditions 
+lim
+( ) = 0
+r
+ b r
+ and 
+b (0) = 0
+, so that we can obtain the bounce solution 
+b
+  and the tree level action 
+0[
+S b ]
+,  
+Graduate School of Science, Core of Research for the Energetic Universe, Hiroshima University, Japan, e-mail: 
+hideaki-ookane@hiroshima-u.ac.jp; morozumi@hiroshima-u.ac.jp. Translated from Izvestiya Vysshikh Uchebnykh 
+Zavedenii, Fizika, No. 11, pp. 112–116, November, 2016. Original paper submitted September 6, 2016. 
+1064-8887/17/5911-1857 2017 Springer Science+Business Media New York 
+DOI 10.1007/s11182-017-0987-9
+ 
+1858 
+ 
+2
+2
+2
+2
+( ) =
+|
+|
+b
+R
+r
+r
+R
+
+
+
+, 
+(2) 
+ 
+2
+0[
+] = 8
+/3|
+|
+S b
+
+ . 
+(3) 
+where we have used the Higgs potential 
+4
+V ( ) = 4
+
+
+  and the Higgs quartic coupling  . As follows from Eqs. (1) and 
+(3), the lifetime at the tree level is mainly determined by the running of the Higgs quartic coupling ( )
+  .  
+We study the stability of the EW vacuum in the seesaw model which can explain the measurements of neutrino 
+oscillations (tiny neutrino masses) by introducing right-handed neutrinos to the SM. One-generation neutrino 
+Lagrangian has the following form:  
+ 
+R
+L
+L
+R
+R
+L
+R
+R
+R
+=
+h.c.
+2
+c
+M
+i
+iN
+N
+y l
+N
+N N
+
+
+
+
+
+    
+ 
+
+
+
+
+
+
+, 
+(4) 
+where 
+L
+  and 
+NR
+ are left- and right-handed neutrinos, respectively; Ll  is the 
+SU (2)
+ left-handed lepton doublet and 
+  is the 
+SU (2)
+ Higgs doublet; y  is the neutrino-Higgs Yukawa coupling, and 
+MR
+ is the majorana neutrino mass. 
+Through the neutrino-Higgs Yukawa interaction, neutrino can contribute to the running of Higgs self-coupling  , 
+which determines the lifetime of the EW vacuum at tree-level, and to the one-loop correction of action 
+S
+ in Eq. (1). 
+We would like to consider three-generation neutrinos in the seesaw model, but the derivation for the loop correction of 
+one-generation neutrino is not yet complete. So we will show interim results for the loop correction of one-generation 
+neutrino.  
+LOOP CORRECTIONS TO THE LIFETIME OF THE ELECTROWEAK VACUUM IN THE SEE SAW 
+MODEL  
+In this section, we derive loop corrections of Higgs and top to the lifetime of the EW vacuum and show interim 
+results for the loop correction of one-generation neutrino. We can write the loop corrections of Higgs, top, and neutrino 
+as follows:  
+ 
+H
+H
+trans
+dil
+10
+H
+det
+[
+]
+1
+1
+=
+ln
+ln
+ln
+2
+det
+[0]
+b
+M
+S
+S
+J
+J
+S
+R
+
+
+  
+
+
+
+
+
+
+
+
+
+
+, 
+(5) 
+ 
+det
+[
+]
+3
+=
+2 ln
+det
+[0]
+t
+b
+t
+t
+S
+S
+S
+
+
+
+
+
+
+
+
+
+
+
+, 
+(6) 
+ 
+0
+det
+[
+]
+1
+=
+2 ln
+det
+[0]
+b
+S
+S
+S
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+. 
+(7) 
+where det S denotes the determinant of double functional derivative of S  and the apostrophe of 
+det SH
+   denotes the 
+extraction of zero modes due to translational symmetry and scale invariant. We note that 
+10
+M
+R
+ in the first term of Higgs 
+correction 
+SH
+ compensates for the dimensions extracted due to the zero modes, and 
+ln Jtrans
+ and 
+ln Jdil
+ denote 
+the contributions of zero modes from translational symmetry and scale invariant, respectively,  
+ 
+1859
+ 
+2
+2
+trans
+2
+2
+[
+]
+16
+ln
+=
+ln
+=
+ln
+4
+9 |
+|
+b
+S
+J
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, 
+(8) 
+ 
+2
+2
+4
+dil
+1
+1
+1
+8
+1
+ln
+=
+ln
+=
+ln
+ln
+2
+2
+2
+|
+|
+b
+J
+d x
+R
+Rv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+, 
+(9) 
+where Rv  is cut off for infrared divergence. 
+Next, we explain briefly how to calculate the ratio of determinants in 
+S
+. Here det
+[
+S b ]
+ is the product of 
+eigenvalues 
+i  for 
+2
+[
+]
+= [
+( )]
+=
+b
+i
+S
+W r
+  
+ 
+
+  . We can obtain the product of its eigenvalues 
+i  by using the 
+Gel’fand–Yaglom method. Namely, we only solve the differential equation 
+2
+[
+( )]
+= 0
+ W r
+
+ with boundary 
+conditions 
+0
+( ) = 0
+limr
+uj
+r
+
+ and 
+0
+( ) =1
+limr
+uj
+r
+
+
+, where 
+( )
+u r  stands for the radial function of   and j  is the 
+angular momentum. Thanks to the Gel’fand–Yaglom method, 
+( )
+limr
+uj
+r
+
+ becomes the product of eigenvalues 
+i . 
+Thus,  
+ 
+0
+( )
+det
+[
+] =
+=
+( )
+lim
+lim
+det
+[0]
+( )
+j
+b
+j
+r
+r
+j
+u
+r
+S
+r
+S
+u
+r
+
+
+ 
+
+
+, 
+(10) 
+where 
+0
+( ) =
+( )/
+( )
+j
+j
+j
+r
+u
+r
+u
+r
+
+. We can conclude that the calculation of the ratio of determinants in 
+S
+ is reduced to 
+solving the differential equation for 
+( )
+ j r
+. 
+Next, we summarize the procedure of renormalization following [5, 6]. Since 
+S
+ calculated up to one-loop 
+level is divergent, we need to implement the renormalization for loop contribution to be finite. The finite loop 
+correction 
+Sr
+ is defined as  
+ 
+[2]
+[2]
+ct
+ct
+=
+=
+rS
+S
+S
+S
+S
+S
+S
+
+  
+  
+ 
+ 
+,  
+ (11) 
+where 
+Sct
+ is the counter term for canceling divergence from the loop correction, and we have inserted 
+S[2]
+ so that 
+we can calculate 
+[2]
+S
+  S
+ and 
+[2]
+ct
+S
+S
+
+ 
+, respectively. Here 
+S[2]
+ is the expansion of 
+S
+ up to second order 
+with respect to W :  
+ 
+[2]
+2
+2
+2
+1
+2
+1
+2
+1
+2
+(
+)
+1
+1
+1
+=
+[lnSDet(
+)
+lnSDet(
+)]
+=
+STr[(
+)
+]
+STr[(
+)
+(
+)
+]
+2
+2
+4
+W
+S
+W
+W
+W
+W
+
+
+
+
+ 
+
+
+
+
+
+
+
+,  (12) 
+where SDet  is super determinant and STr = Tr  or STr =
+2Tr
+ for boson or fermion, respectively. The first 
+expression in Eq. (12) is the perturbative version of S
+
+ up to the second order in terms of W, so we can solve 
+S[2]
+ by 
+pertubative expansion 
+(1)
+(2)
+( ) =1
+( )
+( )
+j
+j
+j
+r
+r
+r
+
+ 
+ 
+. The perturbative expansion up to the second order is sufficient for 
+[2]
+S
+  S
+ to be finite for summing angular momentum j . On the other hand, the second expression in Eq. (12) can 
+be evaluated by integration over momentum space. We adopt MS scheme and eliminate the divergence of evaluated 
+S[2]
+ by using the counter term 
+Sct
+. We can finally obtain the finite correction 
+[2]
+ct
+S
+S
+
+ 
+. 
+ 
+1860 
+Higgs quantum correction  
+We estimate the renormalized Higgs loop correction 
+SHr
+. In order to calculate 
+SH
+, we derive the 
+differential equation for 
+( )
+ j r
+,  
+ 
+4
+3
+( )
+( ) =
+(
+( ))
+( )
+j
+j
+b
+j
+j
+r
+r
+V
+r
+r
+r
+
+
+
+
+
+
+
+
+
+. 
+(13) 
+We can analytically solve this equation and then get 
+SH
+:  
+ 
+2
+H
+>1/2
+= 1
+(2
+1)
+ln
+( )
+lim
+2
+j
+r
+j
+S
+j
+r
+
+
+
+
+
+, 
+(14) 
+where 
+2
+(2
+j 1)
+ is degeneracy for fixed j . To calculate 
+[2]
+SH
+, we substitute 
+(1)
+(2)
+j ( ) =1
+j
+j
+r
+
+ 
+ 
+ into Eq. (13) and 
+obtain the differential equation in each order  
+ 
+(1)
+(1)
+4
+3
+( )
+( ) =
+(
+b ( ))
+j
+j
+j
+r
+r
+V
+r
+r
+
+
+
+
+
+
+
+
+, 
+(15) 
+ 
+(2)
+(2)
+(1)
+4
+3
+( )
+( ) =
+(
+( ))
+( )
+b
+j
+j
+j
+j
+r
+r
+V
+r
+r
+r
+
+
+
+
+
+
+
+
+
+. 
+(16) 
+Solving numerically these differential equations, we can compute 
+(1)( )
+j
+r
+
+ and 
+(2)( )
+j
+r
+
+. Thus, we can estimate 
+numerically 
+[2]
+H
+H
+S
+S
+
+ 
+:  
+ 
+[2]
+2
+2
+(1)
+(2)
+(1)
+2
+H
+H
+>1/2
+=0
+1
+1
+1
+=
+(2
+1)
+ln
+( )
+(2
+1)
+( )
+( )
+( )
+= 12.3
+lim
+lim
+2
+2
+2
+j
+j
+j
+j
+r
+r
+j
+j
+S
+S
+j
+r
+j
+r
+r
+r
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+. 
+(17) 
+As mentioned above, since 
+[2]
+SH
+ can be integrated over the momentum space, we find  
+ 
+[2]
+Hct
+H
+5
+=
+3
+2
+S
+S
+L
+
+ 
+
+
+, 
+(18) 
+where 
+E
+= ln(
+/ 2)
+L
+R e
+ 
+ and 
+E
+  is the Euler constant. 
+Top quantum correction  
+Similarly to the case of Higgs fluctuation, we need to derive the differential equation in terms of 
+( )
+ j r
+ to 
+estimate 
+ tS
+. In this case, there are two radial function 
+1J
+ and 
+2J
+ corresponding to 
+( )
+ j r
+ in the Higgs case. 
+These differential equations are  
+ 
+1861
+ 
+2
+2
+2
+2
+2
+1
+2
+2
+2
+2
+2
+2
+(
+1)
+( )
+( )
+( )
+0
+2
+2
+=
+( )
+0
+(
+1)
+( )
+( )
+2
+2
+t
+t
+b
+b
+J
+J
+t
+t
+b
+b
+d
+J J
+g
+g
+r
+r
+r
+dr
+r
+r
+g
+d
+J J
+g
+r
+r
+dr
+r
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+, 
+(19) 
+where 
+tg  is top-Higgs Yukawa coupling. In the limit of 
+tg  0
+, we can easily find the solution 
+01 =
+J
+J
+r
+
+, 
+1
+02 =
+J
+J
+r 
+
+ of these equation. We define 
+0
+( ) =
+( )/
+( ) ( =1,2)
+iJ
+iJ
+iJ
+r
+r
+r
+i
+
+
+
+
+ and then derive the following 
+differential equations:  
+ 
+2
+2
+1
+1
+1
+2
+2
+( )
+( ) =
+( )
+( )
+( )
+2
+2
+t
+t
+J
+J
+b
+J
+b
+J
+g
+g
+J
+r
+r
+r
+r
+r r
+r
+
+
+
+
+
+
+
+
+
+
+
+, 
+(20) 
+ 
+2
+2
+2
+2
+2
+2
+2(
+1)
+( )
+( )
+( ) =
+( )
+( )
+2
+2
+t
+t
+J
+J
+J
+b
+J
+b
+J
+g
+g
+r
+r
+r
+r
+r
+r
+r
+
+
+
+
+
+
+
+
+
+
+
+
+. 
+(21) 
+In this case, we must numerically solve 
+1 ( )
+ J r
+ and 
+2 ( )
+ J r
+. Using perturbative expansions of 
+1 ( )
+ J r
+ and 
+2 ( )
+ J r
+, 
+we can also calculate 
+ tS[2]
+. According to these calculation, we estimate 
+[2]
+2
+=
+(
+/ |
+|)
+t
+t
+t
+t
+S
+S
+f g
+
+ 
+
+, and Fig. 1 shows 
+the dependence of 
+tf  on 
+2 / |
+|
+tg
+ .  
+The evaluation of 
+S[2]
+ is similar to the Higgs case  
+ 
+2
+4
+[2]
+2
+13
+5
+=
+2
+|
+|
+6
+6
+|
+|
+t
+t
+t
+tct
+g
+g
+S
+S
+L
+L
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+, 
+(22) 
+where 
+= ln(
+E / 2)
+L
+R e
+ 
+ and 
+E
+ is Euler constant. 
+ 
+Fig. 1. Numerical result for 
+[2]
+2
+=
+(
+/ |
+|)
+t
+t
+t
+t
+S
+S
+f
+g
+
+ 
+
+. 
+ 
+1862 
+Neutrino quantum correction  
+In this part, we show interim results for neutrino loop correction. The determinant of 
+[
+S b ]
+ is written as  
+ 
+†
+2
+2
+Det
+[
+] = Det
+2
+2
+b
+b
+b
+b
+N
+b
+N
+y
+y
+S
+y
+y
+M
+M
+
+
+ 
+ 
+
+
+
+ 
+ 
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+. 
+(23) 
+The expression corresponding 
+2
+[
+( )]
+= 0
+ W r
+
+ becomes  
+ 
+2
+2
+2
+ˆ
+= 0
+2
+2
+N
+b
+b
+b
+N
+x
+y
+y M
+u
+v
+M
+ 
+
+
+
+
+
+
+ 
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+, 
+(24) 
+ 
+2
+2
+2
+2
+ˆ
+= 0
+2
+2
+N
+b
+b
+N
+b
+N
+x
+y M
+y
+u
+M
+v
+M
+ 
+
+
+
+
+
+
+ 
+ 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+, 
+(25) 
+where 
+( , )
+( , ) =
+( , )
+u r
+r
+v r
+
+
+
+
+
+
+
+
+ 
+
+
+ and   denotes the angular dependence (three polar angles). Since we can expand u  and v  
+as eigen functions of 
+2
+L  in 
+2
+2
+2
+2
+2
+3
+=
+d
+d
+L
+r dr
+dr
+r
+
+
+
+
+, we will get the differential equations for the radial functions of 
+u  and v . 
+SUMMARY 
+We have shown the computations of the Higgs and top loop correction to the lifetime of the EW vacuum and 
+interim results of the neutrino loop correction. In order to survey the vacuum stability of the seesaw model, we need to 
+estimate loop corrections of neutrino and gauge bosons. The complete calculation of loop correction is important to 
+reduce the uncertainty of renormalization scale dependence [7]. We will continue to calculate the loop correction of 
+neutrino, and this calculation will help the analysis of the vacuum stability in the seesaw model.  
+The lifetime of the EW vacuum in the seesaw model with three degenerate neutrinos and constrain on the 
+neutrino-Higgs Yukawa coupling and right handed neutrino mass was computed in [8]. We plan to generalize this 
+analysis to the case of non-degenerate neutrinos and to use the measurements of neutrino oscillations as inputs 
+computing the lifetime of the EW vacuum. It is interesting to study how the measurements of neutrino oscillation reflect 
+the EW vacuum stability. 
+REFERENCES 
+1. 
+G. Degrassi, S. Di Vita, J. Elias-Miro, et al., J. High Eenrgy Phys., 1208, 098 (2012).  
+2. 
+D. Buttazzo, G. Degrassi, P. P. Giardino, et al., J. High Energy Pphys., 1312, 089 (2013).  
+3. 
+S. R. Coleman, Phys. Rev., D15, 2929 (1977).  
+ 
+1863
+4. 
+C. G. Callan, Jr. and S. R. Coleman, Phys. Rev., D16, 1762 (1977).  
+5. 
+G. Isidori, G. Ridolfi, and A. Strumia, Nucl. Phys., B609, 387 (2001).  
+6. 
+V. Branchina, E. Messina, and M. Sher, Phys. Rev., D91, 013003 (2015).  
+7. 
+M. Endo, T. Moroi, M. M. Nojiri, and Y. Shoji, J. High Energy Phys., 1601, 031 (2016).  
+8. 
+J. Elias-Miro, J. R. Espinosa, G. F. Giudice, et al., Phys. Lett., B709, 222 (2012).  
+ 

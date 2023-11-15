@@ -1,0 +1,881 @@
+ 
+Faster Uphill Relaxation in Thermodynamically Equidistant Temperature Quenches
+Alessio Lapolla
+and Aljaž Godec
+*
+Mathematical bioPhysics group, Max Planck Institute for Biophysical Chemistry, Göttingen 37077, Germany
+(Received 6 February 2020; revised 13 June 2020; accepted 10 August 2020; published 11 September 2020)
+We uncover an unforeseen asymmetry in relaxation: for a pair of thermodynamically equidistant
+temperature quenches, one from a lower and the other from a higher temperature, the relaxation at the
+ambient temperature is faster in the case of the former. We demonstrate this finding on hand of two exactly
+solvable many-body systems relevant in the context of single-molecule and tracer-particle dynamics. We
+prove that near stable minima and for all quadratic energy landscapes it is a general phenomenon that also
+exists in a class of non-Markovian observables probed in single-molecule and particle-tracking experi-
+ments. The asymmetry is a general feature of reversible overdamped diffusive systems with smooth single-
+well potentials and occurs in multiwell landscapes when quenches disturb predominantly intrawell
+equilibria. Our findings may be relevant for the optimization of stochastic heat engines.
+DOI: 10.1103/PhysRevLett.125.110602
+Relaxation processes are a paradigm for condensed matter
+[1,2], single-molecule experiments [3] and tracer-particle
+transport in complex media [4–8]. Relaxation close to equi-
+librium was described by the mechanical Onsager-Casimir
+[9,10] and thermal Kubo-Yokota-Nakajima [11] linear laws.
+These pioneering ideas were consistently generalized in
+numerous ways, most notably, to thermodynamics along
+individual stochastic trajectories driven far from equilibrium
+at weak [12,13] and strong [14–18] coupling with the bath,
+anomalous diffusion phenomena [19–22], and the so-called
+“frenesis” focusing on the dynamical activity—a dynamic
+counterpart to changes in entropy [23,24]. Many of these
+new concepts have been verified by and/or successfully
+applied in experiments in colloidal systems [25–27] and
+single-molecule experiments on nucleic acids [28–30] and
+larger biomolecular machines [31].
+Not as much is known about transients, in particular
+those evolving from nonstationary initial conditions. Our
+present understanding of thermodynamics and in parti-
+cular the kinetics in transient systems, reversible as
+well as irreversible, is mostly limited to small deviations
+from equilibrium [9,10], nonequilibrium steady states
+[23,32–35], and statistics of the “housekeeping” heat
+[36,37] and entropy production [38]. The role of initial
+conditions in relaxation was recently studied in the context
+of the “Mpemba effect”—the phenomenon where a hot
+system can cool down faster than the same system initiated at
+a lower temperature [39,40]. Notable recent advances
+include an information-theoretic bound on the entropy
+production during relaxation far from equilibrium [41]
+and a spectral duality between relaxation and first passage
+processes [42,43].
+It is meanwhile possible to probe the transient, non-
+equilibrium dynamics of colloids and single molecules, e.g.,
+by temperature-modulated particle tracking [4] and time-
+modulated [44], temperature-modulated [45], temperature-
+jump [46], and holographic [47] optical tweezers, as well as
+optical pushing [48]. These experiments allow for systematic
+investigations of the dependence of relaxation on the
+direction of the displacement from equilibrium, which is
+the central question of the present Letter.
+Notwithstanding all progress in the field, the dependence
+of relaxation on the direction of the displacement from
+(a)
+(b)
+FIG. 1.
+Nonequilibrium free energy after a temperature quench
+T → Teq at time t ¼ 0 in units of kBTeq, ΔF ˜T ¼ D½P ˜Tðt ¼
+0þÞjjPeq
+1 � [see Eq. (3)], as a function of the relative prequench
+temperature ˜T ¼ T=Teq (note the logarithmic scale); (a) refers to
+the end-to-end distance of a Gaussian chain with 100 beads and
+(b) to the 7th in a single file of 10 particles in a linear potential
+with slope 10 confined to a unit box. The blue and red points
+depict a pair of thermodynamically equidistant temperature
+quenches, ˜T− and ˜Tþ, with corresponding excess potential
+energies hΔUi ˜T� ≡ hUð0þÞi ˜T� − hUi1.
+Published by the American Physical Society under the terms of
+the Creative Commons Attribution 4.0 International license.
+Further distribution of this work must maintain attribution to
+the author(s) and the published article’s title, journal citation,
+and DOI. Open access publication funded by the Max Planck
+Society.
+PHYSICAL REVIEW LETTERS 125, 110602 (2020)
+Editors' Suggestion
+Featured in Physics
+0031-9007=20=125(11)=110602(7)
+110602-1
+Published by the American Physical Society
+equilibrium (see Fig. 1) remains elusive. Moreover, as a
+result of the projection to a lower-dimensional subspace, it
+is expected that observables in many experiments, in
+particular those tracking individual particles [4] and single
+molecules
+[46,47],
+relax
+in
+a
+manner
+that
+is
+not
+Markovian [8].
+Here, we address relaxation from an instantaneous
+temperature quench T → Teq at time t ¼ 0 with respect
+to its directionality, that is, T−↑Teq versus Tþ↓Teq. We
+uncover an unforeseen dependence on the direction of the
+quench: For a given pair of temperatures T− < Teq < Tþ at
+which the thermodynamic displacement from equilibrium
+at t ¼ 0þ in the sense of DT�ð0þÞ, the nonequilibrium
+free energy difference or “lag” [49–55], is equal, i.e.,
+DTþð0þÞ ¼ DT−ð0þÞ (see Fig. 1), relaxation evolves,
+contrary to intuition, faster “uphill” (hΔUiT− < 0) than
+“downhill”
+(hΔUiTþ > 0)
+in
+the
+energy
+landscape.
+This always holds for single-well potentials and occurs
+in near degenerate multiwell potentials with high energy
+barriers under Markovian dynamics, as well as for a class of
+non-Markovian observables probed by single-molecule and
+particle-tracking experiments. We demonstrate the asym-
+metry on the hand of the Gaussian polymer chain [56],
+single-file diffusion in a tilted box [8], and for diffusion in
+nearly degenerate multiwell potentials. For relaxation near
+a stable minimum and thus for all reversible Ornstein-
+Uhlenbeck processes, we prove that the asymmetry, albeit
+counterintuitive, is general.
+Theory.—We
+consider
+d-dimensional
+Markovian
+diffusion with a d × d symmetric positive-definite diffusion
+matrix D and mobility tensor MT ¼ D=kBT in a drift
+field FðxÞ such that M−1
+T FðxÞ ¼ −∇UðxÞ is a gradient
+flow.
+The
+evolution
+of
+the
+probability
+density
+at
+temperature T is governed by the Fokker-Planck operator
+ˆLT ≡ ∇ · D∇ − ∇ · MTFðxÞ. We let GTðx; tjx0Þ be the
+Green’s function of the initial value problem ð∂t −
+ˆLTÞGTðx; tjx0Þ ¼ 0 and assume that the potential UðxÞ
+is
+confining
+(i.e., limjxj→∞ UðxÞ ¼ ∞).
+This
+assures
+the
+existence
+of
+an
+invariant
+Maxwell-Boltzmann
+measure
+with
+density
+limt→∞GTðx; tjx0Þ ≡ Peq
+T ðxÞ ¼
+Q−1
+T e−UðxÞ=kBT;
+∀ x0
+with
+partition
+function
+QT ¼
+R
+e−UðxÞ=kBTdx.
+The system is prepared at equilibrium with a temperature
+T, Pinv
+T ðxÞ, whereupon an instantaneous temperature
+quench is performed to the ambient temperature Teq
+at t ¼ 0. The relaxation evolves at Teq according to ˆLTeq
+and for a given system it is uniquely characterized by T.
+For convenience we define ˜T ≡ T=Teq [57] such that
+P ˜Tðx; tÞ ¼
+Z
+dx0G1ðx; tjx0ÞPeq
+˜T ðx0Þ →
+t→∞Peq
+1 ðxÞ:
+ð1Þ
+The
+instantaneous
+entropy
+and
+mean
+energy
+are
+given
+by
+S ˜TðtÞ ≡ −kB
+R
+dxP ˜Tðx; tÞ ln P ˜Tðx; tÞ
+and
+hUðtÞi ˜T ¼ R dxP ˜Tðx; tÞUðxÞ,
+respectively,
+where
+h·i ˜T
+denotes an average over all paths xðtÞ starting from
+Pinv
+˜T ðx0Þ.
+Let the measured physical observable be q ¼ ΓðxÞ. Its
+probability density function corresponds to [8]
+P ˜Tðq; tÞ ¼ ˆΠxðqÞP ˜Tðx; tÞ ≡
+Z
+dxδ½ΓðxÞ − q�P ˜Tðx; tÞ;ð2Þ
+which
+in
+general
+displays
+non-Markovian
+dynamics
+as soon as q corresponds to a low-dimensional pro-
+jection [8]. Once equilibrium is reached, we have
+limt→∞P ˜Tðq; tÞ ¼ Peq
+1 ðqÞ, or, expressed via the so-called
+potential of mean force UðqÞ [58], Peq
+1 ðqÞ ¼ e−βeqUðqÞ
+[14,17,59].
+Obviously,
+when
+ΓðxÞ ¼ x,
+we
+have
+P ˜Tðq; tÞ ¼ P ˜Tðx; tÞ.
+We quantify the instantaneous displacement from equi-
+librium with the Kullback-Leibler divergence [49–55]:
+D½P ˜TðtÞjjPeq
+1 � ¼
+Z
+dqP ˜Tðq; tÞ ln½P ˜Tðq; tÞ=Peq
+1 ðqÞ�:
+ð3Þ
+Writing this out for the Markovian case, we find, upon
+identifying S ˜TðtÞ and hU ˜TðtÞi,
+D½P ˜TðtÞjjPeq
+1 � ¼ −S ˜TðtÞ=kB þ βeqhUðtÞi ˜T þ ln QTeq:
+ð4Þ
+Recalling the definition of free energy F ¼ −β−1
+eq ln QTeq
+and defining the instantaneous generalized free energy
+(GFE) [52] or “lag” [55] as F ˜TðtÞ ¼ hUðtÞi ˜T − TeqS ˜TðtÞ,
+we see, upon multiplying through by β−1
+eq ¼ kBTeq, that in
+the Markovian case Eq. (3) is the excess GFE in units
+of kBTeq, i.e., DM
+˜T ðtÞ ≡ D½P ˜TðtÞjjPeq
+1 � ¼ βeq½F ˜TðtÞ − F�
+[51,52]. Writing out Eq. (3) for the non-Markovian case
+and identifying S ˜TðtÞ and UðqÞ (calligraphic letters denote
+potentials of projected observables), we find
+DnM
+˜T ðtÞ ≡ D½P ˜TðtÞjjPeq
+1 � ¼ −S ˜TðtÞ=kB þ βeqhUðtÞi˜T; ð5Þ
+which is the non-Markovian GFE DnM
+˜T ðtÞ ¼ βeqF ˜TðtÞ.
+Note
+that
+UðqÞ
+itself
+is
+an
+effective
+free
+energy,
+i.e.,
+βeqUðqÞ ≡ − lnhδ½ΓðxÞ − q�i1 ¼ − ln
+R
+dxδ½ΓðxÞ −
+q�e−βeqUðxÞ þ ln QTeq
+and S1 ¼ −hUi1. We henceforth
+express energies in units of kBTeq. If (and only if) latent
+degrees of freedom (i.e., those integrated out) relax much
+faster than qðtÞ, Eqs. (4) and (5) are equivalent and qðtÞ
+is a Markovian diffusion in the free energy landscape
+UðqÞ [8]. In the absence of a time-scale separation,
+however, both S ˜TðtÞ and hUðtÞi ˜T contain contributions
+from the (hidden) relaxation of the latent degrees of
+freedom.
+Consider now a pair of temperatures, ˜Tþ > 1 and
+˜T− < 1, corresponding to equal displacements immediately
+after the quench DM;nM
+˜T−
+ð0þÞ ¼ DM;nM
+˜Tþ
+ð0þÞ. The existence
+of (at least) two such temperatures is guaranteed within an
+interval ˜T ∈ ð ˜Tmin; ˜TmaxÞ where DM;nM
+˜T
+ð0−Þ ¼ fð ˜TÞ has
+PHYSICAL REVIEW LETTERS 125, 110602 (2020)
+110602-2
+no local maximum. The central question of this Letter
+addresses the rate of the “uphill” ( ˜T− < 1) versus “down-
+hill” ( ˜Tþ > 1) relaxation.
+Gaussian Chain.—In the context of single-molecule
+experiments, we consider the overdamped dynamics
+of a chain of N þ 1 beads with coordinates frig con-
+nected by harmonic springs with potential UðfrigÞ ¼
+PN
+i¼1ðriþ1 − riÞ2 (general harmonic networks are treated
+in [60]). In the Markovian setting, we consider all mono-
+mers, P ˜Tðfrig; tÞ in Eq. (1), while single-molecule experi-
+ments (e.g., Förster resonance energy transfer [73,74] or
+optical tweezers [46,47]) typically track a single (e.g.,
+end to end) distance within the macromolecule q ≡ d ¼
+jr1 − rNj with P ˜Tðd; tÞ from Eq. (2), evolving according to
+non-Markovian dynamics.
+The excess GFE is given by (see derivation in [60])
+DM
+˜T ðtÞ ¼ 3
+2
+X
+N
+k¼1
+½Λ ˜T
+kðtÞ − 1 − ln Λ ˜T
+kðtÞ�
+ð6Þ
+DnM
+˜T ðtÞ ¼ 3
+2
+�A1N
+˜T ðtÞ
+A1N
+1 ð0Þ − 1 − ln A1N
+˜T ðtÞ
+A1N
+1 ð0Þ
+�
+;
+ð7Þ
+where
+Λ ˜T
+kðtÞ ≡ 1 þ ð ˜T − 1Þe−2μkt
+with
+μk ¼
+4sin2fkπ=½2ðN þ 1Þ�g,
+and
+we
+introduced
+Aij
+˜T ðtÞ ≡
+PN
+k¼1 Λ ˜T
+kðtÞCij
+k =2μk with Cij
+k ≥ 0 given explicitly in [60].
+The initial excess free energies are both convex in ˜T and
+read
+DM
+˜T ð0þÞ ¼ 3Nð ˜T − 1 − ln ˜TÞ=2 ¼ NDnM
+˜T ð0þÞ:
+ð8Þ
+The instantaneous potential energy of the full system and
+the potential of mean force in turn read hUðtÞi˜T ¼
+3
+2
+PN
+k¼1 Λ ˜T
+kðtÞ
+and
+UðdÞ ¼ − ln Peq
+1 ðdÞ,
+respectively.
+Aside from specific values of μk and Cij
+k , Eqs. (6)–(8) hold
+for any reversible Ornstein-Uhlenbeck” process (OUp), that
+is, for any ˜T, connectivity or stability matrix, and tagged
+distance.
+The results for DM;nM
+˜T
+ðtÞ and their decomposition into
+hUi ˜T; hUðtÞi˜T; S ˜TðtÞ, and S ˜TðtÞ for a pair of equidistant
+temperature quenches are shown in Fig. 2 and demonstrate
+that the uphill relaxation is always faster than the downhill
+relaxation. As we prove below, this is true for any reversible
+OUp quenched arbitrarily far from equilibrium.
+The energy and entropy differences relative to their
+equilibrium values (i.e., at t ¼ ∞) in Fig. 2(a) suggest that
+the Markovian uphill and downhill relaxation are domi-
+nated by hΔUðtÞi ˜Tþ and ΔS ˜T−, respectively. Surprisingly,
+entropy pushing the system uphill against the deterministic
+force is more efficient. Notably, the magnitude of individ-
+ual contributions is smaller for uphill relaxation, i.e.,
+hΔUi ˜Tþ > −hΔUi ˜T− and ΔS ˜Tþ > −ΔS ˜T−. Thus, a larger
+energy excess and entropy deficit are dissipated during
+downhill relaxation. Conversely, the partitioning into S ˜TðtÞ
+and hUðtÞi ˜T of the non-Markovian relaxation depends on
+the details of the projection and is less intuitive [in our
+example in Fig. 2(b) it is, in fact, reversed].
+To explain why uphill relaxation is faster, we inspect in
+Fig. 3 local contributions to DM
+˜T ðtÞ for a one-dimensional
+OUp. An uphill quench localizes P ˜T−ðx; 0þÞ near the
+origin, whereas a downhill quench broadens P ˜Tþðx; 0þÞ,
+rendering the integrand of Eq. (4) nonzero over a larger
+domain [Fig. 3(a), red line]. The evolution of P ˜Tðx; tÞ is
+driven by diffusion ∝ ∂2xP ˜T and advection ∝ ∂xxP ˜T. By
+forcing probability mass toward the origin, advection
+seems to oppose uphill relaxation [triangles in Fig. 3(b)]
+but thereby actually sustains an even faster diffusion rate
+compared to free diffusion [compare circles and dashed line
+in Fig. 3(b)]. The net effect is an overall relaxation nearly as
+fast as free diffusion [compare full and dashed line in
+Fig. 3(b)]. Downhill relaxation is advection-dominated and
+weakly opposed by diffusion, which is almost unaffected
+by the potential [Fig. 3(c)]. The overall dynamics is much
+slower [compare full lines in Fig. 3(b), (c)]. Faster diffusion
+from a localized initial distribution thereby renders uphill
+(a)
+(b)
+(c)
+(d)
+FIG. 2.
+D½P ˜TðtÞjjPeq
+1 � (full lines) for the Gaussian chain [(a),(b)] and single file with 10 particles in a linear potential with slope g ¼ 10
+[(s),(d)]. (a) refers to the entire chain of 100 beads [Eq. (4)] and (b) to the end-to-end distance [Eq. (5)] for equidistant quenches from
+˜T− ¼ 0.24 (blue) and ˜Tþ ¼ 2.64 (red); (c) stands for the full single file for equidistant quenches from ˜T− ¼ 0.61 (blue) and ˜Tþ ¼ 1.52
+(red); (d) the 7th particle for equidistant quenches from ˜T− ¼ 0.54 (blue) and ˜Tþ ¼ 1.69. The circles refer to hΔUðtÞi ˜T� and hΔUðtÞi ˜T�
+in (a) and (c), and (b) and (d), respectively, and triangles denote ΔS ˜T�ðtÞ and ΔS ˜TðtÞ. Note the second axes for hΔUðtÞi ˜T�; hΔUðtÞi ˜T�
+and ΔS ˜T�ðtÞ; ΔS ˜TðtÞ. Note that S ˜Tð∞Þ ¼ S1 ¼ −hUi1.
+PHYSICAL REVIEW LETTERS 125, 110602 (2020)
+110602-3
+relaxation faster—an effect that will exist in any confining
+potential well with ruggedness ≪ kBTeq.
+ˆLT of any
+reversible OUp is diagonalizable and thus uniquely decom-
+posable into one-dimensional OUps, extending our explan-
+ation to arbitrary dimensions.
+Non-Markovian relaxation displays the same asym-
+metry, but the dominant driving forces, here S ˜T and
+hU ˜Ti, may become reversed [see Fig. 2(b)]. Since U ˜T
+contains entropic effects of latent degrees of freedom, the
+partitioning between S ˜T and hU ˜Ti is in general projection-
+dependent.
+Tilted single file.—In the context of tracer-particle
+dynamics, we consider N hard-core Brownian point par-
+ticles with positions fxiðtÞg (the extension to a finite
+diameter is straightforward [5,6]) diffusing in a box of
+unit length in the presence of a linear potential (e.g., the
+gravitational field), UðfxigÞ ¼ PN
+i¼1 gxi. The probability
+density of fxiðtÞg upon a quench from ˜T, P ˜TðfxiðtÞg; tÞ,
+evolves according to ˆL1 ¼ PN
+i¼1ð∂2xi þ g∂xiÞ under non-
+crossing conditions [7,8]. In [60] we solve the problem
+exactly via the coordinate Bethe ansatz [7,8], both for
+the
+Markovian
+complete
+single
+file
+and
+the
+non-
+Markovian
+probability
+density
+of
+a
+tagged
+particle
+P ˜Tðz; tÞ (i.e., q ≡ xT ¼ z).
+DM
+˜T ðtÞ with corresponding hΔUðtÞi ˜T; hUðtÞi˜T; ΔS ˜TðtÞ,
+and S ˜TðtÞ for the complete and tagged particle dynamics
+are shown in Fig. 2(c), (d). As for the Gaussian chain uphill
+relaxation in the tilted single file, both full as well as for a
+tagged particle seems to always be faster irrespective of
+which particle we tag, and for any ˜T; N and tilting strength
+g > 0 (see also [60]). The Markovian uphill relaxation is
+dominated by ΔS ˜T−ðtÞ and downhill by hΔUðtÞi ˜Tþ, and a
+larger energy and entropy difference must be dissipated
+during downhill relaxation [see Fig. 2(c)]. For a tagged
+particle, the partitioning between hUðtÞi ˜T− and SðtÞ ˜T−
+varies depending on which particle we tag as a result of
+the shape of UðzÞ and the dependence of P ˜Tðz; 0−Þ on ˜T,
+which in turn both depend on the tagged particle as well as
+Teq; N, and g.
+Is the asymmetry universal?—We first focus on dynam-
+ics near a stable minimum at R0, δRðtÞ ¼ RðtÞ − R0,
+which is well described by an OUp, i.e., dδRðtÞ ¼
+HδRðtÞdt þ
+ﬃﬃﬃ
+2
+p
+dWt, where ðHÞij ¼ P
+ij ∂Ri∂RjUðRÞjR0
+is the Hessian.
+Theorem 1.—For a general diffusion sufficiently close to
+a stable minimum and for any stable reversible OUp, the
+relaxation from a pair of equidistant quenches of arbitrary
+magnitude (as defined above) is always faster uphill.
+Proof of Theorem 1.—Any pair 0 < ˜T− ≤ 1 and 1 ≤
+˜Tþ < ∞ with D˜Tþð0þÞ ¼ D˜T−ð0þÞ satisfies by construc-
+tion ˜Tþ − ˜T− ¼ lnð ˜Tþ= ˜T−Þ. We first prove the claim
+for the Markovian setting, where Eq. (6) has the struc-
+ture
+DM
+˜T ðtÞ ¼ PN
+k¼1 D�
+k ðtÞ.
+We
+set
+φ ≡ ˜Tþ= ˜T− > 1,
+δ� ≡ ˜T� − 1,
+and
+write
+ΔDkðtÞ ≡ Dþ
+k ðtÞ − D−
+k ðtÞ ¼
+ln ZφðμktÞ, such that
+ZφðτÞ ¼ φe−τð1 þ δ−e−τÞ=ð1 þ δþe−τÞ
+¼ ½φð1 þ δ−e−τÞeτ�e−τ=ð1 þ δþe−τÞ
+≥ ½φð1 þ δ−Þ=ð1 þ δþÞ�e−τ ≥ 1;
+ð9Þ
+where we have used both generalized Bernoulli inequa-
+lities, i.e., for any real 0 ≤ y− ≤ 1, yþ ≥ 1 and x ≥ −1 we
+have
+ð1 þ xÞyþ ≥ 1 þ yþx
+and
+ð1 þ xÞy− ≤ 1 þ y−x.
+Recalling the definition of ΔDkðtÞ completes the proof.
+To prove the claim in the non-Markovian setting for
+projections of type q ¼ jδRi − δRjj, we first realize that
+_Aij
+˜TþðtÞ ≤ 0 and
+_Aij
+˜T−ðtÞ ≥ 0, where _fðtÞ ≡ ðd=dtÞfðtÞ.
+Setting ΔDðtÞ ≡ DnM
+˜Tþ ðtÞ − DnM
+˜T− ðtÞ and using Eq. (7) we
+find, upon taking the derivative,
+Δ _DðtÞ ¼
+_Aij
+˜TþðtÞ
+Aij
+˜Tþð0Þ
+−
+_Aij
+˜TþðtÞ
+Aij
+˜TþðtÞ
+−
+_Aij
+˜T−ðtÞ
+Aij
+˜T−ð0Þ
+þ
+_Aij
+˜T−ðtÞ
+Aij
+˜T−ðtÞ
+:
+ð10Þ
+Eq. (10) implies Δ _DðtÞ ≥ 0 because Aij
+˜TþðtÞ ≥ Aij
+˜Tþð0Þ
+while Aij
+˜T−ðtÞ ≤ Aij
+˜Tþð0Þ, which completes the proof.
+The fact that tilted single file diffusion, being anhar-
+monic and asymmetric with nonperturbative interactions,
+displays the asymmetry for quenches of arbitrary magni-
+tude and for any steepness of the potential hints that the
+asymmetry might be more general. Note that tagging
+different particles in different slopes g > 0, we can con-
+struct UðzÞ with arbitrary asymmetry. Alongside the physi-
+cal principle underlying the asymmetry established for the
+OUp and Theorem 1, this strongly suggests that uphill
+relaxation in smooth single-well potentials could be uni-
+versally faster (see [60]). Since the projection (2) is
+independent of ˜T, these statements should extend also to
+non-Markovian observables, in particular those probed in
+many single-molecule and particle-tracking experiments.
+(a)
+(b)
+(c)
+FIG. 3.
+(a) Integrand of Eq. (3) at t ¼ 0.1 for a one-dimensional
+OUp (full line) for uphill (blue) and downhill (red) relaxation
+with the positive Aþ and negative A− area under the curve. Inset:
+The corresponding DM
+˜T ðtÞ. (b), (c) Decomposition of ∂tP ˜Tðx; tÞ
+into diffusive ∂2xP ˜T (circles) and advective ∂xxP ˜T (triangles)
+contribution for uphill (b) and downhill (c) relaxation. Dashed
+lines correspond to free diffusion evolving from the same initial
+condition.
+PHYSICAL REVIEW LETTERS 125, 110602 (2020)
+110602-4
+As a corollary, uphill relaxation is faster also in multiwell
+potentials for equidistant quenches that predominantly
+disturb only the intrawell equilibria, in particular for nearly
+degenerate basins separated by sufficiently high barriers
+[75] (for reasoning and examples, see [60]). This is violated
+in asymmetric multiwells, and examples with faster down-
+hill relaxation are constructed in [60].
+Conclusion.—We uncovered an unforeseen asymmetry
+in the relaxation to equilibrium in equidistant temperature
+quenches. Uphill relaxation was found to be faster—a
+phenomenon we proved to be universal for quenches of
+dynamics near stable minima. We hypothesize that it is a
+general phenomenon in reversible overdamped diffusion in
+single-well potentials extending to degenerate multiwell
+potentials for quenches leaving interwell equilibria virtu-
+ally intact. The dependence on the direction of the quench,
+which so far seems to have been overlooked, implies a
+systematic asymmetry in the dissipation of the system’s
+entropy _S ˜TðtÞ versus heat h _UðtÞi ˜T [12] and, for specific
+projections, the modified entropy _S ˜TðtÞ versus “strong
+coupling heat” h _UðtÞi ˜T [14,17], which seems to be relevant
+for the efficiency of stochastic heat engines [44,76,77].
+Implying that the hot isothermal step can be shorter than the
+cold one, which reduces cycle times, the asymmetry may
+also be relevant for the optimization of the engine’s
+output power [44,76,77]. Our results can readily be tested
+by
+single-molecule
+and
+particle-tracking
+experiments
+[4,44–48]. To understand the asymmetry on the level of
+individual trajectories, it would be interesting to analyze
+relaxation from equidistant quenches in terms of occupa-
+tion measures [7,8] and from the perspective of stochastic
+thermodynamics [12,14].
+We thank David Hartich for fruitful discussions. The
+financial support from the German Research Foundation
+(DFG) through the Emmy Noether Program GO 2762/1-1
+to A. G. is gratefully acknowledged.
+*Corresponding author.
+agodec@mpibpc.mpg.de
+[1] A. Farhan, P. M. Derlet, A. Kleibert, A. Balan, R. V.
+Chopdekar, M. Wyss, J. Perron, A. Scholl, F. Nolting,
+and L. J. Heyderman, Direct Observation of Thermal
+Relaxation in Artificial Spin Ice, Phys. Rev. Lett. 111,
+057204 (2013).
+[2] S. Dattagupta, Relaxation Phenomena in Condensed Matter
+Physics (Elsevier, New York, 2012).
+[3] H. Chen, E. Rhoades, J. S. Butler, S. N. Loh, and W. W.
+Webb, Dynamics of equilibrium structural fluctuations of
+apomyoglobin measured by fluorescence correlation spec-
+troscopy, Proc. Natl. Acad. Sci. U.S. A. 104, 10459 (2007).
+[4] P. Wang, C. Song, and H. A. Makse, Dynamic particle
+tracking reveals the ageing temperature of a colloidal glass,
+Nat. Phys. 2, 526 (2006).
+[5] L. Lizana and T. Ambjörnsson, Single-File Diffusion in a
+Box, Phys. Rev. Lett. 100, 200601 (2008).
+[6] L. Lizana and T. Ambjörnsson, Diffusion of finite-sized
+hard-core interacting particles in a one-dimensional box:
+{Tagged} particle dynamics, Phys. Rev. E 80, 051103
+(2009).
+[7] A. Lapolla and A. Godec, Unfolding tagged particle
+histories in single-file diffusion: exact single- and two-tag
+local times beyond large deviation theory, New J. Phys. 20,
+113021 (2018).
+[8] A. Lapolla and A. Godec, Manifestations of projection-
+induced memory, Front. Phys. 7, 182 (2019).
+[9] L. Onsager, Reciprocal relations in irreversible processes I,
+Phys. Rev. 37, 405 (1931).
+[10] L. Onsager, Reciprocal relations in irreversible processes II,
+Phys. Rev. 38, 2265 (1931).
+[11] R. Kubo, M. Yokota, and S. Nakajima, Statistical-Mechani-
+cal Theory of Irreversible Processes. II. Response to
+Thermal Disturbance, J. Phys. Soc. Jpn. 12, 1203 (1957).
+[12] U. Seifert, Stochastic thermodynamics, fluctuation theorems
+and molecular machines, Rep. Prog. Phys. 75, 126001
+(2012).
+[13] C. Jarzynski, Equalities and inequalities: Irreversibility and
+the second law of thermodynamics at the nanoscale, Annu.
+Rev. Condens. Matter Phys. 2, 329 (2011).
+[14] U. Seifert, First and Second Law of Thermodynamics at
+Strong Coupling, Phys. Rev. Lett. 116, 020601 (2016).
+[15] P. Strasberg, G. Schaller, N. Lambert, and T. Brandes,
+Nonequilibrium thermodynamics in the strong coupling and
+non-Markovian regime based on a reaction coordinate
+mapping, New J. Phys. 18, 073007 (2016).
+[16] P. Strasberg and M. Esposito, Stochastic thermodynamics in
+the strong coupling regime: An unambiguous approach
+based on coarse graining, Phys. Rev. E 95, 062101 (2017).
+[17] C. Jarzynski, Stochastic and Macroscopic Thermodynamics
+of Strongly Coupled Systems, Phys. Rev. X 7, 011008
+(2017).
+[18] P. Talkner and P. Hänggi, Colloquium: Statistical mechanics
+and
+thermodynamics
+at
+strong
+coupling:
+quantum
+and classical, arXiv:1911.11660 [Rev. Mod. Phys. (to be
+published).]
+[19] R. Metzler, E. Barkai, and J. Klafter, Anomalous Diffusion
+and Relaxation Close to Thermal Equilibrium: A Fractional
+Fokker-Planck Equation Approach, Phys. Rev. Lett. 82,
+3563 (1999).
+[20] R. Metzler and J. Klafter, The random walk's guide to
+anomalous diffusion: a fractional dynamics approach, Phys.
+Rep. 339, 1 (2000).
+[21] J.-H. Jeon and R. Metzler, Inequivalence of time and
+ensemble averages in ergodic systems: Exponential versus
+power-law relaxation in confinement, Phys. Rev. E 85,
+021147 (2012).
+[22] I. M. Sokolov and J. Klafter, From diffusion to anomalous
+diffusion: A century after Einstein’s Brownian motion,
+Chaos 15, 026103 (2005).
+[23] M. Baiesi and C. Maes, An update on the nonequilibrium
+linear response, New J. Phys. 15, 013004 (2013).
+[24] C. Maes, Frenetic Bounds on the Entropy Production, Phys.
+Rev. Lett. 119, 160601 (2017).
+[25] V. Blickle, T. Speck, L. Helden, U. Seifert, and C.
+Bechinger, Thermodynamics of a Colloidal Particle in a
+PHYSICAL REVIEW LETTERS 125, 110602 (2020)
+110602-5
+Time-Dependent Nonharmonic Potential, Phys. Rev. Lett.
+96, 070603 (2006).
+[26] T. M. Hoang, R. Pan, J. Ahn, J. Bang, H. Quan, and T. Li,
+Experimental Test of the Differential Fluctuation Theorem
+and a Generalized Jarzynski Equality for Arbitrary Initial
+States, Phys. Rev. Lett. 120, 080602 (2018).
+[27] J.-H. Jeon, N. Leijnse, L. B. Oddershede, and R. Metzler,
+Anomalous diffusion and power-law relaxation of the time
+averaged mean squared displacement in worm-like micellar
+solutions, New J. Phys. 15, 045011 (2013).
+[28] D. Collin, F. Ritort, C. Jarzynski, S. B. Smith, I. Tinoco, and
+C. Bustamante, Verification of the Crooks fluctuation
+theorem and recovery of RNA folding free energies, Nature
+(London) 437, 231 (2005).
+[29] E. Dieterich, J. Camunas-Soler, M. Ribezzi-Crivellari, U.
+Seifert, and F. Ritort, Single-molecule measurement of the
+effective temperature in non-equilibrium steady states, Nat.
+Phys. 11, 971 (2015).
+[30] J. Camunas-Soler, A. Alemany, and F. Ritort, Experimental
+measurement of binding energy, selectivity, and allostery
+using fluctuation theorems, Science 355, 412 (2017).
+[31] K. Hayashi, H. Ueno, R. Iino, and H. Noji, Fluctuation
+Theorem Applied toF1-ATPase, Phys. Rev. Lett. 104,
+218103 (2010).
+[32] T. Hatano and S.-i. Sasa, Steady-State Thermodynamics of
+Langevin Systems, Phys. Rev. Lett. 86, 3463 (2001).
+[33] C. Maes, K. Netočný, and B. Wynants, Monotonic Return to
+Steady Nonequilibrium, Phys. Rev. Lett. 107, 010601
+(2011).
+[34] M. Polettini and M. Esposito, Nonconvexity of the relative
+entropy for Markov dynamics, Phys. Rev. E 88, 012112
+(2013).
+[35] C. Maes, Frenesy: Time-symmetric dynamical activity in
+nonequilibria, Phys. Rep. 850, 1 (2020).
+[36] T. Speck and U. Seifert, Integral fluctuation theorem for the
+housekeeping heat, J. Phys. A 38, L581 (2005).
+[37] R. Ch´etrite, S. Gupta, I. Neri, and É. Roldán, Martingale
+theory for housekeeping heat, Europhys. Lett. 124, 60006
+(2019).
+[38] H.-M. Chun and J. D. Noh, Universal property of the
+housekeeping
+entropy
+production, Phys.
+Rev.
+E
+99,
+012136 (2019).
+[39] Z. Lu and O. Raz, Nonequilibrium thermodynamics of the
+Markovian Mpemba effect and its inverse, Proc. Natl. Acad.
+Sci. U.S.A. 114, 5083 (2017).
+[40] I. Klich, O. Raz, O. Hirschberg, and M. Vucelja, Mpemba
+Index and Anomalous Relaxation, Phys. Rev. X 9, 021060
+(2019).
+[41] N. Shiraishi and K. Saito, Information-Theoretical Bound of
+the Irreversibility in Thermal Relaxation Processes, Phys.
+Rev. Lett. 123, 110603 (2019).
+[42] D. Hartich and A. Godec, Duality between relaxation and
+first passage in reversible Markov dynamics: rugged energy
+landscapes disentangled, New J. Phys. 20, 112002 (2018).
+[43] D. Hartich and A. Godec, Interlacing relaxation and first-
+passage phenomena in reversible discrete and continuous
+space Markovian dynamics, J. Stat. Mech. (2019) 024002.
+[44] I. A. Martínez, E. Roldán, L. Dinis, D. Petrov, J. M. R.
+Parrondo, and R. A. Rica, Brownian Carnot engine,
+Nat. Phys. 12, 67 (2016).
+[45] I. A. Martínez, E. Roldán, J. M. R. Parrondo, and D. Petrov,
+Effective heating to several thousand kelvins of an optically
+trapped sphere in a liquid, Phys. Rev. E 87, 032159 (2013).
+[46] S. de Lorenzo, M. Ribezzi-Crivellari, J. Arias-Gonzalez,
+S. Smith, and F. Ritort, A temperature-jump optical trap for
+single-molecule manipulation, Biophys. J. 108, 2854
+(2015).
+[47] J. Gladrow, M. Ribezzi-Crivellari, F. Ritort, and U. F.
+Keyser, Experimental evidence of symmetry breaking of
+transition-path times, Nat. Commun. 10, 55 (2019).
+[48] G. Sitters, N. Laurens, E. de Rijk, H. Kress, E. Peterman,
+and G. Wuite, Optical pushing: A tool for parallelized
+biomolecule manipulation, Biophys. J. 110, 44 (2016).
+[49] S. Kullback and R. Leibler, On information and sufficiency,
+Ann. Math. Stat. 22, 79 (1951).
+[50] J. L. Lebowitz and P. G. Bergmann, Irreversible gibbsian
+ensembles, Ann. Phys. (N.Y.) 1, 1 (1957).
+[51] M. C. Mackey, The dynamic origin of increasing entropy,
+Rev. Mod. Phys. 61, 981 (1989).
+[52] H. Qian, A decomposition of irreversible diffusion proc-
+esses without detailed balance, J. Math. Phys. 54, 053302
+(2013).
+[53] C. Van den Broeck and M. Esposito, Three faces of the
+second law. II. Fokker-Planck formulation, Phys. Rev. E 82,
+011144 (2010).
+[54] M. Esposito and C. Van den Broeck, Three Detailed
+Fluctuation Theorems, Phys. Rev. Lett. 104, 090601 (2010).
+[55] S. Vaikuntanathan and C. Jarzynski, Dissipation and lag in
+irreversible processes, Europhys. Lett. 87, 60005 (2009).
+[56] M. Doi and S. F. Edwards, The Theory of Polymer
+Dynamics (Clarendon Press, Oxford, 1988).
+[57] T > Teq implies ˜T > 1 and T < Teq implies 0 < ˜T < 1.
+[58] The name comes from the fact that UðqÞ delivers the mean
+force, i.e., −∇qUðqÞ ¼ −h∇xUðxÞδ½ΓðxÞ − q�i.
+[59] J. G. Kirkwood, Statistical mechanics of fluid mixtures,
+J. Chem. Phys. 3, 300 (1935).
+[60] See
+Supplemental
+Material
+at
+http://link.aps.org/
+supplemental/10.1103/PhysRevLett.125.110602 for details
+of calculations, proofs, and supplementary examples, as
+well as Refs. [61–72].
+[61] I. Chatzigeorgiou, Bounds on the lambert function and their
+application to the outage analysis of user cooperation, IEEE
+Commun. Lett. 17, 1505 (2013).
+[62] A. Godec, T. Ukmar, M. Gaberšček, and F. Merzel,
+Inversion of pore size dependence of solute transport
+kinetics from increasingly attractive ordered porous matrix,
+Europhys. Lett. 92, 60011 (2010).
+[63] E. B. Mpemba and D. G. Osborne, Cool?, Phys. Educ. 14,
+410 (1979).
+[64] M. Jeng, The Mpemba effect: When can hot water freeze
+faster than cold?, Am. J. Phys. 74, 514 (2006).
+[65] J. I. Katz, When hot water freezes before cold, Am. J. Phys.
+77, 27 (2009).
+[66] P. Chaddah, S. Dash, K. Kumar, and A. Banerjee, Over-
+taking while approaching equilibrium, arXiv:1011.3598.
+[67] P. A. Greaney, G. Lani, G. Cicero, and J. C. Grossman,
+Mpemba-like behavior in carbon nanotube resonators,
+Metall. Mater Trans. A 42, 3907 (2011).
+PHYSICAL REVIEW LETTERS 125, 110602 (2020)
+110602-6
+[68] C. Hu, J. Li, S. Huang, H. Li, C. Luo, J. Chen, S. Jiang, and
+L. An, Conformation directed mpemba effect on polylactide
+crystallization, Cryst. Growth Des. 18, 5757 (2018).
+[69] Y.-H. Ahn, H. Kang, D.-Y. Koh, and H. Lee, Experimental
+verifications of {Mpemba}-like behaviors of clathrate
+hydrates, Korean J. Chem. Eng. 33, 1903 (2016).
+[70] A. Gijón, A. Lasanta, and E. R. Hernández, Paths towards
+equilibrium in molecular systems: The case of water,
+Phys. Rev. E 100, 032103 (2019).
+[71] M. Baity-Jesi et al. (J. Collaboration), The Mpemba effect in
+spin glasses is a persistent memory effect, Proc. Natl. Acad.
+Sci. U.S.A. 116, 15350 (2019).
+[72] I. Klich and M. Vucelja, Solution of the Metropolis
+dynamics on a complete graph with application to the
+Markov chain Mpemba effect, arXiv:1812.11962.
+[73] S. Yang, J. B. Witkoskie, and J. Cao, Single-molecule
+dynamics of semiflexible Gaussian chains, J. Chem. Phys.
+117, 11010 (2002).
+[74] C. Joo, H. Balci, Y. Ishitsuka, C. Buranachai, and T. Ha,
+Advances in single-molecule fluorescence methods for
+molecular biology, Annu. Rev. Biochem. 77, 51 (2008).
+[75] G. J. Moro, Kinetic equations for site populations from the
+Fokker–Planck equation, J. Chem. Phys. 103, 7514 (1995).
+[76] T. Schmiedl and U. Seifert, Efficiency at maximum power:
+An analytically solvable model for stochastic heat engines,
+Europhys. Lett. 81, 20003 (2008).
+[77] H. Ouerdane, Y. Apertet, C. Goupil, and P. Lecoeur,
+Continuity and boundary conditions in thermodynamics:
+From Carnot’s efficiency to efficiencies at maximum power,
+Eur. Phys. J. Special Topics 224, 839 (2015).
+PHYSICAL REVIEW LETTERS 125, 110602 (2020)
+110602-7

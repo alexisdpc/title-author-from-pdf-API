@@ -1,0 +1,1334 @@
+PI3K inhibitors: review and new strategies
+Mingzhen Zhang,
+a Hyunbum Jang
+a and Ruth Nussinov
+*ab
+The search is on for eﬀective speciﬁc inhibitors for PI3Ka mutants. PI3Ka, a critical lipid kinase, has two
+subunits, catalytic and inhibitory. PIK3CA, the gene that encodes the p110a catalytic subunit is a highly
+mutated protein in cancer. Dysregulation of PI3Ka signalling is commonly associated with tumorigenesis
+and drug resistance. Despite its vast importance, only recently the FDA approved the ﬁrst drug (alpelisib
+by Novartis) for breast cancer. A second (GDC0077), classiﬁed as PI3Ka isoform-speciﬁc, is undergoing
+clinical trials. Not surprisingly, these ATP-competitive drugs commonly elicit severe concentration-
+dependent side eﬀects. Here we brieﬂy review PI3Ka mutations, focus on PI3K drug repertoire and
+propose new, to-date unexplored PI3Ka therapeutic strategies. These include (1) an allosteric and
+orthosteric inhibitor combination and (2) taking advantage of allosteric rescue mutations to guide drug
+discovery.
+Introduction
+Phosphatidylinositol-3 kinases (PI3Ks) are lipid kinases that
+phosphorylate signaling lipid PIP2 to PIP3.1 PIP3 molecules
+recruit proteins bearing PIP3-binding pleckstrin homology (PH)
+domains such as Akt in the PI3K/Akt/mTOR signaling pathway
+to the plasma membrane. The PI3K pathway is among the most
+frequently activated in human cancers, impacting almost 50%
+of the malignancies.2 Class IA isoforms PI3Ka, b and d are
+particularly strongly associated with cancer.3 Activating muta-
+tions in the PIK3CA gene,4 which encodes the p110a catalytic
+subunit
+of
+PI3Ka
+and
+suppressing
+mutations
+of
+tumor
+suppressor PTEN5,6 (a lipid phosphatase that dephosphorylates
+PIP3, thus opposes PI3Ka action) are the second and third most
+frequently mutated in cancer, making PI3Ka a vastly important
+target for drug discovery.7,8 However, despite considerable
+eﬀorts, to date the clinical outcome of PI3K inhibitor-based
+treatments1 for solid tumors has been disappointing. Reasons
+include drug resistance such as that resulting from PTEN
+suppression and lack of specicity thus intolerable toxicity,
+making innovative drug development a major aim of the
+pharmaceutical industry. Structural understanding of PI3Ka
+activation mechanism under physiological conditions and in
+the presence of activating oncogenic mutations is expected to
+provide a better grasp of its underlying principles toward this
+aim. The landmark work of Peter Vogt that has uncovered
+mechanistic principles of PI3Ka gain-of-function mutations,
+including rare mutations, Roger Williams, who pointed out the
+premise that oncogenic mutations mimic and enhance dynamic
+events in natural activation of p110a, and Mario Amzel who
+solved the rst full PI3Ka structure elucidating oncogenic
+mutations have been major steps in this direction.9–12
+PI3Ka has two subunits, catalytic (p110) and inhibitory (p85).
+PIK3CA, which encodes the p110a, is frequently mutated in
+cancer. Dysregulation of the PI3Ka signaling pathway is
+commonly associated with tumorigenesis and drug resistance.
+Despite its vast importance, only in May 2019 the FDA approved
+the rst drug (alpelisib by Novartis) for breast cancer.13 A second
+(GDC0077) is undergoing clinical trials. Although the drug has
+been classied as PI3K isoform-specic, severe concentration-
+dependent side eﬀects are commonly observed. This is not
+unexpected. These drugs, like the previously developed ones,
+are ATP-competitive and the ATP binding site is almost iden-
+tical among PI3K isoforms, and they target a major signaling
+pathway in the cell. Recently, it was discovered that double,
+triple, and multiple mutations can work conjointly,14 raising key
+questions, including why co-occurring mutations, why specic
+combinations, and how frequent can such events be in onco-
+genic proteins. Remarkably, alpelisib was observed to potently
+aﬀect the signaling strength of particular combinations of
+mutations when targeting PI3Ka oncogenes, raising the ques-
+tion of how the drug works.
+Below, we briey discuss the mechanism of PI3Ka activation,
+its oncogenic mutations and their combinations. We review
+inhibitors developed to block it and their intrinsic oﬀ-target
+toxicities, and outline the challenges encountered in isoform-
+specic drug discovery. Finally, we propose two new possible
+strategies for PI3Ka specic inhibitor development. The rst
+combines PI3Ka orthosteric and allosteric drugs; the second
+involves allosteric drugs at positions of rescue mutations. Drugs
+mimicking the allosteric eﬀects of these mutants may rescue
+aComputational Structural Biology Section, Frederick National Laboratory for Cancer
+Research, National Cancer Institute at Frederick, Frederick, MD 21702, USA. E-mail:
+NussinoR@mail.nih.gov; Tel: +1-301-846-5579
+bDepartment of Human Molecular Genetics and Biochemistry, Sackler School of
+Medicine, Tel Aviv University, Tel Aviv 69978, Israel
+Cite this: Chem. Sci., 2020, 11, 5855
+All publication charges for this article
+have been paid for by the Royal Society
+of Chemistry
+Received 20th March 2020
+Accepted 18th May 2020
+DOI: 10.1039/d0sc01676d
+rsc.li/chemical-science
+This journal is © The Royal Society of Chemistry 2020
+Chem. Sci., 2020, 11, 5855–5865 | 5855
+Chemical
+Science
+PERSPECTIVE
+Open Access Article. Published on 19 May 2020. Downloaded on 10/4/2023 11:17:32 AM. 
+ This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+View Journal  | View Issue
+PI3Ka function in cancer. We further delineate determinants to
+accomplish these approaches.
+Allostery plays a role in PI3Ka activation
+by RTK, but not by Ras
+Recently we published in Chem. Sci. an atomistic-level mecha-
+nism of PI3Ka activation.15 In that work we delineated how, via
+the phosphorylated motif at the C-terminal of a receptor tyro-
+sine kinase (RTK) PI3Ka relieves its autoinhibition by the nSH2
+domain and the details of the allosteric population shis of the
+PI3Ka ensemble that take place to expose the active site of this
+lipid kinase at the membrane. The mechanism further claries
+how these conformational changes increase the population of
+ATP within a catalytically required distance, permitting phos-
+phoryl ion transfer to the signaling lipid PIP2 to produce PIP3. In
+addition, it provided the structural role of Ras in PI3Ka
+activation.16
+Even though the binding of active Ras perturbs the PI3Ka
+structure with allosteric propagation that promotes certain
+conformational changes,17–21 the key question is whether this
+action is the dominant contribution to activation. RTK
+recruits PI3Ka to the membrane and promotes conforma-
+tional change that relieves the autoinhibition; Ras acts to
+stabilize the PIP2 lipid substrate in the relatively shallow
+active site that accommodates it. This enhances its pop-
+ulation, with the ‘top’ hydrophobic portion of PIP2 projecting
+into the plasma membrane. The allosteric conformational
+change promoted by Ras is unlikely to play a signicant role
+in activation.
+Taken together, the detailed PI3Ka activation mechanism
+helps in understanding how the strong cancer driver mutations
+activate this lipid kinase; why some other observed oncogenic
+mutations are weaker drivers, and why certain mutational
+combinations are more powerful and more potently targeted by
+these drugs. Hotspot mutations E542K and E545K mimic RTK's
+action in releasing the autoinhibition. This action promotes the
+allosteric conformational changes that expose PI3Ka active site
+at the membrane and reduce the barrier height of the transition
+state; the H1047R hotspot with a substitution of His by posi-
+tively charged Arg mimics Ras' action. The co-acting double
+mutations observed by Vasan et al.14 pair a strong hotspot with
+one or more weak activation mutations, such as E453Q/K,
+E726K and M1043V/I, which either introduce charge reversal
+at the membrane, or altered hydrophobicity. The changes of the
+residue charge and hydrophobicity strengthen the activation
+and signaling. Most of the weak mutations are far away from
+both the inhibitory nSH2 in the p85a subunit and the catalytic
+site, conrming their allosteric roles in activation. Fig. 1 illus-
+trates the PI3Ka structure in the autoinhibited and active states,
+with the location of the mutations highlighted (Fig. 1A and B).
+While hotspot mutations occur in the helical and kinase
+domains, most weak mutations are at the surfaces of the ABD
+and C2 domains. ABD and C2 in p110a are responsible for iSH2
+interactions. The oncogenic mutations in ABD and C2 domains
+imply a more exible iSH2 in activated PI3Ka. The crystal
+Fig. 1
+PI3Ka conformation and oncogenic mutations. (A) PI3Ka sequence and the frequent oncogenic mutations in p110a (data obtained from
+TGCA database). (B) PI3Ka structures (PDB ID 4OVV) with the oncogenic mutations highlighted by the red surfaces. The close-up of (C) the PI3Ka
+conformation with nSH2 in the crystal structure (PDB ID 4OVV), (D) the conformation of PI3Ka with nSH2 released from the simulations,15 and (E)
+the conformation of the PI3Kb with nSH2 released (PDB ID 2Y3A).
+5856 | Chem. Sci., 2020, 11, 5855–5865
+This journal is © The Royal Society of Chemistry 2020
+Chemical Science
+Perspective
+Open Access Article. Published on 19 May 2020. Downloaded on 10/4/2023 11:17:32 AM. 
+ This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+structures of PI3Ka containing the inhibitory nSH2 may repre-
+sent an inactive conformation (Fig. 1C).22–24 The active confor-
+mation observed in our simulations following nSH2 release
+diﬀers. Remarkably, the sampled PI3Ka active conformation
+resembles the crystal structure of PI3Kb with the inhibitory
+nSH2 removed (PDB ID 2Y3A), with similar iSH2 and activation
+loop (a-loop) conformations (Fig. 1D and E). PI3Kb is inhibited
+by both nSH2 and cSH2. The crystal structure of PI3Kb without
+the nSH2 domain may represent a partially active conformation
+of PI3K,25 implying that PI3K isoforms may share conforma-
+tional changes for activation.
+PI3Ka activation takes place at the plasma membrane. It is
+mediated by interactions with the phosphorylated motif at the
+C-terminal of an RTK, Ras and the membrane. The activating
+mutations mimic the eﬀects of these binding events. However,
+current inhibitors are still stymied by insuﬃcient selectivity, the
+outcome of the near identity among the ATP binding sites of the
+PI3K isoforms. At the same time, since ATP is the principal
+energy currency of the cell with structurally similar cavities
+hosting it,26 attempts to overcome these hurdles by higher ATP-
+competitive drug levels encounter toxicity. This argues for
+allosteric drugs.27–34 Unfortunately, these eﬀorts are yet to
+produce eﬀective drugs. Notwithstanding, the encouraging
+successes with KRas4B, another hitherto undruggable onco-
+genic protein, where creative covalent allosteric drugs target
+KRas4BG12C, and discovery of new PI3Ka pockets,27 breed
+cautious optimism.
+Pan PI3K and PI3Ka inhibitors
+Recent reviews provide a comprehensive coverage of pan-PI3K
+inhibitors,
+PI3Ka
+specic
+inhibitors
+and
+PI3K/mTOR
+inhibitors, their status and the specic cancers that they
+target.35–38 We thus refer the readers to these. Here we provide
+a mere brief overview (Fig. 2).
+Pan-PI3K inhibitors act on all class I isoforms.38 The
+outcome is oﬀ-target side eﬀects and toxicities.37 Depending
+on the specic targeted cancer type and its status they include
+buparlisib39–41 and pictilisib (GDC-0941) in breast cancer,42,43
+and pilaralisib,44–47 copanlisib,48,49 PX866,50–56 CH5132799,57
+and ZSTK474 and SF1126 58 in diverse cancers (Fig. 2). Their
+lack of isoform specicity makes them toxic albeit to diﬀerent
+extents.37,59 Consequently, most were discontinued. Inhibitors
+gravitating toward isoform-specicity have lesser oﬀ-target
+toxicity. d-Isoform inhibitor idelalisib is one example.37,60,61
+Taselisib inhibits primarily p110b with 30-fold lower potency59
+but also reduces mutant p110a levels. Alpelisib (BYL719),
+described as PI3Ka-specic, is another.62 Alpelisib was also
+prescribed in combination with the aromatase inhibitor
+letrozole.63 Oﬀ-target toxicities were observed. A combination
+with the BRAF inhibitor encorafenib and anti-EGFR mono-
+clonal antibody cetuximab pointed to clinical eﬃcacy and
+lower toxicity proles.64 Additional combinations were tested
+as well, including alpelisib with inhibitors targeting PI3K
+pathway proteins,65 although still with side eﬀects. As ex-
+pected, at higher concentrations it accomplishes strong PI3K
+(80%) inhibition. TAK-117 is another PI3Ka inhibitor.66 The
+new PI3Ka inhibitor GDC-0077 currently undergoes clinical
+trials in combination with other drugs.67 Further details are
+provided in the reviews cited above. Exhaustive structural
+analyses of the active sites of all PI3Ka class I isoforms have
+also been reviewed and regions that can play a role in selec-
+tivity were described in detail.68 Below, we briey overview
+them focusing on PI3Ka and the interactions with alpelisib.
+Fig. 2
+Summary of the representative pan-PI3K and PI3K isoform-speciﬁc ATP-competitive inhibitors. The molecular structures are obtained
+from Drugbank.
+This journal is © The Royal Society of Chemistry 2020
+Chem. Sci., 2020, 11, 5855–5865 | 5857
+Perspective
+Chemical Science
+Open Access Article. Published on 19 May 2020. Downloaded on 10/4/2023 11:17:32 AM. 
+ This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+PI3Ka ATP binding site and inhibitor
+interactions
+We illustrate the diﬃculty in optimizing an ATP-competitive
+inhibitor specically to the PI3Ka isoform. The ATP binding
+sites of class I PI3Ks are highly homologous, diﬀering in only
+a few residues at the rim. The respective residues have been
+grouped into two regions, Regions 1 and 2.69,70 Non-conserved
+residues in the two regions can aid selectivity. The rst non-
+conserved Region is near the hinge (four residues). The
+second less variable is at the P-loop. The chemical and confor-
+mational diﬀerences of these regions among the isoforms
+dene their distinct interactions and have been meticulously
+probed with the hope that such analyses would help in
+improving inhibitor specicity.35 The ATP binding site in PI3K
+isoforms is between the two lobes of the kinase domain, which
+are separated by a hinge. This is where the adenine ring of ATP
+and the inhibitors' rings anchor. The hydrophobic residues are
+conserved, but not the neighboring ones. The so-called speci-
+city pocket shows certain isoform dependent aﬃnity diﬀer-
+ences.71 A conformational change of the P-loop upon inhibitor
+binding exposes it.72–74 However, the residues involved are
+conserved even though those around the pocket are not and
+may be at play in inhibitor design. There are also diﬀerences in
+the conformational exibilities. Nonetheless, the opening of the
+specicity pocket does not appear as determining inhibitor
+selectivity. ATP also does not penetrate the aﬃnity pocket,
+which is encircled by the conserved residues.75 Despite this,
+inhibitors entering the pocket have higher potency. P-loop
+residues play a role in PI3Ka selectivity for GDC-0941,76 which
+was subsequently converted into a more selective covalent
+drug.77 For PI3Ka the rst non-conserved region appears the
+key. An inhibitor that extends towards Region 1 (benzoxazepine)
+adjusts selectivity,76,78,79 leading to GDC-0326,67 with the drug's
+carboxamide interacting with Gln859, and Ser854 H-bonding
+the drug as well.67 Additional drugs and their interactions
+have also been described.68
+As a detailed example we describe alpelisib, the rst drug to
+be approved by the FDA. The crystal structure of PI3Ka with
+alpelisib has been solved (PDB ID 4JPS). Alpelisib binds to the
+ATP pocket in the kinase domain, with massive contacts with
+the P-loop and hinge region. Due to the high sequence simi-
+larity in PI3K isoforms, most alpelisib-contacting residues in
+PI3Ka
+are
+conserved,
+with
+only
+ve
+variable
+residues
+(852RNSH855 and Q859) in the hinge region (Fig. 3A and B). Here,
+we focus on two residues, R852 and Q859, since the side chains
+of the other three residues (NSH) are exposed to solvent and
+barely involve in the interactions with alpelisib. Q859 of PI3Ka
+forms dual hydrogen bonds with alpelisib (Fig. 3C). Its impor-
+tance
+in
+isoform
+selectivity
+has
+been
+indicated
+and
+conrmed.80,81 This residue becomes shorter in PI3Kb (D856)
+and PI3Kd (N836), while the K890 in PI3Kg is still long enough
+for the hydrogen bond interaction with alpelisib (Fig. 3D–F).
+R852 in PI3Ka forms a salt bridge with E798 in the kinase
+domain's N-lobe. A similar salt bridge is observed in PI3Kg
+(K831-E814). L829 of PI3Kg also establishes hydrophobic
+interactions with M762 and W760. However, PI3Kb is quite
+diﬀerent with no favorable interaction of S849. This indicates
+Fig. 3
+Structural insights into selectivity of alpelisib in PI3K isoforms. (A) The sequence alignment indicates the conserved and variable residues in
+PI3K for the interactions with alpelisib. (B) The structure of alpelisib interacting with the ATP pocket in PI3Ka (PDB ID 4JPS). (C) The structural
+comparison of the hinge regions in PI3K isoforms (PDB ID PI3Kb-2Y3A; PI3Kg-1E8X; PI3Kd-4XEO). The alpelisib conformations in PI3K isoforms
+are modeled based on crystal structure of PI3Ka with alpelisib (PDB ID 4JPS).
+5858 | Chem. Sci., 2020, 11, 5855–5865
+This journal is © The Royal Society of Chemistry 2020
+Chemical Science
+Perspective
+Open Access Article. Published on 19 May 2020. Downloaded on 10/4/2023 11:17:32 AM. 
+ This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+that PI3Kg resembles more PI3Ka in those residue contacts,
+followed by PI3Kd and PI3Kb. It is interesting that the structural
+similarity of the hinge region relates to the selectivity of alpe-
+lisib to PI3K isoforms. The IC50 values for PI3Ka (�5 nM) is
+highest, followed by PI3Kg (�250 nM), PI3Kd (�290 nM) and
+PI3Kb (�1200 nM).81 This emphasizes the signicance of the
+hinge region in mediating the isoform selectivity.
+In vitro screening of oncogenic mutants has been carried out
+and micromolar range binders have been identied.82 However,
+they are not mutant-selective. A non-ATP allosteric pocket has been
+identied in a crystal structure of PI3Ka (PDB 4A55). It has been
+further studied by computational simulations.83 Still, currently its
+eﬃcacy has been unclear, leading the authors to conclude that this
+binding site is unlikely to yield productive allosteric inhibitors.
+Fragment-based screening was also carried out to identify the
+allosteric inhibitor pockets with promising results27 with phos-
+phopeptide binding at the E542K and E545K hotspots. These
+allosteric pockets are summarized in Fig. 4A and B. Here, we
+suggest another allosteric pocket. The oncogenic mutations in C2
+and ABD suggest the exible iSH2 in the activated PI3Ka, which
+has been observed in the simulations of wild type PI3Ka and the
+E545K mutant.15,84 The movement of ABD is coupled with the
+interacting iSH2 domain in PI3Ka.85 The more stable ABD is ex-
+pected to interfere with PI3Ka activation and increase the pop-
+ulation of the inactive PI3Ka conformation in the ensemble. By
+visualizing the PI3Ka structure, a pocket was identied between
+the ABD and the kinase domain's N-lobe. The pocket is deep with
+considerable hydrophobicity (Fig. 4C). The involved residues
+include 115–123 in the ABD–RBD linker, and 699–715 and 840–845
+in the kinase domain's N-lobe. An inhibitor targeting the pocket is
+expected to enhance the ABD–kinase domain interface, rendering
+a higher stability of ABD and iSH2 to restrict the PI3Ka inactive
+conformation and target PI3Ka with ABD mutations.
+Orthosteric drug design focused on the ATP binding site,
+with attempts to obtain highly isoform specic inhibitors.
+However, they encountered an almost impregnable hurdle: the
+near identity of the ATP binding sites across isoforms. At the
+same time, designing drugs to stably bind at the substrate
+binding site is diﬃcult. With part of the PIP2 lipid anchored in
+the membrane with high avidity, the substrate binding site is
+shallow.
+The
+membrane-buried
+protein
+surface
+further
+constrains small molecule access. Currently available inhibitors
+mimicking ATP require high concentrations, resulting in
+toxicities. The frequent emerging deletion or mutations of
+PTEN, which suppresses cancer by dephosphorylating the PI3K-
+phosphorylated lipid PIP3 back to PIP2, which is also with no
+currently available inhibitors, aggravates the pharmacological
+scenario. PTEN is highly challenging to target: to function the
+inhibitor needs to activate, not suppress it. Drug-induced acti-
+vation of an enzyme is diﬃcult to accomplish.
+To-date unexplored PI3Ka therapies
+We propose exploring two new strategies for PI3Ka inhibition:
+(i) combination of allosteric and orthosteric drugs and (ii)
+taking advantage of rescue mutations to guide drug discovery.
+They can also be merged. Below, we describe the background,
+rationale, and map a strategy for their implementation.
+(i) Allosteric plus orthosteric drugs
+A few years ago, a remarkable observation was made: a Cys to
+Tyr mutation (C1156Y) in metastatic anaplastic lymphoma
+kinase (ALK) desensitized it to crizotinib, an ATP-competitive
+drug that was given earlier. Lorlatinib was then prescribed;
+however, drug resistance emerged. Sequencing indicated that
+an emerging allosteric mutation involving L1198F substitution
+conferred resistance to lorlatinib, also an ATP-competitive
+small-molecule inhibitor of ALK and the related tyrosine
+kinase ROS1. The L1198F mutation led to steric interference
+Fig. 4
+Summary of PI3Ka allosteric inhibitor pockets. (A) The full structure of PI3Ka with the allosteric pocket highlighted. The allosteric pocket
+for PIK-108 (PIK in the ﬁgure) is identiﬁed from the crystal structure of PI3Ka (PDB ID 4A55), the allosteric pockets F1–F5 are obtained from
+fragment-based screening27 and the allosteric pocket between ABD and kinase domain (AD in the ﬁgure) is proposed in the work. (B) The
+snapshot of PIK-108 interacting with a non-APT pocket in the C-lobe of kinase domain. The ATP is modeled based on the PI3K structure (PDB ID
+1E8X). (C) The snapshot of the proposed allosteric pocket between ABD and N-lobe kinase domain.
+This journal is © The Royal Society of Chemistry 2020
+Chem. Sci., 2020, 11, 5855–5865 | 5859
+Perspective
+Chemical Science
+Open Access Article. Published on 19 May 2020. Downloaded on 10/4/2023 11:17:32 AM. 
+ This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+with lorlatinib binding. ALK L1198F has been reported as an
+ALK gain-of-function mutation. However, remarkably the allo-
+steric L1198F mutation resensitized ALK to crizotinib. The
+patient harboring this mutation received crizotinib again, and
+the cancer-related symptoms abated.86 In this example L1198F
+is a rescue mutation. The mutation redistributed the ALK
+conformational ensemble, now re-populating a crizotinib
+binding-favored state. In line with this observation, loss of
+G2032R resistance mutation upon chemotherapy treatment
+enabled successful crizotinib rechallenge in a patient with
+ROS1-rearranged cancer.87 Thus, once the mutation occurred,
+there is no need for an allosteric drug that would mimic its
+action to combine with the ATP-competitive crizotinib. Had
+there not been such a mutation at that position, an allosteric
+drug mimicking it could conceivably accomplish this role,
+promoting a drug-accommodating conformational change at
+the ATP binding site. Drug resistance oen emerges from
+conformational changes.88 Allosteric drugs can resensitize an
+active site in the same way that an allosteric mutation does,
+restoring the actions of orthosteric drugs. As we describe below,
+experiments in Nathaniel Gray's Lab on BCR-ABL kinase toward
+treatment of chronic myeloid leukemia (CML) along with
+subsequent work provide an outstanding example.
+Imatinib, an orthosteric ATP-competitive drug, can inhibit
+oncogenic mutants of BCR-ABL. However, mutations oen
+aﬀect BCR-ABL's ATP-binding site or the activation loop can
+result in drug resistance. Among these, T315 substitutions that
+elicit steric clashes with the drug are particularly potent. By
+screening drug libraries the Gray team rst identied an allo-
+steric drug GNF-2 with similar antiproliferative outcome as the
+orthosteric drug.90 Subsequent optimization obtained the allo-
+steric GNF-5 compound.90 Remarkably, like the L1198F rescue
+mutation in ALK, the GNF drug series shied the protein
+ensemble toward an active site that re-sensitized BCR-ABL to
+imatinib and nilotinib. NMR, crystallography, mutagenesis and
+hydrogen exchange mass spectrometry all indicated that the
+drug binds to the C-terminal myristate pocket of BCR-ABL. The
+structure unraveled formation of considerable hydrophobic as
+well as vdW interactions and water-mediated H-bonds, indi-
+cating how the combination of the GNF-series allosteric drug
+collaborates with the ATP-competitive imatinib, overcoming the
+T315 drug-resistant hotspots.89,90
+ABL001 (asciminib) is also a potent and selective allosteric
+ABL1 inhibitor that binds to the myristoyl pocket of ABL1 in
+a manner resembling the GNF-series. It interacts with active site
+residues via the same type of interactions as the GNF inhibitors,
+and shis the ensemble toward the inactive kinase conforma-
+tion. Each drug alone, ABL001 and the catalytic ATP-competitive
+inhibitor nilotinib are blocked by distinct drug resistant
+mutations. However, as above, their combination eradicates the
+tumors.91 Thus, even though mutations at the myristate site can
+confer resistance to ABL001, they are sensitive to nilotinib or
+other ATP-competitive inhibitors making their combination (or
+ABL001 with other ATP-competitive drugs, like imatinib or
+dasatinib) a viable BCR-ABL inhibition strategy.92 Combining
+the allosteric inhibitor asciminib with ATP-competitive ponati-
+nib was recently found to even more powerfully suppress the
+emergence of mutants (Y253H and E255V) and restore eﬃcacy
+against
+highly
+resistant
+BCR-ABL1
+mutants.93
+Additional
+examples of such combinations are available.94,95
+The concept of allosteric drug working conjointly with an
+orthosteric drug is not new. We only need to consider that
+a ‘ligand’ can be an orthosteric drug, with the allosteric drug
+acting to modulate it.96 This powerful combinatorial concept
+has shown promise for the protein kinases above; but has not
+been tested for PI3Ka. Allosteric drugs may overcome PI3Ka
+drug resistance by altering the ATP binding site and resensi-
+tizing it, i.e. making it accessible to sterically blocked ATP-
+competitive orthosteric drugs, or by producing an altered,
+druggable PIP2 binding site. Cross-correlations of the motions
+and analysis of the conformational ensembles in long timescale
+molecular dynamics simulations may be one way to help iden-
+tify likely targetable allosteric sites.
+(ii) Rescue mutations provide a powerful concept
+That mutations can rescue, or resensitize, a mutant protein to
+an allosteric drug has been shown for a number of diseases. As
+such they have been dubbed “natural gene therapy” and
+“nature's proof of principle that you can x those mutations” in
+the case of Wiskott–Aldrich syndrome (WAS).97 Additional
+examples include the p.Q188R mutation in classic galacto-
+semia98 that gives rise to a protein with lower conformational
+stability
+and
+lower
+catalytic
+activity99
+and
+p53.100
+Drugs
+mimicking the allosteric eﬀects of these mutants may rescue
+function. To the best of our knowledge, in practice this however
+has not been followed up, likely due to the design complexity
+which is involved. Nonetheless, identifying them in protein
+structures, and their potential substitutions will provide allo-
+steric sites and potentially certain orthosteric-drug favored
+conformational changes. Here we propose attempting this
+strategy in targeting PI3Ka.
+How to a priori identify the positions of such mutations?
+Earlier we have taken this up for von Hippel–Lindau tumor
+suppressor protein (pVHL).101 To identify possible candidate
+residues, we used molecular dynamics simulations, seeking the
+least stable regions in the unbound state of the protein. This
+agged the interface between the two domains. We then
+designed several stabilizing mutations at the interdomain
+interface and in the domains. Experiments showed that disease
+mutant Y98N at the HIF binding site destabilizes pVHL and
+lowers its aﬃnity to hypoxia-inducible factor (HIF). pVHL is part
+of the E3 ubiquitin ligase complex that regulates the degrada-
+tion of HIF. The simulations indicated that pVHL stability and
+binding aﬃnity are allosterically regulated. We thus sought to
+allosterically stabilize pVHL and its interactions with mutations
+away from binding sites. The mutations were selected based on
+sequence alignment with a pVHL from other species (worm
+pVHL sequence). The worm-based substitutions stabilized
+pVHL, its Y98N mutant, and the complexes of pVHL with HIF,
+lowering its binding free energy, and the Y98N mutant with
+elongin C complex, thus rescuing pVHL–HIF aﬃnity and func-
+tion. The reason for choosing the worm sequence was our
+observation that the worm p53 is signicantly more stable than
+5860 | Chem. Sci., 2020, 11, 5855–5865
+This journal is © The Royal Society of Chemistry 2020
+Chemical Science
+Perspective
+Open Access Article. Published on 19 May 2020. Downloaded on 10/4/2023 11:17:32 AM. 
+ This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+the human form.102 In PI3Ka, rescuing mutations could
+improve the aﬃnity of the ATP-competitive drug to its binding
+site without increasing its concentration, by allosterically
+altering
+its
+conformation.
+The
+mutations
+in
+the
+kinase
+domain's P-loop may be promising. Such a strategy may also be
+considered for PTEN tumor suppressor.
+Alternative
+strategies
+and considerations
+to
+map
+and
+harness allosteric candidates to improve PI3Ka isoform-specic
+inhibitor design were also proposed.103 Key steps in successful
+design of allosteric drugs include identication of allosteric
+sites103–105 including hidden cryptic allosteric pockets106,107
+shown to underlie allosteric modulator selectivity at muscarinic
+GPCRs,108
+allosteric
+mutations19,109–118
+and
+allosteric
+drug
+design.119,120 Allosteric drugs can constitute ‘anchors’ and
+‘drivers’.103 The anchor docks into an allosteric pocket whose
+conformation is unchanged during the transition between the
+inactive and active states. The driver 'pulls' and/or 'pushes'
+protein atoms (side-chain or backbone) and triggers shis of
+the receptor population to a drug binding-favored state. Based
+on crystal structures, characteristics of anchors and drivers have
+been outlined. The recent computational tools quantifying the
+allosteric signaling, mutation eﬀects and their combinational
+actions in the signaling promote the discovery of allosteric
+eﬀectors.121,122
+Conclusions
+To understand the behavior of biomacromolecules we need to
+look at the distributions of their conformational ensembles and
+how these are aﬀected by their environments. Under physio-
+logical conditions PI3Ka populates the inactive state. Onco-
+genic mutations will shi the ensemble to populate the active
+state. The extent of the shi determines the strength of the
+mutation. The chemistry of the surface matters: the membrane
+surface is negatively charged, with lipid hydrophobicity playing
+a major role. Mutations that contribute positive charge will
+enhance the interactions. Mutations (orthosteric or allosteric)
+that weaken the interactions of p85a with p110a or between the
+p85a domains or strengthen the interaction with the membrane
+will shi the population toward the active state. Double (strong
+and weak) mutations can act to more fully shi the population.
+Drug resistance mutations can alter the ATP binding site,
+shiing the ensemble toward orthosteric drug-inaccessible
+state. Allosteric modulator drug can shi the population
+toward drug accessibility. Rescue mutations can identify regu-
+latory hot spots that nature uses for functional control. Small
+molecule allosteric inhibitors can take aim at such hot spots in
+tough-to-drug targets such as kinases and phosphatases, like
+the SHP2.
+Here we described the PI3Ka saga from the free energy
+landscape standpoint123 and its dynamic shis following
+changes in the environment.110,124–126 Allostery is a powerful
+ensemble property used by nature. Harnessing it to favor an
+ATP-competitive drug exploits “nature's proof of principle” may
+be one way to target PI3Ka, the second most highly mutated
+protein in cancer. Here we proposed two new possible venues
+not exploited yet in PI3Ka drug discovery: allosteric plus
+orthosteric drug combinations and following mother nature
+rescue mutation strategy.
+Conﬂicts of interest
+No potential conict of interest was disclosed.
+Acknowledgements
+This project has been funded in whole or in part with federal
+funds from the National Cancer Institute, National Institutes of
+Health, under contract HHSN26120080001E. The content of
+this publication does not necessarily reect the views or policies
+of the Department of Health and Human Services, nor does
+mention of trade names, commercial products, or organizations
+imply endorsement by the U.S. Government. This research was
+supported [in part] by the Intramural Research Program of the
+NIH, National Cancer Institute, Center for Cancer Research.
+References
+1 A. C. Carrera and R. Anderson, J. Cell Sci., 2019, 132,
+jcs228395.
+2 T. A. Yap, L. Bjerke, P. A. Clarke and P. Workman, Curr.
+Opin. Pharmacol., 2015, 23, 98–107.
+3 S. J. Klempner, A. P. Myers and L. C. Cantley, Cancer
+Discovery, 2013, 3, 1345–1354.
+4 S. I. C. database, http://www.sanger.ac.uk/genetics/CGP/
+cosmic/.
+5 K. K. Wong, J. A. Engelman and L. C. Cantley, Curr. Opin.
+Genet. Dev., 2010, 20, 87–90.
+6 K. D. Courtney, R. B. Corcoran and J. A. Engelman, J. Clin.
+Oncol., 2010, 28, 1075–1083.
+7 P. A. Clarke and P. Workman, J. Clin. Oncol., 2012, 30, 331–
+333.
+8 M. S. Lawrence, P. Stojanov, C. H. Mermel, J. T. Robinson,
+L. A. Garraway, T. R. Golub, M. Meyerson, S. B. Gabriel,
+E. S. Lander and G. Getz, Nature, 2014, 505, 495–501.
+9 L. Zhao and P. K. Vogt, Proc. Natl. Acad. Sci. U. S. A., 2008,
+105, 2652–2657.
+10 M. Gymnopoulos, M. A. Elsliger and P. K. Vogt, Proc. Natl.
+Acad. Sci. U. S. A., 2007, 104, 5569–5574.
+11 J. E. Burke, O. Perisic, G. R. Masson, O. Vadas and
+R. L. Williams, Proc. Natl. Acad. Sci. U. S. A., 2012, 109,
+15259–15264.
+12 C. H. Huang, D. Mandelker, O. Schmidt-Kittler, Y. Samuels,
+V. E. Velculescu, K. W. Kinzler, B. Vogelstein, S. B. Gabelli
+and L. M. Amzel, Science, 2007, 318, 1744–1748.
+13 A. Markham, Drugs, 2019, 79, 1249–1253.
+14 N. Vasan, P. Razavi, J. L. Johnson, H. Shao, H. Shah,
+A. Antoine, E. Ladewig, A. Gorelick, T. Y. Lin, E. Toska,
+G. Xu, A. Kazmi, M. T. Chang, B. S. Taylor, M. N. Dickler,
+K. Jhaveri, S. Chandarlapaty, R. Rabadan, E. Reznik,
+M. L. Smith, R. Sebra, F. Schimmoller, T. R. Wilson,
+L. S. Friedman, L. C. Cantley, M. Scaltriti and J. Baselga,
+Science, 2019, 366, 714–723.
+This journal is © The Royal Society of Chemistry 2020
+Chem. Sci., 2020, 11, 5855–5865 | 5861
+Perspective
+Chemical Science
+Open Access Article. Published on 19 May 2020. Downloaded on 10/4/2023 11:17:32 AM. 
+ This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+15 M. Z. Zhang, H. Jang and R. Nussinov, Chem. Sci., 2019, 10,
+3671–3680.
+16 M. Z. Zhang, H. Jang and R. Nussinov, Phys. Chem. Chem.
+Phys., 2019, 21, 12021–12028.
+17 R. Nussinov, C. J. Tsai and H. Jang, Front. Oncol., 2019, 9,
+1231.
+18 C. J. Tsai and R. Nussinov, PLoS Comput. Biol., 2014, 10,
+e1003394.
+19 J. Liu and R. Nussinov, PLoS Comput. Biol., 2016, 12,
+e1004966.
+20 R. Nussinov, Chem. Rev., 2016, 116, 6263–6266.
+21 D. D. Boehr, R. Nussinov and P. E. Wright, Nat. Chem. Biol.,
+2009, 5, 789–796.
+22 M. S. Miller, O. Schmidt-Kittler, D. M. Bolduc, E. T. Brower,
+D. Chaves-Moreira, M. Allaire, K. W. Kinzler, I. G. Jennings,
+P. E. Thompson, P. A. Cole, L. M. Amzel, B. Vogelstein and
+S. B. Gabelli, Oncotarget, 2014, 5, 5198–5208.
+23 W. C. Hon, A. Berndt and R. L. Williams, Oncogene, 2012,
+31, 3655–3666.
+24 J. Yu, C. Wjasow and J. M. Backer, J. Biol. Chem., 1998, 273,
+30199–30203.
+25 X. X. Zhang, O. Vadas, O. Perisic, K. E. Anderson, J. Clark,
+P. T. Hawkins, L. R. Stephens and R. L. Williams, Mol.
+Cell, 2011, 41, 567–578.
+26 S. Y. Lu, W. K. Huang, Q. Wang, Q. C. Shen, S. Li,
+R. Nussinov and J. Zhang, Biophys. J., 2015, 108, 528a.
+27 M. S. Miller, S. Maheshwari, F. M. McRobb, K. W. Kinzler,
+L. M. Amzel, B. Vogelstein and S. B. Gabelli, Bioorg. Med.
+Chem., 2017, 25, 1481–1486.
+28 X. Lu, J. B. Smaill and K. Ding, Angew. Chem., Int. Ed. Engl.,
+2020, 59, 2–15.
+29 A. E. Leroux, L. Z. F. Gross, M. Sacerdoti and R. M. Biondi,
+Adv. Exp. Med. Biol., 2019, 1163, 279–311.
+30 X. Cheng and H. Jiang, Adv. Exp. Med. Biol., 2019, 1163, 1–
+23.
+31 R. Nussinov and C. J. Tsai, Annu. Rev. Pharmacol. Toxicol.,
+2015, 55, 249–267.
+32 S. Lu, Y. Qiu, D. Ni, X. He, J. Pu and J. Zhang, Drug Discovery
+Today, 2020, 25, 177–184.
+33 A. Zorba, V. Nguyen, A. Koide, M. Hoemberger, Y. Zheng,
+S. Kutter, C. Kim, S. Koide and D. Kern, Proc. Natl. Acad.
+Sci. U. S. A., 2019, 116, 13937–13942.
+34 Q. Tang, M. T. Villar, A. Artigues, J. P. Thyfault, U. Apte,
+H. Zhu, K. R. Peterson and A. W. Fenton, Sci. Rep., 2019,
+9, 9031.
+35 A. E. Garces and M. J. Stocks, J. Med. Chem., 2019, 62, 4815–
+4850.
+36 J. Yang, J. Nie, X. L. Ma, Y. Q. Wei, Y. Peng and X. W. Wei,
+Mol. Cancer, 2019, 18, 26.
+37 F. Janku, T. A. Yap and F. Meric-Bernstam, Nat. Rev. Clin.
+Oncol., 2018, 15, 273–291.
+38 R. Arafeh and Y. Samuels, Semin. Cancer Biol., 2019, 59, 36–
+49.
+39 J. Baselga, S. A. Im, H. Iwata, J. Cortes, M. De Laurentiis,
+Z. Jiang, C. L. Arteaga, W. Jonat, M. Clemons, Y. Ito,
+A.
+Awada,
+S.
+Chia,
+A.
+Jagiello-Gruszfeld,
+B.
+Pistilli,
+L. M. Tseng, S. Hurvitz, N. Masuda, M. Takahashi,
+P. Vuylsteke, S. Hachemi, B. Dharan, E. Di Tomaso,
+P. Urban, C. Massacesi and M. Campone, Lancet Oncol.,
+2017, 18, 904–916.
+40 A. Di Leo, S. Johnston, K. S. Lee, E. Ciruelos, P. E. Lonning,
+W. Janni, R. O'Regan, M. A. Mouret-Reynier, D. Kalev,
+D. Egle, T. Csoszi, R. Bordonaro, T. Decker, V. C. G. Tjan-
+Heijnen, S. Blau, A. Schirone, D. Weber, M. El-Hashimy,
+B. Dharan, D. Sellami and T. Bachelot, Lancet Oncol.,
+2018, 19, 87–100.
+41 M. Martin, A. Chan, L. Dirix, J. O'Shaughnessy, R. Hegg,
+A. Manikhas, M. Shtivelband, P. Krivorotko, N. Batista
+Lopez, M. Campone, M. Ruiz Borrego, Q. J. Khan,
+J. T. Beck, M. Ramos Vazquez, P. Urban, S. Goteti, E. Di
+Tomaso, C. Massacesi and S. Delaloge, Ann. Oncol., 2017,
+28, 313–320.
+42 I. E. Krop, I. A. Mayer, V. Ganju, M. Dickler, S. Johnston,
+S. Morales, D. A. Yardley, B. Melichar, A. Forero-Torres,
+S.
+C.
+Lee,
+R.
+de
+Boer,
+K.
+Petrakova,
+S.
+Vallentin,
+E. A. Perez, M. Piccart, M. Ellis, E. Winer, S. Gendreau,
+M. Derynck, M. Lackner, G. Levy, J. Qiu, J. He and
+P. Schmid, Lancet Oncol., 2016, 17, 811–821.
+43 P. Vuylsteke, M. Huizing, K. Petrakova, R. Roylance,
+R. Laing, S. Chan, F. Abell, S. Gendreau, I. Rooney,
+D. Apt, J. Zhou, S. Singel and L. Fehrenbacher, Ann.
+Oncol., 2016, 27, 2059–2066.
+44 S. Tolaney, H. Burris, E. Gartner, I. A. Mayer, C. Saura,
+M. Maurer, E. Ciruelos, A. A. Garcia, F. Campana, B. Wu,
+Y. Xu, J. Jiang, E. Winer and I. Krop, Breast Canc. Res.
+Treat., 2015, 149, 151–161.
+45 V. G. Abramson, J. G. Supko, T. Ballinger, J. M. Cleary,
+J. F. Hilton, S. M. Tolaney, N. G. Chau, D. C. Cho,
+J. Pearlberg, J. Lager, G. I. Shapiro and C. L. Arteaga, Clin.
+Cancer Res., 2017, 23, 3520–3528.
+46 J. Wheler, D. Mutch, J. Lager, C. Castell, L. Liu, J. Jiang and
+A. M. Traynor, Oncologist, 2017, 22, 377-e37.
+47 J. C. Soria, P. LoRusso, R. Bahleda, J. Lager, L. Liu, J. Jiang,
+J. F. Martini, S. Mace and H. Burris, Oncologist, 2015, 20,
+245–246.
+48 A.
+Patnaik,
+L.
+J.
+Appleman,
+A.
+W.
+Tolcher,
+K. P. Papadopoulos, M. Beeram, D. W. Rasco, G. J. Weiss,
+J. C. Sachdev, M. Chadha, M. Fulk, S. Ejadi, J. M. Mountz,
+M. T. Lotze, F. G. S. Toledo, E. Chu, M. Jeﬀers, C. Pena,
+C. Xia, S. Reif, I. Genvresse and R. K. Ramanathan, Ann.
+Oncol., 2016, 27, 1928–1940.
+49 M. Dreyling, A. Santoro, L. Mollica, S. Leppa, G. A. Follows,
+G. Lenz, W. S. Kim, A. Nagler, P. Panayiotidis, J. Demeter,
+M. Ozcan, M. Kosinova, K. Bouabdallah, F. Morschhauser,
+D. A. Stevens, D. Trevarthen, M. Giurescu, L. Cupit, L. Liu,
+K. Kochert, H. Seidel, C. Pena, S. X. Yin, F. Hiemeyer,
+J. Garcia-Vargas, B. H. Childs and P. L. Zinzani, J. Clin.
+Oncol., 2017, 35, 3898–3905.
+50 D.
+S.
+Hong,
+D.
+W.
+Bowles,
+G.
+S.
+Falchook,
+W.
+A.
+Messersmith,
+G.
+C.
+George,
+C.
+L.
+O'Bryant,
+A. C. H. Vo, K. Klucher, R. S. Herbst, S. G. Eckhardt,
+S. Peterson, D. F. Hausman, R. Kurzrock and A. Jimeno,
+Clin. Cancer Res., 2012, 18, 4173–4182.
+5862 | Chem. Sci., 2020, 11, 5855–5865
+This journal is © The Royal Society of Chemistry 2020
+Chemical Science
+Perspective
+Open Access Article. Published on 19 May 2020. Downloaded on 10/4/2023 11:17:32 AM. 
+ This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+51 D. W. Bowles, W. W. Ma, N. Senzer, J. R. Brahmer,
+A. A. Adjei, M. Davies, A. J. Lazar, A. Vo, S. Peterson,
+L. Walker, D. Hausman, C. M. Rudin and A. Jimeno, Br. J.
+Cancer, 2013, 109, 1085–1092.
+52 C.
+Yam,
+X.
+W.
+Xu,
+M.
+A.
+Davies,
+P.
+A.
+Gimotty,
+J. J. D. Morrissette, M. T. Tetzlaﬀ, K. M. Wani, S. J. Liu,
+W. L. Deng, M. Buckley, J. H. Zhao, R. K. Amaravadi,
+N. B. Haas, R. R. Kudchadkar, A. C. Pavlick, J. A. Sosman,
+H. Tawbi, L. Walker, L. M. Schuchter, G. C. Karakousis
+and T. C. Gangadhar, Clin. Cancer Res., 2018, 24, 22–32.
+53 A. Jimeno, J. E. Bauman, C. Weissman, D. Adkins,
+I. Schnadig, P. Beauregard, D. W. Bowles, A. Spira,
+B.
+Levy,
+N.
+Seetharamu,
+D.
+Hausman,
+L.
+Walker,
+C. M. Rudin and K. Shirai, Oral Oncol., 2015, 51, 383–388.
+54 A. Jimeno, K. Shirai, M. Choi, J. Laskin, M. Kochenderfer,
+A. Spira, V. Cline-Burkhardt, E. Winquist, D. Hausman,
+L. Walker and R. B. Cohen, Ann. Oncol., 2015, 26, 556–561.
+55 D. W. Bowles, N. Senzer, D. Hausman, S. Peterson, A. Vo,
+L. Walker, R. B. Cohen and A. Jimeno, Invest. New Drugs,
+2014, 32, 1197–1203.
+56 D. W. Bowles, M. Kochenderfer, A. Cohn, L. Sideris,
+N. Nguyen, V. Cline-Burkhardt, I. Schnadig, M. Choi,
+L. Nabell, A. Chaudhry, R. Ruxer, A. Ucar, D. Hausman,
+L. Walker, A. Spira and A. Jimeno, Clin. Colorectal Cancer,
+2016, 15, 337–344.
+57 S. Blagden, A. Omlin, D. Josephs, C. Stavraka, A. Zivi,
+D. J. Pinato, A. Anthoney, S. Decordova, K. Swales,
+R. Riisnaes, L. Pope, K. Noguchi, R. Shiokawa, M. Inatani,
+J. Prince, K. Jones, C. Twelves, J. Spicer and U. Banerji,
+Clin. Cancer Res., 2014, 20, 5908–5917.
+58 D. Mahadevan, E. G. Chiorean, W. B. Harris, D. D. Von Hoﬀ,
+A. Stejskal-Barnett, W. Qi, S. P. Anthony, A. E. Younger,
+D. M. Rensvold, F. Cordova, C. F. Shelton, M. D. Becker,
+J. R. Garlich, D. L. Durden and R. K. Ramanathan, Eur. J.
+Cancer, 2012, 48, 3319–3327.
+59 F. Janku, Cancer Treat. Rev., 2017, 59, 93–101.
+60 C. Y. Cheah and N. H. Fowler, Blood, 2016, 128, 331–336.
+61 B. W. Miller, D. Przepiorka, R. A. de Claro, K. Lee, L. Nie,
+N. Simpson, R. Gudi, H. Saber, S. Shord, J. Bullock,
+D. Marathe, N. Mehrotra, L. S. Hsieh, D. Ghosh, J. Brown,
+R. C. Kane, R. Justice, E. Kaminskas, A. T. Farrell and
+R. Pazdur, Clin. Cancer Res., 2015, 21, 1525–1529.
+62 C. Fritsch, A. Huang, C. Chatenay-Rivauday, C. Schnell,
+A. Reddy, M. Liu, A. Kauﬀmann, D. Guthy, D. Erdmann,
+A. De Pover, P. Furet, H. Gao, S. Ferretti, Y. Wang,
+J. Trappe, S. M. Brachmann, S. M. Maira, C. Wilson,
+M. Boehm, C. Garcia-Echeverria, P. Chene, M. Wiesmann,
+R. Cozens, J. Lehar, R. Schlegel, G. Caravatti, F. Hofmann
+and W. R. Sellers, Mol. Cancer Ther., 2014, 13, 1117–1129.
+63 I. A. Mayer, V. G. Abramson, L. Formisano, J. M. Balko,
+M.
+V.
+Estrada,
+M.
+E.
+Sanders,
+D.
+Juric,
+D.
+Solit,
+M. F. Berger, H. H. Won, Y. Li, L. C. Cantley, E. Winer
+and C. L. Arteaga, Clin. Cancer Res., 2017, 23, 26–34.
+64 R. M. J. M. van Geel, J. Tabernero, E. Elez, J. C. Bendell,
+A.
+Spreaco,
+M.
+Schuler,
+T.
+Yoshino,
+J.
+P.
+Delord,
+Y. Yamada, M. P. Lolkema, J. E. Faris, F. A. L. M. Eskens,
+S. Sharma, R. Yaeger, H. J. Lenz, Z. A. Wainberg, E. Avsar,
+A. Chatterjee, S. Jaeger, E. Tan, K. Maharry, T. Demuth
+and J. H. M. Schellens, Cancer Discovery, 2017, 7, 610–619.
+65 S. Jain, A. N. Shah, C. A. Santa-Maria, K. Siziopikou,
+A.
+Rademaker,
+I.
+Helenowski,
+M.
+Cristofanilli
+and
+W. J. Gradishar, Breast Cancer Res. Treat., 2018, 171, 371–
+381.
+66 D. Juric, J. S. de Bono, P. M. LoRusso, J. Nemunaitis,
+E. I. Heath, E. L. Kwak, T. Macarulla Mercade, E. Geuna,
+M. Jose de Miguel-Luken, C. Patel, K. Kuida, S. Sankoh,
+E. H. Westin, F. Zohren, Y. Shou and J. Tabernero, Clin.
+Cancer Res., 2017, 23, 5015–5023.
+67 R. Arafeh and Y. Samuels, Semin. Cancer Biol., 2019, 59, 36–
+49.
+68 M. S. Miller, P. E. Thompson and S. B. Gabelli, Biomolecules,
+2019, 9, 82.
+69 M. Frazzetto, C. Suphioglu, J. Zhu, O. Schmidt-Kittler,
+I. G. Jennings, S. L. Cranmer, S. P. Jackson, K. W. Kinzler,
+B. Vogelstein and P. E. Thompson, Biochem. J., 2008, 414,
+383–390.
+70 Z. Zheng, S. I. Amran, P. E. Thompson and I. G. Jennings,
+Mol. Pharmacol., 2011, 80, 657–664.
+71 Z. A. Knight, B. Gonzalez, M. E. Feldman, E. R. Zunder,
+D. D. Goldenberg, O. Williams, R. Loewith, D. Stokoe,
+A. Balla, B. Toth, T. Balla, W. A. Weiss, R. L. Williams and
+K. M. Shokat, Cell, 2006, 125, 733–747.
+72 C. A. Evans, T. Liu, A. Lescarbeau, S. J. Nair, L. Grenier,
+J. A. Pradeilles, Q. Glenadel, T. Tibbitts, A. M. Rowley,
+J. P. DiNitto, E. E. Brophy, E. L. O'Hearn, J. A. Ali,
+D. G. Winkler, S. I. Goldstein, P. O'Heam, C. M. Martin,
+J.
+G.
+Hoyt,
+J.
+R.
+Soglia,
+C.
+Cheung,
+M.
+M.
+Pink,
+J. L. Proctor, V. J. Palombella, M. R. Tremblay and
+A. C. Castro, ACS Med. Chem. Lett., 2016, 7, 862–867.
+73 V.
+Certal,
+J.
+C.
+Carry,
+F.
+Halley,
+A.
+Virone-Oddos,
+F.
+Thompson,
+B.
+Filoche-Romme,
+Y.
+El-Ahmad,
+A.
+Karlsson,
+V.
+Charrier,
+C.
+Delorme,
+A.
+Rak,
+P. Y. Abecassis, C. Amara, L. Vincent, H. Bonnevaux,
+J. P. Nicolas, M. Mathieu, T. Bertrand, J. P. Marquette,
+N. Michot, T. Benard, M. A. Perrin, O. Lemaitre, S. Guerif,
+S. Perron, S. Monget, F. Gruss-Leleu, G. Doeringer,
+H. Guizani, M. Brollo, L. Delbarre, L. Bertin, P. Richepin,
+V. Loyau, C. Garcia-Echeverria, C. Lengauer and L. Schio,
+J. Med. Chem., 2014, 57, 903–920.
+74 Z.
+H.
+Zheng,
+M.
+S.
+Miller,
+I.
+G.
+Jennings
+and
+P. E. Thompson, ACS Chem. Biol., 2013, 8, 679–683.
+75 A. Berndt, S. Miller, O. Williams, D. D. Le, B. T. Houseman,
+J. I. Pacold, F. Gorrec, W. C. Hon, Y. Liu, C. Rommel,
+P. Gaillard, T. Ruckle, M. K. Schwarz, K. M. Shokat,
+J. P. Shaw and R. L. Williams, Nat. Chem. Biol., 2010, 6,
+117–124.
+76 T. P. Heﬀron, B. Q. Wei, A. Olivero, S. T. Staben, V. Tsui,
+S. Do, J. Dotson, A. J. Folkes, P. Goldsmith, R. Goldsmith,
+J. Gunzner, J. Lesnick, C. Lewis, S. Mathieu, J. Nonomiya,
+S. Shuttleworth, D. P. Sutherlin, N. C. Wan, S. M. Wang,
+C. Wiesmann and B. Y. Zhu, J. Med. Chem., 2011, 54,
+7815–7833.
+77 M. Nacht, L. X. Qiao, M. P. Sheets, T. St Martin,
+M.
+Labenski,
+H.
+Mazdiyasni,
+R.
+Karp,
+Z.
+D.
+Zhu,
+This journal is © The Royal Society of Chemistry 2020
+Chem. Sci., 2020, 11, 5855–5865 | 5863
+Perspective
+Chemical Science
+Open Access Article. Published on 19 May 2020. Downloaded on 10/4/2023 11:17:32 AM. 
+ This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+P.
+Chaturvedi,
+D.
+Bhavsar,
+D.
+Q.
+Niu,
+W.
+Westlin,
+R. C. Petter, A. P. Medikonda and J. Singh, J. Med. Chem.,
+2013, 56, 712–721.
+78 S. T. Staben, C. Ndubaku, N. Blaquiere, M. Belvin, R. J. Bull,
+D. Dudley, K. Edgar, D. Gray, R. Heald, T. P. Heﬀron,
+G. E. Jones, M. Jones, A. Kolesnikov, L. Lee, J. Lesnick,
+C.
+Lewis,
+J.
+Murray,
+N.
+J.
+McLean,
+J.
+Nonomiya,
+A. G. Olivero, R. Ord, J. Pang, S. Price, W. W. Prior,
+L. Rouge, L. Salphati, D. Sampath, J. Wallin, L. Wang,
+B. Wei, C. Weismann and P. Wu, Bioorg. Med. Chem. Lett.,
+2013, 23, 2606–2613.
+79 C.
+O.
+Ndubaku,
+T.
+P.
+Heﬀron,
+S.
+T.
+Staben,
+M. Baumgardner, N. Blaquiere, E. Bradley, R. Bull, S. Do,
+J. Dotson, D. Dudley, K. A. Edgar, L. S. Friedman,
+R. Goldsmith, R. A. Heald, A. Kolesnikov, L. Lee, C. Lewis,
+M. Nannini, J. Nonomiya, J. Pang, S. Price, W. W. Prior,
+L. Salphati, S. Sideris, J. J. Wallin, L. Wang, B. Wei,
+D. Sampath and A. G. Olivero, J. Med. Chem., 2013, 56,
+4597–4610.
+80 Z. H. Zheng, S. I. Amran, J. X. Zhu, O. Schmidt-Kittler,
+K.
+W.
+Kinzler,
+B.
+Vogelstein,
+P.
+R.
+Shepherd,
+P. E. Thompson and I. G. Jennings, Biochem. J., 2012, 444,
+529–535.
+81 P. Furet, V. Guagnano, R. A. Fairhurst, P. Imbach-Weese,
+I. Bruce, M. Knapp, C. Fritsch, F. Blasco, J. Blanz,
+R. Aichholz, J. Hamon, D. Fabbro and G. Caravatti, Bioorg.
+Med. Chem. Lett., 2013, 23, 3741–3748.
+82 J. Wang, G. Q. Gong, Y. Zhou, W. J. Lee, C. M. Buchanan,
+W.
+A.
+Denny,
+G.
+W.
+Rewcastle,
+J.
+D.
+Kendall,
+J.
+M.
+J.
+Dickson,
+J.
+U.
+Flanagan,
+P.
+R.
+Shepherd,
+D. H. Yang and M. W. Wang, Acta Pharmacol. Sin., 2018,
+39, 1816–1822.
+83 P. Gkeka, A. Papafotika, S. Christoforidis and Z. Cournia, J.
+Phys. Chem. B, 2015, 119, 1002–1016.
+84 I. Galdadas, F. L. Gervasio and Z. Cournia, Chem. Sci., 2020,
+11, 3511–3515.
+85 H. Leontiadou, I. Galdadas, C. Athanasiou and Z. Cournia,
+Sci. Rep., 2018, 8, 15544.
+86 A. T. Shaw, L. Friboulet, I. Leshchiner, J. F. Gainor,
+S. Bergqvist, A. Brooun, B. J. Burke, Y. L. Deng, W. Liu,
+L. Dardaei, R. L. Frias, K. R. Schultz, J. Logan, L. P. James,
+T. Smeal, S. Timofeevski, R. Katayama, A. J. Iafrate, L. Le,
+M. McTigue, G. Getz, T. W. Johnson and J. A. Engelman,
+N. Engl. J. Med., 2016, 374, 54–61.
+87 S. Michels, M. Scheﬄer, S. Wagener, D. Plenker, A. Scheel,
+L. Nogova, A. Schultheis, R. N. Fischer, D. S. Y. Abdulla,
+R. Riedel, A. Bunck, C. Kobe, W. Baus, S. Merkelbach-
+Bruse, M. L. Sos, R. Buttner and J. Wolf, JCO Precis Oncol.,
+2018, 2, 1–6.
+88 J. Rotow and T. G. Bivona, Nat. Rev. Cancer, 2017, 17, 637–
+658.
+89 F. J. Adrian, Q. Ding, T. B. Sim, A. Velentza, C. Sloan, Y. Liu,
+G. B. Zhang, W. Hur, S. Ding, P. Manley, J. Mestan,
+D. Fabbro and N. S. Gray, Nat. Chem. Biol., 2006, 2, 95–102.
+90 J. M. Zhang, F. J. Adrian, W. Jahnke, S. W. Cowan-Jacob,
+A. G. Li, R. E. Iacob, T. Sim, J. Powers, C. Dierks,
+F. X. Sun, G. R. Guo, Q. Ding, B. Okram, Y. Choi,
+A. Wojciechowski, X. M. Deng, G. X. Liu, G. Fendrich,
+A. Strauss, N. Vajpai, S. Grzesiek, T. Tuntland, Y. Liu,
+B. Bursulaya, M. Azam, P. W. Manley, J. R. Engen,
+G. Q. Daley, M. Warmuth and N. S. Gray, Nature, 2010,
+463, 501–506.
+91 A. A. Wylie, J. Schoepfer, W. Jahnke, S. W. Cowan-Jacob,
+A. Loo, P. Furet, A. L. Marzinzik, X. Pelle, J. Donovan,
+W. J. Zhu, S. Buonamici, A. Q. Hassan, F. Lombardo,
+V. Iyer, M. Palmer, G. Berellini, S. Dodd, S. Thohan,
+H.
+Bitter,
+S.
+Branford,
+D.
+M.
+Ross,
+T.
+P.
+Hughes,
+L. Petruzzelli, K. G. Vanasse, M. Warmuth, F. Hofmann,
+N. J. Keen and W. R. Sellers, Nature, 2017, 543, 733–737.
+92 J. Schoepfer, W. Jahnke, G. Berellini, S. Buonamici,
+S. Cotesta, S. W. Cowan-Jacob, S. Dodd, P. Drueckes,
+D. Fabbro, T. Gabriel, J. M. Groell, R. M. Grotzfeld,
+A. Q. Hassan, C. Henry, V. Iyer, D. Jones, F. Lombardo,
+A. Loo, P. W. Manley, X. Pelle, G. Rummel, B. Salem,
+M. Warmuth, A. A. Wylie, T. Zoller, A. L. Marzinzik and
+P. Furet, J. Med. Chem., 2018, 61, 8120–8135.
+93 C. A. Eide, M. S. Zabriskie, S. L. S. Stevens, O. Antelope,
+N.
+A.
+Vellore,
+H.
+Than,
+A.
+R.
+Schultz,
+P.
+Clair,
+A. D. Bowler, A. D. Pomicter, D. Q. Yan, A. V. Senina,
+W. Qiang, T. W. Kelley, P. Szankasi, M. C. Heinrich,
+J.
+W.
+Tyner,
+D.
+Rea,
+J.
+M.
+Cayuela,
+D.
+W.
+Kim,
+C.
+E.
+Tognon,
+T.
+O'Hare,
+B.
+J.
+Druker
+and
+M. W. Deininger, Cancer Cell, 2019, 36, 431–433.
+94 X. Y. Lu, L. Yu, Z. Zhang, X. M. Ren, J. B. Smaill and K. Ding,
+Med. Res. Rev., 2018, 38, 1550–1581.
+95 C. To, J. Jang, T. Chen, E. Park, M. Mushajiang, D. J. H. De
+Clercq, M. Xu, S. Wang, M. D. Cameron, D. E. Heppner,
+B. H. Shin, T. W. Gero, A. Yang, S. E. Dahlberg,
+K. K. Wong, M. J. Eck, N. S. Gray and P. A. Janne, Cancer
+Discovery, 2019, 9, 926–943.
+96 A. F. Abdel-Magid, ACS Med. Chem. Lett., 2015, 6, 104–107.
+97 M. May, Nat. Med., 2011, 17, 405–407.
+98 M. Filteau, V. Hamel, M. C. Pouliot, I. Gagnon-Arsenault,
+A. K. Dube and C. R. Landry, Mol. Syst. Biol., 2015, 11, 832.
+99 M. Haskovic, B. Derks, L. van der Ploeg, J. Trommelen,
+J. Nyakayiru, L. J. C. van Loon, S. Mackinnon, W. W. Yue,
+R.
+W.
+A.
+Peake,
+L.
+Zha,
+D.
+Demirbas,
+W.
+S.
+Qi,
+X. P. Huang, G. T. Berry, J. Achten, J. Bierau, M. E. Rubio-
+Gozalbo and A. I. Coelho, Orphanet J. Rare Dis., 2018, 13,
+212.
+100 A. C. Joerger, H. C. Ang, D. B. Veprintsev, C. M. Blair and
+A. R. Fersht, J. Biol. Chem., 2005, 280, 16030–16037.
+101 J. Liu and R. Nussinov, Proc. Natl. Acad. Sci. U. S. A., 2008,
+105, 901–906.
+102 Y. P. Pan, B. Y. Ma, A. J. Levine and R. Nussinov,
+Biochemistry, 2006, 45, 3925–3933.
+103 R. Nussinov and C. J. Tsai, Trends Pharmacol. Sci., 2014, 35,
+256–264.
+104 K. Song, Q. Li, W. Gao, S. Y. Lu, Q. C. Shen, X. Y. Liu,
+Y. Y. Wu, B. Q. Wang, H. W. Lin, G. Q. Chen and
+J. Zhang, Nucleic Acids Res., 2019, 47, W315–W321.
+105 Z. W. Tan, W. V. Tee, E. Guarnera, L. Booth and
+I. N. Berezovsky, Nucleic Acids Res., 2019, 47, D265–D270.
+5864 | Chem. Sci., 2020, 11, 5855–5865
+This journal is © The Royal Society of Chemistry 2020
+Chemical Science
+Perspective
+Open Access Article. Published on 19 May 2020. Downloaded on 10/4/2023 11:17:32 AM. 
+ This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+106 D. B. Kokh, S. Richter, S. Henrich, P. Czodrowski,
+F. Rippmann and R. C. Wade, J. Chem. Inf. Model., 2013,
+53, 1235–1252.
+107 P.
+Cimermancic,
+P.
+Weinkam,
+T.
+J.
+Rettenmaier,
+L.
+Bichmann,
+D.
+A.
+Keedy,
+R.
+A.
+Woldeyes,
+D.
+Schneidman-Duhovny,
+O.
+N.
+Demerdash,
+J. C. Mitchell, J. A. Wells, J. S. Fraser and A. Sali, J. Mol.
+Biol., 2016, 428, 709–719.
+108 S. A. Hollingsworth, B. Kelly, C. Valant, J. A. Michaelis,
+O. Mastromihalis, G. Thompson, A. J. Venkatakrishnan,
+S. Hertig, P. J. Scammells, P. M. Sexton, C. C. Felder,
+A. Christopoulos and R. O. Dror, Nat. Commun., 2019, 10,
+3289.
+109 H. S. Hayatshahi, E. Ahuactzin, P. Tao, S. Y. Wang and
+J. Liu, J. Chem. Inf. Model., 2019, 59, 4691–4705.
+110 J. J. Guo and H. X. Zhou, Chem. Rev., 2016, 116, 6503–6515.
+111 E. Guarnera and I. N. Berezovsky, PLoS Comput. Biol., 2016,
+12, e1004678.
+112 S. W. Lockless and R. Ranganathan, Science, 1999, 286, 295–
+299.
+113 C. Kaya, A. Armutlulu, S. Ekesan and T. Haliloglu, Nucleic
+Acids Res., 2013, 41, W249–W255.
+114 R. Kalescky, J. Liu and P. Tao, J. Phys. Chem. A, 2015, 119,
+1689–1700.
+115 A.
+T.
+VanWart,
+J.
+Eargle,
+Z.
+Luthey-Schulten
+and
+R. E. Amaro, J. Chem. Theory Comput., 2012, 8, 2949–2961.
+116 S. Bowerman and J. Wereszczynski, Methods Enzymol.,
+2016, 578, 429–447.
+117 G. La Sala, S. Decherchi, M. De Vivo and W. Rocchia, ACS
+Cent. Sci., 2017, 3, 949–960.
+118 I. N. Berezovsky, Biochim. Biophys. Acta, Proteins Proteomics,
+2013, 1834, 830–835.
+119 R. Nussinov and C. J. Tsai, Annu. Rev. Pharmacol., 2015, 55,
+249–267.
+120 W. K. Huang, R. Nussinov and J. Zhang, Methods Mol. Biol.,
+2017, 1529, 439–446.
+121 Z. W. Tan, E. Guarnera, W. V. Tee and I. N. Berezovsky,
+Nucleic Acids Res., 2020, DOI: 10.1093/nar/gkaa338.
+122 W. V. Tee, E. Guarnera and I. N. Berezovsky, J. Mol. Biol.,
+2019, 431, 3933–3942.
+123 H. Frauenfelder, S. G. Sligar and P. G. Wolynes, Science,
+1991, 254, 1598–1603.
+124 B. Ma, S. Kumar, C. J. Tsai and R. Nussinov, Protein Eng.,
+1999, 12, 713–720.
+125 K. Gunasekaran, B. Y. Ma and R. Nussinov, Proteins, 2004,
+57, 433–443.
+126 J. Liu and R. Nussinov, Proc. Natl. Acad. Sci. U. S. A., 2017,
+114, 7480–7482.
+This journal is © The Royal Society of Chemistry 2020
+Chem. Sci., 2020, 11, 5855–5865 | 5865
+Perspective
+Chemical Science
+Open Access Article. Published on 19 May 2020. Downloaded on 10/4/2023 11:17:32 AM. 
+ This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online

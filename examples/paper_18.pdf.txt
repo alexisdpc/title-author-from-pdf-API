@@ -1,0 +1,2303 @@
+Energy 268 (2023) 126651
+Available online 12 January 2023
+0360-5442/© 2023 The Author(s). Published by Elsevier Ltd. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+A decision-support framework for residential heating 
+decarbonisation policymaking 
+Ishanki De Mel a,1, Floris Bierkens a,1, Xinyao Liu b, Matthew Leach b, Mona Chitnis c, 
+Lirong Liu b, Michael Short a,* 
+a Department of Chemical and Process Engineering, University of Surrey, Guildford, GU2 7XH, United Kingdom 
+b Centre for Environment and Sustainability, University of Surrey, Guildford, GU2 7XH, United Kingdom 
+c Surrey Energy Economics Centre (SEEC), School of Economics, University of Surrey, Guildford, GU2 7XH, United Kingdom   
+A R T I C L E  I N F O   
+Handling Editor: X Zhao  
+Keywords: 
+Optimisation 
+Mixed-integer linear programming 
+Energy efficiency grants 
+Retrofitting strategy 
+Decarbonised heating 
+A B S T R A C T   
+The decarbonisation of residential heating systems has become increasingly important to meet the global goals of 
+minimising carbon emissions and combating climate change. However, with rising energy costs, this can be a 
+significant challenge for low-income households. This study presents a novel optimisation framework to aid the 
+decarbonisation of residential heating in the United Kingdom by combining technology-related decision-support 
+with policy decisions. The framework can recommend the optimal retrofit of low-carbon heating technologies 
+and fabric improvement measures such as insulation upgrades for improving energy efficiency. Concurrently, the 
+optimal financial contributions towards investment costs from grants supporting low-income households and 
+social housing is determined. It also includes piecewise linearisations to capture the detailed operation of air 
+source heat pumps, which are set to replace natural gas-based heating systems, and assesses the eligibility of each 
+dwelling for grant funding. A large case study consisting of social housing stock in Woking, UK, has been used to 
+test the framework. Three scenarios are used to assess the efficacy of existing technology and policy combina-
+tions to meet local emissions reduction targets, which are benchmarked against emissions from existing gas- 
+based heating systems and insulation measures. Results highlight the limitations of existing UK grants, as 
+these can only achieve an emissions reduction of 33.5% without incurring significant additional investment costs 
+to the local council. The lack of support towards installing hot water tanks, which are required for the operation 
+of heat pumps, is another major limitation in existing grants. A proposed scenario, which introduces a fictional 
+grant with unlimited funding, sheds light on the much larger grant contributions expected to achieve an emis-
+sions reduction of 66.8%, which surpasses local targets. These results also suggest the need for operational 
+support to cope with much higher energy bills, especially for low-income and/or fuel-poor households, due to the 
+electrification of heating systems. Overall, the framework is a useful tool for local councils, policy makers, and 
+other stakeholders to make informed decisions on the affordable decarbonisation of residential heating systems.   
+1. Introduction 
+Climate change and its effects pose an undeniable threat to natural 
+ecosystems and human wellbeing. It is estimated that approximately 
+14% of UK greenhouse gas emissions, which contribute to climate 
+change, are a result of residential heating [1]. Addressing emissions in 
+this sector will be vital if carbon neutrality by 2050, part of Goal 13 of 
+the United Nations Sustainable Development Goals, is to be achieved 
+[2]. A 2019–20 English Housing Survey found that 86% of UK 
+households use gas-fuelled central heating [3]. When coupled with 
+low-carbon electricity, heat pumps form a promising alternative in a 
+net-zero carbon future. Air-source heat pumps (ASHP), account for the 
+majority of installations due to the low cost relative to their ground and 
+water source counterparts [4]. As of 2019, heat pumps meet less than 
+3% of building heating needs [5]. In the UK, the range of the gas network 
+has allowed traditional heating methods to stay economically attractive 
+– thereby weakening the appeal of heat pumps. Consequently, various 
+government grants and schemes are in place to fund the installation of 
+ASHPs, as well as the retrofitting of insulation measures [4], to 
+* Corresponding author. 
+E-mail address: m.short@surrey.ac.uk (M. Short).   
+1 Ishanki De Mel and Floris Bierkens contributed equally to this paper. 
+Contents lists available at ScienceDirect 
+Energy 
+journal homepage: www.elsevier.com/locate/energy 
+https://doi.org/10.1016/j.energy.2023.126651 
+Received 27 July 2022; Received in revised form 22 December 2022; Accepted 7 January 2023   
+Energy 268 (2023) 126651
+2
+Nomenclature 
+Subscripts 
+d 
+Heating and insulation measures 
+g 
+Grant 
+i 
+Housing cluster 
+j 
+Insulation retrofit option 
+k 
+Hot water storage tank 
+p 
+Air-source heat pump 
+s 
+Season 
+t 
+Time interval 
+baseline 
+Baseline reference year 
+new 
+New reference year 
+Superscripts 
+amb 
+Ambient 
+annual 
+Annual 
+boiler 
+Boilers 
+CARBON Carbon dioxide equivalent (CO2e) 
+char 
+Charged 
+days 
+Days 
+disch 
+Discharged 
+EB 
+Electric boilers 
+ed 
+Eligibility of housing cluster 
+GB 
+Gas boilers 
+gr 
+Grant 
+grid 
+Electricity grid 
+HT 
+Heating and storage technology 
+HW 
+Hot water 
+ins 
+Insulation 
+Insl 
+Insulation retrofits 
+INV 
+Investment 
+loss 
+Loss 
+min 
+Minimum 
+OM 
+Operation and management of boiler 
+pump 
+Air-source heat pumps 
+room 
+Room 
+sec 
+Secondary 
+SH 
+Space heating 
+tank 
+Hot water storage tank 
+ws 
+Water supply 
+Parameters 
+CGAS 
+Price of gas [£/kWh] 
+Cins
+i,j 
+Cost of retrofitting insulation measure j at cluster i [£] 
+Ctax 
+Carbon tax [£/kg CO2e] 
+cw 
+Specific heat capacity of water [kWh/kg K] 
+CAi 
+Cost adjustment factor for insulation pricing at cluster i [−] 
+capboiler
+b 
+Heating capacity of boiler b [kW] 
+cappump
+t,p 
+Heating capacity of heat pump p at time t [kW] 
+CCboiler
+b 
+Capital cost of boiler b [£] 
+CCT
+g 
+Total budget for grant g [£] 
+CCg 
+Funding limit per household of grant g [£] 
+CCtank
+k 
+Capital cost of hot water storage tank k [£] 
+CCpump
+p 
+Capital cost of heat pump p [£] 
+CO2eannual
+baseline
+Baseline annual CO2e emissions of system [CO2e] 
+CoPpump
+t,p 
+Coefficient of Performance of heat pump p at time t [−] 
+CRF 
+Capital recovery factor [−] 
+Eload
+i,t 
+Electricity load of cluster i at time t [kWh] 
+ELECb 
+Binary indicator that takes a value of 1 if boiler b is 
+electricity-based [0,1] 
+GASb 
+Binary indicator that takes a value of 1 if boiler b is gas- 
+based [0,1] 
+HHW
+i,t 
+Hot water load of cluster i at time t [kWh] 
+HSH
+i,t 
+Space heating demand of cluster i at time t [kWh] 
+Hloss
+k 
+Heat loss of hot water storage tank k [kW] 
+Igr
+g,d 
+Parametric indicator reflecting eligibility of measure d for 
+grant g [−] 
+Isec
+g,d 
+Parametric indicator reflecting whether a measure d is 
+eligible as a secondary measure under grant g [−] 
+Ied
+i,g 
+Parametric indicator reflecting eligibility of housing 
+cluster i for grant g [−] 
+Ii,j 
+Binary indicator reflecting eligibility of cluster i for 
+insulation measure j [0,1] 
+Ii,j 
+Parametric indicator reflecting eligibility of cluster i for 
+insulation measure j [−] 
+ICboiler
+b 
+Installation cost of boiler b [£] 
+ICpump
+p 
+Installation cost of heat pump p [£] 
+Ndays 
+Number of days in season [days] 
+Nhouses
+i 
+Number of houses in cluster i [−] 
+Pgrid
+t 
+Grid electricity tariff at time t [£/kWh] 
+Ri,j 
+Average demand reduction of an insulation measure j at 
+time t [−] 
+Ri,j 
+Average heating demand reduction of insulation measure j 
+at housing cluster i [−] 
+Tamb 
+Ambient air temperature [◦ C] 
+Tmin 
+Minimum hot water storage temperature [◦ C] 
+Tws
+p 
+Water supply temperature of heat pump p [◦ C] 
+Troom 
+Room temperature [◦ C] 
+Vk 
+Volume of hot water storage tank k [m3] 
+ηb 
+Thermal efficiency of boiler b [−] 
+n 
+Number of years [−] 
+r 
+Interest rate [−] 
+Δt 
+Duration of time interval [h] 
+ρ 
+Density of water [kg/m3] 
+Positive variables 
+ACINV,EB Annualised investment cost of electric boilers [£] 
+ACINV,GB Total annualised investment cost of gas boilers [£] 
+ACINV,Insl
+Annualised investment cost of insulation retrofits [£] 
+ACINV,pump
+Annualised investment cost of heat pumps [£] 
+ACINV,tank
+Annualised investment cost of hot water storage tanks [£] 
+CCARBON 
+Cost of carbon emissions [£] 
+Ci,g,d 
+Grant contribution towards technology d 
+COM,GB 
+Operating cost of gas boiler [£] 
+Cgrid
+s 
+Cost of grid electricity in season s [£] 
+COM,GB
+s 
+Operation and maintenance cost of gas boilers in seasons s 
+[£] 
+CO2eannual
+new
+New annual CO2e emissions of system [CO2e] 
+CapHT
+i,s 
+Capacity of heating and storage technology at housing 
+cluster i in seasons s [−] 
+Egrid
+i,t 
+Electricity purchased from grid by cluster i at time t [kWh] 
+Eboiler
+i,t,b 
+Electricity load of electric boiler b at cluster i at time t 
+[kWh] 
+Epump
+i,t,p 
+Electricity load of heat pump p at cluster i at time t [kWh] 
+Gboiler
+i,t,b 
+Natural gas demand of boiler b at time t [kW] 
+Hload
+i,t 
+Heating load of cluster i at time i [kWh] 
+Hboiler
+i,t,b 
+Heat produced by boiler b at cluster i at time t [kW] 
+Hchar
+i,t,k 
+Heat charged into hot water storage tank k at time t at 
+cluster i [kWh] 
+Hdisch
+i,t,k 
+Heat discharged by hot water storage tank across time t 
+[kWh] 
+I. De Mel et al.                                                                                                                                                                                                                                  
+Energy 268 (2023) 126651
+3
+encourage their uptake. 
+The integration and retrofit of low-carbon heating technologies in 
+buildings, especially residential settings, have been increasingly inves-
+tigated using mathematical optimisation models. These are commonly 
+used to determine the designs and operational schedules of low-carbon 
+and renewable heating technologies, as these can capture the large 
+number of considerations and constraints relevant to various technolo-
+gies, external networks, and stakeholders involved. Small-scale low- 
+carbon and renewable heating technologies are increasingly studied in 
+optimisation models for microgrids and Distributed Energy Systems 
+(DES), which also consider technologies for meeting other energy needs, 
+such as electricity and cooling. Focusing on design models, the key de-
+cision variables in these models, such as the capacities of heating tech-
+nologies and their locations, are influenced by operational limitations 
+such as weather and demand, socio-economic factors such as policies 
+and tariffs, and other technical and environmental constraints [6]. 
+Mixed-integer linear programming (MILP) formulations have been 
+abundantly employed in literature to capture these considerations, and 
+these have been preferred over nonlinear programming models which 
+are complex to formulate and solve. In Ma et al. [7], a MILP model is 
+created to find the optimal design and operational strategy of a DES, 
+satisfying heat loads with a CHP or a ground source heat pump. The 
+Coefficient of Performance (CoP) of the heat pump, a nonlinear tem-
+perature dependent variable, is treated as a constant parameter to 
+maintain linearity in the formulation. This is also done by Morvaj et al. 
+for air-to-water heat pumps [8]. Beck et al. [9] also consider a 
+mixed-integer linear formulation to incorporate heat pumps and thermal 
+storage, but considers CoP to be a function of Carnot quality number and 
+fixed temperatures. Verhelst et al. [10] demonstrate that assuming a 
+constant CoP for air-to-water heat pumps predicts higher electricity 
+consumption and large unrealistic power fluctuations when compared to 
+more detailed representations, which also impact the design and costs 
+predicted by such models. Bloess et al. [11] emphasise that constant CoP 
+values overlook the dependency on temperature lift, with large differ-
+ences between air source and water supply temperatures leading to re-
+ductions in performance. To remedy this, piecewise linearisation 
+methods [12], empirical linear [13,14] or nonlinear [15,16] formulae 
+based on manufacturer datasheets may be used to simulate more real-
+istic heat pump performance. 
+Building energy efficiency is often a prerequisite for the retrofit of 
+low-carbon heating technologies such as heat pumps, as inefficient 
+buildings can exacerbate operating costs and any carbon emissions 
+associated with electricity from the grid. Existing government grants 
+often require additional insulation measures to be retrofitted, to increase 
+the energy efficiency of the building [17]. In the U.K., the energy effi-
+ciency of the building is graded within Energy Performance Certificates 
+(EPC) [18]. MILP models for building insulation decisions have been 
+explored extensively in literature, to determine insulation type [19,20], 
+material thickness [21,22], or both [23–25]. Some studies have also 
+focused on the assessment of environmental impacts through the means 
+of insulation material life cycle assessment in Refs. [25–27]. Despite the 
+necessity to consider the retrofit of insulation measures in combination 
+with low-carbon heating, few studies have attempted this in MILP for-
+mulations. These include studies that have limited insulation measures 
+to just one type, with a focus on optimising insulation thickness [22,23, 
+28]. In some studies [19,20,24], heating technology decisions are 
+Hi,t,k 
+Effective heat in hot water storage tank k at time t at cluster 
+i [◦ C] 
+Hpump
+i,t,p,k 
+Heat produced by heat pump p into hot water storage tank 
+k at time t at cluster i [kWh] 
+Ti,t,k 
+Temperature of water storage [◦ C] 
+TAC 
+Total annualised cost [£] 
+Binary variables 
+Ai,p 
+1 if heat pump p is selected by cluster i 
+Bi,b 
+1 if boiler b is selected by cluster i 
+Wi,j 
+1 if insulation measure j is selected by cluster i 
+Wi,j 
+1 if insulation measure j is selected by cluster i 
+Yi,g,d 
+1 if grant g is used by cluster i to fund measure d 
+Zi,k 
+1 if hot water storage tank k is selected by cluster i 
+List of abbreviations 
+ASHPs 
+Air-source heat pumps 
+BAU 
+Business-as-Usual 
+CAPEX 
+Capital expenditure 
+CHM 
+Cambridge Housing Model 
+CoP 
+Coefficient of Performance 
+DES 
+Distributed Energy Systems 
+ECO 
+Energy Company Obligation 
+EPC 
+Energy Performance Certificate 
+ER 
+CO2e emissions reduction 
+GHG-GJS Green Homes Grant – Green Jump Surrey 
+MILP 
+Mixed-integer linear programming 
+OPEX 
+Operating expenditure 
+PROP 
+Proposed 
+SHDF 
+Social Housing Decarbonisation Fund  
+Fig. 1. Optimisation modelling framework.  
+I. De Mel et al.                                                                                                                                                                                                                                  
+Energy 268 (2023) 126651
+4
+limited to boiler fuel type, without considering other low-carbon heating 
+technologies. These studies also do not incorporate an investment cost 
+for the heating technologies, a parameter that may affect optimal insu-
+lation design. The lack of low-carbon heating technology decisions made 
+simultaneously alongside insulation decisions in existing optimisation 
+models is a significant limitation to be addressed. 
+As mentioned previously, energy policies and grants that provide 
+financial support play a critical role in decarbonising and upgrading 
+residential heating systems and improving heat retention, while making 
+such systems and measures affordable. Many studies acknowledge the 
+importance of considering energy policies and subsidies in optimisation 
+frameworks [29]. However, there are few optimisation models that 
+address them in detail, while encompassing low-carbon heating and 
+energy decisions which these grants support. This is confirmed in an 
+extensive literature review focusing on policy incorporation in micro-
+grid frameworks [30]. Furthermore, much of the policies considered are 
+related to the operation of technologies, as opposed to investment of 
+technologies [30]. Policies associated with low-carbon electricity and 
+heat generation, such as the Renewable Heat Incentive (RHI) and 
+Feed-In-Tariff (FIT) schemes applicable to operational costs, have been 
+previously considered in optimisation frameworks for designing such 
+systems [31–33]. Renaldi et al. [34] consider the Renewable Heat 
+Incentive [35] to reduce overall design costs, while incorporating 
+heating pumps with a simplistic linear regression to estimate CoP. Calise 
+et al. [36] consider a 50% capital investment subsidy when designing a 
+Heating, Ventilation, and Air Conditioning (HVAC) system for an Italian 
+residential building, tested on TRNSYS [37]. While this study does not 
+consider any detailed constraints for the subsidies allocation to different 
+technologies, it does shed light on the importance of such subsidies to 
+make investments more affordable to consumers. Zwickel-Bernhard 
+et al. [38] optimise the balance between subsidy payments to the 
+property owner and the tenant in retrofitting wall insulation and 
+installing renewable heating solutions. These grants take the form of 
+initial investment contributions to the property owner and yearly energy 
+bill support for the tenant. However, this multi-period model focuses 
+heavily on the grant distribution trait of the problem, simplifying insu-
+lation and heating constraints. As existing studies have overlooked 
+policies that support investment decisions for low-carbon heating and 
+improving energy efficiency, most optimisation frameworks for 
+designing low-carbon heating systems and supporting policy decisions 
+related to these remain ill-suited for the purpose. 
+1.1. Contributions of this study 
+As illuminated previously in the literature review, there is a signifi-
+cant lack of optimisation frameworks that capture the decarbonisation 
+of heating systems while including the impact of subsidies and specific 
+grants directly. To address this gap, this study proposes a MILP frame-
+work, portrayed in Fig. 1, which encompasses low-carbon heating 
+technologies, insulation measures for improving energy efficiency, and 
+financial decisions influenced by policies that assist in the decarbon-
+isation process. In detail, the work aims. 
+• To develop an optimisation model to explore the allocation and in-
+vestment decisions for low-carbon heating technologies for retrofit in 
+existing social housing stock through an MILP model that includes 
+air-source heat pumps, electric boilers, and different common insu-
+lation options;  
+• To include, for the first time in an optimisation formulation, the 
+eligibility and effects of the various policy and grants available for a 
+given housing stock; 
+• To include heat pump performance details via a piecewise linear-
+isation scheme; 
+• To reveal the impacts of different policies. The approach can deter-
+mine economic impacts on different stakeholders, which policies are 
+effective at encouraging technology uptake in terms of carbon 
+emissions and cost reductions, and support decision-making on new 
+policy development;  
+• To conduct a case study on Woking to test the proposed model and 
+provide decision-making support on a real dataset. 
+The framework determines the optimal mix of low-carbon heating 
+technologies, such as electric boilers and a variety of air-to-water heat 
+pumps and employs piecewise linearisations obtained from manufac-
+turer datasheets to capture their operation in detail. To support these 
+decisions, the optimal retrofit of common insulation measures is also 
+modelled, following an eligibility assessment of the characteristics and 
+EPC of buildings. A generic formulation for policies and grants that 
+enable the investment of low-carbon heating and insulation measures is 
+also proposed, where the eligibility and availability of each technology 
+and measure under each grant is assessed in detail prior to determining 
+the overall investment decisions. The framework is tested using a real- 
+world case study consisting of social housing in the Borough of Wok-
+ing, UK Existing government grants for social housing, some with spe-
+cific constraints and requirements, are also included. The framework is 
+tested under the objective of minimising total annualised costs to the 
+consumer or investor, which includes overall investment and opera-
+tional costs with reductions from grant contributions, as well as a 
+combined objective of minimising total costs alongside operational 
+carbon emissions. 
+The framework can be used as a tool for evaluating the efficacy of the 
+proposed decarbonisation methods and policies, as it is capable of 
+evaluating and satisfying the prerequisites of policies while making 
+technological decisions towards decarbonisation. Testing various new 
+scenarios using the developed tool, prior to societal implementation, 
+will allow decision-makers to gain further insights as to the potential 
+technoeconomic performance of a proposed policy at its mathematical 
+optimum. It can also be used by other stakeholders, such as local 
+councils and homeowners, who wish the assess the investment of low- 
+carbon heating technologies and energy efficiency improvements with 
+support from existing grants. Overall, the framework and study facili-
+tates the decarbonisation of existing heating systems. 
+1.2. Paper overview 
+The mathematical model which underpins the optimisation frame-
+work proposed in this study is presented in Section 2. This section de-
+scribes the constraints and equations related to cost calculations, 
+heating and storage technologies, insulation measures, and policies. The 
+case study used to test the framework is detailed in Section 3, which 
+includes parameters and considerations associated with the housing 
+stock, technologies, grants, and the various scenarios used for model 
+testing. Results for each of the scenarios are presented and extensively 
+discussed in Section 4. The Conclusions in Section 5 summarise the key 
+outcomes of this study, and the potential for future research. 
+2. Mathematical model 
+The mathematical formulations used in the framework are provided 
+in this Section. This includes the objective function and general elec-
+tricity and heating balances provided in Section 2.1, specific equations 
+for the heating technologies in Section 2.2, constraints incorporating 
+insulation measures in Section 2.3, and formulations capturing policy- 
+related decision making in Section 2.4. 
+2.1. General equations 
+The objective function minimises Total Annualised Cost TAC for all 
+households, after any grants have been paid toward the investment costs 
+of heating technologies and fabric improvement measures. This includes 
+any remaining investment costs of gas boilers ACINV,GB, electric boilers 
+I. De Mel et al.                                                                                                                                                                                                                                  
+Energy 268 (2023) 126651
+5
+ACINV,EB, heat pumps ACINV,pump, hot water tanks ACINV,tank, and insu-
+lation ACINV,Insl. It also includes operational costs calculated for each 
+season, such as the total seasonal cost of purchasing electricity Cgrid
+s 
+and 
+gas COM,GB
+s 
+from external networks: 
+min TAC = ACINV,GB + ACINV,EB + ACINV,pump + ACINV,tank + ACINV,Insl
++
+∑
+s∈S
+(
+Cgrid
+s
++ COM,GB
+s
+)
+(1) 
+The equations associated with each of the terms in this objective 
+function are presented in the subsequent sub-sections. This objective 
+function does not consider carbon emissions. An alternative multi- 
+objective formulation which encompasses the impacts of carbon emis-
+sions using a carbon cost CCARBON (further described by equation S(E4) – 
+SE7 in Appendix B: Further calculations), is given below. 
+min TAC = ACINV,GB + ACINV,EB + ACINV,pump + ACINV,tank + ACINV,Insl
++
+∑
+s∈S
+(
+Cgrid
+s
++ COM,GB
+s
+)
++ CCARBON
+(2) 
+Note that the model has been implemented such that each season s ∈
+S can be solved independently, as previously presented by Ref. [39], 
+where linking constraints ensure that key variables remain the same 
+across each season. The capacity of each heating and storage technology 
+considered in this study, indicated by HT for notational simplicity, must 
+remain the same across each season for each cluster and technology: 
+If s > 1CapHT
+i,s = CapHT
+i,s−1∀i ∈ I, s ∈ S
+(3) 
+The investment cost formulation for each technology is presented in 
+each relevant subsection. The overall electrical and thermal power 
+balances applicable to each season are presented below. Note that 
+subscript s has been removed in the subsequent formulations for nota-
+tional simplicity. 
+The satisfaction of electricity demand Eload
+i,t 
+is described as below, 
+where Egrid
+i,t is the power bought from the grid to satisfy the loads. The 
+power consumption by heating technologies such as electric boilers 
+Eboiler
+i,t,b and heat pumps Epump
+i,t,p are also included in this constraint. Note that 
+no electricity generating technologies are considered in this study, as the 
+primary focus is heating. 
+Eload
+i,t
++
+∑
+b
+Eboiler
+i,t,b
++
+∑
+p
+Epump
+i,t,p ≤ Egrid
+i,t ∀i ∈ I, t ∈ T
+(4) 
+Heat load Hload
+i,t is the summation of hot water HHW
+i,t and space heating 
+HSH
+i,t demands. Energy efficiency improvement measures, such as insu-
+lation measures, are included in this formulation, which have the po-
+tential to reduce the space heating demand. To account for these, an 
+average demand reduction Ri,j per insulation measure j ∈ J is applied. A 
+binary variable Wi,j is used to indicate selection of insulation measures, 
+while Ii,j is a parametric indicator for whether a cluster is eligible for the 
+insulation type based on its characteristics (Note that these measures are 
+further detailed in Section 2.3). 
+Hload
+i,t
+= HHW
+i,t + HSH
+i,t
+(
+1 −
+∑
+j
+Wi,j ⋅ Ri,j.Ii,j
+)
+∀i ∈ I, t ∈ T
+(5) 
+The heating load is met by the boiler’s heat Hboiler
+i,t,b and heat discharge 
+Hdisch
+i,t,k of the hot water storage tank associated with a heat pump: 
+Hload
+i,t
+≤
+∑
+b
+Hboiler
+i,t,b ⋅Δt +
+∑
+k
+Hdisch
+i,t,k ∀i ∈ I, t ∈ T
+(6) 
+The seasonal cost of buying electricity from the grid Cgrid is calculated 
+based on the electricity purchased, the associated tariff Pgrid
+t 
+which may 
+or may not be time-dependent, and the time interval Δt, and the number 
+of days in each season Ndays: 
+Cgrid =
+∑
+i,t
+Egrid
+i,t ⋅Δt⋅Pgrid
+t
+⋅Ndays
+(7)  
+2.2. Heating technologies 
+2.2.1. Boilers 
+There are several constraints common to both gas boilers and electric 
+boilers, for which the combined b ∈ B ∈ [GB, EB] has been utilised. A 
+dwelling i is limited to one boiler through the use of a binary variable 
+Bi,b. The boiler b can also only produce heat if Bi,b is equal to 1 to indicate 
+its installation at i. 
+∑
+b
+Bi,b ≤ 1∀i ∈ I
+(8) 
+A Big-M constraint is used to enforce a logical constraint, where heat 
+from the boiler Hboiler
+i,t,b should only be produced if the boiler b has been 
+selected for the dwelling. In these constraints, M is a large value which 
+acts as an upper bound while avoiding nonlinearity. In this case, M is 
+assigned a value of 100 kW, large enough to exceed any reasonable 
+domestic boiler output. 
+Hboiler
+i,t,b
+≤ M⋅Bi,b∀i ∈ I, t ∈ T, b ∈ B
+(9) 
+The boiler capacity capboiler
+b 
+is chosen to ensure that the heat demand 
+at each timepoint is met. The heat produced by boiler b at each time 
+point cannot exceed this capacity: 
+Hboiler
+i,t,b
+≤ capboiler
+b
+⋅Bi,b
+(10) 
+As the boiler can be either fuelled by gas or electricity, both must be 
+considered when calculating the output. The fuel demands, Eboiler
+i,t,b 
+or 
+Gboiler
+i,t,b for electricity and gas, respectively, is multiplied by the respective 
+efficiency ηb. The parameters ELECb ∈ {0, 1} and GASb ∈ {0, 1} are used 
+to indicate the type of boiler (where ELECb = 1 if b is an electric boiler), 
+such that the correct fuel type is used. 
+Hboiler
+i,t,b
+=
+(
+Eboiler
+i,t,b ⋅ ELECb + Gboiler
+i,t,b ⋅ GASb
+)
+⋅ Δt ⋅ ηb∀i ∈ I, t ∈ T, b ∈ B
+(11) 
+The annualised boiler investment costs for gas boilers ACINV,GB and 
+electric boilers ACINV,EB are calculated below, where CCboiler
+b 
+is the capital 
+cost of boiler b (£), ICboiler is the installation cost in £ and Nhouses
+i 
+defines 
+the number of houses in cluster i. CRF is the capital recovery factor used 
+to annualise the costs. Note that the grant contribution towards each 
+boiler type is also considered, Ci,g,d∈GB and Ci,g,d∈EB (see Section 2.4 for 
+further details). 
+ACINV,GB=
+∑
+i
+∑
+b
+GASb
+(
+Bi,b⋅
+(
+CCboiler
+b
++ICboiler)
+−
+∑
+g
+Ci,g,d∈GB
+)
+⋅Nhouses
+i
+⋅CRF
+(12)  
+ACINV,EB=
+∑
+i
+∑
+b
+ELECb
+(
+Bi,b⋅
+(
+CCboiler
+b
++ICboiler)
+−
+∑
+g
+Ci,g,d∈EB
+)
+⋅Nhouses
+i
+⋅CRF
+(13) 
+The CRF is calculated as shown below, considering the interest rate r 
+and the number of years n, equivalent to the lifetime of the all the 
+technologies considered. 
+CRF =
+r(1 + r)n
+(1 + r)n − 1
+(14) 
+The operating cost of the boiler results from either gas or electricity 
+usage. As the term ∑
+b
+Eboiler
+i,t,b is already included in electricity balance 
+formulation, only gas costs COM,GB need to be calculated. CGAS is the fuel 
+price (£/kWh). 
+I. De Mel et al.                                                                                                                                                                                                                                  
+Energy 268 (2023) 126651
+6
+COM,GB =
+∑
+i,b
+Gboiler
+i,t,b ⋅Δt⋅CGAS
+(15)  
+2.2.2. Heat pumps 
+When a heat pump p ∈ P is installed in a dwelling, it is always 
+coupled with a hot water storage tank [40]. These have subscript k ∈ K. 
+Pump capacity cappump
+t,p 
+and Coefficient of Performance CoPt,p are based 
+on nonlinear functions of the ambient temperature Tamb that are divided 
+into six linear formulations through piecewise linearisation. The co-
+efficients a, b, c and d vary per pump model. Performance data and the 
+piecewise temperature intervals are sourced from a Mitsubishi Electric 
+Renewable Heating Databook [41]. These formulations for capacities 
+and CoPs are defined as Eqs. (16) and (17), respectively. 
+if Tamb
+t
+> 15 ◦C, cappump
+t,p
+= a6p ⋅
+(
+Tamb
+t
+− 15
+)
++ b6p∀i ∈ I, t ∈ T, p ∈ P
+(16)  
+if 15 ◦C ≥ Tamb
+t
+> 12 ◦C, cappump
+t,p
+= a5p ⋅
+(
+Tamb
+t
+− 12
+)
++ b5p∀i ∈ I, t ∈ T, p ∈ P  
+if 12 ◦C ≥ Tamb
+t
+> 7 ◦C, cappump
+t,p
+= a4p ⋅
+(
+Tamb
+t
+− 7
+)
++ b4p∀i ∈ I, t ∈ T, p ∈ P  
+if 7 ◦C ≥ Tamb
+t
+> 2 ◦C, cappump
+t,p
+= a3p ⋅
+(
+Tamb
+t
+− 2
+)
++ b3p∀i ∈ I, t ∈ T, p ∈ P  
+if 2 ◦C ≥ Tamb
+t
+> − 7 ◦C, cappump
+t,p
+= a2p ⋅
+(
+Tamb
+t
+− (−7)
+)
++ b2p∀i ∈ I, t ∈ T, p
+∈ P  
+if − 7 ◦C ≥ Tamb
+t
+> − 10 ◦C, cappump
+t,p
+= a1p ⋅
+(
+Tamb
+t
+− (−10)
+)
++ b1p∀i ∈ I, t ∈ T, p
+∈ P  
+if Tamb
+i
+◦C ≤ − 10 ◦C, cappump
+t,p
+= 0∀i ∈ I, t ∈ T, p ∈ P  
+if Tamb
+t
+> 15 ◦C, CoPpump
+t,p
+= c6 ⋅
+(
+Tamb
+t
+− 15
+)
++ d6∀i ∈ I, t ∈ T, p ∈ P
+(17)  
+if 15 ◦C ≥ Tamb
+t
+> 12 ◦C, CoPpump
+t,p
+= c5 ⋅
+(
+Tamb
+t
+− 12
+)
++ d5∀i ∈ I, t ∈ T, p ∈ P  
+if 12 ◦C ≥ Tamb
+t
+> 7 ◦C, CoPpump
+t,p
+= c4 ⋅
+(
+Tamb
+t
+− 7
+)
++ d4∀i ∈ I, t ∈ T, p ∈ P  
+if 7 ◦C ≥ Tamb
+t
+> 2 ◦C, CoPpump
+t,p
+= c3 ⋅
+(
+Tamb
+t
+− 2
+)
++ d3∀i ∈ I, t ∈ T, p ∈ P  
+if 2 ◦C ≥ Tamb
+t
+> − 7 ◦C, CoPpump
+t,p
+= c2 ⋅
+(
+Tamb
+t
+− (−7)
+)
++ d2∀i ∈ I, t ∈ T, p ∈ P  
+if − 7 ◦C ≥ Tamb
+t
+> − 10 ◦C, CoPpump
+t,p
+= c1 ⋅
+(
+Tamb
+t
+− (−10)
+)
++ d1∀i ∈ I, t ∈ T, p
+∈ P  
+if Tamb
+t
+≤ − 10 ◦C, CoPpump
+t,p
+= 0.0001∀i ∈ I, t ∈ T, p ∈ P 
+The binary variable Ai,p indicates whether pump p is in use, with (18) 
+constraining the system such that only one pump can be used at each 
+house. The Big-M constraint (19) ensures that linearity can be main-
+tained for the logical constraint where a pump p can only provide heat to 
+tank k if the pump is in use. 
+∑
+p
+Ai,p ≤ 1∀i ∈ I
+(18)  
+Hpump
+i,t,p,k ≤ M⋅Ai,p∀i ∈ I, t ∈ T, p ∈ P
+(19) 
+A boiler and a heat pump cannot both be installed simultaneously at 
+house i: 
+∑
+i,p
+Ai,p +
+∑
+i,b
+Bi,b ≤ 1
+(20) 
+The electricity demand in kWh to run the pump is defined by (21), 
+where Hpump
+i,t,p,k is the heat produced by the pump. 
+Epump
+i,t,p ≤
+∑
+k
+Hpump
+i,t,p,k
+CoPpump
+t,p
+∀i ∈ I, t ∈ T, p ∈ P
+(21) 
+Heat produced by the pump in kWh cannot exceed its capacity at 
+time t. 
+∑
+k
+Hpump
+i,t,p,k ≤ cappump
+t,p
+⋅Δt∀i ∈ I, t ∈ T, p ∈ P
+(22) 
+The annualised pump investment cost ACINV,pump is calculated by (23), 
+where CCpump
+p 
+is the capital cost of pump p in £ and ICpump is the instal-
+lation cost (£). It also takes the grant contribution towards ASHPs into 
+account Ci,g,d∈P; see Section 2.4 for further details. 
+ACINV,pump =
+∑
+i,p
+((
+Ai,p ⋅
+(
+CCpump
+p
++ ICpump)
+−
+∑
+g
+Ci,g,d∈P
+)
+⋅ Nhouses
+i
+)
+⋅CRF
+(23)  
+2.2.3. Hot water storage tanks 
+Heat into the hot water tank Hchar
+i,t,k at house i at time t is equal to the 
+sum of all heat pump outputs: 
+Hchar
+i,t,k =
+∑
+p
+Hpump
+i,t,p,k ∀i ∈ I, t ∈ T, k ∈ K
+(24) 
+The binary variable Zi,k indicates whether tank k ∈ K is in use, with 
+(25) constraining the system such that only one tank can be used at each 
+house. The Big-M constraint (26) ensures that heat from heat pumps 
+Hchar
+i,t,k can only flow into tank k if Zi,k = 1. 
+∑
+k
+Zi,k ≤ 1∀i ∈ I, k ∈ K
+(25)  
+Hchar
+i,t,k ≤ M⋅Zi,k∀i ∈ I, t ∈ T, k ∈ K
+(26) 
+For modelling purposes, the temperature in the tank Ti,t,k can take on 
+a value of zero if the tank is not used (i.e., when Zi,k = 0). When Zi,k = 1, 
+the tank temperature must be maintained above a set minimum Tmin. 
+Ti,t,k ≥ Tmin⋅Zi,k∀i ∈ I, t ∈ T, k ∈ K
+(27) 
+The temperature in the tank is equal to the effective heat Hi,t,k (en-
+ergy available for heating above room temperature Troom) plus room 
+temperature, set here as 20 ◦C. Any heat within the tank below room 
+temperature cannot be used to heat the room in this system without 
+infringing the Second Law of Thermodynamics. As a result, Hi,t,k only 
+concerns heat at temperatures above 20 ◦C. Multiplying Troom by the 
+binary variable Zi,k sets the temperatures of unused tanks to 0. The 
+specific heat capacity cw of water is 0.00116 kW h/kgK. Water density 
+and volume of the tank are ρ and Vk, respectively. 
+Ti,t,k = Hi,t,k
+cwρVk
++ Troom⋅Zi,k∀i ∈ I, t ∈ T, k ∈ K
+(28) 
+Eq. (29) limits the temperature in the tank to the water supply 
+temperature Tws
+p of the heat pump (for these pumps, 55 ◦C). 
+Ti,t,k ≤ Tws
+p ∀i ∈ I, t ∈ T, k ∈ K
+(29) 
+Eqs. (30) and (31) return the effective heat Hi,t,k (heat above room 
+temperature) in the hot water tank at time t, which is equal to the heat at 
+(t −1) and the heat charged Hchar
+i,t,k into the tank, minus the heat dis-
+charged Hdisch
+i,t,k to the dwelling and heat losses Hloss
+k 
+in kW to the sur-
+roundings. In this model, it is assumed that the starting temperature of 
+the tank is Tmin. Hence, the Hi,t−1,k term for (31) equals the effective heat 
+at this temperature when t = 1. Including Zi,k ensures that this only 
+applies to the tank k being used. 
+I. De Mel et al.                                                                                                                                                                                                                                  
+Energy 268 (2023) 126651
+7
+if t > 1, Hi,t,k = Hi,t−1,k +
+(
+Hchar
+i,t,k −
+(
+Hdisch
+i,t,k + Hloss
+k
+⋅ Δt
+))
+∀i ∈ I, t ∈ T, k ∈ K
+(30)  
+if t = 1, Hi,t,k = Zi,k ⋅
+(
+Tmin − Troom)
+⋅ (ρcwVk) +
+(
+Hchar
+i,t,k −
+(
+Hdisch
+i,t,k
++ Hloss
+k
+⋅ Δt
+))
+∀i ∈ I, t ∈ T, k ∈ K
+(31) 
+Eq. (32) links the heat at the start t = 1 and end t = FT of the day to 
+ensure that there are no discrepancies between days in each season (as a 
+representative day for each season is employed in this model): 
+Hi,t=1,k = Hi,t=FT,k∀i ∈ I, k ∈ K
+(32) 
+Eq. (33) calculates the annualised investment cost ACINV,tank of the 
+tanks. Note that Ci,g,d∈K represents the contribution towards the capital 
+costs from grants g ∈ G, for technologies d ∈ K which represents tanks; 
+see Section 2.2.3. 
+ACINV,tank =
+∑
+i,k
+((
+Zi,k ⋅ CCtank
+k
+−
+∑
+g
+Ci,g,d∈K
+)
+⋅ Nhouses
+i
+)
+⋅CRF
+(33)  
+2.3. Insulation measures 
+The average demand reduction Ri,j for each insulation measure, first 
+presented in Eq. (5), is considered. The sum of percentage reductions 
+from these insulation measures cannot exceed 1: 
+∑
+j
+Wi,j⋅Ri,j⋅Ii,j ≤ 1∀i ∈ I
+(34) 
+The overall annualised cost of installing insulation measures 
+ACINV,insul takes into account the capital cost of each measure Cins
+i,j . A cost 
+adjustment factor CAi is used to adjust the capital cost if the dwelling i is 
+a bungalow, as the average values for Cins
+i,j used are applicable to houses 
+(values are provided in Appendix E). The grant contribution towards 
+each insulation measure is also considered by Ci,g,j. 
+ACINV,insul = CRF⋅
+∑
+i
+∑
+j
+Wi,j⋅Cins
+i,j ⋅CAi −
+∑
+g
+Ci,g,j
+(35) 
+As the insulation measures do not have a variable for capacity, a 
+linking constraint for the seasonal binary variable Wi,j,s is utilised to 
+ensure that the same insulation measure is selected across seasons. 
+If s > 1Wi,j,s = CapDER
+i,j,s−1∀i ∈ I, j ∈ J, s ∈ S  
+2.4. Policy formulation 
+The set g ∈ G for policies and grants includes those contributing to 
+capital costs. All heating technologies and insulation measures are now 
+defined as set d ∈ D = {GB, EB, P, J} (see Section 3.3 for the specific 
+grants considered). 
+A parametric indicator Igr
+i,g,d ∈ {0, 1} is used for all eligible heating 
+technologies and insulation measures to represent whether cluster i is 
+eligible for measure d under grant g as a primary measure. Each dwelling 
+also has to be assessed for its eligibility, based on characteristics such as 
+EPC band. This is indicated by another parameter Ied
+i,g ∈ {0, 1}. Binary 
+variable Yi,g,d indicates whether the grant g has been used for cluster i 
+and measure d. If a cluster does not have an eligible primary measure for 
+grant g, then the binary variable must be zero: 
+Yi,g,d ≤ Igr
+g,d⋅Ied
+i,g∀i ∈ I, d ∈ D, g ∈ G
+(36) 
+A second parametric indicator Isec
+g,d is used to indicate whether a 
+measure is eligible as a secondary measure. Secondary measures can 
+only be installed if a primary measure, such as insulation, has been 
+installed, as in (37). If no insulation measures can be installed, this 
+constraint can be neglected for i. This applies to any policy where only 
+one primary measure must be chosen before a secondary measure can be 
+installed, for each cluster and each policy. The eligibility of primary and 
+secondary insulation measures is defined by Ii,j. 
+if
+∑
+j
+Ii,j ∕= 0 then
+∑
+d
+(
+Yi,g,d
+(
+1 − Isec
+g,d
+))
+≥ Yi,g,d ⋅ Isec
+g,d∀i ∈ I, d ∈ D, g ∈ G
+(37) 
+Note that Yi,g,d∈J can only be 1 if insulation measure j is eligible for 
+installation at dwelling i, as indicated by the insulation parameter Ii,j. 
+∑
+g
+Yi,g,d∈J ≤ Ii,j∀i ∈ I, d ∈ D, g ∈ G
+(38) 
+The nonnegative grant contribution towards the capital cost of a 
+technology or measure Ci,g,d can only take a value greater than zero if the 
+binary variable takes the value 1. This is presented as a big-M constraint. 
+Ci,g,d ≤ M⋅Yi,g,d∀i ∈ I, d ∈ D, g ∈ G
+(39) 
+Parameter CCg represents the maximum contribution offered by the 
+grant for eligible measures for each household. The total grant contri-
+bution for each dwelling has to be less than or equal to this maximum 
+cost reduction. 
+∑
+d∈D
+Ci,g,d ≤ CCg∀i ∈ I, g ∈ G
+(40) 
+Similar to the maximum grant contribution imposed on each 
+household, there is also a maximum grant contribution available to the 
+region or local area assessed, CCT
+g. Therefore, the summation of the grant 
+contributions for this local area, accounting for the total number of 
+houses in each cluster Nhouses
+i
+, cannot exceed CCT
+g. 
+∑
+i∈I,d∈D
+Ci,g,d⋅Nhouses
+i
+≤ CCT
+g g ∈ G
+(41) 
+The total grant contribution for each technology d must be less than 
+or equal to the capital cost incurred by the technology d. Eq. (42) rep-
+resents this for insulation, where the insulation capital cost Cins
+i,j , cost 
+adjustment factor for bungalows CAi, and the binary variable Wi,j indi-
+cating the selection of the measure, are all utilised. Eq. (43) represents 
+this for ASHPs, where the total grant contribution is restricted by the 
+binary selection Ai,p, capital cost of each pump CCpump
+p
+, and installation 
+cost ICpump. Eq. (44) constrains total grant contribution for boilers, where 
+only gas boilers are considered (using the parameter GASb) as existing 
+grants do not fund electric boilers. The boiler binary selection Bi,b, 
+capital cost CCboiler
+b
+, and installation cost ICboiler is also included. The 
+grant contribution for tanks are also considered, as shown in Eq. (45), 
+with respect to its binary selection and capital cost. 
+∑
+g
+Ci,g,d∈J ≤ Wi,j⋅Cins
+i,j ⋅CAi∀i ∈ I, j ∈ J
+(42)  
+∑
+g
+Ci,g,d∈P ≤
+∑
+p
+Ai,p ⋅
+(
+CCpump
+p
++ ICpump)
+∀i ∈ I, p ∈ P
+(43)  
+∑
+g
+Ci,g,d∈GB ≤
+∑
+b
+Bi,b ⋅ GASb
+(
+CCboiler
+b
++ ICboiler)
+∀i ∈ I, b ∈ B
+(44)  
+∑
+g
+Ci,g,d∈K ≤
+∑
+p
+Zi,k⋅CCTank
+k
+∀i ∈ I, k ∈ K
+(45) 
+Only one grant is allowed to contribute towards each technology d, 
+as this is a condition enforced by most grants: 
+∑
+g∈G
+Yi,g,d ≤ 1
+(46) 
+The equations above outline all the policy constraints introduced 
+into the model formulation. Additionally, a discounted VAT of 5% is 
+applied to the to the capital expenses of all insulation measures as a pre- 
+optimisation calculation [42]. 
+I. De Mel et al.                                                                                                                                                                                                                                  
+Energy 268 (2023) 126651
+8
+3. Case study 
+3.1. Housing stock 
+The case study tested is a stock of 1658 dwellings in the borough of 
+Woking, Surrey, England. The majority of grants only apply to low- 
+income households, and thus the social housing sector was chosen. For 
+such dwellings, retrofit investment costs are incurred by the housing 
+association, Woking Borough Council, and utility bills are paid by the 
+household residents. 
+Information on dwelling type (e.g., house), dwelling type detail (e.g., 
+detached) and Energy Performance Certificate (EPC) score was provided 
+by the Council. To reduce computational complexity, the dwellings were 
+clustered such that each cluster represented a type, type detail and EPC 
+band. Large groups, such as flats with EPC C, were further divided 
+further. The 39 resultant clusters are displayed in Appendix C: Dwelling 
+clusters. 
+Energy demands for these clusters were determined using the Cam-
+bridge Housing Model (CHM). This model uses data from the 2011 En-
+glish Housing Survey to estimate emissions and energy use for 22 million 
+dwellings in England and Scotland. The dwellings are sorted into 14,951 
+housing codes by region, tenure type, EPC rating and more than 100 
+further building physics parameters [44]. Monthly energy demands for 
+the housing codes most representative of the clusters were aggregated 
+into four seasons. Dividing by the number of days resulted in a repre-
+sentative day for each season and housing cluster. Hourly energy con-
+sumption behaviour is based on data from Morvaj et al. [45]. The CHM is 
+also used to determine baseline emissions CO2eannual
+baseline, against which 
+emissions reduction will be determined. A Surrey County target reduc-
+tion of 61% by 2035 will be considered in the new scenarios and designs 
+[46], indicated by CO2eannual
+new
+, which is described below in Eq. (47). 
+CO2eannual
+baseline − CO2eannual
+new
+CO2eannual
+baseline
+≤ 0.61
+(47) 
+Consequently, a projected reduced carbon intensity of the electrical 
+grid in 2035, taken as 15 gCO2e/kWh, as predicted in the Sixth Carbon 
+Budget [47]. 
+3.2. Design options 
+Six boilers and three ASHPs are considered as heating technology 
+options, as presented in Table 1 and Table 2, respectively. Note that the 
+overall system lifetime is considered to be 20 years, i.e., all installed 
+technologies are assumed to be operational for a total period of 20 years. 
+The coefficients used in the piecewise linearisation for cappump
+t,p 
+and 
+CoPpump
+t,p 
+are presented in Appendix F: ASHP coefficients. The capacity 
+listed by Mitsubishi Electric is included in Table 2 [48]. To use an ASHP 
+as a heating source, a hot water storage tank must also be installed, the 
+options for which are presented in Table 3. 
+Optionally, the clusters are allowed to retrofit the insulation mea-
+sures listed in Table 4. The average space heating demand reduction RI,j 
+is determined using the CHM. The eligibility of a cluster to install an 
+insulation form is dependent on the wall, loft and window characteris-
+tics defined in the CHM. Loft insulation is considered to be retrofitted to 
+300 mm. As the existing loft insulation at the clusters vary in thickness, 
+the effect of retrofitting is strongly cluster dependent. Hence, the Ri,loft 
+differs per cluster – as defined in Appendix G: Loft insulation perfor-
+mance. Costs are sourced from Ref. [49] and, where applicable, a VAT 
+discount [50] has been applied. The number of eligible insulation 
+measures available for the total case study (1658 dwellings) is outlined 
+in Table 5. 
+3.3. Grants and scenarios 
+The existing applicable grants are presented in Table 6. As Green 
+Jump Surrey is a county addition to the Green Homes Grant, the two are 
+combined into one grant, as in Table 7. Budget limitations for the Social 
+Housing Decarbonisation Fund differ based on the dwelling’s EPC rat-
+ing. Hence, the fund is divided into the individual grants. This fund also 
+has its own unique set of constraints (SE1 – SE3), outlined in Appendix 
+A: SHDF specific constraints. Note that no grants apply to homes rated 
+EPC A, B or C. Relevant assumptions for Table 7 are discussed in Ap-
+pendix D: Policy assumptions. Primary and secondary measures are re-
+flected by a ‘P’ and ‘S’, respectively. The limits CCT
+GHG GJS, CCT
+PROP and 
+CCPROP are set to a value sufficiently high for the grant to effectively be 
+unlimited. 
+Three scenarios are constructed based on these grants. The No Grant 
+scenario omits any form of government contributions. The Business-as- 
+Usual, or BAU, scenario includes the grants currently applicable to 
+Woking Borough. These include GHG-GJS, ECO and SHDF. The Proposed 
+scenario additionally includes the PROP grant, an unlimited grant that 
+also funds hot water tanks – a key investment overlooked by existing 
+strategy. Their emissions and annual energy bills are compared to a 
+baseline defined by the case study’s existing heating installations, as per 
+the Cambridge Housing Model. These installations consist of electric 
+boilers and gas boilers with efficiencies often lower than state-of-the-art 
+options. 
+4. Results and discussion 
+4.1. No carbon tax 
+This section discusses the results of the optimal design, utilising Eq. 
+(1) as the objective function without carbon costs, under the three sce-
+narios. Additionally, Surrey’s emissions target is tested by constraining 
+the system to achieve an ER of at least 61% by 2035. The total 
+annualised costs and associated carbon emissions reductions are pre-
+sented in Table 8. Under the Proposed scenario, an ER of 66.8% is ach-
+ieved, regardless of the 61% constraint. This is due to the availability of 
+sufficient funding from the grants that enable the retrofit all EPC D/E/F 
+dwellings with air-source heat pumps and insulation measures, 
+decreasing carbon emissions beyond the 61% ER target. 
+4.1.1. Insulation 
+Fig. 2a reflects the number of insulation measures installed under the 
+Table 1 
+Parameters for boilers.  
+Boiler 
+capboiler
+b 
+(kW) 
+CCboiler
+b 
+(£) 
+ηb 
+Type 
+7E 
+7 
+1,030 
+1.000 
+Electric 
+11E 
+11 
+1,110 
+1.000 
+Electric 
+12E 
+12 
+1,439 
+1.000 
+Electric 
+24G 
+24 
+811 
+0.911 
+Gas 
+25G 
+25 
+744 
+0.891 
+Gas 
+30G 
+30 
+852 
+0.891 
+Gas  
+Table 2 
+Parameters for ASHPs.  
+ASHP 
+Listed capacity (kW) 
+CoP at Tamb
+t
+= 2◦C 
+CCpump
+p 
+(£) 
+Tws
+p (◦C) 
+HP50 
+5.0 
+1.98 
+2,333 
+55 
+HP60 
+6.0 
+2.45 
+3,053 
+55 
+HP85 
+8.5 
+2.30 
+3,577 
+55  
+Table 3 
+Parameters for hot water tanks.  
+Hot water tank 
+Vk (L) 
+CCTank
+k 
+(£) 
+Hloss
+k 
+(kW) 
+150 L 
+150 
+1,510 
+0.048 
+170 L 
+170 
+1,565 
+0.051  
+I. De Mel et al.                                                                                                                                                                                                                                  
+Energy 268 (2023) 126651
+9
+various scenarios with no ER constraint. No Grant results indicate that, 
+for loft and cavity wall insulation, operating expenditure (OPEX) savings 
+from retrofitting can outweigh its capital expenditure (CAPEX) over the 
+course of the assumed 20-year timeline. All 257 eligible dwellings install 
+cavity wall insulation, with 319 of 330 eligible energy inefficient 
+households also retrofitting loft insulation. However, despite 434 EPC 
+A/B/C dwellings being eligible for loft insulation, the model predicts 
+that only 5 benefit financially from installing such measure. This is likely 
+due to the demand reduction factor Ri,j being lower for these house-
+holds, as can be expected for these relatively energy efficient homes. 
+Section 3.2 states that solid wall insulation can reduce space heating 
+demand significantly. However, with high investment costs starting at 
+£2188, no dwellings are able to achieve sufficient OPEX savings for it to 
+be financially advantageous within 20 years. In the BAU scenario, 
+however, the SHDF grant provides sufficient funding for 100 of 250 
+eligible households to install solid wall insulation. Due to double glazing 
+having the highest upfront cost and the lowest Ri,j value, none of the 90 
+eligible dwellings install this measure under the No Grant and BAU 
+scenarios. It is only retrofitted under the Proposed scenario, where the 
+unlimited PROP budget is able to fully fund any insulation for homes 
+with EPC D/E/F. Note that homes with EPC A/B/C are not eligible for 
+any grants, and hence demonstrate no change across scenarios. 
+After the model is constrained such that carbon emissions must be 
+reduced by 61% from baseline values, the trends identified in Fig. 2a do 
+not apply. In the No Grant scenario, a significant increase in retrofitting 
+the dwellings in the A/B/C group occurs, with an additional 268 
+dwellings installing loft insulation. Furthermore, 150 EPC D/E/F 
+dwellings install the financially unattractive solid wall insulation to 
+achieve Surrey’s ER target. Under BAU, grants are available to EPC D/E/ 
+F households. As a result, an additional 100 solid wall insulation mea-
+sures are installed and the focus is shifted towards improving the energy 
+performance of the fuel poor dwellings. This trend continues under the 
+Proposed scenario, where the additional PROP grant provides further 
+funding. The costs to Woking Borough Council associated with these 
+retrofits are outlined in Table 9. Naturally, there are operational cost 
+savings associated with retrofitting insulation measures. These are dis-
+cussed in Section 4.1.3. 
+4.1.2. Heating 
+As demonstrated by the No Grant results in Fig. 3a, heat pumps are 
+not currently an economically attractive form of domestic heating 
+without financial assistance towards their costs. The high investment 
+costs of the ASHPs and accompanying hot water storage tanks result in a 
+CAPEX significantly larger than that of gas boilers. Under BAU, funding 
+is available to promote the installation of ASHPs. Storage tanks, costing 
+at least £1510, remain unfunded, and therefore is a cost incurred to the 
+consumer or council. 
+Table 4 
+Parameters for Insulation measures.  
+Insulation form 
+Ri,j 
+Detached Cins
+i,j (£) 
+Semidetached Cins
+i,j (£) 
+End-terrace Cins
+i,j (£) 
+Mid-terrace Cins
+i,j (£) 
+Flat Cins
+i,j (£) 
+Loft 
+See Appendix G 
+525 
+438 
+438 
+350 
+N/A 
+Cavity 
+0.261 
+534 
+416 
+416 
+341 
+N/A 
+Solid wall 
+0.435 
+4,189 
+3,281 
+3,281 
+2,188 
+N/A 
+Double glazing 
+0.066 
+7,100 
+5,950 
+5,950 
+4,450 
+3,000  
+Table 5 
+Number of eligible insulation measures available to case study.   
+Loft 
+Cavity 
+Solid wall 
+Double glazing 
+Total 
+EPC A/B/C 
+434 
+165 
+0 
+0 
+599 
+EPC D/E/F 
+330 
+92 
+250 
+90 
+762 
+Total 
+764 
+257 
+250 
+90 
+1,361  
+Table 6 
+Existing case study grants.  
+Grant 
+Abbreviation 
+Issuing 
+authority 
+Description 
+Green Homes Grant 
+[51] 
+GHG 
+UK 
+government 
+Supports the investment 
+of low-carbon heating 
+technologies and energy 
+efficiency (insulation 
+measures) for low- 
+income households. 
+Green Jump Surrey 
+[52] 
+GJS 
+Surrey 
+County 
+Council 
+Provides additional 
+investment funds as a 
+top-up for GHG 
+Energy Company 
+Obligation [53] 
+ECO 
+Energy 
+companies 
+Primarily supports the 
+investment of energy 
+efficiency (insulation) 
+measures for low-income 
+households 
+Social Housing 
+Decarbonisation 
+Fund [43] 
+SHDF 
+UK 
+government 
+Supports the investment 
+of low-carbon heating 
+technologies and energy 
+efficiency measures for 
+social housing.  
+Table 7 
+Grant parameters.  
+Grant 
+Eligible 
+EPC 
+Household Limit 
+CCg 
+Case Study Limit 
+CCT
+g 
+Gas 
+Boilers 
+Electric 
+Boilers 
+ASHPs 
+Loft 
+Cavity 
+Solid 
+wall 
+Double 
+glazing 
+Hot water 
+tanks 
+GHG- 
+GJS 
+E,F,G 
+£15,000 
+£300,734 
+– 
+– 
+P 
+P 
+P 
+P 
+– 
+– 
+ECO 
+E,F,G 
+£10,000 
+N/A 
+– 
+– 
+– 
+P 
+P 
+P 
+P 
+– 
+SHDFd 
+D 
+£10,000 
+£402,073 
+– 
+– 
+S 
+P 
+P 
+P 
+P 
+– 
+SHDFe 
+E 
+£12,000 
+£482,488 
+– 
+– 
+S 
+P 
+P 
+P 
+P 
+– 
+PROP 
+D,E,F,G 
+N/A 
+N/A 
+– 
+S 
+S 
+P 
+P 
+P 
+P 
+S 
+Note: ‘P’ indicates Primary and ‘S’ indicates Secondary measures. 
+Table 8 
+Total annualised cost and ER for the optimal solutions.  
+Scenario 
+Total annualised cost (£) 
+Emissions reduction ER 
+No Grant 
+1,982,675 
+31.3% 
+No Granta 
+2,605,957 
+61.1% 
+BAU 
+1,955,946 
+33.5% 
+BAUa 
+2,558,625 
+61.2% 
+Proposed 
+1,873,085 
+66.8%  
+a System constrained to achieving at least 61% carbon emissions reduction 
+from baseline values. 
+I. De Mel et al.                                                                                                                                                                                                                                  
+Energy 268 (2023) 126651
+10
+For the case study timeline, average predicted unit costs for elec-
+tricity and gas are 23.1 and 4.7 p/kWh, respectively [58-60] (see Ap-
+pendix E: Scalars). The OPEX savings from a gas boiler eventually 
+outweigh the higher CAPEX costs, leading to ASHPs being unfavourable 
+for all but one housing cluster: C10 (see Appendix C for all cluster 
+codes). This single-household cluster has an EPC of E, and is therefore 
+also able to fully fund the installation of an ASHP under the SHDF with 
+£10,771 – a value for which other households are ineligible. Under the 
+Proposed scenario, the PROP grant is formulated such that it covers the 
+capital costs of the hot water tanks as well as the heat pumps reducing 
+investment costs for the overall ASHP system by at least £1510. This 
+leads to renewable heating becoming competitive with non-funded gas 
+boilers. Electric boilers do not present themselves as the optimal heating 
+source in any scenarios due to their inefficiency compared to an ASHP’s 
+CoP. These results suggest that financial assistance in the form of grants 
+could play a decisive role in installing more residential heat pumps, 
+especially to support the UK Government’s goal of installing 600,000 
+heat pumps by 2028 [54]. 
+The results presented in. 
+Fig. 3b reflect the heating technologies installed to achieve Surrey’s 
+2035 emissions reduction target. Though gas boilers remain the most 
+prevalent domestic heating source, retrofitting ASHPs is crucial to 
+decreasing emissions by 61% from baseline values. The investment costs 
+associated with the heat pump uptake levels are outlined in Table 10. 
+4.1.3. Grant contributions 
+The increase in costs discussed in the previous section highlights the 
+financial barriers associated with adopting low carbon heating and the 
+importance of an effective decarbonisation strategy. In order to reduce 
+carbon emissions, it is vital grants are constructed such that the mea-
+sures capable of achieving the highest emission reductions are priori-
+tised. All of the grants in this case study, with the exception of GHG-GJS, 
+employ a ‘fabric first’ approach – implying eligible insulation measures 
+must be installed before ASHPs are funded. This promotes the 
+improvement of home energy efficiency, thereby helping to reduce 
+operating costs and thermal discomfort within the homes. A fabric first 
+approach also promotes the reduction of heating demand prior to 
+installing new heating technologies, thereby avoiding the installation of 
+unnecessarily large heating system. However, BAU results in Table 11 
+indicate that, in order to achieve decarbonisation targets, the optimal 
+distribution of grants shifts from funding insulation measures to funding 
+ASHPs. It must be noted that these results are specific to this case study 
+and its grant structures and cannot be considered all-encompassing. 
+‘Fabric first’ constraints are not broken here as insulation measures 
+are installed at the relevant households, though not funded by external 
+grants. Additionally funding these measures would lead to grant budgets 
+being exceeded. 
+Similarly, Table 12 breaks down the grant contributions under the 
+Proposed scenario – which achieves an emissions reduction of 66.8 
+without any emissions target enforced. No limit is set on the PROP grant, 
+and thus no compromises have to be made in terms of budget allocation. 
+This allows for much larger contributions towards minimising emis-
+sions, especially towards costly ASHP investments, reducing the finan-
+cial burden placed on the Council to fund such measures. 
+4.1.4. Energy bills 
+Fuel poverty is linked to a household’s disposable income after en-
+ergy bills have been paid. Hence, decreasing this household energy bill is 
+key. Fig. 4 outlines the average energy bill for those living in EPC D/E/F 
+Fig. 2. Insulation retrofitting with (a) no ER target and (b) a 61% ER target.  
+Table 9 
+Insulation cost changes (excluding grant contributions) under various grant 
+scenarios.  
+Emissions reduction target 
+No grant 
+BAU 
+Proposed 
+No target 
+£233,155 
+£206,081 
+£204,439 
+61% 
+£906,390 
+£1,256,390 
+£204,439 
+Change 
++£673,235 
++£1,050,309 
+–  
+Fig. 3. Heating technologies with (a) no ER target and (b) a 61% ER target.  
+I. De Mel et al.                                                                                                                                                                                                                                  
+Energy 268 (2023) 126651
+11
+homes under the various scenarios. Due to its high unit cost relative to 
+natural gas, electricity consumption dominates the annual expenditure. 
+This is particularly evident when the system is constrained to reducing 
+baseline carbon emissions by 61%. This constraint promotes the use of 
+ASHPs, an electrified form of heating. Though this heating method 
+boasts a higher energy efficiency than boilers, the significant difference 
+in costs between gas and electricity leads to higher total energy bills – 
+despite the additional insulation. Under the Proposed scenario, the 
+households have unlimited funding to install insulation measures that 
+help reduce the overall energy demand, and consequently, electricity 
+consumption costs. However, the annual energy bill remains 4.7% 
+higher than the baseline value. This implies that, without OPEX support 
+and under current tariffs, the decarbonisation of heating will lead to 
+higher annual energy bills and can potentially exacerbate fuel poverty. 
+4.2. Including carbon tax 
+The following section presents results for the multi-objective opti-
+misation model, where Eq. (2) is used as the objective function. Itera-
+tively increasing the weighting of this carbon tax Ctax produces results 
+that reflect the system design at various degrees of decarbonisation. For 
+all scenarios, the first set of results has a Ctax value of zero, mirroring the 
+results discussed in Section 4. With a projected grid carbon intensity of 
+0.015 kgCO2e/kWh, the maximum achievable emission reduction from 
+baseline values is 96.7%. 
+In all cases, a trade-off can be seen between retrofitting insulation 
+measures and ASHPs. The former is cheaper, but has a significantly 
+smaller impact on decarbonisation performance of the system. Under the 
+No Grant scenario, increasing insulation from 581 to 1234 installations 
+results in a minor increase in emission reductions – reflected by the 
+change from 31.3% to 37.5% in Fig. 5a. As weighting on carbon emis-
+sions increases, the system is driven to decarbonise further by installing 
+ASHPs, which have a greater impact on driving down carbon emissions 
+when compared to insulation measures. This results in a compromise 
+between insulation measures and ASHPs, where insulation investment is 
+reduced to facilitate increased ASHP installation, especially in instances 
+where the tax is not sufficiently high for the simultaneous increase in 
+insulation investment and ASHP installation to be cost-effective. The 
+additional ASHPs allow the system to increase emissions reduction from 
+37.5% to 51.5%. Another notable trend from Fig. 5 is the phasing out of 
+gas boilers. Under all scenarios, the system achieves an ER of more than 
+90% without fully phasing out gas boilers. This is likely due to the gas 
+boiler options presented in Table 1 boasting high thermal efficiencies 
+(reflecting technological improvements as seen in reality), relative to 
+existing installations. As the carbon tax weighting increases significantly 
+more than other costs, these final boilers are replaced by their electric 
+counterparts due to their relatively low investment cost, relative to 
+ASHPs. The dwellings at which these are installed are those with the 
+lowest heating demand. For these households, the operational savings 
+from an ASHP do not outweigh the high associated investment costs. 
+This implies that electric boilers may be a promising solution to the 
+decarbonisation of small homes – provided they are powered by low- 
+carbon electricity. If the source of electricity is not fully carbon 
+neutral, however, then the efficient nature of ASHPs leads to them being 
+Table 10 
+Heating investment costs (excluding grant contributions) under various grant scenarios.  
+Emissions reduction target 
+No grant 
+BAU 
+Proposed 
+ASHPs 
+Gas boilers 
+ASHPs 
+Gas boilers 
+ASHPs 
+Gas boilers 
+No target 
+£0 
+£4,591,542 
+£0 
+£4,588,831 
+£0 
+£2,336,097 
+61% 
+£5,240,037 
+£3,076,856 
+£4,837,964 
+£3,074,146 
+£0 
+£2,336,097 
+Change 
++£5,240,037 
+-£1,514,686 
++£4,837,964 
+-£1,514,685 
+– 
+–  
+Table 11 
+Total grant contributions and consumer investments under BAU with and 
+without an ER target.  
+Emissions 
+reduction 
+target 
+ASHP 
+grant 
+funding 
+Remaining 
+ASHP 
+investmenta 
+Insulation 
+grant 
+funding 
+Remaining 
+Insulation 
+investmenta 
+No target 
+£10,771 
+£0 
+£402,073 
+£206,081 
+61% 
+£411,600 
+£4,837,963 
+£0 
+£1,256,390  
+a Note that these remaining costs are to be paid by the Council. 
+Table 12 
+Total grant contributions under the Proposed Scenario.  
+ASHP grant 
+funding 
+Insulation grant 
+funding 
+Hot water tanks 
+Electric 
+boilers 
+£7,945,720 
+£1,388,662 
+£1,232,548 
+£0  
+Fig. 4. Average annual energy bills for the fuel poor (based on Eqs. (7) and (15)).  
+I. De Mel et al.                                                                                                                                                                                                                                  
+Energy 268 (2023) 126651
+12
+Fig. 5. Increasing carbon penalty results under the (a) No Grant (b) BAU and (c) Proposed Scenario.  
+I. De Mel et al.                                                                                                                                                                                                                                  
+Energy 268 (2023) 126651
+13
+the sole solution in this case study to minimising carbon emissions, as 
+reflected by the results for ER = 96.7% in all scenarios. 
+4.3. Model limitations 
+The modelling framework proposed in this study tests the efficacy of 
+residential heating and energy efficiency grants. In the case study tested, 
+the Proposed scenario was used to highlight the importance of funding 
+hot water storage tanks and the budget limitations of the current grant 
+structure. In reality, such budget limitations are set due to the larger 
+macroeconomic effects local authorities and governments may suffer. 
+This modelling framework is unable to analyse such effects. The model 
+also assumes that all installations are made in the beginning of the 
+modelling period considered, and is unable to recommend the optimal 
+year of installation. Such a model would require predictions on future 
+grants and budgets, changes to technology measures such as declining 
+costs and increased efficiencies, and potential changes to demand pro-
+files. Furthermore, the thermal comfort and health benefits associated 
+with improved quality of housing through insulation upgrades are not 
+considered. Future work could include government expenditure and its 
+contributions from different sources within the objective function and 
+modelling framework, which would capture a more optimal scenario for 
+both the private and public sectors. 
+5. Conclusions 
+This study aims to address the lack of optimisation frameworks to 
+support decision-making in decarbonising residential heating systems. It 
+does so by developing an MILP framework which captures key design, 
+operational, and financial decision variables for low-carbon heat gen-
+eration and storage, insulation measures to reduce energy demand, and 
+requirements and contributions from policies associated with the former 
+two. Additionally, the nonlinear nature of a heat pump’s performance is 
+represented through piecewise linearisation. Detailed policy re-
+quirements are integrated using generic formulations that can be 
+applied to a range of capital investment grants. Consequently, the 
+framework can be applied to a variety of case studies to aid stakeholders 
+in their policy decision making process. 
+For this study, housing stock and policies specific to Woking Borough 
+Council are used as a test case. Three scenarios are tested alongside 
+Surrey County’s carbon emission reduction target to examine the effi-
+cacy of the grants in place. The framework is used to quantitatively 
+assess how effective various policy and technology combinations are in 
+achieving practical objectives such as lowering operational costs or 
+maximising carbon emissions reductions. Results for this case study 
+illuminate that.  
+1. Utilising the existing grant structure contributes to 31.3% emission 
+reduction, which does not meet the Council’s target reduction of 
+61% by 2035.  
+2. A nearly 30-fold increase in investment on low-carbon technologies 
+is required to achieve the 61% target.  
+3. The maximum emission reduction that can be achieved with current 
+low-carbon heating technology (with an unlimited grant) at the 
+projected carbon intensity of the electrical grid is 96.7%.  
+4. Capital investment in insulation measures can be outweighed by 
+operational cost savings, i.e., the reduction in energy bills.  
+5. Without operational incentives, the electrification of heating would 
+lead to an increase in utility costs incurred by the consumer, which 
+could exacerbate fuel poverty. 
+Thus, the framework provides invaluable information to support 
+decision-making, such as the limits of the system, feasible technological 
+options, and policy contributions required to achieve decarbonisation 
+targets. 
+Further research would benefit from setting realistic grant budgets 
+under the Proposed scenario. Also, grant contribution data from Table 8 
+can be used to reformulate existing grants from BAU in a separate sce-
+nario. For this case study, the optimal grant allocation is shifted from 
+retrofitting insulation measures to ASHPs, when Surrey’s 61% emissions 
+reduction target constraint is imposed. Hence, the ‘fabric first’ constraint 
+of installing insulation before ASHPs could be removed to test the effects 
+of this approach. Finally, rather than creating the additional grant, a 
+scenario where existing grants also fund hot water storage tanks could 
+be tested. Nevertheless, this work provides a flexible foundation upon 
+which further case studies can developed, allowing policy makers to 
+make informed decisions in decarbonisation strategy of the housing 
+stock.” 
+Credit author statement 
+Ishanki De Mel: Conceptualization, Methodology, Software, Writing 
+– original draft, Writing – review & editing. Floris Bierkens: Data 
+curation, Conceptualization, Methodology, Software, Writing – original 
+draft, Writing – review & editing. Xinyao Liu: Methodology, Writing – 
+review & editing. Matthew Leach: Conceptualization, Supervision, 
+Writing – review & editing, Funding acquisition. Mona Chitnis: Su-
+pervision, Writing – review & editing, Funding acquisition. Lirong Liu: 
+Conceptualization, Supervision, Writing – review & editing, Funding 
+acquisition, Project administration. Michael Short: Conceptualization, 
+Methodology, Software, Supervision, Writing – original draft, Writing – 
+review & editing Funding acquisition. 
+Declaration of competing interest 
+The authors declare the following financial interests/personal re-
+lationships which may be considered as potential competing interests: 
+This research was supported by the project ‘Heat4All: Economics- 
+informed optimisation model for future equitable decarbonised 
+distributed heating systems’ funded by the EPSRC Network + Decar-
+bonisation of Heating and Cooling. 
+Data availability 
+Data will be made available on request. 
+Acknowledgements 
+This research was supported by the project ‘Heat4All: Economics- 
+informed optimisation model for future equitable decarbonised 
+distributed heating systems’ funded by the EPSRC Network+ Decar-
+bonisation of Heating and Cooling. The authors thank the Woking Bor-
+ough Council, ThamesWey, Association for Decentralised Energy (ADE), 
+UK Energy Research Centre (UKERC), Network headroom, engineering 
+upgrades and public acceptance (NEUPA), and EPSRC National Centre 
+for Energy Systems Integration (CESI) for supporting this study through 
+the provision of data and insights. 
+Appendix A. Supplementary data 
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.energy.2023.126651. 
+References 
+[1] Institute for Government. Decarbonising heating at home. Accessed: Mar. 25, 2022. 
+[Online]. Available: https://www.instituteforgovernment.org.uk/publications/de 
+carbonising-heating; 2021. 
+[2] United Nations, “Climate Action,” United Nations Sustainable Development Goals. 
+https://www.un.org/sustainabledevelopment/climate-change/ (accessed Mar. 25, 
+2022). 
+[3] Ministry of Housing, Communities & Local Government. English Housing Survey – 
+Energy Report, 2019-20. 2021. p. 18. Available:https://assets.publishing.service. 
+I. De Mel et al.                                                                                                                                                                                                                                  
+Energy 268 (2023) 126651
+14
+gov.uk/government/uploads/system/uploads/attachment_data/file/1055629/ 
+Energy_Report_2019-20.pdf. 
+[4] Carroll P, Chesser M, Lyons P. Air source heat pumps field studies: a systematic 
+literature review. Renew Sustain Energy Rev 2020;134:110275. https://doi.org/ 
+10.1016/J.RSER.2020.110275. 
+[5] IEA. Renewables 2019. Population (Paris), 2019. p. 139. Accessed: Mar. 25, 2022. 
+[Online]. Available: https://www.iea.org/reports/renewables-2019. 
+[6] Ren H, Gao W. A MILP model for integrated plan and evaluation of distributed 
+energy systems. Appl Energy 2010;87(3):1001–14. https://doi.org/10.1016/j. 
+apenergy.2009.09.023. 
+[7] Ma W, Fang S, Liu G. Hybrid optimization method and seasonal operation strategy 
+for distributed energy system integrating CCHP, photovoltaic and ground source 
+heat pump. Energy 2017;141:1439–55. https://doi.org/10.1016/J. 
+ENERGY.2017.11.081. 
+[8] Morvaj B, Knezovi´c K, Evins R, Marinelli M. Integrating multi-domain distributed 
+energy systems with electric vehicle PQ flexibility: optimal design and operation 
+scheduling for sustainable low-voltage distribution grids. Sustain Energy, Grids 
+Networks 2016;8:51–61. https://doi.org/10.1016/j.segan.2016.10.001. 
+[9] Beck T, Kondziella H, Huard G, Bruckner T. Optimal operation, configuration and 
+sizing of generation and storage technologies for residential heat pump systems in 
+the spotlight of self-consumption of photovoltaic electricity. Appl Energy 2017; 
+188:604–19. https://doi.org/10.1016/j.apenergy.2016.12.041. 
+[10] Verhelst C, Logist F, Van Impe J, Helsen L. Study of the optimal control problem 
+formulation for modulating air-to-water heat pumps connected to a residential 
+floor heating system. Energy Build 2012;45:43–53. https://doi.org/10.1016/J. 
+ENBUILD.2011.10.015. 
+[11] Bloess A, Schill WP, Zerrahn A. Power-to-heat for renewable energy integration: a 
+review of technologies, modeling approaches, and flexibility potentials. Appl 
+Energy 2018;212:1611–26. https://doi.org/10.1016/J.APENERGY.2017.12.073. 
+[12] Simonetti R, Moretti L, Molinaroli L, Manzolini G. Energetic and economic 
+optimization of the yearly performance of three different solar assisted heat pump 
+systems using a mixed integer linear programming algorithm. Energy Convers 
+Manag 2020;206:112446. https://doi.org/10.1016/J.ENCONMAN.2019.112446. 
+[13] Heinen S, Burke D, O’Malley M. Electricity, gas, heat integration via residential 
+hybrid heating technologies – an investment model assessment. Energy 2016;109: 
+906–19. https://doi.org/10.1016/J.ENERGY.2016.04.126. 
+[14] Harb H, Reinhardt J, Streblow R, Müller D. MIP approach for designing heating 
+systems in residential buildings and neighbourhoods. J Build Perform Simul 2016;9 
+(3):316–30. https://doi.org/10.1080/19401493.2015.1051113. 
+[15] Verhelst C, Logist F, van Impe J, Helsen L. Study of the optimal control problem 
+formulation for modulating air-to-water heat pumps connected to a residential 
+floor heating system. Energy Build 2012;45:43–53. https://doi.org/10.1016/J. 
+ENBUILD.2011.10.015. 
+[16] Gou X, Chen Q, Sun Y, Ma H, Li BJ. Holistic analysis and optimization of 
+distributed energy system considering different transport characteristics of multi- 
+energy and component efficiency variation. Energy 2021;228:120586. https://doi. 
+org/10.1016/J.ENERGY.2021.120586. 
+[17] GOV.UK. Wave 1 of the Social Housing Decarbonisation Fund (Closed). 2021 
+Accessed June 21, 2022. Available: https://www.gov.uk/government/publicati 
+ons/social-housing-decarbonisation-fund. 
+[18] GOV. UK. Buying or Selling Your Home: Energy Performance Certificates. 
+https://www.gov.uk/buy-sell-your-home/energy-performance-certificates. 
+accessed May 05, 2022. 
+[19] Muddu RD, Gowda DM, Robinson AJ, Byrne A. Optimisation of retrofit wall 
+insulation: an Irish case study. Energy Build 2021;235:110720. https://doi.org/ 
+10.1016/J.ENBUILD.2021.110720. 
+[20] Kaynakli O. A study on residential heating energy requirement and optimum 
+insulation thickness. Renew Energy 2008;33(6):1164–1172, Jun. https://doi.org/ 
+10.1016/J.RENENE.2007.07.001. 
+[21] Al-Sanea SA, Zedan MF, Al-Ajlan SA. Effect of electricity tariff on the optimum 
+insulation-thickness in building walls as determined by a dynamic heat-transfer 
+model. Appl Energy Dec. 2005;82(4):313–30. https://doi.org/10.1016/J. 
+APENERGY.2004.10.014. 
+[22] Jie P, Yan F, Li J, Zhang Y, Wen Z. Optimizing the insulation thickness of walls of 
+existing buildings with CHP-based district heating systems. Energy 2019;189: 
+116262. https://doi.org/10.1016/J.ENERGY.2019.116262. 
+[23] Amani N, Kiaee E. Developing a two-criteria framework to rank thermal insulation 
+materials in nearly zero energy buildings using multi-objective optimization 
+approach. J Clean Prod 2020;276:122592. https://doi.org/10.1016/J. 
+JCLEPRO.2020.122592. 
+[24] ¨Ozkan DB, Onan C. Optimization of insulation thickness for different glazing areas 
+in buildings for various climatic regions in Turkey. Appl Energy 2011;88(4): 
+1331–1342, Apr. https://doi.org/10.1016/J.APENERGY.2010.10.025. 
+[25] Carreras J, Boer D, Guill´en-Gos´albez G, Cabeza LF, Medrano M, Jim´enez L. Multi- 
+objective optimization of thermal modelled cubicles considering the total cost and 
+life cycle environmental impact. Energy Build Feb. 2015;88:335–46. https://doi. 
+org/10.1016/J.ENBUILD.2014.12.007. 
+[26] Dylewski R, Adamczyk J. Economic and environmental benefits of thermal 
+insulation of building external walls. Build Environ 2011;46(12):2615–23. https:// 
+doi.org/10.1016/J.BUILDENV.2011.06.023. 
+[27] Landuyt L, de Turck S, Laverge J, Steeman M, van den Bossche N. Balancing 
+environmental impact, energy use and thermal comfort: optimizing insulation 
+levels for the Mobble with standard HVAC and personal comfort systems. Build 
+Environ 2021;206:108307. https://doi.org/10.1016/J.BUILDENV.2021.108307. 
+[28] Motaghian S, Monajati Saharkhiz MH, Rayegan S, Pasdarshahri H, Ahmadi P, 
+Rosen MA. Techno-economic multi-objective optimization of detailed external wall 
+insulation scenarios for buildings in moderate-dry regions. Sustain Energy Technol 
+Assess 2021;46:101256. https://doi.org/10.1016/J.SETA.2021.101256. 
+[29] Mavromatidis G, et al. Ten questions concerning modeling of distributed multi- 
+energy systems. Build Environ 2019;165. https://doi.org/10.1016/j. 
+buildenv.2019.106372. 
+[30] Milis K, Peremans H, Van Passel S. The impact of policy on microgrid economics: a 
+review. Renew Sustain Energy Rev 2018;81:3111–3119, Jan. https://doi.org/ 
+10.1016/J.RSER.2017.08.091. 
+[31] Omu A, Choudhary R, Boies A. Distributed energy resource system optimisation 
+using mixed integer linear programming. Energy Pol Oct. 2013;61:249–66. https:// 
+doi.org/10.1016/j.enpol.2013.05.009. 
+[32] Wang X, Guo M, Koppelaar RHEM, Van Dam KH, Triantafyllidis CP, Shah N. 
+A Nexus Approach for Sustainable Urban Energy-Water-Waste Systems Planning 
+and Operation. 2018. https://doi.org/10.1021/acs.est.7b04659. 
+[33] Dorneanu B, Sidnell T, Clarke F, Mechleri E, Arellano-Garcia H. A mixed-integer 
+linear programming model for the optimal operation and design of residential 
+neighbourhoods. In: IFAC-PapersOnLine. 52; Jan. 2019. p. 934–9. https://doi.org/ 
+10.1016/J.IFACOL.2019.06.182. 1. 
+[34] Renaldi R, Kiprakis A, Friedrich D. An optimisation framework for thermal energy 
+storage integration in a residential heat pump heating system. Appl Energy Jan. 
+2017;186:520–9. https://doi.org/10.1016/j.apenergy.2016.02.067. 
+[35] GOV. UK. Domestic renewable heat incentive (RHI). https://www.gov.uk/domest 
+ic-renewable-heat-incentive. accessed June. 8, 2022. 
+[36] Calise F, Dentice d’Accadia M, Figaj RD, Vanoli L. A novel solar-assisted heat pump 
+driven by photovoltaic/thermal collectors: dynamic simulation and 
+thermoeconomic optimization. Energy Jan. 2016;95:346–66. https://doi.org/ 
+10.1016/J.ENERGY.2015.11.071. 
+[37] TRNSYS. TRNSYS: Transient system simulation tool. 2019. http://www.trnsys. 
+com/#2. accessed June. 26, 2020. 
+[38] Zwickl-Bernhard S, Auer H, Golab A. Equitable decarbonization of heat supply in 
+residential multi-apartment rental buildings: optimal subsidy allocation between 
+the property owner and tenants. Energy Build May 2022;262:112013. https://doi. 
+org/10.1016/J.ENBUILD.2022.112013. 
+[39] de Mel I, v Klymenko O, Short M. Optimal Design of Distributed Energy Systems 
+Considering the Impacts on Electrical Power Networks. 2021. 
+[40] Daikin. Domestic hot water heat pump technology. https://www.daikin.co.uk/en_g 
+b/product-group/domestic-hot-water-heat-pump.html. accessed Mar. 25, 2022. 
+[41] Mitsubishi electric. Document Library. https://library.mitsubishielectric.co.uk 
+/pdf/directory/heating/technical_documents/current/databook; 2020. accessed 
+March 25, 2022. 
+[42] GOV. UK. Tax on Shopping and Services: VAT on Energy-Saving Products. accessed 
+Mar. 25, 2022, https://www.gov.uk/tax-on-shopping/energy-saving-products. 
+[43] BEIS. Social housing decarbonisation fund: wave 1 (closed to applications) - gov. 
+UK. 16, https://www.gov.uk/government/publications/social-housing-decarboni 
+sation-fund; 2021. accessed Jun. 21, 2022). 
+[44] GOV. UK. Cambridge Housing Model and user guide. 2015. https://www.gov. 
+uk/government/publications/cambridge-housing-model-and-user-guide. accessed 
+Mar. 28, 2022. 
+[45] Morvaj B, Evins R, Carmeliet J. Optimization framework for distributed energy 
+systems with integrated electrical grid constraints. Appl Energy Jun. 2016;171: 
+296–313. https://doi.org/10.1016/J.APENERGY.2016.03.090. 
+[46] Surrey County Council. Surrey’s climate change strategy 2020. 2021. https://www 
+.surreycc.gov.uk/community/climate-change/what-are-we-doing/climate-chang 
+e-strategy/2020. accessed Jun. 08, 2022. 
+[47] Climate Change Committee. The Sixth carbon budget. 2020. Accessed: Apr. 28, 
+2022. [Online]. Available: www.theccc.org.uk/publications. 
+[48] Mitsubishi Electric. Ecodan air source heat pump outdoor units. https://les.mitsubi 
+shielectric.co.uk/products/residential-heating/domestic/outdoor. [Accessed 28 
+April 2022]. accessed. 
+[49] Palmer J., Livingstone M., Adams A. What does it cost to retrofit homes? 2017. pp. 
+20-31. Available: https://assets.publishing.service.gov.uk/government/uploads/s 
+ystem/uploads/attachment_data/file/656866/BEIS_Update_of_Domestic_Cost_Ass 
+umptions_031017.pdfPalmer J., Livingstone M., Adams A. What does it cost to 
+retrofit homes? 2017. 
+[50] GOV.UK, “Tax on shopping and services: VAT on energy-saving products.” https:// 
+www.gov.uk/tax-on-shopping/energy-saving-products (accessed Apr. 28, 2022). 
+[51] BEIS. Green Homes Grant: Make Energy Improvements to Your Home (closed to 
+new applicants). 2020. 28, https://www.gov.uk/guidance/apply-for-the-green 
+-homes-grant-scheme. accessed Jun. 21, 2022. 
+[52] Surrey Action. Green jump surrey - helping you heat your home this winter. https 
+://www.actionsurrey.org/now/blog/2020/10/28/greenjumpsurrey; 2020. 
+accessed Jun. 21, 2022. 
+[53] Ofgem. Energy Company Obligation (ECO). https://www.ofgem.gov.uk/environm 
+ental-and-social-schemes/energy-company-obligation-eco. accessed June. 21, 
+2022. 
+[54] HM Government. The ten point plan for a green industrial revolution. 2020. 
+Accessed June 21, 2022. p. 20. Available: https://assets.publishing.service.gov. 
+uk/government/uploads/system/uploads/attachment_data/file/936567/10_POI 
+NT_PLAN_BOOKLET.pdf. 
+I. De Mel et al.                                                                                                                                                                                                                                  

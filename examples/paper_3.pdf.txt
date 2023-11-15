@@ -1,0 +1,1998 @@
+EUROPEAN ORGANISATION FOR NUCLEAR RESEARCH (CERN)
+JHEP 07 (2019) 117
+DOI: 10.1007/JHEP07(2019)117
+CERN-EP-2018-300
+14th November 2019
+Search for scalar resonances decaying into µ+µ− in
+events with and without b-tagged jets produced in
+proton–proton collisions at √s = 13 TeV with the
+ATLAS detector
+The ATLAS Collaboration
+A search for a narrow scalar resonance decaying into an opposite-sign muon pair produced in
+events with and without b-tagged jets is presented in this paper. The search uses 36.1 fb−1 of
+√s = 13 TeV proton–proton collision data recorded by the ATLAS experiment at the LHC. No
+signiﬁcant excess of events above the expected Standard Model background is observed in the
+investigated mass range of 0.2 to 1.0 TeV. The observed upper limits at 95% conﬁdence level
+on the cross section times branching ratio for b-quark associated production and gluon–gluon
+fusion are between 1.9 and 41 fb and 1.6 and 44 fb respectively, which is consistent with
+expectations.
+© 2019 CERN for the beneﬁt of the ATLAS Collaboration.
+Reproduction of this article or parts of it is allowed as speciﬁed in the CC-BY-4.0 license.
+arXiv:1901.08144v2  [hep-ex]  31 Jul 2019
+1 Introduction
+This paper presents a search, in proton–proton (pp) collision data at a centre-of-mass energy of 13 TeV,
+targeting a scalar particle Φ with a mass in the range 0.2–1.0 TeV decaying into two opposite-sign muons.
+The natural width of the particle is assumed to be much narrower than the experimental resolution, such that
+it is the latter that dominates the distribution of the dimuon invariant mass in signal events. To maximize
+the sensitivity to the presence of b-quarks, the analysis is performed in two data categories. The ﬁrst search
+category requires at least one jet tagged as containing b-hadrons (b-tagged) in the ﬁnal state. The second
+category requires exactly zero b-tagged jets in the event. Simultaneous ﬁts to these two categories are
+used to search for both the gluon–gluon fusion and b-associated production mechanisms of the scalar
+particle. This work is primarily motivated as a signature-based search; the event selection is not designed
+to target any speciﬁc model and instead facilitates the comparison of the data with predictions from various
+theoretical models.
+The discovery of the 125 GeV Higgs boson at the Large Hadron Collider (LHC) [1, 2] was a signiﬁcant
+step in understanding the mechanism of electroweak symmetry breaking (EWSB). Measurements of the
+properties of this particle [3–7] are so far consistent with expectations for the Standard Model (SM) Higgs
+boson [8–13]. However, the observed Higgs boson could be only a part of an extended scalar sector, as
+predicted by several theoretical models beyond the SM. For example, such an extended scalar sector is
+predicted by a class of extensions of the SM known as the two-Higgs-doublet models (2HDM) [14, 15].
+The 2HDM posit the existence of three neutral bosons with properties and coupling strengths diﬀering from
+those of the SM Higgs particle. One of the higher-mass neutral Higgs bosons may couple to muons at a
+higher rate than to τ-leptons, in contradiction to the SM Yukawa ordering. This is the case in the Flavourful
+Higgs model [16], for example. The search described in this paper sets limits on the cross-section times
+branching ratio of Φ decaying into muon pairs which are more stringent than the equivalent limits for Φ
+decaying into τ-lepton pairs [17]. This is due to higher identiﬁcation eﬃciency and lower background rate
+for muons than for τ-leptons, and the invariant-mass resolution being better for muon pairs than for τ-lepton
+pairs. Similarly, the coupling of these higher-mass neutral Higgs bosons to b-quarks could be enhanced
+relative to the SM Higgs boson coupling. Hence, the production of Φ in association with b-quarks (bbΦ),
+shown in Figure 1(a), could be more abundant than the production of Φ by gluon–gluon fusion (ggF),
+shown in Figure 1(b). The Φ → b¯b decay mode, where Φ is produced in associations with b-quarks, is
+investigated by CMS in Ref. [18].
+Additional interest for the search for an excess of events with respect to the SM predictions in the dimuon
+plus b-tagged jets ﬁnal state arises from Z ′ and leptoquark models [19], which could result in either resonant
+or non-resonant contributions to the pp → ttµ+µ− → WbW ¯bµ+µ− ﬁnal state. This work complements the
+search for Z ′ candidates decaying into muon pairs presented in Ref. [20]: by classifying events in terms of
+the presence or absence of a b-tagged jet, it may be sensitive to signatures not observable with an inclusive
+selection.
+Previous similar searches focused explicitly on beyond-the-SM Higgs bosons decaying into muon pairs, in
+the mass range 90–500 GeV [21, 22] using √s = 7 and 8 TeV data. This work extends the exclusion limits
+for new scalar resonances with masses up to 1.0 TeV.
+The analysis described in this paper makes use of a ﬁt to the observed dimuon invariant mass (mµµ) spectra.
+The presence of a signal produced either in association with b-quarks or via gluon–gluon fusion is tested
+with simultaneous ﬁts to the two data regions (with and without a b-tagged jet) separately for bbΦ and
+2
+ggF production modes. No assumptions are made about the relative contributions of the bbΦ and ggF
+cross-sections.
+This paper is structured as follows. Section 2 describes the ATLAS detector. Section 3 discusses the
+data and the simulated event samples used to model the signal and the background processes. The event
+reconstruction is discussed in Section 4, while Section 5 describes the background estimate and introduces
+the signal interpolation procedure used to model the mµµ distribution for resonance mass hypotheses for
+which no simulated sample was generated. The event yields and the description of the statistical analysis are
+discussed in Section 6, followed by Section 7, which provides an overview of the systematic uncertainties.
+Section 8 summarizes the results.
+g
+g
+¯b
+Φ
+b
+(a)
+g
+g
+Φ
+(b)
+Figure 1: Feynman diagrams for (a) the b-quark associated production mode and (b) the gluon-gluon fusion production
+mode.
+2 ATLAS detector
+ATLAS [23], [24] is a multipurpose particle detector with a forward–backward symmetric cylindrical
+geometry and near 4π coverage in solid angle.1 It consists of an inner tracking detector surrounded by a
+thin superconducting solenoid, electromagnetic and hadronic calorimeters, and a muon spectrometer.
+The inner tracking detector (ID) covers the pseudorapidity range |η| < 2.5, and is surrounded by a
+superconducting solenoid providing a 2 T magnetic ﬁeld. At small radii, a high-granularity silicon pixel
+detector covers the vertex region and typically provides four measurements per track. It is followed by the
+silicon microstrip tracker, which provides eight measurement points per track. The silicon detectors are
+complemented by a gas-ﬁlled straw-tube transition radiation tracker, which extends the tracking capability
+radially with typically 35 measurements per track for particles at |η| = 2.0.
+Electromagnetic (EM) calorimetry, within the region |η| < 3.2, is provided by barrel and endcap high-
+granularity lead/liquid-argon (LAr) sampling calorimeters, with an additional thin LAr presampler covering
+1 ATLAS uses a right-handed coordinate system with its origin at the nominal interaction point (IP) in the centre of the detector
+and the z-axis along the beam pipe. The x-axis points from the IP to the centre of the LHC ring, and the y-axis points
+upward. Cylindrical coordinates (r, φ) are used in the transverse plane, φ being the azimuthal angle around the z-axis. The
+pseudorapidity is deﬁned in terms of the polar angle θ as η = − ln tan(θ/2). The angular distance is measured in units of
+∆R =
+�
+(∆η)2 + (∆φ)2.
+3
+|η| < 1.8 to correct for energy loss in the upstream material. For |η| < 2.5 the EM calorimeter is
+divided into three layers in depth. A steel/scintillator-tile calorimeter provides hadronic calorimetry for
+|η| < 1.7. LAr ionization, with copper as absorber, is used for the hadronic calorimeters in the endcap
+region 1.5 < |η| < 3.2. The solid-angle coverage is completed with forward copper/LAr and tungsten/LAr
+calorimeter modules in 3.1 < |η| < 4.9, optimized for EM and hadronic measurements, respectively.
+The muon spectrometer (MS) surrounds the calorimeters and comprises separate trigger and high-precision
+tracking chambers measuring the deﬂection of muons in a magnetic ﬁeld provided by one barrel and two
+end-cap toroid magnets. The precision chamber system covers the region |η| < 2.7 with three layers of
+monitored drift tubes, complemented by cathode-strip chambers in the forward region. The muon trigger
+system covers the range |η| < 2.4 with resistive-plate chambers in the barrel and thin-gap chambers in the
+endcap regions.
+A two-level trigger and data acquisition system is used to record events for oﬄine analysis [25]. The level-1
+trigger is implemented in hardware and uses a subset of the detector information to reduce the event rate to
+a value of at most 100 kHz. It is followed by a software-based high-level trigger which ﬁlters events using
+the full detector information and outputs events for permanent storage at an average rate of 1 kHz.
+3 Data and simulated event samples
+This search is performed with a sample of pp collision data recorded at a centre-of-mass energy √s =13
+TeV corresponding to an integrated luminosity of 36.1 fb−1 collected during 2015 and 2016. Events are
+considered for further analysis only if they were collected under stable LHC beam conditions and the
+relevant detector components were fully operational.
+The data used in this analysis were collected using a combination of muon triggers. For the 2015 dataset
+an isolated muon with transverse momentum pT greater than 20 GeV was required, while for 2016 this
+requirement was raised to 26 GeV. To avoid ineﬃciencies due to the isolation requirement, these triggers
+were complemented by a trigger requiring a reconstructed muon with pT greater than 50 GeV, without any
+isolation requirements.
+Simulated signal events were generated similarly to the SM Higgs boson H, where H was replaced by
+a higher-mass scalar boson Φ with a constant width of 4 MeV. Nine Monte Carlo (MC) samples were
+generated in the mass range 0.2–1.0 TeV at intervals of 100 GeV. Both the ggF and bbΦ production modes
+were considered. Events were generated at next-to-leading order (NLO) with Powheg-Box 2 [26–29] and
+MadGraph5_aMC@NLO [30, 31], for ggF and bbΦ respectively. The CT10 [32] set of parton distribution
+functions (PDFs) was used in the generation of ggF events while CT10nlo_nf4 [33] PDFs were used
+to produce the b-quark associated signal samples in the four-ﬂavour scheme. In the gluon–gluon fusion
+production mode, Pythia 8.210 [34] with the AZNLO [35] set of tuned parameters was used together with
+the CTEQ6L1 [36] PDF set for the parton shower, underlying event and hadronization simulation. For the
+b-quark associated production, Pythia 8.210 with the A14 [37] set of tuned parameters was used together
+with the NNPDF2.3LO [38] PDF set for the parton shower, underlying event, and hadronization simulation.
+The EvtGen v1.2.0 program [39] was used to model the properties of the bottom and charm hadron decays
+in all signal samples.
+Since the generated signal samples are spaced equally in mΦ while the experimental resolution increases
+with mΦ, signal distributions for intermediate mass hypotheses were obtained using an interpolation
+procedure, described in Section 5.
+4
+Events containing Z/γ∗+ jets were simulated using Powheg-Box 2 [28, 40] interfaced to the Pythia 8.186
+parton shower model and the CT10 PDF set. The AZNLO tune was used, with PDF set CTEQ6L1 for the
+modelling of non-perturbative eﬀects. The EvtGen v1.2.0 program was used to model the properties of the
+bottom and charm hadron decays. Photos++ 3.52 [41] was used for photons radiated from electroweak
+vertices and charged leptons. Generator-level ﬁlters are employed to enhance the fraction of simulated
+events in the phase-space region that is most relevant for the analysis. Event yields were corrected
+with a mass-dependent rescaling at next-to-next-to-leading order (NNLO) in the QCD coupling constant,
+computed with VRAP 0.9 [42] and the CT14NNLO PDF set [33]. Mass-dependent electro-weak (EW)
+corrections were computed at NLO with mcsanc–1.20 [43], along with photon-induced contributions
+(γγ → ℓℓ via t- and u-channel processes) computed with the MRST2004QED PDF set [44].
+Additional Z/γ∗+ jets events, used to evaluate the systematic uncertainty from the modelling of the ﬁtted
+mµµ distribution, were simulated with Sherpa 2.2.1 [45] and with MadGraph5_aMC@NLO interfaced
+with Pythia 8.186. In Sherpa, Z/γ∗+ jets matrix elements were evaluated with up to two extra partons
+at NLO, and three or four extra partons were included at LO in QCD. The merging of diﬀerent parton
+multiplicities was achieved through a matching scheme based on the CKKW-L [46] [47] merging technique
+using a merging scale of Qcut = 20 GeV. The models used for the parton shower and underlying event are
+the ones provided internally by Sherpa. The Sherpa 2.2.1 generator adopts a full ﬁve-ﬂavour scheme,
+with massless b-quarks and c-quarks in the matrix elements. These quarks are given mass in the ﬁnal state
+and massive quarks can be produced directly via the parton shower. The MadGraph5_aMC@NLO v2
+generator merges the LO (QCD) matrix-element calculations for Z/γ∗+ jets with up to four additional
+partons (higher jet multiplicities are modelled by the parton shower algorithm). The merging scheme applied
+to combine diﬀerent parton multiplicities is the CKKW-L scheme with a merging scale of Qcut = 30 GeV.
+For the LO matrix-element calculation the NNPDF2.3 LO PDFs were used (with αS = 0.13). The A14
+tune, together with the NNPDF2.3 LO PDFs, was used for the parton shower. Similarly to Sherpa 2.2.1,
+MadGraph5_aMC@NLO adopts a full ﬁve-ﬂavour scheme.
+For the generation of t¯t and single top-quark production in the Wt- and t-channel, the Powheg-Box 2
+generator with the CT10 PDF set was used for the matrix element calculations. The parton shower,
+fragmentation, and the underlying event were simulated using Pythia 6.428 with the CTEQ6L1 PDF
+set and the corresponding Perugia 2012 tune [48]. The top-quark mass was set to 172.5 GeV. For the
+generation of t¯t events, the hdamp parameter of Powheg-Box, which controls the transverse momentum
+of the ﬁrst additional emission beyond the Born conﬁguration, was set to the mass of the top quark. The
+main eﬀect of this parameter is to regulate the high transverse momentum emission against which the t¯t
+system recoils. The t¯t production sample was normalized to the predicted production cross-section as
+calculated with the Top++2.0 program to NNLO in perturbative QCD, including soft-gluon resummation
+to next-to-next-to-leading-log (NNLL) order [49]. The normalization of the single top-quark event samples
+used an approximate calculation at NLO in QCD for the t-channels [50, 51] while NLO+NNLL predictions
+were used for the Wt-channel [51]. The EvtGen v1.2.0 program was used to describe the properties of the
+bottom and charm hadron decays.
+Diboson processes were modelled using the Sherpa 2.1.1 [45] generator and they were calculated for up to
+one (ZZ) or zero (WW, WZ) additional partons at NLO and up to three additional partons at leading order
+(LO) using the Comix [52] and OpenLoops [53] matrix-element generators. The matrix element calculation
+was merged with the Sherpa internal parton shower [54] using the ME+PS@NLO prescription [55]. The
+CT10 PDF set was used in conjunction with dedicated parton shower tuning developed by the Sherpa
+authors. The generator cross-sections, calculated at NLO, were used in this case.
+5
+The generated signal samples were simulated with the fast simulation [56, 57] framework of ATLAS,
+which replaces the full simulation of the electromagnetic and hadronic calorimeters by a parameterized
+model. The background samples were simulated using the full Geant4-based simulation of the detector [58].
+Finally, the simulated events were processed through the same reconstruction software as the data. The
+eﬀects of pile-up from multiple proton–proton interactions in the same and neighbouring bunch crossings
+were accounted for by overlaying minimum-bias events simulated using Pythia 8 with the A2 tune [59]
+and interfaced with the MSTW2008LO PDFs. Simulated events were then reweighted to match the pile-up
+conditions observed in the data.
+4 Event reconstruction
+Interaction vertices are reconstructed [60] from tracks measured by the inner detector. The primary vertex
+is deﬁned as the vertex with the largest � p2
+T of its associated tracks. It must have at least two associated
+tracks, each with transverse momentum pT > 400 MeV.
+Muon candidates are reconstructed from an ID track combined with a track or track segment detected in the
+muon spectrometer [61]. These two tracks are used as inputs to a combined ﬁt (for pT less than 300 GeV)
+or to a statistical combination (for pT greater than 300 GeV) [61]. The combined ﬁt takes into account
+the energy loss in the calorimeter and multiple-scattering eﬀects. The statistical combination for high
+transverse momenta is performed to mitigate the eﬀects of relative ID and MS misalignments. High-pT
+muon candidates are required to have at least three hits, one in each of the three layers of precision chambers
+in the MS. For these muons, speciﬁc regions of the MS where the alignment is suboptimal are vetoed as a
+precaution, as well as the transition region between the MS barrel and endcap (1.01 < |η| < 1.10). Further
+quality requirements are applied to the consistency of the ID and MS momentum measurements, and to the
+measured momentum uncertainty for the MS track.
+The reconstructed muon candidates are required to have transverse momentum, pT, greater than 30 GeV
+and pseudorapidity |η| < 2.5. They are further required to be consistent with the hypothesis that they
+originate from the primary vertex by applying selections on the transverse (d0) and longitudinal (z0) impact
+parameters, deﬁned relative to the primary vertex position: |d0/σd0| < 3 and |z0 sin θ| < 0.5 mm where
+σd0 denotes the uncertainty in the transverse impact parameter. A loose isolation requirement is applied,
+based on the sum of the momenta of inner detector tracks which lie within a variable-sized cone, with
+∆Rmax = 0.3, around the muon track. This isolation requirement is tuned to yield a 99% eﬃciency over the
+full range of muon pT.
+Jets are reconstructed from noise-suppressed energy clusters in the calorimeter [62] with the anti-kt
+algorithm [63, 64] with radius parameter R = 0.4. The energies of the jets are calibrated using a jet energy
+scale (JES) correction derived from both simulation and in situ studies using data [65]. All jets are required
+to have pT > 25 GeV and |η| < 4.5. A multivariate selection that reduces contamination from pile-up [66]
+is applied to jets with pT < 60 GeV and with |η| < 2.4 utilizing calorimeter and tracking information to
+separate hard-scatter jets from pile-up jets.
+Selected jets in the central region can be tagged as containing b-hadrons (b-tagged) by using a multivariate
+discriminant (MV2c10) [67, 68] that combines information from an impact-parameter-based algorithm,
+from the explicit reconstruction of a secondary vertex and from a multi-vertex ﬁtter that attempts to
+reconstruct the full b- to c-hadron decay chain. At the chosen working point, the algorithm provides
+nominal light-ﬂavour (u,d,s-quark and gluon) and c-jet misidentiﬁcation rates of 3% and 32%, respectively,
+6
+for an average 85% b-jet tagging eﬃciency, as estimated from simulated t¯t events for jets with pT > 20 GeV
+and |η| < 2.5. The ﬂavour-tagging eﬃciencies from simulation are corrected separately for b-, c- and
+light-ﬂavour jets, based on the respective data-based calibration analyses [69].
+Simulated events were corrected to reﬂect the muon and jet momentum scales and resolutions, b-jet
+identiﬁcation algorithm calibration, as well as the muon trigger, identiﬁcation, and isolation eﬃciencies
+measured in data.
+An overlap removal procedure is applied to avoid a single particle being reconstructed as two diﬀerent
+objects as follows. Jets not tagged as b-jets, but which are reconstructed within ∆R = 0.2 of a muon, are
+removed if they have fewer than three associated tracks or if the muon energy constitutes more than 50%
+of the jet energy. Muons reconstructed within a cone of size ∆R = min (0.4, 0.04 + 10 GeV/pT) around
+the jet axis of any surviving jet are removed. Jets are also discarded if they are within a cone of size
+∆R = 0.2 around an electron candidate. Electrons are reconstructed from clusters of energy deposits in the
+electromagnetic calorimeter that match ID tracks, and are identiﬁed as described in Ref. [70]. For electrons
+with transverse energy ET > 10 GeV and pseudorapidity of |η| < 2.47, a likelihood-based selection is used
+at the “loose” operating point deﬁned in [70].
+Following the overlap removal, jet cleaning criteria are applied to identify jets arising from non-collision
+sources or noise in the calorimeters, and any event containing such a jet is removed [71].
+The missing transverse momentum, Emiss
+T
+, is deﬁned as the negative vector sum of the transverse momenta
+of muons, electrons and jets associated with the primary vertex. A soft term [72] is added to include
+well-reconstructed tracks matched to the primary vertex that are not associated with any of the objects.
+At least two reconstructed muons are required in the event, and the two highest-pT muons of the event are
+used to form a dimuon candidate. If these muons do not have opposite charges, the event is rejected.
+5 Signal and background estimate
+Events satisfying the preselection criteria of Section 4 are considered for further analysis. Depending on
+the value of the reconstructed dimuon invariant mass and the number of b-tagged jets, they are classiﬁed as
+being in either a control region, used to measure the rate of the dominant backgrounds (Z/γ∗+ jets and t¯t)
+or a signal region, used to search for the Φ → µµ signal. All signal and control regions are designed to be
+orthogonal.
+Selected events are retained in the signal region if the dimuon invariant mass, mµµ, exceeds 160 GeV,
+while they are retained in the control region if 100 GeV < mµµ < 160 GeV. The control regions do not
+include the Z-boson peak; this avoids constraints on systematic uncertainties in a region of phase space
+which may behave diﬀerently with respect to the high mass tails where the signal search is focused.
+Events in the signal region are further classiﬁed as “SRbTag”, if at least one b-tagged jet is identiﬁed in the
+event, or “SRbVeto”, otherwise. No further optimization of the signal region deﬁnition is considered, in
+order to minimize the assumptions made about the signal kinematics.
+Events in the control region are further classiﬁed as “CRbVeto” if there is no b-tagged jet identiﬁed in
+the event, while remaining control region events are classiﬁed as “CRbTag”, if the missing transverse
+momentum is less than 100 GeV, or “CRttbar” otherwise.
+7
+The dominant background sources for this signature are muon pairs through Z/γ∗+ jets, top-quark pair, and
+diboson production. W+jets and QCD multi-jet events contribute less than 0.01% to the total background
+in signal regions, and therefore are neglected. All relevant background contributions were modelled using
+simulated samples as described in Section 3.
+Simulated Z/γ∗+ jets events were categorized depending on the generator-level “truth” labels of the jets in
+the event. Simulated jets were truth-labelled according to which hadrons with pT > 5 GeV were found
+within a cone of size ∆R = 0.3 around the jet axis. If a b-hadron was found, the jet was truth-labelled as
+a b-jet. If no b-hadron was found, but a c-hadron was present, then the jet was truth-labelled as a c-jet.
+Otherwise the jet was truth-labelled as a light-ﬂavour (i.e., u,d,s-quark, or gluon) jet. The Z/γ∗+ jets
+events were classiﬁed as Z+ heavy ﬂavour (Z+ HF) if a b-jet or c-jet was found at generator level and
+Z+ light ﬂavour (Z+ LF) otherwise. These two categories of simulated events were treated as diﬀerent
+background components.
+The predictions for the expected numbers of t¯t, Z+ HF and Z+ LF events are adjusted to match the number
+of events in data in the control regions via a global ﬁt (see Section 6), while the other backgrounds are
+normalized to their expected cross-section, discussed in Section 3.
+The expected invariant mass distribution of the narrow resonance signal mΦ is modelled with a double-sided
+Crystal Ball (DSCB) [73] function in the mass range 0.2 TeV < mΦ < 1.0 TeV for all nine simulated MC
+samples. The width of the mµµ distribution is dominated by the experimental resolution, which can be
+described by a Gaussian distribution. The power-law asymmetric terms of the DSCB have enough degrees
+of freedom to model the mµµ tails for signals in the 0.2–1.0 TeV mass range. In order to interpolate the
+signal parameterization to any mass value in this ﬁt range, second-order polynomial parameterizations of
+all six signal-shape parameters as a function of mΦ are obtained from a simultaneous ﬁt to all the generated
+mass points mΦ, separately for events with and without at least one b-tagged jet. Since all signal samples are
+scaled to the same arbitrary cross-section, any diﬀerences in the number of events are due to diﬀerences in
+the acceptances of the selection. The ﬁtted normalization is parameterized with a second-order polynomial
+in a similar way to the other DSCB parameters. As a result of this procedure, the mµµ distribution for an
+arbitrary hypothesis mass can be found by constructing a DSCB from parameters calculated using the ﬁtted
+coeﬃcients and the hypothesized mass mΦ. The interpolation is performed separately for each systematic
+variation, and for the gluon–gluon fusion and b-quark associated production signal samples. Binned
+templates are then generated from the DSCB. To validate the interpolation procedure, one simulated sample
+at a time is removed from the simultaneous ﬁt, and the template generated from the DCSB is compared
+with the mµµ distribution from the corresponding simulated sample and they agree within 2–5%, the size of
+the bin-by-bin MC statistical uncertainty. Nine MC samples were generated in the mass range 0.2–1.0 TeV,
+every 100 GeV. The interpolation procedure was used to generate signal templates every 10 GeV between
+0.2 and 0.3 TeV, every 20 GeV between 0.3 and 0.6 TeV, and every 50 GeV between 0.6 and 1.0 TeV.
+The acceptance of b-quark associated production in the SRbTag region varies in the range 11–19%
+depending on mΦ. The acceptance in the SRbVeto region, which is inversely correlated with the SRbTag
+one, varies from 20% to 15%. For this reason, both SRbTag and SRbVeto are included in the global ﬁt (see
+Section 6). The acceptance of gluon–gluon fusion in the SRbVeto region varies in the range 31–35%. The
+acceptance in the SRbTag is less than 2% for all masses.
+8
+6 Statistical analysis
+The test statistic ˜qµ as deﬁned in Ref. [74] is used to determine the probability that the background-only
+model is compatible with the observed data, to extract the local p-value, and, if no hint of a signal is found
+in this procedure, to derive exclusion intervals using the CLs method. The binned likelihood function
+is built as the product of Poisson probability terms associated with the bins in the mµµ distribution in
+the 0.16–1.5 TeV range. It depends on the parameter of interest, on the normalization factors of the
+dominant backgrounds and on additional nuisance parameters (representing the estimates of the systematic
+uncertainties) that are each constrained by a Gaussian prior. The bin-by-bin statistical uncertainties of the
+simulated backgrounds are also considered. Separate ﬁts are performed to test the diﬀerent hypotheses:
+only bbΦ signal, only ggF signal, and signal composed of diﬀerent mixtures of the two production modes.
+Data are ﬁtted in the 0.16–1.5 TeV range to check that the background description is correct and to constrain
+systematic uncertainties, while the signal presence is tested in a narrower 0.2–1.0 TeV range.
+Logarithmic binning in mµµ is chosen to scale with experimental dimuon mass resolution (deﬁned as
+full-width at half-maximum), which varies from 5% at mµµ = 200 GeV to 14% at mµµ = 1 TeV, while
+ensuring that the number of simulated background events in each bin is suﬃcient to reliably predict the
+background. The numbers of events in the CRbVeto, CRbTag, and CRttbar control regions are also
+included in the maximum-likelihood ﬁt. Data in these regions are used to constrain the normalizations of
+the dominant background processes: Z+ LF, Z+ HF, and t¯t. The normalization factors used to scale the
+expected number of events for each process to match the data are free parameters in the ﬁt. Their expected
+uncertainty is estimated using an Asimov dataset [74], a pseudo-data distribution equal to the background
+plus signal expectation for a given value of the signal cross-section times branching ratio. The expected
+and measured normalization factors are shown in Table 1. They are measured in a ﬁt to data under the
+background plus signal hypothesis, where the signal corresponds to bbΦ production with mass mΦ = 480
+GeV.
+Table 1: Normalization factors of the dominant backgrounds as measured in a ﬁt to data under the background plus
+signal hypothesis (480 GeV bbΦ signal). The uncertainty includes both the statistical and systematic sources: the
+latter ones dominate. The reduction of the observed relative uncertainty of the Z+ HF normalization in the data ﬁt is
+due to the large increase in the number of Z+ HF events when the data in signal regions are included.
+Background
+Asimov data
+Observed data
+Z+ HF
+1.00 ± 0.23
+1.47 ± 0.26
+Z+ LF
+1.00 ± 0.02
+1.02 ± 0.02
+t¯t
+1.00 ± 0.04
+1.02 ± 0.04
+As discussed in Section 7, the experimental uncertainties are treated as fully correlated among diﬀerent
+processes and regions, while the theoretical uncertainties are mostly uncorrelated among processes.
+The numbers of observed events in the signal regions together with the predicted event yields from signal
+and background processes are shown in Table 2. The numbers are the results of the maximum-likelihood
+ﬁt to data under the background plus signal hypothesis, where the signal corresponds to bbΦ production
+with mΦ = 480 GeV. The number of predicted signal events corresponds to the expected upper limit (UL)
+times the cross-section: this highlights the comparison between signal and background at the edge of the
+analysis sensitivity.
+9
+The observed numbers of events are compatible with those expected from SM processes, within uncertainties.
+The mµµ distribution in the SRbTag region is shown in Figure 2(a) for a bbΦ-only ﬁt. The mµµ distribution
+in the SRbVeto region is shown in Figure 2(b), for a ggF-only ﬁt. Each background process is normalized
+according to its post-ﬁt cross-section. The templates for the mΦ =200 GeV, mΦ =480 GeV and mΦ =1 TeV
+mass hypotheses are normalized to the expected upper limit.
+Table 2: Post-ﬁt numbers of events from the combined ﬁt under the background plus signal hypothesis (480 GeV bbΦ
+signal). Here “Total Bkg” represents the sum of all backgrounds. The quoted uncertainties are the combination of
+statistical and systematic uncertainties. The uncertainty in the total background determined by the ﬁt is smaller than
+the sum in quadrature of the individual components due to the normalization factors and systematic uncertainties that
+introduce correlation between them. The number of signal events corresponds to the expected upper limit (UL) times
+the cross-section. The uncertainties in the expected signal yields are from ﬁts using the Asimov dataset.
+Sample
+SRbTag
+SRbVeto
+CRbTag
+CRbVeto
+CRttbar
+t¯t
+16 490 ± 240
+2 090 ± 300
+16 300 ± 600
+2 320 ± 350
+4 160 ± 70
+Single top
+1 470 ± 100
+480 ± 50
+1 340 ± 100
+530 ± 50
+297 ± 22
+Diboson
+176 ± 23
+2 570 ± 180
+280 ± 40
+4 550 ± 310
+19 ± 5
+Z+ HF
+1 920 ± 320
+3 400 ± 700
+13 300 ± 1 900
+25 000 ± 5 000
+18 ± 9
+Z+ LF
+1 060 ± 330
+57 700 ± 900
+6 300 ± 2 000
+501 000 ± 5 000
+10 ± 9
+Total Bkg
+21 110 ± 140
+66 240 ± 250
+37 530 ± 200
+533 100 ± 700
+4 500 ± 60
+bbΦ (UL)
+37+14
+−10
+45+18
+−13
+ggF (UL)
+4+2
+−1
+73+28
+−21
+Data
+21 154
+66 300
+37 527
+533 134
+4 511
+7 Systematic uncertainties
+The sources of systematic uncertainty can be divided into three groups: those of experimental origin, those
+related to the modelling of the simulated backgrounds, and those associated with signal simulation. The
+ﬁnite size of the simulated background samples is also an important source of uncertainty.
+7.1 Experimental uncertainties
+The dominant experimental uncertainties originate from residual mismodelling of the muon reconstruction
+and selection after the simulation-to-data eﬃciency correction factors have been applied. They include the
+uncertainty obtained from Z → µµ data studies and a high-pT extrapolation uncertainty corresponding to
+the decrease in the muon reconstruction and selection eﬃciency with increasing pT which is predicted by
+the MC simulation. The degradation of the muon reconstruction eﬃciency was found to be approximately
+3% per TeV as a function of muon pT. Uncertainties in the isolation and trigger eﬃciencies of muons [61],
+along with the uncertainty in their energy scale and resolution, are estimated from Z → µµ data taken at
+√s =13 TeV. These are found to have only a small impact (they account for < 0.4% of the total uncertainty
+10
+200
+400
+600
+800
+1000
+1200
+1400
+Events
+−1
+10
+1
+10
+2
+10
+3
+10
+4
+10
+105
+Z+jets(LF)
+Z+jets(HF)
+tt
+Single top
+Diboson
+Data
+Uncertainty
+Φ (200)
+bb
+Φ (480)
+bb
+Φ (1000)
+bb
+ATLAS
+=13TeV, 36.1 fb-1
+s
+Φ→µµ
+SRbTag
+µµ [GeV]
+m
+200
+400
+600
+800 1000 1200 1400
+Data/Bkg
+0.8
+1
+1.2
+(a)
+200
+400
+600
+800
+1000
+1200
+1400
+Events
+−1
+10
+1
+10
+2
+10
+3
+10
+4
+10
+105
+Z+jets(LF)
+Z+jets(HF)
+tt
+Single top
+Diboson
+Data
+Uncertainty
+ggF (200)
+ggF (480)
+ggF (1000)
+ATLAS
+=13TeV, 36.1 fb-1
+s
+Φ→µµ
+SRbVeto
+µµ [GeV]
+m
+200
+400
+600
+800 1000 1200 1400
+Data/Bkg
+0.8
+1
+1.2
+(b)
+Figure 2: Distributions of the dimuon invariant mass, mµµ, after the combined ﬁt to data are shown normalized: (a)
+in the SRbTag, under the background plus signal hypothesis (480 GeV bbΦ signal) and (b) in the SRbVeto, under
+the background plus signal hypothesis (480 GeV ggF signal). The ﬁt for a mΦ =480 GeV signal corresponds to the
+largest excess observed above the background expectation. Each background process is normalized according to
+its post-ﬁt cross-section. The templates for the mΦ =200 GeV, mΦ =480 GeV and mΦ =1 TeV mass hypotheses are
+normalized to the expected upper limit. The data are shown by the points, while the size of the statistical uncertainty
+is shown by the error bars. The last bin includes the overﬂow. The blue arrows represent the data points outside of
+the frame. The hatched band shows the total systematic uncertainty of the post-ﬁt yield.
+on the ﬁtted value of the signal cross-sections). Other sources of experimental uncertainties are the residual
+diﬀerences in the modelling of the ﬂavour-tagging algorithm, the jet energy scale and the jet energy
+resolution after the simulation-to-data correction factors are applied. Flavour-tagging simulation-to-data
+eﬃciency correction factors are derived [67] separately for b-jets, c-jets, and light-ﬂavour jets. All
+three correction factors depend on jet pT (or pT and |η|) and are aﬀected by uncertainties from multiple
+sources. These are decomposed into uncorrelated components which are then treated independently,
+resulting in three uncertainties for b-jets and for c-jets, and ﬁve for light-ﬂavour jets. The approximate
+size of the uncertainty in the tagging eﬃciency is 2% for b-jets, 10% for c-jets and 30% for light-ﬂavour
+jets. Additional uncertainties are considered in the extrapolation of the b-jet eﬃciency calibration above
+pT = 300 GeV and in the misidentiﬁcation of hadronically decaying τ-leptons as b-jets. The uncertainties
+in the jet energy scale and resolution are based on their respective measurements in data [65]. The many
+sources of uncertainty in the jet energy scale correction are decomposed into 21 uncorrelated components
+which are treated as being independent of one another. An additional uncertainty that speciﬁcally aﬀects
+the energy calibration of b- and c-jets is considered.
+The uncertainties in the energy scale and resolution of the jets and leptons are propagated to the calculation
+of Emiss
+T
+, which also has additional uncertainties from the scale, resolution, and eﬃciency of the tracks
+used to deﬁne the soft term, along with the modelling of the underlying event.
+The pile-up modelling uncertainty is assessed by varying the number of pile-up interactions in simulated
+events. The variations are designed to cover the uncertainty in the ratio of the predicted and measured
+11
+cross-section of non-diﬀractive inelastic events producing a hadronic system of mass mX > 13 GeV [75].
+The uncertainty in the combined 2015+2016 integrated luminosity is 2.1%. It is derived, following
+a methodology similar to that detailed in Ref. [76], and using the LUCID-2 detector for the baseline
+luminosity measurements [77], from calibration of the luminosity scale using x–y beam-separation scans.
+7.2 Theoretical uncertainties
+Background processes
+As discussed earlier, the rates of major backgrounds are measured using data control regions, thus theoretical
+uncertainties in the predicted cross-section for Z/γ∗+ jets and t¯t processes are not considered. Instead, the
+eﬀects of theoretical uncertainties in the modelling of the mµµ distribution and in the ratio of the event
+yields in signal regions to those in the control regions are evaluated. The dominant theoretical uncertainties
+are the shape uncertainty in the dimuon mass spectra of the t¯t and Z+ HF contributions.
+For both the Z+ LF and Z+ HF processes, the following sources of theoretical and modelling uncertainties
+are considered: PDF uncertainties (estimated via eigenvector variations and by comparing diﬀerent PDF
+sets), limited accuracy of the ﬁxed-order calculation (estimated by QCD scale variations), variations in
+the choice of strong coupling constant value (αS(MZ)), EW corrections, and photon-induced corrections.
+These variations are treated as fully correlated between Z+ LF and Z+ HF processes.
+The PDF variation uncertainty is obtained using the 90% conﬁdence level (CL) CT14NNLO PDF error set
+and by following the procedure described in Refs. [78, 79]. Rather than a single nuisance parameter to
+describe the 28 eigenvectors of this PDF error set, which could lead to an underestimation of its eﬀect,
+a re-diagonalized set of 7 PDF eigenvectors was used [33]. This represents the minimal set of PDF
+eigenvectors that maintains the necessary correlations, and the sum in quadrature of these eigenvectors
+matches the original CT14NNLO error envelope well. They are treated as separate nuisance parameters.
+The uncertainties due to the variation of PDF scales and αS are derived using VRAP. The former is
+obtained by varying the renormalization and factorization scales of the nominal CT14NNLO PDF up
+and down simultaneously by a factor of two. The value of αS used (0.118) is varied by ±0.002. The EW
+correction uncertainty was assessed by comparing the nominal additive (1 + δEW + δQCD) treatment with
+the multiplicative approximation ((1 + δEW)(1 + δQCD)) treatment of the EW correction in the combination
+of the higher-order EW and QCD eﬀects. The uncertainty in the photon-induced correction is calculated
+from the uncertainties in the quark masses and the photon PDF. Following the recommendations of the
+PDF4LHC forum [79], an additional uncertainty due to the choice of nominal PDF set is derived by
+comparing the central values of CT14NNLO with those from other PDF sets, namely MMHT14 [80] and
+NNPDF3.0 [81]. The maximum width of the envelope of these comparisons is used as the PDF choice
+uncertainty, but only if it is larger than the width of the CT14NNLO PDF eigenvector variation envelope.
+An additional modelling uncertainty is considered for the Z+ HF process. The mµµ spectrum simulated by
+Powheg was compared with those simulated with Sherpa 2.2.1 [45] and with MadGraph5_aMC@NLO
+interfaced with Pythia 8.186. A functional form was chosen to describe the envelope of the diﬀerences
+in the mµµ distribution shape between events with at least one b-quark simulated by Sherpa 2.2.1 and
+MadGraph5_aMC@NLO v2.
+These systematic uncertainties not only imply uncertainties in the shape of the mµµ distribution in the
+signal region, but they also aﬀect the ratio of the expected number of events in the signal region to the
+12
+expected number in the control region. The eﬀect on the Z+ LF normalization in the bVeto signal region is
+2%, while the size of the uncertainty for Z+ HF in the bTag signal region is 7%.
+Moreover, the ratio of the expected number of Z+ LF events in the bVeto control region to the events in
+bTag control and signal regions was estimated with the nominal Powheg+Pythia Z+jet sample, and with
+the alternative MadGraph5_aMC@NLO v2 sample. To cover the observed diﬀerence between the two,
+an additional uncertainty of 27% in the normalization of the Z+ LF process in the bTag signal and control
+region was applied.
+For the t¯t process, theoretical uncertainties in the modelling of the mµµ spectrum and in the extrapolation
+from control region to signal region are also considered. These are estimated by comparing the nominal
+prediction with alternative ones. To estimate the impact of initial and ﬁnal state radiation modelling, two
+alternative Powheg+Pythia samples were generated with the following parameters. In the ﬁrst one, the
+renormalization (µr) and factorization (µf) scale were varied by a factor of 0.5, the value of hdamp was
+doubled (2mt) and the corresponding Perugia 2012 radiation tune variation was used. In the second sample,
+the renormalization and factorization scales were varied by a factor of 2, while the hdamp parameter was
+not changed. The associated variation from the Perugia 2012 tune was used. These choices of parameters
+have been shown to encompass the cases where µr and µf are varied independently, and covered the
+measured uncertainties of the data for unfolded t¯t distributions [82, 83]. Diﬀerences in parton shower
+and hadronization models were investigated using a sample where Powheg-Box was interfaced with
+Herwig++ 2.7.1 [84] with the UE-EE-5 tune [37] and the corresponding CTEQ6L1 PDFs. The nominal
+sample was also compared with a sample generated with MadGraph5_aMC@NLO 2.2.1 [30] interfaced
+with Herwig++. A NLO matrix element and CT10 PDF were used for the t¯t hard-scattering process.
+The parton shower, hadronization and the underlying events were modelled using the Herwig++ 2.7.1
+generator. The UE-EE-5 tune and the corresponding CTEQ6L1 PDF were used. A functional form was
+chosen to encompass the diﬀerences in the mµµ distribution shape between the nominal sample and all
+these alternative samples. These samples were also used to estimate the 3.5% extrapolation uncertainty
+from CRttbar to the SRbTag.
+Theoretical uncertainties that arise from higher-order contributions to the cross-sections and PDFs and aﬀect
+the values of the predicted cross-sections for the diboson and single-top backgrounds are considered.
+Signal processes
+Uncertainties related to signal modelling include the uncertainties associated with the initial- and ﬁnal-state
+radiation, the modelling of underlying events, the choice of the renormalization and factorization scales,
+and the parton distribution functions. None of them has a sizeable eﬀect on the shape of the mµµ spectra,
+but some of them do aﬀect the acceptance in the signal regions. Uncertainties for the diﬀerent mass
+hypotheses were evaluated, but for simplicity, only the largest of the values is used. In the calculation of
+the uncertainties, appropriate requirements on the muon and jets kinematics are applied at hadron level for
+the SRbTag and SRbVeto regions.
+The factorization and renormalization scales were varied by a factor of two up and down, including
+correlated and anti-correlated variations, both in Powheg-Box and in MG5_aMC@NLO. For the bbΦ
+process, the largest deviation from the value of the nominal acceptance is considered as the ﬁnal scale
+uncertainty (2% in SRbTag, and 1% in SRbVeto). A 25% uncertainty for the acceptance of ggF events
+in the SRbTag is considered, as well as its anti-correlated eﬀect in the SRbVeto region, following the
+procedure adopted in Ref. [85].
+13
+The PDF uncertainties are estimated by taking the envelope of the changes in the acceptance associated
+with the PDF4LHC15_nlo_100 (PDF4LC15_nlo_nf4_30) [79] error set for the ggF (bbΦ) signal process.
+They correspond to changes in acceptances not larger than 1%.
+Systematic variations of the parameters of the A14 (for bbΦ) and AZNLO (for ggF) tunes are used to
+account for the uncertainties associated with the initial and ﬁnal state radiation and the modelling of
+underlying events. For bbΦ, these uncertainties correspond to changes of 3.8% and 3.2% of the acceptance
+in the SRbTag and SRbVeto regions. They are associated with a migration of events from one signal
+region to the other, hence they are treated as anti-correlated between the two signal regions. For ggF, the
+uncertainty in the SRbVeto is negligible (< 0.5%), while it is 3.8% in the SRbTag.
+As discussed in Section 3, the signal samples were simulated with the fast simulation framework of ATLAS,
+which replaces the full simulation of the electromagnetic and hadronic calorimeters by a parameterized
+model. No signiﬁcant diﬀerences in acceptance and dimuon invariant mass were observed between a
+limited number of fast simulation signal samples and samples generated with full Geant4-based simulation,
+hence no systematic uncertainty is considered for the use of fast simulation.
+The current result is dominated by the statistical uncertainty of the data (which accounts for 66% of the
+total uncertainty on the ﬁtted value of the signal cross-section), and the systematic uncertainty due to
+the ﬁnite size of the simulated background samples (which accounts for 25% of the total uncertainty).
+Amongst the remaining systematic uncertainties, the modelling of the shape of the mµµ distribution for
+the Z+jets and top–antitop backgrounds dominates (3% of the total uncertainty) followed by the muon
+identiﬁcation eﬃciency (1.5%). All other considered sources of experimental and theoretical uncertainties
+(which individually have an impact < 0.4%) have a combined contribution of less than 5% to the total
+uncertainty on the upper limit.
+8 Results
+The observed p-values as a function of mΦ, obtained applying the statistical analysis described in Section 6,
+are shown in Figure 3(a) for the bbΦ-only ﬁt and in Figure 3(b) for the ggF-only ﬁt. The lines in each ﬁgure
+correspond to separate ﬁts. The dotted line represents the p-value for a ﬁt including only SRbTag and all
+control regions (CRs), the dashed line represents the p-value for a ﬁt including only SRbVeto+CRs, while
+the solid line corresponds to the combined SRbTag+SRbVeto+CRs ﬁt. The dotted lines in the two ﬁgures
+show similar behaviour and so do the dashed lines, while the combined p-values are calculated for separate
+signal production modes implying very diﬀerent contributions from the SRbVeto and SRbTag regions,
+which lead to substantially diﬀerent limits. The largest excess of events above the expected background is
+observed for the b-quark associated production at about mΦ = 480 GeV and amounts to a local signiﬁcance
+of 2.3σ, which becomes 0.6σ after considering the look-elsewhere eﬀect over the mass range 0.2–1.0 TeV.
+The look-elsewhere eﬀect is estimated using the method described in Ref. [86].
+Since the data are in agreement with the predicted backgrounds the results are given in terms of exclusion
+limits. These are set using the modiﬁed frequentist CLs method [87]. Upper limits on the cross section
+times branching ratio for a massive scalar particle are set at the 95% conﬁdence level (CL) as a function
+of the particle mass. The upper limits at 95% CL on σΦ × B(Φ → µµ) (where σΦ is the cross section
+and B is the branching ratio) assume the natural width of the resonance to be negligible compared to
+the experimental resolution, and they cover the mass range 0.2–1.0 TeV. In Figure 4(a) and 4(b) the 95%
+CL upper limits are shown for b-quark associated production and gluon–gluon fusion, respectively. The
+14
+Φ [GeV]
+m
+200
+400
+600
+800
+1000
+0
+Local p
+−3
+10
+−2
+10
+−1
+10
+1
+σ
+0
+σ
+1
+σ
+2
+σ
+3
+SRbTag
+SRbVeto
+SRbTag+SRbVeto
+ATLAS
+=13TeV, 36.1 fb-1
+s
+b-associated production
+(a)
+Φ [GeV]
+m
+200
+400
+600
+800
+1000
+0
+Local p
+−3
+10
+−2
+10
+−1
+10
+1
+σ
+0
+σ
+1
+σ
+2
+σ
+3
+SRbTag
+SRbVeto
+SRbTag+SRbVeto
+ATLAS
+=13TeV, 36.1 fb-1
+s
+gluon-gluon fusion
+(b)
+Figure 3: Observed p-values as a function of mΦ for (a) a bbΦ-only ﬁt and (b) a ggF-only ﬁt. The dotted line
+corresponds to the data in the SRbTag only, the dashed line to the data in SRbVeto only, and the solid curve to the
+combination of the two data categories. All three ﬁts include data from all control regions.
+expected limits are in the ranges 1.3–25 fb and 1.8–25 fb, respectively. The observed limits are in the
+ranges 1.9–41 fb and 1.6–44 fb, respectively. Both the expected and observed limits are calculated in the
+asymptotic approximation [74], which was veriﬁed with MC pseudo-experiments for the mΦ = 1000 GeV
+hypothesis. The upper limit on the ggF production mode is dominated by the SRbVeto, while for the bbΦ
+production mode both the SRbTag and SRbVeto regions contribute to the result because of the relative
+acceptance of the bbΦ production mode in the two regions. Limits shown in Figure 4 are obtained in
+simultaneous ﬁts of the SRbVeto and SRbTag data regions and correspond to the diﬀerent signal production
+modes. Usage of the same data events in both the bbΦ-only and the ggF-only ﬁts explains correlations in
+the behaviour of the observed limits.
+Figures 5(a) and 5(b) show the observed and expected 95% CL upper limits on the production cross section
+times branching ratio for Φ → µµ as a function of the fractional contribution from b-quark associated
+production (σbbΦ/[σbbΦ + σggF]) and the scalar resonance mass. These fractions are derived assuming
+that other production mechanisms do not aﬀect the result.
+A complete set of tables and ﬁgures are available at the Durham HepData repository [88].
+15
+Φ [GeV]
+m
+200
+400
+600
+800
+1000
+Φ× B(Φ→µµ) [fb]
+σ
+1
+10
+2
+10
+Observed
+Expected
+ 1 σ
+±
+ 2 σ
+±
+ATLAS
+=13TeV, 36.1 fb-1
+s
+b-associated production
+(a)
+Φ [GeV]
+m
+200
+400
+600
+800
+1000
+Φ× B(Φ→µµ) [fb]
+σ
+1
+10
+2
+10
+Observed
+Expected
+ 1 σ
+±
+ 2 σ
+±
+ATLAS
+=13TeV, 36.1 fb-1
+s
+gluon-gluon fusion
+(b)
+Figure 4: The observed and expected 95% CL upper limits on the production cross section times branching ratio for a
+massive scalar resonance produced via (a) b-quark associated production and (b) gluon—gluon fusion.
+Φ [GeV]
+m
+200
+400
+600
+800
+1000
+bbΦ/(σbbΦ+σggF)
+σ
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+Φ×B(Φ→µµ) [fb]
+σ
+0
+10
+20
+30
+40
+50
+ATLAS
+=13TeV, 36.1 fb-1
+s
+observed upper limit at 95% CL
+(a)
+Φ [GeV]
+m
+200
+400
+600
+800
+1000
+bbΦ/(σbbΦ+σggF)
+σ
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+Φ×B(Φ→µµ) [fb]
+σ
+0
+10
+20
+30
+40
+50
+ATLAS
+=13TeV, 36.1 fb-1
+s
+expected upper limit at 95% CL
+(b)
+Figure 5: The (a) observed and (b) expected 95% CL upper limit on the production cross section times branching
+ratio for Φ → µµ as a function of the fractional contribution from b-quark associated production and the scalar
+boson mass.
+9 Conclusion
+The ATLAS detector at the LHC has been used to search for a massive scalar resonance decaying into two
+opposite-sign muons, produced via b-quark associated production or via gluon–gluon fusion, assuming
+that the natural width of the resonance is negligible compared to the experimental resolution. The
+search is conducted with 36.1 fb−1 of pp collision data at √s = 13 TeV, recorded during 2015 and 2016.
+The observed dimuon invariant mass spectrum is consistent with the Standard Model prediction within
+uncertainties for events both with and without a b-tagged jet over the 0.2–1.0 TeV range. The observed
+16
+upper limits at 95% conﬁdence level on the cross-section times branching ratio for b-quark associated
+production and gluon–gluon fusion are between 1.9 and 41 fb and 1.6 and 44 fb respectively, which is
+consistent with expectations.
+Acknowledgements
+We thank CERN for the very successful operation of the LHC, as well as the support staﬀ from our
+institutions without whom ATLAS could not be operated eﬃciently.
+We acknowledge the support of ANPCyT, Argentina; YerPhI, Armenia; ARC, Australia; BMWFW
+and FWF, Austria; ANAS, Azerbaijan; SSTC, Belarus; CNPq and FAPESP, Brazil; NSERC, NRC and
+CFI, Canada; CERN; CONICYT, Chile; CAS, MOST and NSFC, China; COLCIENCIAS, Colombia;
+MSMT CR, MPO CR and VSC CR, Czech Republic; DNRF and DNSRC, Denmark; IN2P3-CNRS,
+CEA-DRF/IRFU, France; SRNSFG, Georgia; BMBF, HGF, and MPG, Germany; GSRT, Greece; RGC,
+Hong Kong SAR, China; ISF and Benoziyo Center, Israel; INFN, Italy; MEXT and JSPS, Japan; CNRST,
+Morocco; NWO, Netherlands; RCN, Norway; MNiSW and NCN, Poland; FCT, Portugal; MNE/IFA,
+Romania; MES of Russia and NRC KI, Russian Federation; JINR; MESTD, Serbia; MSSR, Slovakia;
+ARRS and MIZŠ, Slovenia; DST/NRF, South Africa; MINECO, Spain; SRC and Wallenberg Foundation,
+Sweden; SERI, SNSF and Cantons of Bern and Geneva, Switzerland; MOST, Taiwan; TAEK, Turkey;
+STFC, United Kingdom; DOE and NSF, United States of America. In addition, individual groups and
+members have received support from BCKDF, CANARIE, CRC and Compute Canada, Canada; COST,
+ERC, ERDF, Horizon 2020, and Marie Skłodowska-Curie Actions, European Union; Investissements d’
+Avenir Labex and Idex, ANR, France; DFG and AvH Foundation, Germany; Herakleitos, Thales and
+Aristeia programmes co-ﬁnanced by EU-ESF and the Greek NSRF, Greece; BSF-NSF and GIF, Israel;
+CERCA Programme Generalitat de Catalunya, Spain; The Royal Society and Leverhulme Trust, United
+Kingdom.
+The crucial computing support from all WLCG partners is acknowledged gratefully, in particular from
+CERN, the ATLAS Tier-1 facilities at TRIUMF (Canada), NDGF (Denmark, Norway, Sweden), CC-IN2P3
+(France), KIT/GridKA (Germany), INFN-CNAF (Italy), NL-T1 (Netherlands), PIC (Spain), ASGC
+(Taiwan), RAL (UK) and BNL (USA), the Tier-2 facilities worldwide and large non-WLCG resource
+providers. Major contributors of computing resources are listed in Ref. [89].
+References
+[1]
+ATLAS Collaboration, Observation of a new particle in the search for the Standard Model Higgs
+boson with the ATLAS detector at the LHC, Phys. Lett. B 716 (2012) 1, arXiv: 1207.7214 [hep-ex].
+[2]
+CMS Collaboration, Observation of a new boson at a mass of 125 GeV with the CMS experiment at
+the LHC, Phys. Lett. B 716 (2012) 30, arXiv: 1207.7235 [hep-ex].
+[3]
+ATLAS Collaboration, Measurements of the Higgs boson production and decay rates and coupling
+strengths using pp collision data at √s = 7 and 8 TeV in the ATLAS experiment, Eur. Phys. J. C 76
+(2016) 6, arXiv: 1507.04548 [hep-ex].
+[4]
+ATLAS Collaboration, Evidence for the spin-0 nature of the Higgs boson using ATLAS data, Phys.
+Lett. B 726 (2013) 120, arXiv: 1307.1432 [hep-ex].
+17
+[5]
+CMS Collaboration, Precise determination of the mass of the Higgs boson and tests of compatibility
+of its couplings with the standard model predictions using proton collisions at 7 and 8 TeV, Eur.
+Phys. J. C 75 (2015) 212, arXiv: 1412.8662 [hep-ex].
+[6]
+CMS Collaboration, Constraints on the spin-parity and anomalous HVV couplings of the Higgs
+boson in proton collisions at 7 and 8 TeV, Phys. Rev. D 92 (2015) 012004, arXiv: 1411.3441
+[hep-ex].
+[7]
+ATLAS and CMS Collaborations, Measurements of the Higgs boson production and decay rates
+and constraints on its couplings from a combined ATLAS and CMS analysis of the LHC pp collision
+data at √s = 7 and 8 TeV, JHEP 08 (2016) 045, arXiv: 1606.02266 [hep-ex].
+[8]
+F. Englert and R. Brout, Broken Symmetry and the Mass of Gauge Vector Mesons, Phys. Rev. Lett.
+13 (1964) 321.
+[9]
+P. W. Higgs, Broken symmetries, massless particles and gauge ﬁelds, Phys. Lett. 12 (1964) 132.
+[10]
+P. W. Higgs, Broken Symmetries and the Masses of Gauge Bosons, Phys. Rev. Lett. 13 (1964) 508.
+[11]
+P. W. Higgs, Spontaneous Symmetry Breakdown without Massless Bosons, Phys. Rev. 145
+(1966) 1156.
+[12]
+G. Guralnik, C. Hagen and T. Kibble, Global Conservation Laws and Massless Particles, Phys. Rev.
+Lett. 13 (1964) 585.
+[13]
+T. Kibble, Symmetry Breaking in Non-Abelian Gauge Theories, Phys. Rev. 155 (1967) 1554.
+[14]
+A. Djouadi, The anatomy of electro-weak symmetry breaking. Tome II: The Higgs bosons in the
+Minimal Supersymmetric Model, Phys. Rept. 459 (2008) 1, arXiv: hep-ph/0503173.
+[15]
+G. Branco et al., Theory and phenomenology of two-Higgs-doublet models, Phys. Rept. 516 (2012) 1,
+arXiv: 1106.0034 [hep-ph].
+[16]
+W. Altmannshofer et al., Collider signatures of ﬂavorful Higgs bosons, Phys. Rev. D 94 (2016) 115032,
+arXiv: 1610.02398 [hep-ph].
+[17]
+ATLAS Collaboration, Search for additional heavy neutral Higgs and gauge bosons in the ditau
+ﬁnal state produced in 36 fb−1 of pp collisions at √s = 13 TeV with the ATLAS detector, JHEP 01
+(2018) 055, arXiv: 1709.07242 [hep-ex].
+[18]
+CMS Collaboration, Search for beyond the standard model Higgs bosons decaying into a b¯b pair in
+pp collisions at √s = 13 TeV, JHEP 08 (2018) 113, arXiv: 1805.12191 [hep-ex].
+[19]
+J. E. Camargo-Molina, A. Celis and D. A. Faroughy, Anomalies in bottom from new physics in top,
+Phys. Lett. B 784 (2018) 284, arXiv: 1805.04917 [hep-ph].
+[20]
+ATLAS Collaboration, Search for new high-mass phenomena in the dilepton ﬁnal state using 36 fb−1
+of proton–proton collision data at √s = 13 TeV with the ATLAS detector, JHEP 10 (2017) 182,
+arXiv: 1707.02424 [hep-ex].
+[21]
+ATLAS Collaboration, Search for the neutral Higgs bosons of the Minimal Supersymmetric Standard
+Model in pp collisions at √s = 7 TeV with the ATLAS detector, JHEP 02 (2013) 095, arXiv:
+1211.6956 [hep-ex].
+[22]
+CMS Collaboration, Search for neutral MSSM Higgs bosons decaying to µ+µ− in pp collisions at
+√s = 7 and 8 TeV, Phys. Lett. B 752 (2016) 221, arXiv: 1508.01437 [hep-ex].
+[23]
+ATLAS Collaboration, The ATLAS Experiment at the CERN Large Hadron Collider, JINST 3 (2008)
+S08003.
+18
+[24]
+ATLAS Collaboration, ATLAS Insertable B-Layer Technical Design Report, ATLAS-TDR-19,
+2010, url: https://cds.cern.ch/record/1291633, ATLAS Insertable B-Layer Technical
+Design Report Addendum, ATLAS-TDR-19-ADD-1, 2012, URL: https://cds.cern.ch/record/
+1451888.
+[25]
+ATLAS Collaboration, Performance of the ATLAS trigger system in 2015, Eur. Phys. J. C 77
+(2017) 317, arXiv: 1611.09661 [hep-ex].
+[26]
+P. Nason, A New method for combining NLO QCD with shower Monte Carlo algorithms, JHEP 11
+(2004) 040, arXiv: hep-ph/0409146.
+[27]
+S. Frixione, P. Nason and C. Oleari, Matching NLO QCD computations with parton shower
+simulations: the POWHEG method, JHEP 11 (2007) 070, arXiv: 0709.2092 [hep-ph].
+[28]
+S. Alioli, P. Nason, C. Oleari and E. Re, A general framework for implementing NLO calculations
+in shower Monte Carlo programs: the POWHEG BOX, JHEP 06 (2010) 043, arXiv: 1002.2581
+[hep-ph].
+[29]
+E. Bagnaschi, G. Degrassi, P. Slavich and A. Vicini, Higgs production via gluon fusion in the
+POWHEG approach in the SM and in the MSSM, JHEP 02 (2012) 88, arXiv: 1111.2854 [hep-ph].
+[30]
+J. Alwall et al., The automated computation of tree-level and next-to-leading order diﬀerential cross
+sections, and their matching to parton shower simulations, JHEP 07 (2014) 079, arXiv: 1405.0301
+[hep-ph].
+[31]
+M. Wiesemann et al., Higgs production in association with bottom quarks, JHEP 02 (2015) 132,
+arXiv: 1409.5301 [hep-ph].
+[32]
+H.-L. Lai et al., New parton distributions for collider physics, Phys. Rev. D 82 (2010) 074024, arXiv:
+1007.2241 [hep-ph].
+[33]
+S. Dulat et al., New parton distribution functions from a global analysis of quantum chromodynamics,
+Phys. Rev. D 93 (2016) 033006, arXiv: 1506.07443 [hep-ph].
+[34]
+T. Sjöstrand et al., An introduction to PYTHIA 8.2, Comput. Phys. Commun. 191 (2015) 159, arXiv:
+1410.3012 [hep-ph].
+[35]
+ATLAS Collaboration, Measurement of the Z/γ∗ boson transverse momentum distribution in
+pp collisions at √s = 7 TeV with the ATLAS detector, JHEP 09 (2014) 145, arXiv: 1406.3660
+[hep-ex].
+[36]
+J. Pumplin et al., New Generation of Parton Distributions with Uncertainties from Global QCD
+Analysis, JHEP 07 (2002) 012, arXiv: hep-ph/0201195.
+[37]
+ATLAS Collaboration, ATLAS Pythia 8 tunes to 7 TeV data, ATL-PHYS-PUB-2014-021, 2014, url:
+https://cds.cern.ch/record/1966419.
+[38]
+R. D. Ball et al., Parton distributions with LHC data, Nucl. Phys. B 867 (2013) 244, arXiv:
+1207.1303 [hep-ph].
+[39]
+D. J. Lange, The EvtGen particle decay simulation package, Nucl. Instrum. Meth. A 462 (2001) 152.
+[40]
+S. Alioli, P. Nason, C. Oleari and E. Re, Vector boson plus one jet production in POWHEG, JHEP
+01 (2011) 095, arXiv: 1009.5594 [hep-ph].
+[41]
+N. Davidson, T. Przedzinski and Z. Was, PHOTOS interface in C++: Technical and physics
+documentation, Comput. Phys. Commun. 199 (2016) 86, arXiv: 1011.0937 [hep-ph].
+19
+[42]
+C. Anastasiou, L. J. Dixon, K. Melnikov and F. Petriello, High precision QCD at hadron col-
+liders: Electroweak gauge boson rapidity distributions at next-to-leading order, Phys. Rev. D 69
+(2004) 094008, arXiv: hep-ph/0312266.
+[43]
+S. G. Bondarenko and A. A. Sapronov, NLO EW and QCD proton-proton cross section calculations
+with mcsanc-v1.01, Comput. Phys. Commun. 184 (2013) 2343, arXiv: 1301.3687 [hep-ph].
+[44]
+A. D. Martin, R. G. Roberts, W. J. Stirling and R. S. Thorne, Parton distributions incorporating
+QED contributions, Eur. Phys. J. C 39 (2005) 155, arXiv: hep-ph/0411040.
+[45]
+T. Gleisberg et al., Event generation with SHERPA 1.1, JHEP 02 (2009) 007, arXiv: 0811.4622
+[hep-ph].
+[46]
+L. Lönnblad, Correcting the Color-Dipole Cascade Model with Fixed Order Matrix Elements, JHEP
+05 (2002) 046, arXiv: hep-ph/0112284.
+[47]
+N. Lavesson and L. Lönnblad, W+jets matrix elements and the dipole cascade, JHEP 07 (2005) 054,
+arXiv: hep-ph/0503293.
+[48]
+P. Z. Skands, Tuning Monte Carlo generators: The Perugia tunes, Phys. Rev. D 82 (2010) 074018,
+arXiv: 1005.3457 [hep-ph].
+[49]
+M. Czakon and A. Mitov, Top++: A program for the calculation of the top-pair cross-section at
+hadron colliders, Comput. Phys. Commun. 185 (2014) 2930, arXiv: 1112.5675 [hep-ph].
+[50]
+M. Aliev et al., HATHOR: HAdronic Top and Heavy quarks cross section calculatoR, Comput. Phys.
+Commun. 182 (2011) 1034, arXiv: 1007.1327 [hep-ph].
+[51]
+P. Kant et al., HatHor for single top-quark production: Updated predictions and uncertainty
+estimates for single top-quark production in hadronic collisions, Comput. Phys. Commun. 191
+(2015) 74, arXiv: 1406.4403 [hep-ph].
+[52]
+T. Gleisberg and S. Höche, Comix, a new matrix element generator, JHEP 12 (2008) 039, arXiv:
+0808.3674 [hep-ph].
+[53]
+F. Cascioli, P. Maierhofer and S. Pozzorini, Scattering Amplitudes with Open Loops, Phys. Rev. Lett.
+108 (2012) 111601, arXiv: 1111.5206 [hep-ph].
+[54]
+S. Schumann and F. Krauss, A parton shower algorithm based on Catani-Seymour dipole factorisation,
+JHEP 03 (2008) 038, arXiv: 0709.1027 [hep-ph].
+[55]
+S. Höche, F. Krauss, M. Schönherr and F. Siegert, QCD matrix elements + parton showers: The
+NLO case, JHEP 04 (2013) 027, arXiv: 1207.5030 [hep-ph].
+[56]
+ATLAS Collaboration, The ATLAS Simulation Infrastructure, Eur. Phys. J. C 70 (2010) 823, arXiv:
+1005.4568 [physics.ins-det].
+[57]
+ATLAS Collaboration, The simulation principle and performance of the ATLAS fast calorimeter
+simulation FastCaloSim, ATL-PHYS-PUB-2010-013, 2010, url: https://cds.cern.ch/
+record/1300517.
+[58]
+S. Agostinelli et al., GEANT4: A simulation toolkit, Nucl. Instrum. Meth. A 506 (2003) 250.
+[59]
+ATLAS Collaboration, Summary of ATLAS Pythia 8 tunes, ATL-PHYS-PUB-2012-003, 2012, url:
+https://cds.cern.ch/record/1474107.
+[60]
+ATLAS Collaboration, Reconstruction of primary vertices at the ATLAS experiment in Run 1
+proton–proton collisions at the LHC, Eur. Phys. J. C 77 (2017) 332, arXiv: 1611 . 10235
+[physics.ins-det].
+20
+[61]
+ATLAS Collaboration, Muon reconstruction performance of the ATLAS detector in proton–proton
+collision data at √s = 13 TeV, Eur. Phys. J. C 76 (2016) 292, arXiv: 1603.05598 [hep-ex].
+[62]
+ATLAS Collaboration, Topological cell clustering in the ATLAS calorimeters and its performance
+in LHC Run 1, Eur. Phys. J. C 77 (2017) 490, arXiv: 1603.02934 [hep-ex].
+[63]
+M. Cacciari, G. P. Salam and G. Soyez, The anti-kt jet clustering algorithm, JHEP 04 (2008) 063,
+arXiv: 0802.1189 [hep-ph].
+[64]
+M. Cacciari, G. P. Salam and G. Soyez, FastJet user manual, Eur. Phys. J. C 72 (2012) 1896, arXiv:
+1111.6097 [hep-ph].
+[65]
+ATLAS Collaboration, Jet energy scale measurements and their systematic uncertainties in proton–
+proton collisions at √s = 13 TeV with the ATLAS detector, Phys. Rev. D 96 (2017) 072002, arXiv:
+1703.09665 [hep-ex].
+[66]
+ATLAS Collaboration, Performance of pile-up mitigation techniques for jets in pp collisions at
+√s = 8 TeV using the ATLAS detector, Eur. Phys. J. C 76 (2016) 581, arXiv: 1510.03823 [hep-ex].
+[67]
+ATLAS Collaboration, Performance of b-jet identiﬁcation in the ATLAS experiment, JINST 11
+(2016) P04008, arXiv: 1512.01094 [hep-ex].
+[68]
+ATLAS Collaboration, Optimisation of the ATLAS b-tagging performance for the 2016 LHC Run,
+ATL-PHYS-PUB-2016-012, 2016, url: https://cds.cern.ch/record/2160731.
+[69]
+ATLAS Collaboration, Measurements of b-jet tagging eﬃciency with the ATLAS detector using t¯t
+events at √s = 13 TeV, JHEP 08 (2018) 089, arXiv: 1805.01845 [hep-ex].
+[70]
+ATLAS Collaboration, Electron eﬃciency measurements with the ATLAS detector using the 2015
+LHC proton–proton collision data, ATLAS-CONF-2016-024, 2016, url: https://cds.cern.
+ch/record/2157687.
+[71]
+ATLAS Collaboration, Selection of jets produced in 13 TeV proton–proton collisions with the ATLAS
+detector, ATLAS-CONF-2015-029, 2015, url: https://cds.cern.ch/record/2037702.
+[72]
+ATLAS Collaboration, Performance of missing transverse momentum reconstruction with the ATLAS
+detector using proton–proton collisions at √s = 13 TeV, Eur. Phys. J. C 78 (2018) 903, arXiv:
+1802.08168 [hep-ex].
+[73]
+ATLAS Collaboration, Search for resonances in diphoton events at √s = 13 TeV with the ATLAS
+detector, JHEP 09 (2016) 001, arXiv: 1606.03833 [hep-ex].
+[74]
+G. Cowan, K. Cranmer, E. Gross and O. Vitells, Asymptotic formulae for likelihood-based tests of
+new physics, Eur. Phys. J. C 71 (2011) 1554, arXiv: 1007.1727 [physics.data-an].
+[75]
+ATLAS Collaboration, Measurement of the Inelastic Proton–Proton Cross Section at √s = 13 TeV
+with the ATLAS Detector at the LHC, Phys. Rev. Lett. 117 (2016) 182002, arXiv: 1606.02625
+[hep-ex].
+[76]
+ATLAS Collaboration, Luminosity determination in pp collisions at √s = 8 TeV using the ATLAS
+detector at the LHC, Eur. Phys. J. C 76 (2016) 653, arXiv: 1608.03953 [hep-ex].
+[77]
+G. Avoni et al., The new LUCID-2 detector for luminosity measurement and monitoring in ATLAS,
+JINST 13 (2018) P07017.
+[78]
+J. Gao and P. Nadolsky, A meta-analysis of parton distribution functions, JHEP 07 (2014) 035,
+arXiv: 1401.0013 [hep-ph].
+21
+[79]
+J. Butterworth et al., PDF4LHC recommendations for LHC Run II, J. Phys. G 43 (2016) 023001,
+arXiv: 1510.03865 [hep-ph].
+[80]
+P. Motylinski, L. Harland-Lang, A. D. Martin and R. S. Thorne, Updates of PDFs for the 2nd LHC
+run, Nucl. Part. Phys. Proc. 273-275 (2016) 2136, arXiv: 1411.2560 [hep-ph].
+[81]
+R. D. Ball et al., Parton distributions for the LHC Run II, JHEP 04 (2015) 040, arXiv: 1410.8849
+[hep-ph].
+[82]
+ATLAS Collaboration, Simulation of top-quark production for the ATLAS experiment at √s = 13 TeV,
+ATL-PHYS-PUB-2016-004, 2016, url: https://cds.cern.ch/record/2120417.
+[83]
+ATLAS Collaboration, Comparison of Monte Carlo generator predictions to ATLAS measurements
+of top pair production at 7 TeV, ATL-PHYS-PUB-2015-002, 2015, url: https://cds.cern.ch/
+record/1981319.
+[84]
+M. Bahr et al., Herwig++ physics and manual, Eur. Phys. J. C 58 (2008) 639, arXiv: 0803.0883
+[hep-ph].
+[85]
+I. Stewart and F. Tackmann, Theory Uncertainties for Higgs mass and other searches using jet bins,
+Phys. Rev. D 85 (2012) 034011, arXiv: 1107.2117 [hep-ph].
+[86]
+E. Gross and O. Vitells, Trial factors for the look elsewhere eﬀect in high energy physics, Eur. Phys.
+J. C 70 (2010) 525, arXiv: 1005.1891 [physics.data-an].
+[87]
+A. L. Read, Presentation of search results: The CLs technique, J. Phys. G 28 (2002) 2693.
+[88]
+HEPdata record, https://www.hepdata.net/record/84708.
+[89]
+ATLAS Collaboration, ATLAS Computing Acknowledgements, ATL-GEN-PUB-2016-002, url:
+https://cds.cern.ch/record/2202407.
+22
+The ATLAS Collaboration
+M. Aaboud34d, G. Aad99, B. Abbott125, D.C. Abbott100, O. Abdinov13,*, B. Abeloos129,
+D.K. Abhayasinghe91, S.H. Abidi164, O.S. AbouZeid39, N.L. Abraham153, H. Abramowicz158,
+H. Abreu157, Y. Abulaiti6, B.S. Acharya64a,64b,p, S. Adachi160, L. Adam97, L. Adamczyk81a, L. Adamek164,
+J. Adelman119, M. Adersberger112, A. Adiguzel12c,ai, T. Adye141, A.A. Aﬀolder143, Y. Aﬁk157,
+C. Agheorghiesei27c, J.A. Aguilar-Saavedra137f,137a,ah, F. Ahmadov77,af, G. Aielli71a,71b, S. Akatsuka83,
+T.P.A. Åkesson94, E. Akilli52, A.V. Akimov108, G.L. Alberghi23b,23a, J. Albert173, P. Albicocco49,
+M.J. Alconada Verzini86, S. Alderweireldt117, M. Aleksa35, I.N. Aleksandrov77, C. Alexa27b,
+D. Alexandre19, T. Alexopoulos10, M. Alhroob125, B. Ali139, G. Alimonti66a, J. Alison36, S.P. Alkire145,
+C. Allaire129, B.M.M. Allbrooke153, B.W. Allen128, P.P. Allport21, A. Aloisio67a,67b, A. Alonso39,
+F. Alonso86, C. Alpigiani145, A.A. Alshehri55, M.I. Alstaty99, B. Alvarez Gonzalez35,
+D. Álvarez Piqueras171, M.G. Alviggi67a,67b, B.T. Amadio18, Y. Amaral Coutinho78b, A. Ambler101,
+L. Ambroz132, C. Amelung26, D. Amidei103, S.P. Amor Dos Santos137a,137c, S. Amoroso44,
+C.S. Amrouche52, F. An76, C. Anastopoulos146, L.S. Ancu52, N. Andari142, T. Andeen11, C.F. Anders59b,
+J.K. Anders20, K.J. Anderson36, A. Andreazza66a,66b, V. Andrei59a, C.R. Anelli173, S. Angelidakis37,
+I. Angelozzi118, A. Angerami38, A.V. Anisenkov120b,120a, A. Annovi69a, C. Antel59a, M.T. Anthony146,
+M. Antonelli49, D.J.A. Antrim168, F. Anulli70a, M. Aoki79, J.A. Aparisi Pozo171, L. Aperio Bella35,
+G. Arabidze104, J.P. Araque137a, V. Araujo Ferraz78b, R. Araujo Pereira78b, A.T.H. Arce47, R.E. Ardell91,
+F.A. Arduh86, J-F. Arguin107, S. Argyropoulos75, J.-H. Arling44, A.J. Armbruster35, L.J. Armitage90,
+A. Armstrong168, O. Arnaez164, H. Arnold118, M. Arratia31, O. Arslan24, A. Artamonov109,*, G. Artoni132,
+S. Artz97, S. Asai160, N. Asbah57, E.M. Asimakopoulou169, L. Asquith153, K. Assamagan29, R. Astalos28a,
+R.J. Atkin32a, M. Atkinson170, N.B. Atlay148, K. Augsten139, G. Avolio35, R. Avramidou58a,
+M.K. Ayoub15a, A.M. Azoulay165b, G. Azuelos107,av, A.E. Baas59a, M.J. Baca21, H. Bachacou142,
+K. Bachas65a,65b, M. Backes132, P. Bagnaia70a,70b, M. Bahmani82, H. Bahrasemani149, A.J. Bailey171,
+V.R. Bailey170, J.T. Baines141, M. Bajic39, C. Bakalis10, O.K. Baker180, P.J. Bakker118, D. Bakshi Gupta8,
+S. Balaji154, E.M. Baldin120b,120a, P. Balek177, F. Balli142, W.K. Balunas134, J. Balz97, E. Banas82,
+A. Bandyopadhyay24, S. Banerjee178,l, A.A.E. Bannoura179, L. Barak158, W.M. Barbe37, E.L. Barberio102,
+D. Barberis53b,53a, M. Barbero99, T. Barillari113, M-S. Barisits35, J. Barkeloo128, T. Barklow150,
+R. Barnea157, S.L. Barnes58c, B.M. Barnett141, R.M. Barnett18, Z. Barnovska-Blenessy58a,
+A. Baroncelli72a, G. Barone29, A.J. Barr132, L. Barranco Navarro171, F. Barreiro96,
+J. Barreiro Guimarães da Costa15a, R. Bartoldus150, A.E. Barton87, P. Bartos28a, A. Basalaev135,
+A. Bassalat129, R.L. Bates55, S.J. Batista164, S. Batlamous34e, J.R. Batley31, M. Battaglia143,
+M. Bauce70a,70b, F. Bauer142, K.T. Bauer168, H.S. Bawa150, J.B. Beacham123, T. Beau133,
+P.H. Beauchemin167, P. Bechtle24, H.C. Beck51, H.P. Beck20,s, K. Becker50, M. Becker97, C. Becot44,
+A. Beddall12d, A.J. Beddall12a, V.A. Bednyakov77, M. Bedognetti118, C.P. Bee152, T.A. Beermann74,
+M. Begalli78b, M. Begel29, A. Behera152, J.K. Behr44, F. Beisiegel24, A.S. Bell92, G. Bella158,
+L. Bellagamba23b, A. Bellerive33, M. Bellomo157, P. Bellos9, K. Belotskiy110, N.L. Belyaev110,
+O. Benary158,*, D. Benchekroun34a, M. Bender112, N. Benekos10, Y. Benhammou158,
+E. Benhar Noccioli180, J. Benitez75, D.P. Benjamin6, M. Benoit52, J.R. Bensinger26, S. Bentvelsen118,
+L. Beresford132, M. Beretta49, D. Berge44, E. Bergeaas Kuutmann169, N. Berger5, B. Bergmann139,
+L.J. Bergsten26, J. Beringer18, S. Berlendis7, N.R. Bernard100, G. Bernardi133, C. Bernius150,
+F.U. Bernlochner24, T. Berry91, P. Berta97, C. Bertella15a, G. Bertoli43a,43b, I.A. Bertram87, G.J. Besjes39,
+O. Bessidskaia Bylund179, M. Bessner44, N. Besson142, A. Bethani98, S. Bethke113, A. Betti24,
+A.J. Bevan90, J. Beyer113, R. Bi136, R.M. Bianchi136, O. Biebel112, D. Biedermann19, R. Bielski35,
+K. Bierwagen97, N.V. Biesuz69a,69b, M. Biglietti72a, T.R.V. Billoud107, M. Bindi51, A. Bingul12d,
+23
+C. Bini70a,70b, S. Biondi23b,23a, M. Birman177, T. Bisanz51, J.P. Biswal158, C. Bittrich46, D.M. Bjergaard47,
+J.E. Black150, K.M. Black25, T. Blazek28a, I. Bloch44, C. Blocker26, A. Blue55, U. Blumenschein90,
+Dr. Blunier144a, G.J. Bobbink118, V.S. Bobrovnikov120b,120a, S.S. Bocchetta94, A. Bocci47, D. Boerner179,
+D. Bogavac112, A.G. Bogdanchikov120b,120a, C. Bohm43a, V. Boisvert91, P. Bokan51,169, T. Bold81a,
+A.S. Boldyrev111, A.E. Bolz59b, M. Bomben133, M. Bona90, J.S. Bonilla128, M. Boonekamp142,
+H.M. Borecka-Bielska88, A. Borisov121, G. Borissov87, J. Bortfeldt35, D. Bortoletto132,
+V. Bortolotto71a,71b, D. Boscherini23b, M. Bosman14, J.D. Bossio Sola30, K. Bouaouda34a, J. Boudreau136,
+E.V. Bouhova-Thacker87, D. Boumediene37, C. Bourdarios129, S.K. Boutle55, A. Boveia123, J. Boyd35,
+D. Boye32b, I.R. Boyko77, A.J. Bozson91, J. Bracinik21, N. Brahimi99, A. Brandt8, G. Brandt179,
+O. Brandt59a, F. Braren44, U. Bratzler161, B. Brau100, J.E. Brau128, W.D. Breaden Madden55,
+K. Brendlinger44, L. Brenner44, R. Brenner169, S. Bressler177, B. Brickwedde97, D.L. Briglin21,
+D. Britton55, D. Britzger113, I. Brock24, R. Brock104, G. Brooijmans38, T. Brooks91, W.K. Brooks144b,
+E. Brost119, J.H Broughton21, P.A. Bruckman de Renstrom82, D. Bruncko28b, A. Bruni23b, G. Bruni23b,
+L.S. Bruni118, S. Bruno71a,71b, B.H. Brunt31, M. Bruschi23b, N. Bruscino136, P. Bryant36, L. Bryngemark94,
+T. Buanes17, Q. Buat35, P. Buchholz148, A.G. Buckley55, I.A. Budagov77, M.K. Bugge131, F. Bührer50,
+O. Bulekov110, D. Bullock8, T.J. Burch119, S. Burdin88, C.D. Burgard118, A.M. Burger5, B. Burghgrave119,
+K. Burka82, S. Burke141, I. Burmeister45, J.T.P. Burr132, V. Büscher97, E. Buschmann51, P. Bussey55,
+J.M. Butler25, C.M. Buttar55, J.M. Butterworth92, P. Butti35, W. Buttinger35, A. Buzatu155,
+A.R. Buzykaev120b,120a, G. Cabras23b,23a, S. Cabrera Urbán171, D. Caforio139, H. Cai170, V.M.M. Cairo2,
+O. Cakir4a, N. Calace35, P. Calaﬁura18, A. Calandri99, G. Calderini133, P. Calfayan63, G. Callea55,
+L.P. Caloba78b, S. Calvente Lopez96, D. Calvet37, S. Calvet37, T.P. Calvet152, M. Calvetti69a,69b,
+R. Camacho Toro133, S. Camarda35, D. Camarero Munoz96, P. Camarri71a,71b, D. Cameron131,
+R. Caminal Armadans100, C. Camincher35, S. Campana35, M. Campanelli92, A. Camplani39,
+A. Campoverde148, V. Canale67a,67b, M. Cano Bret58c, J. Cantero126, T. Cao158, Y. Cao170,
+M.D.M. Capeans Garrido35, I. Caprini27b, M. Caprini27b, M. Capua40b,40a, R.M. Carbone38,
+R. Cardarelli71a, F.C. Cardillo146, I. Carli140, T. Carli35, G. Carlino67a, B.T. Carlson136, L. Carminati66a,66b,
+R.M.D. Carney43a,43b, S. Caron117, E. Carquin144b, S. Carrá66a,66b, J.W.S. Carter164, D. Casadei32b,
+M.P. Casado14,g, A.F. Casha164, D.W. Casper168, R. Castelijn118, F.L. Castillo171, V. Castillo Gimenez171,
+N.F. Castro137a,137e, A. Catinaccio35, J.R. Catmore131, A. Cattai35, J. Caudron24, V. Cavaliere29,
+E. Cavallaro14, D. Cavalli66a, M. Cavalli-Sforza14, V. Cavasinni69a,69b, E. Celebi12b, F. Ceradini72a,72b,
+L. Cerda Alberich171, A.S. Cerqueira78a, A. Cerri153, L. Cerrito71a,71b, F. Cerutti18, A. Cervelli23b,23a,
+S.A. Cetin12b, A. Chafaq34a, D. Chakraborty119, S.K. Chan57, W.S. Chan118, W.Y. Chan88,
+J.D. Chapman31, B. Chargeishvili156b, D.G. Charlton21, C.C. Chau33, C.A. Chavez Barajas153, S. Che123,
+A. Chegwidden104, S. Chekanov6, S.V. Chekulaev165a, G.A. Chelkov77,au, M.A. Chelstowska35, B. Chen76,
+C. Chen58a, C.H. Chen76, H. Chen29, J. Chen58a, J. Chen38, S. Chen134, S.J. Chen15c, X. Chen15b,at,
+Y. Chen80, Y-H. Chen44, H.C. Cheng61a, H.J. Cheng15d, A. Cheplakov77, E. Cheremushkina121,
+R. Cherkaoui El Moursli34e, E. Cheu7, K. Cheung62, T.J.A. Chevalérias142, L. Chevalier142, V. Chiarella49,
+G. Chiarelli69a, G. Chiodini65a, A.S. Chisholm35,21, A. Chitan27b, I. Chiu160, Y.H. Chiu173,
+M.V. Chizhov77, K. Choi63, A.R. Chomont129, S. Chouridou159, Y.S. Chow118, V. Christodoulou92,
+M.C. Chu61a, J. Chudoba138, A.J. Chuinard101, J.J. Chwastowski82, L. Chytka127, D. Cinca45, V. Cindro89,
+I.A. Cioară24, A. Ciocio18, F. Cirotto67a,67b, Z.H. Citron177, M. Citterio66a, A. Clark52, M.R. Clark38,
+P.J. Clark48, C. Clement43a,43b, Y. Coadou99, M. Cobal64a,64c, A. Coccaro53b, J. Cochran76, H. Cohen158,
+A.E.C. Coimbra177, L. Colasurdo117, B. Cole38, A.P. Colijn118, J. Collot56, P. Conde Muiño137a,i,
+E. Coniavitis50, S.H. Connell32b, I.A. Connelly98, S. Constantinescu27b, F. Conventi67a,aw,
+A.M. Cooper-Sarkar132, F. Cormier172, K.J.R. Cormier164, L.D. Corpe92, M. Corradi70a,70b,
+E.E. Corrigan94, F. Corriveau101,ad, A. Cortes-Gonzalez35, M.J. Costa171, F. Costanza5, D. Costanzo146,
+G. Cottin31, G. Cowan91, J.W. Cowley31, B.E. Cox98, J. Crane98, K. Cranmer122, S.J. Crawley55,
+24
+R.A. Creager134, G. Cree33, S. Crépé-Renaudin56, F. Crescioli133, M. Cristinziani24, V. Croft122,
+G. Crosetti40b,40a, A. Cueto96, T. Cuhadar Donszelmann146, A.R. Cukierman150, S. Czekierda82,
+P. Czodrowski35, M.J. Da Cunha Sargedas De Sousa58b, C. Da Via98, W. Dabrowski81a, T. Dado28a,y,
+S. Dahbi34e, T. Dai103, F. Dallaire107, C. Dallapiccola100, M. Dam39, G. D’amen23b,23a, J. Damp97,
+J.R. Dandoy134, M.F. Daneri30, N.P. Dang178,l, N.D Dann98, M. Danninger172, V. Dao35, G. Darbo53b,
+S. Darmora8, O. Dartsi5, A. Dattagupta128, T. Daubney44, S. D’Auria66a,66b, W. Davey24, C. David44,
+T. Davidek140, D.R. Davis47, E. Dawe102, I. Dawson146, K. De8, R. De Asmundis67a, A. De Benedetti125,
+M. De Beurs118, S. De Castro23b,23a, S. De Cecco70a,70b, N. De Groot117, P. de Jong118, H. De la Torre104,
+F. De Lorenzi76, A. De Maria69a,69b, D. De Pedis70a, A. De Salvo70a, U. De Sanctis71a,71b,
+M. De Santis71a,71b, A. De Santo153, K. De Vasconcelos Corga99, J.B. De Vivie De Regie129,
+C. Debenedetti143, D.V. Dedovich77, N. Dehghanian3, M. Del Gaudio40b,40a, J. Del Peso96,
+Y. Delabat Diaz44, D. Delgove129, F. Deliot142, C.M. Delitzsch7, M. Della Pietra67a,67b, D. Della Volpe52,
+A. Dell’Acqua35, L. Dell’Asta25, M. Delmastro5, C. Delporte129, P.A. Delsart56, D.A. DeMarco164,
+S. Demers180, M. Demichev77, S.P. Denisov121, D. Denysiuk118, L. D’Eramo133, D. Derendarz82,
+J.E. Derkaoui34d, F. Derue133, P. Dervan88, K. Desch24, C. Deterre44, K. Dette164, M.R. Devesa30,
+P.O. Deviveiros35, A. Dewhurst141, S. Dhaliwal26, F.A. Di Bello52, A. Di Ciaccio71a,71b, L. Di Ciaccio5,
+W.K. Di Clemente134, C. Di Donato67a,67b, A. Di Girolamo35, G. Di Gregorio69a,69b, B. Di Micco72a,72b,
+R. Di Nardo100, K.F. Di Petrillo57, R. Di Sipio164, D. Di Valentino33, C. Diaconu99, M. Diamond164,
+F.A. Dias39, T. Dias Do Vale137a, M.A. Diaz144a, J. Dickinson18, E.B. Diehl103, J. Dietrich19,
+S. Díez Cornell44, A. Dimitrievska18, J. Dingfelder24, F. Dittus35, F. Djama99, T. Djobava156b,
+J.I. Djuvsland17, M.A.B. Do Vale78c, M. Dobre27b, D. Dodsworth26, C. Doglioni94, J. Dolejsi140,
+Z. Dolezal140, M. Donadelli78d, J. Donini37, A. D’onofrio90, M. D’Onofrio88, J. Dopke141, A. Doria67a,
+M.T. Dova86, A.T. Doyle55, E. Drechsler149, E. Dreyer149, T. Dreyer51, Y. Du58b, F. Dubinin108,
+M. Dubovsky28a, A. Dubreuil52, E. Duchovni177, G. Duckeck112, A. Ducourthial133, O.A. Ducu107,x,
+D. Duda113, A. Dudarev35, A.C. Dudder97, E.M. Duﬃeld18, L. Duﬂot129, M. Dührssen35, C. Dülsen179,
+M. Dumancic177, A.E. Dumitriu27b,e, A.K. Duncan55, M. Dunford59a, A. Duperrin99, H. Duran Yildiz4a,
+M. Düren54, A. Durglishvili156b, D. Duschinger46, B. Dutta44, D. Duvnjak1, G. Dyckes134, M. Dyndal44,
+S. Dysch98, B.S. Dziedzic82, K.M. Ecker113, R.C. Edgar103, T. Eifert35, G. Eigen17, K. Einsweiler18,
+T. Ekelof169, M. El Kacimi34c, R. El Kosseiﬁ99, V. Ellajosyula99, M. Ellert169, F. Ellinghaus179,
+A.A. Elliot90, N. Ellis35, J. Elmsheuser29, M. Elsing35, D. Emeliyanov141, A. Emerman38, Y. Enari160,
+J.S. Ennis175, M.B. Epland47, J. Erdmann45, A. Ereditato20, S. Errede170, M. Escalier129, C. Escobar171,
+O. Estrada Pastor171, A.I. Etienvre142, E. Etzion158, H. Evans63, A. Ezhilov135, M. Ezzi34e, F. Fabbri55,
+L. Fabbri23b,23a, V. Fabiani117, G. Facini92, R.M. Faisca Rodrigues Pereira137a, R.M. Fakhrutdinov121,
+S. Falciano70a, P.J. Falke5, S. Falke5, J. Faltova140, Y. Fang15a, M. Fanti66a,66b, A. Farbin8, A. Farilla72a,
+E.M. Farina68a,68b, T. Farooque104, S. Farrell18, S.M. Farrington175, P. Farthouat35, F. Fassi34e,
+P. Fassnacht35, D. Fassouliotis9, M. Faucci Giannelli48, W.J. Fawcett31, L. Fayard129, O.L. Fedin135,q,
+W. Fedorko172, M. Feickert41, S. Feigl131, L. Feligioni99, C. Feng58b, E.J. Feng35, M. Feng47,
+M.J. Fenton55, A.B. Fenyuk121, J. Ferrando44, A. Ferrari169, P. Ferrari118, R. Ferrari68a,
+D.E. Ferreira de Lima59b, A. Ferrer171, D. Ferrere52, C. Ferretti103, F. Fiedler97, A. Filipčič89, F. Filthaut117,
+K.D. Finelli25, M.C.N. Fiolhais137a,137c,a, L. Fiorini171, C. Fischer14, W.C. Fisher104, N. Flaschel44,
+I. Fleck148, P. Fleischmann103, R.R.M. Fletcher134, T. Flick179, B.M. Flierl112, L.M. Flores134,
+L.R. Flores Castillo61a, F.M. Follega73a,73b, N. Fomin17, G.T. Forcolin73a,73b, A. Formica142, F.A. Förster14,
+A.C. Forti98, A.G. Foster21, D. Fournier129, H. Fox87, S. Fracchia146, P. Francavilla69a,69b,
+M. Franchini23b,23a, S. Franchino59a, D. Francis35, L. Franconi143, M. Franklin57, M. Frate168,
+M. Fraternali68a,68b, A.N. Fray90, D. Freeborn92, B. Freund107, W.S. Freund78b, E.M. Freundlich45,
+D.C. Frizzell125, D. Froidevaux35, J.A. Frost132, C. Fukunaga161, E. Fullana Torregrosa171,
+E. Fumagalli53b,53a, T. Fusayasu114, J. Fuster171, O. Gabizon157, A. Gabrielli23b,23a, A. Gabrielli18,
+25
+G.P. Gach81a, S. Gadatsch52, P. Gadow113, G. Gagliardi53b,53a, L.G. Gagnon107, C. Galea27b,
+B. Galhardo137a,137c, E.J. Gallas132, B.J. Gallop141, P. Gallus139, G. Galster39, R. Gamboa Goni90,
+K.K. Gan123, S. Ganguly177, J. Gao58a, Y. Gao88, Y.S. Gao150,n, C. García171, J.E. García Navarro171,
+J.A. García Pascual15a, C. Garcia-Argos50, M. Garcia-Sciveres18, R.W. Gardner36, N. Garelli150,
+S. Gargiulo50, V. Garonne131, K. Gasnikova44, A. Gaudiello53b,53a, G. Gaudio68a, I.L. Gavrilenko108,
+A. Gavrilyuk109, C. Gay172, G. Gaycken24, E.N. Gazis10, C.N.P. Gee141, J. Geisen51, M. Geisen97,
+M.P. Geisler59a, C. Gemme53b, M.H. Genest56, C. Geng103, S. Gentile70a,70b, S. George91, D. Gerbaudo14,
+G. Gessner45, S. Ghasemi148, M. Ghasemi Bostanabad173, M. Ghneimat24, B. Giacobbe23b,
+S. Giagu70a,70b, N. Giangiacomi23b,23a, P. Giannetti69a, A. Giannini67a,67b, S.M. Gibson91, M. Gignac143,
+D. Gillberg33, G. Gilles179, D.M. Gingrich3,av, M.P. Giordani64a,64c, F.M. Giorgi23b, P.F. Giraud142,
+P. Giromini57, G. Giugliarelli64a,64c, D. Giugni66a, F. Giuli132, M. Giulini59b, S. Gkaitatzis159, I. Gkialas9,k,
+E.L. Gkougkousis14, P. Gkountoumis10, L.K. Gladilin111, C. Glasman96, J. Glatzer14, P.C.F. Glaysher44,
+A. Glazov44, M. Goblirsch-Kolb26, J. Godlewski82, S. Goldfarb102, T. Golling52, D. Golubkov121,
+A. Gomes137a,137b, R. Goncalves Gama51, R. Gonçalo137a, G. Gonella50, L. Gonella21, A. Gongadze77,
+F. Gonnella21, J.L. Gonski57, S. González de la Hoz171, S. Gonzalez-Sevilla52, L. Goossens35,
+P.A. Gorbounov109, H.A. Gordon29, B. Gorini35, E. Gorini65a,65b, A. Gorišek89, A.T. Goshaw47,
+C. Gössling45, M.I. Gostkin77, C.A. Gottardo24, C.R. Goudet129, D. Goujdami34c, A.G. Goussiou145,
+N. Govender32b,c, C. Goy5, E. Gozani157, I. Grabowska-Bold81a, P.O.J. Gradin169, E.C. Graham88,
+J. Gramling168, E. Gramstad131, S. Grancagnolo19, V. Gratchev135, P.M. Gravila27f, F.G. Gravili65a,65b,
+C. Gray55, H.M. Gray18, Z.D. Greenwood93,al, C. Grefe24, K. Gregersen94, I.M. Gregor44, P. Grenier150,
+K. Grevtsov44, N.A. Grieser125, J. Griﬃths8, A.A. Grillo143, K. Grimm150,b, S. Grinstein14,z, Ph. Gris37,
+J.-F. Grivaz129, S. Groh97, E. Gross177, J. Grosse-Knetter51, G.C. Grossi93, Z.J. Grout92, C. Grud103,
+A. Grummer116, L. Guan103, W. Guan178, J. Guenther35, A. Guerguichon129, F. Guescini165a, D. Guest168,
+R. Gugel50, B. Gui123, T. Guillemin5, S. Guindon35, U. Gul55, J. Guo58c, W. Guo103, Y. Guo58a,t, Z. Guo99,
+R. Gupta44, S. Gurbuz12c, G. Gustavino125, P. Gutierrez125, C. Gutschow92, C. Guyot142, M.P. Guzik81a,
+C. Gwenlan132, C.B. Gwilliam88, A. Haas122, C. Haber18, H.K. Hadavand8, N. Haddad34e, A. Hadef58a,
+S. Hageböck24, M. Hagihara166, M. Haleem174, J. Haley126, G. Halladjian104, G.D. Hallewell99,
+K. Hamacher179, P. Hamal127, K. Hamano173, A. Hamilton32a, G.N. Hamity146, K. Han58a,ak, L. Han58a,
+S. Han15d, K. Hanagaki79,v, M. Hance143, D.M. Handl112, B. Haney134, R. Hankache133, P. Hanke59a,
+E. Hansen94, J.B. Hansen39, J.D. Hansen39, M.C. Hansen24, P.H. Hansen39, K. Hara166, A.S. Hard178,
+T. Harenberg179, S. Harkusha105, P.F. Harrison175, N.M. Hartmann112, Y. Hasegawa147, A. Hasib48,
+S. Hassani142, S. Haug20, R. Hauser104, L. Hauswald46, L.B. Havener38, M. Havranek139, C.M. Hawkes21,
+R.J. Hawkings35, D. Hayden104, C. Hayes152, C.P. Hays132, J.M. Hays90, H.S. Hayward88,
+S.J. Haywood141, F. He58a, M.P. Heath48, V. Hedberg94, L. Heelan8, S. Heer24, K.K. Heidegger50,
+J. Heilman33, S. Heim44, T. Heim18, B. Heinemann44,aq, J.J. Heinrich112, L. Heinrich122, C. Heinz54,
+J. Hejbal138, L. Helary35, A. Held172, S. Hellesund131, C.M. Helling143, S. Hellman43a,43b, C. Helsens35,
+R.C.W. Henderson87, Y. Heng178, S. Henkelmann172, A.M. Henriques Correia35, G.H. Herbert19,
+H. Herde26, V. Herget174, Y. Hernández Jiménez32c, H. Herr97, M.G. Herrmann112, T. Herrmann46,
+G. Herten50, R. Hertenberger112, L. Hervas35, T.C. Herwig134, G.G. Hesketh92, N.P. Hessey165a,
+A. Higashida160, S. Higashino79, E. Higón-Rodriguez171, K. Hildebrand36, E. Hill173, J.C. Hill31,
+K.K. Hill29, K.H. Hiller44, S.J. Hillier21, M. Hils46, I. Hinchliﬀe18, F. Hinterkeuser24, M. Hirose130,
+D. Hirschbuehl179, B. Hiti89, O. Hladik138, D.R. Hlaluku32c, X. Hoad48, J. Hobbs152, N. Hod165a,
+M.C. Hodgkinson146, A. Hoecker35, M.R. Hoeferkamp116, F. Hoenig112, D. Hohn50, D. Hohov129,
+T.R. Holmes36, M. Holzbock112, M. Homann45, B.H. Hommels31, S. Honda166, T. Honda79, T.M. Hong136,
+A. Hönle113, B.H. Hooberman170, W.H. Hopkins128, Y. Horii115, P. Horn46, A.J. Horton149, L.A. Horyn36,
+J-Y. Hostachy56, A. Hostiuc145, S. Hou155, A. Hoummada34a, J. Howarth98, J. Hoya86, M. Hrabovsky127,
+J. Hrdinka35, I. Hristova19, J. Hrivnac129, A. Hrynevich106, T. Hryn’ova5, P.J. Hsu62, S.-C. Hsu145, Q. Hu29,
+26
+S. Hu58c, Y. Huang15a, Z. Hubacek139, F. Hubaut99, M. Huebner24, F. Huegging24, T.B. Huﬀman132,
+M. Huhtinen35, R.F.H. Hunter33, P. Huo152, A.M. Hupe33, N. Huseynov77,af, J. Huston104, J. Huth57,
+R. Hyneman103, G. Iacobucci52, G. Iakovidis29, I. Ibragimov148, L. Iconomidou-Fayard129, Z. Idrissi34e,
+P. Iengo35, R. Ignazzi39, O. Igonkina118,ab, R. Iguchi160, T. Iizawa52, Y. Ikegami79, M. Ikeno79,
+D. Iliadis159, N. Ilic117, F. Iltzsche46, G. Introzzi68a,68b, M. Iodice72a, K. Iordanidou38, V. Ippolito70a,70b,
+M.F. Isacson169, N. Ishijima130, M. Ishino160, M. Ishitsuka162, W. Islam126, C. Issever132, S. Istin157,
+F. Ito166, J.M. Iturbe Ponce61a, R. Iuppa73a,73b, A. Ivina177, H. Iwasaki79, J.M. Izen42, V. Izzo67a,
+P. Jacka138, P. Jackson1, R.M. Jacobs24, V. Jain2, G. Jäkel179, K.B. Jakobi97, K. Jakobs50, S. Jakobsen74,
+T. Jakoubek138, D.O. Jamin126, R. Jansky52, J. Janssen24, M. Janus51, P.A. Janus81a, G. Jarlskog94,
+N. Javadov77,af, T. Javůrek35, M. Javurkova50, F. Jeanneau142, L. Jeanty18, J. Jejelava156a,ag, A. Jelinskas175,
+P. Jenni50,d, J. Jeong44, N. Jeong44, S. Jézéquel5, H. Ji178, J. Jia152, H. Jiang76, Y. Jiang58a, Z. Jiang150,r,
+S. Jiggins50, F.A. Jimenez Morales37, J. Jimenez Pena171, S. Jin15c, A. Jinaru27b, O. Jinnouchi162,
+H. Jivan32c, P. Johansson146, K.A. Johns7, C.A. Johnson63, K. Jon-And43a,43b, R.W.L. Jones87,
+S.D. Jones153, S. Jones7, T.J. Jones88, J. Jongmanns59a, P.M. Jorge137a,137b, J. Jovicevic165a, X. Ju18,
+J.J. Junggeburth113, A. Juste Rozas14,z, A. Kaczmarska82, M. Kado129, H. Kagan123, M. Kagan150,
+T. Kaji176, E. Kajomovitz157, C.W. Kalderon94, A. Kaluza97, S. Kama41, A. Kamenshchikov121,
+L. Kanjir89, Y. Kano160, V.A. Kantserov110, J. Kanzaki79, L.S. Kaplan178, D. Kar32c, M.J. Kareem165b,
+E. Karentzos10, S.N. Karpov77, Z.M. Karpova77, V. Kartvelishvili87, A.N. Karyukhin121, L. Kashif178,
+R.D. Kass123, A. Kastanas43a,43b, Y. Kataoka160, C. Kato58d,58c, J. Katzy44, K. Kawade80, K. Kawagoe85,
+T. Kawaguchi115, T. Kawamoto160, G. Kawamura51, E.F. Kay88, V.F. Kazanin120b,120a, R. Keeler173,
+R. Kehoe41, J.S. Keller33, E. Kellermann94, J.J. Kempster21, J. Kendrick21, O. Kepka138, S. Kersten179,
+B.P. Kerševan89, S. Ketabchi Haghighat164, R.A. Keyes101, M. Khader170, F. Khalil-Zada13, A. Khanov126,
+A.G. Kharlamov120b,120a, T. Kharlamova120b,120a, E.E. Khoda172, A. Khodinov163, T.J. Khoo52,
+E. Khramov77, J. Khubua156b, S. Kido80, M. Kiehn52, C.R. Kilby91, Y.K. Kim36, N. Kimura64a,64c,
+O.M. Kind19, B.T. King88, D. Kirchmeier46, J. Kirk141, A.E. Kiryunin113, T. Kishimoto160,
+D. Kisielewska81a, V. Kitali44, O. Kivernyk5, E. Kladiva28b,*, T. Klapdor-Kleingrothaus50, M.H. Klein103,
+M. Klein88, U. Klein88, K. Kleinknecht97, P. Klimek119, A. Klimentov29, T. Klingl24, T. Klioutchnikova35,
+F.F. Klitzner112, P. Kluit118, S. Kluth113, E. Kneringer74, E.B.F.G. Knoops99, A. Knue50, A. Kobayashi160,
+D. Kobayashi85, T. Kobayashi160, M. Kobel46, M. Kocian150, P. Kodys140, P.T. Koenig24, T. Koﬀas33,
+E. Koﬀeman118, N.M. Köhler113, T. Koi150, M. Kolb59b, I. Koletsou5, T. Kondo79, N. Kondrashova58c,
+K. Köneke50, A.C. König117, T. Kono79, R. Konoplich122,an, V. Konstantinides92, N. Konstantinidis92,
+B. Konya94, R. Kopeliansky63, S. Koperny81a, K. Korcyl82, K. Kordas159, G. Koren158, A. Korn92,
+I. Korolkov14, E.V. Korolkova146, N. Korotkova111, O. Kortner113, S. Kortner113, T. Kosek140,
+V.V. Kostyukhin24, A. Kotwal47, A. Koulouris10, A. Kourkoumeli-Charalampidi68a,68b, C. Kourkoumelis9,
+E. Kourlitis146, V. Kouskoura29, A.B. Kowalewska82, R. Kowalewski173, T.Z. Kowalski81a, C. Kozakai160,
+W. Kozanecki142, A.S. Kozhin121, V.A. Kramarenko111, G. Kramberger89, D. Krasnopevtsev58a,
+M.W. Krasny133, A. Krasznahorkay35, D. Krauss113, J.A. Kremer81a, J. Kretzschmar88, P. Krieger164,
+K. Krizka18, K. Kroeninger45, H. Kroha113, J. Kroll138, J. Kroll134, J. Krstic16, U. Kruchonak77,
+H. Krüger24, N. Krumnack76, M.C. Kruse47, T. Kubota102, S. Kuday4b, J.T. Kuechler179, S. Kuehn35,
+A. Kugel59a, T. Kuhl44, V. Kukhtin77, R. Kukla99, Y. Kulchitsky105,aj, S. Kuleshov144b, Y.P. Kulinich170,
+M. Kuna56, T. Kunigo83, A. Kupco138, T. Kupfer45, O. Kuprash158, H. Kurashige80, L.L. Kurchaninov165a,
+Y.A. Kurochkin105, A. Kurova110, M.G. Kurth15d, E.S. Kuwertz35, M. Kuze162, J. Kvita127, T. Kwan101,
+A. La Rosa113, J.L. La Rosa Navarro78d, L. La Rotonda40b,40a, F. La Ruﬀa40b,40a, C. Lacasta171,
+F. Lacava70a,70b, J. Lacey44, D.P.J. Lack98, H. Lacker19, D. Lacour133, E. Ladygin77, R. Lafaye5,
+B. Laforge133, T. Lagouri32c, S. Lai51, S. Lammers63, W. Lampl7, E. Lançon29, U. Landgraf50,
+M.P.J. Landon90, M.C. Lanfermann52, V.S. Lang44, J.C. Lange51, R.J. Langenberg35, A.J. Lankford168,
+F. Lanni29, K. Lantzsch24, A. Lanza68a, A. Lapertosa53b,53a, S. Laplace133, J.F. Laporte142, T. Lari66a,
+27
+F. Lasagni Manghi23b,23a, M. Lassnig35, T.S. Lau61a, A. Laudrain129, M. Lavorgna67a,67b,
+M. Lazzaroni66a,66b, B. Le102, O. Le Dortz133, E. Le Guirriec99, E.P. Le Quilleuc142, M. LeBlanc7,
+T. LeCompte6, F. Ledroit-Guillon56, C.A. Lee29, G.R. Lee144a, L. Lee57, S.C. Lee155, B. Lefebvre101,
+M. Lefebvre173, F. Legger112, C. Leggett18, K. Lehmann149, N. Lehmann179, G. Lehmann Miotto35,
+W.A. Leight44, A. Leisos159,w, M.A.L. Leite78d, R. Leitner140, D. Lellouch177, K.J.C. Leney92, T. Lenz24,
+B. Lenzi35, R. Leone7, S. Leone69a, C. Leonidopoulos48, G. Lerner153, C. Leroy107, R. Les164,
+A.A.J. Lesage142, C.G. Lester31, M. Levchenko135, J. Levêque5, D. Levin103, L.J. Levinson177, D. Lewis90,
+B. Li15b, B. Li103, C-Q. Li58a,am, H. Li58a, H. Li58b, K. Li150, L. Li58c, M. Li15a, Q. Li15d, Q.Y. Li58a,
+S. Li58d,58c, X. Li58c, Y. Li148, Z. Liang15a, B. Liberti71a, A. Liblong164, K. Lie61c, S. Liem118,
+A. Limosani154, C.Y. Lin31, K. Lin104, T.H. Lin97, R.A. Linck63, J.H. Lindon21, B.E. Lindquist152,
+A.L. Lionti52, E. Lipeles134, A. Lipniacka17, M. Lisovyi59b, T.M. Liss170,as, A. Lister172, A.M. Litke143,
+J.D. Little8, B. Liu76, B.L Liu6, H.B. Liu29, H. Liu103, J.B. Liu58a, J.K.K. Liu132, K. Liu133, M. Liu58a,
+P. Liu18, Y. Liu15a, Y.L. Liu58a, Y.W. Liu58a, M. Livan68a,68b, A. Lleres56, J. Llorente Merino15a,
+S.L. Lloyd90, C.Y. Lo61b, F. Lo Sterzo41, E.M. Lobodzinska44, P. Loch7, T. Lohse19, K. Lohwasser146,
+M. Lokajicek138, J.D. Long170, R.E. Long87, L. Longo65a,65b, K.A. Looper123, J.A. Lopez144b,
+I. Lopez Paz98, A. Lopez Solis146, J. Lorenz112, N. Lorenzo Martinez5, M. Losada22, P.J. Lösel112,
+A. Lösle50, X. Lou44, X. Lou15a, A. Lounis129, J. Love6, P.A. Love87, J.J. Lozano Bahilo171, H. Lu61a,
+M. Lu58a, Y.J. Lu62, H.J. Lubatti145, C. Luci70a,70b, A. Lucotte56, C. Luedtke50, F. Luehring63, I. Luise133,
+L. Luminari70a, B. Lund-Jensen151, M.S. Lutz100, P.M. Luzi133, D. Lynn29, R. Lysak138, E. Lytken94,
+F. Lyu15a, V. Lyubushkin77, T. Lyubushkina77, H. Ma29, L.L. Ma58b, Y. Ma58b, G. Maccarrone49,
+A. Macchiolo113, C.M. Macdonald146, J. Machado Miguens134,137b, D. Madaﬀari171, R. Madar37,
+W.F. Mader46, N. Madysa46, J. Maeda80, K. Maekawa160, S. Maeland17, T. Maeno29, M. Maerker46,
+A.S. Maevskiy111, V. Magerl50, D.J. Mahon38, C. Maidantchik78b, T. Maier112, A. Maio137a,137b,137d,
+O. Majersky28a, S. Majewski128, Y. Makida79, N. Makovec129, B. Malaescu133, Pa. Malecki82,
+V.P. Maleev135, F. Malek56, U. Mallik75, D. Malon6, C. Malone31, S. Maltezos10, S. Malyukov35,
+J. Mamuzic171, G. Mancini49, I. Mandić89, J. Maneira137a, L. Manhaes de Andrade Filho78a,
+J. Manjarres Ramos46, K.H. Mankinen94, A. Mann112, A. Manousos74, B. Mansoulie142,
+S. Manzoni66a,66b, A. Marantis159, G. Marceca30, L. March52, L. Marchese132, G. Marchiori133,
+M. Marcisovsky138, C. Marcon94, C.A. Marin Tobon35, M. Marjanovic37, F. Marroquim78b, Z. Marshall18,
+M.U.F Martensson169, S. Marti-Garcia171, C.B. Martin123, T.A. Martin175, V.J. Martin48,
+B. Martin dit Latour17, M. Martinez14,z, V.I. Martinez Outschoorn100, S. Martin-Haugh141,
+V.S. Martoiu27b, A.C. Martyniuk92, A. Marzin35, L. Masetti97, T. Mashimo160, R. Mashinistov108,
+J. Masik98, A.L. Maslennikov120b,120a, L.H. Mason102, L. Massa71a,71b, P. Massarotti67a,67b,
+P. Mastrandrea152, A. Mastroberardino40b,40a, T. Masubuchi160, P. Mättig24, J. Maurer27b, B. Maček89,
+S.J. Maxﬁeld88, D.A. Maximov120b,120a, R. Mazini155, I. Maznas159, S.M. Mazza143, S.P. Mc Kee103,
+A. McCarn41, T.G. McCarthy113, L.I. McClymont92, W.P. McCormack18, E.F. McDonald102,
+J.A. Mcfayden35, G. Mchedlidze51, M.A. McKay41, K.D. McLean173, S.J. McMahon141,
+P.C. McNamara102, C.J. McNicol175, R.A. McPherson173,ad, J.E. Mdhluli32c, Z.A. Meadows100,
+S. Meehan145, T.M. Megy50, S. Mehlhase112, A. Mehta88, T. Meideck56, B. Meirose42, D. Melini171,h,
+B.R. Mellado Garcia32c, J.D. Mellenthin51, M. Melo28a, F. Meloni44, A. Melzer24, S.B. Menary98,
+E.D. Mendes Gouveia137a, L. Meng88, X.T. Meng103, S. Menke113, E. Meoni40b,40a, S. Mergelmeyer19,
+S.A.M. Merkt136, C. Merlassino20, P. Mermod52, L. Merola67a,67b, C. Meroni66a, F.S. Merritt36,
+A. Messina70a,70b, J. Metcalfe6, A.S. Mete168, C. Meyer63, J. Meyer157, J-P. Meyer142,
+H. Meyer Zu Theenhausen59a, F. Miano153, R.P. Middleton141, L. Mijović48, G. Mikenberg177,
+M. Mikestikova138, M. Mikuž89, M. Milesi102, A. Milic164, D.A. Millar90, D.W. Miller36, A. Milov177,
+D.A. Milstead43a,43b, R.A. Mina150,r, A.A. Minaenko121, M. Miñano Moya171, I.A. Minashvili156b,
+A.I. Mincer122, B. Mindur81a, M. Mineev77, Y. Minegishi160, Y. Ming178, L.M. Mir14, A. Mirto65a,65b,
+28
+K.P. Mistry134, T. Mitani176, J. Mitrevski112, V.A. Mitsou171, M. Mittal58c, A. Miucci20, P.S. Miyagawa146,
+A. Mizukami79, J.U. Mjörnmark94, T. Mkrtchyan181, M. Mlynarikova140, T. Moa43a,43b, K. Mochizuki107,
+P. Mogg50, S. Mohapatra38, S. Molander43a,43b, R. Moles-Valls24, M.C. Mondragon104, K. Mönig44,
+J. Monk39, E. Monnier99, A. Montalbano149, J. Montejo Berlingen35, F. Monticelli86, S. Monzani66a,
+N. Morange129, D. Moreno22, M. Moreno Llácer35, P. Morettini53b, M. Morgenstern118, S. Morgenstern46,
+D. Mori149, M. Morii57, M. Morinaga176, V. Morisbak131, A.K. Morley35, G. Mornacchi35, A.P. Morris92,
+J.D. Morris90, L. Morvaj152, P. Moschovakos10, M. Mosidze156b, H.J. Moss146, J. Moss150,o,
+K. Motohashi162, R. Mount150, E. Mountricha35, E.J.W. Moyse100, S. Muanza99, F. Mueller113,
+J. Mueller136, R.S.P. Mueller112, D. Muenstermann87, G.A. Mullier94, F.J. Munoz Sanchez98, P. Murin28b,
+W.J. Murray175,141, A. Murrone66a,66b, M. Muškinja89, C. Mwewa32a, A.G. Myagkov121,ao, J. Myers128,
+M. Myska139, B.P. Nachman18, O. Nackenhorst45, K. Nagai132, K. Nagano79, Y. Nagasaka60, M. Nagel50,
+E. Nagy99, A.M. Nairz35, Y. Nakahama115, K. Nakamura79, T. Nakamura160, I. Nakano124, H. Nanjo130,
+F. Napolitano59a, R.F. Naranjo Garcia44, R. Narayan11, D.I. Narrias Villar59a, I. Naryshkin135,
+T. Naumann44, G. Navarro22, R. Nayyar7, H.A. Neal103,*, P.Y. Nechaeva108, T.J. Neep142, A. Negri68a,68b,
+M. Negrini23b, S. Nektarijevic117, C. Nellist51, M.E. Nelson132, S. Nemecek138, P. Nemethy122,
+M. Nessi35,f, M.S. Neubauer170, M. Neumann179, P.R. Newman21, T.Y. Ng61c, Y.S. Ng19, Y.W.Y. Ng168,
+H.D.N. Nguyen99, T. Nguyen Manh107, E. Nibigira37, R.B. Nickerson132, R. Nicolaidou142, D.S. Nielsen39,
+J. Nielsen143, N. Nikiforou11, V. Nikolaenko121,ao, I. Nikolic-Audit133, K. Nikolopoulos21, P. Nilsson29,
+H.R. Nindhito52, Y. Ninomiya79, A. Nisati70a, N. Nishu58c, R. Nisius113, I. Nitsche45, T. Nitta176,
+T. Nobe160, Y. Noguchi83, M. Nomachi130, I. Nomidis133, M.A. Nomura29, T. Nooney90, M. Nordberg35,
+N. Norjoharuddeen132, T. Novak89, O. Novgorodova46, R. Novotny139, L. Nozka127, K. Ntekas168,
+E. Nurse92, F. Nuti102, F.G. Oakham33,av, H. Oberlack113, J. Ocariz133, A. Ochi80, I. Ochoa38,
+J.P. Ochoa-Ricoux144a, K. O’Connor26, S. Oda85, S. Odaka79, S. Oerdek51, A. Oh98, S.H. Oh47,
+C.C. Ohm151, H. Oide53b,53a, M.L. Ojeda164, H. Okawa166, Y. Okazaki83, Y. Okumura160, T. Okuyama79,
+A. Olariu27b, L.F. Oleiro Seabra137a, S.A. Olivares Pino144a, D. Oliveira Damazio29, J.L. Oliver1,
+M.J.R. Olsson36, A. Olszewski82, J. Olszowska82, D.C. O’Neil149, A. Onofre137a,137e, K. Onogi115,
+P.U.E. Onyisi11, H. Oppen131, M.J. Oreglia36, G.E. Orellana86, Y. Oren158, D. Orestano72a,72b,
+E.C. Orgill98, N. Orlando61b, A.A. O’Rourke44, R.S. Orr164, B. Osculati53b,53a,*, V. O’Shea55,
+R. Ospanov58a, G. Otero y Garzon30, H. Otono85, M. Ouchrif34d, F. Ould-Saada131, A. Ouraou142,
+Q. Ouyang15a, M. Owen55, R.E. Owen21, V.E. Ozcan12c, N. Ozturk8, J. Pacalt127, H.A. Pacey31,
+K. Pachal149, A. Pacheco Pages14, L. Pacheco Rodriguez142, C. Padilla Aranda14, S. Pagan Griso18,
+M. Paganini180, G. Palacino63, S. Palazzo48, S. Palestini35, M. Palka81b, D. Pallin37, I. Panagoulias10,
+C.E. Pandini35, J.G. Panduro Vazquez91, P. Pani35, G. Panizzo64a,64c, L. Paolozzi52, T.D. Papadopoulou10,
+K. Papageorgiou9,k, A. Paramonov6, D. Paredes Hernandez61b, S.R. Paredes Saenz132, B. Parida163,
+T.H. Park33, A.J. Parker87, K.A. Parker44, M.A. Parker31, F. Parodi53b,53a, J.A. Parsons38, U. Parzefall50,
+V.R. Pascuzzi164, J.M.P. Pasner143, E. Pasqualucci70a, S. Passaggio53b, F. Pastore91, P. Pasuwan43a,43b,
+S. Pataraia97, J.R. Pater98, A. Pathak178,l, T. Pauly35, B. Pearson113, M. Pedersen131, L. Pedraza Diaz117,
+R. Pedro137a,137b, S.V. Peleganchuk120b,120a, O. Penc138, C. Peng15d, H. Peng58a, B.S. Peralva78a,
+M.M. Perego129, A.P. Pereira Peixoto137a, D.V. Perepelitsa29, F. Peri19, L. Perini66a,66b, H. Pernegger35,
+S. Perrella67a,67b, V.D. Peshekhonov77,*, K. Peters44, R.F.Y. Peters98, B.A. Petersen35, T.C. Petersen39,
+E. Petit56, A. Petridis1, C. Petridou159, P. Petroﬀ129, M. Petrov132, F. Petrucci72a,72b, M. Pettee180,
+N.E. Pettersson100, A. Peyaud142, R. Pezoa144b, T. Pham102, F.H. Phillips104, P.W. Phillips141,
+M.W. Phipps170, G. Piacquadio152, E. Pianori18, A. Picazio100, R.H. Pickles98, R. Piegaia30, J.E. Pilcher36,
+A.D. Pilkington98, M. Pinamonti71a,71b, J.L. Pinfold3, M. Pitt177, L. Pizzimento71a,71b, M.-A. Pleier29,
+V. Pleskot140, E. Plotnikova77, D. Pluth76, P. Podberezko120b,120a, R. Poettgen94, R. Poggi52, L. Poggioli129,
+I. Pogrebnyak104, D. Pohl24, I. Pokharel51, G. Polesello68a, A. Poley18, A. Policicchio70a,70b, R. Polifka35,
+A. Polini23b, C.S. Pollard44, V. Polychronakos29, D. Ponomarenko110, L. Pontecorvo35, G.A. Popeneciu27d,
+29
+D.M. Portillo Quintero133, S. Pospisil139, K. Potamianos44, I.N. Potrap77, C.J. Potter31, H. Potti11,
+T. Poulsen94, J. Poveda35, T.D. Powell146, M.E. Pozo Astigarraga35, P. Pralavorio99, S. Prell76, D. Price98,
+M. Primavera65a, S. Prince101, M.L. Proﬃtt145, N. Proklova110, K. Prokoﬁev61c, F. Prokoshin144b,
+S. Protopopescu29, J. Proudfoot6, M. Przybycien81a, A. Puri170, P. Puzo129, J. Qian103, Y. Qin98,
+A. Quadt51, M. Queitsch-Maitland44, A. Qureshi1, P. Rados102, F. Ragusa66a,66b, G. Rahal95, J.A. Raine52,
+S. Rajagopalan29, A. Ramirez Morales90, K. Ran15a, T. Rashid129, S. Raspopov5, M.G. Ratti66a,66b,
+D.M. Rauch44, F. Rauscher112, S. Rave97, B. Ravina146, I. Ravinovich177, J.H. Rawling98, M. Raymond35,
+A.L. Read131, N.P. Readioﬀ56, M. Reale65a,65b, D.M. Rebuzzi68a,68b, A. Redelbach174, G. Redlinger29,
+R. Reece143, R.G. Reed32c, K. Reeves42, L. Rehnisch19, J. Reichert134, D. Reikher158, A. Reiss97,
+A. Rej148, C. Rembser35, H. Ren15d, M. Rescigno70a, S. Resconi66a, E.D. Resseguie134, S. Rettie172,
+E. Reynolds21, O.L. Rezanova120b,120a, P. Reznicek140, E. Ricci73a,73b, R. Richter113, S. Richter44,
+E. Richter-Was81b, O. Ricken24, M. Ridel133, P. Rieck113, C.J. Riegel179, O. Rifki44, M. Rijssenbeek152,
+A. Rimoldi68a,68b, M. Rimoldi20, L. Rinaldi23b, G. Ripellino151, B. Ristić87, E. Ritsch35, I. Riu14,
+J.C. Rivera Vergara144a, F. Rizatdinova126, E. Rizvi90, C. Rizzi14, R.T. Roberts98, S.H. Robertson101,ad,
+D. Robinson31, J.E.M. Robinson44, A. Robson55, E. Rocco97, C. Roda69a,69b, Y. Rodina99,
+S. Rodriguez Bosca171, A. Rodriguez Perez14, D. Rodriguez Rodriguez171, A.M. Rodríguez Vera165b,
+S. Roe35, C.S. Rogan57, O. Røhne131, R. Röhrig113, C.P.A. Roland63, J. Roloﬀ57, A. Romaniouk110,
+M. Romano23b,23a, N. Rompotis88, M. Ronzani122, L. Roos133, S. Rosati70a, K. Rosbach50, N-A. Rosien51,
+B.J. Rosser134, E. Rossi44, E. Rossi72a,72b, E. Rossi67a,67b, L.P. Rossi53b, L. Rossini66a,66b, J.H.N. Rosten31,
+R. Rosten14, M. Rotaru27b, J. Rothberg145, D. Rousseau129, D. Roy32c, A. Rozanov99, Y. Rozen157,
+X. Ruan32c, F. Rubbo150, F. Rühr50, A. Ruiz-Martinez171, Z. Rurikova50, N.A. Rusakovich77,
+H.L. Russell101, J.P. Rutherfoord7, E.M. Rüttinger44,m, Y.F. Ryabov135, M. Rybar38, G. Rybkin129, S. Ryu6,
+A. Ryzhov121, G.F. Rzehorz51, P. Sabatini51, G. Sabato118, S. Sacerdoti129, H.F-W. Sadrozinski143,
+R. Sadykov77, F. Safai Tehrani70a, P. Saha119, M. Sahinsoy59a, A. Sahu179, M. Saimpert44, M. Saito160,
+T. Saito160, H. Sakamoto160, A. Sakharov122,an, D. Salamani52, G. Salamanna72a,72b,
+J.E. Salazar Loyola144b, P.H. Sales De Bruin169, D. Salihagic113,*, A. Salnikov150, J. Salt171,
+D. Salvatore40b,40a, F. Salvatore153, A. Salvucci61a,61b,61c, A. Salzburger35, J. Samarati35, D. Sammel50,
+D. Sampsonidis159, D. Sampsonidou159, J. Sánchez171, A. Sanchez Pineda64a,64c, H. Sandaker131,
+C.O. Sander44, M. Sandhoﬀ179, C. Sandoval22, D.P.C. Sankey141, M. Sannino53b,53a, Y. Sano115,
+A. Sansoni49, C. Santoni37, H. Santos137a, I. Santoyo Castillo153, A. Santra171, A. Sapronov77,
+J.G. Saraiva137a,137d, O. Sasaki79, K. Sato166, E. Sauvan5, P. Savard164,av, N. Savic113, R. Sawada160,
+C. Sawyer141, L. Sawyer93,al, C. Sbarra23b, A. Sbrizzi23a, T. Scanlon92, J. Schaarschmidt145, P. Schacht113,
+B.M. Schachtner112, D. Schaefer36, L. Schaefer134, J. Schaeﬀer97, S. Schaepe35, U. Schäfer97,
+A.C. Schaﬀer129, D. Schaile112, R.D. Schamberger152, N. Scharmberg98, V.A. Schegelsky135,
+D. Scheirich140, F. Schenck19, M. Schernau168, C. Schiavi53b,53a, S. Schier143, L.K. Schildgen24,
+Z.M. Schillaci26, E.J. Schioppa35, M. Schioppa40b,40a, K.E. Schleicher50, S. Schlenker35,
+K.R. Schmidt-Sommerfeld113, K. Schmieden35, C. Schmitt97, S. Schmitt44, S. Schmitz97,
+J.C. Schmoeckel44, U. Schnoor50, L. Schoeﬀel142, A. Schoening59b, E. Schopf132, M. Schott97,
+J.F.P. Schouwenberg117, J. Schovancova35, S. Schramm52, A. Schulte97, H-C. Schultz-Coulon59a,
+M. Schumacher50, B.A. Schumm143, Ph. Schune142, A. Schwartzman150, T.A. Schwarz103,
+Ph. Schwemling142, R. Schwienhorst104, A. Sciandra24, G. Sciolla26, M. Scornajenghi40b,40a, F. Scuri69a,
+F. Scutti102, L.M. Scyboz113, C.D. Sebastiani70a,70b, P. Seema19, S.C. Seidel116, A. Seiden143, T. Seiss36,
+J.M. Seixas78b, G. Sekhniaidze67a, K. Sekhon103, S.J. Sekula41, N. Semprini-Cesari23b,23a, S. Sen47,
+S. Senkin37, C. Serfon131, L. Serin129, L. Serkin64a,64b, M. Sessa58a, H. Severini125, F. Sforza167,
+A. Sfyrla52, E. Shabalina51, J.D. Shahinian143, N.W. Shaikh43a,43b, D. Shaked Renous177, L.Y. Shan15a,
+R. Shang170, J.T. Shank25, M. Shapiro18, A.S. Sharma1, A. Sharma132, P.B. Shatalov109, K. Shaw153,
+S.M. Shaw98, A. Shcherbakova135, Y. Shen125, N. Sherafati33, A.D. Sherman25, P. Sherwood92, L. Shi155,ar,
+30
+S. Shimizu79, C.O. Shimmin180, Y. Shimogama176, M. Shimojima114, I.P.J. Shipsey132, S. Shirabe85,
+M. Shiyakova77, J. Shlomi177, A. Shmeleva108, D. Shoaleh Saadi107, M.J. Shochet36, S. Shojaii102,
+D.R. Shope125, S. Shrestha123, E. Shulga110, P. Sicho138, A.M. Sickles170, P.E. Sidebo151,
+E. Sideras Haddad32c, O. Sidiropoulou35, A. Sidoti23b,23a, F. Siegert46, Dj. Sijacki16, J. Silva137a,
+M. Silva Jr.178, M.V. Silva Oliveira78a, S.B. Silverstein43a, S. Simion129, E. Simioni97, M. Simon97,
+R. Simoniello97, P. Sinervo164, N.B. Sinev128, M. Sioli23b,23a, I. Siral103, S.Yu. Sivoklokov111,
+J. Sjölin43a,43b, P. Skubic125, M. Slater21, T. Slavicek139, M. Slawinska82, K. Sliwa167, R. Slovak140,
+V. Smakhtin177, B.H. Smart5, J. Smiesko28a, N. Smirnov110, S.Yu. Smirnov110, Y. Smirnov110,
+L.N. Smirnova111, O. Smirnova94, J.W. Smith51, M. Smizanska87, K. Smolek139, A. Smykiewicz82,
+A.A. Snesarev108, I.M. Snyder128, S. Snyder29, R. Sobie173,ad, A.M. Soﬀa168, A. Soﬀer158, A. Søgaard48,
+F. Sohns51, G. Sokhrannyi89, C.A. Solans Sanchez35, M. Solar139, E.Yu. Soldatov110, U. Soldevila171,
+A.A. Solodkov121, A. Soloshenko77, O.V. Solovyanov121, V. Solovyev135, P. Sommer146, H. Son167,
+W. Song141, W.Y. Song165b, A. Sopczak139, F. Sopkova28b, C.L. Sotiropoulou69a,69b, S. Sottocornola68a,68b,
+R. Soualah64a,64c,j, A.M. Soukharev120b,120a, D. South44, S. Spagnolo65a,65b, M. Spalla113,
+M. Spangenberg175, F. Spanò91, D. Sperlich19, T.M. Spieker59a, R. Spighi23b, G. Spigo35, L.A. Spiller102,
+D.P. Spiteri55, M. Spousta140, A. Stabile66a,66b, R. Stamen59a, S. Stamm19, E. Stanecka82, R.W. Stanek6,
+C. Stanescu72a, B. Stanislaus132, M.M. Stanitzki44, B. Stapf118, S. Stapnes131, E.A. Starchenko121,
+G.H. Stark143, J. Stark56, S.H Stark39, P. Staroba138, P. Starovoitov59a, S. Stärz101, R. Staszewski82,
+M. Stegler44, P. Steinberg29, B. Stelzer149, H.J. Stelzer35, O. Stelzer-Chilton165a, H. Stenzel54,
+T.J. Stevenson153, G.A. Stewart35, M.C. Stockton35, G. Stoicea27b, P. Stolte51, S. Stonjek113,
+A. Straessner46, J. Strandberg151, S. Strandberg43a,43b, M. Strauss125, P. Strizenec28b, R. Ströhmer174,
+D.M. Strom128, R. Stroynowski41, A. Strubig48, S.A. Stucci29, B. Stugu17, J. Stupak125, N.A. Styles44,
+D. Su150, J. Su136, S. Suchek59a, Y. Sugaya130, M. Suk139, V.V. Sulin108, M.J. Sullivan88, D.M.S. Sultan52,
+S. Sultansoy4c, T. Sumida83, S. Sun103, X. Sun3, K. Suruliz153, C.J.E. Suster154, M.R. Sutton153,
+S. Suzuki79, M. Svatos138, M. Swiatlowski36, S.P. Swift2, A. Sydorenko97, I. Sykora28a, M. Sykora140,
+T. Sykora140, D. Ta97, K. Tackmann44,aa, J. Taenzer158, A. Taﬀard168, R. Taﬁrout165a, E. Tahirovic90,
+N. Taiblum158, H. Takai29, R. Takashima84, E.H. Takasugi113, K. Takeda80, T. Takeshita147, Y. Takubo79,
+M. Talby99, A.A. Talyshev120b,120a, J. Tanaka160, M. Tanaka162, R. Tanaka129, B.B. Tannenwald123,
+S. Tapia Araya144b, S. Tapprogge97, A. Tarek Abouelfadl Mohamed133, S. Tarem157, G. Tarna27b,e,
+G.F. Tartarelli66a, P. Tas140, M. Tasevsky138, T. Tashiro83, E. Tassi40b,40a, A. Tavares Delgado137a,137b,
+Y. Tayalati34e, A.J. Taylor48, G.N. Taylor102, P.T.E. Taylor102, W. Taylor165b, A.S. Tee87,
+R. Teixeira De Lima150, P. Teixeira-Dias91, H. Ten Kate35, J.J. Teoh118, S. Terada79, K. Terashi160,
+J. Terron96, S. Terzo14, M. Testa49, R.J. Teuscher164,ad, S.J. Thais180, T. Theveneaux-Pelzer44, F. Thiele39,
+D.W. Thomas91, J.P. Thomas21, A.S. Thompson55, P.D. Thompson21, L.A. Thomsen180, E. Thomson134,
+Y. Tian38, R.E. Ticse Torres51, V.O. Tikhomirov108,ap, Yu.A. Tikhonov120b,120a, S. Timoshenko110,
+P. Tipton180, S. Tisserant99, K. Todome162, S. Todorova-Nova5, S. Todt46, J. Tojo85, S. Tokár28a,
+K. Tokushuku79, E. Tolley123, K.G. Tomiwa32c, M. Tomoto115, L. Tompkins150,r, K. Toms116, B. Tong57,
+P. Tornambe50, E. Torrence128, H. Torres46, E. Torró Pastor145, C. Tosciri132, J. Toth99,ac, F. Touchard99,
+D.R. Tovey146, C.J. Treado122, T. Trefzger174, F. Tresoldi153, A. Tricoli29, I.M. Trigger165a,
+S. Trincaz-Duvoid133, W. Trischuk164, B. Trocmé56, A. Trofymov129, C. Troncon66a, M. Trovatelli173,
+F. Trovato153, L. Truong32b, M. Trzebinski82, A. Trzupek82, F. Tsai44, J.C-L. Tseng132, P.V. Tsiareshka105,aj,
+A. Tsirigotis159, N. Tsirintanis9, V. Tsiskaridze152, E.G. Tskhadadze156a, I.I. Tsukerman109, V. Tsulaia18,
+S. Tsuno79, D. Tsybychev152,163, Y. Tu61b, A. Tudorache27b, V. Tudorache27b, T.T. Tulbure27a, A.N. Tuna57,
+S. Turchikhin77, D. Turgeman177, I. Turk Cakir4b,u, R.J. Turner21, R.T. Turra66a, P.M. Tuts38,
+S Tzamarias159, E. Tzovara97, G. Ucchielli45, I. Ueda79, M. Ughetto43a,43b, F. Ukegawa166, G. Unal35,
+A. Undrus29, G. Unel168, F.C. Ungaro102, Y. Unno79, K. Uno160, J. Urban28b, P. Urquijo102, G. Usai8,
+J. Usui79, L. Vacavant99, V. Vacek139, B. Vachon101, K.O.H. Vadla131, A. Vaidya92, C. Valderanis112,
+31
+E. Valdes Santurio43a,43b, M. Valente52, S. Valentinetti23b,23a, A. Valero171, L. Valéry44, R.A. Vallance21,
+A. Vallier5, J.A. Valls Ferrer171, T.R. Van Daalen14, H. Van der Graaf118, P. Van Gemmeren6,
+I. Van Vulpen118, M. Vanadia71a,71b, W. Vandelli35, A. Vaniachine163, P. Vankov118, R. Vari70a,
+E.W. Varnes7, C. Varni53b,53a, T. Varol41, D. Varouchas129, K.E. Varvell154, G.A. Vasquez144b,
+J.G. Vasquez180, F. Vazeille37, D. Vazquez Furelos14, T. Vazquez Schroeder35, J. Veatch51,
+V. Vecchio72a,72b, L.M. Veloce164, F. Veloso137a,137c, S. Veneziano70a, A. Ventura65a,65b, N. Venturi35,
+V. Vercesi68a, M. Verducci72a,72b, C.M. Vergel Infante76, C. Vergis24, W. Verkerke118, A.T. Vermeulen118,
+J.C. Vermeulen118, M.C. Vetterli149,av, N. Viaux Maira144b, M. Vicente Barreto Pinto52, I. Vichou170,*,
+T. Vickey146, O.E. Vickey Boeriu146, G.H.A. Viehhauser132, S. Viel18, L. Vigani132, M. Villa23b,23a,
+M. Villaplana Perez66a,66b, E. Vilucchi49, M.G. Vincter33, V.B. Vinogradov77, A. Vishwakarma44,
+C. Vittori23b,23a, I. Vivarelli153, S. Vlachos10, M. Vogel179, P. Vokac139, G. Volpi14,
+S.E. von Buddenbrock32c, E. Von Toerne24, V. Vorobel140, K. Vorobev110, M. Vos171, J.H. Vossebeld88,
+N. Vranjes16, M. Vranjes Milosavljevic16, V. Vrba139, M. Vreeswijk118, T. Šﬁligoj89, R. Vuillermet35,
+I. Vukotic36, T. Ženiš28a, L. Živković16, P. Wagner24, W. Wagner179, J. Wagner-Kuhr112, H. Wahlberg86,
+S. Wahrmund46, K. Wakamiya80, V.M. Walbrecht113, J. Walder87, R. Walker112, S.D. Walker91,
+W. Walkowiak148, V. Wallangen43a,43b, A.M. Wang57, C. Wang58b, F. Wang178, H. Wang18, H. Wang3,
+J. Wang154, J. Wang59b, P. Wang41, Q. Wang125, R.-J. Wang133, R. Wang58a, R. Wang6, S.M. Wang155,
+W.T. Wang58a, W. Wang15c,ae, W.X. Wang58a,ae, Y. Wang58a,am, Z. Wang58c, C. Wanotayaroj44,
+A. Warburton101, C.P. Ward31, D.R. Wardrope92, A. Washbrook48, P.M. Watkins21, A.T. Watson21,
+M.F. Watson21, G. Watts145, S. Watts98, B.M. Waugh92, A.F. Webb11, S. Webb97, C. Weber180,
+M.S. Weber20, S.A. Weber33, S.M. Weber59a, A.R. Weidberg132, J. Weingarten45, M. Weirich97,
+C. Weiser50, P.S. Wells35, T. Wenaus29, T. Wengler35, S. Wenig35, N. Wermes24, M.D. Werner76,
+P. Werner35, M. Wessels59a, T.D. Weston20, K. Whalen128, N.L. Whallon145, A.M. Wharton87,
+A.S. White103, A. White8, M.J. White1, R. White144b, D. Whiteson168, B.W. Whitmore87, F.J. Wickens141,
+W. Wiedenmann178, M. Wielers141, C. Wiglesworth39, L.A.M. Wiik-Fuchs50, F. Wilk98, H.G. Wilkens35,
+L.J. Wilkins91, H.H. Williams134, S. Williams31, C. Willis104, S. Willocq100, J.A. Wilson21,
+I. Wingerter-Seez5, E. Winkels153, F. Winklmeier128, O.J. Winston153, B.T. Winter50, M. Wittgen150,
+M. Wobisch93, A. Wolf97, T.M.H. Wolf118, R. Wolﬀ99, J. Wollrath50, M.W. Wolter82, H. Wolters137a,137c,
+V.W.S. Wong172, N.L. Woods143, S.D. Worm21, B.K. Wosiek82, K.W. Woźniak82, K. Wraight55, M. Wu36,
+S.L. Wu178, X. Wu52, Y. Wu58a, T.R. Wyatt98, B.M. Wynne48, S. Xella39, Z. Xi103, L. Xia175, D. Xu15a,
+H. Xu58a,e, L. Xu29, T. Xu142, W. Xu103, Z. Xu150, B. Yabsley154, S. Yacoob32a, K. Yajima130,
+D.P. Yallup92, D. Yamaguchi162, Y. Yamaguchi162, A. Yamamoto79, T. Yamanaka160, F. Yamane80,
+M. Yamatani160, T. Yamazaki160, Y. Yamazaki80, Z. Yan25, H.J. Yang58c,58d, H.T. Yang18, S. Yang75,
+Y. Yang160, Z. Yang17, W-M. Yao18, Y.C. Yap44, Y. Yasu79, E. Yatsenko58c,58d, J. Ye41, S. Ye29,
+I. Yeletskikh77, E. Yigitbasi25, E. Yildirim97, K. Yorita176, K. Yoshihara134, C.J.S. Young35, C. Young150,
+J. Yu8, J. Yu76, X. Yue59a, S.P.Y. Yuen24, B. Zabinski82, G. Zacharis10, E. Zaﬀaroni52, R. Zaidan14,
+A.M. Zaitsev121,ao, T. Zakareishvili156b, N. Zakharchuk33, S. Zambito57, D. Zanzi35, D.R. Zaripovas55,
+S.V. Zeißner45, C. Zeitnitz179, G. Zemaityte132, J.C. Zeng170, Q. Zeng150, O. Zenin121, D. Zerwas129,
+M. Zgubič132, D.F. Zhang58b, D. Zhang103, F. Zhang178, G. Zhang58a, G. Zhang15b, H. Zhang15c,
+J. Zhang6, L. Zhang15c, L. Zhang58a, M. Zhang170, P. Zhang15c, R. Zhang58a, R. Zhang24, X. Zhang58b,
+Y. Zhang15d, Z. Zhang129, P. Zhao47, Y. Zhao58b,129,ak, Z. Zhao58a, A. Zhemchugov77, Z. Zheng103,
+D. Zhong170, B. Zhou103, C. Zhou178, M.S. Zhou15d, M. Zhou152, N. Zhou58c, Y. Zhou7, C.G. Zhu58b,
+H.L. Zhu58a, H. Zhu15a, J. Zhu103, Y. Zhu58a, X. Zhuang15a, K. Zhukov108, V. Zhulanov120b,120a,
+A. Zibell174, D. Zieminska63, N.I. Zimine77, S. Zimmermann50, Z. Zinonos113, M. Ziolkowski148,
+G. Zobernig178, A. Zoccoli23b,23a, K. Zoch51, T.G. Zorbas146, R. Zou36, M. Zur Nedden19, L. Zwalinski35.
+1Department of Physics, University of Adelaide, Adelaide; Australia.
+32
+2Physics Department, SUNY Albany, Albany NY; United States of America.
+3Department of Physics, University of Alberta, Edmonton AB; Canada.
+4(a)Department of Physics, Ankara University, Ankara;(b)Istanbul Aydin University, Istanbul;(c)Division of
+Physics, TOBB University of Economics and Technology, Ankara; Turkey.
+5LAPP, Université Grenoble Alpes, Université Savoie Mont Blanc, CNRS/IN2P3, Annecy; France.
+6High Energy Physics Division, Argonne National Laboratory, Argonne IL; United States of America.
+7Department of Physics, University of Arizona, Tucson AZ; United States of America.
+8Department of Physics, University of Texas at Arlington, Arlington TX; United States of America.
+9Physics Department, National and Kapodistrian University of Athens, Athens; Greece.
+10Physics Department, National Technical University of Athens, Zografou; Greece.
+11Department of Physics, University of Texas at Austin, Austin TX; United States of America.
+12(a)Bahcesehir University, Faculty of Engineering and Natural Sciences, Istanbul;(b)Istanbul Bilgi
+University, Faculty of Engineering and Natural Sciences, Istanbul;(c)Department of Physics, Bogazici
+University, Istanbul;(d)Department of Physics Engineering, Gaziantep University, Gaziantep; Turkey.
+13Institute of Physics, Azerbaijan Academy of Sciences, Baku; Azerbaijan.
+14Institut de Física d’Altes Energies (IFAE), Barcelona Institute of Science and Technology, Barcelona;
+Spain.
+15(a)Institute of High Energy Physics, Chinese Academy of Sciences, Beijing;(b)Physics Department,
+Tsinghua University, Beijing;(c)Department of Physics, Nanjing University, Nanjing;(d)University of
+Chinese Academy of Science (UCAS), Beijing; China.
+16Institute of Physics, University of Belgrade, Belgrade; Serbia.
+17Department for Physics and Technology, University of Bergen, Bergen; Norway.
+18Physics Division, Lawrence Berkeley National Laboratory and University of California, Berkeley CA;
+United States of America.
+19Institut für Physik, Humboldt Universität zu Berlin, Berlin; Germany.
+20Albert Einstein Center for Fundamental Physics and Laboratory for High Energy Physics, University of
+Bern, Bern; Switzerland.
+21School of Physics and Astronomy, University of Birmingham, Birmingham; United Kingdom.
+22Centro de Investigaciónes, Universidad Antonio Nariño, Bogota; Colombia.
+23(a)Dipartimento di Fisica e Astronomia, Università di Bologna, Bologna;(b)INFN Sezione di Bologna;
+Italy.
+24Physikalisches Institut, Universität Bonn, Bonn; Germany.
+25Department of Physics, Boston University, Boston MA; United States of America.
+26Department of Physics, Brandeis University, Waltham MA; United States of America.
+27(a)Transilvania University of Brasov, Brasov;(b)Horia Hulubei National Institute of Physics and Nuclear
+Engineering, Bucharest;(c)Department of Physics, Alexandru Ioan Cuza University of Iasi, Iasi;(d)National
+Institute for Research and Development of Isotopic and Molecular Technologies, Physics Department,
+Cluj-Napoca;(e)University Politehnica Bucharest, Bucharest;(f )West University in Timisoara, Timisoara;
+Romania.
+28(a)Faculty of Mathematics, Physics and Informatics, Comenius University, Bratislava;(b)Department of
+Subnuclear Physics, Institute of Experimental Physics of the Slovak Academy of Sciences, Kosice; Slovak
+Republic.
+29Physics Department, Brookhaven National Laboratory, Upton NY; United States of America.
+30Departamento de Física, Universidad de Buenos Aires, Buenos Aires; Argentina.
+31Cavendish Laboratory, University of Cambridge, Cambridge; United Kingdom.
+32(a)Department of Physics, University of Cape Town, Cape Town;(b)Department of Mechanical
+Engineering Science, University of Johannesburg, Johannesburg;(c)School of Physics, University of the
+33
+Witwatersrand, Johannesburg; South Africa.
+33Department of Physics, Carleton University, Ottawa ON; Canada.
+34(a)Faculté des Sciences Ain Chock, Réseau Universitaire de Physique des Hautes Energies - Université
+Hassan II, Casablanca;(b)Centre National de l’Energie des Sciences Techniques Nucleaires (CNESTEN),
+Rabat;(c)Faculté des Sciences Semlalia, Université Cadi Ayyad, LPHEA-Marrakech;(d)Faculté des
+Sciences, Université Mohamed Premier and LPTPM, Oujda;(e)Faculté des sciences, Université
+Mohammed V, Rabat; Morocco.
+35CERN, Geneva; Switzerland.
+36Enrico Fermi Institute, University of Chicago, Chicago IL; United States of America.
+37LPC, Université Clermont Auvergne, CNRS/IN2P3, Clermont-Ferrand; France.
+38Nevis Laboratory, Columbia University, Irvington NY; United States of America.
+39Niels Bohr Institute, University of Copenhagen, Copenhagen; Denmark.
+40(a)Dipartimento di Fisica, Università della Calabria, Rende;(b)INFN Gruppo Collegato di Cosenza,
+Laboratori Nazionali di Frascati; Italy.
+41Physics Department, Southern Methodist University, Dallas TX; United States of America.
+42Physics Department, University of Texas at Dallas, Richardson TX; United States of America.
+43(a)Department of Physics, Stockholm University;(b)Oskar Klein Centre, Stockholm; Sweden.
+44Deutsches Elektronen-Synchrotron DESY, Hamburg and Zeuthen; Germany.
+45Lehrstuhl für Experimentelle Physik IV, Technische Universität Dortmund, Dortmund; Germany.
+46Institut für Kern- und Teilchenphysik, Technische Universität Dresden, Dresden; Germany.
+47Department of Physics, Duke University, Durham NC; United States of America.
+48SUPA - School of Physics and Astronomy, University of Edinburgh, Edinburgh; United Kingdom.
+49INFN e Laboratori Nazionali di Frascati, Frascati; Italy.
+50Physikalisches Institut, Albert-Ludwigs-Universität Freiburg, Freiburg; Germany.
+51II. Physikalisches Institut, Georg-August-Universität Göttingen, Göttingen; Germany.
+52Département de Physique Nucléaire et Corpusculaire, Université de Genève, Genève; Switzerland.
+53(a)Dipartimento di Fisica, Università di Genova, Genova;(b)INFN Sezione di Genova; Italy.
+54II. Physikalisches Institut, Justus-Liebig-Universität Giessen, Giessen; Germany.
+55SUPA - School of Physics and Astronomy, University of Glasgow, Glasgow; United Kingdom.
+56LPSC, Université Grenoble Alpes, CNRS/IN2P3, Grenoble INP, Grenoble; France.
+57Laboratory for Particle Physics and Cosmology, Harvard University, Cambridge MA; United States of
+America.
+58(a)Department of Modern Physics and State Key Laboratory of Particle Detection and Electronics,
+University of Science and Technology of China, Hefei;(b)Institute of Frontier and Interdisciplinary Science
+and Key Laboratory of Particle Physics and Particle Irradiation (MOE), Shandong University,
+Qingdao;(c)School of Physics and Astronomy, Shanghai Jiao Tong University, KLPPAC-MoE, SKLPPC,
+Shanghai;(d)Tsung-Dao Lee Institute, Shanghai; China.
+59(a)Kirchhoﬀ-Institut für Physik, Ruprecht-Karls-Universität Heidelberg, Heidelberg;(b)Physikalisches
+Institut, Ruprecht-Karls-Universität Heidelberg, Heidelberg; Germany.
+60Faculty of Applied Information Science, Hiroshima Institute of Technology, Hiroshima; Japan.
+61(a)Department of Physics, Chinese University of Hong Kong, Shatin, N.T., Hong Kong;(b)Department of
+Physics, University of Hong Kong, Hong Kong;(c)Department of Physics and Institute for Advanced Study,
+Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong; China.
+62Department of Physics, National Tsing Hua University, Hsinchu; Taiwan.
+63Department of Physics, Indiana University, Bloomington IN; United States of America.
+64(a)INFN Gruppo Collegato di Udine, Sezione di Trieste, Udine;(b)ICTP, Trieste;(c)Dipartimento di
+Chimica, Fisica e Ambiente, Università di Udine, Udine; Italy.
+34
+65(a)INFN Sezione di Lecce;(b)Dipartimento di Matematica e Fisica, Università del Salento, Lecce; Italy.
+66(a)INFN Sezione di Milano;(b)Dipartimento di Fisica, Università di Milano, Milano; Italy.
+67(a)INFN Sezione di Napoli;(b)Dipartimento di Fisica, Università di Napoli, Napoli; Italy.
+68(a)INFN Sezione di Pavia;(b)Dipartimento di Fisica, Università di Pavia, Pavia; Italy.
+69(a)INFN Sezione di Pisa;(b)Dipartimento di Fisica E. Fermi, Università di Pisa, Pisa; Italy.
+70(a)INFN Sezione di Roma;(b)Dipartimento di Fisica, Sapienza Università di Roma, Roma; Italy.
+71(a)INFN Sezione di Roma Tor Vergata;(b)Dipartimento di Fisica, Università di Roma Tor Vergata, Roma;
+Italy.
+72(a)INFN Sezione di Roma Tre;(b)Dipartimento di Matematica e Fisica, Università Roma Tre, Roma; Italy.
+73(a)INFN-TIFPA;(b)Università degli Studi di Trento, Trento; Italy.
+74Institut für Astro- und Teilchenphysik, Leopold-Franzens-Universität, Innsbruck; Austria.
+75University of Iowa, Iowa City IA; United States of America.
+76Department of Physics and Astronomy, Iowa State University, Ames IA; United States of America.
+77Joint Institute for Nuclear Research, Dubna; Russia.
+78(a)Departamento de Engenharia Elétrica, Universidade Federal de Juiz de Fora (UFJF), Juiz de
+Fora;(b)Universidade Federal do Rio De Janeiro COPPE/EE/IF, Rio de Janeiro;(c)Universidade Federal de
+São João del Rei (UFSJ), São João del Rei;(d)Instituto de Física, Universidade de São Paulo, São Paulo;
+Brazil.
+79KEK, High Energy Accelerator Research Organization, Tsukuba; Japan.
+80Graduate School of Science, Kobe University, Kobe; Japan.
+81(a)AGH University of Science and Technology, Faculty of Physics and Applied Computer Science,
+Krakow;(b)Marian Smoluchowski Institute of Physics, Jagiellonian University, Krakow; Poland.
+82Institute of Nuclear Physics Polish Academy of Sciences, Krakow; Poland.
+83Faculty of Science, Kyoto University, Kyoto; Japan.
+84Kyoto University of Education, Kyoto; Japan.
+85Research Center for Advanced Particle Physics and Department of Physics, Kyushu University, Fukuoka ;
+Japan.
+86Instituto de Física La Plata, Universidad Nacional de La Plata and CONICET, La Plata; Argentina.
+87Physics Department, Lancaster University, Lancaster; United Kingdom.
+88Oliver Lodge Laboratory, University of Liverpool, Liverpool; United Kingdom.
+89Department of Experimental Particle Physics, Jožef Stefan Institute and Department of Physics,
+University of Ljubljana, Ljubljana; Slovenia.
+90School of Physics and Astronomy, Queen Mary University of London, London; United Kingdom.
+91Department of Physics, Royal Holloway University of London, Egham; United Kingdom.
+92Department of Physics and Astronomy, University College London, London; United Kingdom.
+93Louisiana Tech University, Ruston LA; United States of America.
+94Fysiska institutionen, Lunds universitet, Lund; Sweden.
+95Centre de Calcul de l’Institut National de Physique Nucléaire et de Physique des Particules (IN2P3),
+Villeurbanne; France.
+96Departamento de Física Teorica C-15 and CIAFF, Universidad Autónoma de Madrid, Madrid; Spain.
+97Institut für Physik, Universität Mainz, Mainz; Germany.
+98School of Physics and Astronomy, University of Manchester, Manchester; United Kingdom.
+99CPPM, Aix-Marseille Université, CNRS/IN2P3, Marseille; France.
+100Department of Physics, University of Massachusetts, Amherst MA; United States of America.
+101Department of Physics, McGill University, Montreal QC; Canada.
+102School of Physics, University of Melbourne, Victoria; Australia.
+103Department of Physics, University of Michigan, Ann Arbor MI; United States of America.
+35
+104Department of Physics and Astronomy, Michigan State University, East Lansing MI; United States of
+America.
+105B.I. Stepanov Institute of Physics, National Academy of Sciences of Belarus, Minsk; Belarus.
+106Research Institute for Nuclear Problems of Byelorussian State University, Minsk; Belarus.
+107Group of Particle Physics, University of Montreal, Montreal QC; Canada.
+108P.N. Lebedev Physical Institute of the Russian Academy of Sciences, Moscow; Russia.
+109Institute for Theoretical and Experimental Physics (ITEP), Moscow; Russia.
+110National Research Nuclear University MEPhI, Moscow; Russia.
+111D.V. Skobeltsyn Institute of Nuclear Physics, M.V. Lomonosov Moscow State University, Moscow;
+Russia.
+112Fakultät für Physik, Ludwig-Maximilians-Universität München, München; Germany.
+113Max-Planck-Institut für Physik (Werner-Heisenberg-Institut), München; Germany.
+114Nagasaki Institute of Applied Science, Nagasaki; Japan.
+115Graduate School of Science and Kobayashi-Maskawa Institute, Nagoya University, Nagoya; Japan.
+116Department of Physics and Astronomy, University of New Mexico, Albuquerque NM; United States of
+America.
+117Institute for Mathematics, Astrophysics and Particle Physics, Radboud University Nijmegen/Nikhef,
+Nijmegen; Netherlands.
+118Nikhef National Institute for Subatomic Physics and University of Amsterdam, Amsterdam;
+Netherlands.
+119Department of Physics, Northern Illinois University, DeKalb IL; United States of America.
+120(a)Budker Institute of Nuclear Physics and NSU, SB RAS, Novosibirsk;(b)Novosibirsk State University
+Novosibirsk; Russia.
+121Institute for High Energy Physics of the National Research Centre Kurchatov Institute, Protvino; Russia.
+122Department of Physics, New York University, New York NY; United States of America.
+123Ohio State University, Columbus OH; United States of America.
+124Faculty of Science, Okayama University, Okayama; Japan.
+125Homer L. Dodge Department of Physics and Astronomy, University of Oklahoma, Norman OK; United
+States of America.
+126Department of Physics, Oklahoma State University, Stillwater OK; United States of America.
+127Palacký University, RCPTM, Joint Laboratory of Optics, Olomouc; Czech Republic.
+128Center for High Energy Physics, University of Oregon, Eugene OR; United States of America.
+129LAL, Université Paris-Sud, CNRS/IN2P3, Université Paris-Saclay, Orsay; France.
+130Graduate School of Science, Osaka University, Osaka; Japan.
+131Department of Physics, University of Oslo, Oslo; Norway.
+132Department of Physics, Oxford University, Oxford; United Kingdom.
+133LPNHE, Sorbonne Université, Paris Diderot Sorbonne Paris Cité, CNRS/IN2P3, Paris; France.
+134Department of Physics, University of Pennsylvania, Philadelphia PA; United States of America.
+135Konstantinov Nuclear Physics Institute of National Research Centre "Kurchatov Institute", PNPI, St.
+Petersburg; Russia.
+136Department of Physics and Astronomy, University of Pittsburgh, Pittsburgh PA; United States of
+America.
+137(a)Laboratório de Instrumentação e Física Experimental de Partículas - LIP;(b)Departamento de Física,
+Faculdade de Ciências, Universidade de Lisboa, Lisboa;(c)Departamento de Física, Universidade de
+Coimbra, Coimbra;(d)Centro de Física Nuclear da Universidade de Lisboa, Lisboa;(e)Departamento de
+Física, Universidade do Minho, Braga;(f )Departamento de Física Teorica y del Cosmos, Universidad de
+Granada, Granada (Spain);(g)Dep Física and CEFITEC of Faculdade de Ciências e Tecnologia,
+36
+Universidade Nova de Lisboa, Caparica; Portugal.
+138Institute of Physics, Academy of Sciences of the Czech Republic, Prague; Czech Republic.
+139Czech Technical University in Prague, Prague; Czech Republic.
+140Charles University, Faculty of Mathematics and Physics, Prague; Czech Republic.
+141Particle Physics Department, Rutherford Appleton Laboratory, Didcot; United Kingdom.
+142IRFU, CEA, Université Paris-Saclay, Gif-sur-Yvette; France.
+143Santa Cruz Institute for Particle Physics, University of California Santa Cruz, Santa Cruz CA; United
+States of America.
+144(a)Departamento de Física, Pontiﬁcia Universidad Católica de Chile, Santiago;(b)Departamento de
+Física, Universidad Técnica Federico Santa María, Valparaíso; Chile.
+145Department of Physics, University of Washington, Seattle WA; United States of America.
+146Department of Physics and Astronomy, University of Sheﬃeld, Sheﬃeld; United Kingdom.
+147Department of Physics, Shinshu University, Nagano; Japan.
+148Department Physik, Universität Siegen, Siegen; Germany.
+149Department of Physics, Simon Fraser University, Burnaby BC; Canada.
+150SLAC National Accelerator Laboratory, Stanford CA; United States of America.
+151Physics Department, Royal Institute of Technology, Stockholm; Sweden.
+152Departments of Physics and Astronomy, Stony Brook University, Stony Brook NY; United States of
+America.
+153Department of Physics and Astronomy, University of Sussex, Brighton; United Kingdom.
+154School of Physics, University of Sydney, Sydney; Australia.
+155Institute of Physics, Academia Sinica, Taipei; Taiwan.
+156(a)E. Andronikashvili Institute of Physics, Iv. Javakhishvili Tbilisi State University, Tbilisi;(b)High
+Energy Physics Institute, Tbilisi State University, Tbilisi; Georgia.
+157Department of Physics, Technion, Israel Institute of Technology, Haifa; Israel.
+158Raymond and Beverly Sackler School of Physics and Astronomy, Tel Aviv University, Tel Aviv; Israel.
+159Department of Physics, Aristotle University of Thessaloniki, Thessaloniki; Greece.
+160International Center for Elementary Particle Physics and Department of Physics, University of Tokyo,
+Tokyo; Japan.
+161Graduate School of Science and Technology, Tokyo Metropolitan University, Tokyo; Japan.
+162Department of Physics, Tokyo Institute of Technology, Tokyo; Japan.
+163Tomsk State University, Tomsk; Russia.
+164Department of Physics, University of Toronto, Toronto ON; Canada.
+165(a)TRIUMF, Vancouver BC;(b)Department of Physics and Astronomy, York University, Toronto ON;
+Canada.
+166Division of Physics and Tomonaga Center for the History of the Universe, Faculty of Pure and Applied
+Sciences, University of Tsukuba, Tsukuba; Japan.
+167Department of Physics and Astronomy, Tufts University, Medford MA; United States of America.
+168Department of Physics and Astronomy, University of California Irvine, Irvine CA; United States of
+America.
+169Department of Physics and Astronomy, University of Uppsala, Uppsala; Sweden.
+170Department of Physics, University of Illinois, Urbana IL; United States of America.
+171Instituto de Física Corpuscular (IFIC), Centro Mixto Universidad de Valencia - CSIC, Valencia; Spain.
+172Department of Physics, University of British Columbia, Vancouver BC; Canada.
+173Department of Physics and Astronomy, University of Victoria, Victoria BC; Canada.
+174Fakultät für Physik und Astronomie, Julius-Maximilians-Universität Würzburg, Würzburg; Germany.
+175Department of Physics, University of Warwick, Coventry; United Kingdom.
+37
+176Waseda University, Tokyo; Japan.
+177Department of Particle Physics, Weizmann Institute of Science, Rehovot; Israel.
+178Department of Physics, University of Wisconsin, Madison WI; United States of America.
+179Fakultät für Mathematik und Naturwissenschaften, Fachgruppe Physik, Bergische Universität
+Wuppertal, Wuppertal; Germany.
+180Department of Physics, Yale University, New Haven CT; United States of America.
+181Yerevan Physics Institute, Yerevan; Armenia.
+a Also at Borough of Manhattan Community College, City University of New York, NY; United States of
+America.
+b Also at California State University, East Bay; United States of America.
+c Also at Centre for High Performance Computing, CSIR Campus, Rosebank, Cape Town; South Africa.
+d Also at CERN, Geneva; Switzerland.
+e Also at CPPM, Aix-Marseille Université, CNRS/IN2P3, Marseille; France.
+f Also at Département de Physique Nucléaire et Corpusculaire, Université de Genève, Genève;
+Switzerland.
+g Also at Departament de Fisica de la Universitat Autonoma de Barcelona, Barcelona; Spain.
+h Also at Departamento de Física Teorica y del Cosmos, Universidad de Granada, Granada (Spain); Spain.
+i Also at Departamento de Física, Instituto Superior Técnico, Universidade de Lisboa, Lisboa; Portugal.
+j Also at Department of Applied Physics and Astronomy, University of Sharjah, Sharjah; United Arab
+Emirates.
+k Also at Department of Financial and Management Engineering, University of the Aegean, Chios; Greece.
+l Also at Department of Physics and Astronomy, University of Louisville, Louisville, KY; United States of
+America.
+m Also at Department of Physics and Astronomy, University of Sheﬃeld, Sheﬃeld; United Kingdom.
+n Also at Department of Physics, California State University, Fresno CA; United States of America.
+o Also at Department of Physics, California State University, Sacramento CA; United States of America.
+p Also at Department of Physics, King’s College London, London; United Kingdom.
+q Also at Department of Physics, St. Petersburg State Polytechnical University, St. Petersburg; Russia.
+r Also at Department of Physics, Stanford University; United States of America.
+s Also at Department of Physics, University of Fribourg, Fribourg; Switzerland.
+t Also at Department of Physics, University of Michigan, Ann Arbor MI; United States of America.
+u Also at Giresun University, Faculty of Engineering, Giresun; Turkey.
+v Also at Graduate School of Science, Osaka University, Osaka; Japan.
+w Also at Hellenic Open University, Patras; Greece.
+x Also at Horia Hulubei National Institute of Physics and Nuclear Engineering, Bucharest; Romania.
+y Also at II. Physikalisches Institut, Georg-August-Universität Göttingen, Göttingen; Germany.
+z Also at Institucio Catalana de Recerca i Estudis Avancats, ICREA, Barcelona; Spain.
+aa Also at Institut für Experimentalphysik, Universität Hamburg, Hamburg; Germany.
+ab Also at Institute for Mathematics, Astrophysics and Particle Physics, Radboud University
+Nijmegen/Nikhef, Nijmegen; Netherlands.
+ac Also at Institute for Particle and Nuclear Physics, Wigner Research Centre for Physics, Budapest;
+Hungary.
+ad Also at Institute of Particle Physics (IPP); Canada.
+ae Also at Institute of Physics, Academia Sinica, Taipei; Taiwan.
+af Also at Institute of Physics, Azerbaijan Academy of Sciences, Baku; Azerbaijan.
+ag Also at Institute of Theoretical Physics, Ilia State University, Tbilisi; Georgia.
+ah Also at Instituto de Física Teórica de la Universidad Autónoma de Madrid; Spain.
+38
+ai Also at Istanbul University, Dept. of Physics, Istanbul; Turkey.
+aj Also at Joint Institute for Nuclear Research, Dubna; Russia.
+ak Also at LAL, Université Paris-Sud, CNRS/IN2P3, Université Paris-Saclay, Orsay; France.
+al Also at Louisiana Tech University, Ruston LA; United States of America.
+am Also at LPNHE, Sorbonne Université, Paris Diderot Sorbonne Paris Cité, CNRS/IN2P3, Paris; France.
+an Also at Manhattan College, New York NY; United States of America.
+ao Also at Moscow Institute of Physics and Technology State University, Dolgoprudny; Russia.
+ap Also at National Research Nuclear University MEPhI, Moscow; Russia.
+aq Also at Physikalisches Institut, Albert-Ludwigs-Universität Freiburg, Freiburg; Germany.
+ar Also at School of Physics, Sun Yat-sen University, Guangzhou; China.
+as Also at The City College of New York, New York NY; United States of America.
+at Also at The Collaborative Innovation Center of Quantum Matter (CICQM), Beijing; China.
+au Also at Tomsk State University, Tomsk, and Moscow Institute of Physics and Technology State
+University, Dolgoprudny; Russia.
+av Also at TRIUMF, Vancouver BC; Canada.
+aw Also at Universita di Napoli Parthenope, Napoli; Italy.
+∗ Deceased
+39

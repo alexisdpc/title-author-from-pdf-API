@@ -1,0 +1,5390 @@
+PHYSICAL REVIEW 0
+VOLUME 41, NUMBER 11
+1 JUNE 1990
+New constraints
+on the charged Higgs sector in two-Higgs-doublet
+models
+V. Barger and J. L. Hewett
+Physics Department,
+University of Wisconsin,
+Madison,
+Wisconsin 53706
+R. J. N. Phillips
+Rutherford
+Appleton
+Laboratory,
+Chilton, Didcot, Oxon, England
+(Received 20 December 1989; revised manuscript
+received 6 February
+1990)
+Two-Higgs-doublet
+models
+predict
+nonstandard
+physical
+effects
+through
+the
+interactions
+of
+charged
+Higgs scalars.
+We analyze
+the experimental
+measurements
+that bound
+these effects and
+quantify
+the resulting
+constraints
+on the charged-Higgs-boson
+mass and coupling
+parameter
+tanP.
+We consider
+low-energy
+data relating
+to Bd-8 d, D -D, and E -K
+mixing,
+and high-energy
+mea-
+surements
+at pp colliders
+relating
+to searches for the top quark
+and events with large missing ET.
+Our analysis
+systematically
+takes account of theoretical
+uncertainties
+in bag factors, decay con-
+stants,
+and quark
+mixing
+matrix
+elements
+by Monte Carlo sampling.
+We combine
+our results to
+determine
+the regions in the charged-Higgs-boson
+parameter
+space that are consistent
+with present
+data.
+An important
+result is that the Collider Detector at Fermilab
+top-quark
+mass bound
+m, & 77
+GeV can probably
+not be evaded by appealing
+to t~bH+ decays, since only a very small sliver of
+parameter
+space is consistent
+with m, & 77 GeV in this scenario.
+Consistency
+with either the CERN
+NA31 or Fermilab
+E731 e'/e measurements
+is possible.
+The rare decays B~E*y, K+—+m+vv,
+and EL ~pp are also examined
+in these models within the context of our combined
+analysis.
+I. INTRODUCTION
+The standard
+model
+(SM) of electroweak
+interactions
+has
+been
+remarkably
+successful
+in
+describing
+physics
+below the Fermi scale and is in complete agreement'
+with
+all experimental
+data.
+However,
+the
+Higgs
+sector
+has
+remained
+elusive,
+and there exists no experimental
+infor-
+mation
+on
+its nature.
+The
+possibility
+of an
+enlarged
+Higgs sector beyond
+the minimal
+one-doublet
+version of
+the SM (Ref. 2) is thus consistent
+with data and has re-
+ceived
+substantial
+attention
+in the literature.
+The sim-
+plest extensions
+are models
+with two Higgs doublets
+(re-
+quiring
+the existence of charged
+Higgs bosons) which are
+present
+in many
+scenarios
+beyond
+the SM, including
+su-
+persymmetry
+(SUSY), Peccei-Quinn
+models,
+spontane-
+ous CP violation,
+and E6 superstring-inspired
+theories.
+Because of the lack of direct experimental
+knowledge,
+it
+is prudent
+to combine
+all information
+on the indirect
+effects of charged
+Higgs
+bosons
+in order to place con-
+straints
+on this sector.
+In this paper we focus on possible
+charged-Higgs-boson
+contributions
+to
+low-energy
+pro-
+cesses, such as Bd-B d and D -D
+mixing, km~, and e, as
+well as the influence of charged
+Higgs bosons on the top-
+quark
+search and missing-ET
+measurements
+at pp collid-
+ers.
+The results
+from
+this combined
+analysis
+are then
+used to restrict the parameters
+in the charged
+Higgs sec-
+tor and determine
+the region which
+is consistent
+with all
+data.
+We then make predictions
+for the charged-Higgs-
+boson contributions
+to e'/e and the rare decays KL ~pp,
+E+—
++m.+vv, and B~I%'*y.
+The phenomenology
+of charged
+Higgs bosons has been
+previously
+considered.
+'
+However,
+our present
+reex-
+amination
+of possible
+restrictions
+that current
+data may
+place on the charged
+Higgs section is well motivated
+for
+several reasons.
+(i) We perform
+a simultaneous
+analysis of several
+low-
+energy
+processes
+and recent
+Fermilab
+Tevatron
+collider
+data mentioned
+above and combine
+these results
+to ob-
+tain the overall allowed
+region of parameter
+space in the
+charged
+Higgs sector.
+Such a comprehensive
+analysis
+(in
+particular,
+the inclusion
+of CP violation
+and pp collider
+data) does not exist in the literature.
+(ii) Some of the relevant
+pieces of experimental
+data are
+new; others have either improved
+or changed
+substantial-
+ly since previous
+studies
+were performed.
+As we will see
+below,
+the
+corresponding
+results
+are thus
+significantly
+different.
+(iii) We thoroughly
+investigate
+the entire possible range
+of charged-Higgs-boson
+and top-quark
+masses,
+m
+y and
+m„respectively.
+With the likely
+possibility
+of a heavy
+top quark, '
+the approximation
+m, &&m
++ used in early
+analyses
+may
+be invalid.
+We rederive
+basic formulas
+where
+needed
+with
+no approximations,
+and include
+the
+case m
++&m, .
+(iv) We fully
+explore
+the freedom
+in the Kobayashi-
+Maskawa'
+(KM) matrix,
+as well as the uncertainties
+in
+hadronic
+matrix
+elements
+and decay constants
+using nu-
+merical techniques.
+In the remainder
+of this section we give a brief review
+of the two-Higgs-doublet
+model.
+In Sec. II we present
+the detailed
+calculations
+of charged-Higgs-boson
+contri-
+butions
+to low-energy
+processes.
+Using
+numerical
+tech-
+niques
+we extensively
+sample
+the parameters
+in the KM
+matrix
+and subject them to restrictions
+from experimen-
+tal data on the values of the KM matrix elements
+as well
+as unitarity
+considerations.
+The uncertainties
+in the ha-
+41
+3421
+1990 The American
+Physical Society
+3422
+U. BARGER, J. L. HEWEI I', AND R. J. N. PHILLIPS
+41
+dronic
+matrix
+elements
+and
+decay
+constants
+are
+also
+thoroughly
+investigated.
+We compare
+our
+predictions
+with
+data for Bd-B d and D -D
+mixing,
+e, and km&,
+and obtain
+the range of charged
+Higgs parameter
+space
+which
+is consistent
+with
+low-energy
+experiment.
+Using
+these restrictions
+we then predict
+the value of e'/e and
+the decay rates for b ~sy, E+~~+vv, and KL ~IMAM in
+the two-Higgs-doublet
+model
+and compare
+to the corre-
+sponding
+SM values.
+In Sec. III we use various
+bounds
+from the top-quark
+search and missing-Ez
+(gz ) measure-
+ments of the Collider Detector at Fermilab (CDF) Calla-
+boration'
+to constrain
+possible
+top-quark
+decays
+into
+charged Higgs bosons.
+We find that the CDF data can be
+used
+to rule
+out
+large
+regions
+of parameter
+space for
+m, ~ 80 GeV. We then give a brief summary
+of our con-
+clusions in Sec. IV.
+There are several classes of two-Higgs-doublet
+models
+which
+naturally
+avoid
+tree-level
+Aavor-changing
+neutral
+currents
+that can be induced
+by Higgs-boson
+exchange. '
+One choice, hereafter
+called model I, is where
+one dou-
+blet $2 gives masses to all quarks and leptons and the oth-
+er doublet
+Pi essentially
+decouples
+from fermions.
+In a
+second
+model
+(model II) one doublet
+tI)2 gives
+mass
+to
+charge
+Q =+—
+',
+quarks
+(and
+possibly
+neutrinos)
+and
+another
+doublet P, gives mass to charge
+Q = —
+—,' quarks
+and Q = —1 leptons.
+Two other models are also possible
+(models III and IV) in which
+the down-type
+quarks
+and
+charged
+leptons
+receive mass from different
+doublets.
+A
+summary
+of which
+type of fermions
+couple to P, and $2
+in models I—IV is given in Table I. Each doublet
+obtains
+a vacuum
+expectation
+value (VEV) u; subject only to the
+constraint
+that
+v
+& + v 2 =v, where
+v is the usual VEV of
+the SM. The generic charged Higgs coupling
+to fermions
+in models I—IV (assuming
+massless neutrinos)
+is given by
+H [V;.m „A„u;—
+( I —y s)d .
++ ~~/md Adrs;(I+y5)di
+J
++miA, v(1+y5)1]+H.c. ,
+(1.1)
+where the values of the coefficients Af for all four models
+are given
+in Table I; g is the usual
+SU(2)L coupling
+con-
+stant,
+V,
+is the relevant
+element of the KM matrix,
+and
+tanp=vz/u,
+is the ratio of VEV's.
+To compare
+these
+).0
+0.8—
+MODEL
+t
+1- 0.6—
++$x 0.4—
+CD
+0.2—
+00.1
+0.5
+tanP
+~i ~i ~ y
+I
+I '4.a
+b
+5
+10
+FIG. 1. The branching
+fraction 8 (H ~rv} vs tanP in mod-
+els I-IV. %e take m, =1.5 GeV, m, =0.15 GeV, m, =1.784
+GeV,
+i V„i= 1.0, and m
++(m, —mb.
+couplings
+in the four models we show the branching
+frac-
+tion 8(H*~rv) as a function of tanP for each model in
+Fig. 1. The difference
+in 8(H+~rv) between
+models II
+and IV is noticeable
+only for tanp) 2 and is due to the
+fact that m, &0. The difference between
+models I and III
+becomes large for tanp) 2 and is due to the fact that the
+m, term in model III is proportional
+to tan p. Model II
+is that which
+is present
+in SUSY and E6 theories,
+and is
+the model
+which
+has gained
+the most
+attention
+in the
+literature.
+In this paper we present
+results for both mod-
+els I and II. However,
+we note that the charged-Higgs-
+boson contributions
+to processes
+which
+depend
+only on
+the quark sector (e.g., the processes
+examined
+in Sec. II)
+are the same in models I and IV and in models II and III.
+Thus our results presented
+in Sec. II for models I and II
+also apply for models IV and III, respectively.
+Similarly,
+as
+long
+as
+the
+m, cotp
+coupling
+dominates
+over
+the
+mbtanp
+coupling
+in the AH vertex (i.e., for tanp& 2.0 as
+seen in Fig. 1) model III is substantially
+equivalent
+to
+model I and model IV is equivalent
+to model II for the
+high-energy
+effects studied in Sec. III.
+The mass m
++ and the ratio vz/v&
+are a priori free pa-
+rameters
+in a general
+two-doublet
+model.
+It has been ar-
+gued that the inequalities
+m, »mb
+and m, »m, are not
+TABLE I. Summary
+of which doublet, P, or P2, gives mass to each type of fermion and the values of
+the coefficients Af in the charged Higgs coupling to fermions
+in Eq. (1.1) for models I—IV.
+Models
+IV
+VEV
+2
+Af
+cotj3
+VEU
+2
+Af
+cot@
+VEV
+2
+A~
+cotP
+VEV
+2
+Af
+cot@
+—cotP
+tang
+tanP
+—cotP
+tanP
+tanP
+41
+NE%' CONSTRAINTS ON THE CHARGED HIGGS SECTOR IN. . .
+3423
+due
+to the
+Yukawa
+couplings
+alone,
+but
+suggest
+' '
+U 2) U
+& .
+This
+hierarchy
+occurs
+naturally
+from
+the
+renormalization-group
+evolution
+in supergravity
+and E6
+superstring-inspired
+models, but need not be the case in
+a general
+two-doublet
+model.
+The current
+experimental
+bound
+on the H —
++ mass
+is m +) 19 GeV from DESY
+PETRA (Ref. 20), and it is expected
+that experiments
+at
+KEK TRISTAN
+will be able to set the limit
+m
++ ~25
+GeV. ALEPH (Ref. 21) has recently reported
+the bounds
+of m ~&30 GeV with
+a value of 8(H*~cs)=100%.
+and
+m
+~ &42
+GeV
+with
+8 (H ~rv) =100%.
+In
+minimal
+SUSY models
+m
++ is restricted to lie above M~
+(Ref. 22), while
+the bound
+is less stringent
+in E6 super-
+string
+models
+giving
+m
+~ & 53 GeV (Ref. 23). Recent
+limits ' on the mass of the SM Higgs boson from ALEPH
+at CERN can be used
+together
+with the mass relation-
+ships between
+the Higgs and gauge bosons in SUSY mod-
+els to severely
+constrain
+m
++ and tanp in these theories.
+However,
+there
+are
+no theoretical
+restrictions
+on
+the
+value of m
++ and tanP in general two-doublet
+models.
+In principle,
+constraints
+on m
+g can be obtained
+'
+by
+evaluating
+the H
+contributions
+to the p parameter
+(the
+ratio of neutral-current-to-charge-current
+strengths
+in the
+effective
+low-energy
+Lagrangian).
+However,
+in practice,
+these constraints
+are quite dependent
+on the other param-
+eters present
+in the theory
+(such as the masses of the neu-
+tral Higgs
+bosons)
+and are generally
+very model
+depen-
+dent.
+In SUSY models, in which there exist particular
+re-
+lationships
+between
+the masses of the Higgs
+and gauge
+bosons, the charged-Higgs-sector
+contributions
+to p vary
+substantially
+with
+tanp,
+but
+are
+always
+small
+giving
+[~p[ & 10-'.
+Clearly,
+any constraints
+on m
+~ and tanP from low-
+energy
+and hadron
+collider data
+will be strongly
+depen-
+dent on the value of the top-quark
+mass. If 100 Jo of the
+t-quark
+decays proceed
+through
+SM charged-current
+in-
+teractions
+then
+the existing
+limits
+on the top mass are
+m, &77 GeV from CDF (Ref. 16), m, &40.7 GeV from
+Mark II (Ref. 27), and m, & 44. 5 GeV from OPAL (Ref.
+28). If the decay t ~H
+b is possible, the CDF bound
+is
+invalidated.
+'
+Mark II has investigated
+this potential
+de-
+cay mode and places the lower bound
+m, )40 GeV for
+m&+=25 GeV with 8(H+ ~rv) &70% a—
+nd
+similarly,
+OPAL sets the limit
+m, )45.2 GeV for 23~ m
++ &38
+GeV with 8 (H +~rv) =0.
+—
+One can place
+some
+semiquantitative
+restrictions
+on
+m
++ and tanp by requiring
+that the H +width not be too-
+large and that the tbH coupling
+remain
+perturbative.
+It
+is clear from Eq. (1.1) that the width
+and tbH coupling
+both grow rapidly
+with increasing
+m, and hence pertur-
+bation theory may become endangered
+for some values of
+the parameters.
+If we demand
+that
+the theory
+remain
+perturbative,
+a bound
+on tanp as a function
+of m, is ob-
+tained.
+Of course, one should
+be aware
+that
+validity
+of
+perturbation
+theory is not a physical limitation,
+but it is a
+limitation
+on the theoretically
+accessible
+region.
+There
+are various
+possible
+ways to define the boundary
+of the
+perturbative
+region.
+A simple empirical
+prescription
+is to
+require that I /m should not be too large, e.g., I /m
+& —,'.
+If m
++)m, +mb the dominant
+contribution
+to the H—
+width isr,
+m
+3GFm,
+4v'2mtan
+P
+(1.2)
+The requirement
+that I
++/m
++ & —,' yields the perturba-
+tive boundary
+mr
+tan
+500 GeV
+(1.3)
+If m, )m
+~+mb
+the decay t~bH is kinematically
+al-
+lowed and the requirement
+that the t-quark
+width
+GFmr
+2
+8nv'2tan P
+(1.4)
+not exceed —„results in a similar
+semiquantitative
+bound
+as in Eq. (1.3). Alternatively,
+one may define the pertur-
+bative
+boundary
+directly
+in tertns
+of the Yukawa
+cou-
+plings; e.g., if we require
+the tbH coupling
+to be smaller
+than
+the QCD coupling
+g, =4ma, (M~)=1.5 we obtain
+the result
+tan
+mr
+600 GeV
+(1.5)
+as the definition
+of the perturbative
+region.
+%e will use
+the constraint
+(1.5) in our following
+analysis.
+The above
+bounds
+apply
+equally
+to models I—IV. In models II and
+III there
+are also corresponding
+upper
+limits
+on tanp,
+arising
+from
+the
+tbH
+coupling
+proportional
+to
+mb V,„tanp;
+these
+limits
+are
+obtained
+from
+the
+above
+equations
+by
+replacing
+m, ~mb
+and tanp~cotp,
+and
+give tanp& 100—200. Perturbative
+limits can also be ob-
+tained
+from
+an
+examination
+of the
+one-loop
+heavy-
+fermion corrections to the ZH+H
+vertex and result
+in
+quantitatively
+similar
+bounds
+to those of Eqs. (1.3) and
+(1.5).
+II. CONSTRAINTS FROM I.OW-ENERGY DATA
+In this section
+we first review
+the analytical
+calcula-
+tions for each process that
+we consider
+and present
+the
+results from our combined
+analysis at the end.
+A. Neutral
+meson mixing
+1. 8 -8
+mixing
+It has been shown
+that charged
+Higgs bosons can give
+sizable contributions
+to Bd-B d mixing
+and can account
+for the observed
+value of this mixing
+at ARGUS and
+CLEO without
+requiring
+the
+top
+quark
+to be heavy.
+Bd-B d mixing proceeds through
+the box diagrams
+shown
+in Fig. 2 (with
+q =b), where contributions
+due to W, H,
+and P (P being the unphysical
+Higgs field in the SM) ex-
+change are all included.
+The 8L 8s mass difference
+is-(in
+model II)
+3424
+V. BARGER, J. L. HEWE'l l, AND R. J. N. PHILLIPS
+41
+The QCD corrections to the charged-Higgs-boson
+con-
+tributions
+have not yet been calculated.
+However,
+it is
+reasonable
+to assume that these corrections
+are about the
+same as those for the 8' and unphysical-Higgs-boson
+ex-
+change
+diagrams.
+We can in fact test the sensitivity
+to
+this choice by comparing
+the case where the corrections
+are included
+in A~H and
+AzH with the case where they
+are not.
+We find that
+in both cases our resulting
+con-
+straints
+on m
+~ and tanP are basically the same.
+We in-
+clude
+the QCD corrections
+in all contributions
+to Eq.
+(2.1).
+In
+our
+numerical
+evaluations
+we
+take
+n, =0.85,
+mB = 5 275
+GeV,
+M~ =800
+GeV,
+mb = 5
+GeV,
+rs =(1.15+0.14) ps (Ref. 30), and following
+Ref. 34 we
+let fsB3~ lie in the range 100~fsB&
+~180 MeV. Re-
+cent
+lattice
+computations
+find
+values
+for fsBs~
+of
+105+35 MeV (Bernard
+et al. ), 130+20 MeV (Hamber),
+and —120 MeV
+(Gavela
+et al. ), which
+are consistent
+with
+our
+range.
+The
+combined
+ARGUS
+and
+CLEO
+data
+measure
+the ratio of like-sign to unlike-sign
+dilep-
+tons
+from Y(4S)~BdB d states
+which
+gives the result
+xs =0.70+0. 13, where xs =b,Ms/I s .
+d
+d
+d
+In the case of the SM, t-quark
+contributions
+also dom-
+inate
+B,-B, mixing.
+The
+ratio
+R =xs /xs
+is then
+$
+d
+roughly
+given by
+H, Q, W
+U,c,t(i
+H, Q, W
+FIG. 2. Box diagrams
+contributing
+to neutral
+meson
+anti-
+meson mixing.
+2
+2
+F
+8' msfsBs I(I;b ~gd ) lg,
+6m
+X [ A ~~(x, )+cot 13AHH (x„xH,xi, )
++cot PA ~H(x, )xH, xb )],
+(2.1)
+R=
+1
+(2.4)
+due to the hierarchial
+structure of the KM matrix; hence
+B,-B, mixing
+is constrained
+to be maximal
+in the SM.
+This result
+also holds in two-Higgs-doublet
+models
+since
+t-quark
+dominance
+persists
+in the 0* contributions
+and,
+as can be seen from Eq. (2.1), the same KM factors are in-
+volved in both the SM and H* terms.
+Thus R has rough-
+ly the same value in the presence of H —bosons as it does
+in the SM.
+2. D -D
+mixing
+D -D
+mixing
+is also mediated
+by the Feynman
+dia-
+grams presented
+in Fig. 2 with q =c, d~u, and c,t~s, b.
+The
+experimental
+upper
+limit
+'
+on
+the
+D
+mass
+difference
+is
+hMD & 1.3 X 10
+'
+GeV.
+The
+SM box-
+diagram
+contributions,
+in which the b quark
+is dominant
+and
+the
+external
+momentum
+terms
+(proportional
+to
+m, /mb
+) are no longer negligible,
+are quite small
+giving
+AMD =10 ' . However,
+the long-distance
+contributions,
+consisting of mm. and KK intermediate
+states, are estimat-
+ed
+to be larger
+giving AMD-0. 7—30X10 ' . We find
+that
+the charged-Higgs-boson
+contributions
+can also be
+significant,
+and
+demand
+that
+these
+H — contributions
+alone not exceed the experimental
+bound on AMD.
+Including
+the terms
+arising
+from
+the charged
+Higgs
+couplings
+to the
+masses
+of the
+external
+quarks
+(i.e.,
+m, cotP), the 0
+box-diagram
+contrib—utions to EMD are
+(in model II, taking m, =0)
+(B'I [dy (1—y, )b][dy„(1—y, )b]lB') =—
+(2.2)
+and for the mbtanP Higgs coupling
+term
+4
+mB
+',fsB3-
+mb
+(B l[d(1+y~)b][d(1+y~)b]lB )=
+2mB
+,'fsBsms—
+(2.3)
+2mB
+where fs is the B meson decay constant.
+where x;=m; /M&,
+ri,
+is a @CD correction
+factor, '
+A~~(x, ) is given
+by the SM (Ref. 32), and the expres-
+sions for the functions
+A are given
+in Appendix
+A. For
+completeness
+we have included
+the contributions
+to AHH
+and
+A~H that
+arise from the mbtanP
+term
+in the tbH
+coupling.
+This extra coupling
+results
+in a term which
+is
+of relative
+size (mblm, )tan P and
+can give
+significant
+effects when tanP is large, i.e., for tanP & 5 it can compete
+with the m, cotP contribution.
+In contrast,
+the contribu-
+tions from
+the external
+momentum
+of the
+b quark
+are
+proportional
+to mb!m, and are approximately
+the same
+size as they are in the SM (of order
+5—10%%uo) and hence
+we neglect
+the b-quark
+external
+momentum
+here.
+The
+dominance
+of the t quark
+in the loops is assumed
+and in
+the
+limit
+of mb=0
+our
+results
+agree
+with
+those
+of
+Glashow
+and Jenkins.
+The corresponding
+expression
+for
+AMs in model I is also given by Eq. (2.1) with tanP~1 in
+the formulas
+for
+AHH
+and
+A~H given
+in Eqs. (A2) and
+(A3). Since the H* coupling
+proportional
+to m, cotP gen-
+erally
+dominates
+in Eq. (2.1) the limits
+on the charged
+Higgs
+parameters
+from B -B
+mixing
+do not differ be-
+tween
+models I and II for values of tanP
+in the range
+0.1—100. The relevant
+hadronic
+matrix elements
+contrib-
+uting to Eq. (2.1) are
+41
+NEW CONSTRAINTS ON THE CHARGED HIGGS SECTOR IN. . .
+3425
+GFMw
+b,MD =
+mDfDBD
+~ ( V,q V„b )
+~
+6m
+X[tan PAHH(xb, xH, x, )
++tan pA wH(xb, x~,x~ )]
+(2.5)
+where
+the explicit
+expressions
+for
+AH&
+and
+A~H
+can
+again
+be found
+in
+Appendix
+A with
+the
+substitution
+tanp~cotp
+in Eqs. (A2) and (A3}. The dominant
+contri-
+bution
+in Eq. (2.5) involves
+the Higgs-fermion
+coupling
+proportional
+to
+m&
+and
+hence
+D -D
+mixing
+does
+differentiate
+between
+models I and II. The expression
+for
+b,MD in model I is given by the substitution
+tanP~cotP
+in Eq. (2.5) and tanp —+1 in Eqs. (A2) and (A3). As dis-
+cussed
+below,
+we
+find
+that
+D-meson
+mixing
+only
+con-
+strains
+the charged
+Higgs sector in the case of model II
+(and then only for very large tanp, i.e., tanp~
+few X 10,
+which
+is beyond
+the perturbative
+limit); there are no ad-
+ditional
+restrictions
+in model I after the constraints
+from
+B -B
+mixing
+are taken into account.
+Numerically,
+we
+set mD=1. 87 GeV, m, =1.5 GeV, ~D=4.28X10
+'
+s,
+and consider fDBD
+to lie
+in the range 170+50 MeV.
+Note that
+the value fDBn~ =120 MeV gives the most
+conservative
+limits from Eq. (2.5) and hence is the value
+we use in our calculations.
+fr'cmsc
+hM~
+( ~ib I'id }' fanIa
+(2.6}
+3. E -E
+mixing
+We consider
+the inAuence of charged
+Higgs bosons on
+the El-K~
+mass
+difference.
+These
+contributions
+are
+again
+represented
+by the box diagrams
+in Fig. 2 with
+q =s.
+The
+short-distance
+contributions
+to
+b,M~
+are
+directly
+related to the BI Bz mass difFe-rence
+via (in both
+models I and II assuming
+m, =0)
+A recent calculation
+in the large-N approach
+yields the
+more stringent
+restriction
+IAMB(new physics)1~0
+1(E.Mx ),», ,
+however,
+we make use of the weaker bound (2.7).
+(2.8)
+B. CP violation
+l. e parameter
+As is we11 known,
+the parameter
+e is a measure
+of CP
+violation
+in the physical states of the K -K
+system.
+The
+general expression
+for e is given by the imaginary
+part of
+the off-diagonal
+matrix
+element
+(ImM, z) of the hS =2
+effective Hamiltonian
+as
+~i m!4
+e=
+—
+ImM&&
+&2b M»
+(2.9)
+in the reasonable
+approximation
+that the imaginary
+part
+of the EI= —,' transition
+amplitude
+is neglected
+in com-
+parison
+to its real part, and where M, z is given
+by the
+off-diagonal
+element
+of the K,K
+mass
+matrix.
+The
+charged-Higgs-boson
+contributions
+to M, z arise from the
+Feynman
+diagrams
+displayed
+in Fig. 2 with q =s. The re-
+sulting
+expression
+for e is (in both models I and II with
+m, =0)
+with fK =160 MeV and mz =0.497 GeV. The SM calcu-
+lation for AM+ is plagued
+by uncertainties
+from long-
+distance
+effects,
+as
+well
+as
+short-distance
+strong-
+interaction
+corrections
+and
+evaluation
+of the hadronic
+matrix
+elements.
+However,
+the KL-Kz mass
+difference
+has
+been
+widely
+used ' to constrain
+new
+physics
+by
+demanding
+that the new physics contributions
+not exceed
+the experimental
+determination
+of AM+.
+We thus
+re-
+quire that (with AM+ as calculated
+above}
+~AM+~ ~ (AM@),»,+(3.521+0.014)X 10
+'
+GeV .
+(2.7)
+i~j4
+6~M~
+e=
+—
+~
+Inly fry Bxlm[rl .k. Aww(x
+}+'r}a~iA ww(x, )+2'„k,&, A ww(xc xi )
+&2b Mx
+12m.
++cot p[g«k, AHH(x„xH, x, =0)+g«k, AHH(x„xH, x, —0)
++27}„A,, A,, AH'H(x„x„xH )]
++cot P[g
+A, AwH(x, xH, x —0)+rl„k., AwH(x, )xH, x,
+0)
++2'„A,, A., A wH(x„x„xH }]l,
+(2.10)
+where the functions
+A are given
+in Appendix
+A, g;
+are
+the QCD corrections,
+and
+A,; = V,, V,d. We take ' the q
+values g« =0.70, g« =0.40, g« =0.65. The experimen-
+tal value
+of e is (2.259+0.018)X 10
+e'
+. The major
+uncertainty
+lies in the value of the bag factor Bz, which
+is the ratio of hadronic
+matrix
+elements
+(BK=1.0 in the
+vacuum-saturation
+approximation).
+Estimates
+of B&
+vary
+widely,
+ranging
+from —0.4 to 2.9. Recent lattice
+computations
+yield Bz —
+—0.5—1.2 and we allow B~ to
+vary in the most probable
+range
+—,' —1.5.
+2. e' parameter
+A second
+parameter,
+e', describes
+the source of di-
+rect
+CP
+violation
+in
+the
+decay
+K ~2m.
+Defining
+i5„
+(nn(I =n)~
+0~Kw) .= A„e ", where
+5„ is the
+phase
+3426
+V. BARGER, J. L. HEVfE'l l, AND R. J. N. PHILLIPS
+41
+' ~2
+~o+~
+' Re/
+e
+2
+2
+E' =
+v'2
+Re Ao
+Re A2
+Im Ao
+Redo
+shift in the
+m n(I = n) final state, e' is given by
+(2.11)
+m, /Mw.
+The
+effective bS=1 weak
+Hamiltonian
+is
+given by
+H,ff= GF a,
+—
+g A.; Fw(x( )Q6
+2
+12m.
+ig, d I „sg",
+(2.12)
+Some of these parameters
+have been experimentally
+deter-
+mined,
+7'
+giving
+5z—50+ m./2 =(48+8)'= m /4, Re A z /
+ReA0=0. 05,
+~ Ao~ =2.71X10
+GeV. The leading
+con-
+tribution
+to the imaginary
+parts of the K ~2m hS =1
+amplitude
+is given
+by the gluon-exchange
+penguin
+dia-
+gram
+depicted
+in Fig. 3(a) with
+q =s, q'=d,
+and f
+represents
+a d quark.
+The gluon-exchange
+penguin
+only
+contributes
+to the EI = —,' amplitude
+( Ac), while the elec-
+tromagnetic
+penguin
+diagram
+( y exchange) contributes
+to
+both
+Ao and
+A2 but is suppressed
+by a factor of order
+a/a, . %e thus
+presently
+ignore
+the
+electromagnetic
+penguin
+contributions,
+but will briefly
+discuss their rela-
+tive importance
+later.
+The general dsg vertex takes the form
+GF
+a, [ln(x; )
+H—
+(x; )]Q6
+&2,
+' 12m
+(2.14)
+In the SM we then have
+Imago
+Redo
+—G, (~~(I =0)~Q, ~IC')
+(Imk, , }CI .
+i/2
+2.71 X 10
+GeV
+(2.16)
+with
+A,;= V;d V;, . Fw(x; ) is furnished
+in Appendix
+A, and
+the operator
+Q6 is defined by
+Q6=dy„A, '(1—y))s(uy"A, , u +dy")L.,d+sy"A,,s) .
+{2.15)
+where I„is decomposed
+as
+I „=Fiy„(1 y5)+F2q„(—1+yq)+Fio&Z (1+y5) .
+Here CI is defined
+to be
+Fw(xi )
+CI
+1n(m, /m,
+)
+(2.17)
+(2.13)
+The q
+term of the F,y„(1—y5) piece is the dominant
+contribution
+since the
+gluon
+is attached
+to a massless
+quark
+and the F3 term scales like an additional
+factor of
+where CI
+is the resummation
+of leading logarithms
+[i.e.,
+the
+resummation
+of (a, /12m. )ln(x, )] by Guberina
+and
+Peccei.
+Cz is evaluated
+to be 0.088+0.042 for m, in
+the range 40—200 GeV (it is rather
+insensitive
+to rri, ), for
+the QCD scale A=100—200 MeV, and with p
+(the scale
+at which the matrix
+eleinents
+are evaluated}
+between 0.5
+and
+1 GeV. An estimation
+of the matrix element
+based
+on vacuum
+saturation
+and current algebra gives
+(~~(I=0)~Q, ~It')
+16 f rnxm
+fee
+—1+ ac rex
+9
+m, (m„+md ) f„
+f„m2
+(2.18)
+(a)
+which
+yields (nm(I =0)~Q6~E ) =0.2—0.8 when the fol-
+lowing
+values
+of masses
+(evaluated
+at a scale
+p, = 1
+GeV),
+m„=(5.1+1.5) MeV,
+md =(8.9+2.6) MeV,
+m, =(175+55.0) MeV,
+m~=(0. 7-0.9) GeV,
+(2.19)
+U)C)t" ]H
+II
+(iv)
+xH
+u,c,t
+are used.
+The charged-Higgs-boson
+contributions
+to the dsg ver-
+tex are shown in Fi~s. 3(b) (i)—3(b) (iii}. Since the operator
+structure
+of the H —contribution
+is the same as that for
+the SM, the resulting
+expression
+for e' including
+SM and
+H* contributions
+is simply
+(in both models I and II with
+m, =0)
+(b)
+(2.20)
+,
+~4 ReA2
+F~(y, )—F~(y, )
+e'=
+—
+( 1+cot P
+v'2
+Redo
+Fw(x, )
+Fw(x,)—
+FIG. 3. Penguin
+diagrams
+contributing
+to meson decays and
+e'le:
+(a) overall structure
+showing
+gluon, photon, Z exchanges;
+(b)
+charged-Higgs-boson
+contributions
+to
+the
+q 'qG
+vertex
+(G =g, y, Z).
+with
+y, =rn, /m
+~
+Fz(y) is prese. nted
+in Appendix
+A
+and can be easily obtained
+from the general
+formulas
+for
+the charged-Higgs-boson
+contributions
+to the
+q 'qG (G
+being a y, Z, or gluon) vertex presented
+in Ref. 14. As a
+41
+NEW CONSTRAINTS ON THE CHARGED HIGGS SECTOR IN. . .
+3427
+check on the form of FH(y}, we note that in the limit of
+m, ~O, the ratio of charged-Higgs-boson
+to
+8'-boson
+penguin
+contributions
+reproduces
+the result of Athanasiu
+and Gilman,
+i.e., for m, « m, «M~~,
+co gFH(yt
+)
+FH(yc )l
+I
+i
+yt Ilyt
+—+—cot P
+.
+(2.21)
+Fit (xt )
+Fii—(x, )
+2
+ln(m jm, )
+The experimental
+value of e' je is in a state of fiux with
+the two recent and somewhat
+contradictory
+results
+NA31 at CERN
+e'/e=(3. 3%1.1)X10
+(2.22}
+E731 at Fermilab
+e' je=( —5+14+6)X10
+In setting
+restrictions
+on m
+y and tanP from our com-
+H
+bined
+analysis
+we
+first
+conservatively
+assume
+that
+~e' je~ &5X10, and
+we
+find
+that
+this
+limit
+has
+no
+significant
+effect on our bounds.
+After
+all of our con-
+straints
+are combined,
+we then restrict e' je to lie within
+the +2o range of the published
+NA31 data and obtain
+further constraints
+on two-doublet
+models.
+Defining
+R to be the
+quantity
+in large
+parentheses
+in
+Eq.
+(2.20),
+i.e.,
+R = I 1+cot P[FH(yt )
+FH(y, )]—
+/
+[Fs,(xt )
+Fa,(x, )]—
+I, e' je is given by
+AM
+(2.23)
+Deviations
+of R from unity
+are due to the effects of the
+charged-Higgs-boson
+contributions.
+In the SM the ex-
+pected value of e'/e lies in the approximate
+range
+10
+&e'/@&10
+. In Fig. 4 we display R as a function
+of tanP for various
+values of m, and
+m
+~. Clearly, for
+smaller
+values
+of tanP
+and
+m
+y (e.g., tanP&0. 2 and
+m
+~ & 100 GeV) the H* penguin
+contributions
+are large
+and negative.
+For some values of the parameters
+(name-
+ly, tanP&0. 3 and
+m
+y &250 GeV), the predicted
+value
+of e' je is found to be quite small and negative
+and can be
+consistent
+with the preliminary
+Fermilab E731 data. For
+other
+values
+of the
+parameters
+R = 1
+(namely,
+for
+tanP &0.4}and e' je is found to agree with the data of the
+NA31 experiment
+at CERN.
+It has recently
+been emphasized
+that the electromag-
+netic penguin
+(i.e., y and Z exchange} contributions
+to
+e'je may
+be significant
+(especially
+if the top quark
+is
+heavy),
+having
+the effect of reducing
+the predicted
+value
+of e'/e.
+Presumably,
+the H* contributions
+to the elec-
+tromagnetic
+penguin
+diagrams
+may
+also be large
+(these
+(o)
+mt = 60 GeV
+l
+I
+I
+I
+(b)
+mt =90 GeV
+I
+I
+I
+I
+I
+I
+5Q
+)00
+250
+~1~1 ~ ~ ~ 0 ~ ~
+500 ~e~
+-2
+2
+(c) mt= l20 GeV
+I
+I
+I
+I
+I
+(d) mt=150 GeV
+~
+cia ~ ~ seo ~+~~
+~0
+-20.)
+I0.5
+0.1
+I
+I
+0.5
+FIG. 4. The factor R defined in Eqs. (2.20)—(2.23), describing
+the correction to the SM value of e'/e due to H+ contributions,
+is
+shown
+vs tanIl for (a) m, =60 GeV, (b) m, =90 GeV, (c) m, = 120 GeV, (d) m, = 150 GeV. The results are the same for both models I
+and II. Solid, dashed, dotted, dashed-dotted
+curves denote the cases nz
++=50, 100, 250, and 500 GeV, respectively.
+3428
+V. BARGER, J. L. HE&El I', AND R. J. N. PHILLIPS
+diagrams
+are easily
+calculable
+from the general
+expres-
+sions contained
+in Ref. 14). However,
+the calculations
+of
+the matrix
+elements
+for the appropriate
+operators
+are
+even more uncertain
+'
+in this case than for the gluonic
+penguin,
+and
+thus
+we ignore
+electromagnetic
+penguin
+effects in our analysis.
+The influence of charged
+Higgs bosons on the electric
+dipole moment of the neutron (d„) has been recently con-
+sidered,
+' where it was found that the predicted
+value of
+d„ in two-doublet
+models is approximately
+the same as in
+the SM (d„=10
+*'). Given the present
+gap ' between
+experimental
+limits (d„510
+) and the SM prediction
+for d„, it is impossible
+to restrict the parameters
+in two-
+doublet models from these considerations.
+C. B~K y
+Radiative 8 decays
+proceed
+through
+the
+inclusive
+quark-level
+dipole transition
+b ~sy via the generic Feyn-
+man diagram
+displayed
+in Fig. 3(a} with q =b, q'=s, and
+the y is taken on-shell.
+The diagrams
+responsible
+for the
+charged-Higgs-boson
+contributions
+to busy
+with
+an
+on-shell
+y are shown
+in Figs. 3(b} (iii) and 3(b) (iv). The
+matrix
+element
+for
+this
+process
+is
+governed
+by
+the
+F3'„~"(1+y5) term in Eq. (2.13) and results
+in the de-
+cay rate
+CXGF 772 b
+2
+5
+I (busy)=
+g
+A.;[GII,(x;)+aGH(y;)
+128m.
++cot'pGH(y;
+)j
+.
+(2.24)
+Here,
+A,, = V,', V;&, a = —cot P in
+model
+I, a =+1 in
+model II, and G~,GH'
+can be found in Appendix
+A. G~
+represents
+the SM contribution
+and GH
+is the H* con-
+tribution
+given
+in
+Refs.
+11
+and
+14.
+This
+process
+differentiates
+model I from model II and we will see that
+the predicted
+branching
+ratio is quite different
+in the two
+cases. The branching
+ratio is given by
+8(busy)=
+I'(b ~sy) 8(b~ ecv) .
+I (b
+ceV)
+(2.25)
+It has been shown
+that the QCD radiative
+corrections
+significantly
+enhance
+the rate for b ~sy, since they have
+the effect of replacing
+the rn, /MII
+GIM power suppres-
+sion in GII, with a m, /MII, logarithmic
+suppression.
+As
+pointed out in Grinstein
+and Wise" the QCD corrections
+are applied to the dipole transition
+operator of the matrix
+element
+and hence all contributions
+to this operator
+(in
+this case from the SM and H*) receive the same QCD ra-
+diative corrections.
+We employ
+the prescription
+of Grin-
+stein, Springer,
+and Wise
+for these corrections to
+)O 2
+tO
+)0
+I
+I
+I
+I
+I
+I
+t
+1
+(0) mt =90 GeV
+MODEL I
+pt. bound
+SM
+I
+I
+I
+I
+I
+I
+I il
+(b) mt=150 GeV
+MODEL I
+pt. bound
+SM~+~~ewe~
+~ ~
+iI
+t 0
+I
+I
+I
+I
+I
+I
+I
+I (
+I
+I
+I
+I
+I
+I
+I
+I
+10
+) mt=gOGeV
+MODEL Z
+) mt = 150 GeV
+MODEL If.
+expt. bound
+so
+-3
+0
+fO
+~a~a~
+~~o~e ~ossa
+~ ~ ~ ~ ~ y ~
+expt. bound
+Oy~ I ~ ~ ~ ~
+~ ~ ~ ~ o+ ~ ~
+~ 0 1 ~ ~I ~ ~ ~ ~ ~*~ ~ ~ ~ 0~ ~ ~0 ~ 0 ~ ~ ~ 0~ I
+~a~ ~~o~a ~o~s~~~
+-4
+10
+I
+I
+I
+I
+I IIII
+tanP
+SM
+10 0.1
+I
+I
+I
+I
+I
+I
+I II
+tanP
+SM
+I
+I
+I
+I
+I
+I
+I
+I
+10
+FIG. 5. The branching
+fraction for the decay b ~sy is shown vs tanP for various
+m
+~ values, in (a) model I with m, =90 GeV, (b)
+model I with m, =150 GeV, {c}model II with m, =90 GeV, (d) model II with m, =150 GeV. Solid, dashed, dotted, dashed-dotted
+curves correspond
+to m
++=50, 100, 250, and 500 GeV, respectively.
+41
+NEW CONSTRAINTS ON THE CHARGED HIGGS SECTOR IN. . .
+3429
+c7(Mii, )=Gii,(x, )+aGH(y;)+cot PGH(y;),
+with the result
+C7(mb )=[a,(M+ )/a, (mq )]'
+(2.26)
+X
+c7(Mii, )—
+I [a,(mi, )/a, (Mii, )]' ~ —1]
+j [a,(m$)/a, (Miy)]
+~ —1)
+(2.27)
+B(b ~sy )=2.91 X 10
+90 GeV
+(2.28)
+It is clear from Fig. 5 that especially
+large enhancements
+or suppressions
+of the branching
+fraction are possible
+in
+model I. This is due to the fact that a =—cot pin model
+I and can thus cause destructive
+interference
+with the SM
+contributions.
+This destructive
+interference
+between
+the
+SM and H* terms does not occur in model II, where the
+charged-Higgs-boson
+contributions
+are found
+to always
+enhance
+the SM rate.
+Note that for some values of the
+parameters
+(namely, tanpR
+1 for m
+~ & 100 GeV) the to-
+tal branching
+fraction already exceeds the present experi-
+mental limit.
+D. KL, ~pp,
+Interest
+in the process Ki ~pjM has been revived
+due
+to two new measurements
+of its branching
+fraction of
+B(KL ~pp)=(8. 4 +1.1)X10
+and B(KI ~pIJ)=(5. 8
++0.72) X10, which
+are
+lower
+than
+the
+previous
+world average of B =(9.58+, ~}X10
+. It is well known
+that the intermediate
+2y state dominates
+the imaginary
+part of the amplitude
+for this process and calculations
+yield B(KL ~2y ~pp) =(6.83+0.28) X 10
+. Geng and
+where x =232/81.
+Experimentally
+one must search for an exclusive mode,
+typically
+B—+K'y,
+where
+the
+current
+limit
+is
+B(B~K'y) &2.4X10
+. The ratio of exclusive
+to in-
+clusive rates contains great theoretical
+uncertainty,
+mak-
+ing
+comparisons
+of theory
+to experiment
+difficult.
+A
+recent
+(and
+conservative)
+estimate
+is r(B~K'y)/
+I'(b -+sy
+)=0.06, which when combined
+with the data on
+the exclusive branching
+fraction yields the inferred bound
+B(b ~sy ) &4X 10
+. We will see that this level of sensi-
+tivity
+is beginning
+to confront
+the
+possible
+branching
+fraction enhancements
+due to H* contributions,
+and that
+any future increase in experimental
+sensitivity
+will either
+further
+restrict the parameters
+in the charged
+Higgs sec-
+tor or reveal new physics.
+Figure 5 shows B(b ~sy } including
+SM and H* con-
+tributions
+as a function
+of tanp in both models I and II
+with
+m, =90, 150 GeV and for various
+values of m
+For comparison,
+the SM branching
+fraction
+and the in-
+ferred experimental
+upper bound are also depicted
+in the
+figure.
+We have performed
+our own fit of the SM results
+in terms of m, and
+find that the branching
+fraction
+is
+roughly
+given by
+' 0.53
+Ng
+have
+averaged
+these
+two recent
+measurements
+of
+B(KL ~pjM
+) with the previous
+value, and then subtracted
+the 2y contribution
+to obtain a constraint
+on the real part
+of the amplitude
+of B[ReA (KL ~@AM)] &1.5X10
+. If
+no
+cancellations
+occur
+between
+the
+short-
+and
+long-
+distance
+contributions
+to the real part of this amplitude
+then the short-distance
+contributions
+alone obey this con-
+straint.
+However
+it has been shown
+in Ref. 58 that such
+cancellations
+may in fact occur and thus no restrictions
+on the short-distance
+contributions
+may be obtained
+from
+this process.
+In any case we find that
+the above con-
+straint of Ref. 57 on the short-distance
+contributions
+to
+EL
+pp provides
+no additional
+constraints
+on m
+y and
+tanp once the bounds
+from e have been taken
+into ac-
+count.
+The diagrams
+that
+may
+potentially
+contribute
+to the
+real part of the SM and H* short-distance
+amplitude
+for
+KL ~JLip, are shown
+in Fig. 2 (with q =s and a muon line
+replacing
+the quark
+line on the right)
+and Fig. 3 (with
+q =s, q'=d, f =p, and a Z boson is exchanged).
+Note
+that for on-shell
+muons
+in the final state, electromagnetic
+current conservation
+leads to a null contribution
+from the
+photon-exchange
+term.
+The weak interaction
+contribu-
+tion to the decay width is (in models I and II with m, =0}
+r(K,
+GFM~
+4m„
+4
+4
+2
+' 1/2
+fxm~mx
+1
+64m
+mg
+CH(y, )
+X Rek,,Cii,(x, ) 1+
+Iv xt
+(2.29)
+with
+A,,= V;,' V;d, Cii, and
+CH are given
+in Appendix
+A.
+We have calculated
+CH from the results
+given in Ref. 14
+for the H* contributions
+to B~pp. The box diagrams
+with
+HH, HW,
+and HP exchange
+are
+all found
+to be
+chirally
+suppressed
+by a factor of m„/Mii,
+and are thus
+numerically
+negligible.
+The branching
+fraction
+for the SM and H* short-
+distance
+contributions
+are presented
+in Fig. 6 as a func-
+tion of tanP for several values of m, and m
+~, where we
+have
+assumed
+top-quark
+dominance
+and
+the
+value
+~A,,
+~ = ~(0.043)(0.005)
+~
+in
+our
+numerical
+calculations.
+The SM branching
+ratio is also shown.
+We see that the
+H* contributions
+can again
+give rise to large enhance-
+ments or suppressions
+over the SM rates.
+K. K+~m+vv
+The decay K ~~+vv is mediated
+by the standard
+box
+and penguin-type
+diagrams
+of Figs. 2 and 3. In Fig. 2
+q =s on the left-hand
+side of the box and on the right-
+hand
+side, q and d are replaced
+by v and v and the lep-
+tons e, p, and ~ are exchanged
+instead of u, c, and t. In
+the penguin
+graph of Fig. 3(a), q =s, q'=d, f =v, and a
+Z boson is exchanged.
+The charged-Higgs-boson
+contri-
+butions
+are shown
+in Figs. 3(b) (i)—(3b) (iv). The branch-
+ing ratio for K+ —+m.
+vv is then
+given
+by (in models I
+and II with m, =0)
+3430
+V. BARGER, J. L. HEWEI I', AND R. J. N. PHILLIPS
+41
++
++
+F
+a' B(K ~n e
+v)
+GM
++
+o+
+2~
+f V„,/'
+X g
+g
+X D(.x,z; ),
+(2.30)
+l =e,P,, T
+J =C, E
+m(q
+)
+X
+J
+q.
+M2
+&
+I,
+a
+m(l;)
+M
+(a= W, H+)—
+(2.32)
+as appropriate.
+The functions
+D( x,zP) are given
+in
+J
+Appendix
+A; DsM
+(the SM box and
+penguin-diagram
+contributions)
+was calculated
+by Inami
+and Lim,
+and
+DaH, D», and DzH (the contributions
+from the WH*,
+and H H* exchange box diagrams,
+and H+—penguin
+dia-
+gram, respectively)
+can be derived
+from the general
+for-
+malism
+given
+in Ref.
+14 and
+agree
+with
+the
+results
+presented
+in Refs. 10 and 15. D~H and DHH are propor-
+tional to the ratio
+m& /m
++ and hence are numerically
+negligible.
+This
+process
+is also
+mediated
+by
+a single
+where
+A, = V', V.d and D (xg, z; ) is defined by
+D(x,z, )=DsM(x, z; )+D~H(x, z; )+DHH(x, z;
+)
++cot'PDzH(x,
+,z; ),
+(2.31)
+with
+operator
+(due to the V —A structure of the Z-boson neu-
+trino
+coupling)
+and
+the QCD radiative
+corrections
+are
+again
+applied
+to this operator.
+We employ
+the QCD
+corrections
+calculated
+for DsM (which have been found
+to
+have
+a
+smaller
+effect
+than
+for
+b —vsy )
+to
+D =DsM+cot PDzH.
+The current
+experimental
+limit
+on this
+branching
+ratio
+is B(E+~m+vV)(3.0X10
+and the BNL E-787 experiment
+expects to reach a sensi-
+tivity of B(K+~n+vv) -2X10
+'
+in the future.
+%e incorporate
+the results
+of our combined
+analysis
+below
+in our calculations
+of B(E+~n+vv) (due to the
+dependency
+of the range of predicted
+branching
+fractions
+on the allowed
+values of the appropriate
+KM elements)
+and thus present our results for this branching
+fraction at
+the end of Sec. II F.
+F. Combined
+analysis
+Here we combine
+the results of the previous
+sections
+and
+determine
+the regions
+of charged-Higgs-boson
+pa-
+rameter space which are consistent
+with low-energy
+data.
+In the spirit of Ref. 61, a Monte Carlo analysis
+is em-
+ployed
+in order to probe the freedom
+in the KM sector:
+10 sets of the four parameters
+(3 mixing angles 8, 2 3 and
+1 phase 5) present
+in the three-generation
+KM mixing
+10
+I
+$
+/
+I
+I
+I
+I
+-8
+10
+I
+1
+I
+I
+l
+I
+1
+I
+t
+& 10
+CQ
+)O"—I
+I( I
+II
+10
+SM
+ll
+Il
+Il
+I
+I
+I
+I
+I
+I I
+I
+I
+&
+I
+I
+I
+SM
+a) m~=60GeV
+0
+'lo
+~
+~
+l
+0 l2
+i
+10
+1:I':
+~
+~
+~
+~
+~
+I
+I
+~ s
+I
+SM
+mt =90 GeV
+I
+I
+l tel
+l
+1
+I
+I
+I
+1
+I
+I
+I
+m„&(GeV) = 50
+100---
+25Q
+0 ~ ~ ~ ~ ~ ~ 0 ~ 0
+5QQ ~e~
+012
+0.1
+LI
+1
+tonP
+010
+mg =120 GeV
+-12
+I
+l
+I
+I
+&
+hatt
+1Q
+10
+0.1
+~
+~
+~
+ll
+, ll,
+,
+". . . ,
+, )
+tonP
+m& = 150 GeV
+10
+FIG. 6. The branching
+fraction for Ki ~pp decay is shown
+vs tanP for various
+m
++ values for (a) m, =60 GeV, (b) m, =90 GeV,
+(c) m, =120 GeV, (d) m, =150 GeV. The results are essentially
+the same for both models I and II. Solid, dashed,
+dotted, dashed-
+dotted curves represent
+the values m
++=50, 100, 250, and 500 GeV, respectively.
+41
+NEW CONSTRAINTS ON THE CHARGED HIGGS SECTOR IN. . .
+3431
+m, =60, 90, 120, 150 GeV,
+we vary m
+y and tanP in the ranges
+(2.33)
+m
+y =25—500 GeV,
+tanj3=0. 1 —10.0,
+(2.34)
+and calculate
+Bd-B d and D -D
+mixing,
+e, AM&, and
+e'/e, for each set of KM parameters
+which
+survive
+the
+above
+constraints
+on
+V;.. In these
+calculations
+we ex-
+plore
+the entire
+ranges
+of meson
+lifetimes,
+decay
+con-
+stants,
+and
+bag
+factors
+listed
+in
+Table II.
+We
+then
+demand
+that each of the above calculated
+quantities
+be
+matrix
+are generated
+using
+the Kobayashi-Maskawa
+pa-
+rametrization.
+'
+The parameters
+are generated
+subject to
+the restriction
+that the KM elements
+lie within
+their al-
+lowed
+ranges
+as determined
+in Ref. 37 from
+charged-
+current
+experiments
+and
+unitarity
+considerations.
+We
+find that 10 lotteries are su%cient to ensure that the pa-
+rameter space is well sampled
+and converges at the boun-
+daries of the allowed
+ranges
+for the KM elements.
+We
+also demand
+consistency
+(at the +2cr level) with the re-
+cent ARGUS and CLEO result
+~ V„„/V,b
+~ =0.10+0.03
+obtained
+from the end-point
+spectrum
+of B semileptonic
+decays.
+For each of the following
+values of m„
+TABLE II. Values of the masses, lifetimes,
+decay constants,
+and bag factors used in our numerical
+calculations
+for the K,
+D, and B mesons.
+K
+D
+B
+m (GeV)
+0.497
+1.87
+5.275
+r (ps)
+(4.28+0. 11)X 10-'
+1.15+0.14
+f {MeV)
+160
+170+50
+140+40
+—
+' —1.5
+1
+1
+consistent
+with
+the current
+experimental
+measurements
+discussed
+in the previous sections: i.e.,
+x~ =0.70+0. 13,
+hMD &1.3X10 "GeV,
+e=(2.259+0.018)X 10
+AM+ =(3.521+0.014)X 10
+' GeV,
+~e'/e~ & 5.0X 10
+(2.35)
+We find that the data on Bd-B d mixing
+and e impose
+the strongest
+limits on the charged-Higgs-boson
+parame-
+ters
+m
++ and tanP.
+Once the restrictions
+from e have
+been satisfied, no additional
+constraints
+are obtained from
+considerations
+of b,Ms
+or from
+requiring
+~e'/e~ &5.0
+500
+400
+I
+I
+(a)
+mt~60 GeV
+I
+I
+(b)
+mt =90 GeV
+cn
+500
++IT 200
+100
+500
+400—
+L.
+I
+~~% W
+I
+I
+I
+I
+I
+I
+I
+I
+I
+I
+(c) et*120 GeV
+I
+I
+I
+I
+~*f50 GeV
+500—
++IX
+E
+200—
+100—
+0.1
+tanP
+allowed
+I
+0.5
+1 0.1
+per
+tanP
+(
+l
+l
+1
+I
+0.5
+1
+FIG. 7. Summary
+of restrictions
+from low-energy
+data on the charged-Higgs-boson
+mass m
++ and coupling
+parameter
+tanP for (a)
+m, =60 GeV, (b) m, =90 GeV, (c) m, =120 GeV, (d) m, =150 GeV. Regions to the left of the boundaries
+are excluded.
+The solid
+curve represents
+the combined
+constraints
+from Bd Bd and D Dmixing-,
+AM+, e, ~e-'/e~ &S.OX 10 ', and EL ~p)M.
+The short-
+dashed,
+dashed-dotted,
+and long-dashed
+curves correspond
+to the constraints
+from busy
+(model II), busy
+(model I), and e'/e
+(NA31), respectively.
+The region excluded by perturbation
+theory is to the left of the dotted vertical line.
+3432
+V. BARGER, J. L. HEWLETT, AND R. J. N. PHILLIPS
+1
+i
+I
+I
+I I)
+10 : (a} m&=60 GeV
+$
+i
+$
+l
+I
+I 1»
+I
+I
+I
+r
+1 I I
+-
+(b& m, =goGeV
+10
+r..-:
+C
+-11
+10
+s, l
+I
+I
+10
+I
+I
+i
+I
+I
+I I
+1
+:(c) m&=120 GeV
+I
+I
+I
+I
+$
+I
+I
+I
+I
+i
+I
+S
+- (d) m&=150 GeV
+I
+I
+I
+1
+I l~
+SM-
+ie
+~L
+EQ
+f:"r
+10-lo
+llo wed
+excluded
+m„~ (GeV) ~ 50
+100———
+250 -."-"."
+500——
+011
+0.1
+I
+I
+I
+I
+I
+I
+I I
+0.5
+tang
+I
+I
+I
+I
+I
+I
+s
+s
+5
+10 0.1
+I
+I
+I
+I
+I
+I t i
+0.5
+1
+tanP
+l
+I
+I
+I
+I
+I
+I t
+5
+10
+FIG. 8. The allowed
+regions for the branching
+fraction for K+~n
+vv decay are shown
+vs tanP for various m,
+q values with (a)
+m, =60 GeV, (b) m, =90 GeV, (c) m, =120 GeV, (d) m, =150 GeV for both models I and II. Solid, dashed,
+dotted, dashed-dotted
+curves denote the cases m +=50, 100, 250, and 500 GeV, respectively.
+The allowed
+regions
+lie between
+the curves.
+The results of
+Fig. 7 are imposed
+in the calculation of these branching
+fractions.
+X 10
+.
+The
+possible
+constraints
+from
+the
+decay
+KL ~pp also do not reduce the allowed
+parameter
+space
+once the above restrictions
+are satisfied.
+We then calculate B (b ~sy ) in models I and II for the
+parameters
+which
+have
+survived
+all of the
+above
+con-
+straints.
+Demanding
+consistency
+with the inferred
+exper-
+imental
+bound B(busy) (4.0X 10
+we find additional
+limits on m
++ and tanp in both models.
+Further
+bounds
+are also obtained
+by requiring
+e'le to lie within
++2cJ of
+the published
+NA31 data of e'/e=(3. 3+1.1)X 10
+The results
+from this analysis
+are presented
+in Fig. 7
+which
+shows the allowed
+regions
+in the m
++,tanp plane
+for m, =60, 90, 120, and 150 GeV. The solid curve corre-
+sponds
+to the
+combined
+restrictions
+from Bd-B d and
+D Dmixing,
+e,
+b,Mz-,
+and
+~e'le~ (5.0X10, the
+short-dashed
+(dashed-dotted)
+curve
+depicts
+the
+con-
+straints
+from the decay b usy
+in model II (I), the long-
+dashed
+curve represents
+the limits
+from the NA31 data
+on e'/e, and the dotted curve illustrates
+the perturbative
+bound
+of Eq. (1.5); for m, =60 GeV, the
+perturbative
+bound
+is tanP & 0. 1. The excluded
+regions
+lie to the left
+of the curves.
+Clearly,
+the constraints
+from
+these pro-
+cesses become stronger as the top quark becomes heavier.
+It is interesting
+to note that the perturbative
+bound alone
+provides
+a rough
+estimate
+of the combined
+restrictions
+for m
+~ ~ 100 GeV (except for NA31 e'le constraints).
+In Fig. 8 we show the predicted
+values for the branch-
+ing fraction
+for the decay E+~m+vv
+as a function
+of
+tanp with the values of m, and m
+~ as indicated.
+The al-
+lowed regions
+lie between
+the curves.
+The results of our
+above
+analysis
+[including
+the
+constraints
+of Eq. (2.35)
+only]
+are
+incorporated
+in
+our
+calculations
+for
+B(K+~m+vv).
+The SM predictions
+for this branching
+fraction
+coincide
+with
+these
+results
+at large
+tanp
+(i.e.,
+tanp~3).
+We see that
+for all values
+of m
++ and for
+tanp~ 3 the charged-Higgs-boson
+contributions
+have the
+effect of narrowing
+and slightly
+suppressing
+the range of
+allowed
+branching
+fractions compared
+to the SM predic-
+tions.
+For tanp~3
+the SM contributions
+become
+dom-
+inant.
+III. CONSTRAINTS FROM pp COLLIDER DATA
+A. Searches for top and large missing E&
+Heavy quarks
+can be produced
+at the CERN and Fer-
+milab pp colliders at masses well beyond
+the range acces-
+sible
+to
+present
+e
+e
+machines.
+Top-quark
+signals
+(based on SM semileptonic
+decays
+r ~bl v with I =e or p)
+have been sought'
+'
+but have not yet been found;
+this
+places lower
+limits
+on the mass m, in the SM. But m,
+values
+below these limits
+are possible,
+provided
+the SM
+decays
+are
+somehow
+sufficiently
+suppressed.
+In
+the
+present
+context
+of
+two-Higgs-doublet
+models,
+such
+41
+NEW CONSTRAINTS
+ON THE CHARGED HIGGS SECTOR IN . .
+~
+3433
+suppression
+can be provided
+by competition
+with
+non-
+standard
+top decays
+via a real or virtual
+charged
+Higgs
+boson,
+t ~bH+
+(the
+eventual
+charged
+leptons
+from
+H+~~v, ~~lvv
+have
+a much
+softer
+spectrum
+than
+those
+from t~blv
+and
+few
+survive
+the
+experimental
+cuts).
+Hence for "SM excluded"
+values of m, (i.e., for
+m, (77 GeV) the nonobservation
+of top signals
+may be
+used to constrain
+the parameters
+in the charged
+Higgs
+sector by requiring
+sufticient
+competition
+from t~bH
+modes.
+Loosely speaking,
+this approximates
+to demand-
+ing that m~+ & m, —m~ for SM excluded
+values of m„
+since top decays to real H+ are very competitive
+with
+virtual
+W+ modes,
+whereas
+decays
+via virtual
+H+ are
+generally
+not competitive.
+Our analysis
+however
+is based
+on exact calculations
+of the
+competing
+H+
+and 8'+
+channels'
+and
+we find
+significant
+departures
+from
+the
+above approximate
+statement of the bound on m
+The pp collider
+experiments
+have
+also searched
+for
+events with large missing transverse
+energy (denoted Ez),
+since this can be a signal for production
+of SUSY parti-
+cles or other new physics.
+It can, in particular,
+also be a
+signal for charged-Higgs-boson
+production
+because of the
+undetected
+neutrinos
+in H
+~rv~vvqq
+' (or vvvl)
+de-
+cay. Assuming
+that H +—are produced
+from top-quark
+de-
+cays (the only copious mechanism
+at hand), upper
+limits
+on the frequency
+of events with large missing
+Ez- will im-
+ply constraints
+on the two-Higgs-doublet
+model parame-
+ters for any given m, . In this spirit, upper limits on non-
+standard
+contributions
+with large Er from the data of the
+UA1 experiment
+at CERN have already
+been used to
+set limits'
+on the H* parameters
+in model II.
+The most stringent
+present
+limits on top-quark
+produc-
+tion and on events with large gz come from the CDF ex-
+periment
+at the Fermilab
+Tevatron
+collider. '
+We use
+their results to constrain
+two-Higgs-doublet
+models.
+B. Implications
+of CDF data
+The CDF Collaboration'
+first looked for a top signal
+based
+on
+an
+isolated
+charged
+lepton
+plus jets, which
+might
+arise from pp ~ttX or W~tb events
+where
+only
+one top quark decays semileptonically.
+The experimental
+acceptance for such events varies with m, and the experi-
+mental
+upper
+limit
+on a possible
+signal
+therefore
+also
+varies
+with
+m, . The theoretical
+prediction
+for a signal
+depends
+strongly
+on m, but also on imprecisely
+known
+parton
+distributions
+and QCD parameters;
+we conserva-
+tively assume
+the lowest possible
+tt production
+cross sec-
+tion
+in our analysis.
+The lower
+bound
+on m,
+is the
+point where the experimental
+upper limit and theoretical
+lower
+limit
+cross;
+currently
+this
+gives'
+m, &77 GeV
+(90%%uo C.L.).
+Values of m, below 77 GeV are excluded unless the SM
+tt signal is suppressed
+by 8 (t ~bW*) having a value less
+than unity.
+For a given sign of lepton, say, l, this signal
+arises mainly
+from t ~bS'*+~bl+v with t decaying
+ei-
+ther via 8'*
+or via H . We have calculated
+that the
+experimental
+acceptance for the 8"+H
+modes is simi-
+lar to (and
+in fact slightly
+exceeds) that for W'+W'
+modes.
+Hence, the effective bound that can be placed on
+8(t~bW*) is
+8 (t~bW') ~
+experimental
+O.-„upper limit
+theory
+O.-„ lower limit
+—:R(m, ) .
+(3.1)
+We calculate
+this branching
+fraction
+as in Ref. 12, for
+both real- and virtual-Higgs-boson
+cases, including
+small
+contributions
+such as t ~sS', sH and H ~us, ub. The re-
+sult is insensitive
+to the precise values of the KM matrix
+elements,
+since the dominant
+channels
+have matrix
+ele-
+ments =1.
+The CDF Collaboration
+also searched
+for an isolated
+e+p signal,
+such
+as might
+arise from
+tt events
+where
+both t and t decay semileptonically.
+These results can be
+used to derive a second, independent
+bound similar to Eq.
+(3.1). However,
+these constraints
+are less stringent
+than
+Eq. (3.2), so we do not use them here.
+The CDF experiment
+also
+scanned
+for events
+with
+large gz and jets, subject to a stringent
+set of acceptance
+cuts designed
+to remove backgrounds
+from mismeasured
+QCD jets, W+jets, etc. For Er ~60 GeV, with
+an in-
+tegrated
+luminosity
+of 4.6 pb
+', 34 events were observed;
+the expected
+background
+from
+standard
+model
+sources
+(excluding
+unknown
+top decays) is 38+17 events. '
+The
+latter
+is not precisely
+determined
+because
+it is derived
+from
+observed
+W and Z event
+distributions
+and
+from
+heavy-quark
+Monte
+Carlo
+calculations.
+We treat
+the
+background
+as having a Gaussian
+probability
+distribution
+with mean 38 and standard
+deviation
+17 and derive the
+bound
+a (nonstandard
+physics:
+Ez. & 60 GeV: CDF cuts)
+~4.2 pb
+(3.3)
+at
+90%%uo C.L. (see Appendix
+B). Similarly
+for Ez ~40
+GeV, 184 events
+were observed
+with expected SM back-
+ground
+158+35 events
+from these numbers
+we derive
+another bound:
+0(nonstandard
+physics: Ez) 40 GeV: CDF cuts)
+~ 16 pb
+(3.4)
+at
+90%%uo C.L. The two missing-Ez.
+bounds
+are not com-
+pletely
+independent
+since
+the
+event
+samples
+overlap.
+Their implied
+constraints
+on the model parameters
+turn
+out to be rather
+similar;
+we therefore
+illustrate
+only the
+gz ~ 60 GeV bound of Eq. (3.3).
+To evaluate
+the constraints
+from gz. bounds,
+we calcu-
+late
+charged-Higgs-boson
+production
+and
+decay
+by
+Monte Carlo methods
+as in Ref. 12. Conservatively,
+we
+evaluate
+only the dominant
+pp ~ttX production
+by 2~3
+This limit is quite conservative;
+it ignores
+possible
+small
+contributions
+from H ~v.v~l vv decays and the fact that
+some top quarks
+are produced
+from W~tb.
+Reading
+values of R from the CDF graphs, '
+we obtain approxi-
+matel-y
+8 ( t
+b W* ) ~ 0.28,0.36,0.50
+for
+m, =50,60, 70 GeV .
+(3.2)
+3434
+V. BARGER, J. L. HE%'ETT, AND R. J. N. PHILLIPS
+QCD
+subprocesses
+(ignoring
+electroweak
+W~rb
+and
+g8'~tb channels
+that are less important
+at the Fermilab
+Tevatron
+energy) and include top decay via real or virtual
+8'and charged Higgs bosons.
+For each m, we normalize
+our total cross section to the lowest value of the theoreti-
+cal range in Ref. 64, and simulate
+the full cascade of de-
+cays, coalescing
+final
+partons
+into jets within
+cones of
+hR =[(b,q) +(hP) ]'
+&0.7, where
+r)=lntan(8/2)
+is
+the pseudorapidity,
+0 and P are the polar and azimuthal
+angle with respect to the beam axis. %e include standard
+measurement
+errors on the lepton and jet ET, and evalu-
+ate the Er from the overall transverse
+energy
+imbalance.
+Muons
+often deposit
+only a fraction of their energy
+and
+thus
+generate
+apparent
+ET', since this
+measurement
+is
+diScult to simulate
+accurately,
+we conservatively
+ignore
+events
+containing
+muons
+with pr(p))2 GeV.
+Finally,
+we apply CDF acceptance
+cuts including
+jet kinematics,
+multiplicity,
+and coplanarity,
+and vetos on hard electron
+or
+muon
+candidates.
+The
+resulting
+cross
+section
+for
+ET) 60 GeV is then
+compared
+with
+the bound
+of Eq.
+(3 3).
+C. Numerical
+results
+Figure
+9 shows
+the
+effects of the
+constraints
+(3.2)
+and
+(3.3) in
+the
+tang,
+m
++ plane
+for
+model
+I with
+m, =50,60,70, 80 GeV. In this figure, the regions
+which
+lie on the same side of the curves as the cross hatching
+are
+excluded.
+The
+left-hand
+margin
+of this
+figure,
+tanP=0. 1, is approximately
+the boundary
+of the pertur-
+bative
+region
+defined
+in Eq. (1.5).
+The
+lower
+margin
+m +=25 GeV is near the present
+experimental
+limit.
+The top-search
+bound,
+denoted
+by solid curves, excludes
+the upper
+part of the figure (m
++ ~ m, ) and also the ex-
+treme right-hand
+side (tanP~10) for rn, &70 GeV. The
+missing-ET
+constraints,
+denoted
+by dashed
+curves,
+ex-
+cludes most of the remaining
+parameter
+space, at least for
+ln, & 70 GeV [the remaining
+areas, though
+not strictly ex-
+cluded at the level of Eq. (3.3), are nevertheless
+excluded
+at 80% confidence
+level and therefore
+strongly
+disfavored
+for m, &70 GeV].
+Figure 10 shows the corresponding
+bounds
+in the tanP,
+m
+y plane for model II. Again, the areas which are on
+H
+the cross-hatched
+side of the curves are excluded.
+Here
+the left-hand
+margin
+is approximately
+the perturbative
+boundary
+of Eq. (1.5) as before; the right-hand
+margin
+tanP=100 is approximately
+the other perturbative
+bound-
+ary, where the AH coupling
+proportional
+to rnbtanP
+be-
+comes too large.
+The top-search
+bound, denoted
+by solid
+curves,
+lies near
+m
++ ~ m, —mb for the middle
+range of
+tanP values,
+but deviates
+considerably
+from this value at
+the extremes
+(the regions
+where top decay via Uirtual H
+becomes
+competitive).
+The
+missing-ET
+restrictions,
+tOO
+I
+I
+r
+I
+r lre~
+- (0) mt 50 GeV
+~
+~
+I
+I
+I l Ill
+I
+I
+~
+l
+I
+- (b) mI ~ 60 GeV
+I
+S
+I
+I l I
+~ I t
+80—
+C9 60—
+F.
+40—
+MODEL I
+top search
+bound
+--- missing
+ET bound
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+~IIIII~WNIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIS
+excluded
+UUUllllUlllUUII
+lUUlllll lllullllllllUsIlli,
+excluded
+~~Illlllllllllllllllllllllllllllllllll
+~IIIeewe
+excluded
+llllilllll
+UIIIIIIIIIIIIIIggigg4QklLS&@~+"—
+I
+l
+I l I
+I
+I
+I
+~ sill
+I
+excluded
+)00
+I
+l
+I
+I l I
+~
+i
+- (c) mt= TO GeV
+I
+I
+I
+I
+I I
+- (d) ml ~ 80GeV
+I
+I
+I
+l
+l I Ill
+excluded
+~gggLlgguSLSM~~
+40—
+O.t
+I
+I
+I
+I
+I I I ~
+tanP
+80—
+IIIIIIIIIIIIIIIIIIIIIIIIIIIllll lllillilli
+~lllllllllllllllllllllllllllllllllllllllijyy~
+60—
+x
+excluded
+)0
+0.1
+allowed
+I
+I
+I
+l IIIII
+F1G. 9. Constraints
+in the (tanp, m ~) parameter
+space in model I from the CDF SM top-quark
+search limits (solid curves) aud
+H
+the CDF missing-ET
+bounds
+{dashed curves) for (a) m, =50 GeV, {b) m, =60 GeV, (c) m, =70 GeV, and (d) m, =80 GeV. The areas
+which lie on the cross-hatched
+side of the curves are excluded.
+41
+NE% CONSTRAINTS ON THE CHARGED HIGGS SECTOR IN. . .
+3435
+I
+I
+I
+I Ilal
+I
+I
+I
+I I II)
+I
+I
+I
+I
+'I
+f00 —(a) mt=50 GeY
+I
+~
+I I II ~
+I
+{b~ mt
+6OGeV
+I
+I
+I
+I I III)
+I
+I
+I I I
+MODEL H
+80—
+C9
+60—
+E
+top search
+boun
+--- missing
+ET bou
+40—
+I'
+allowed
+I
+I
+I
+I I
+~ II
+excluded
+I
+)
+I
+I I lll
+I
+I
+I
+I
+I I li
+excluded
+~iaiaaaaaaiaaaaaaaaalllilll
+~llllallllllllllaallllllaili
+lalll
+~
+ol ~ a ~IaIlal ~ ~ ~ ala ~ ~ al ~ Iwaa ~ I ~ alaarw
+allowed
+I
+I
+I
+I I III
+excluded
+I
+I
+~
+I I I lal
+excluded
+IillllllllllllllllllllllllllilllllllUllllllllUIIIIIIIIIIIII
+IIIIIIIII+
+a aaaa all lllalalllllll lllllII IIIIIIlail ~ I~
+I
+I
+I
+I I III
+I I I all
+I
+I
+I
+t IIlll
+I
+IOO —(c) mt=70 GeY
+I
+I
+I I alii
+—(d) mt = 80 GeY
+I
+I
+I
+I IIIII
+80—
+excluded
+C9
++Ix 60—
+E
+allowed
+40—
+"IIIIIIIIIItettnttmItmnttntt
+I Il
+I
+I
+I
+I Ilia
+Illllllilllliilillila
+llllllllliililllll
+iia iliiilllllllillllllllillaaa~
+alaI
+~ ~IIIIIIIIIII IIIIIIIIIIalalallllillllalla~a
+~a
+h
+$ excluded
+allowed
+I
+LE
+L
+1
+I
+I itilIE
+I
+I
+I
+I II
+I
+a
+a
+I
+a aal
+. . . . .„I
+I
+I
+a
+I I I
+~ I
+0.)
+tan)9
+IO
+100 O.I
+tanP
+)0
+100
+FIG. 10. Constraints
+in the (tanp, m +) parameter
+space in model II from the CDF SM top-c, sark limit search bound
+(solid
+curves) and the CDF missing-Ez
+bounds
+(dashed curves) for (a) m, =50 GeV, (b) m, =60 GeV, (c) m, =70 GeV, and (d) m, =80 GeV.
+The areas which lie on the cross-hatched
+side of the curves are excluded.
+Ia
+Cl
+10
+Cl
+I
+(a) mt=
+50 GeV
+4)l t4n)9
+////////////
+~
+~
+~
+II,IK: tan JS ~ 1
+~K: tanlI
+~0.5, 1
+~--.~- E,E:tang~0. 5
+—
+-—
+II,I,IR: tan@~2
+I
+I
+I
+(b) mt=60 GeV
+excluded
+&Mlillllljjj///lj///j//jj//jj//l/llllllll/
+/jjllfl/l/I//1/Ill//f/llllllll//IIIII'/l/lA
+allowed
+I
+!
+0
+10
+I
+I
+I
+(c) mt=70GeV
+1
+~8
+I4//////////ill//j//j/////////j///////////////jj///j/////)
+/////////////////j/////////AI'
+I
+I
+I
+(d) mt = SO GeV
+ILl
+10
+I
+)05
+40
+60
+m„q (GeV)
+I
+80
+l
+40
+60
+mH+ (GeV)
+I
+80
+FIG. 11. The branching
+fraction B(t~bev) vs m
++ in various
+models for (a) m, =50, (b) m, =60, (c) m, =70, (d) m, =80 GeV.
+The cross-hatched
+lines indicate
+the upper limits from Eq. (3.2), derived
+from the CDF top search.
+Solid curves denote model I (all
+tanp), models II and IV (tanp= 1), model III (tanp=0. 5, 1). Dotted curves denote
+models II and IV (tanp=0. 5). Dashed-dotted
+curves denote models II,III,IV (tanP=2).
+3436
+V. BARGER, J. Lo HEWETT, AND R.J. N. PHILLIPS
+41
+denoted
+by dashed
+curves,
+excludes
+essentially
+all the
+remaining
+area for tanP&
+1 with m, & 70 [the allowed
+re-
+gions on the right of Fig. 10(c) are technically
+within
+the
+limits
+but
+nevertheless
+again
+strongly
+disfavored].
+For
+m, =80 this constraint
+is ~eaker.
+The possibility
+of a "light" top quark
+with
+m, «70
+GeV and perturbative
+tbH couplings
+is thus
+essentially
+excluded
+in
+model
+I, but
+survives
+in
+model
+II for
+0. 1&tanP&1.
+(It has
+also been
+shown
+that
+a Higgs-
+triplet representation
+does not provide
+enough competi-
+tion via t~H+6 to invalidate
+the CDF top-quark
+mass
+bounds. )
+Because charged-Higgs-boson
+production
+is dominant-
+ly (in our calculation
+entirely) from top-quark
+production
+and decay, the signals
+get weaker
+and the experitnental
+limits
+become
+less
+constraining
+as m,
+increases.
+The
+missing-ET
+bounds
+in Eqs. (3.3) and (3.4) give weak con-
+straints
+for m, =80 GeV and no constraints
+for m, ~90
+GeV with our conservative
+calculations.
+The top-search
+bound of Eq. (3.2) is operative
+only below the SM experi-
+mental limit (i.e., for m, & 77 GeV at present).
+Since the top-search
+bound
+depends
+essentially
+on the
+net branching
+fraction
+to electrons 8(t~bev)
+and the
+missing-ET
+bound
+depends
+on the net branching
+fraction
+to taus B(t~biv),
+it is instructive
+to compare
+these
+quantities
+for models I-IV. Figure
+11 shows 8 (t ~bev)
+vs
+m
+~ for tanP=0. 5, 1.0,2.0.
+Note
+that
+all
+models
+coincide for tanp= l. The top-quark
+search limit essen-
+tially
+requires 8 &0.029,0.039,0.054 for m, =50,$0,70
+GeV, respectively
+(values indicated
+by cross-hatched
+lines
+in the figure).
+Models II and IV are equally
+constrained;
+model III is similar to model I but more strongly
+restrict-
+ed at large tanP.
+Figure
+12 shows 8(t —oh')
+vs m
+~ for the same set
+of tanP values:
+again
+all models
+coincide
+for tanP=l.
+The missing-Ez
+bound, although
+dependent
+on other fac-
+tors too, approximately
+requires 8 &0.25,0.30,0.35,0.50
+for m, =50,60,70, 80 GeV, respectively
+(values
+indicated
+by cross-hatched
+lines in the figure).
+Models II and IV
+are equally
+constrained;
+model III is similar
+to model I
+but less strongly
+bounded
+at large tanP.
+In technicolor
+theories of electroweak
+symmetry
+break-
+ing, charged
+technipions
+have
+many
+similarities
+to the
+I.O
+(a)
+mt= 50 GeV
+I
+(b)
+mt=60 GeV
+0.8= =~.
+I:oll ton{9
+X,QK: tang
+)I:tony 0.5, t
+----- II E:tanpo0. 5
+——
+II,IK: tanIgo2
+--—
+1E:tonpo2
+04—
+lD
+0
+QO ~ OO ~ O ~ ~ O ~ O ~ ~ ~ OOOO ~ O
+I
+O
+o
+'ll//I///////////////I//////
+I ~/////////////////////////////////////////////////////////
+Oo2 =
+~O~~ ~g~~
+~
+l
+l
+excluded
+vrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjjjjj/j
+p///j//////////g///////////////j//J////////f,
+allowed
+, r
+~ OOOOOgOOOOOOOOOOO/OOOOOOO
+~ O ~ OOO ~ OOOO
+I
+O
+).0
+s
+(c)
+0 8 ~O ~OOOOOIO ~
+mt=70 GeY
+~e~O~OO OOOOO
+1
+g
+mt=80 GeV
+jh 06-
+Cl
+mH2 {Gev)
+rrlrjjjjrIIIIIIIIIIIIIjjrlljljlljjjlr Ijrrllljjjjjjlllll
+&jjjjjjjjjjjjjjjjjjjjjjjjjjjjl
+ra
+O
+0
+~OOOOOOOOOOOOOOOO}OOO
+~ ~ OOOOO ~ OOOOOO ~ OOOOtOOO ~
+I
+40
+60
+~O
+O ~ ~ OOfOO ~ ~ O ~ O ~OO}O ~ O ~ O ~ O ~ O ~ O ~ OO ~ O ~ O ~ O ~
+a O ~ O ~ OOOO ~ O ~ O ~ ~
+a
+40
+60
+mHq
+{GeV)
+}
+80
+r/////////////I////r////r///////r/////////////////////////////+7m///////////////////.
+FIG. 12. The branching
+fraction 8(t
+b'av) vs m
+~ in various
+models for (a) m, =50, (b) m, =60, (c) m, =70, (d) m, =80 GeV.
+The cross-hatched
+lines indicate
+approximate
+upper
+limits from Eq. (3.3), derived
+from the CDF missing-Ez
+bound.
+Solid curves
+denote model I {all tanp), models II and IV {tanp= I ), model III (tanp=O. 5, I ). Dotted curves denote models II and IV (tanp=O. 5).
+Dashed-dotted
+curves denote models II and IV {tanp= 2). Dashed curves denote model III (tanp=2).
+3438
+V. BARGER, J.L HE%El I', AND R. J. N. PHILLIPS
+4]
+dation, and in part by the U.S. Department
+of Energy un-
+der Contract No. DE-AC02-76ER00881.
+APPENDIX A: RELEVANT FORMULAS
+(A 1 1)
+y lny
++
+x inx
+(1—y)(y —x)(y —z)
+(1—x)(x —y)(x —z)
+z lnz
+(1—z}(z—x)(z —y)
+1+
+9
+3
+3x
+3 lnx
+2(1—x)
+(Al)
+Here we give the explicit expressions
+for the functions
+discussed
+in the text including,
+for completeness,
+those of
+the SM, which are calculated
+in Ref. 32.
+(i) Box diagrams
+(model II):
+F14.(x)=lnx
+H—(x),
+where
+(A12)
+2
+2
+H(
+)
+x lnx
+(
+6
+2)
+x(18—llx —x
+)
+4(1—x)
+8(1—x)
+(A13)
+AHH(x, y,z)=x [,'I, (x,y—)+ztan p Iz(x,y)],
+(A2)
+FH(y)=
+—6y +
+—y
+7y
+2
+15y
+8
+6(1—y)4
+6
+2
+3
+AaH(x, y, z) =2x [I1(x,y)
+,'I4(x—
+,y—)
+z tan p—I1(x,y)],
+(A3}
+(iii) busy:
++( 3y —2)lny
+(A14)
+AHH(x, y, z)= —,'xyI&(x, y,z),
+A 1'4H(x, y, z)= ', xyI6(x, y, z)—.
+(A4)
+(A5)
+2—7x + 1 lx
+1
+3x1
+G11 x=
+——+
+1nx
+4(1—x)'
+2
+2(1—x)'
+For model I set tanp~
+1 in Eqs. (A2) and (A3). The in-
+tegrals are given by
+1—5x —2x
+1
+3x
+4 lnx
+4(1—x)
+4
+2(1—x)
+I1(x,y) =
+—
+ln—,
+x +y
+2Xy
+x
+(x —y)
+(x —y)'
+I2(x,y }=
+—
+ln—,
+2
+x+y
+x
+(x —y)'
+(x —y)'
+y
+I (xy)=
+(x —y)(1—x) +
+(x —y) (1—y)
++
+(x —y)lnx
+(x —y) (1—x)~
+I4(x,y) =
++
+X
+y lny
+(x —y)(1—x)
+(1—y}(x—y)2
+x (x +xy —2y)lnx
+(x —y) (1—x)
+(A6}
+(A7)
+(A8}
+(A9)
+(A15}
+GH(y)=, [[—,'(1—y )+y lny]
+(1—y)
+—Q( —,' —2y + —,'yz+lny)],
+(A16)
++Q(-,'+-,'y —y'+-,'y'+y Iny}]
+(A17)
+with Q =—'„ the charge of the internal
+quark.
+(iv) KL ~pp, :
+I&(x,y, z)=
++
+z
+y lny
+(x —z)(y —z)
+(y —x)(y —z)'
+2
+C11,(x)=
++
+1—x
+2
+1—x
+3x 1nx
+2(1—x)
+(A18)
+x lnx
+(y —x}(x—z)
+(xz +yz —2xy)z lnz
+(x —z) (y —z)
+(A10)
+t
+y
+y
+Ily
+—m,
+ln
+2M1'1
+1—y
+(1—y)'
+(v) K~nvv:
+(A19)
+w
+w
+w
+w
+DsM(
+q
+sz, —x
+4
+W
+lnzi +—x +—1—
+i —zw
+'
+4'
+8
+3
+xq
+1—z,
+1—x
+w
+w
+4
+w
+zw —xw
+1—x
+I
+q,
+q
+3
+w
+w
+(1—x~
+)
+xq lnxq
+(A20)
+xH
+XHl~H
+H+
+02
+1—x
+(1—x
+)
+q
+(A21)
+41
+NEW CONSTRAINTS ON THE CHARGED HIGGS SECTOR IN. . .
+3439
+DHH(xq, z,
+)=
+Xq Zl
+8M
+(1—x
+)(1—z,
+)
+(1—x
+) (x —z,
+)
+(1—z,
+) (z, —x
+)
+(A22)
+m
+w
+DgrH X,zl, N =
+M W
+8'
+W
+q
+l
+x,~lnx,~
+z,~lnz, ~
+(1—x
+)(zi —x
+)(w —x
+)
+(1—zi )(x —
+z& )(w —zi
+)
+m inn
+(1—w)(zi —w)(x~ —w)
+1
+(
+lV)21
+W
++—
+4
+(1—x,~)(z,~—x,~)(w —x,~)
+(
+w)21~ w
+(1—zi
+)(x~ —zi
+)(w —zi
+)
+m inn
+(1—w )(z) —w)(x~ —w)
+(A23)
+APPENDIX B: CROSS-SECTION CONFIDENCE
+LIMITS
+Suppose
+N events
+have
+been seen, with
+known
+back-
+ground 8 (i.e., 8 =mean number of expected background
+events).
+The probability
+that ns of the observed N events
+were due to background
+has Poisson distribution:
+e —BB"8
+Pr
+bo(
+Bn s)=
+N
+~ —BBn
+n=0
+n!
+(Bl)
+Prob(S:ns) =e
+S
+Ins!
+(B2)
+Since we do not know
+(conservatively)
+that any signal
+is
+present
+at all, the sum of probabilities
+for nz
+N is not
+normalized
+to
+1 here (although
+if S «N this will be ap-
+proximately
+the case}. For given
+N, B,S the probability
+Here the factor in large parentheses
+arises because
+we al-
+ready know that ns cannot exceed N, so the sum of prob-
+abilities
+for
+nB
+N must
+be 1. For a given
+signal S
+(=mean number of expected signal events}, the probabili-
+ty that
+nz signal
+events
+were seen has Poisson distribu-
+tion
+v
+—(a+s)(B +S)"
+n!
+n=0
+N
+—BBn
+n=o
+(83)
+and the confidence
+level with which this value of S can be
+excluded is 1 minus this probability.
+In our present
+work
+B is not precisely
+known,
+but a mean value Bo and stan-
+dard
+deviation
+AB are given.
+We therefore
+take B to
+have a continuous
+Gaussian
+probability
+distribution
+with
+these parameters.
+Since B cannot be negative
+we restrict
+it to the range 0&B &280 (which
+is conservative
+and
+also ensures
+that
+the mean
+value
+remains
+at Bo ), with
+Gaussian
+weight -exp[ —
+—,'(8 —80) /(58) ] normalized
+to 1 in this range.
+We then replace the right-hand
+side of
+Eq. (B3) by the Gaussian
+weighted
+mean
+and take the
+corresponding
+confidence level.
+that the observed
+number
+of events
+should
+not have ex-
+ceeded
+N is then
+conservatively
+estimated
+by
+folding
+these distributions
+together
+(see, e.g., Ref. 37, Eq. II.28
+and accompanying
+discussion):
+Pr ob(B, Sn s+n
+s&N)
+'For a recent review of the status of the SM, see R. Barbieri,
+plenary
+talk given at International
+Europhysics
+Conference
+on High Energy Physis, Madrid, Spain, 1989 (unpublished).
+2For a recent review of the minimal
+Higgs sector and its possi-
+ble extensions,
+see J. F. Gunion,
+H. E. Haber, G. L. Kane,
+and S. Dawson,
+The Higgs Hunter's
+Guide (Addison-Wesley,
+Reading, MA, 1989).
+3H. Haber and G. Kane, Phys. Rep. 117,75 (1985).
+4R. D. Peceei and H. R. Quinn,
+Phys. Rev. D 16, 1791 (1977);
+Phys. Rev. Lett. 38, 1440 (1977); S. Weinberg,
+ibid. 40, 223
+(1978);F. Wilczek, ibid. 40, 279 (1978).
+~T. D. Lee, Phys. Rev. D 8, 1226 (1973); G. C. Branco, A. J.
+Buras, and J.-M. Gerard, Nucl. Phys. B259, 306 {1985);J. Liu
+and L. Wolfenstein,
+ibid. B272, 145 (1986).
+For a recent review,
+see J. L. Hewett
+and T. G. Rizzo, Phys.
+Rep. 183, 193 (1989).
+7S. L. Glashow
+and E. E. Jenkins, Phys. Lett. B 196, 223 (1987);
+F. Hoogeveen
+and C. N. Leung, Phys. Rev. D 37, 3340 (1988);
+G. Altarelli
+and P. J. Franzini, Z. Phys. C 37, 271 (1988).
+L. F. Abbott, P. Sikivie, and M. B.Wise, Phys. Rev. D 21, 1393
+(1980); G. G. Athanasiu
+and F. J. Gilman,
+Phys. Lett. 153B,
+274 (1985); G. G. Anthanasiu,
+P. J. Franzini,
+and F. J. Gil-
+man, Phys. Rev. D 32, 3010 (1985).
+P. A. deSousa Gerbert, Nucl. Phys. B272, 581 (1986).
+'cC. Q. Geng and J. N. Ng, Phys. Rev. D 38, 2858 (1988); G.
+Belanger et al. , in High Energy Physics in the 1990's, proceed-
+ings, Snowmass,
+Colorado,
+1988, edited by S. Jensen (World
+Scientific, Teaneck, 1989).
+T. G. Rizzo, Phys. Rev. D 38, 820 (1988);B.Grinstein
+and M.
+B. Wise, Phys. Lett. B 201, 274 (1988); W.-S. Hou and R. S.
+Willey, ibid. 202, 591 (1988);T. D. Nguyen
+et al. , Phys. Rev.
+D 37, 3220 (1988); D. Ciuchini,
+Mod. Phys. Lett. A 4, 1945
+{1989).
+V. Barger and R. J. N. Phillips,
+Phys. Lett. B 201, 553 (1988);
+Phys. Rev. D 41, 894 (1990).
+P. Krawczyk
+and S. Pokorski, Phys. Rev. Lett. 60, 182 (1988).
+3440
+V. BARGER, J. L. HEWETT, AND R. J. N. PHILLIPS
+41
+' J. L. Hewett, S. Nandi, and T. G. Rizzo, Phys. Rev. D 39, 250
+(1989),and erratum
+{tobe published).
+~5After
+this
+work
+was completed
+we received
+related
+reports
+from A. Buras, P. Krawczyk,
+M. E. Lautenbacker,
+and C.
+Salazar,
+Max
+Planck
+Institute
+Report
+No.
+MPI-
+PAE/PTh52/89,
+1989 (unpublished);
+J. F. Gunion
+and B.
+Grzadkowski,
+University
+of California —Davis
+Report
+No.
+UCD-89-30, 1989 (unpublished).
+CDF Collaboration,
+F. Abe et al. , Phys. Rev. Lett. 64, 142
+(1990); L. Nodulman,
+plenary
+talk given at International
+Eu-
+rophysics
+Conference
+on High
+Energy
+Physics
+{Ref. 1); J.
+Freeman,
+report
+presented
+at Les Rencontres
+de la Vallee
+d'Aoste, 1989 (unpublished).
+' M. Kobayashi
+and T. Maskawa,
+Prog. Theor. Phys. 49, 673
+(1973).
+' S. Glashow
+and S. Weinberg,
+Phys. Rev. D 15, 1958 (1977);E.
+A. Paschos, ibid. 15, 1966 (1977}.
+' M. Olechowski
+and S. Pokorski, Phys. Lett. B 214, 393 (1988).
+CELLO Collaboration,
+H. J. Behrends
+et al. , Phys. Lett. B
+193, 376 (1987).
+2 ALEPH Collaboration,
+D. Decamp et al. , Phys. Lett. B 236,
+233 (1990);S.-L. Wu (talk given at Aspen Winter Conference,
+Aspen, Colorado, 1990) (unpublished).
+J. F. Gunion
+and H. E. Haber,
+Nucl. Phys. B272,
+1 (1986);
+B278, 449 (1986).
+V. Barger and K. Whisnant,
+Int. J. Mod. Phys. A 3, 1907
+(1988); also J. F. Gunion, L. Roszkowski,
+and H. E. Haber,
+Phys. Rev. D 38, 105 (1988).
+T. G. Rizzo, Phys. Lett. B 237, 88 (1990).
+S. Bertolini, Nucl. Phys. B272, 77 (1986); W. Hollik, Z. Phys.
+C 32, 291 (1986); 37, 569 (1988); L. Alvarez-Gaume,
+J. Pol-
+chinski,
+and M. Wise, Nucl. Phys. B221, 495 (1983); C. S.
+Lim, T. Inami, and N. Sakai, Phys. Rev. D 29, 1488 (1984);G.
+Passarino,
+Phys. Lett. B 231, 458 (1989); M. Veltman,
+Nucl.
+Phys. B123, 89 (1977); S. R. Moore, B.-L. Young,
+and K.
+Whisnant,
+Phys. Rev. D 37, 179 (1988).
+T. G. Rizzo (private communication).
+Mark II Collaboration,
+G. S. Abrams
+et al. , Phys. Rev. Lett.
+63, 2447 (1989).
+OPAL Collaboration,
+M. Z. Akrawy
+et al. , Phys. Lett. B 236,
+364 (1990).
+R. Foot, H. Lew, and G. C. Joshi, University
+of Melbourne
+Report No. UM-P-88/53,
+1988 (unpublished).
+3oH. Schroder,
+in Proceedings of the XXIVInternational
+Confer
+ence on High Energy Physics,
+Munich,
+West Germany,
+1988,
+edited by R. Kotthaus
+and J. Kuhn (Springer, Berlin, 1988).
+'F. Gilman
+and M. Wise, Phys. Rev. D 27, 1128 (1983);W. A.
+Kaufman,
+H. Steger, and Y.-P. Yao, Mod. Phys. Lett. A 3,
+1479 (1988); J. M. Flynn,
+Rutherford
+Appleton
+Laboratory
+Report No. RAL-89-093, 1989 (unpublished);
+E. A. Paschos,
+T. Schneider,
+and Y. L. Wu, University
+of Dortmund
+Report
+No. DO-TH 89/10, 1989 (unpublished).
+T. Inami and C. S. Lim, Prog. Theor. Phys. 65, 297 (1981).
+L.-L. Chau and W.-Y. Keung, Phys. Rep. 95, 1 (1983).
+34G. Altarelli
+and P. J. Franzini,
+talk given at Symposium
+on
+Present
+Trends, Concepts,
+and Instruments
+of Particle Phys-
+ics, Rome, Italy, 1987 (unpublished).
+35C. Bernard
+et al. , Phys.
+Rev. D 38, 3540 (1988); H. W.
+Hamber, ibid, 39, 896 (1989);M. B. Gavela et al. , Phys. Lett.
+B 206, 113 (1988); C. Bernard
+and A. Soni, in Lattice
+'88,
+proceedings
+of the International
+Symposium,
+Batavia,
+Illi-
+nois,
+1988, edited
+by A. S. Kronfeld
+and P. B. Mackenzie
+[Nucl. Phys. B (Proc. Suppl. ) 9, (1989)].
+Tagged
+Photon
+Spectrometer
+Collaboration,
+J. C. Anjos
+et al. , Phys. Rev. Lett. 60, 1239 (1988); E615 Collaboration,
+W. C. Louis et al. , ibid. 56, 1027 (1988).
+Particle Data Group, G. P. Yost et al. , Phys. Lett. B 204,
+1
+(1988).
+8A. Datta and D. Kurnbhaker,
+Z. Phys. C 27, 515 (1985);H.-Y.
+Cheng, Phys. Rev. D 26, 143 (1982).
+L. Wolfenstein,
+Phys. Lett. 164B, 170 (1985); J. Donoghue
+et al. , Phys. Rev. D 33, 179 (1986).
+~For a recent
+review,
+see J.-M. Gerard,
+talk presented
+at the
+12th Warsaw
+Symposium
+on Elementary
+Particle
+Physics,
+Kazimierz,
+Poland, 1989 (unpublished).
+'For example, see G. Beall, M. Bander, and A. Soni, Phys. Rev.
+Lett. 48, 848 (1982).
+E. A. Paschos and U. Turke, Phys. Rep. 178, 147 (1989).
+~3A. J. Buras,
+in
+Proceedings
+of International
+Europhysics
+Conference
+on High
+Energy
+Physics, Bari, Italy, 1985, edited
+by L. Nitti and G. Preparata
+{Laterza, Bari, 1985).
+~T. Devlin and J. Dickey, Rev. Mod. Phys. 54, 237 (1979).
+45B. Guberina
+and R. D. Peccei, Nucl. Phys. B163,289 (1980).
+A. I ~ Vainshtein,
+V. I. Zakharov,
+and M. A. Shifman,
+Zh.
+Eksp. Teor. Fiz. 73, 1271 (1977) [Sov. Phys. JETP 45, 669
+(1977)].
+47J. Gasser and H. Leutwyler,
+Phys. Rep. 87, 77 (1982).
+NA31 Collaboration,
+H. Burkhardt
+et al. , Phys. Lett. B 206,
+169 (1988).
+~98. Winstein,
+in Proceedings of the 14th International
+Symposi
+um on Lepton
+and Photon
+Interactions,
+Stanford,
+California,
+1989, edited
+by M. Riordan
+(World Scientific, Singapore,
+in
+press).
+J. M. Flynn and L. Randall, Phys. Lett. B 224, 221 (1989).
+X.-G. He, B. H. M. McKellar,
+and S. Pakvasa,
+Int. J. Mod.
+Phys. A 4, 5011 (1989).
+szA. Soni,
+in Proceedings
+of the B-Meson
+Factory
+Workshop,
+Stanford, California,
+1987, edited by L. Friedsam
+(SLAC Re-
+port No. 324, Stanford, 1988).
+53N. G. Deshpande
+et al. , Phys. Rev. Lett. 59, 183 (1987); S.
+Bertolini, F. Borzumati,
+and A. Masiero, ibid. 59, 180 (1987);
+B. Grinstein, R. Springer,
+and M. B.Wise, Phys. Lett. B 202,
+138 (1988).
+s4ARGUS
+Collaboration,
+H. Schulz,
+in
+Proceedings
+of the
+Second Symposium
+on the Fourth Family of Quarks and Lep-
+tons, Santa Monica, California,
+1989, edited by D. Cline and
+A. Soni (New York Academy of Sciences, New York, 1989);
+CLEO Collaboration,
+N. Mistry,
+ibid. ; ARGUS Collabora-
+tion, M. V. Danilov,
+in Proceedings of the 14th International
+Symposium
+on
+Lepton
+and
+Photon
+Interactions
+(Ref. 49);
+CLEO Collaboration,
+D. L. Kreinick, ibid.
+55N. G. Deshpande,
+P. Lo, and J. Trampetic, Z. Phys. C 40, 369
+(1988).
+T. Inagaki
+et al. , Phys. Rev. D 40, 1712 (1989); C. Mathia-
+zhagan et al. , Phys. Rev. Lett. 63, 2185 {1989).
+s7C. Q. Geng and J. N. Ng, Phys. Rev. D 41, 2351 (1990);L. M.
+Sehgal, Phys. Rev. 183, 1511 (1969).
+V. Barger, W. F. Long, E. Ma, and A. Pramudita,
+Phys. Rev.
+D 25, 1860 (1982).
+59J. Ellis and J. S. Hagelin,
+Nucl. Phys. B217, 189 (1983);C. O.
+Dib, I. Dunietz,
+and F. J. Gilman,
+Report No. SLAC-PUB-
+4840-T, 1989 (unpublished).
+~L. Littenburg,
+in Proceedings of the 14th International
+Sympo
+sium on Lepton and Photon Interactions
+(Ref. 49).
+G. Eilam et al. , Phys. Rev. D 34, 2790 (1986); Phys. Lett. B
+193, 533 (1987);J. L. Hewett, ibid. 193, 327 (1987).
+See, for example,
+UA1 Collaboration,
+P. Sinervo,
+in Proceed-
+ings of the 14th International
+Symposium
+on Lepton and Pho
+41
+NEW CONSTRAINTS ON THE CHARGED HIGGS SECTOR IN. . .
+3441
+ton Interactions
+(Ref. 49); UA2 Collaboration,
+L. di Lella,
+ibid. ; CDF Collaboration,
+P. Sinervo, ibid.
+UA1 Collaboration,
+C. Albajar
+et al. , Phys. Lett. B 185, 233
+(1987).
+G. Altarelli
+et al. , Nucl. Phys. B308, 724 (1988).
+T. G. Rizzo, Phys. Rev. D 41, 1504 (1990).
+S. Godfrey and B.Holdom, Phys. Lett. 8 233, 236 (1989).

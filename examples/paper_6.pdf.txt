@@ -1,0 +1,708 @@
+This content has been downloaded from IOPscience. Please scroll down to see the full text.
+Download details:
+IP Address: 129.234.186.57
+This content was downloaded on 28/03/2015 at 16:31
+Please note that terms and conditions apply.
+ Dark matter as the trigger of strong electroweak phase transition
+View the table of contents for this issue, or go to the journal homepage for more
+JCAP02(2012)029
+(http://iopscience.iop.org/1475-7516/2012/02/029)
+Home
+Search
+Collections
+Journals
+About
+Contact us
+My IOPscience
+JCAP02(2012)029
+ournal of Cosmology and Astroparticle Physics
+An IOP and SISSA journal
+J
+Dark matter as the trigger of strong
+electroweak phase transition
+Talal Ahmed Chowdhury,a Miha Nemevˇsek,b,c Goran Senjanovi´cb
+and Yue Zhangb
+aInternational School for Advanced Studies (SISSA),
+Via Bonomea 265, I-34136 Trieste, Italy
+bHigh Energy Cosmology and Astroparticle Physics Secion,
+Abdus Salam International Centre for Theoretical Physics,
+Strada Costiera 11, I-34014 Trieste, Italy
+cDepartment of Theoretical Physics, Jozef Stefan Institute,
+Jamova 39, 1000 Ljubljana, Slovenia
+E-mail: talalahmed101@gmail.com, miha@ictp.it, goran@ictp.it, yuezhang@ictp.it
+Received November 4, 2011
+Revised January 17, 2012
+Accepted January 26, 2012
+Published February 21, 2012
+Abstract. In this paper, we propose a new possible connection between dark matter relic
+density and baryon asymmetry of the universe. The portal between standard model sector
+and dark matter not only controls the relic density and detections of dark matter, but also
+allows the dark matter to trigger the ﬁrst order electroweak phase transition. We discuss
+systematically possible scalar dark matter candidates, starting from a real singlet to arbitrary
+high representations. We show that the simplest realization is provided by a doublet, and
+that strong ﬁrst-order electroweak phase transition implies a lower bound on the dark matter
+direct detection rate. The mass of dark matter lies between 45 and 80 GeV, allowing for an
+appreciable invisible decay width of the Standard Model Higgs boson, which is constrained
+to be lighter than 130 GeV for the sake of the strong phase transition.
+Keywords: dark matter theory, cosmological phase transitions, baryon asymmetry, physics
+of the early universe
+ArXiv ePrint: 1110.5334
+c⃝ 2012 IOP Publishing Ltd and SISSA
+doi:10.1088/1475-7516/2012/02/029
+JCAP02(2012)029
+Contents
+1
+Introduction
+1
+2
+The inert doublet model
+2
+2.1
+Electroweak precision tests
+3
+2.2
+Scalar doublet as dark matter
+3
+2.3
+First-order phase transition
+4
+2.4
+Implications for the SM Higgs
+6
+2.5
+What about uncertainties?
+6
+3
+Why not a singlet?
+6
+4
+Higher representation alternative?
+7
+5
+Outlook: what about genesis?
+8
+5.1
+Sources of CP violation
+8
+5.2
+Testing the thermal history
+8
+5.3
+Pre-existing Baryon Asymmetry?
+8
+1
+Introduction
+The existence of dark matter (DM) has now been well established in astrophysical and cos-
+mological observations, and it is known to constitute around twenty percent of the total
+energy density in the universe. Many experiments have been setup underground or in the
+sky in order to probe DM interactions.
+The most popular DM candidate is a stable weakly-interacting massive particle (WIMP) [1].
+The correct thermal relic density is obtained if its mass lies near the electroweak scale, thus
+possible connections to electroweak symmetry breaking could be conjectured. Another pos-
+sibility is the asymmetric dark matter [2] whose origin can be related to the baryogenesis
+processes in the universe. This scenario has been revived recently in diﬀerent incarnations [3],
+due to the observation that DM and baryon relic densities are of the same order of magni-
+tude, and also partly inspired by the hints of a light GeV scale DM from direct detection
+experiments. One of the common features of the above listed work is, they all resort to
+baryon/lepton number violations beyond the SM. However, baryon number is known not to
+be exact in the SM [4] and it is possible to have baryon number violating process happening
+eﬃciently at a high temperature [5, 6] if the minimal Higgs sector is extended.
+In this work, we propose a scenario, where the portal between the standard model (SM)
+and dark sectors not only gives correct relic density and facilitates direct/indirect detections
+of DM, but also allows the DM to play an important role in the electroweak baryogenesis.
+Based on this picture, a new connection could be built between symmetric dark matter and
+asymmetric baryonic matter.
+An essential ingredient for successful electroweak baryogenesis is the existence of a strong
+enough ﬁrst order phase transition. The ﬁnite temperature Higgs potential should contain a
+term proportional to φ3T. Such a term exists in the SM but is not large enough. If the DM
+were to do the job, it would have to be a scalar particle. Namely, fermions never contribute
+– 1 –
+JCAP02(2012)029
+to the cubic term at one loop level. The question then is which scalar representation to take.
+As shown below, representations with integer weak isospin cannot work. In contrast, the
+half-integer representations are perfectly capable of playing this role. We will opt for the
+most natural possibility of isospin one-half and leave a systematic study of higher multiplets
+for a future study.
+We focus on a realization of such picture where the DM is identiﬁed as an inert doublet
+scalar [7]. This possibility has been extensively pursued in recent years, and moreover, it
+follows naturally [8, 9] in the case of mirror families [10–13], the old dream of parity restoration
+of Lee and Yang [14]. On the other hand, the extra Higgs doublet has also been amply used
+as a simple way of achieving ﬁrst-order electroweak phase transition [15].
+We show here that both of the above can be achieved simultaneously. This implies a
+lower bound on the DM direct detection rate, an exciting result in view of the upper limit
+from the Xenon experiment. Moreover, the masses of the charged and the pseudo-scalar
+component of the inert scalar doublet are constrained to be almost the same and lie in a
+rough window 250−350 GeV, while the DM mass is small, between 45−80 GeV. The SM
+Higgs boson mass is constrained to be lighter than 130 GeV, which still allows for a large
+invisible decay width. These are the main results of our paper.
+There is also the need of having enough CP violation for the baryon asymmetry, which
+is an independent question and will be commented on in the outlook. In any case, the study
+of the phase transition is an important issue in itself.
+2
+The inert doublet model
+The existence of another scalar doublet is one of the most natural possibilities in the SM.
+Once introduced, it is natural to ask it to be the DM candidate [7].
+The price is quite
+high, for many couplings, including the new Yukawas, must be exceedingly tiny in order to
+guarantee suﬃcient stability of the DM. It is technically natural though, due to a discrete
+Z2 symmetry that protects these couplings to remain small. One should keep in mind that
+the symmetry need not be exact since decaying DM is a viable possibility. For the sake of
+simplicity, we ignore the possible tiny breaking of Z2, since it does not aﬀect our discussion.
+With the exact Z2 symmetry Φ → Φ, D → −D, the Higgs potential takes a simple form
+V0 = −µ2
+Φ|Φ|2 + µ2
+D|D|2 + λΦ|Φ|4 + λD|D|4 + λ3|Φ|2|D|2 + λ4|Φ†D|2 + λ5
+2
+�
+(Φ†D)2 + h.c.
+�
+,
+(2.1)
+where Φ stands for the usual Higgs doublet and D is the inert doublet, whose lightest com-
+ponent (assumed neutral) is to be identiﬁed as the DM.
+Throughout the paper, we focus on the parameter space where D does not acquire a
+vacuum expectation value (vev). The electroweak gauge symmetry is broken by the usual
+Higgs doublet Φ only [16], which preserves the above Z2 symmetry. At zero temperature,
+the mass spectra of components in the inert doublet are
+m2
+S = µ2
+D+ λS
+2 v2,
+m2
+A = µ2
+D+ λA
+2 v2,
+m2
+C = µ2
+D+ λC
+2 v2.
+(2.2)
+Here, we deﬁne λS = λ3 + λ4 + λ5, λA = λ3 + λ4 − λ5 and λC = λ3. We choose S to be the
+DM candidate, which implies λ5 < 0, λ4 + λ5 < 0.
+– 2 –
+JCAP02(2012)029
+2.1
+Electroweak precision tests
+Since the scalar contribution to the S parameter is small, the crucial rule is played by the T
+parameter, which gets a correction due to the inert doublet [7]
+∆T ≈
+1
+24π2αv2 (mC − mA)(mC − mS) .
+(2.3)
+The SM itself, as is well known, prefers a light Higgs boson. In [7], the Higgs was taken
+to be heavy in order to improve naturalness, which then required substantial ∆T or a non-
+degenerate spectrum of the inert doublet states.
+On the other hand, we are motivated by the ﬁrst-order phase transition, which favors
+as light SM Higgs as possible, which in turn implies ∆T ≈ 0. There are two possibilities to
+achieve this: a) mS < mC ≈ mA or b) mS ≈ mC < mA. It will turn out that S, as the DM,
+has to be lighter than about 80 GeV. It is not completely clear whether the possibility b)
+is in accord with the experiment [17]. For this reason, in the bulk of this letter we pursue
+possibility a), where A and C are quite degenerate [18] or equivalently λ4 ≈ λ5.
+2.2
+Scalar doublet as dark matter
+We consider S as a thermal DM candidate, as in the conventional WIMP picture.
+The
+main processes governing the freeze out include annihilation into gauge bosons W, Z and to
+fermions via the Higgs boson exchange. It has been shown in [18] that the WMAP already
+puts strong constraints on the viable parameter space. The spin-independent direct detection
+cross section is [7, 19]
+σSI = λ2
+Sf2
+4π
+µ2m2
+N
+m4
+hm2
+S
+,
+(2.4)
+where µ = mSmN/(mS + mN). The eﬀective matrix element for the Higgs interaction with
+the nucleon is f = f(N)
+Tu +f(N)
+Td +f(N)
+Ts
++2/9 and mNf(N)
+Tq
+≡ ⟨N|mq¯qq|N⟩ is the nucleon sigma
+term for light ﬂavors. In order to be conservative, we have used the lowest values from a
+recent lattice calculation [20]. We assume the other components A and C are much heavier
+than S, which as we show below, is the case when the phase transition constraint is taken
+into account. In this case, their roles in thermal freeze out and direct detection are safely
+negligible.
+The combined limit from both relic density and direct detection experiments demands
+the DM mass to lie approximately between 45−80 GeV [8]. This result is shown in ﬁgure 1
+for the SM Higgs mass equal to 120 GeV. In the above favored DM mass window, Xenon 100
+has also put tight constraint on the interaction between DM and the Higgs boson,
+λS ≲ 0.1 .
+(2.5)
+A useful constraint follows from the above results. The mass spectrum in eq. (2.2) leads to
+λ3 ≈ −2λ4 ≈ −2λ5, when mA ≈ mC ≫ mS, up to corrections of order 10 %. Demanding
+the SM Higgs boson to remain light up to a few hundred GeV energy scale, i.e., ∆λΦ ∼
+(3λ3/2) log(µ/mh) ≲ λΦ sets a relevant upper bound on the couplings between the two
+scalar doublets. In particular, we ﬁnd λC ≡ λ3 ≲ 4. Therefore,
+mA ≈ mC ≲ 350 GeV .
+(2.6)
+– 3 –
+JCAP02(2012)029
+XENON100 �2011�
+mh�120 GeV
+ΛS�0.5
+ΛS�0.1
+ΛS�0.02
+50
+60
+70
+80
+90
+100
+110
+10�46
+10�45
+10�44
+10�43
+10�42
+MS �GeV�
+ΣSI �cm2�
+Figure 1. Spin-independent direct detection cross section on nucleon plotted as a function of the DM
+mass. Colored regions represent DM relic density favored by WMAP, ΩDMh2 ∈ (0.085, 0.139) at 3σ,
+for positive (red) and negative (blue) λS. We have taken SM Higgs mass mh = 120 GeV. The lower
+limit on the direct detection cross section from Xenon100 experiment is shown by the black solid line.
+Also shown in the ﬁgure are the dashed curves for constant |λS|.
+The mono-chromatic gamma ray line from DM annihilation in the galaxy could also serve as
+a promising indirect detection of DM. In this model, the ﬂux is predicted [8] to lie only a
+factor of 4−5 below the current Fermi-LAT limit.
+Furthermore, since the DM mass is constrained to lie in a narrow window, eq. (2.5) also
+implies µ2
+D ≳ 0. Therefore, one does not have to worry about the second doublet picking up
+a VEV in electroweak symmetry breaking. The phase transition involves only the evolution
+of ﬁeld φ from the ﬁrst doublet Φ, while the second doublet D aﬀects the eﬀective potential
+through propagating in the loops, as discussed below.
+2.3
+First-order phase transition
+At high temperature, the Higgs potential improved after the so called daisy re-summation
+takes the following form [21, 22]
+Vtot ≈ 1
+4λΦφ4+ 1
+2
+�
+−µ2
+Φ+a T 2
+12
+�
+φ2− T
+12π
+�
+B
+nB m3
+B(φ, T)
+−
+�
+B
+nB
+m4
+B(φ, T)
+64π2
+�
+log m2
+B(φ, T)
+T 2
+− 5.40762
+�
+(2.7)
++
+�
+F
+nF
+m4
+F (φ, T)
+64π2
+�
+log m2
+F (φ, T)
+T 2
+− 2.63503
+�
+,
+where MW,Z(φ) = (φ/v)MW,Z, mt(φ) = (φ/v)mt and the numbers of degrees of freedom for
+particles relevant here {W ±, Z0, h, G0, G±, S, A, C±, t} are {6, 3, 1, 1, 2, 1, 1, 2, 12}. The vev of
+– 4 –
+JCAP02(2012)029
+Xenon 100
+100
+150
+200
+250
+300
+350
+400
+10�47
+10�46
+10�45
+10�44
+10�43
+mC�mA �GeV�
+ΣSI �cm2�
+Figure 2.
+Correlation between spin-independent direct detection cross section and the mass of
+the charged scalar, after imposing the strong electroweak transition condition vc/Tc > 1. We have
+scanned the parameter space: mh ∈ (115, 200) GeV, mS ∈ (40, 80) GeV, mA ∈ (100, 500) GeV, mC ∈
+(mA − 10 GeV, mA + 10 GeV), λS ∈ (0, 1) and λD ∈ (0, 3). We veto points where the thermal mass
+of A or C exceeds 1.8 Tc, which would invalidate the high temperature expansion.
+the Higgs ﬁeld φ = v = 246 GeV at zero temperature. The scalar thermal masses are [23, 24]
+m2
+h(φ, T) ≈ −µ2
+Φ + a T 2
+12 + 3λΦφ2 ,
+m2
+G±,G0(φ, T) ≈ −µ2
+Φ + a T 2
+12 + λΦφ2 ,
+(2.8)
+m2
+i (φ, T) ≈
+�
+µ2
+D + b T 2
+12
+�
++ 1
+2λiφ2 ,
+(i = S, A, C),
+with a = 6λΦ + 2λ3 + λ4 + (9g2 + 3g′2)/4 + 3y2
+t and b = 6λD + 2λ3 + λ4 + (9g2 + 3g′2)/4.
+The criterion for having a strong ﬁrst-order electroweak phase transition is vc/Tc ≳ 1
+at the critical point, which calls for a large cubic thermal potential φ3T. In the inert doublet
+model the new scalars are expected to play this crucial role with a suﬃciently large coupling
+to the SM Higgs boson, λi ∼ O(1). In the previous section, we showed that direct detection
+implies λS ≲ 0.1. Therefore, only large λA and λC could do the job, which implies that the
+corresponding pseudo scalar and charged components are heavy at zero temperature.
+The second crucial point to note is that the φ-independent term in the thermal masses
+of A and C should be small enough in order not to dilute their contribution to the cubic
+term. Namely, the optimal situation is realized when the terms in the bracket of eq. (2.8)
+µ2
+D+ T 2
+c
+12
+�
+6λD+ m2
+S+m2
+A+2m2
+C −4µ2
+D
+v2c
++ 9g2 + 3g′2
+4
+�
+,
+(2.9)
+are minimized at the critical temperature. For a given mass spectrum this means that there
+is a window for µ2
+D where the phase transition could be strongly ﬁrst order. Since S shares
+the same µ2
+D contribution to the mass as its heavier partners, i.e., µ2
+D = m2
+S − λSv2/2, it in
+turn predicts a lower bound on the DM direct detection rate, as shown in ﬁgure 2. This is an
+important result in view of the upper bound set by Xenon 100, which constrains the masses
+of A and C to lie in a window between 250−350 GeV.
+– 5 –
+JCAP02(2012)029
+This mass window of heavy scalar masses can be probed by the LHC. In particular,
+the pseudo-scalar component A can be produced in association with the DM S, and leads to
+dilepton ﬁnal state with missing energy. Here, the preferred mass diﬀerence between A and
+S is larger than the sample values studied in [25], which makes it easier to be distinguished
+from the SM background by imposing a harder cut on the missing energy.
+2.4
+Implications for the SM Higgs
+In ﬁgure 3, we show the dependence of critical temperature and the Higgs vev on the DM
+self coupling λD and the SM Higgs mass. It turns out that the increase of either the DM self-
+interaction or the SM Higgs mass reduces vc and increase Tc, and thus weaken the strength
+of the phase transition. In particular, Tc increases very quickly with the Higgs mass and we
+ﬁnd an upper bound on the Higgs boson mass1
+mh ≲ 130 GeV .
+(2.10)
+In short, the scalar doublet DM can trigger the strong electroweak phase transition, as long
+as it is light, below 80 GeV or so, and its partners end up being heavier.
+The contribution of the charged scalar C aﬀects the branching ratio of the Higgs boson
+decay into two photons, by reducing it at most by a factor of four.
+2.5
+What about uncertainties?
+So far, we have worked in the improved one-loop approximation for the eﬀective potential at
+non-zero temperature, and so one can question its reliability at higher orders in perturbation
+theory. In the examples studied up to now, such as MSSM, it turns out the two-loop ef-
+fects [26] only help to strengthen the phase transition. Similarly, the non-perturbative lattice
+simulations tend to do the same over the perturbative results [27].
+Another uncertainty lies in the possibly eﬀect of the magnetic ﬁeld during the phase
+transition [5]. The size of the magnetic ﬁeld has been up to now only roughly estimated [28],
+thus its eﬀect is not completely clear. It was argued recently [29] though, in the context of
+the MSSM, that it may have an impact on the upper limit of the Higgs mass.
+The issue of gauge invariance has been brought up [30]. It is claimed that one may again
+need a complete two-loop ﬁnite-temperature eﬀective potential for this purpose. However, in
+our case, the strength of the phase transition is governed by the second scalar doublet rather
+than the gauge bosons. Therefore, this issue becomes less important.
+3
+Why not a singlet?
+Before turning to higher representations, let us discuss explicitly the case of the singlet DM.
+After all, this is a simpler possibility with fewer couplings and thus more constrained. In
+fact, it fails to do the job. More precisely, while the singlet by itself can actually help the
+phase transition to be of the ﬁrst order [31], it cannot simultaneously be the DM [32, 33],
+and vice versa.
+What happens is the following. In this case, there is only one coupling with the Higgs
+and λA ≡ λC ≡ λS. We survey all the points in ﬁgure 2 and ﬁnd they all satisfy λA,C ≳ 1.
+1In this model the mass of dark matter lies in a window that could open appreciable invisible decay channel
+of the Higgs, controlled by the DM-Higgs coupling λS. Therefore, the Higgs branching ratios can deviate from
+SM prediction.
+– 6 –
+JCAP02(2012)029
+ΛD�0, Tc�122.98 GeV�vc
+ΛD�1.0, Tc�125.84 GeV�vc
+ΛD�3.0, Tc�130.53 GeV�vc
+0
+50
+100
+150
+0.0
+0.2
+0.4
+0.6
+0.8
+vc �GeV�
+Vtot�vc,Tc� ��106GeV4�
+mh�120 GeV, Tc�122.84 GeV�vc
+mh�150 GeV, Tc�149.91 GeV�vc
+mh�180 GeV, Tc�178.25 GeV�vc
+0
+50
+100
+150
+0.0
+0.2
+0.4
+0.6
+0.8
+vc �GeV�
+Figure 3. Shape of the Higgs potential at the critical temperature and its dependence on diﬀerent
+choices of parameters: DM self-interaction λD (left panel) and SM Higgs boson mass mh (right panel).
+While varying λD, we have ﬁxed mh = 120 GeV, mS = 60 GeV, mA = mC = 300 GeV and while
+varying mh, we have ﬁxed λD = 0, mS = 76 GeV, mA = mC = 300 GeV, respectively.
+On the other hand, direct detection, as shown in eq. (2.5), constrains this coupling to be
+much smaller than what is needed to trigger a strong ﬁrst-order phase transition. The failure
+of the real singlet thus makes the choice of the inert doublet scalar the simplest one.
+One can further extend the real scalar singlet case to a complex one. It was shown [34]
+that the double job of dark matter and strong electroweak phase transition can be achieved
+in this case.
+On the other hand, the scalar singlet could be the carrier of the force between the SM
+sector and the dark matter one [35], instead of being DM itself. Such a singlet can actually
+trigger [35] the ﬁrst order phase transition. This can be successfully embedded [36] in the
+NMSSM.
+4
+Higher representation alternative?
+It could be appealing to resort to higher SU(2)L representations for DM candidate, since
+then there are fewer Z2 odd couplings which destabilize them.
+Let us start with integer isospin representations ∆. In order to have a neutral particle,
+needed for the DM, they must have even hypercharge. Therefore, they only have two gauge
+invariant terms with the SM Higgs, out of which only one can split their masses
+�
+∆†T a∆
+� �
+Φ†σaΦ
+�
+,
+(4.1)
+where T a are the appropriate generators of ∆. In the case of the real multiplet with Y = 0, the
+spectrum is degenerate, while in the case of the complex one, the mass splits are proportional
+to the electromagnetic charge once the Higgs gets the vev.
+The former case works only for a heavy DM, above TeV, due to strong co-annihilating
+eﬀects on the relic density [37]. This makes it too heavy to have an impact on the phase
+transition. The latter case implies degenerate real and imaginary components of the neutral
+particle, which couple to the Z. Direct detection limits can be evaded again with a TeV scale
+DM. In short, as remarked in the Introduction, the integer isospin candidates fail to render
+the phase transition be ﬁrst order.
+– 7 –
+JCAP02(2012)029
+How about higher half-integer isospin multiplets? A natural choice Y = 1/2, accommo-
+dates another term in the potential
+�
+∆T T a∆
+� �
+ΦT σaΦ
+�∗ ,
+(4.2)
+where we ignore for simplicity the SU(2) conjugation. In general, this term splits the real and
+imaginary neutral components and in principle allows for light DM and heavy enough other
+states, just as in the case of the doublet discussed above. We will return to this intriguing
+possibility in a future publication [38].
+5
+Outlook: what about genesis?
+Before closing let us comment on a few related issues.
+5.1
+Sources of CP violation
+Successful baryogenesis requires CP violation, not only the ﬁrst order phase transition. How-
+ever, in the inert doublet case, there are no new sources of CP violation beyond the usual
+Cabibbo-Kobayashi-Maskawa (CKM) one [39]. If the Z2 symmetry is relaxed in order to
+accommodate additional CP phases, as is the case in the usual two Higgs doublet model [40],
+one loses the DM candidate.
+It is easy to imagine new sources of CP violation, but the problem then arises as to
+whether the new physics behind it aﬀects the nature of the phase transition. In this sense, new
+fermions are more welcome, at least in the perturbative regime, while adding new scalars is
+less desirable since they may upset the ﬁrst order phase transition. Of course, there is always
+a large parameter space where they are innocuous, since even tiny couplings with the SM
+particles may give enough CP violation.
+One such simple extension is to introduce the fourth generation fermions whose Yukawa
+couplings have potentially large CP phases [41]. Another well-motivated solution is resorting
+to the extended lepton sector [42] which may also oﬀer the explanation of neutrino masses.
+5.2
+Testing the thermal history
+As we showed, the ﬁrst order phase transition implies a window for particle masses, that can
+serve as a probe at colliders. Still, one would like to have a more direct consequence that
+reﬂects the cosmological dynamics. One intriguing possibility are the remnant gravitational
+waves [43].
+5.3
+Pre-existing Baryon Asymmetry?
+In order to elucidate this possibility, let us recall the problem in the conventional picture: the
+sphaleron erasure [6] of any original B +L asymmetry, based on the conventional assumption
+of symmetry restoration at high temperature. This, however, is not necessarily true in the
+BSM physics with enlarged Higgs sector: gauge symmetry may get even more broken at high
+temperature [24, 44]. For this to happen, it suﬃces that the cross-term couplings between
+diﬀerent scalar multiplets be negative. It may be worthwhile to investigate this possibility;
+however it requires improving the perturbative results for next-to-leading eﬀects tend to be
+large [45].
+– 8 –
+JCAP02(2012)029
+Acknowledgments
+We are grateful to Alejandra Melfo for very useful discussions and suggestions. We thank
+James Cline, Andrea De Simone, Jose R. Espinosa, Mikko Laine, Michael Ramsey-Musolf
+and Francesco Riva for useful correspondence regarding the quantitative studies of strong
+electroweak phase transition. We acknowledge the BIAS institute for hospitality. The work
+of G.S. is supported in part by the EU grant UNILHC-Grant Agreement PITN-GA-2009-
+237920. The work of YZ is supported in part by the National Science Foundation under
+Grant No. 1066293 and the hospitality of the Aspen Center for Physics.
+References
+[1] R.J. Scherrer and M.S. Turner, On the Relic, Cosmic Abundance of Stable Weakly Interacting
+Massive Particles, Phys. Rev. D 33 (1986) 1585 [Erratum ibid. D 34 (1986) 3263] [INSPIRE].
+[2] S. Nussinov, Technocosmology: could a technibaryon excess provide a ‘natural’ missing mass
+candidate?, Phys. Lett. B 165 (1985) 55 [INSPIRE].
+[3] For a partial list of references, see e.g., D.E. Kaplan, M.A. Luty and K.M. Zurek, Asymmetric
+Dark Matter, Phys. Rev. D 79 (2009) 115016 [arXiv:0901.4117] [INSPIRE];
+H. An, S.-L. Chen, R.N. Mohapatra and Y. Zhang, Leptogenesis as a Common Origin for
+Matter and Dark Matter, JHEP 03 (2010) 124 [arXiv:0911.4463] [INSPIRE];
+J. Shelton and K.M. Zurek, Darkogenesis: A baryon asymmetry from the dark matter sector,
+Phys. Rev. D 82 (2010) 123512 [arXiv:1008.1997] [INSPIRE];
+M.R. Buckley and L. Randall, Xogenesis, JHEP 09 (2011) 009 [arXiv:1009.0270] [INSPIRE];
+M.L. Graesser, I.M. Shoemaker and L. Vecchi, Asymmetric WIMP dark matter, JHEP 10
+(2011) 110 [arXiv:1103.2771] [INSPIRE] and references therein
+[4] G. ’t Hooft, Symmetry Breaking Through Bell-Jackiw Anomalies, Phys. Rev. Lett. 37 (1976) 8
+[INSPIRE].
+[5] N.S. Manton, Topology in the Weinberg-Salam Theory, Phys. Rev. D 28 (1983) 2019 [INSPIRE];
+F.R. Klinkhamer and N.S. Manton, A Saddle Point Solution in the Weinberg-Salam Theory,
+Phys. Rev. D 30 (1984) 2212 [INSPIRE].
+[6] V.A. Kuzmin, V.A. Rubakov and M.E. Shaposhnikov, On the Anomalous Electroweak Baryon
+Number Nonconservation in the Early Universe, Phys. Lett. B 155 (1985) 36 [INSPIRE].
+[7] R. Barbieri, L.J. Hall and V.S. Rychkov, Improved naturalness with a heavy Higgs: An
+Alternative road to LHC physics, Phys. Rev. D 74 (2006) 015007 [hep-ph/0603188] [INSPIRE].
+[8] A. Melfo, M. Nemevˇsek, F. Nesti, G. Senjanovi´c and Y. Zhang, Inert Doublet Dark Matter and
+Mirror/Extra Families after Xenon100, Phys. Rev. D 84 (2011) 034009 [arXiv:1105.4611]
+[INSPIRE].
+[9] H. Martinez, A. Melfo, F. Nesti and G. Senjanovi´c, Three Extra Mirror or Sequential Families:
+A Case for Heavy Higgs and Inert Doublet, Phys. Rev. Lett. 106 (2011) 191802
+[arXiv:1101.3796] [INSPIRE].
+[10] M. Gell-Mann, P. Ramond and R. Slansky, Color Embeddings, Charge Assignments and Proton
+Stability in Uniﬁed Gauge Theories, Rev. Mod. Phys. 50 (1978) 721 [INSPIRE].
+[11] F. Wilczek and A. Zee, Families from Spinors, Phys. Rev. D 25 (1982) 553 [INSPIRE].
+[12] G. Senjanovi´c, F. Wilczek and A. Zee, Reﬂections on mirror fermions, Phys. Lett. B 141
+(1984) 389 [INSPIRE].
+[13] J. Bagger and S. Dimopoulos, O(18) revived: splitting the spinor, Nucl. Phys. B 244 (1984)
+247 [INSPIRE].
+– 9 –
+JCAP02(2012)029
+[14] T. Lee and C.-N. Yang, Question of Parity Conservation in Weak Interactions, Phys. Rev. 104
+(1956) 254 [INSPIRE].
+[15] N. Turok and J. Zadrozny, Dynamical generation of baryons at the electroweak transition, Phys.
+Rev. Lett. 65 (1990) 2331 [INSPIRE].
+[16] For the possibility where electroweak symmetry breaking is induced by the inert doublet, see:
+T. Hambye and M.H. Tytgat, Electroweak symmetry breaking induced by dark matter, Phys.
+Lett. B 659 (2008) 651 [arXiv:0707.0633] [INSPIRE].
+[17] A. Pierce and J. Thaler, Natural Dark Matter from an Unnatural Higgs Boson and New
+Colored Particles at the TeV Scale, JHEP 08 (2007) 026 [hep-ph/0703056] [INSPIRE].
+[18] E.M. Dolle and S. Su, The Inert Dark Matter, Phys. Rev. D 80 (2009) 055012
+[arXiv:0906.1609] [INSPIRE];
+L. Lopez Honorez, E. Nezri, J.F. Oliver and M.H. Tytgat, The Inert Doublet Model: An
+Archetype for Dark Matter, JCAP 02 (2007) 028 [hep-ph/0612275] [INSPIRE].
+[19] M.A. Shifman, A. Vainshtein and V.I. Zakharov, Remarks on Higgs Boson Interactions with
+Nucleons, Phys. Lett. B 78 (1978) 443 [INSPIRE].
+[20] J. Giedt, A.W. Thomas and R.D. Young, Dark matter, the CMSSM and lattice QCD, Phys.
+Rev. Lett. 103 (2009) 201802 [arXiv:0907.4177] [INSPIRE].
+[21] J.M. Cline and P.-A. Lemieux, Electroweak phase transition in two Higgs doublet models, Phys.
+Rev. D 55 (1997) 3873 [hep-ph/9609240] [INSPIRE].
+[22] N. Turok and J. Zadrozny, Phase transitions in the two doublet model, Nucl. Phys. B 369
+(1992) 729 [INSPIRE].
+[23] J.M. Cline, K. Kainulainen and A.P. Vischer, Dynamics of two Higgs doublet CP-violation and
+baryogenesis at the electroweak phase transition, Phys. Rev. D 54 (1996) 2451
+[hep-ph/9506284] [INSPIRE].
+[24] R.N. Mohapatra and G. Senjanovi´c, Broken Symmetries at High Temperature, Phys. Rev. D 20
+(1979) 3390 [INSPIRE]; High temperature behavior of gauge theories, Phys. Lett. B 89 (1979) 57
+[INSPIRE].
+[25] E. Dolle, X. Miao, S. Su and B. Thomas, Dilepton Signals in the Inert Doublet Model, Phys.
+Rev. D 81 (2010) 035003 [arXiv:0909.3094] [INSPIRE].
+[26] J.R. Espinosa, Dominant two loop corrections to the MSSM ﬁnite temperature eﬀective
+potential, Nucl. Phys. B 475 (1996) 273 [hep-ph/9604320] [INSPIRE].
+[27] M. Laine, Electroweak phase transition beyond the standard model, hep-ph/0010275 [INSPIRE].
+[28] G. Baym, D. B¨odeker and L.D. McLerran, Magnetic ﬁelds produced by phase transition bubbles
+in the electroweak phase transition, Phys. Rev. D 53 (1996) 662 [hep-ph/9507429] [INSPIRE].
+[29] A. De Simone, G. Nardini, M. Quir´os and A. Riotto, Magnetic Fields at First Order Phase
+Transition: A Threat to Electroweak Baryogenesis, JCAP 10 (2011) 030 [arXiv:1107.4317]
+[INSPIRE].
+[30] W. Buchm¨uller, Z. Fodor and A. Hebecker, Gauge invariant treatment of the electroweak phase
+transition, Phys. Lett. B 331 (1994) 131 [hep-ph/9403391] [INSPIRE];
+H.H. Patel and M.J. Ramsey-Musolf, Baryon Washout, Electroweak Phase Transition and
+Perturbation Theory, JHEP 07 (2011) 029 [arXiv:1101.4665] [INSPIRE];
+C. Wainwright, S. Profumo and M.J. Ramsey-Musolf, Gravity Waves from a Cosmological
+Phase Transition: Gauge Artifacts and Daisy Resummations, Phys. Rev. D 84 (2011) 023521
+[arXiv:1104.5487] [INSPIRE].
+[31] G.W. Anderson and L.J. Hall, The Electroweak phase transition and baryogenesis, Phys. Rev.
+D 45 (1992) 2685 [INSPIRE].
+– 10 –
+JCAP02(2012)029
+[32] J. McDonald, Thermally generated gauge singlet scalars as selﬁnteracting dark matter, Phys.
+Rev. Lett. 88 (2002) 091304 [hep-ph/0106249] [INSPIRE].
+[33] J. Espinosa, T. Konstandin, J. No and M. Quir´os, Some Cosmological Implications of Hidden
+Sectors, Phys. Rev. D 78 (2008) 123528 [arXiv:0809.3215] [INSPIRE].
+[34] V. Barger, P. Langacker, M. McCaskey, M. Ramsey-Musolf and G. Shaughnessy, Complex
+Singlet Extension of the Standard Model, Phys. Rev. D 79 (2009) 015018 [arXiv:0811.0393]
+[INSPIRE];
+S. Profumo, M.J. Ramsey-Musolf and G. Shaughnessy, Singlet Higgs phenomenology and the
+electroweak phase transition, JHEP 08 (2007) 010 [arXiv:0705.2425] [INSPIRE]. We thank
+Michael Ramsey-Musolf for bringing these references to our attention.
+[35] S. Das, P.J. Fox, A. Kumar and N. Weiner, The Dark Side of the Electroweak Phase
+Transition, JHEP 11 (2010) 108 [arXiv:0910.1262] [INSPIRE];
+J.R. Espinosa, T. Konstandin and F. Riva, Strong Electroweak Phase Transitions in the
+Standard Model with a Singlet, Nucl. Phys. B 854 (2012) 592 [arXiv:1107.5441] [INSPIRE].
+[36] M. Carena, N.R. Shah and C.E. Wagner, Light Dark Matter and the Electroweak Phase
+Transition in the NMSSM, arXiv:1110.4378 [INSPIRE].
+[37] M. Cirelli, N. Fornengo and A. Strumia, Minimal dark matter, Nucl. Phys. B 753 (2006) 178
+[hep-ph/0512090] [INSPIRE].
+[38] A. Melfo, M. Nemevˇsek, F. Nesti, G. Senjanovi´c and Y. Zhang, Electroweak phase transition
+and dark matter candidates, work in progress.
+[39] It has been argued though, that CP violation from the CKM matrix may suﬃce for
+baryogenesis, see V. Rubakov and M. Shaposhnikov, Electroweak baryon number
+nonconservation in the early universe and in high-energy collisions, Usp. Fiz. Nauk 166 (1996)
+493 [Phys. Usp. 39 (1996) 461] [hep-ph/9603208] [INSPIRE] and references therein.
+[40] J.M. Cline, K. Kainulainen and M. Trott, Electroweak Baryogenesis in Two Higgs Doublet
+Models and B meson anomalies, JHEP 11 (2011) 089 [arXiv:1107.3559] [INSPIRE].
+[41] W.-S. Hou, Source of CP-violation for the Baryon Asymmetry of the Universe, Chin. J. Phys.
+47 (2009) 134 [arXiv:0803.1234] [INSPIRE].
+[42] L.J. Hall, H. Murayama and G. Perez, Electroweak baryogenesis from late neutrino masses,
+Phys. Rev. Lett. 95 (2005) 111301 [hep-ph/0504248] [INSPIRE].
+[43] M. Kamionkowski, A. Kosowsky and M.S. Turner, Gravitational radiation from ﬁrst order
+phase transitions, Phys. Rev. D 49 (1994) 2837 [astro-ph/9310044] [INSPIRE];
+R. Apreda, M. Maggiore, A. Nicolis and A. Riotto, Gravitational waves from electroweak phase
+transitions, Nucl. Phys. B 631 (2002) 342 [gr-qc/0107033] [INSPIRE];
+C. Grojean and G. Servant, Gravitational Waves from Phase Transitions at the Electroweak
+Scale and Beyond, Phys. Rev. D 75 (2007) 043507 [hep-ph/0607107] [INSPIRE];
+J.M. No, Large Gravitational Wave Background Signals in Electroweak Baryogenesis Scenarios,
+Phys. Rev. D 84 (2011) 124025 [arXiv:1103.2159] [INSPIRE].
+[44] S. Weinberg, Gauge and Global Symmetries at High Temperature, Phys. Rev. D 9 (1974) 3357
+[INSPIRE].
+[45] G. Bimonte and G. Lozano, Symmetry nonrestoration and inverse symmetry breaking on the
+lattice, Phys. Lett. B 388 (1996) 692 [hep-th/9603201] [INSPIRE].
+– 11 –

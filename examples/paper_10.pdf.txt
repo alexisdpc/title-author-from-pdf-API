@@ -1,0 +1,437 @@
+Artiﬁcial intelligence (AI) in breast cancer care - Leveraging
+multidisciplinary skills to improve care*
+Artiﬁcial Intelligence (AI) technologies supporting health pro-
+fessionals’ skills bring the promise of an era in which repetitive
+and time-intensive tasks in healthcare can be automated and per-
+formed (either entirely or in part) by AI systems. As automation
+progressively facilitates the delivery of health care, physicians can
+now focus on more humanized patient care. The use of AI to ensure
+quality delivery is essential in the ﬁght against diseases and there is
+no doubt that the next decade will see a growing stream of AI ap-
+plications across healthcare. “We are not ready for what is about
+to come” Coiera tells us [1], a statement highlighting the need for
+healthcare practitioners and services to prepare for AI’s adoption
+into health practice. With the progress of AI systems, it seems
+obvious that machine thinking will invade our workspace, literally
+and ﬁguratively, in all areas of breast cancer care. Instead of resist-
+ing, we should better consider preparing ourselves for the impact,
+the potential, and the pitfalls, and start adapting our work environ-
+ment to this new reality. This progress will need big input from
+“both sides of the barricade”, namely AI technical experts and
+health care professionals.
+Fear of the unknown is a common obstacle in innovation and
+frequently leads to resistance to new approaches. This is also the
+situation with AI in health care, although in this instance, cautious
+planning and evaluation are needed to allow us to understand the
+most beneﬁcial way to adopt AI in practice. To achieve this, health-
+care professionals including doctors need to work closely with AI
+experts. However, many doctors are not at ease with the computer
+science language, and computer scientists and engineers don’t
+master health terminology and concepts. Moreover, these very
+divergent skills appear to focus on different objectives. While
+health professionals have the primary goal of better diagnosis
+and treatment for patients, computer science teams are focused
+on inventing methods and computational processes to solve ques-
+tions that might, in some instances, be considered of less priority to
+those who actually manage patients in real-word health settings.
+So, to make progress in our endeavor to use AI to improve various
+aspects of clinical care, in general and in our focus on breast cancer,
+we need to communicate our different perspectives more efﬁ-
+ciently and more effectively. To help solve this problem, a curricu-
+lum teaching the language used and the problems addressed both
+by AI scientists and healthcare professionals could be implemented
+both in pre-graduate and post-graduate education, as highlighted
+in the work from Ferreira et al. in this special issue [2].
+Many of the subﬁelds of AI in health care are represented in this
+collection of papers addressing some of the developments that will
+help us in the routine care of breast cancer patients. It is obvious
+that many of the tasks that are undertaken very frequently by hu-
+man operators with their inherent subjectivity will be the ones
+most likely to be replaced successfully in the near future by AI-
+based systems.
+One of the most relevant ﬁelds of research is the use of image
+analysis in various clinical applications including breast imaging,
+digital pathology, surgical planning, and outcomes evaluation.
+The huge amount of imaging digital data already annotated with
+deﬁned characteristics either in screening or diagnosis has allowed
+the development of machine-learning-derived solutions that are on
+the verge of becoming a part of our practices in the near future.
+On the methodological side, contributions to this special issue
+come from the papers by Ref. [3,4]. Yap et al. move from a set of ul-
+trasound breast images and use an accurate object detection deep
+learning framework (namely, Faster-RCNN with Inception-ResNet-
+v2): region of interest (ROI) detection and lesion localization are
+automatically performed, helping the surgeon to focus on the rele-
+vant area of the breast. Carvalho et al. propose a method which de-
+ploys phylogenetic diversity indexes, generally used in biology to
+compare the behavior patterns of species in different areas, applied
+in this work to characterize breast histopathology images: the
+resulting model classiﬁes histopathological images of the breast
+into four classes - invasive carcinoma, in situ carcinoma, normal tis-
+sue, and benign lesion e leaving a possible promise for the future of
+reducing the number of needed biopsies.
+Other papers in this special issue are also dedicated to the use of
+AI in breast imaging, screening, diagnosis, and prognosis as well as
+the prediction of cancer response to treatment. These topics are
+reviewed and discussed taking into account the current state of
+existing applications [5e8]. AI has the potential to bring efﬁciencies
+to screening programs burdened by screen-reading workload, and
+augmenting radiologists’ interpretation. Various approaches to us-
+ing AI in screening are discussed by Sechopoulos and Mann in this
+issue [7], while Lee et al. highlight the pathways and processes
+needed to ensure validation and diversiﬁcation of algorithms for
+screening practice [5].
+Applications of machine learning to digital pathology for breast
+cancer, including both diagnostic and prognostic applications, will
+not only complement the routine work of breast pathologists but
+also improve their diagnostic accuracy. As described in the detailed
+review by Ibrahim et al. [9], AI in breast cancer pathology will pro-
+vide information beyond that can be gained by eyeball assessment
+with the potential to replace some of the expensive multigene
+assays.
+In contrast to imaging and pathology where there are already
+* This paper has been co-published in the BREAST and Artiﬁcial Intelligence in
+Medicine.
+Contents lists available at ScienceDirect
+The Breast
+journal homepage: www.elsevier.com/brst
+The Breast 56 (2021) 110e113
+https://doi.org/10.1016/j.breast.2020.11.012
+0960-9776/© 2021 Published by Elsevier Ltd. This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+available AI tools and substantial applied research, the sub-
+specialties in local treatments of breast cancer are relatively lagging
+behind in AI applications. It is not surprising that AI work in surgery
+is not commensurate with that described for imaging and pathol-
+ogy. Operating a breast depends on a number of variables that
+are difﬁcult to collect and standardize. An effort has been made
+to try to transfer the diagnosis imaging information to the oper-
+ating room, allowing more accurate localization of cancer. This
+effort has been essentially directed to the fusion of information
+coming from surface scans with imaging data from MRI allowing
+the construction of a breast model with the tumor inside, as re-
+ported by Bessa et al. [10]. Some work has also been done in breast
+reconstruction through image analysis of angio CTs, the routine
+exam used to plan free ﬂap reconstruction after mastectomy. The
+capacity to automatically detect vessels from angio CTs, proposed
+by Mavioso et al. will hopefully replace the process of manual anno-
+tation by a computerized automatic analysis keeping the same ac-
+curacy levels [11].
+Concerning radiotherapy, CT images are the core of treatment
+planning for each patient, and some facilitating tools already exist
+for contouring the ﬁelds of treatment. However, the use of AI to
+automate the entire process is not yet used in breast cancer
+although it could save many hours of work for the radiation
+oncology team. The paper from Poortmans et al. offers a signiﬁcant
+contribution to elucidate the issues related to AI applications to
+individualize radiation therapy for breast cancer patients [12].
+Beyond using image analysis in diagnostic and planning of treat-
+ment, we also need tools to assess the clinical outcomes of this de-
+cision. Besides the side effects of systemic treatments, the visible
+impact of surgery and radiotherapy on patients’ body image is of
+major importance for patients. Cardoso and colleagues [13] offer
+a review and a discussion of recent advancements in machine
+learning, and especially deep learning, bringing new promises to
+the ﬁeld of aesthetic outcomes of locoregional treatments.
+Decision support systems are advanced systems that help phy-
+sicians to diagnose and treat diseases.
+In fact, the task of physicians is becoming more and more com-
+plex because increasing quantities of data need to be properly
+considered before proceeding with any treatment decision. Indeed,
+because medical knowledge is advancing, different categories of
+cancer are proliferating along with the number of new therapies
+stemming from clinical research and new surgery techniques,
+which dramatically widen the set of possible choices of decisions.
+Decision support systems make use of different methodologies
+including artiﬁcial intelligence, knowledge representation, infor-
+mation visualization, and text mining, among others. On the meth-
+odological side, contributions on decision support systems come
+from the papers by Ref. [14,15]. Bouaud et al. report about the re-
+sults of the European-funded DESIREE project, providing breast
+unit physicians with different complementary therapeutic decision
+support modules including guideline-based, experience-based, and
+case-based reasoning. Gu et al. propose an auxiliary decision sup-
+port system to help doctors improve the accuracy of breast cancer
+recurrence prediction.
+Big data analysis refers to the analysis of huge quantities of data
+which are now collected and stored in any human activity,
+including healthcare. Such data can be exploited for different tar-
+gets, e.g., to provide medical staff with suggestion support for
+care delivery, to reason, and to extract knowledge, as well as to un-
+derstand the natural language of textual descriptions such as med-
+ical reports.
+Papers by Macias-Garcia et al. [16], and Pozzoli et al. [17] offer
+signiﬁcant contributions to the methodological side of the big
+data topic. Macias-Garcia et al. summarize DNA methylation data
+to generate new features from the values of CpG sites of patients,
+to predict breast cancer recurrence. Pozzoli et al. experiment unsu-
+pervised learning in the detection and analysis of distinctive pro-
+teins for the identiﬁcation of cancer subtypes.
+Natural language processing (NLP) refers to the capacity of
+analyzing free text, i.e., the text in human normal speaking or
+writing, and of understanding it and, possibly, of extracting knowl-
+edge from it. The main sources for NLP are medical reports, where
+non-coded information is depicted. On the methodological side,
+one contribution on NLP comes from the paper by Hanyin Wang
+et al. [18], where the authors propose an automated method to pre-
+dict breast cancer distant recurrence, using natural language pro-
+cessing and deep learning approaches applied to pathology
+reports and progress notes of some 6000 patients.
+Some less established but however emerging and promising
+areas of AI applications to breast cancer care are also introduced
+into this issue.
+Butow and Hoque [19] discuss AI use to assess and deﬁne effec-
+tive communication between health professionals and patients.
+Both communication and teaching of how to communicate are pro-
+cesses that stand essentially on qualitative forms of analysis/evalu-
+ation, and the use of machine learning could make these processes
+more efﬁcient.
+Moser and Nayaran [20] report on the use of machine learning
+to detect patterns that help to track the ideal workﬂow for breast
+cancer patients from diagnosis to long-term follow-up. The authors
+propose that electronic records analysis could bring AI modeling
+into clinical practice to drive well-coordinated, patient-centered
+cancer care in the complex web of modern healthcare today, yet
+stressing the need for human presence along these pathways.
+Kakileti et al. [21] propose and analyze a new personalized risk
+framework to identify a high-risk target population for regular
+screening and enable early stage breast cancer detection at scale.
+The approach runs machine learning algorithms to analyze thermal
+images, and automatically generates a breast health risk score,
+assigning subjects to four different risk classes.
+Chiudinelli et al. [22] analyze data extracted from some 3000
+electronic health records and describe a care ﬂow mining algorithm
+to deﬁne the most frequent patterns of care. The results allow
+drawing electronic temporal phenotypes which describe well-
+characterized pathology classes across the studied population,
+and provide the surgeons with relevant help in care delivery.
+A further crucial topic for applying AI in breast cancer care, and
+indeed relevant for any application of AI in healthcare, relates to
+ethical, legal, and social issues (ELSI), wonderfully addressed in
+the paper by Carter and colleagues [23], in this special issue. This
+highlights the ELSI challenges and their possible solutions and re-
+inforces the importance of thinking carefully on what is to come
+and addressing AI risks before implementation. This approach will
+have to include all stakeholders involved to the design an effective
+risk mitigation plan that will support the introduction of AI in
+breast cancer care and inform its expansion in ethical and socially
+acceptable pathways.
+AI is here to stay, generally in healthcare, but also speciﬁcally in
+breast cancer care. Structured research is needed to investigate not
+only the accuracy and utility of the new AI-related processes
+compared to what exists as standard of care, but also to ensure
+these AI tools are transferable beyond the speciﬁc settings where
+they were developed. The future could change rapidly and the
+way we adapt to it will deﬁne how effectively multidisciplinarity
+operates and how clinical skills work jointly with AI skills to
+develop the pathway for implementing AI in clinical care for the
+beneﬁt of breast cancer patients. Such a pathway must consider
+an ethical construct for using AI and engage stakeholders, including
+breast cancer consumers, in decisions regarding where AI is accept-
+able as part of healthcare. This may enable us to build a future
+M.J. Cardoso, N. Houssami, G. Pozzi et al.
+The Breast 56 (2021) 110e113
+111
+where AI will be used to augment not only healthcare professionals
+but also patients, to inform or complement, rather than dictate clin-
+ical decisions, and to ultimately transition to an AI-supported clin-
+ical pathway in breast cancer care.
+Online-only supplementary Appendix: (Link xxxx)
+Methodological issues: The idea of having a virtual joint special
+issue on the advent of Artiﬁcial Intelligence (AI) in the management
+of breast cancer was launched by the publisher at the end of 2018.
+The special issue would have to be joint, i.e. collecting contributions
+on the same topic coming from two different journals. Indeed, each
+journal, with its speciﬁc target scientists, research ﬁeld, and
+research methods, would have addressed only some facets of the
+topic, whereas the joint approach would have provided the reader
+with a more comprehensive and holistic view of the topic. The spe-
+cial issue would have to be virtual, i.e. accepted papers would be
+published both separately on the different journals they were sub-
+mitted to, but they would also be collected all together in the ﬁnal
+volume of the special issue.
+As title for the joint virtual special issue, the publisher proposed
+“Artiﬁcial Intelligence in Breast Cancer Care”, and the journals
+invited to contribute to the virtual special issue were Artiﬁcial Intel-
+ligence in Medicine (AIM) on the computer-science and methodo-
+logical side, and The Breast on the clinical and medical side. The
+editors in chief of the two journals invited the four guest editors
+to serve in the making of the virtual joint special issue.
+The four guest editors had several meetings, where they decided
+that manuscript submission would have to be by invitation, only.
+Guest editors also decided that submitted manuscripts should un-
+dergo the usual reviewing process every manuscript undergoes
+when submitted to the respective journals. The four guest editors
+worked jointly, with the help of the publisher and of the two edi-
+tors in chief, and they started with the identiﬁcation of current
+and major research trends in the ﬁeld, according to which invita-
+tions would have been sent out. Some of the identiﬁed trends cover
+issues shared by both journals, while some other identiﬁed trends
+are mainly covered by only one journal.
+Accordingly, the current and major research trends considered
+include subtopics such as imaging and image analysis; machine
+learning; decision support systems; big data analytics; natural lan-
+guage processing (NLP). Moreover additional trends have been
+identiﬁed as emerging: personalized medicine; business intelli-
+gence; ethical, legal, and social issues.
+Once the major research trends were identiﬁed, guest editors
+performed a deep analysis of the corresponding state of the art in
+order to identify the authors to invite for the joint special issue.
+This analysis led to 31 invitations on the AIM side and 15 invitations
+on The Breast side. Sixteen manuscripts were submitted on the AIM
+side and 13 on The Breast side, leading ﬁnally to 9 papers published
+in the AIM journal and 13 published in The Breast journal.
+Declaration of competing interest
+When submitted manuscripts included one of the guest editors
+as co-author, submissions were managed by the other guest editor
+(not author of the submission), and outside the ofﬁcial submission-
+management system of the journal in order to guarantee the blind
+and peer-review process. Additional details regarding the process
+followed in compiling the virtual joint special issue is included as
+online-only supplementary material (link xxxxx).
+Acknowledgments
+The construction of the current virtual special issue required
+much effort from many people. The four guest editors are grateful
+to: Alison Waldron, Amar Bhogals, Ashley Kieran Clift, David
+Spencer, Justyna Kasprzycka, Kavitha Narayanasamy, the publishers
+who launched in 2018 the idea of a joint special issue and
+constantly helped in the everyday care such an idea required;
+Fatima Cardoso and Carlo Combi, the editors in chief of the two
+journals (The Breast and Artiﬁcial Intelligence in Medicine) who
+eagerly accepted the idea; the authors, who enthusiastically
+accepted the invitations, and carefully revised their manuscripts
+in guidance of the suggestions and recommendations from re-
+viewers and guest editors; and the anonymous reviewers, whose
+valuable help set up the pillars on which this project was built.
+References
+[1] Coiera E. The price of artiﬁcial intelligence. Yearbk Med Inform 2019;28:
+14e25. https://doi.org/10.1055/s-0039-1677892.
+[2] Ferreira MF, Savoy JN, Markey MK. Teaching cross-cultural design thinking for
+healthcare.
+Breast
+2020;50:1e10.
+https://doi.org/10.1016/
+j.breast.2019.12.015.
+[3] Yap MH, Goyal M, Osman F, Martí R, Denton E, Juette A, Zwiggelaar R. Breast
+ultrasound region of interest detection and lesion localisation. Artif Intell Med
+2020;107(101880). https://doi.org/10.1016/j.artmed.2020.101880.
+[4] Carvalho ED, Filho AO, Silva RR, Araújo FH, Diniz JO, Silva AC, …, Gattass M.
+Breast cancer diagnosis from histopathological images using textural features
+and
+CBIR.
+Artif
+Intell
+Med
+2020;105(101845).
+https://doi.org/10.1016/
+j.artmed.2020.101845.
+[5] Lee CI, Houssami N, Elmore JG, Buist DS. Pathways to breast cancer screening
+artiﬁcial intelligence algorithm validation. Breast 2020;52:146e9. https://
+doi.org/10.1016/j.breast.2019.09.005.
+[6] Gullo RL, Eskreis-Winkler S, Morris EA, Pinker K. Machine learning with multi-
+parametric magnetic resonance imaging of the breast for early prediction of
+response to neoadjuvant chemotherapy. Breast 2020;49:115e22. https://
+doi.org/10.1016/j.breast.2019.11.009.
+[7] Sechopoulos I, Mann RM. Stand-alone artiﬁcial intelligence - the future of
+breast cancer screening? Breast 2020;49:254e60. https://doi.org/10.1016/
+j.breast.2019.12.014.
+[8] Tagliaﬁco AS, Piana M, Schenone D, Lai R, Massone AM, Houssami N. Overview
+of radiomics in breast cancer diagnosis and prognostication. Breast 2020;49:
+74e80. https://doi.org/10.1016/j.breast.2019.10.018.
+[9] Ibrahim A, Gamble P, Jaroensri R, Abdelsamea MM, Mermel CH, Chen P-HC,
+Rakha EA. Artiﬁcial intelligence in digital breast pathology: techniques and
+applications.
+Breast
+2020;49:267e73.
+https://doi.org/10.1016/
+j.breast.2019.12.007.
+[10] Bessa S, Gouveia PF, Carvalho PH, Rodrigues C, Silva NL, Cardoso F, Cardoso MJ.
+3D digital breast cancer models with multimodal fusion algorithms. Breast
+2020;49:281e90. https://doi.org/10.1016/j.breast.2019.12.016.
+[11] Mavioso C, Araújo RJ, Oliveira HP, Anacleto JC, Vasconcelos MA, Pinto D, …,
+Cardoso MJ. Automatic detection of perforators for microsurgical reconstruc-
+tion. Breast 2020;50:19e24. https://doi.org/10.1016/j.breast.2020.01.001.
+[12] Poortmans PM, Takanen S, Marta GN, Meattini I, Kaidar-Person O. Winter is
+over: the use of Artiﬁcial Intelligence to individualise radiation therapy for
+breast
+cancer.
+Breast
+2020;49:194e200.
+https://doi.org/10.1016/
+j.breast.2019.11.011.
+[13] Cardoso JS, Silva W, Cardoso MJ. Evolution, current challenges, and future pos-
+sibilities in the objective assessment of aesthetic outcome of breast cancer
+locoregional
+treatment.
+Breast
+2020;49:123e30.
+https://doi.org/10.1016/
+j.breast.2019.11.006.
+[14] Bouaud J, Pelayo S, Lamy J-B, Prebet C, Ngo C, Teixeira L, …, Seroussi B. Imple-
+mentation of an ontological reasoning to support the guideline-based man-
+agement of primary breast cancer patients in the DESIREE project. Artif
+Intell Med 2020;101922. https://doi.org/10.1016/j.artmed.2020.101922.
+[15] Gu D, Su K, Zhao H. A case-based ensemble learning system for explainable
+breast cancer recurrence prediction. Artif Intell Med 2020;107(101858).
+https://doi.org/10.1016/j.artmed.2020.101858.
+[16] Macıas-Garcıa L, Martınez-Ballesteros M, Luna-Romera JM, Garcıa-Heredia JM,
+Garcıa-Guti�errez J, Riquelme-Santos JC. Autoencoded DNA methylation data
+to predict breast cancer recurrence: machine learning models and gene-
+weight signiﬁcance. Artif Intell Med 2020;110(101976). https://doi.org/
+10.1016/j.artmed.2020.101976.
+[17] Pozzoli S, Soliman A, Bahri L, Branca RM, Girdzijauskas S, Brambilla M. Domain
+expertiseeagnostic feature selection for the analysis of breast cancer data.
+Artif Intell Med 2020;101928. https://doi.org/10.1016/j.artmed.2020.101928.
+[18] Wang H, Li Y, Khan SA, Luo Y. Prediction of breast cancer distant recurrence
+using natural language processing and knowledge-guided convolutional neu-
+ral network. Artif Intell Med 2020;110(101977). https://doi.org/10.1016/
+j.artmed.2020.101977.
+[19] Butow P, Hoque E. Using artiﬁcial intelligence to analyse and teach communi-
+cation
+in
+healthcare.
+Breast
+2020;50:49e55.
+https://doi.org/10.1016/
+j.breast.2020.01.008.
+M.J. Cardoso, N. Houssami, G. Pozzi et al.
+The Breast 56 (2021) 110e113
+112
+[20] Moser EC, Narayan G. Improving breast cancer care coordination and symp-
+tom management by using AI driven predictive toolkits. Breast 2020;50:
+25e9. https://doi.org/10.1016/j.breast.2019.12.006.
+[21] Kakileti ST, Madhu HJ, Manjunath G, Wee L, Dekker A, Sampangi S. Personal-
+ized risk prediction for breast cancer pre-screening using artiﬁcial intelligence
+and thermal radiomics. Artif Intell Med 2020;105(101854). https://doi.org/
+10.1016/j.artmed.2020.101854.
+[22] Chiudinelli L, Dagliati A, Tibollo V, Albasini S, Geifman N, Peek N, …, Sacchi L.
+Mining post-surgical care processes in breast cancer patients. Artif Intell Med
+2020;105(101855). https://doi.org/10.1016/j.artmed.2020.101855.
+[23] Carter SM, Rogers W, Win KT, Frazer H, Richards B, Houssami N. The ethical,
+legal and social implications of using artiﬁcial intelligence systems in breast
+cancer
+care.
+Breast
+2020;49:25e32.
+https://doi.org/10.1016/
+j.breast.2019.10.001.
+Maria Joao Cardoso*
+Breast Unit, Champalimaud Clinical Center, Champalimaud
+Foundation, Lisbon, Portugal
+Faculdade de Medicina da Universidade Nova de Lisboa, Nova Medical
+School, Lisbon, Portugal
+Nehmat Houssami
+Sydney School of Public Health, Faculty of Medicine and Health, Fisher
+Road, The University of Sydney, New South Wales, Australia
+Giuseppe Pozzi
+DEIB, Politecnico di Milano, P.za L. da Vinci 32, I-20133, Milano, Italy
+Brigitte S�eroussi
+Sorbonne Universit�e, Universit�e Sorbonne Paris Nord, INSERM, LIMICS
+UMR_S 1142, F-75006, Paris, France
+Assistance Publique e H^opitaux de Paris, D�epartement de Sant�e
+Publique, F-75020, Paris, France
+* Corresponding author. Breast Unit, Champalimaud Clinical
+Center, Champalimaud Foundation, Lisbon, Portugal.
+Available online 9 December 2020
+M.J. Cardoso, N. Houssami, G. Pozzi et al.
+The Breast 56 (2021) 110e113
+113

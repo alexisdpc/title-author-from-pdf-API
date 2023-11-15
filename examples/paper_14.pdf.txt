@@ -1,0 +1,1410 @@
+Energy 273 (2023) 127213
+Available online 15 March 2023
+0360-5442/© 2023 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+Hierarchical approach to energy system modelling: Complexity reduction 
+with minor changes in results 
+Dmitrii Bogdanov *, Ayobami Solomon Oyewo, Christian Breyer 
+LUT University, Yliopistonkatu 34, 53850, Lappeenranta, Finland   
+A R T I C L E  I N F O   
+Handling Editor: Neven Duic  
+Keywords: 
+Energy system modelling 
+Renewable energy 
+Optimisation 
+Defossilisation 
+A B S T R A C T   
+The energy transition plays a crucial role in the ongoing process of defossilisation and carbon emissions 
+reduction. Considering the substantial cost of the transition and importance of the energy system for the global 
+economy, the transition must be accurately modelled to allow future system development analyses and discus-
+sions to avoid stranded investments and guarantee a reliable energy supply at every transition step. Energy 
+system models must be operated with a technology-rich portfolio in high temporal and spatial resolution to 
+properly estimate the impact of renewable energy variability and the role of storage and sector coupling tech-
+nologies. Consequently, modern energy system models comprise tens of millions of variables and constraints, and 
+demand vast computational resources for optimisation. This study proposes a hierarchical approach to run 
+simulations based on partial regional disaggregation as a solution to decrease computational time without sig-
+nificant change in the modelling results. The discussed method is tested on the case of Japan and shows that the 
+hierarchical approach allows for a reduction in computational time by a factor of 2.3–3.3 compared to the full 
+spatial resolution simulation approach, while the installed capacities and costs of the energy system stay within a 
+±3% range for all steps of the transition through 2020 to 2050.   
+1. Introduction 
+Evidence of the ongoing climate change process is strong and is hard 
+to disregard [1]. Together with improved understanding of the 
+long-term effect on civilisation and the role of anthropogenic green-
+house gas (GHG) emissions in the climate change process, the interna-
+tional 
+community, 
+individual 
+countries, 
+cities, 
+societies 
+and 
+stakeholders have been pushed to foster GHG emissions reduction efforts 
+across all human activities, in particular in the energy system, which 
+contributes the highest share [1]. The global community has pledged 
+GHG emissions targets to keep the global warming effect at the level of 
+1.5 ◦C, as aimed for in the Paris Agreement. This target will ultimately 
+demand a rapid reduction of GHG emissions in the coming decades and 
+full carbon neutrality by 2050, or even negative CO2 emissions in the 
+2040s and beyond. Most importantly, the target demands fast and sharp 
+changes in the energy system, as it is responsible for about 80% of global 
+GHG emissions [2]. Thus, the energy transition will play a vital role in 
+the defossilisation of energy and the economy in general on the way to 
+full carbon neutrality. The transition towards renewable energy (RE) 
+does not simply fit the emission reduction narrative, it also leads to a 
+low-cost energy supply and lower reliance on energy imports, as the 
+access to low-cost RE sources [3,4], the ongoing progress in energy 
+storage technology, modern electrified mobility, and industrial pro-
+cesses are new drivers for the energy transition. Energy system electri-
+fication will lead to comprehensively integrated and coupled energy 
+sectors [5,6] with new emerging technologies such as CDR [7] and 
+desalination [8] and, consequently, to significant growth of the overall 
+system efficiency and further energy cost decline [8,9]. 
+The energy transition towards higher shares of renewables in the 
+energy supply, higher electrification, and comprehensive energy sector 
+integration is a sophisticated process that demands significant time and 
+investments. That makes the proper long-term planning extremely 
+important to choose an optimal transition pathway that avoids stranded 
+investments and reaches the climate targets in time. Many energy system 
+models have been developed in recent years to support decision making 
+[10,11]. The main trend in energy system modelling development is the 
+growing complexity of the applied models following important re-
+quirements. First, a high temporal resolution is required to properly 
+consider the effects of the variable RE (VRE) sources and estimate de-
+mand in storage capacity and other flexibility options, and hourly 
+* Corresponding author. 
+E-mail address: dmitrii.bogdanov@lut.fi (D. Bogdanov).  
+Contents lists available at ScienceDirect 
+Energy 
+journal homepage: www.elsevier.com/locate/energy 
+https://doi.org/10.1016/j.energy.2023.127213 
+Received 27 September 2022; Received in revised form 10 January 2023; Accepted 12 March 2023   
+Energy 273 (2023) 127213
+2
+resolution has been found to allow adequate simulation of the operation 
+of VRE based systems [12]. For fossil-based systems and systems with 
+high shares of fossil fuels, less advanced annual balancing models in 
+hourly resolution can still be used [10,13]. Second, a multi-nodal 
+approach to enable a sufficiently high spatial resolution must be 
+considered to avoid any copper plate effect [14,15], which leads to 
+averaging of RE generation profiles and leads to an underestimation of 
+RE generation variability [16,17] and grid interconnection costs [5]. 
+System integration simulation requires technology-rich portfolios of 
+models, the broad application of sector coupling technologies, and 
+simulation of all energy system sectors in one run. That can be seen in 
+the energy system models portfolio, as shown by Lopez et al. [18]. Most 
+of the active models use full hourly resolution (EnergyPLAN [19,20], the 
+LUT Energy System Transition Model (LUT-ESTM) [8,21–23], HOMER 
+[24], REMix [25], AU model [15], PyPSA [26], LOADMATCH [27], 
+NEMO [28], ISA model [29], H2RES [30]) or at least a time-slices 
+approach (TIMES [31], GENeSYS-MOD [32]). More than half of the 
+models introduced a multi-nodal approach to simulation. Also, models 
+are developed to introduce more energy sectors rather than study only 
+the power sector and model the individual sectors in higher detail, for 
+example, tracing non-energetic demand of fuels and chemicals in 
+various industries, and CO2 emissions from limestone processing in the 
+latest versions of LUT-ESTM [23], PyPSA [33], or versions of TIMES 
+[34]. Furthermore, the transition pathway optimisation demands energy 
+system optimisation for each step of the transition, for the case of a 
+myopic approach, or all the transition at once, for the case of a perfect 
+foresight approach. Independent of the approach, the transition opti-
+misation leads to longer modelling time. 
+Such model development and expansion and continued improve-
+ments of all these aspects lead to the continuous growth of the model 
+size. In the LUT-ESTM tool, the number of variables is already in the 
+order of millions for single node and tens of millions for multi-node 
+simulations, and that consequently increases the demand for computa-
+tional capacities and the time for optimisation. Despite the growing 
+computational capacities, novel approaches in energy system modelling 
+are needed to decrease energy systems simulation complexity without 
+loss of the RE technologies simulation reliability and allow further 
+growth in detailing of energy system models, in particular broader 
+technology portfolios, higher regional, and temporal resolution. New 
+methods to enable such high resolution for more detailed studies 
+without increase in model complexity, or to reduce modelling time, 
+represent the major research gap in the field of energy system transition 
+research. 
+Preferably such methods should be applicable to any existing model, 
+as these concentrate on the better refining of the inputs in general rather 
+than the model itself. Currently, most efforts are concentrated on the 
+assessment of the impact of different time-series aggregations methods 
+as discussed in Kotzur et al. [35] and the development of novel methods 
+of temporal aggregation to increase the reliability of the time-series 
+approach as researched in Hoffmann et al. [36]. Teichgraeber and 
+Brandt [37] provide an overview of existing time-series aggregation 
+methods. Other studies propose advanced methods of an optimal 
+regional structure definition and spatial resolution reduction as 
+described in Frysztacki et al. [38] to decrease models’ complexity. The 
+computational time reduction can reach a factor of up to 50 for the 
+times-series case [35], or even higher [37]. The impact of spatial reso-
+lution reduction claimed to be significant while the value depends on the 
+applied resolution [38,39] and it can be seen that higher spatial reso-
+lution leads to better results. However, spatial resolution reduction 
+naturally leads to significant deviations in the results of energy system 
+optimisation with high shares of renewables [39]. Similarly, different 
+methods of temporal aggregation lead to sensitive changes in the system 
+optimisation results as can be seen in numerous studies [35,40]. For 
+temporal aggregation Teichgraeber and Brandt [37] highlight different 
+sources of errors, while the proper choice of the period represents the 
+main challenge of time-series aggregation, proper linking and 
+interaction of different time-series within the model has to be reached to 
+allow credible results. The target is to find methods that allow a 
+complexity reduction without change in simulation results and without 
+modifications of the main model. 
+This article presents a novel method to reduce the energy system 
+transition modelling complexity without reduction of the results reli-
+ability. This study introduces a novel hierarchical approach in multi- 
+regional studies which is supposed to be applicable to any model with 
+multi-nodal capabilities, thus filling this research gap. This novelty al-
+lows substituting the simulation of an integrated multi-regional energy 
+system by a simulation in a reduced regional resolution (macro-region 
+level) followed by simulations in full regional and hourly resolution for 
+each of the macro-regions in order to combine the reduced computa-
+tional time of lower spatial resolution and the improved quality of re-
+sults in high resolution. Despite the increased number of optimisation 
+runs, the models on each level contain a smaller number of variables and 
+are optimised faster, leading to reduced integrated simulation time for a 
+given energy system. To the authors’ knowledge, such a method has not 
+yet been discussed and examined for integrated energy system model-
+ling. The main motivation behind this novel approach is to significantly 
+reduce the model size at each simulation step and the overall simulation 
+time without notable change in the transition pathway or structure of 
+the modelled energy system, in order to allow energy system transition 
+studies in higher regional resolution. 
+2. Methods and data 
+The proposed method is applied to the LUT-ESTM [8,22,23], which is 
+designed to simulate energy transitions for integrated power, heat, 
+transport, and industry sectors. For each time step, the model defines an 
+optimal structure of an integrated energy system and operation modes of 
+each system element to reach a least cost optimum of the entire energy 
+system under given financial and technical assumptions as well as region 
+or scenario specific conditions, which consider societal choices. The 
+LUT-ESTM performs linear optimisation for the full energy system, or 
+specific sectors, in an hourly resolution for each step of the transition, 
+which increases the reliability of the results in comparison to annual 
+energy demand balancing or time series-based approaches. For the given 
+study, the LUT-ESTM used the Mosek optimiser (version 7) [41]. The 
+LUT-ESTM allows for energy system simulation in high spatial resolu-
+tion with individual regional energy systems interconnected with high 
+voltage alternating current (HVAC) and high voltage direct current 
+(HVDC) grids. The target of the optimisation is the minimisation of the 
+total integrated energy system cost. The model describes the transition 
+of power, heat, transport, and industry sectors and covers all energy 
+demand and most anthropogenic GHG emissions. The model defines the 
+optimal structure and operation of the integrated energy system to 
+satisfy the given hourly demand of electricity, space heat, and domestic 
+hot water demand, energy demand of the transport sector, and industrial 
+demand (cement, steel, chemicals, aluminium, pulp and paper, desali-
+nation, and other industries) at each step of the transition. This opti-
+misation also considers the energy demand, available resources, and 
+active capacities installed in previous steps. Costs of the system are 
+calculated as the sum of the annualised capital and operational expen-
+ditures, including ramping costs, fuel costs, and CO2 emissions pricing 
+for all considered technologies. Energy system transitions are typically 
+performed for the year 2020–2050 with 5-year time steps. At each step 
+of the transition modelling, the existing active capacity for each tech-
+nology defines the lower limit for the respective technology capacity. 
+The active capacity existing in the system is defined at each time step for 
+each region based on the data of the capacity installed at previous steps 
+and the lifetime for a given technology at given commissioning years as 
+presented in Eq. (1). 
+D. Bogdanov et al.                                                                                                                                                                                                                              
+Energy 273 (2023) 127213
+3
+∀t ∈ [tech] existingCapt,year =
+∑
+year
+y=1960
+newCapt,y •
+((
+y + Nt,y
+)
+> year
+)
+(1)  
+wherein: y, year - years, t, tech - generation and storage technologies, 
+existingCapt, year - existing active capacity for technology t at modelled 
+year, newCapt,y - new built capacity for technology t at previous year y, 
+Nt,y) - lifetime of the capacity of technology t built in year y. 
+Then, the model optimisation determines the optimal regional ca-
+pacity of the technologies in the given year, which defines the newly 
+built capacity needed by the system as defined in Eq. (2). 
+∀t ∈ [tech] newCapt,year = instCapt,year − existingCapt,year
+(2)  
+wherein: year - modelling year, t, tech - generation and storage tech-
+nologies, newCapt, year - new built capacity for technology t at given year, 
+instCap t,year - total capacity for technology t at given year as defined by 
+the model optimisation, existingCapt, year - existing active capacity for 
+technology t at modelled year. 
+While the target function for the optimisation only considers the 
+financial assumptions for the given year, the energy costs calculations in 
+the post-processing phase consider the legacy of the capacity in-
+stallations and the financial assumptions in the periods when these ca-
+pacities were built. For the variable operational expenditures (opex) 
+calculations, the energy output of technologies is split accordingly to the 
+capacity age structure as defined in Eq. (3). 
+wherein: year - modelling year, y - all years from 1960, t, tech - gener-
+ation and storage technologies, EgenSplit,t,y - annual generation by tech-
+nology t by capacity built at year y, newCapt,y - new built capacity for 
+technology t built at year y, Egen,t,year - annual generation by technology t 
+defined by the model for the modelling year, instCap t,year - total capacity 
+for technology t at given year as defined by the model optimisation, Nt,y - 
+lifetime of the capacity of technology t built at year y. 
+The annualised cost of the system at the given year is calculated 
+accordingly to Eq. (4).  
+wherein: year - modelling year, y - all years from 1960, t, tech - gener-
+ation and storage technologies, CAPEXr,t,y - capital expenditures for 
+technology t in region r and year y, crfr,t,y - capital recovery factor for 
+technology t in region r and year y, OPEXfixr,t,y - fixed operational ex-
+penditures for technology t in region r and year y, OPEXvarr,t,y - variable 
+operational expenditures technology t in region r and year y, newCapr,t,y - 
+new built capacity for technology t built in region r at year y, Nt,y - 
+lifetime of the capacity of technology t built at year y, EgenSplit,r,t,y - annual 
+generation by technology t in region r in year by capacity built at year y, 
+rampCostt - cost of ramping of technology t, totRampr,t - sum of power 
+ramping values during the year for the technology t in the region r. 
+This historical cost calculation approach considering the legacy 
+system is also used for other cost calculations including levelised cost of 
+electricity (LCOE) and split of LCOE in sub-categories. 
+The model optimiser’s target function represents the minimisation of 
+the annualised cost of the system (see Eq. (5)). The existing capacities 
+represent the lower limit for the respective technologies capacity, thus 
+the technologies capex on previous steps of transition has no impact on 
+the system optimisation at the given step:  
+wherein: year - modelling year, t, tech – electricity and heat generation, 
+storage, power-to-X, tt, transm - electricity transmission technologies, 
+CAPEXr,t,year - capital expenditures for technology t in region r and year, 
+crfr,t,year - capital recovery factor for technology t in region r and year y, 
+OPEXfixr,t,year - fixed operational expenditures for technology t in region 
+r and year, OPEXvarr,t,year - variable operational expenditures technology 
+t in region r and year, instCap t,year - total capacity for technology t at 
+given year as defined by the model optimisation, Egen,r,t,year - annual 
+generation by technology t in region r in year, rampCostt - cost of 
+ramping of technology t, totRampr,t - sum of power ramping values 
+during the year for the technology t in the region r, lengthl - length of line 
+l in between regions. 
+The capacities must be sufficient to satisfy the energy (electrify, heat, 
+e-fuels and chemicals), transport services and industrial products de-
+mand for every hour of the year as defined in balance equations for 
+electricity, heat and other energy carriers for each hour of the year. 
+Transmission grids between regions play especially important role in 
+simulation of the energy systems with high shares of RE, allowing to 
+access the best energy resources over the country. The transmission 
+grids between the regions and related costs are fully covered in the 
+model: the model defines the optimal capacity of HVAC and HVDC 
+∀t ∈ [tech], ∀y ∈ [1960…year] EgenSplit,t,y = Egen,t,year •
+(
+newCapt,y •
+((
+y + Nt,y
+)
+> year
+)) /
+instCapt,year
+(3)   
+annualCostHistyear =
+∑
+reg
+r=1
+∑
+tech
+t=1
+∑
+year
+y=1960
+(
+CAPEXr,t,y •crfr,t,y +OPEXfixr,t,y
+)
+•
+((
+newCapr,t,y •
+((
+y+Nt,y
+)
+>year
+))
++OPEXvarr,t,y •EgenSplit,r,t,y +rampCostt •totRampr,t
+(4)   
+min
+( ∑
+reg
+r=1
+∑
+tech
+t=1
+(
+CAPEXr,t,year • crfr,t,year + OPEXfixr,t,year
+)
+• instCapt,year + OPEXvarr,t,year • Egen,r,t,year + rampCostt • totRampr,t
++
+∑
+lines
+l=1
+∑
+transm
+tt=1
+(
+CAPEXl,tt,year • crfl,tt,year + OPEXfixl,tt,year
+)
+• instCaptt,year • lengthl
+)
+(5)   
+D. Bogdanov et al.                                                                                                                                                                                                                              
+Energy 273 (2023) 127213
+4
+Fig. 1. Integrated energy system structure scheme and the model flowchart.  
+D. Bogdanov et al.                                                                                                                                                                                                                              
+Energy 273 (2023) 127213
+5
+power lines considering the length of the lines, the capacity of the AC/ 
+DC converter pairs for HVDC lines, the losses in the power lines and 
+converters. Distribution grid costs within the region are not included in 
+the target function of the model, though the distribution losses are 
+considered in the demand estimation. 
+More details on LUT-ESTM are provided in the supplementary ma-
+terial and the modelling approach is described in full in previous pub-
+lications [22,23]. The model is based on the previous version presented 
+in Bogdanov et al. [23]. The main modifications are the introduction of 
+smart charging and vehicle-to-grid (V2G) function for battery-electric 
+vehicles (BEV) and plug-in hybrid vehicles (PHEV). Additionally, the 
+model considers the possibility of international e-fuels trading in terms 
+of e-fuels imports. The simplified scheme of the integrated system in the 
+LUT Energy System Transition Model is shown in Fig. 1. 
+2.1. Hierarchical approach to the energy system modelling 
+Modelling the entire energy system in hourly resolution with a 
+technology-rich portfolio can be demanding, especially in multi-node 
+simulations. The regional structure for a transition study with high 
+shares of RE should be defined accurately to consider possible regional 
+climate differences and in the right spatial resolution to avoid under-
+estimating grid costs, averaging RE generation profiles, and thus 
+underestimating the storage and flexible generation capacities. The 
+regional structure should also match the regional division of the country 
+to allow utilisation of the existing statistical data for inputs collection 
+and facilitate the results analysis and comparison with actual data. At 
+the same time, the number of sub-regions should not exceed a certain 
+number to guarantee successful model simulation in an adequate 
+amount of computation time. 
+2.1.1. Hierarchical simulation sequence 
+The proposed method combines simulations in lower and higher 
+spatial resolution in order to integrate the reduced simulation time 
+typical for the modelling in lower spatial resolution and high quality of 
+results which can be acquired considering higher spatial resolution. The 
+proposed hierarchical simulation sequence for the energy system 
+modelling comprises four steps.  
+1. The first step (full resolution definition) is the definition of the 
+optimal spatial resolution and respective data preparation. The 
+application on the case of Japan leads to statistical data collection at 
+the prefecture level and partially for the nine electric power com-
+panies (EPCOs) operating in mainland Japan, excluding the isolated 
+Okinawa EPCO. Integrated energy system modelling in hourly res-
+olution and a technology-rich portfolio would not be possible for the 
+47 prefectures level, so the input data was structured for the nine 
+EPCO areas that normally follow prefectures border; only Shizuoka is 
+divided between Tokyo and Chubu EPCOs. Finally, the territory of 
+mainland Japan is represented in 9 sub-regions: Hokkaido, Tohoku, 
+Tokyo, Hokuriku, Chubu, Kansai, Chugoku, Shikoku, and Kyushu as 
+described in Eq. (6). 
+R1 ∪ R2 ∪ R3 ∪ R4 ∪ R5 ∪ R6 ∪ R7 ∪ R8 ∪ R9 ∈ J
+(6)  
+wherein: R1, R2… R9 represent individual EPCO areas and J – the whole 
+mainland Japan.  
+2. In the second step (aggregation to macro-regions and simulation), 
+the spatial resolution is decreased to reduce the number of regions 
+and the respective model complexity. The definition of these macro- 
+regions must be aligned with the local conditions for balance of the 
+regions and comparable resource conditions of the aggregated sub- 
+regions. For the case of Japan, this leads to three macro-regions: 
+Three northeast sub-regions (Hokkaido, Tohoku, and Tokyo EPCOs 
+areas) were aggregated into one Northeast region, as the grid 
+frequency in these sub-regions differs from the rest of the country, 
+and all these sub-regions possess better than average wind resources. 
+Three central sub-regions (Hokuriku, Chubu, and Kansai) are 
+aggregated into the Centre macro-region. Kyushu, Chugoku, and 
+Shikoku sub-regions are aggregated into the Southwest macro- 
+region. Then, the energy system transition is modelled for the 
+reduced regional structure consisting of only 3 macro-regions, as 
+described in Eq. (7). The results of this simulation represent the 
+pathway of the transition, and, for each time step of the transition, 
+the results define the optimal energy system structure and power 
+flows between the macro-regions as described in Eq. (8). Though the 
+results of the simulation in the reduced spatial resolution suffer due 
+to an underestimated variability of the RE resources and do not 
+present detailed information on the RE installation distribution in-
+side the macro-regions, the data on the power flows among the 
+macro-regions provides insights on the energy exchange inside the 
+country. 
+McR1 ∪ McR2 ∪ McR3 ∈ J
+(7)  
+ELgenmc,h − ELdemmc,h − ELcurtmc,h =
+∑
+mcn
+ELexpmc,mcn,h
+•
+(
+1 − glmc,mcn
+)
+− ELimpmc,mcn,h •
+(
+1 − glmc,mcn
+)
+(8)  
+wherein: McR1, McR2, McR3 represent macro-regions and J – the whole 
+mainland Japan. mc – macro-region, mcn – neighbouring macro-region, 
+h - hour of the year, ELgen – electricity generation, ELdem – electricity 
+demand, ELcurt – electricity curtailment (excess), ELexp – electricity 
+exports, ELimp – electricity imports, gl – grid losses.  
+3. In the third step (separate macro-regions solutions) of the simulation 
+sequence, each of the macro-regions is modelled in full regional 
+resolution (Eqs. (9)–(11)). Each macro-region is modelled individu-
+ally as an energy island, the power flows from the results of the 
+simulation in reduced spatial resolution (second step) are added to 
+the power balancing equations of the bordering sub-regions (Eq. 
+(12)) to consider electricity exchange between macro-regions. If the 
+macro-regions are interconnected via several sub-regions (i.e. 
+Northeast and Central macro-regions are connected by the Tokyo- 
+Chubu and Tohoku-Hokuriku lines), the energy flows from results 
+of the second step are divided among these sub-regions accordingly 
+to existing grid interconnection capacity, or equally if existing ca-
+pacity is not sufficient and new grids have to be built. Finally, the 
+energy flows between macro-regions are considered in the additional 
+flows added to the sub-region’s electricity balance constraint as 
+shown in Eq. (13). 
+R1 ∪ R2 ∪ R3 ∈ McR1
+(9)  
+R4 ∪ R5 ∪ R6 ∈ McR2
+(10)  
+R7 ∪ R8 ∪ R9 ∈ McR3
+(11)  
+ELgenr,h − ELdemr,h − ELcurtr,h + ELaddr,h
+=
+∑
+rn
+ELexprn,t • glr,rn,t − ELimprn,t • glr,rn,t∀r, rn⊂McR
+(12)  
+∑
+r
+ELaddr,h =
+∑
+mcn
+ELexpmcn,t • glmc,mcn,t − ELimpmcn,t • glmc,mcn,t
+(13)  
+wherein: R1, R2… R9 represent individual EPCO areas, McR1, McR2, 
+McR3 represent macro-regions. r – sub-region, rn – neighbouring sub- 
+region, McR – macro-region to which these region and neighbouring 
+regions belong to, h - hour of the year, ELgen – electricity generation, 
+ELdem – electricity demand, ELcurt – electricity curtailment (excess), 
+ELadd – additional electricity flows representing the electricity flows 
+D. Bogdanov et al.                                                                                                                                                                                                                              
+Energy 273 (2023) 127213
+6
+between macro-regions, ELexp – electricity exports, ELimp – electricity 
+imports, gl – grid efficiency, mc – macro-region to which region r – be-
+longs to, mcn – neighbouring macro-region.  
+4. In the fourth step (full resolution results), the results of each macro- 
+region simulation in higher spatial resolution are tied back to 
+represent the results of the fully integrated energy system of a 
+country or region (see Eq. (14)). For the case of Japan, the results of 
+all three macro-region simulations are merged, and regional energy 
+system structures, operational results, grid structures, and operation 
+inside macro-regions are directly taken from the results. The power 
+flows between sub-regions at the macro-regions borders and 
+respective grid capacities are calculated based on the simulation 
+results in reduced spatial resolution (second step). Merged results 
+fully reproduce the format of the results of the simulation in full 
+regional resolution. The electricity flows for the reconstructed results 
+in 9 sub-regions resolution are presented in Eq. (15). 
+R1 ∪ R2 ∪ R3 ∪ R4 ∪ R5 ∪ R6 ∪ R7 ∪ R8 ∪ R9 ∈ J
+(14)  
+ELgenr,h − ELdemr,h − ELcurtr,h =
+∑
+ELexprn,t • glr,rn,t − ELimprn,t
+• glr,rn,t∀r⊂J
+(15)  
+wherein: R1, R2… R9 represent individual EPCO areas and J – the whole 
+mainland Japan, r – sub-region, rn – neighbouring sub-region, h - hour of 
+the year, ELgen – electricity generation, ELdem – electricity demand, 
+ELcurt – electricity curtailment (excess), ELexp – electricity exports, 
+ELimp – electricity imports, gl – grid efficiency. 
+A schematic representation of the hierarchical simulation sequence 
+applied on the case of Japan is presented in Fig. 2. 
+This approach can be used for simulation in even higher resolution, 
+as the third step could be repeated to further increase the resolution and 
+simulate each region in prefectures resolution for the case of Japan. Such 
+a level of detail was not performed in this study as a level of nine sub- 
+regions was considered sufficient, and verification via a classic simula-
+tion in 47 prefectures resolution could not be performed due to too high 
+complexity. The level of detail could be further increased by embedding 
+Japan in an energy system transition for the whole Northeast Asia region 
+[21,42], which would also enable modelling of coupled energy systems 
+for the entire major region. In general, the hierarchical approach allows 
+to model an energy system in high geographic detail as a sequence of 
+two or more steps so that a highly complex simulation problem can be 
+separated into a multi-level simulation task, for instance in a five level 
+approach on the case of Japan: Northeast Asia as a global major region 
+(first level), Japan as a country in Northeast Asia (second level), the 
+three macro-regions of Japan (third level), then nine sub-regions of 
+Japan (fourth level), the 47 prefectures of Japan (fifth level). That 
+principle can be applied to all regions in the world and independently of 
+the used energy system model and that would allow to model the world 
+in thousands of regions [7]. 
+2.1.2. Variable renewable energy profiles for hierarchical simulations 
+The RE profiles for individual sub-regions are calculated based on 
+weather data for the year 2005 taken from NASA [43,44] and repro-
+duced to a higher resolution by the German Aerospace Centre [45]. The 
+regional profiles calculation routine is described in Ref. [21]. In this 
+routine, the locations with higher full load hour (FLh) values are given 
+higher weights in the regional profiles calculations to reflect the reality 
+that RE projects are developed first in locations with attractive resource 
+Fig. 2. Schematic representation of the hierarchical simulation sequence for the case of Japan.  
+D. Bogdanov et al.                                                                                                                                                                                                                              
+Energy 273 (2023) 127213
+7
+conditions. 
+Applied to macro-regions, this routine can lead to an increased in-
+accuracy in the RE profiles estimation. The RE potential can be both 
+overestimated if the overall macro-region profile is strongly influenced 
+by the RE conditions in the best locations, even if these locations are 
+distant from the main demand centres, or underestimated, if the better 
+than average locations are concentrated in part of one of the sub-regions 
+and these locations’ potential is averaged with the potential of locations 
+in other sub-regions. Consequently, in the first case, the real cost of RE 
+generation would be underestimated by neglecting additional trans-
+mission grid costs, and in the second case, the average FLh value in the 
+macro-region would be too low, making the RE generation less 
+economically attractive. In any case, the hourly capacity factor profiles 
+averaged over bigger areas will be smoothened and lead to an under-
+estimation of short-term storage in the system. 
+The impact of the RE resource aggregation effect can be reduced if 
+the RE profiles for macro-regions are calculated as the average or 
+weighted average of sub-regional RE profiles. The same challenge is still 
+present on the sub-regional level because distribution grid costs are not 
+considered, though the order of a potential error may be reduced. In the 
+case of the weighted average approach, the weights of the individual 
+sub-regions in the total average profile for the macro-region are esti-
+mated based on the regional energy system parameters, such as annual 
+power demand, peak load, the average length of grid connection to 
+neighbouring sub-regions’ demand centres, RE technologies LCOE in 
+each of the sub-regions, and average LCOE value for the whole macro- 
+region (as if all sub-regions were weighted evenly). Formulas for the 
+weights are presented in the supplementary material (‘Macro-regions 
+data preparation’). Though such a simplified approach obviously cannot 
+estimate the real distribution of the RE capacities inside macro-regions, 
+it is able to capture the main aspects of the distribution: more capacity 
+will be installed in the region with much better RE resources than other 
+sub-regions and it will be located closer to main demand centres. 
+Conversely, in the case of evenly distributed resources and long dis-
+tances between regional demand centres, the capacity will be distrib-
+uted more evenly. For the proposed regional structure of Japan, the 
+average and weighted average approaches resulted in very similar 
+numbers, and, considering that the weights formula that was used is the 
+result of approximation of global numbers, the simple average formula 
+with equal weights was applied. Table 1 presents the results of the RE 
+profiles calculations for three main cases.  
+1. RE profiles calculated for 9 sub-regions as described in Ref. [21].  
+2. RE profiles calculated for 3 macro-region as described in Ref. [21].  
+3. RE profile for macro-region calculation as an average of regional 
+profiles. 
+Calculation of the profiles for macro-regions based on regional pro-
+files allows for a significant reduction in the cooper plate effect and 
+avoids unrealistically high estimation of RE technologies’ FLh for macro- 
+regions. 
+2.2. Applied scenario variations 
+The energy system transition is simulated considering the ambitious 
+Best Policy Scenario (BPS) with a fast introduction of RE generation 
+technologies in power generation and fast electrification of heat and 
+transport sectors. The BPS definition is the same as used in Ref. [46] and 
+Bogdanov et al. [47], who analysed this scenario in comparison with 
+other less ambitious pathways. The BPS aims to reach the governmental 
+target for 2030 and zero CO2 emissions from the energy sector by 2050. 
+At least 35 GW of solar photovoltaics (PV) must be installed in the years 
+2020–2025, and, by 2030, the share of RE in electricity generation must 
+reach 40%, wherein the coal and nuclear power plants are assumed to be 
+phased out by 2030. No additional nuclear reactors are restarted, and no 
+new coal, oil, or nuclear power plants are commissioned. Coal use in 
+industrial heat and processes is allowed until a full fossil ban in 2050. 
+Commissioning of new gas-fired power plants is allowed; however, in 
+later steps of the transition, these power plants switch to using sus-
+tainable e-methane and bio-methane. 
+In the transport and heat sectors, the BPS assumes rapid electrifica-
+tion: fast growth of electrical space and water heating shares in resi-
+dential and commercial sectors, and fast reduction of internal 
+combustion engine (ICE) vehicles shares in road transportation. By 
+2050, the share of battery-electric vehicles (BEV) in passenger trans-
+portation is assumed to exceed 76%, while the share of ICE and plug-in 
+hybrid electric vehicles (PHEV) drops to about 13%. In freight trans-
+portation, the BEV share in 2050 is assumed to reach 67%, while ICE and 
+PHEV still play a significant role with 26% of all freight transportation. 
+Shares of hydrogen powered fuel cell electric vehicles (FCEV) are 
+assumed to reach around 10% in passenger and 6% in freight road 
+transportation. Rail transport is assumed to be fully electrified, whereas 
+for marine and aviation transport, a conservative assumption of zero 
+direct electrification is considered. To enable a gradual introduction of 
+green fuels in the transport segments, the scenario sets minimum shares 
+of green fuels consumption: at least 43% of liquid fuels in 2040 and 76% 
+in 2045. Sustainable biofuels and locally produced and imported 
+Fischer-Tropsch fuels are considered as such green fuels. Defossilisation 
+of the energy system is supported by the growth of the carbon pricing 
+from 2.4 €/tCO2 in 2020 to 150 €/tCO2 in 2050. 
+The financial and technical assumptions for the scenario, RE poten-
+tial and energy demand assumptions for the scenario and respective 
+references to the sources are presented in the supplementary material 
+(Tables S1-S25) for each of the transition steps. The weighted average 
+cost of capital (WACC) is set to 7% for all technologies. 
+This scenario is simulated using three different versions of the model. 
+Table 1 
+The solar PV and wind turbines full load hours.  
+Technology 
+Macro-region 
+Northeast 
+Centre 
+Southwest 
+Standard RE profiles calculation routine for 9 sub-regions 
+PV 
+1264 
+1256 
+1382 
+1232 
+1373 
+1334 
+1345 
+1342 
+1393 
+Onshore wind 
+3272 
+3094 
+2254 
+3004 
+2318 
+2998 
+3175 
+1561 
+3144 
+Offshore wind 
+4737 
+4413 
+4976 
+4343 
+4663 
+4323 
+3980 
+4340 
+4514 
+Standard RE profiles calculation routine for 3 macro-regions 
+PV 
+1313 
+1357 
+1380 
+Onshore wind 
+3030 
+2749 
+2930 
+Offshore wind 
+4515 
+4325 
+4153 
+Average of regional profiles with deviation to standard RE profiles 
+PV 
+1300 (−1.0%) 
+1313 (−3.2%) 
+1360 (−1.4%) 
+Onshore wind 
+2873 (−5.2%%) 
+2773 (+0.9%) 
+2627 (−10.3%) 
+Offshore wind 
+4709 (+4.3%) 
+4443 (+2.7%) 
+4278 (+3.0%)  
+D. Bogdanov et al.                                                                                                                                                                                                                              
+Energy 273 (2023) 127213
+8
+1. 9Reg: Standard approach with nine interconnected sub-regions 
+simulation. 
+2. 3Mc_A: Hierarchical approach with macro-regions profiles calcu-
+lated as an average of regional profiles 
+3. 3Mc_St: Hierarchical approach with macro-regions profiles calcu-
+lated based on data in 0.45◦ × 0.45◦ resolution applying the profiles 
+integration per entire macro-region. 
+Outputs of the standard and hierarchical simulations have an iden-
+tical format and are processed using the same scripts to calculate the 
+system cost and other results. 
+3. Results 
+The application of the hierarchical approach to the Japanese energy 
+Fig. 3. Power capacity (top) and electricity generation (bottom) through the transition for the full 9 sub-regions simulation, 9Reg (left), hierarchical simulation with 
+macro-regions RE profiles calculated as average of regional profiles, 3Mc_A (centre), and hierarchical approach with macro-regions RE profiles calculated based on 
+profiles of individual nodes, 3Mc_St (right). 
+Fig. 4. Regional structure of power generation capacity in 2050 for the full nine sub-regions simulation (left), hierarchical simulation with macro-regions RE profiles 
+calculated as average of regional profiles (centre), and hierarchical approach with macro-regions RE profiles calculated based on profiles of individual nodes (right). 
+D. Bogdanov et al.                                                                                                                                                                                                                              
+Energy 273 (2023) 127213
+9
+system transition modelling does not result in a significant change in the 
+results. The transition modelling in 9 regions resolution or applying the 
+hierarchical approach results in a structural change of the energy system 
+of Japan, from a mostly fossil fuels-based energy system to a 100% RE- 
+based system in 2050. However, in all cases, the transition follows the 
+same pathway; for each step of the transition, the energy system struc-
+ture and costs are similar independently of the applied modelling 
+approach. 
+Fig. 3 presents the structure of power capacity and generation 
+through the transition for the standard approach (9Reg) and the com-
+parison with the results using the hierarchical approach with macro- 
+regions RE profiles calculated as an average of regional profiles 
+(3Mc_A) and the hierarchical approach with macro-regions RE profiles 
+calculated based on profiles of individual nodes (3Mc_St). The results for 
+these three modelling designs are almost identical, in case of hierar-
+chical simulations the total power generation capacity is 11 GW (1.2%) 
+higher, mostly due to 1.2–1.6% higher wind capacity in the case of 
+simulations based on a hierarchical approach. Correspondingly, wind 
+generation is slightly higher in the case of the hierarchical simulation. 
+Results in 3 macro-regions resolution (the second step of the hierarchical 
+simulation) have shown higher deviations, the total power generation 
+capacity is 20–32 GW (2.2–3.5%) higher compared to results of the 
+standard modelling in 9 regions resolution, in particular due to wind 
+power capacity that is 6.1–6.6% higher, as it is expected for the results in 
+lower special resolution. Higher deviations are seen for the case of ca-
+pacity factors of macro-regions calculated as an average of the 3 sub- 
+regions’ capacity factors. The capacity and generation of the solar PV 
+capacities do not change. Across scenarios, all available PV potential is 
+utilised by the end of the transition as PV is the least cost source of 
+electricity in 2050. 
+Though the role of wind generation increases in the case of the hi-
+erarchical approach, it affects the onshore and offshore wind generation 
+differently: the capacity of offshore wind increases while the total ca-
+pacity of onshore wind decreases. Likewise, the regional distribution of 
+the generation capacities changes. In the case of the hierarchical 
+approach simulation, the system tends to increase power generation 
+capacities in northeastern sub-regions with high wind potential: Hok-
+kaido and Tohoku, while reducing the capacity of the local onshore and 
+offshore wind generation in southwestern sub-regions where wind tur-
+bines FLh are significantly lower. Fig. 4 presents the generation capac-
+ities structure in the sub-regions of Japan for the three scenarios. 
+At the second step of the hierarchical simulations, the system un-
+derestimates the cost of the electricity transmission inside the region. 
+Annualised cost of the transmission grid in 2050 (including annualised 
+capital costs and grid losses of the transmission grids between regions) 
+on macro-regions step is 4–4.8 b€, while in full regional resolution the 
+annualised cost of grids in 2050 is 11 b€. That has a significant impact 
+for Japan due to the excellent wind generation potential in the distant 
+Fig. 5. Regional structure of power generation and power flows through the grids in 2050 for the full nine sub-regions simulation (left), hierarchical simulation with 
+macro-regions RE profiles calculated as average of regional profiles (centre), and hierarchical approach with macro-regions RE profiles calculated based on profiles of 
+individual nodes (right). 
+D. Bogdanov et al.                                                                                                                                                                                                                              
+Energy 273 (2023) 127213
+10
+region of Hokkaido. Considering the low cost of electricity production 
+and underestimated cost of the grid connection from Hokkaido to the 
+Tokyo region and further to the south, hierarchical simulation results in 
+higher electricity transmission from north to south than the full nine 
+sub-regions simulation case, as induced in the second step of the simu-
+lation and thus as inherited power flows between macro-regions at the 
+third step of the hierarchical simulation. In the final result of the hier-
+archical simulation, the annualised cost of grids in 2050 reaches 
+11.1–11.9 b€, slightly higher than for the full 9 sub-regions simulation. 
+Fig. 5 shows the electricity generation and power flows through the 
+grids in three simulation cases. 
+It is important to mention that most of grid investments occur in 
+2045–2050 when the local RE resources in Central and Southwestern 
+regions are mostly exploited while the fossil energy supply is reduced to 
+zero. While the system simulated with a hierarchical approach tends to 
+rely more on electricity imports from the northeast sub-regions of 
+Hokkaido and Tohoku, the role of storage in electricity supply decreases. 
+At the same time, electricity curtailment increases, especially in the 
+northeast sub-regions. The electricity supply from northeast sub-regions 
+does not simply cover the RE potential deficit in southern and central 
+sub-regions, rather, it contributes to energy supply balancing to 
+compensate for local RE supply variability. Additionally, the system 
+tends to use more gas storage in the form of hydrogen and methane. The 
+heat systems of all sub-regions are not interconnected; thus, a different 
+simulation approach has no direct impact on the heating system, only 
+indirect due to changes in the electricity generation profiles and LCOE in 
+the sub-regions. Fig. 6 displays the heat capacity and generation struc-
+ture by sources for the three simulation cases. 
+In the cases of the hierarchical approach the installed capacity is 
+slightly higher at 2–18 GW, with biggest deviations in the 3Mc_St case, 
+Fig. 6. Heat capacity (top) and generation (bottom) through the transition for the full 9 sub-regions simulation, 9Reg (left), hierarchical simulation with macro- 
+regions RE profiles calculated as average of regional profiles, 3Mc_A (centre), and hierarchical approach with macro-regions RE profiles calculated based on pro-
+files of individual nodes, 3Mc_St (right). 
+Table 2 
+Energy carriers and system cost for the transition scenarios calculated by the three different modelling designs.   
+Unit 
+Scenario 
+2020 
+2025 
+2030 
+2035 
+2040 
+2045 
+2050 
+LCOE 
+[€/MWhel] 
+9Reg 
+106.9 
+110.5 
+119.4 
+108 
+88.1 
+77.9 
+68.2 
+3Mc_A 
+106.9 
+110.6 
+122.3 
+112.3 
+89.7 
+78.9 
+68.4 
+3Mc_St 
+106.9 
+112.1 
+123 
+112.8 
+90.4 
+79.6 
+69.4 
+LCOH 
+[€/MWhth] 
+9Reg 
+33.6 
+38.8 
+40.9 
+40.5 
+42.1 
+49.2 
+61.9 
+3Mc_A 
+33.6 
+38.8 
+41.2 
+40.3 
+42.3 
+49.6 
+60.9 
+3Mc_St 
+33.6 
+39.2 
+41.5 
+40.9 
+42.9 
+50.2 
+62.5 
+LCOEn 
+[€/MWh] 
+9Reg 
+51.3 
+56.8 
+63.3 
+61.9 
+59.7 
+62.1 
+64.8 
+3Mc_A 
+51.3 
+56.8 
+64.1 
+63 
+60.5 
+62.8 
+65.3 
+3Mc_St 
+51.3 
+57.6 
+64.5 
+63.7 
+61.4 
+63.7 
+66.3 
+Total ann. Cost 
+[b€] 
+9Reg 
+206 
+214 
+216 
+191 
+172 
+170 
+167 
+3Mc_A 
+206 
+214 
+219 
+194 
+175 
+172 
+168 
+3Mc_St 
+206 
+217 
+220 
+196 
+177 
+174 
+171  
+D. Bogdanov et al.                                                                                                                                                                                                                              
+Energy 273 (2023) 127213
+11
+mostly due to gas and biomass-based district heating and CHP capac-
+ities, however, the share of these technologies in heat supply is minor, 
+and these technologies are mostly used for peak shaving while the heat 
+supply structure does not really change in the three cases, with total 
+generation deviations within 1%. The results in the three macro-regions 
+resolution (the second step of the hierarchical simulation) show a 
+similar deviation on the level of 4–20 GW. Surprisingly the higher de-
+viation is shown for the 3Mc_A case, the heat generation structure is 
+similar to the one for the nine regions simulations with less than 2% 
+difference in total generation. The transport sector energy demand is 
+predefined by the scenario assumptions and does not change for the 
+studied cases. While some deviations can be noticed, the overall system 
+structure is still very similar, which consequently leads to similar system 
+costs and cost of energy. Table 2 presents the results for the LCOE, 
+levelised cost of heat (LCOH), levelised cost of energy (LCOEn), and total 
+system cost. 
+While the impact of the different approaches can appear negligible 
+for the long-term transition studies, the impact on the computation 
+speed is much more significant. The hierarchical modelling approach 
+shows robustness towards the systems’ overall structure as the differ-
+ence in individual technology capacity or energy costs remain within a 
+±3% range. At the same time, the hierarchical approach leads to a sig-
+nificant reduction of the model size in terms of the number of variables 
+and, consequently, the time of the system optimisation. Table 3 shows 
+the number of variables and optimisation time for the hierarchical and 
+standard approach cases. 
+The optimisation time depends not only on the model structure, 
+number of variables and constraints, and solver parameters, it is also 
+dependent on the data inputs for the model. Despite the same model 
+structure, solver parameters, and hardware used for both hierarchical 
+simulation cases, the RE technologies capacity factors were different, 
+leading to significant variations in optimisation times. Additionally, 
+other processes could also compete for the computational resources of 
+the user workstation and lead to considerable deviation in computa-
+tional time. As a result, the computational time reduction for the hier-
+archical simulation case varies from 2.35 times in the case of the 3Mc_St 
+scenario to 3.3 times in the case of the 3Mc_A scenario compared to the 
+full computational time in full nine sub-regions simulation case. 
+4. Discussion 
+The results of the simulations show that the hierarchical approach 
+for the simulation can lead to a significant reduction in computational 
+time. The hierarchical approach with three macro-regions comprising 
+three sub-regions each reduces the number variables and constraints on 
+each of the simulation steps by a factor of 3 compared to the standard 
+case where the nine sub-regions of Japan are simulated. The reduction of 
+variables and constraints then leads to a reduction of the model size by a 
+factor of 3 for each of the hierarchical simulation steps. That enables the 
+simulation of more complex energy system models, with more 
+comprehensive technological portfolios, more sectors considered and 
+more sector coupling technologies, and higher temporal and spatial 
+resolution. 
+The impact on the optimisation time is lower than the impact on the 
+model size, the reduction of the total optimisation time is in the range of 
+factors of 2.35–3.3, depending on the scenario, which represents a 
+substantial reduction. The time-series approach or spatial resolution 
+reduction methods allow for more significant decreases in computa-
+tional time. For the simulation with nine sub-regions regional structure, 
+the reduction of computational time exceeds the additional time for data 
+preparation for the macro-regions level, though exact time spent on data 
+preparation cannot be defined by authors. The benefits increase, espe-
+cially for research projects where multiple energy transition scenarios 
+aiming for different policy targets are to be studied, initial assumptions 
+are not perfectly defined and changing scenario definitions have to be 
+considered, sensitivity analyses are carried out, etc. Another benefit is 
+improved robustness to hardware and software failure. In the event of a 
+potential workstation restart, the time loss is limited to the time 
+consumed for a certain step of the hierarchical simulation, since the 
+results of the previous step are already saved. Overall, the hierarchical 
+approach has proven itself as an effective way to save time for energy 
+system modelling. 
+The impact on the system structure can be noticed, but it is not 
+significant. The variation of different technology shares in 2050 remains 
+within ±1.5%, and the variation is higher in the 2030s. There, the 9Reg 
+scenario leads to significantly faster defossilisation and higher reliance 
+on onshore wind installations compared to the hierarchical simulation 
+case. Later in the 2040s, the deviations in system structure reduce. 
+The main reason of deviations is the impact of lower spatial resolu-
+tion on the RE potential estimation for the macro-regions step. At that 
+step the deviation of the results is highest and then reduces at the third 
+step of the hierarchical simulation, when each macro-region is modelled 
+in higher spatial resolution. Still some deviations are inherited due to the 
+use of power flows in grids adopted from the macro-regions level. One 
+can see that the highest deviations are seen for the power sector, that 
+relies on VRE electricity generation and is directly affected by power 
+grid use, while the impact on the heat sector is smoothened as it con-
+sumes the electricity mix from the power sector. Overall, the hierar-
+chical approach leads to a higher role of imported low-cost electricity 
+and a lower role of local higher cost electricity, but for the case of Japan 
+the impact is minor. 
+The impact on the system cost and the levelised cost of energy is not 
+significant; in 2050, the costs are within ±2.5%, and even in the 2030s, 
+the cost deviations do not exceed ±3%. The 3Mc_St results show the 
+largest deviations compared to the nine sub-regions simulations, while 
+the difference between the results of 3Mc_A and results of simulation for 
+the nine sub-regions is much smaller and is within ±1% in 2050 and 
+does not exceed ±2% through the transition. 
+These deviations are less than the deviations observed in case of 
+applying the different time-series methods as shown by Kotzur et al. 
+[35]. For some specific system configurations like CHP reliant or the 
+residential system, authors found ‘prediction errors less than 2%.’ While 
+the system cost stays roughly the same, one can see that the system 
+structure in Kotzur et al. [35] changes significantly. Similarly, the 
+regional resolution reduction also leads to significant deviations in the 
+results [39]. The proposed hierarchical approach allows for the avoid-
+ance of these effects. Even though the deviations in the energy system 
+structure after the first step of the hierarchical simulation are much 
+higher, the second level simulation for individual macro-regions 
+comprising the three sub-regions leads to improved results. 
+The range of deviations induced by the cost assumptions uncertainty 
+can be much higher; as an extreme case, one can compare the fossil fuels 
+Table 3 
+Number of variables and optimisation time of the model for the three different modelling designs. The optimisation time comprises seven myopic steps each covering 
+the 8760 h of a year modelled in perfect foresight.   
+Variables 
+Constraints 
+Optimisation time [sec] 
+Macro 
+Regional 
+Macro 
+Regional 
+Macro 
+Regional 
+Total 
+9Reg  
+30,494,288  
+42,013,836   
+671,823 
+3Mc_A 
+10,082,998 
+10,118,040 
+13,823,567 
+13,911,156 
+59,232 
+145,336 
+204,568 
+3Mc_St 
+10,082,998 
+10,118,040 
+13,823,567 
+13,911,156 
+107,082 
+177,933 
+285,015  
+D. Bogdanov et al.                                                                                                                                                                                                                              
+Energy 273 (2023) 127213
+12
+costs assumed by the International Energy Agency and other institutions 
+for the period 2020 to 2025, and the fossil fuels prices in autumn 2021 to 
+winter 2022. The capital costs are far less volatile, but the uncertainty of 
+the technologies’ capital and operational cost projections in 30 years’ 
+time horizon exceeds the uncertainty induced by the hierarchical sim-
+ulations approach. 
+The hierarchical approach provides the possibility to significantly 
+reduce the energy system simulation time without relevant changes to 
+the simulation results. The core assumption of this method is that the 
+power flows among macro-regions properly estimate the power flows 
+among sub-regions in the full resolution case. In practice, though, the 
+model tends to overestimate the grids utilisation as the cost of electricity 
+transmission within the region remains unknown. That is the key reason 
+for deviations between the scenarios, i.e. the higher share of onshore 
+wind in the 2030s is the result of free access to the wind potential on 
+Hokkaido island. Furthermore, an overall higher reliance on imports 
+from northwestern sub-regions is a result of an underestimation of the 
+grid costs from Hokkaido island, which makes these imports lower in 
+cost than local production in central and southeastern sub-regions of 
+Japan. 
+As power grid utilisation plays such an important role in hierarchical 
+simulation, the proper definition of the macro-regions structure be-
+comes very important. It should consider the existing grid structure, so 
+that existing high-capacity lines connect the macro-regions; at the same 
+time, sub-regions inside the macro-regions must share the borders, and 
+the distance between these sub-regions’ demand centres must be mini-
+mal in order to minimise underestimation of grid costs. Consequently, 
+combining island sub-regions should be avoided as sea-connections are 
+more expensive. Unfortunately, the macro-regions had to comprise 
+several islands considering the overall structure of Japan; thus, the costs 
+of exports from Hokkaido, as well as the cost of imports to Shikoku and 
+Kyushu, were underestimated, which led to deviations in the hierar-
+chical approach. 
+Although the import and export costs between regions were under-
+estimated, the deviations between the simulation results were restricted 
+by the limited RE potential of Japan. Considering the limited RE po-
+tential, the high energy demand, and PV CAPEX, the system had to 
+utilise all available PV potential in all scenarios as PV was a lowest cost 
+energy source with limited availability. Thus, the number of options for 
+the system was limited and the remaining energy demand had to be 
+covered with onshore or offshore wind power, either with local gener-
+ation, or via imports from other sub-regions. In sub-regions with a 
+higher PV capacity potential, the system would have more options to 
+balance energy demand and supply, which could also lead to higher 
+deviations in the results. Though in practice, this effect would be limited 
+as the solar irradiation and therefore the PV yield potential is less site 
+specific than the wind yield potential. For Japan, the PV yield difference 
+between sub-regions of Japan is much lower than the one of wind power, 
+thus higher PV potential assumptions could lead to even lower de-
+viations in the results. 
+The wind power capacity potential is also almost fully used in all the 
+regions, however, there one can see a substantial difference in results of 
+the standard 9-regions simulation and the hierarchical simulations re-
+sults: in the hierarchical cases the system tends not to use the local high 
+cost wind generation in the Shikoku region, while in case of the standard 
+9-regions simulation the system reaches the upper limit of onshore wind 
+power capacity in all regions. 
+Another limitation of the proposed algorithm is an arbitrary alloca-
+tion of multiple grid connections between macro-regions, for example an 
+additional power line between the Northeast macro-region and Central 
+macro-region can be built to connect Tohoku to Hokuriku region, or 
+Tokyo to Chubu. Currently the algorithm splits the capacity and power 
+flows equally, but, as it can be seen in Fig. 5, in the standard 9-regions 
+simulation case, the Tokyo to Chubu connection plays a far more 
+important role. 
+The results of the simulation are also affected by the RE technologies 
+FLh profiles computation approach. The results show that for the case of 
+this study, the method based on the calculation of an average for indi-
+vidual profiles of sub-regions included in the macro-region (3Mc_A) 
+performed slightly better than the method based on the FLh profiles 
+computation for the whole macro-region (3Mc_St). The results of the 
+3Mc_A scenario calculations were closer to the results of the standard 
+nine sub-regions simulation; at the same time, the simulation time was 
+about 40% higher compared to the 3Mc_St simulation. It is not clear how 
+the outcome will change in the case of other regions’ studies, but at least 
+for the case of Japan, the FLh calculation approach is not a decisive 
+parameter since the results of the system simulations were very close 
+regardless of the chosen FLh calculations approach, and the hierarchical 
+approach provides a significant gain in simulation speed. 
+For accurate macro-regions structure definition, the same approach 
+can be applied to other regions of the world and on a global level. If a 
+hierarchical approach was applied to a global simulation, the first level 
+results on a major region level simulation (like Europe, Eurasia, 
+Northeast Asia, etc.) will be naturally strongly affected by the copper 
+plate effect. However, going further to macro-regions and sub-regions 
+levels simulations will reduce the deviations introduced by the under-
+estimation of energy transportation costs. Additional levels of simula-
+tion can be applied to improve the spatial resolution and further 
+improve the accuracy of the results via reduction of the cooper plate 
+effect. An example for a 4-level approach would be major regions in the 
+world (level 1), macro-regions in Europe (level 2), Finland as a country 
+in a Nordic macro-region (level 3) and Southeast Finland as a local re-
+gion in Finland (level 4). 
+5. Conclusions 
+The results show that the hierarchical simulation approach can be 
+applied to energy system transition studies. It results in a significant 
+reduction of the model size and optimisation time, without a significant 
+change in the simulation results compared to the simulation in full sub- 
+regions resolution. The simulation on the chosen case of Japan struc-
+tured the nine sub-regions via two steps of simulations, one for three 
+macro-regions and the other for individual macro-regions comprising 
+three sub-regions each. This led to reductions in computation time by 
+factors of 2.35–3.3 compared to the standard simulation in nine sub- 
+regions resolution. Such computational time reductions are driven by 
+the decrease of model size on each step, which leads to a model that is 3 
+times smaller than standard simulation conditions. While the optimi-
+sation time decrease is significant, the structure of the resulting energy 
+system and the cost of the energy stays within a ±2.5% range for the 
+target year 2050. While the reductions in computation time should be on 
+the same level for all regions whenever a similar macro-regions structure 
+is applied, the impact of the hierarchical simulation approach on the 
+results has to be further studied for other regions. 
+The hierarchical approach demands an accurate definition of the 
+macro-regions structure on each hierarchical simulation step to mini-
+mise the impact of the grid costs and the FLh difference between sub- 
+regions within the region in order to limit the cooper plate effect. The 
+length of the grid connections within the macro-region should be at a 
+minimum to minimise the impact of underestimated costs of the grid and 
+losses in the grid. At the same time, sub-regions within the macro-region 
+should have a comparable RE potential both in terms of installed ca-
+pacity potential and FLh. 
+In energy transition studies, another question is how to calculate the 
+macro-region’s RE capacity factors profiles in order to further limit the 
+copper plate effect. In the case of Japan, the two tested approaches of 
+either averaging the more detailed sub-regions profiles or applying the 
+profiles generation method to the entire macro-region as a whole 
+demonstrate a similar performance. While one approach leads to closer 
+simulation results, another allows for a more substantial reduction of the 
+simulation time, but both are applicable in the case of Japan. 
+The hierarchical simulation approach can enable an increase in the 
+D. Bogdanov et al.                                                                                                                                                                                                                              
+Energy 273 (2023) 127213
+13
+number of scenarios studied for each project given the same amount of 
+time and computational resources. Otherwise, the approach can be used 
+to facilitate studies with a higher temporal, spatial, or technological 
+resolution, which could not be optimised with a standard full resolution 
+approach considering computational limits. In the investigated case, the 
+method was applied on two levels. First, one simulation on macro- 
+regions level, and a second carrying out three parallel simulations for 
+individual macro-regions comprising three sub-regions each, where 
+each sub-region represents one of the nine mainland electric power 
+companies’ areas. In the case of Japan, a third level could be introduced 
+to simulate in detail each of these electric power companies’ areas in the 
+prefecture’s resolution. 
+More levels can be introduced, and this method can be applied to 
+study global energy systems in high spatial resolution of 500–600 sub- 
+regions or higher. There, each of these 500 to 600 sub-regions can be 
+simulated not as energy islands, but with interregional energy flows a 
+part of a global interconnected energy system. 
+Credit author statement 
+Dmitrii Bogdanov: Conceptualisation, Methodology, Investigation, 
+Resources, Writing – Original Draft, Writing – Review & Editing, Visu-
+alisation.; Ayobami Solomon Oyewo: Resources, Writing – Review & 
+Editing.; Christian Breyer: Conceptualisation, Methodology, Writing – 
+Review & Editing, Supervision. 
+Declaration of competing interest 
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper. 
+Data availability 
+No data was used for the research described in the article. 
+Acknowledgements 
+The authors gratefully acknowledge the general support of LUT 
+University. The authors would like to thank Gabriel Lopez for 
+proofreading. 
+Appendix A. Supplementary data 
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.energy.2023.127213. 
+References 
+[1] [IPCC] - International Panel on Climate Change. Climate change 2022: mitigation 
+of climate change. Contribution of working group III to the sixth assessment report 
+of the intergovernmental panel on climate change. 2022. https://doi.org/10.1017/ 
+9781009157926. Cambridge, UK and New York, NY, USA. 
+[2] [IPCC] - International Panel on Climate Change. Climate change 2014: mitigation 
+of climate change. Cambridge and New York: Cambridge University Press; 2014. 
+https://doi.org/10.1017/CBO9781107415416. 
+[3] [IRENA] - International Renewable Energy Agency. Renewable power generation 
+costs in 2021. 2022. Abu Dhabi. 
+[4] Lazard. Lazard’s levelised cost of energy analysis (version 15.0). 2021. New York. 
+[5] Brown T, Schlachtberger D, Kies A, Schramm S, Greiner M. Synergies of sector 
+coupling and transmission reinforcement in a cost-optimised, highly renewable 
+European energy system. Energy 2018;160:720–39. https://doi.org/10.1016/j. 
+energy.2018.06.222. 
+[6] Connolly D, Lund H, Mathiesen BV. Smart Energy Europe: the technical and 
+economic impact of one potential 100% renewable energy scenario for the 
+European Union. Renew Sustain Energy Rev 2016;60:1634–53. https://doi.org/ 
+10.1016/j.rser.2016.02.025. 
+[7] Breyer C, Khalili S, Bogdanov D, Ram M, Oyewo AS, Aghahosseini A, et al. On the 
+history and future of 100% renewable energy systems research. IEEE Access 2022; 
+10:78176–218. https://doi.org/10.1109/ACCESS.2022.3193402. 
+[8] Bogdanov D, Ram M, Aghahosseini A, Gulagi A, Oyewo AS, Child M, et al. Low-cost 
+renewable electricity as the key driver of the global energy transition towards 
+sustainability. Energy 2021;227:120467. https://doi.org/10.1016/j. 
+energy.2021.120467. 
+[9] Eyre N. From using heat to using work: reconceptualising the zero carbon energy 
+transition. Energy Effic 2021;14. https://doi.org/10.1007/s12053-021-09982-9. 
+[10] Prina MG, Manzolini G, Moser D, Nastasi B, Sparber W. Classification and 
+challenges of bottom-up energy system models - a review. Renew Sustain Energy 
+Rev 2020. https://doi.org/10.1016/j.rser.2020.109917. 
+[11] Kittel M, Schill W-P. Renewable energy targets and unintended storage cycling: 
+implications for energy modeling. iScience 2022;25. https://doi.org/10.1016/j. 
+isci.2022.104002. 
+[12] Brown T, Bischof-Niemz T, Blok K, Breyer C, Lund H, Mathiesen BV. Response to 
+‘Burden of proof: a comprehensive review of the feasibility of 100% renewable- 
+electricity systems. Renew Sustain Energy Rev 2018;92:834–47. https://doi.org/ 
+10.1016/j.rser.2018.04.113. 
+[13] Connolly D, Lund H, Mathiesen BV, Leahy M. A review of computer tools for 
+analysing the integration of renewable energy into various energy systems. Appl 
+Energy 2010;87:1059–82. https://doi.org/10.1016/j.apenergy.2009.09.026. 
+[14] Heide D, Greiner M, von Bremen L, Hoffmann C. Reduced storage and balancing 
+needs in a fully renewable European power system with excess wind and solar 
+power generation. Renew Energy 2011;36. https://doi.org/10.1016/j. 
+renene.2011.02.009. 
+[15] Rodríguez RA, Becker S, Andresen GB, Heide D, Greiner M. Transmission needs 
+across a fully renewable European power system. Renew Energy 2014;63. https:// 
+doi.org/10.1016/j.renene.2013.10.005. 
+[16] Breyer C, Bogdanov D, Aghahosseini A, Gulagi A, Fasihi M. On the techno- 
+economic benefits of a global energy interconnection. Econ Energy Environ Policy 
+2020;9:83–102. https://doi.org/10.5547/2160-5890.9.1.cbre. 
+[17] Galv´an A, Haas J, Moreno-Leiva S, Osorio-Aravena JC, Nowak W, Palma-Benke R, 
+et al. Exporting sunshine: planning South America’s electricity transition with 
+green hydrogen. Appl Energy 2022;325:119569. https://doi.org/10.1016/j. 
+apenergy.2022.119569. 
+[18] Lopez G, Aghahosseini A, Child M, Khalili S, Fasihi M, Bogdanov D, et al. Impacts 
+of model structure, framework, and flexibility on perspectives of 100% renewable 
+energy transition decision-making. Renew Sustain Energy Rev 2022;164:112452. 
+https://doi.org/10.1016/j.rser.2022.112452. 
+[19] Østergaard PA. Reviewing EnergyPLAN simulations and performance indicator 
+applications in EnergyPLAN simulations. Appl Energy 2015;154:921–33. https:// 
+doi.org/10.1016/j.apenergy.2015.05.086. 
+[20] Lund H, Thellufsen JZ, Østergaard PA, Sorknæs P, Skov IR, Mathiesen BV. 
+EnergyPLAN – advanced analysis of smart energy systems. Smart Energy 2021;1: 
+100007. https://doi.org/10.1016/J.SEGY.2021.100007. 
+[21] Bogdanov D, Breyer C. North-East Asian Super Grid for 100% renewable energy 
+supply: optimal mix of energy technologies for electricity, gas and heat supply 
+options. Energy Convers Manag 2016;112:176–90. https://doi.org/10.1016/j. 
+enconman.2016.01.019. 
+[22] Bogdanov D, Farfan J, Sadovskaia K, Aghahosseini A, Child M, Gulagi A, et al. 
+Radical transformation pathway towards sustainable electricity via evolutionary 
+steps. Nat Commun 2019;10:1077. https://doi.org/10.1038/s41467-019-08855-1. 
+[23] Bogdanov D, Gulagi A, Fasihi M, Breyer C. Full energy sector transition towards 
+100% renewable energy supply: integrating power, heat, transport and industry 
+sectors including desalination. Appl Energy 2021;283:116273. https://doi.org/ 
+10.1016/j.apenergy.2020.116273. 
+[24] HOMER Energy, HOMER; 2021. https://www.homerenergy.com/index.html. 
+[25] Gils HC, Scholz Y, Pregger T, Luca de Tena D, Heide D. Integrated modelling of 
+variable renewable energy-based power supply in Europe. Energy 2017;123. 
+https://doi.org/10.1016/j.energy.2017.01.115. 
+[26] Victoria M, Zhu K, Brown T, Andresen GB, Greiner M. Early decarbonisation of the 
+European energy system pays off. Nat Commun 2020;11:6223. https://doi.org/ 
+10.1038/s41467-020-20015-4. 
+[27] Jacobson MZ, Delucchi MA, Cameron MA, Mathiesen BV. Matching demand with 
+supply at low cost in 139 countries among 20 world regions with 100% 
+intermittent wind, water, and sunlight (WWS) for all purposes. Renew Energy 
+2018;123:236–48. https://doi.org/10.1016/j.renene.2018.02.009. 
+[28] Elliston B, MacGill I, Diesendorf M. Comparing least cost scenarios for 100% 
+renewable electricity with low emission fossil fuel scenarios in the Australian 
+National Electricity Market. Renew Energy 2014;66. https://doi.org/10.1016/j. 
+renene.2013.12.010. 
+[29] Lenzen M, McBain B, Trainer T, Jütte S, Rey-Lescure O, Huang J. Simulating low- 
+carbon electricity supply for Australia. Appl Energy 2016;179. https://doi.org/ 
+10.1016/j.apenergy.2016.06.151. 
+[30] Dui´c N, Da Graça Carvalho M. Increasing renewable energy sources in island 
+energy supply: case study Porto Santo. Renew Sustain Energy Rev 2004;8. https:// 
+doi.org/10.1016/j.rser.2003.11.004. 
+[31] Pursiheimo E, Holttinen H, Koljonen T. Inter-sectoral effects of high renewable 
+energy share in global energy system. Renew Energy 2019;136:1119–29. https:// 
+doi.org/10.1016/j.renene.2018.09.082. 
+[32] L¨offler K, Hainsch K, Burandt T, Oei P-Y, Kemfert C, von Hirschhausen C, et al. 
+Designing a model for the global energy system—GENeSYS-MOD: an application of 
+the open-source energy modeling system (OSeMOSYS). Energies 2017;10:1468. 
+https://doi.org/10.3390/en10101468. 
+[33] Victoria M, Zeyen E, Brown T. Speed of technological transformations required in 
+Europe to achieve different climate goals. Joule 2022;6:1066–86. https://doi.org/ 
+10.1016/j.joule.2022.04.016. 
+D. Bogdanov et al.                                                                                                                                                                                                                              
+Energy 273 (2023) 127213
+14
+[34] IEA-ETSAP, TIMES; 2021. https://iea-etsap.org/index.php/etsap-tools/mod 
+el-generators/times. 
+[35] Kotzur L, Markewitz P, Robinius M, Stolten D. Impact of different time series 
+aggregation methods on optimal energy system design. Renew Energy 2018;117: 
+474–87. https://doi.org/10.1016/j.renene.2017.10.017. 
+[36] Hoffmann M, Kotzur L, Stolten D. The Pareto-optimal temporal aggregation of 
+energy system models. Appl Energy 2022;315:119029. https://doi.org/10.1016/j. 
+apenergy.2022.119029. 
+[37] Teichgraeber H, Brandt AR. Time-series aggregation for the optimization of energy 
+systems: goals, challenges, approaches, and opportunities. Renew Sustain Energy 
+Rev 2022;157. https://doi.org/10.1016/j.rser.2021.111984. 
+[38] Frysztacki MM, Recht G, Brown T. A comparison of clustering methods for the 
+spatial reduction of renewable electricity optimisation models of Europe. Energy 
+Informatics 2022;5. https://doi.org/10.1186/s42162-022-00187-7. 
+[39] Frysztacki MM, H¨orsch J, Hagenmeyer V, Brown T. The strong effect of network 
+resolution on electricity system models with high shares of wind and solar. Appl 
+Energy 2021;291. https://doi.org/10.1016/j.apenergy.2021.116726. 
+[40] Wang J, Kang L, Liu Y. A multi-objective approach to determine time series 
+aggregation strategies for optimal design of multi-energy systems. Energy 2022; 
+258:124783. https://doi.org/10.1016/j.energy.2022.124783. 
+[41] Mosek. MOSEK optimization toolbox for MATLAB 9.3.22. 2019. accessed March 
+18, 2021), https://www.mosek.com/documentation/. 
+[42] Bogdanov D, Farfan J, Sadovskaia K, Fasihi M, Child M, Breyer C. Arising role of 
+photovoltaic and wind energy in the power sector and beyond: changing the 
+Northeast Asian power landscape. Jpn J Appl Phys 2018;57. https://doi.org/ 
+10.7567/JJAP.57.08RJ01. 
+[43] Stackhouse P, Whitlock C. Surface meteorology and solar energy (SSE) release 6.0 
+methodology. Langley, VA, USA.: National Aeronautic and Space Administration 
+(NASA); 2008. 
+[44] Stackhouse P, Whitlock C. Surface meteorology and solar energy (SSE) release 6.0 
+methodology. Langley, VA, USA.: National Aeronautic and Space Administration 
+(NASA); 2009. 
+[45] Stetter D. Enhancement of the REMix energy system model: global renewable 
+energy potentials, optimized power plant siting and scenario validation. Faculty of 
+energy-, process- and bio-engineering, University of Stuttgart; 2012. PhD thesis. 
+[46] Renewable Energy Institute, Agora Energiewende. Renewable pathways to climate- 
+neutral Japan. LUT University; 2021. 
+[47] Bogdanov D, Oyewo AS, Odai TNM, Nishida Y, Gagnebin M, Shimoyama T, et al. 
+Energy transition for Japan: pathways towards 100% renewable energy system in 
+2050. 2023. submitted for publication. 
+D. Bogdanov et al.                                                                                                                                                                                                                              
